@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1> Calculadora </h1>
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+    {% comment %} """ calculadora Model:
+    This model represents the Condicion class.
+    args:
+        numero_condicion: Condicion number.
+        torneo: Tournament to which the condicions belongs.
+        juegos: Get the games that belong to the condicions.        
+    """ {% endcomment %}
+    <table border="1">
+        <tr>
+            <th>Id Calculadora</th>
+            <th>Metodo</th>
+            <th>Unidad</th>
+            <th>Detalle</th>
+            <th>Editar</th>
+            <th>Borrar</th>
+        </tr>
+        {% for calculadora in calculadora_list %}
+        <tr>
+            <td>{{ calculadora.id }}</td>
+            <td>{{ calculadora.metodo }}</td>
+            <td>{{ calculadora.unidad }}</td>
+            <td><a href="{% url 'myapp:calculadora_detail' calculadora.id %}">Detalle</a></td>
+            <td><a href="{% url 'myapp:calculadora_update' calculadora.id %}">Editar</a></td>
+            <td><a href="{% url 'myapp:calculadora_delete' calculadora.id %}">Borrar</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <p><a href="{% url 'myapp:calculadora_create' %}">Crear calculadora</a></p>
+    <p><a href="/">Inicio</a></p>
+
+    
+    
+</body>
+</html>

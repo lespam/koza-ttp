@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ligas</title>
+  </head>
+  <body>
+    {% if messages %}
+      <ul class="messages">
+        {% for message in messages %}
+          {% if message.tags %}
+            <li class="{{ message.tags }}">{{ message }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <h1>Ligas</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Equipos</th>
+          <th>Detalle</th>
+          <th>Editar</th>
+          <th>Borrar</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for liga in liga_list %}
+          <tr>
+            <td>{{ liga.nombre }}</td>
+            <td>
+              {{ liga.equipos.all|join:"<br>"}}
+            </td>
+            <td><a href="{% url 'tesis:liga_detail' liga.id %}">Detalle</a></td>
+            <td><a href="{% url 'tesis:liga_update' liga.id %}">Editar</a></td>
+            <td><a href="{% url 'tesis:liga_delete' liga.id %}">Borrar</a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <p><a href="{% url 'tesis:liga_create' %}">Crear</a></p>
+    <p><a href="{% url 'tesis:index' %}">Volver al inicio</a></p>
+  </body>
+</html>

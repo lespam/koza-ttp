@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Condicion</title>
+</head>
+<body>
+    <h1> Condicion </h1>
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+    <table border="1">
+        <tr>
+            <th>Condicion</th>
+            <th>Texto</th>
+            <th>Acciones</th>
+        </tr>
+        {% for condicion in condicion_list %}
+        <tr>
+            <td>{{ condicion.calendario }}</td>
+            <td>{{ condicion.texto_condicion }}</td>
+            <td><a href="{% url 'myapp:condicion_detail' condicion.id %}">Ver</a> <a href="{% url 'myapp:condicion_update' condicion.id %}">Editar</a> <a href="{% url 'myapp:condicion_delete' condicion.id %}">Eliminar</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <p><a href="{% url 'myapp:condicion_create' %}">Crear Condicion</a></p>
+    <p><a href="/">Inicio</a></p>
+
+    
+    
+</body>
+</html>

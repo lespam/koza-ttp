@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Actualizar equipo</title>
+</head>
+<body>
+    <h2>Editar equipo</h2>
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                {% if message.tags %}
+                    <li class="{{ message.tags }}">{{ message }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Actualizar">
+        </form>
+    <a href="{% url 'tesis:equipo_list' %}">Cancelar</a>
+    {% if math %}
+        <h2>{{math}}</h2>
+    {% endif %}
+    
+</body>
+</html>

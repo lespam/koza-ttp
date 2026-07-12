@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Equipo</title>
+</head>
+<body>
+    {% comment %} 
+    Here we create the basic show and edit the data for each object. We have to create an HTML form for each property of the object.
+    The object here is:
+        """ Equipo Model:
+    This model represents the Equipo class.
+    args:
+        Team Abbreviation: CharField for the team's abbreviation.
+        Nickname: CharField for the team's nickname.
+        League (National or American): CharField for the team's league.
+        Team Name: CharField for the team's name.
+        Arena Name: CharField for the team's arena name.
+        Arena Location: CharField for the team's arena location.
+        City: CharField for the team's city.
+        Seating Capacity: IntegerField for the team's seating capacity.
+        Opening Year: IntegerField for the team's opening year.
+        Lat: FloatField for the team's latitude.
+        Lon: FloatField for the team's longitude.
+        Address: CharField for the team's address.
+        First year of this combination: IntegerField for the team's first year of this combination.
+        Last year of this combination: IntegerField for the team's last year of this combination.
+    """
+     {% endcomment %}
+
+    <h2>Equipo {{ equipo }}</h2>
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        {% if message.tags %}
+          <li class="{{ message.tags }}">{{ message }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <table>
+        <tr>
+          <th>Atributo</th>
+          <th>Valor</th>
+        </tr>
+        <tr>
+          <td>Team Abbreviation</td>
+          <td>{{ equipo.team_abbreviation }}</td>
+        </tr>
+        <tr>
+          <td>Nickname</td>
+          <td>{{ equipo.nickname }}</td>
+        </tr>
+        <tr>
+          <td>League (National or American)</td>
+          <td>{{ equipo.league }}</td>
+        </tr>
+        <tr>
+          <td>Team Name</td>
+          <td>{{ equipo.team_name }}</td>
+        </tr>
+        <tr>
+          <td>Arena Name</td>
+          <td>{{ equipo.arena_name }}</td>
+        </tr>
+        <tr>
+          <td>Arena Location</td>
+          <td>{{ equipo.arena_location }}</td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td>{{ equipo.city }}</td>
+        </tr>
+        <tr>
+          <td>Seating Capacity</td>
+          <td>{{ equipo.seating_capacity }}</td>
+        </tr>
+        <tr>
+          <td>Opening Year</td>
+          <td>{{ equipo.opening_year }}</td>
+        </tr>
+        <tr>
+          <td>Lat</td>
+          <td>{{ equipo.lat }}</td>
+        </tr>
+        <tr>
+          <td>Lon</td>
+          <td>{{ equipo.lon }}</td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td>{{ equipo.address }}</td>
+        </tr>
+        <tr>
+          <td>First year of this combination</td>
+          <td>{{ equipo.first_year_of_this_combination }}</td>
+        </tr>
+        <tr>
+          <td>Last year of this combination</td>
+          <td>{{ equipo.last_year_of_this_combination }}</td>
+        </tr>
+      </table>
+    
+     <p><a href="{% url 'tesis:equipo_list' %}">Volver a la lista</a></p> 
+     <p>Test communication: </p>
+     {% if calcula %}
+     <p>success: {{ calcula }}</p>
+     {% else %}
+     <p>Fail</p>
+     {% endif %}
+     <br>
+     <br>
+     <br>
+     <p>"calculo: {{ calculadora.calcula }}"</p>
+ 
+</body>
+</html>

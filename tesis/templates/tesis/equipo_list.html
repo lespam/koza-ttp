@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Equipos</title>
+</head>
+<body>
+    {% comment %} 
+    Here we create the basic show and edit the data for each object. We have to create an HTML form for each property of the object.
+    The object here is:
+        """ Equipo Model:
+    This model represents the Equipo class.
+    args:
+        Team Abbreviation: CharField for the team's abbreviation.
+        Nickname: CharField for the team's nickname.
+        League (National or American): CharField for the team's league.
+        Team Name: CharField for the team's name.
+        Arena Name: CharField for the team's arena name.
+        Arena Location: CharField for the team's arena location.
+        City: CharField for the team's city.
+        Seating Capacity: IntegerField for the team's seating capacity.
+        Opening Year: IntegerField for the team's opening year.
+        Lat: FloatField for the team's latitude.
+        Lon: FloatField for the team's longitude.
+        Address: CharField for the team's address.
+        First year of this combination: IntegerField for the team's first year of this combination.
+        Last year of this combination: IntegerField for the team's last year of this combination.
+    """
+     {% endcomment %}
+
+    <h2>Equipos</h2>
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        {% if message.tags %}
+          <li class="{{ message.tags }}">{{ message }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <table border="1">
+        <tr>
+            <th>Team Abbreviation</th>
+            <th>Nickname</th>
+            <th>League</th>
+            <th>Team Name</th>
+            <th>Arena Name</th>
+            <th>Arena Location</th>
+            <th>City</th>
+            <th>Seating Capacity</th>
+            <th>Opening Year</th>
+            <th>Lat</th>
+            <th>Lon</th>
+            <th>Address</th>
+            <th>First year of this combination</th>
+            <th>Last year of this combination</th>
+            <th>Detalle</th>
+            <th>Editar</th>
+            <th>Borrar</th>
+        </tr>
+        {% for equipo in equipo_list %}
+        <tr>
+            <td>{{ equipo.team_abbreviation }}</td>
+            <td>{{ equipo.nickname }}</td>
+            <td>{{ equipo.league }}</td>
+            <td>{{ equipo.team_name }}</td>
+            <td>{{ equipo.arena_name }}</td>
+            <td>{{ equipo.arena_location }}</td>
+            <td>{{ equipo.city }}</td>
+            <td>{{ equipo.seating_capacity }}</td>
+            <td>{{ equipo.opening_year }}</td>
+            <td>{{ equipo.lat }}</td>
+            <td>{{ equipo.lon }}</td>
+            <td>{{ equipo.address }}</td>
+            <td>{{ equipo.first_year_of_this_combination }}</td>
+            <td>{{ equipo.last_year_of_this_combination }}</td>
+            <td><a href="{% url 'tesis:equipo_detail' equipo.id %}">Detalle</a></td>
+            <td><a href="{% url 'tesis:equipo_update' equipo.id %}">Editar</a></td>
+            <td><a href="{% url 'tesis:equipo_delete' equipo.id %}">Borrar</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p><a href="{% url 'tesis:equipo_create' %}">Crear equipo</a></p>
+    
+    <p><a href="{% url 'tesis:index' %}">Volver al inicio</a></p>
+</body>
+</html>

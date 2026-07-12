@@ -1,0 +1,42 @@
+wa<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio - programación genética</title>
+</head>
+<body>
+
+    <h1>Programación Genética</h1>
+
+    <p>Bienvenido a mi aplicación, que busca resolver el cómo organizar una temporada de béisbol de forma óptima, usando una técnica de inteligencia artificial inspirada en la evolución natural.</p>
+    <p>La <strong>Programación Genética</strong> consiste en crear y modificar soluciones a partir de una población inicial de programas,
+          usando operaciones como la selección, el cruzamiento y la mutación. Cada programa creado es un árbol de expresión que representa una solución potencial al problema.</p>
+    La aplicación busca evaluar cada árbol según un criterio de calidad para generar nuevos árboles más prometedores. 
+            Así, se puede iterar este proceso hasta encontrar una solución satisfactoria.</p>
+
+    <p>Veamos cómo funciona el proceso de selección natural, cruzamiento y mutación cuando se aplican en la búsqueda de
+         soluciones eficientes para el problema de generar un calendario de temporada de béisbol.🧬🤖🔍</p>
+
+    <h2>Menu</h2>
+    <h3> Instrucciones</h3>
+    <p>Para comenzar, crea un equipo, una liga, y un torneo. El número de equipos debe ser par.</p>
+    <p>Después, para generar un calendario de juegos, selecciona un torneo y haz clic en "Generar calendario".</p>
+    
+    <ul>
+        <h4>Equipo</h4>
+    <ul>
+        <li><a href="{%url 'myapp:equipo_list' %}">Lista de equipos</a></li>
+        <li><a href="{%url 'myapp:equipo_create' %}">Crear equipo</a></li>
+    </ul>
+        <h4>Liga</h4>
+    <ul>
+        <li><a href="{%url 'myapp:liga_list' %}">Lista de ligas</a></li>
+        <li><a href="{%url 'myapp:liga_create' %}">Crear liga</a></li>
+    </ul>
+        <h4>Torneo</h4>
+    <ul>
+        <li><a href="{%url 'myapp:torneo_list' %}">Lista de torneos</a></li>
+        <li><a href="{%url 'myapp:torneo_create' %}">Crear torneo</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Calendario</title>
+</head>
+
+<body>
+  <header>
+    <h1>Información del calendario</h1>
+  </header>
+
+  <nav>
+    {% if messages %}
+    <ul>
+      {% for message in messages %}
+      {% if message.tags %}
+      <li>{{ message }}</li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </nav>
+
+  <section>
+    <h2>{{ calendario }}</h2>
+    <p>
+      <strong>Torneo:</strong> <a href="{% url 'tesis:torneo_detail' calendario.torneo.id %}">{{ calendario.torneo }}</a> 
+      <strong>Configuración:</strong>{% if calendario.configuracion %} <a href="{% url 'tesis:configuracion_detail' calendario.configuracion.id %}">{{ calendario.configuracion }}</a>{% else %} <a href="{% url 'tesis:configuracion_create' calendario.id %}">Crear una nueva configuración</a>{% endif %}
+    </p>
+  </section>
+
+  <section>
+    {% if calendario.series.exists %}
+    <h3>Juegos</h3>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Juego ID</th>
+          <th>Serie</th>
+          <th>#Juego</th>
+          <th>Fecha</th>
+          <th>Hora Inicio</th>
+          <th>Hora Fin</th>
+          <th>Equipo en casa</th>
+          <th>Equipo visitante</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for serie in calendario.series.all|dictsort:"numero_de_serie" %}
+        {% for juego in  serie.juegos.all|dictsort:"fecha_de_inicio" %}
+        <tr>
+          <td><a href="{% url 'tesis:juego_detail' juego.id %}">{{ juego.id }}</a></td>
+          <td><a href="{% url 'tesis:serie_detail' serie.id %}">{{ serie.numero_de_serie }}</a></td> 
+          <td>{{ forloop.counter }}</td>
+          <td>{{ juego.fecha_de_inicio|date:"l M d Y" }}</td>
+          <td>{{ juego.fecha_de_inicio|time:"h:i A" }}</td>
+          <td>{{ juego.fecha_de_fin|time:"h:i A" }}</td>
+          <td>{{ juego.equipo_en_casa }}</td>
+          <td>{{ juego.equipo_visita }}</td>
+        </tr>
+        {% endfor %}
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <p>No hay series asociadas a este calendario</p>
+    {% endif %}
+  </section>
+
+  <section>
+    <p>
+      <a href="{% url 'tesis:calendario_update' calendario.id %}">Editar</a>
+      <a href="{% url 'tesis:calendario_delete' calendario.id %}">Eliminar</a>
+    </p>
+    </br>
+    <p><a href="{% url 'tesis:torneo_list' %}">Volver a la lista de torneos</a></p>
+    <p>
+      <a href="{% url 'tesis:calendario_list' %}">Volver a la lista de calendarios</a>
+    </p>
+    <p><a href="{% url 'tesis:configuracion_list' %}">Volver a la lista de configuraciones</a></p>
+    <p><a href="{% url 'tesis:serie_list' %}">Volver a la lista de series</a></p>
+    <p><a href="{% url 'tesis:juego_list' %}">Volver a la lista de juegos</a></p>
+  </section>
+
+</br>
+  <section>
+    <p><a href="{% url 'tesis:configuracion_create' %}">Crear una nueva configuración</a></p>
+    <p><a href="{% url 'tesis:serie_create' %}">Crear una nueva serie</a></p>
+    <p><a href="{% url 'tesis:juego_create' %}">Crear un nuevo juego</a></p>
+    <p><a href="{% url 'tesis:condicion_create' %}">Crear una nueva condición</a></p>
+  </section>
+</body>
+
+</html>

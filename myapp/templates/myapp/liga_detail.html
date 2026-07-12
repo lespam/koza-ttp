@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liga</title>
+</head>
+<body>
+    <h1>Liga: {{ liga.nombre }}</h1>
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+    {% comment %} """ Liga Model:
+    This model represents the Liga class.
+    args:
+        liga: CharField for the league's name.
+        equipos: ManyToManyField for the league's teams.
+    """ {% endcomment %}
+    <h2>{{ liga_detail }}</h2>
+    
+    <h3>Equipos pertenecientes:</h3>
+
+    <ul>
+        {% for equipo in liga.equipos.all %}
+            <li><a href="{% url 'myapp:equipo_detail' equipo.id %}">{{ equipo }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'myapp:liga_update' liga.id %}">Editar</a>
+    <a href="{% url 'myapp:liga_delete' liga.id %}">Eliminar</a>
+    <a href="{% url 'myapp:liga_list' %}">Volver</a>
+
+
+</body>
+</html>

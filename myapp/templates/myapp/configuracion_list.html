@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Configuraciones</title>
+</head>
+<body>
+    <h1>Configuraciones</h1>
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        {% if message.tags %}
+          <li class="{{ message.tags }}">{{ message }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+    <h2>Lista de configuraciones</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Torneo</th>
+            <th>Calendario</th>
+            <th>Configuracion</th>
+            <th>Detail</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for configuracion in configuracion_list %}
+          <tr>
+            <td>{{ configuracion.id }}</td>
+            {% if configuracion.calendario.torneo  %}<td><a href="{% url 'myapp:torneo_detail' configuracion.calendario.torneo.id %}">{{ configuracion.calendario.torneo.nombre }}</a></td>{% else %}<td> NA</td>{% endif %}
+            {% if configuracion.calendario  %}<td><a href="{% url 'myapp:calendario_detail' configuracion.calendario.id %}">{{ configuracion.calendario }}</a></td>{% else %}<td> -</td>{% endif %}
+            {% if configuracion %}
+              <td><a href="{% url 'myapp:configuracion_detail' configuracion.id %}">{{ configuracion.id }}</a></td>
+              <td><a href="{% url 'myapp:configuracion_detail' configuracion.id %}">Detail</a></td>
+            {% else %}
+              <td>-</td>
+              <td>-</td>
+            {% endif %}
+            <td><a href="{% url 'myapp:configuracion_update' configuracion.id %}">Update</a></td>
+            <td><a href="{% url 'myapp:configuracion_delete' configuracion.id %}">Delete</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </table>
+
+    <p><a href="{% url 'myapp:configuracion_create' %}">Nueva configuracion</a></p>
+    </br>
+    <p><a href="{% url 'myapp:calendario_list' %}">Volver a calendarios</a></p>
+    <p><a href="{% url 'myapp:torneo_list' %}">Volver a torneos</a></p>
+    
+    <p><a href="{% url 'myapp:index' %}">Volver al inicio</a></p>
+  
+    
+</body>
+</html>

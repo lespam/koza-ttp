@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Torneos</title>
+</head>
+<body>
+    <h1>Crear Torneo</h1>
+    
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        {% if message.tags %}
+          <li class="{{ message.tags }}">{{ message }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <h2>Formulario de torneos</h2>
+    <form method="post">{% csrf_token %}
+        <h2>Elimminar Torneo</h2>
+        <p>¿Está seguro de eliminar "{{ object }}"?</p>
+        {{ form.as_p }}
+        <input type="submit" value="Confirmar">
+        <a href="{% url 'tesis:torneo_list' %}">Cancelar</a>
+    </form>
+
+    <h3>Menu</h3>
+    <ul>
+        <li><a href="{%url 'tesis:liga_list' %}">Liga</a></li>
+        <li><a href="{%url 'tesis:equipo_list' %}">Team</a></li>
+        <li><a href="{%url 'tesis:torneo_list' %}">Torneo</a></li>
+        <li><a href="{%url 'tesis:calendario_list' %}">Calendario</a></li>
+        <li><a href="{%url 'tesis:juego_list' %}">Juego</a></li>
+        <li><a href="{%url 'tesis:configuracion_list' %}">Configuracion</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,79 @@
+
+{% load humanize %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Crear Arbol mediante Programacion Genetica | Version alternativa</title>
+  </head>
+  <body>
+    {% for message in messages %}
+      <p>{{ message }}</p>
+    {% endfor %}
+    <h1>Crear Arbol mediante Programacion Genetica | Version alternativa</h1>
+    {% if configuracion %}
+      <p> Configuracion: <a href="{% url 'tesis:configuracion_detail' configuracion.id %}">{{configuracion}}</a></p>
+    {% else %}
+      <p> Configuracion: No seleccionada</p>
+    {% endif %}
+      <p><a href="{% url 'tesis:configuracion_list' %}">Volver a las configuraciones</a></p>
+      <p> Arbol </p>
+    <section>
+      <p>{{arbol}}</p>
+      <p> Grafica </p>
+      {% load static %}
+      
+      <svg>
+        <use xlink:href="{{ MEDIA_URL }}/arbol.svg"></use>
+        <img src="{{ MEDIA_URL }}/arbol.svg" alt="My image" width="400" height="300">
+      </a>
+      
+    </svg>
+    <a href="{{ MEDIA_URL }}/arbol.svg" target="_blank"> ver en nueva ventana </a>
+    </section>
+    <section>
+      
+      <p> Distancia: {{ distancia|floatformat:2|intcomma }} km</p>
+
+      <p> Resumen del calendario: </p>
+      <ul>
+        <li> Distancia por equipo: </li>
+        <ul>
+          {% for equipo in equipos %}
+            <li> {{ equipo }}</li>
+          {% endfor %}
+        </ul>{% comment %} 
+        <li> Juegos en casa por equipo: </li>
+        <ul>
+          {% for equipo in equipos %}
+            <li> {{ equipo }}: {{ juegos_casa[equipo] }}</li>
+          {% endfor %}
+        </ul>
+        <li> Juegos fuera de casa por equipo: </li>
+        <ul>
+          {% for equipo in equipos %}
+            <li> {{ equipo }}: {{ juegos_fuera[equipo] }}</li>
+          {% endfor %}
+        </ul>
+        <li> Total de juegos por equipo: </li>
+        <ul>
+          {% for equipo in equipos %}
+            <li> {{ equipo }}: {{ total_juegos[equipo] }}</li>
+          {% endfor %}
+        </ul>
+      </ul>
+      <p> Numero total de juegos en el calendario generado: {{ total_juegos_total }}</p>
+
+      <p> Resumen de la programacion: </p>
+      <ul>Tiempo de ejecucion: {{ tiempo }} segundos </ul>
+      <ul>Numero de generaciones: {{ generaciones }} </ul>
+      <ul>Tamano de la poblacion: {{ tamano_poblacion }} </ul>
+      <ul>Probabilidad de cruce: {{ probabilidad_cruce }} </ul>
+      <ul>Probabilidad de mutacion: {{ probabilidad_mutacion }} </ul>
+      <ul><a href="{% url 'tesis:create_calendario' configuracion.id %}">Crear y ver calendario</a></ul>
+      <ul><a href="{% url 'tesis:ver_log' %}">Ver log</a></ul> {% endcomment %}
+      
+      </section>
+      <p><a href="{% url 'tesis:programacion_genetica' configuracion.id %}">Volver a la programacion genetica</a></p>
+    </body>
+</html>

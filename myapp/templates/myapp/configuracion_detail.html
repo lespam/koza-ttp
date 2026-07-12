@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Configuracion</title>
+  </head>
+  <body>
+    <h1>Configuracion {{ configuracion.id }}</h1>
+    {% if messages %}
+      <ul class="messages">
+        {% for message in messages %}
+          {% if message.tags %}
+            <li class="{{ message.tags }}">{{ message }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <section>
+      {% if configuracion.calendario %}
+    <table border="1">
+      <tr>
+        <th>ID</th>
+        <td>{{ configuracion.id }}</td>
+      </tr>
+      <tr>
+        <th>TORNEO</th>
+        <td>{{ configuracion.calendario.torneo.nombre }}</td>
+      </tr>
+      <tr>
+        <th>NOMENCL</th>
+        <td>{{ configuracion }}</td>
+      </tr>
+      <tr>
+        <th>POP</th>
+        <td>{{ configuracion.poblacion }}</td>
+      </tr>
+      <tr>
+        <th>GEN</th>
+        <td>{{ configuracion.generaciones }}</td>
+      </tr>
+      <tr>
+        <th>P.cruce</th>
+        <td>{{ configuracion.probabilidad_de_cruce }}</td>
+      </tr>
+      <tr>
+        <th>P.reproduccion</th>
+        <td>{{ configuracion.probabilidad_de_reproduccion }}</td>
+      </tr>
+      <tr>
+        <th>Calendario</th>
+        <td>
+          <a href="{% url 'myapp:calendario_detail' configuracion.calendario.id %}">{{ configuracion.calendario }}</a>
+        </td>
+      </tr>
+      <tr>
+        <th>Distancia</th>
+        <td>
+          <p>0.00 km</p>
+        </td>
+      </tr>
+    </table>
+    {% else %}
+    <p>No existe un calendario para esta configuracion</p>
+    {% endif %}
+    </section>
+
+    <section>
+      <h2>Acciones</h2>
+      <p><a href="{% url 'myapp:configuracion_generar_juegos' configuracion.id %}">Generar un calendario aleatorio</a></p>
+      <br><a href="{% url 'myapp:configuracion_list' %}">Volver al listado</a>
+      <br><a href="{% url 'myapp:configuracion_update' configuracion.id %}">Editar</a>
+      <br><a href="{% url 'myapp:configuracion_delete' configuracion.id %}">Eliminar</a>
+    </section>
+    <section>
+      <h2>Programacion Genética</h2>
+      <p><a href="{% url 'myapp:crear_arbol' configuracion.id %}">Ver arbol</a></p>
+
+      <a href="{% url 'myapp:programacion_genetica' configuracion.id %}">Ejecutar PF para el calendario {{ configuracion.calendario.id }}</a>
+    </section>
+  </body>
+</html>

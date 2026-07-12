@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de calendarios</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+  {% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+      {% if message.tags %}
+        <li class="{{ message.tags }}">{{ message }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+    <h1>Lista de calendarios</h1>
+
+    {% if calendario_list %}
+    <table border="1">
+        <thead>
+          <tr>
+            <th>Torneo</th>
+            <th>ID Calendario</th>
+            <th>Configuración</th>
+            <th>*Equipos</th> 
+            <th>Rango de fechas</th>
+            <th>Detalle</th>
+            <th>Editar</th>
+            <th>Borrar</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for calendario in calendario_list %}
+            <tr>
+              <td>{{ calendario.torneo.nombre }}</td>
+              <td>{{ calendario.id }}</td>
+              {% if calendario.configuracion %}
+              <td>
+                <a href="{% url 'myapp:configuracion_detail' calendario.configuracion.id %}">{{ calendario.configuracion }}</a>
+              </td>
+                {% else %}
+                <td> NA </td>
+              {% endif %}
+              <td> NA </td>
+              <td> {{ calendario.fecha_inicio }} - {{ calendario.fecha_fin }} </td>
+              <td><a href="{% url 'myapp:calendario_detail' calendario.id %}">Detalle</a></td>
+              <td><a href="{% url 'myapp:calendario_update' calendario.id %}">Editar</a></td>
+              <td><a href="{% url 'myapp:calendario_delete' calendario.id %}">Borrar</a></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        {% else %}
+        <p>No hay calendarios</p>
+        {% endif %}
+
+    <section>
+      <nav>
+        <ul style="list-style-type: none;">
+          <li><a href="{% url 'myapp:torneo_create' %}">Nuevo torneo</a></li>
+          <li><strong><a href="{% url 'myapp:calendario_create' %}">Nuevo calendario</a></strong></li>
+          <li><a href="{% url 'myapp:configuracion_create' %}">Nueva configuración</a></li>
+          <li><a href="{% url 'myapp:serie_create' %}">Nueva serie</a></li>
+          <li><a href="{% url 'myapp:juego_create' %}">Nuevo juego</a></li>
+        </br>
+          <li><a href="{% url 'myapp:torneo_list' %}">Lista de torneos</a></li>
+          <li><strong>Lista de calendarios</strong></li>
+          <li><a href="{% url 'myapp:configuracion_list' %}">Lista de configuraciones</a></li>
+          <li><a href="{% url 'myapp:serie_list' %}">Lista de series</a></li>
+          <li><a href="{% url 'myapp:juego_list' %}">Lista de juegos</a></li>
+        </ul>
+      </nav>
+    </section>
+    <p><a href="{% url 'myapp:index' %}">Volver al inicio</a></p>
+
+  </body>
+  </html>
+  <!-- 
+  <script>
+    $(document).ready(function() {
+      {% for calendario in calendario_list %}
+      $.ajax({
+        url: '{% url "myapp:obtener_equipos" %}',
+        data: {
+          'id_torneo': {{ calendario.torneo.id }}
+        },
+        success: function(resp) {
+          var listaDeEquipos = $('#equipos_{{ calendario.id }}');
+          listaDeEquipos.empty();
+          var data = JSON.parse(resp);
+          data.forEach(function(equipo) {
+            //listaDeEquipos.append('<li>' + equipo.team_name + ' (' + equipo.team_abbreviation + ')</li>');
+          });
+        },
+        error: function(resp) {
+          console.log('Something went wrong');
+        }
+      });
+      $.ajax({
+        url: '{% url "myapp:obtener_fechas" %}',
+        data: {
+          'id_torneo': {{ calendario.torneo.id }}
+        },
+        success: function(resp) {
+          var listaDeFechas = $('#fechas_{{ calendario.id }}');
+          listaDeFechas.empty();
+          var data = JSON.parse(resp);
+          data.forEach(function(fecha) {
+            //listaDeFechas.append('<li>' + fecha + '</li>');
+          });
+        },
+        error: function(resp) {
+          console.log('Something went wrong');
+        }
+      });
+      {% endfor %}
+    });
+  </script>
+  -->

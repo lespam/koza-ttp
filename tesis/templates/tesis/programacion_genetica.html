@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Programacion Genética</title>
+  </head>
+  <body>
+    {% for message in messages %}
+      <p>{{ message }}</p>
+    {% endfor %}
+    <h1>Programacion Genética</h1>
+    <p>Pasos para generar un calendario con base en programacion genetica:</p>
+    <ol>
+      <li>Seleccionar la configuración con el numero de generaciones, tamaño de la población, probabilidad de mutación y probabilidad de cruce</li>
+      <li>Configuración: {{ configuracion }}</li>
+      <li>Generaciones: Número de generaciones que se van a generar {{ configuracion.generaciones }}</li>
+      <li>Tamaño de la población: Número de individuos que se van a generar {{ configuracion.poblacion }}</li>
+      <li>Probabilidad de cruce: Probabilidad de que dos individuos se crucen {{ configuracion.probabilidad_de_cruce }}</li>
+      <li>Probabilidad de reproducción: Probabilidad de que el individuo se reproduzca {{ configuracion.probabilidad_de_reproduccion }}</li>
+      <li>Definir los operadores</li>
+      <li>Las primitivas son las operaciones que un programa puede realizar para generar otros programas</li>
+      <li>Crear juego: crear_juego(fecha, equipo_en_casa, equipo_de_visita, lista) -> lista</li>
+      <li>Agregar lista: agregar_lista(lista, lista) -> lista</li>
+      <li>Las terminales son las constantes o variables que un programa puede utilizar para generar otros programas</li>
+      <li>Fecha: lista de fecha</li>
+      <li>Equipo (en casa y de visita): lista de equipos</li>
+      <li>Lista: lista vacía</li>
+      <li>Las efimeras son las variables aleatorias que se agregan a cada individuo (programa) para que se genere un nuevo individuo (programa) y que sea diferente al original</li>
+      <li>Fecha: fecha aleatoria</li>
+      <li>Equipo (en casa y de visita): equipo aleatorio</li>
+      <li>Generar la población inicial</li>
+      <li>Generar un calendario aleatorio</li>
+      <li>Convertir el calendario en un programa (Tree)<-- AQUI ESTAMOS</li>
+      <li>Ver el programa generado</li>
+      <li>Generar la población inicial mediante el generador de árboles</li>
+      <li>Evaluar la población inicial</li>
+      <li>Evaluar cada individuo (programa) de la población inicial</li>
+      <li>Calcular el fitness de cada individuo (programa) de la población inicial</li>
+      <li>Seleccionar los mejores individuos (programas) de la población inicial</li>
+      <li>Generar la nueva población</li>
+      <li>Seleccionar los mejores individuos (programas) de la población inicial</li>
+      <li>Generar nuevos individuos (programas) mediante los operadores de cruce y reproducción</li>
+      <li>Generar nuevos individuos (programas) mediante los operadores de mutación</li>
+      <li>Generar la nueva población</li>
+      <li>Evaluar la nueva población</li>
+      <li>Evaluar cada individuo (programa) de la nueva población</li>
+      <li>Calcular el fitness de cada individuo (programa) de la nueva población</li>
+      <li>Seleccionar los mejores individuos (programas) de la nueva población</li>
+      <li>Repetir los pasos 5, 6 y 7 hasta que se cumpla el número de generaciones</li>
+      <li>Mostrar el mejor individuo (programa) de la última población</li>
+      <li>Asignar el calendario generado por el mejor individuo (programa) de la última población como calendario principal del torneo</li>
+    </ol>
+
+    <p><a href="{% url 'tesis:configuracion_generar_nuevos' configuracion.id %}">Generar juegos</a></p>
+    <p><a href="{% url 'tesis:crear_arbol' configuracion.id %}">Generar arbol inicial</a></p>
+    <p><a href="{% url 'tesis:ejecutar_programa_genetico' configuracion.id %}">Ejecutar programa genetico</a></p>
+    <p><a href="{% url 'tesis:ejecutar_programa_genetico_alt' configuracion.id %}">Ejecutar programa genetico version Alternativa</a></p>
+
+  </body>
+</html>

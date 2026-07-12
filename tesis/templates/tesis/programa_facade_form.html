@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h2> Programa para minimizar la distancia de traslado en un calendario de temporada de beisbol generico usando Programacion Genetica</h2>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                {{ message }}
+            </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    <h3>Forma:</h3>
+    <p>Se ingresan los datos de las ligas, equipos, torneos, calendarios y juegos, y se genera un calendario de juegos para cada torneo.</p>
+    <form method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Inicializar">
+    </form>
+
+
+
+    <h2>Menu</h2>
+    <ul>
+        <li><a href="{%url 'tesis:liga_list' %}">Ligas</a></li>
+        <li><a href="{%url 'tesis:equipo_list' %}">Equipos</a></li>
+        <li><a href="{%url 'tesis:torneo_list' %}">Torneos</a></li>
+        <li><a href="{%url 'tesis:calendario_list' %}">Calendarios</a></li>
+        <li><a href="{%url 'tesis:juego_list' %}">Juegos</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        {% if message.tags %}
+          <li class="{{ message.tags }}">{{ message }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <form method="post">{% csrf_token %}
+        <h2>Eliminar condicion</h2>
+        <p>¿Está seguro de eliminar condicion {{ object }}?</p>
+        <input type="submit" value="Eliminar">
+    </form>
+</body>
+</html>

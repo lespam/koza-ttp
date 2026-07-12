@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear torneo</title>
+</head>
+<body>
+    <h1>{{ torneo.nombre }}</h1>
+
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    <table border="1">
+        <tr>
+            <th>Rango de fechas:</th>
+            <td>{{ torneo.fecha_inicio }} - {{ torneo.fecha_fin }}</td>
+        </tr>
+        <tr>
+            <th>Calendario principal:</th>
+            <td>{% if torneo.calendario_principal %}{{ torneo.calendario_principal }}{% else %}No asignado{% endif %}</td>
+        </tr>
+        <tr>
+            <th>Numero de juegos:</th>
+            <td>{{ torneo.numero_de_juegos }}</td>
+        </tr>
+        <tr>
+            <th>Metodo:</th>
+            <td>{{ torneo.metodo }}</td>
+        </tr>
+        <tr>
+            <th>Unidad:</th>
+            <td>{{ torneo.unidad }}</td>
+        </tr>
+    </table>
+
+    <h2> Calendarios creados </h2>
+    <ul>
+        {% for calendario in torneo.calendario_set.all %}
+            <li>{{ calendario }}</li>
+        {% empty %}
+            <li>No calendarios found for this torneo.</li>
+        {% endfor %}
+    </ul>
+    <p><strong> Calendario principal: </strong> {% if torneo.calendario_principal %}{{ torneo.calendario_principal }}{% else %}Asignar{% endif %}</p>
+    <h2>Ligas participantes</h2>
+    <ul>
+        {% for liga in torneo.liga.all %}
+            <li>{{ liga }}</li>
+        {% empty %}
+            <li>No ligas found for this torneo.</li>
+        {% endfor %}        
+    </ul>
+
+    <div class="actions">
+        <h4>Acciones</h4>
+        <a href="{% url 'myapp:calendario_create' torneo.id %}">Crear calendario</a> |
+        <a href="{% url 'myapp:torneo_update' torneo.id %}">Editar</a> |
+        <a href="{% url 'myapp:torneo_delete' torneo.id %}">Eliminar</a> |
+        <a href="{% url 'myapp:torneo_list' %}">Volver al listado</a>
+    </div>
+</body> 
+</html>

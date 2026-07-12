@@ -1,0 +1,285 @@
+import random
+from typing import List, Any, Dict, Tuple
+import pandas as pd
+from itertools import permutations
+from datetime import datetime, time, timedelta
+from django.utils.timezone import get_default_timezone
+
+import sys
+sys.path.append('/home/ubuntu/django-gunicorn-nginx')
+from programa_genetico.programagenetico import ProgramaGenetico
+#import programa_genetico
+
+
+class ModuloPlanificador():
+    def __init__(self) -> None:
+        self.programa_genetico = ProgramaGenetico()
+        self.equipos = []
+        self.fechas = []
+        self.fecha_de_inicio = pd.to_datetime("")
+        self.fecha_de_fin = pd.to_datetime("")
+        self.numero_de_juegos = 1
+        self.numero_de_series = 1
+        self.numero_de_juegos_torneo = 1
+        
+        self.dias_seleccionados = ""
+        self.coordenadas_equipos = pd.DataFrame()
+        metodo_calculo= "haversine"
+        self.unidad_distancia = "km"
+        self.calendario_inicial = []
+    
+    def inicializacionDePlanificador(self) -> bool:
+        success = True
+        return success
+    def setProgramaGenetico(self, programa_genetico: ProgramaGenetico) -> bool:
+        self.programa_genetico = programa_genetico
+        return True
+    def getProgramaGenetico(self) -> ProgramaGenetico:
+        return self.programa_genetico
+    def setNumeroDeJuegosPorEquipo(self, numero_de_juegos: int) -> bool:
+        self.numero_de_juegos = numero_de_juegos
+        return True
+    
+    def getNumeroDeJuegosPorEquipo(self) -> int:
+        return self.numero_de_juegos
+    
+    def getNumeroDeJuegosPorEquipoTorneo(self) -> int:
+        return self.numero_de_juegos_por_equipo_torneo
+    def setNumeroDeJuegosPorEquipoTorneo(self, numero):
+        self.numero_de_juegos_por_equipo_torneo = numero
+    def getNumeroDeSeriesPorEquipo(self) -> int:
+        return self.numero_de_series
+    
+    def setNumeroDeSeriesPorEquipo(self, numero_de_series: int) -> bool:
+        self.numero_de_series = numero_de_series
+        return True
+    
+    def setDiasDeJuego(self, dias_seleccionados: str) -> bool:
+        self.dias_seleccionados = dias_seleccionados
+        return True
+    
+    def getDiasDeJuego(self) -> str:
+        return self.dias_seleccionados
+    
+    def setEquipos(self, equipos: list) -> bool:
+        self.equipos = equipos
+        self.programa_genetico.setEquipos(equipos)
+        return True
+    
+    def getEquipos(self) -> list:
+        return self.equipos
+    
+    def setFechaDeInicio(self, fecha_de_inicio: str) -> bool:
+        self.fecha_de_inicio = pd.to_datetime(fecha_de_inicio)
+        return True
+    
+    def getFechaDeInicio(self) -> pd.Timestamp:
+        return self.fecha_de_inicio
+    
+    def setFechaDeFin(self, fecha_de_fin: str) -> bool:
+        self.fecha_de_fin = pd.to_datetime(fecha_de_fin)
+        return True
+    
+    def getFechaDeFin(self) -> pd.Timestamp:
+        return self.fecha_de_fin
+    
+    def setFechas(self, fechas: list) -> bool:
+        self.fechas = fechas
+        self.programa_genetico.setFechas(fechas)
+        return True
+    
+    def getFechas(self) -> list:
+        return self.fechas
+    
+    def getEquiposDeProgramaGenetico(self) -> list:
+        return self.programa_genetico.getEquipos()
+    
+    def establecer_coordenadas_equipos(self, coordenadas_equipos) -> bool:
+        self.coordenadas_equipos = coordenadas_equipos
+        return True
+    
+    def establecer_calendario_inicial(self, calendario_inicial):
+        self.calendario_inicial = calendario_inicial
+    def obtener_calendario_inicial(self):
+        return self.calendario_inicial
+    def obtener_coordenadas_equipos(self):
+        return self.coordenadas_equipos
+    
+    def crear_calendario_inicial(self):
+        dias_de_semana = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo']
+        # Dias seleccionados
+        #dias_seleccionados = self.getDiasDeJuego()
+        #dias_seleccionados = dias_seleccionados.split(',')[0]
+        dias_seleccionados = ['Lunes', 'Martes', 'Miercoles']
+        # lista de dias de la semana
+        # 0 = Lunes, 1 = Martes, 2 = Miercoles, 3 = Jueves, 4 = Viernes, 5 = Sabado, 6 = Domingo
+        lista_dia_de_semana = pd.DataFrame(dias_de_semana, index=range(7), columns=['Dia'])
+        # dias_seleccionados = [0, 1, 2]
+        dias_seleccionados = lista_dia_de_semana[lista_dia_de_semana['Dia'].isin(dias_seleccionados)].index.to_list()
+        calendario_inicial = []
+        lista_de_series = []
+        # lista de fechas
+        lista_de_fechas = self.getFechas()
+        # filtrar las fechas que esten en los dias seleccionados
+        #print(f'Lista de fechas of length: {len(lista_de_fechas)} las primeras 7 son {lista_de_fechas[:7]}')
+        lista_de_fechas = [fecha for fecha in lista_de_fechas if pd.to_datetime(fecha).dayofweek in dias_seleccionados]
+        #print(f'Lista de fechas after filter of length: {len(lista_de_fechas)} las primeras 7 son {lista_de_fechas[:7]}')
+        self.setFechas(lista_de_fechas)
+        # Define the start time
+        tz = get_default_timezone()
+        start_time = time(9, 0)  # 9:00 AM
+        # Define the end time
+        end_time = time(12, 0)  # 12:00 PM
+
+        numero_de_juegos = self.getNumeroDeJuegosPorEquipo()
+        # numero_de_juegos por serie
+        numero_de_series = self.getNumeroDeSeriesPorEquipo()
+        numero_de_juegos_torneo = self.getNumeroDeJuegosPorEquipoTorneo()
+
+        
+        juegos = []
+        fecha_iter = 0
+        equipos = self.getEquipos()
+        lista_de_equipos = [equipo for equipo in equipos]
+        for k in range(numero_de_series):
+            #print(f'Numero de serie: {k+1}')
+            # Para cada equipo en la lista de equipos
+            # Creamos una lista de pares de equipos
+            # En orden aleatorio
+            # [(equipo1, equipo2), (equipo3, equipo4), ...]
+            random.shuffle(lista_de_equipos)
+            
+            if len(lista_de_equipos) % 2 != 0:
+                # Si es impar eliminamos el ultimo equipo
+                lista_de_equipos = lista_de_equipos[:-1]
+            else:
+                pass
+            pares = [(lista_de_equipos[j], lista_de_equipos[j+1]) for j in range(0, len(lista_de_equipos), 2)]
+            # Generamos las fechas de los juegos
+            # print(f'Lista de fechas: {lista_de_fechas}')
+            for i in range(numero_de_juegos):
+                #print(f'Numero de juego: {i+1}')
+                # Creamos una fecha datetime con la
+                # fecha de inicio y la hora de inicio
+                # del juego para los juegos de esta serie
+                # print(f'fechas {i}: {lista_de_fechas[i]}')
+                fecha_i = datetime.strptime(lista_de_fechas[fecha_iter], "%Y-%m-%d").date()  # This is a datetime.date 
+                fecha_de_inicio = datetime.combine(fecha_i, start_time).replace(tzinfo=tz)
+                fecha_de_fin = datetime.combine(fecha_i, end_time).replace(tzinfo=tz)
+                # Mientras haya pares de equipos
+                #print(f'Pares de equipos of length: {len(pares)}')
+                # Creamos las series de juegos
+                n_serie = k + 1
+                # Creamos el juego como diccionario
+                for par in pares:
+                    juego_dict = {
+                        'numero_de_serie': n_serie,
+                        'fecha_de_inicio': fecha_de_inicio,
+                        'fecha_de_fin': fecha_de_fin,
+                        'equipo1': par[0],
+                        'equipo2': par[1]}
+                    # Agregamos el juego a la lista de juegos
+                    juegos.append(juego_dict)
+                fecha_iter = fecha_iter + 1
+                #i += 1
+            #k += 1                           
+            #fecha_iter = 0
+        return juegos
+
+    
+    def iniciar_planificacion(self):
+        calendario_inicial = self.crear_calendario_inicial()
+        self.establecer_calendario_inicial(calendario_inicial)
+        pg = self.getProgramaGenetico()
+        
+        pg.establecer_calendario_inicial(calendario_inicial)
+        pg.setCalculadora(self.obtener_coordenadas_equipos(), metodo_calculo self.unidad_distancia)
+        pg.setEquipos(self.getEquipos())
+        pg.setFechas(self.getFechas())
+        pg.establecer_numero_de_juegos_por_equipo(self.getNumeroDeJuegosPorEquipo())
+        pg.establecer_numero_de_series_por_equipo(self.getNumeroDeSeriesPorEquipo())   
+        
+        pg.set_genera_calendario(self.crear_calendario_inicial)
+             
+        result = pg.inicializar_programa_genetico()
+        
+        return result
+    
+    def obtener_expresion(self):
+        pg = self.getProgramaGenetico()
+        result = pg.crear_arbol()
+        return result
+    
+    def calcular_distancia_en_casa(self, juegos, equipo):
+        calendario = pd.DataFrame(juegos)
+        pg = self.getProgramaGenetico()
+        pg.setCalculadora(self.obtener_coordenadas_equipos(), metodo_calculo self.unidad_distancia)        
+        calculadora = pg.getCalculadora()
+        distancia_en_casa = 0.0
+        for tupla in calendario:
+            fecha = tupla[0]
+            equipo1 = tupla[1]
+            equipo2 = tupla[2]
+            distancia_juego = calculadora.calcula_distancia(equipo1, equipo2)
+            if equipo1 == equipo:
+                distancia_en_casa += distancia_juego
+        return distancia_en_casa
+    
+    def getDistancia(self, expresion: str) -> float:
+        pg = self.getProgramaGenetico()
+        
+        pg.setCalculadora(self.obtener_coordenadas_equipos(), metodo_calculo self.unidad_distancia)        
+        calculadora = pg.getCalculadora()
+        
+        
+        # print(f'Expresion: {expresion}')
+        # read the expresion as calendar, string to list
+        # print(type(expresion))
+        calendario = eval(expresion)
+        # print(f'Calendario: {type(calendario)}')
+        total_distance = 0.0
+        for tupla in calendario:
+            if tupla != ():
+                fecha = tupla[0]
+                equipo1 = tupla[1]
+                equipo2 = tupla[2]
+                distance = calculadora.calcula_distancia(equipo1, equipo2)
+            else:
+                distance = 0
+            total_distance += distance    
+        #print(f'Total distance: {total_distance}')
+        return total_distance
+
+    def ejecutar_programa_genetico(self):
+        calendario_inicial = self.crear_calendario_inicial()
+        self.establecer_calendario_inicial(calendario_inicial)
+        
+        pg = self.getProgramaGenetico()
+        
+        pg.establecer_calendario_inicial(calendario_inicial)
+        pg.setCalculadora(self.obtener_coordenadas_equipos(), metodo_calculo self.unidad_distancia)
+        pg.setEquipos(self.getEquipos())
+        pg.setFechas(self.getFechas())
+        
+        pg.establecer_numero_de_juegos_por_equipo(self.getNumeroDeJuegosPorEquipoTorneo())
+        #pg.establecer_numero_de_series_por_equipo(self.getNumeroDeSeriesPorEquipo())
+        pg.set_genera_calendario(self.crear_calendario_inicial)
+        result = pg.run()
+        result = str(result)
+        return result
+    
+    
+    def ejecutar_programa_genetico_alt(self):
+        calendario_inicial = self.crear_calendario_inicial()
+        self.establecer_calendario_inicial(calendario_inicial)
+        pg = self.getProgramaGenetico()
+        
+        pg.establecer_calendario_inicial(calendario_inicial)
+        pg.setCalculadora(self.obtener_coordenadas_equipos(), metodo_calculo self.unidad_distancia)
+        pg.setEquipos(self.getEquipos())
+        pg.setFechas(self.getFechas())
+        pg.establecer_numero_de_juegos_por_equipo(self.getNumeroDeJuegosPorEquipo())
+        pg.establecer_numero_de_series_por_equipo(self.getNumeroDeSeriesPorEquipo())        
+        result = pg.run_alt()
+        result = str(result)
+        return result

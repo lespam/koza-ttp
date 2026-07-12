@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Cacluladora con id: {{ calculadora.id }} y metodo: {{condicion.metodo}}</h1>
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+    {% comment %} """ Condicion Model:
+    This model represents the Condicion class.
+    args:
+        numero_condicion: Condicion number.
+        torneo: Tournament to which the condicions belongs.
+        juegos: Get the games that belong to the condicions.        
+    """ {% endcomment %}
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Metodo</th>
+            <th>Unidad</th>
+        </tr>
+        <tr>
+            <td>{{ calculadora.id }}</td>
+            <td>{{ calculadora.metodo }}</td>
+            <td>{{ calculadora.unidad }}</td>
+        </tr>
+    </table>
+
+    <p><a href="{% url 'myapp:calculadora_list' %}">Regresar a la lista de calculadoras</a></p>
+    <p><a href="{% url 'myapp:calculadora_update' calculadora.id %}">Editar calculadora</a></p>
+    <p><a href="{% url 'myapp:calculadora_delete' calculadora.id %}">Eliminar calculadora</a></p>
+
+    <p>Test communication: </p>
+    {% if calcula %}
+    <p>success: {{ calcula }}</p>
+    {% else %}
+    <p>Fail</p>
+    {% endif %}
+    <br>
+    <br>
+    <br>
+    <p>"calculo: {{ calculadora.calcula }}"</p>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juegos</title>
+</head>
+<body>
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+   <table border="1">
+    <h1>Juegos</h1>
+    <tr>
+        <thead>
+          <th>Id</th>
+            <th>Torneo</th>
+            <th>N. Serie</th>
+            <th>Fecha de inicio</th>
+            <th>Fecha de fin</th>
+            <th>Equipo en casa</th>
+            <th>Equipo visitante</th>
+            <th>Detalle</th>
+            <th>Editar</th>
+            <th>Borrar</th>
+        </thead>
+    </tr>
+    {% for juegos in juego_list %}
+    <tr>
+        <td>{{ juegos.id }}</td>
+        <td><a href="{% url 'myapp:torneo_detail' juegos.serie.calendario.torneo.id %}">{{ juegos.serie.calendario.torneo.nombre }}</a></td>
+        <td>{%if juegos.serie %}<a href="{% url 'myapp:serie_detail' juegos.serie.id %}">{{ juegos.serie.numero_de_serie }}</a>{% endif %}</td>
+        <td>{{ juegos.fecha_de_inicio }}</td>
+        <td>{{ juegos.fecha_de_fin }}</td>
+        <td>{{ juegos.equipo_en_casa }}</td>
+        <td>{{ juegos.equipo_visita }}</td>
+      
+        <td><a href="{% url 'myapp:juego_detail' juegos.id %}">Detalle</a></td>
+        <td><a href="{% url 'myapp:juego_update' juegos.id %}">Editar</a></td>
+        <td><a href="{% url 'myapp:juego_delete' juegos.id %}">Borrar</a></td>
+    </tr>
+    {% endfor %}
+</table>
+<p><a href="{% url 'myapp:juego_create' %}">Create</a></p>
+<p><a href="{% url 'myapp:index' %}">Volver al inicio</a></p>
+</body>
+</html>

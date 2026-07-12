@@ -1,0 +1,64 @@
+{% load humanize %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Serie</title>
+</head>
+<body>
+    <h1>Serie{{ serie.numero_de_serie }}</h1>
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+    {% comment %} """ Serie Model:
+    This model represents the Serie class.
+    args:
+        numero_serie: Serie number.
+        torneo: Tournament to which the series belongs.
+        juegos: Get the games that belong to the series.        
+    """ {% endcomment %}
+    <table border="1">
+      <tr>
+          <th>ID</th>
+          <th>Torneo</th>
+          <th>Calendario</th>
+          <th>Numero de Serie</th>
+      </tr>
+      <tr>
+          <td>{{ serie.id }}</td>
+          <td><a href="{% url 'tesis:torneo_detail' serie.calendario.torneo.id %}">{{ serie.calendario.torneo }}</a></td>
+          <td><a href="{% url 'tesis:calendario_detail' serie.calendario.id %}">{{ serie.calendario }}</a></td>
+          <td>{{ serie.numero_de_serie }}</td>
+    </table>
+    </br>
+  </br>
+
+    {% if serie.juegos.all %}
+    <table border="1">
+      <tr>
+          <th>Juegos ordenados por fecha</th>
+      </tr>
+      <tr>
+          <td>
+                  {% for juego in serie.juegos.all|dictsort:"fecha_de_inicio" %} 
+                  <a href="{% url 'tesis:juego_detail' juego.id %}">{{ juego.fecha_de_inicio|date:"l, M d, h a " }} - {{ juego.equipo_en_casa }} vs {{ juego.equipo_visita }}</a>
+                  <br>  
+                  {% endfor %}
+          </td>
+      </tr>
+    </table>
+    {% else %}
+    <p>No hay juegos para esta serie</p>
+    {% endif %}
+
+    <p><a href="{% url 'tesis:serie_list' %}">Regresar a la lista de series</a></p>
+    <p><a href="{% url 'tesis:serie_update' serie.id %}">Editar Serie</a></p>
+    <p><a href="{% url 'tesis:serie_delete' serie.id %}">Eliminar Serie</a></p>
+
+</body>
+</html>

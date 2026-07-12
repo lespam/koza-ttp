@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>juego</title>
+</head>
+<body>
+    <h1>Eliminar juego</h1>
+    
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        {% if message.tags %}
+          <li class="{{ message.tags }}">{{ message }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <h2>Formulario de eliminacion</h2>
+    <form method="post">{% csrf_token %}
+        <h2>Eliminar juego</h2>
+        <p>¿Está seguro de eliminar el juego {{ juego }}?</p>
+        <input type="submit" value="Eliminar">
+    </form>
+</body>
+</html>

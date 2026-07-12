@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Serie</title>
+</head>
+<body>
+    <h1> Series </h1>
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+    {% comment %} """ Serie Model:
+    This model represents the Serie class.
+    args:
+        numero_serie: Serie number.
+        torneo: Tournament to which the series belongs.
+        juegos: Get the games that belong to the series.        
+    """ {% endcomment %}
+    <table border="1">
+      <tr>
+        <th>Id</th>
+        <th>Numero de Serie</th>
+        <th>Calendario</th>
+        <th>Juegos</th>
+        <th>Detail</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+      {% for serie in serie_list %}
+      <tr>
+        <td>{{ serie.id }}</td>
+        <td>{{ serie.numero_de_serie }}</td>
+        <td>{{ serie.calendario }}</td>
+        <td>{% if serie.juegos %}{{ serie.juegos.all|join:',</br>' }}{% endif %}</td>
+        <td><a href="{% url 'tesis:serie_detail' serie.id %}">Detail</a></td>
+        <td><a href="{% url 'tesis:serie_update' serie.id %}">Update</a></td>
+        <td><a href="{% url 'tesis:serie_delete' serie.id %}">Delete</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+    
+    <p><a href="{% url 'tesis:serie_create' %}">Crear Serie</a></p>
+    <p><a href="{% url 'tesis:juego_create' %}">Agregar Juegos</a></p>
+    <p><a href="{% url 'tesis:calendario_list' %}">Ir a lista de Torneos</a></p>
+    <p><a href="{% url 'tesis:calendario_list' %}">Ir a lista de Calendarios</a></p>
+    <p><a href="/">Inicio</a></p>
+
+    
+    
+</body>
+</html>

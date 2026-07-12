@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear calendario</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h2>Crear calendario</h2>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            {% if message.tags %}
+                <li class="{{ message.tags }}">{{ message }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Crear">
+    </form>
+
+    {% if id_torneo %}
+        <h3>Lista de equipos participantes</h3>
+        <ul id="lista_de_equipos">
+            {% for equipo in equipos %}
+                <li>{{ equipo.team_name }} ({{ equipo.team_abbreviation }})</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <ul id="lista_de_equipos">
+            <li>Seleccione un torneo</li>
+        </ul>
+    {% endif %}
+    
+    
+    <a href="{% url 'tesis:calendario_list' %}">Cancelar</a>
+    
+
+    <script>
+        $(document).ready(function() {
+            $('#id_torneo').change(function() {
+                var selectedTorneo = $(this).val();
+                $('#lista_de_equipos').empty();
+                $.ajax({
+                    url: '{% url "tesis:obtener_equipos" %}',
+                    data: {
+                        'id_torneo': selectedTorneo
+                    },
+                    success: function(resp) {
+                        var listaDeEquipos = $('#lista_de_equipos');
+                        //alert(selectedTorneo);
+                        console.log("IN:");
+                        listaDeEquipos.empty();
+                        var data = JSON.parse(resp);
+                        data.forEach(function(equipo) {
+                            listaDeEquipos.append('<li>' + equipo.team_name + ' (' + equipo.team_abbreviation + ')</li>');
+                        });
+                    },
+                    error: function(resp) {
+                        console.log('Something went wrong');
+                    }
+                
+                })
+            });
+            $('form').submit(function(e) {
+                var selectedTorneo = $('#id_torneo').val();
+                alert(selectedTorneo);
+                if (selectedTorneo == '') {
+                    alert('Debe seleccionar un torneo');
+                    e.preventDefault(); // Prevent the form from submitting
+                }
+                else {
+                    // Modify the form data before it's submitted
+                    $(this).find('select[name="id_torneo"]').val(selectedTorneo);
+                }
+            });
+    });
+        </script>
+</body>
+</html>
+
+{% comment %} if (selectedTorneo != '') {
+    alert(selectedTorneo);
+    $('#id_torneo').empty();
+    $.ajax({
+        url: '{% url "tesis:obtener_equipos" torneo.id %}',
+        type: 'GET',
+        success: function(resp) {
+            var listaDeEquipos = $('#lista_de_equipos');
+            listaDeEquipos.empty();
+            resp.data.forEach(function(equipo) {
+                listaDeEquipos.append('<li>' + equipo.team_name + ')</li>');
+            });
+            $(#id_torneo).find('.after').after(listaDeEquipos);
+            alert(selectedTorneo);\
+        },
+        error: function(resp) {
+            console.log('Something went wrong');
+        }
+    });
+}else{
+    $(#id_torneo).find('.after').nextAll().remove();
+} {% endcomment %}

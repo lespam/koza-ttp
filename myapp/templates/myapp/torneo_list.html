@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Torneos</title>
+</head>
+<body>
+    <h1>Torneos</h1>
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        {% if message.tags %}
+          <li class="{{ message.tags }}">{{ message }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+    <h2>Lista de torneos</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th> Nombre </th>
+          <th> Liga </th>
+          <th> Fecha de inicio </th>
+          <th> Fecha de fin </th>
+          <th> Dias de juego </th>
+          <th> Numero de juegos </th>
+          <th> Metodo </th>
+          <th> Unidad </th>
+          <th> Detalle </th>
+          <th> Editar </th>
+          <th> Borrar </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for torneo in torneo_list %}
+        <tr>
+          <td>{{ torneo.nombre }}</td>
+          <td>{{ torneo.liga.all | join:"<br> "}}</td>
+          <td>{{ torneo.fecha_inicio }}</td>
+          <td>{{ torneo.fecha_fin }}</td>
+          <td>{{ torneo.dias_juego }}</td>
+          <td>{{ torneo.numero_juegos }}</td>
+          <td>{{ torneo.metodo }}</td>
+          <td>{{ torneo.unidad }}</td>
+          <td><a href="{% url 'myapp:torneo_detail' torneo.id %}">Detalle</a></td>
+          <td><a href="{% url 'myapp:torneo_update' torneo.id %}">Editar</a></td>
+          <td><a href="{% url 'myapp:torneo_delete' torneo.id %}">Borrar</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <p><a href="{% url 'myapp:torneo_create' %}">Nuevo torneo</a></p>
+    <p><a href="{% url 'myapp:index' %}">Volver al inicio</a></p>
+</body>
+</html>

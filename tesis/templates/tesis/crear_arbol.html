@@ -1,0 +1,38 @@
+
+{% load humanize %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Crear Arbol</title>
+  </head>
+  <body>
+    {% for message in messages %}
+      <p>{{ message }}</p>
+    {% endfor %}
+    <h1>Crear Arbol</h1>
+    {% if configuracion %}
+      <p> Configuracion: <a href="{% url 'tesis:configuracion_detail' configuracion.id %}">{{configuracion}}</a></p>
+    {% else %}
+      <p> Configuracion: No seleccionada</p>
+    {% endif %}
+      <p><a href="{% url 'tesis:configuracion_list' %}">Volver a las configuraciones</a></p>
+      <p> Arbol </p>
+    <section>
+      <p>{{arbol}}</p>
+      <p> Grafica </p>
+      {% load static %}
+      <svg>
+        <use xlink:href="{{ MEDIA_URL }}/arbol.svg"></use>
+        <img src="{{ MEDIA_URL }}/arbol.svg" alt="My image" width="400" height="300">
+      </a>
+    </svg>
+    <a href="{{ MEDIA_URL }}/arbol.svg" target="_blank"> ver en nueva ventana </a>
+    </section>
+    <section>
+      
+      <p> Distancia: {{ distancia|floatformat:2|intcomma }} km</p>
+      </section>
+      <p><a href="{% url 'tesis:programacion_genetica' configuracion.id %}">Volver a la programacion genetica</a></p>
+    </body>
+</html>

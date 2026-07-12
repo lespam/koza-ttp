@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>juego</title>
+</head>
+<body>
+    <h1>Juegos</h1>
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                {% if message.tags %}
+                    <li class="{{ message.tags }}">{{ message }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <html>
+
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>N. Serie</th>
+                <th>Equipo Local</th>
+                <th>Equipo Visitante</th>
+                <th>Serie</th>
+                <th>Fecha Inicio</th>
+                <th>Fecha Fin</th>
+            </tr>
+            <tr>
+                <td>{{ juego.id }}</td>
+                <td>{{ juego.serie.numero_de_serie }}</td>
+                <td>{{ juego.equipo_en_casa }}</td>
+                <td>{{ juego.equipo_visita }}</td>
+                <td>{% if juego.series %}{{ juego.series }}{% else %}N/A{% endif %}</td>
+                <td>{{ juego.fecha_de_inicio }}</td>
+                <td>{{ juego.fecha_de_fin }}</td>
+            </tr>
+        </table>
+
+        <br>
+        <p><a href="{% url 'myapp:juego_update' juego.id %}">Editar</a></p>
+        <p><a href="{% url 'myapp:juego_delete' juego.id %}">Eliminar</a></p>
+        <p><a href="{% url 'myapp:juego_list' %}">Volver</a></p>
+        </body>
+    </html>

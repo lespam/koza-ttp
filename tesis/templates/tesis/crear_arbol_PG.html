@@ -1,0 +1,43 @@
+
+{% load humanize %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Crear Arbol mediante Programacion Genetica</title>
+  </head>
+  <body>
+    {% for message in messages %}
+      <p>{{ message }}</p>
+    {% endfor %}
+    <h1>Crear Arbol mediante Programacion Genetica</h1>
+    {% if configuracion %}
+      <p> Configuracion: <a href="{% url 'tesis:configuracion_detail' configuracion.id %}">{{configuracion}}</a></p>
+    {% else %}
+      <p> Configuracion: No seleccionada</p>
+    {% endif %}
+      <p><a href="{% url 'tesis:configuracion_list' %}">Volver a las configuraciones</a></p>
+      <p> Arbol </p>
+    <section>
+      <p>{{arbol}}</p>
+      <p> Grafica </p>
+
+      <!-- The {% autoescape off %} and {% endautoescape %} template tags are used to prevent Django from escaping the SVG code, which would otherwise interfere with the browser’s ability to render the SVG correctly. -->
+      <!-- Server-side script to embed SVG -->
+      {% autoescape off %}
+      {{ svg_content }}
+      {% endautoescape %}
+
+      
+      <a href="{% url 'tesis:vista-svg' %}" target="_blank"> ver en nueva ventana </a>
+    </section>
+
+    <section>
+      
+      <p> Distancia: {{ distancia|floatformat:2|intcomma }} km</p>
+      <p> Diferencia del promedio contra el esperado: {{ diferencia_del_promedio_contra_el_esperado|floatformat:2|intcomma }}</p>
+
+      </section>
+      <p><a href="{% url 'tesis:programacion_genetica' configuracion.id %}">Volver a la programacion genetica</a></p>
+    </body>
+</html>
