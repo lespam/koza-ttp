@@ -19,6 +19,25 @@
       <p><a href="{% url 'tesis:configuracion_list' %}">Volver a las configuraciones</a></p>
       <p> Arbol </p>
     <section>
+      <!-- tesis/crear_arbol_PG.html -->
+      {% load humanize %}
+      <div class="container">
+          <section class="section-content">
+              <h2>Resultado de la Optimización</h2>
+              <p><strong>Configuración:</strong> {{ configuracion }}</p>
+              <p><strong>Violaciones:</strong> {{ diferencia_del_promedio_contra_el_esperado|floatformat:2|intcomma }}</p>
+              <div class="stats-row">
+                  <span>Distancia Total:</span> 
+                  <span>{{ distancia|floatformat:2|intcomma }} km</span>
+              </div>
+
+              <div class="svg-container">
+                  {% autoescape off %}
+                  {{ svg_content }}
+                  {% endautoescape %}
+              </div>
+          </section>
+      </div>
       <p>{{arbol}}</p>
       <p> Grafica </p>
 
@@ -38,6 +57,6 @@
       <p> Diferencia del promedio contra el esperado: {{ diferencia_del_promedio_contra_el_esperado|floatformat:2|intcomma }}</p>
 
       </section>
-      <p><a href="{% url 'tesis:programacion_genetica' configuracion.id %}">Volver a la programacion genetica</a></p>
+      {% comment %} <p><a href="{% url 'tesis:programacion_genetica' configuracion.id %}">Volver a la programacion genetica</a></p> {% endcomment %}
     </body>
 </html>

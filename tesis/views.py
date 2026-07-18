@@ -26,7 +26,8 @@ from django.utils.safestring import mark_safe
 
 from django.conf import settings
 import os  # Lo importamos aquí directo solo para asegurar que no falte
-
+# La importación que preguntaste:
+from .services import run_genetic_algorithm_logic
 
 """Create Views:
 Implement the views in tesis/views.py. 
@@ -775,6 +776,40 @@ class ProgramacionGenetica(View):
         graph.add_edge('root', 'child2')
         graph.draw('tree.svg', prog='dot', format='svg')
         return ""#Image('tree.svg')       
+    def ejecutar_programa_genetico(request, config_id):
+        config = get_object_or_404(Configuracion, pk=config_id)
+        # Llamas a la lógica y obtienes el diccionario con los resultados
+        resultado = run_genetic_algorithm_logic(config)
+        return render(request, 'tesis/resultado_pg.html', {
+            'configuracion': config,
+            'arbol': resultado['arbol'],
+            'svg_content': resultado['svg_content'],
+            'distancia': resultado['distancia'],
+            'diferencia_del_promedio_contra_el_esperado': resultado['diferencia']
+        })
+    @staticmethod
+    def ejecutar_pg_por_defecto(request):
+        # Forzamos la configuración con ID 5
+        config_id = 5
+        #configuracion = get_object_or_404(Configuracion, pk=config_id)
+        try:
+        #configuracion = Configuracion.objects.latest('id')
+            configuracion = get_object_or_404(Configuracion, pk=config_id)
+            resultado = run_genetic_algorithm_logic(configuracion)
+        # ... render ...
+        except Configuracion.DoesNotExist:
+            return HttpResponse("No hay configuraciones disponibles para ejecutar el programa.")
+        # Ejecutamos la lógica centralizada
+        #resultado = run_genetic_algorithm_logic(configuracion)
+        #ruta_svg = os.path.join(settings.BASE_DIR, 'media', 'svg', 'arbol.svg')
+
+        return render(request, 'tesis/programacion_genetica.html', {
+            'configuracion': configuracion,
+            'arbol': resultado['arbol'],
+            'svg_content': resultado['svg_content'],
+            'distancia': resultado['distancia'],
+            'diferencia_del_promedio_contra_el_esperado': resultado['diferencia']
+        })
 """ # Calculadora - CRUD
 # List
 class CalculadoraIndexView(generic.ListView):

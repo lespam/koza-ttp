@@ -1,60 +1,57 @@
+{% load humanize %}
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Programacion Genética</title>
-  </head>
-  <body>
-    {% for message in messages %}
-      <p>{{ message }}</p>
-    {% endfor %}
-    <h1>Programacion Genética</h1>
-    <p>Pasos para generar un calendario con base en programacion genetica:</p>
-    <ol>
-      <li>Seleccionar la configuración con el numero de generaciones, tamaño de la población, probabilidad de mutación y probabilidad de cruce</li>
-      <li>Configuración: {{ configuracion }}</li>
-      <li>Generaciones: Número de generaciones que se van a generar {{ configuracion.generaciones }}</li>
-      <li>Tamaño de la población: Número de individuos que se van a generar {{ configuracion.poblacion }}</li>
-      <li>Probabilidad de cruce: Probabilidad de que dos individuos se crucen {{ configuracion.probabilidad_de_cruce }}</li>
-      <li>Probabilidad de reproducción: Probabilidad de que el individuo se reproduzca {{ configuracion.probabilidad_de_reproduccion }}</li>
-      <li>Definir los operadores</li>
-      <li>Las primitivas son las operaciones que un programa puede realizar para generar otros programas</li>
-      <li>Crear juego: crear_juego(fecha, equipo_en_casa, equipo_de_visita, lista) -> lista</li>
-      <li>Agregar lista: agregar_lista(lista, lista) -> lista</li>
-      <li>Las terminales son las constantes o variables que un programa puede utilizar para generar otros programas</li>
-      <li>Fecha: lista de fecha</li>
-      <li>Equipo (en casa y de visita): lista de equipos</li>
-      <li>Lista: lista vacía</li>
-      <li>Las efimeras son las variables aleatorias que se agregan a cada individuo (programa) para que se genere un nuevo individuo (programa) y que sea diferente al original</li>
-      <li>Fecha: fecha aleatoria</li>
-      <li>Equipo (en casa y de visita): equipo aleatorio</li>
-      <li>Generar la población inicial</li>
-      <li>Generar un calendario aleatorio</li>
-      <li>Convertir el calendario en un programa (Tree)<-- AQUI ESTAMOS</li>
-      <li>Ver el programa generado</li>
-      <li>Generar la población inicial mediante el generador de árboles</li>
-      <li>Evaluar la población inicial</li>
-      <li>Evaluar cada individuo (programa) de la población inicial</li>
-      <li>Calcular el fitness de cada individuo (programa) de la población inicial</li>
-      <li>Seleccionar los mejores individuos (programas) de la población inicial</li>
-      <li>Generar la nueva población</li>
-      <li>Seleccionar los mejores individuos (programas) de la población inicial</li>
-      <li>Generar nuevos individuos (programas) mediante los operadores de cruce y reproducción</li>
-      <li>Generar nuevos individuos (programas) mediante los operadores de mutación</li>
-      <li>Generar la nueva población</li>
-      <li>Evaluar la nueva población</li>
-      <li>Evaluar cada individuo (programa) de la nueva población</li>
-      <li>Calcular el fitness de cada individuo (programa) de la nueva población</li>
-      <li>Seleccionar los mejores individuos (programas) de la nueva población</li>
-      <li>Repetir los pasos 5, 6 y 7 hasta que se cumpla el número de generaciones</li>
-      <li>Mostrar el mejor individuo (programa) de la última población</li>
-      <li>Asignar el calendario generado por el mejor individuo (programa) de la última población como calendario principal del torneo</li>
-    </ol>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Optimización Genética | Dashboard</title>
+    <style>
+        :root { --primary: #0a2540; --accent: #c5a059; --bg: #f4f6f9; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg); color: #333; line-height: 1.6; margin: 0; padding: 20px; }
+        .dashboard { max-width: 1000px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        
+        .header { border-bottom: 2px solid var(--primary); margin-bottom: 30px; padding-bottom: 10px; }
+        .metrics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 30px; }
+        .metric-card { background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid var(--accent); }
+        
+        .svg-container { border: 1px solid #ddd; border-radius: 8px; overflow: auto; background: white; margin-bottom: 20px; }
+        .steps-container { background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #eee; margin-top: 40px; }
+        .steps-container h3 { cursor: pointer; color: var(--primary); }
+        
+        .btn-link { color: var(--primary); text-decoration: none; font-weight: bold; border: 1px solid var(--primary); padding: 5px 10px; border-radius: 4px; }
+    </style>
+</head>
+<body>
 
-    <p><a href="{% url 'tesis:configuracion_generar_nuevos' configuracion.id %}">Generar juegos</a></p>
-    <p><a href="{% url 'tesis:crear_arbol' configuracion.id %}">Generar arbol inicial</a></p>
-    <p><a href="{% url 'tesis:ejecutar_programa_genetico' configuracion.id %}">Ejecutar programa genetico</a></p>
-    <p><a href="{% url 'tesis:ejecutar_programa_genetico_alt' configuracion.id %}">Ejecutar programa genetico version Alternativa</a></p>
+<div class="dashboard">
+    <div class="header">
+        <h1>Dashboard de Optimización</h1>
+        <p>Configuración Activa: <strong>{{ configuracion }}</strong></p>
+    </div>
 
-  </body>
+    {% if svg_content %}
+    <div class="metrics-grid">
+        <div class="metric-card"><strong>Distancia Total:</strong><br>{{ distancia|floatformat:2|intcomma }} km</div>
+        <div class="metric-card"><strong>Violaciones:</strong><br>{{ diferencia_del_promedio_contra_el_esperado|floatformat:2|intcomma }}</div>
+        <div class="metric-card"><strong>Generaciones:</strong><br>{{ configuracion.generaciones }}</div>
+    </div>
+
+    <div class="svg-container">
+        {% autoescape off %}{{ svg_content }}{% endautoescape %}
+    </div>
+    {% else %}
+    <p><em>Ejecutando algoritmo... Por favor, espere un momento.</em></p>
+    {% endif %}
+
+    <div class="steps-container">
+        <h3>Detalles de la Ejecución (Ocultar/Mostrar)</h3>
+        <ol>
+            <li><strong>Configuración:</strong> {{ configuracion.poblacion }} individuos | {{ configuracion.generaciones }} generaciones.</li>
+            <li><strong>Operadores:</strong> Cruce ({{ configuracion.probabilidad_de_cruce }}), Mutación ({{ configuracion.probabilidad_de_reproduccion }}).</li>
+            {% comment %} <li><strong>Estado:</strong> Convertir calendario a árbol sintáctico completado.</li> {% endcomment %}
+        </ol>
+        <a href="{% url 'tesis:vista-svg' %}" target="_blank" class="btn-link">Ver SVG en pantalla completa</a>
+    </div>
+</div>
+
+</body>
 </html>

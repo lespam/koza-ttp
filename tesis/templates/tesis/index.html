@@ -1,46 +1,456 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Inicio - programación genética</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAMACIÓN GENÉTICA EN LA
+PLANIFICACIÓN DE TEMPORADAS DE
+BÉISBOL</title>
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0d3b66, #006466);
+            --panel-bg: #ffffff;
+            --primary-blue: #0a2540;
+            --accent-green: #007f5f;
+            --accent-green-hover: #009624;
+            --text-dark: #333333;
+            --text-muted: #666666;
+            --border-color: #dddddd;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--primary-blue);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Secciones de Texto (Teoría y Contexto) */
+        .section-content {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .section-content h2 {
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            border-bottom: 3px solid var(--accent-green);
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .section-content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Contenedor del Demo / Interfaz del Dashboard */
+        .dashboard-demo {
+            background: var(--bg-gradient);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .dashboard-title {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        /* Paneles individuales de la interfaz */
+        .panel {
+            background: var(--panel-bg);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .panel h3 {
+            background: var(--primary-blue);
+            color: white;
+            padding: 10px;
+            margin: -20px -20px 20px -20px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            font-size: 1.1rem;
+        }
+
+        /* Elementos de Formulario (Simulados / No editables) */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        input[type="range"], select, input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            color: var(--text-muted);
+            pointer-events: none; /* Bloquea interacción general */
+        }
+
+        .value-box {
+            background: #eee;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Simulación del Calendario y Tablas */
+        .mock-calendar, .mock-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+
+        .mock-calendar th, .mock-calendar td, 
+        .mock-table th, .mock-table td {
+            border: 1px solid var(--border-color);
+            text-align: center;
+            padding: 6px;
+        }
+
+        .mock-calendar th, .mock-table th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+
+        .match-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #cc0000;
+            color: white;
+            border-radius: 50%;
+            font-size: 0.7rem;
+            line-height: 20px;
+        }
+
+        .match-icon.blue { background: #0033aa; }
+
+        /* Estadísticas */
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 0.95rem;
+        }
+
+        .stats-row span:last-child {
+            font-weight: bold;
+        }
+
+        /* Botones */
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: not-allowed;
+            font-size: 1rem;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .btn-secondary {
+            background-color: #e0e0e0;
+            color: #888;
+        }
+
+        /* Único botón activo pedido */
+        .btn-primary-active {
+            background-color: var(--accent-green);
+            color: white;
+            cursor: pointer;
+            pointer-events: auto; /* Permite click */
+        }
+
+        .btn-primary-active:hover {
+            background-color: var(--accent-green-hover);
+        }
+
+        /* Logo ITAM de fondo simulado */
+        .itam-watermark {
+            margin-top: 30px;
+            opacity: 0.2;
+            color: white;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        /* Footer / Créditos */
+        footer {
+            background: var(--primary-blue);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #00b4d8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Programación Genética</h1>
+    <header>
+        <h1>PROGRAMACIÓN GENÉTICA EN LA
+PLANIFICACIÓN DE TEMPORADAS DE
+BÉISBOL</h1>
+    </header>
 
-    <p>Bienvenido a mi aplicación, que busca resolver el cómo organizar una temporada de béisbol de forma óptima, usando una técnica de inteligencia artificial inspirada en la evolución natural.</p>
-    <p>La <strong>Programación Genética</strong> consiste en crear y modificar soluciones a partir de una población inicial de programas,
-          usando operaciones como la selección, el cruzamiento y la mutación. Cada programa creado es un árbol de expresión que representa una solución potencial al problema.</p>
-    La aplicación busca evaluar cada árbol según un criterio de calidad para generar nuevos árboles más prometedores. 
-            Así, se puede iterar este proceso hasta encontrar una solución satisfactoria.</p>
+    <div class="container">
 
-    <p>Veamos cómo funciona el proceso de selección natural, cruzamiento y mutación cuando se aplican en la búsqueda de
-         soluciones eficientes para el problema de generar un calendario de temporada de béisbol.🧬🤖🔍</p>
+        <!-- 1. INTRODUCCIÓN AL PROYECTO -->
+        <section class="section-content">
+            <h2>Introducción al Proyecto</h2>
+            <p>Este proyecto surge como una solución tecnológica y matemática para abordar la complejidad logística detrás de la organización de torneos deportivos de gran escala. Mediante la automatización del diseño de calendarios, buscamos equilibrar las condiciones competitivas de los equipos participantes, minimizando el impacto por desgaste de viajes prolongados y optimizando el uso de recintos deportivos.</p>
+            <p>La logística de los calendarios deportivos, específicamente en las Grandes Ligas de Béisbol (MLB), representa un desafío complejo donde la ubicación de los juegos dicta la eficiencia en los traslados de los equipos. Ante la carencia de herramientas comerciales enfocadas en la minimización de distancias, este proyecto propone una arquitectura de software basada en Programación Genética (PG).
 
-    <h2>Menu</h2>
-    <h3> Instrucciones</h3>
-    <p>Para comenzar, crea un equipo, una liga, y un torneo. El número de equipos debe ser par.</p>
-    <p>Después, para generar un calendario de juegos, selecciona un torneo y haz clic en "Generar calendario".</p>
+Este paradigma de Inteligencia Artificial permite representar calendarios como árboles de sintaxis jerárquicos, prescindiendo de modelos matemáticos continuos. Para validar la propuesta, se desarrolló un prototipo web que comparó un proceso evolutivo —implementado con la librería DEAP bajo los principios de Koza (1992)— contra la generación aleatoria de calendarios.
+
+Los resultados experimentales revelaron que los operadores genéticos estándar no lograban preservar las restricciones fundamentales de la liga, lo que permitió que la selección aleatoria superara a la evolución algorítmica. No obstante, este trabajo constituye una aportación significativa al establecer una plataforma funcional capaz de evaluar variables específicas del béisbol. Como paso siguiente, se propone el desarrollo de operadores genéticos especializados en el contexto deportivo para superar las limitaciones detectadas y abordar los desafíos logísticos más exigentes del sector.</p>
+        </section>
+
+        <!-- 2. EXPLICACIÓN DEL PROBLEMA -->
+        <section class="section-content">
+            <h2>El Problema Logístico</h2>
+            <p>Planificar un calendario de béisbol profesional involucra resolver múltiples restricciones en conflicto directo: distancias kilométricas de traslado, equidad en los días de descanso acumulados, disponibilidad de estadios locales y demandas de transmisión televisiva. Resolver esto de forma manual o empírica genera calendarios ineficientes con altos costos financieros y fatiga innecesaria para los atletas.</p>
+            <p>La complejidad en la programación de calendarios de béisbol radica en la interdependencia entre la ubicación de los estadios y las rutas de viaje de los equipos. Gestionar de manera eficiente la alternancia entre juegos como local y visitante implica satisfacer múltiples restricciones operativas y deportivas de forma simultánea. En el contexto de ligas profesionales como la MLB, este desafío se vuelve monumental, ya que los sistemas convencionales suelen priorizar la estructura del calendario sobre la minimización de la distancia total recorrida, omitiendo un factor crítico que impacta directamente en la sostenibilidad y el desempeño de los equipos.</p>
+        </section>
+
+        <!-- 3. SOLUCIÓN TEÓRICA (PROGRAMACIÓN GENÉTICA / ALGORITMOS GENÉTICOS) -->
+        <section class="section-content">
+            <h2>Solución Mediante Programación Genética</h2>
+            <p>Para solucionar este problema combinatorio complejo, implementamos un enfoque basado en <strong>Programación Genética (PG)</strong>. El sistema modela los calendarios potenciales como "cromosomas". A través de sucesivas iteraciones, se aplican operadores de selección, cruza y mutación genética para explorar el espacio de soluciones. Una función de evaluación (<em>Fitness Function</em>) califica cada propuesta penalizando las distancias largas de viaje y premiando los balances óptimos de descanso, convergiendo paulatinamente en el calendario ideal.</p>
+        </section>
+        <section id="configuracion-detalles">
+    <h2>Parámetros de Configuración</h2>
     
-        <h4>Configuraciones</h4>
-    <ul>
-        <li><a href="{%url 'tesis:configuracion_list' %}">Lista de configuraciones</a></li>
-        <li><a href="{%url 'tesis:configuracion_create' %}">Crear configuración</a></li>
-    </ul>
-        <h4>Equipo</h4>
-    <ul>
-        <li><a href="{%url 'tesis:equipo_list' %}">Lista de equipos</a></li>
-        <li><a href="{%url 'tesis:equipo_create' %}">Crear equipo</a></li>
-    </ul>
-        <h4>Liga</h4>
-    <ul>
-        <li><a href="{%url 'tesis:liga_list' %}">Lista de ligas</a></li>
-        <li><a href="{%url 'tesis:liga_create' %}">Crear liga</a></li>
-    </ul>
-        <h4>Torneo</h4>
-    <ul>
-        <li><a href="{%url 'tesis:torneo_list' %}">Lista de torneos</a></li>
-        <li><a href="{%url 'tesis:torneo_create' %}">Crear torneo</a></li>
-    </ul>
+    <form>
+        {% csrf_token %}
+        <table class="config-table">
+            <tr>
+                <th>ID</th>
+                <td><input type="text" value="{{ configuracion.id }}" disabled></td>
+            </tr>
+            <tr>
+                <th>Torneo</th>
+                <td><input type="text" value="{{ configuracion.calendario.torneo.nombre }}" disabled></td>
+            </tr>
+            <tr>
+                <th>Población</th>
+                <td><input type="number" placeholder="Ej. 100" value="{{ configuracion.poblacion }}" disabled></td>
+            </tr>
+            <tr>
+                <th>Generaciones</th>
+                <td><input type="number" placeholder="Ej. 50" value="{{ configuracion.generaciones }}" disabled></td>
+            </tr>
+            <tr>
+                <th>Prob. Cruce</th>
+                <td><input type="number" step="0.01" placeholder="0.80" value="{{ configuracion.probabilidad_de_cruce }}" disabled></td>
+            </tr>
+            <tr>
+                <th>Prob. Reproducción</th>
+                <td><input type="number" step="0.01" placeholder="0.10" value="{{ configuracion.probabilidad_de_reproduccion }}" disabled></td>
+            </tr>
+            <tr>
+                <th>Estado del Calendario</th>
+                <td>
+                    {% if configuracion.calendario %}
+                        <a href="{% url 'tesis:calendario_detail' configuracion.calendario.id %}" class="btn-link">
+                            {{ configuracion.calendario }}
+                        </a>
+                    {% else %}
+                        <span class="text-muted">Pendiente de generación</span>
+                    {% endif %}
+                </td>
+            </tr>
+        </table>
+    </form>
+</section>
+        <!-- 4. INTERFAZ DE DEMOSTRACIÓN (JUEGO DE COMPONENTES) -->
+        <section class="dashboard-demo">
+            <h2 class="dashboard-title">Demostración (Preconfigurado)</h2>
+            
+            <div class="grid-layout">
+                
+                <!-- Panel 1: Configuración del Algoritmo -->
+                <div class="panel">
+                    <div>
+                        <h3>Configuración del Algoritmo Genético</h3>
+                        <div class="form-group">
+                            <label>Población:</label>
+                            <div class="slider-container">
+                                <input type="range" min="10" max="500" value="100" disabled>
+                                <span class="value-box">100</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Iteraciones:</label>
+                            <div class="slider-container">
+                                <input type="range" min="100" max="2000" value="500" disabled>
+                                <span class="value-box">500</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Tasa de Mutación:</label>
+                            <div class="slider-container">
+                                <input type="range" min="0" max="1" step="0.01" value="0.05" disabled>
+                                <span class="value-box">0.05</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Criterio de Fitness:</label>
+                            <select disabled>
+                                <option>Distancia de Viaje (mín.)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="itam-watermark">
+                        <p><strong>ITAM</strong> - Tesis Ingeniería en Computación</p>
+                        <p style="font-size:0.75rem; color:#aaa;">Tesis_ITAM_Leslie_2026.pdf</p>
+                    </div>
+                </div>
+
+                <!-- Panel 2: Equipos y Calendario Base -->
+                <div class="panel">
+                    <div>
+                        <h3>Equipos y Calendario Base</h3>
+                        <p style="font-size: 0.8rem; margin-bottom: 8px; text-align: center; font-weight: bold;">Abril 2026</p>
+                        <table class="mock-calendar">
+                            <thead>
+                                <tr><th>D</th><th>L</th><th>M</th><th>M</th><th>J</th><th>V</th><th>S</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td></td><td></td><td></td><td>1</td><td>2 <span class="match-icon">C</span></td><td>3 <span class="match-icon blue">M</span></td><td>4</td></tr>
+                                <tr><td>5</td><td>6 <span class="match-icon">C</span></td><td>7</td><td>8 <span class="match-icon blue">M</span></td><td>9</td><td>10</td><td>11</td></tr>
+                                <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
+                            </tbody>
+                        </table>
+
+                        <table class="mock-table">
+                            <thead>
+                                <tr><th>Fecha</th><th>Local</th><th>Visitante</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>02/04/2026</td><td>Cubs</td><td>Mariners</td></tr>
+                                <tr><td>03/04/2026</td><td>Mariners</td><td>Cubs</td></tr>
+                                <tr><td>06/04/2026</td><td>Cubs</td><td>White Sox</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="btn btn-secondary" disabled>Generar Calendario Inicial</button>
+                </div>
+
+                <!-- Panel 3: Resultados de Optimización -->
+                <div class="panel">
+                    <div>
+                        <h3>Resultados de Optimización</h3>
+                        <div style="border: 1px solid var(--border-color); height: 120px; background: #fafafa; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: #999; font-size: 0.8rem;">
+                            [ Gráfico de Convergencia de Fitness: Iteraciones vs Mejor Score ]
+                        </div>
+
+                        <div class="form-group">
+                            <label>Estadísticas del Mejor Calendario</label>
+                            <div class="stats-row"><span>Costo de Viaje Total:</span> <span>45,000 km</span></div>
+                            <div class="stats-row"><span>Días de Descanso:</span> <span>12</span></div>
+                            <div class="stats-row"><span>Puntación de Fitness:</span> <span>92/100</span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- Este es el único botón interactivo solicitado por el usuario -->
+                        <button class="btn btn-primary-active" onclick="ejecutarSimulacion()">Ejecutar Optimización</button>
+                        <button class="btn btn-secondary" disabled>Exportar Calendario</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. AGRADECIMIENTOS Y CRÉDITOS -->
+        <section class="section-content" style="text-align: center;">
+            <h2>Agradecimientos y Créditos</h2>
+            <p>Este proyecto fue desarrollado como parte de la investigación académica de tesis para el Instituto Tecnológico Autónomo de México (ITAM).</p>
+            <p>Agradecemos el apoyo de los asesores, profesores y la facultad de Ingeniería por las facilidades otorgadas en el modelado del algoritmo.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Leslie Hernández. Tesis de Ingeniería en Computación, ITAM.</p>
+        <p>Código fuente disponible y documentado en: <a href="https://github.com/" target="_blank">Ver repositorio de GitHub</a></p>
+    </footer>
+
+    <script>
+        function ejecutarSimulacion() {
+            alert("¡Optimización ejecutada con éxito!\n\nSe han recuperado de manera estática los datos de la base de datos preconfigurada para demostrar la convergencia del algoritmo.");
+        }
+    </script>
 </body>
 </html>

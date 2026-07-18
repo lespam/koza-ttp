@@ -68,9 +68,11 @@ urlpatterns = [
     path("configuracion/<int:pk>/generar_nuevos/", views.GenerarNuevosJuegosView.as_view(), name="configuracion_generar_nuevos"),
     
     #Programacion Genetica
-    path("programacion_genetica/<int:pk>", views.ProgramacionGenetica.as_view(), name="programacion_genetica"),
+    path("programacion_genetica/<int:pk>", views.RunProgramaGenetico.as_view(), name="ejecutar_programa_genetico"),
+    path("programacion_genetica/", views.ProgramacionGenetica.ejecutar_pg_por_defecto, name="pg_por_defecto"),
+    
     path("programacion_genetica/<int:pk>/arbol", views.CrearArbol.as_view(), name="crear_arbol"),
-    path("programacion_genetica/<int:pk>/run", views.RunProgramaGenetico.as_view(), name="ejecutar_programa_genetico"),
+    #path("programacion_genetica/<int:pk>/run", views.RunProgramaGenetico.as_view(), name="ejecutar_programa_genetico"),
     path("programacion_genetica/<int:pk>/run-alt", views.RunProgramaGeneticoAlt.as_view(), name="ejecutar_programa_genetico_alt"),
     path("svg/", views.my_view, name="vista-svg"),
     #path("programacion_genetica/", views.ProgramacionGenetica.as_view(), name="programacion_genetica"),
@@ -133,6 +135,7 @@ urlpatterns = [
     path("condicion/<int:pk>/delete/", views.CondicionDeleteView.as_view(), name="condicion_delete"),
     
     path("", views.index, name="index"),
+    path('configuracion/<int:config_id>/ejecutar/', views.ProgramacionGenetica.as_view(), name='ejecutar_programa_genetico'),
     #path("user/create/", views.DetailView.as_view(), name="user_create"),
 ]
 
