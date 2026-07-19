@@ -341,7 +341,7 @@ class ProgramaGenetico():
         pset.addEphemeralConstant("FechaRandom", toolbox.fecha_aleatoria, creator.DateType)
         pset.addADF(pset_inicial)
         
-        creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
+        creator.create("FitnessMin", base.Fitness, weights=(-100.0,))
         creator.create("Tree", gp.PrimitiveTree)
         creator.create("Individual", list, fitness=creator.FitnessMin)
         
@@ -435,7 +435,7 @@ class ProgramaGenetico():
         toolbox.register("equipo_aleatorio", self.equipo_aleatorio)
         main_cal.addEphemeralConstant("EquipoRandom", toolbox.equipo_aleatorio)
 
-        creator.create("FitnessMin", base.Fitness, weights=(1.0, -1.0))
+        creator.create("FitnessMin", base.Fitness, weights=(100.0, -1.0))
         creator.create("Individual", gp.PrimitiveTree, fitness=creator.FitnessMin)
         
         toolbox.register('genera_calendario', self.generador_de_calendarios_formateados)
@@ -449,7 +449,7 @@ class ProgramaGenetico():
         toolbox.register('expr', gp.genGrow, min_=10, max_=1000)
         toolbox.register('mutate', gp.mutNodeReplacement, pset=main_cal)
         
-        CXPB, MUTPB, NGEN = 0.2, 0.1, 10
+        CXPB, MUTPB, NGEN = 0.8, 0.2, 20
         POP_N = 100
         pop = toolbox.population(n=POP_N)
         hof = tools.HallOfFame(1)

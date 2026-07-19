@@ -36,9 +36,12 @@
         input, select { width: 100%; padding: 8px; border: 1px solid var(--border-color); border-radius: 4px; background: #f9f9f9; }
         .value-box { background: #eee; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; }
 
+        /* Estilos de la tabla dinámica */
+        .table-container { max-height: 250px; overflow-y: auto; margin-bottom: 10px; border: 1px solid var(--border-color); border-radius: 4px; }
         .mock-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-        .mock-table th, .mock-table td { border: 1px solid var(--border-color); text-align: center; padding: 8px; }
-        .mock-table th { background-color: #f0f0f0; }
+        .mock-table th, .mock-table td { border-bottom: 1px solid var(--border-color); text-align: center; padding: 8px; }
+        .mock-table th { background-color: #f0f0f0; position: sticky; top: 0; z-index: 1; }
+        .mock-table tbody tr:hover { background-color: #f9f9f9; }
 
         .stats-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee; }
         
@@ -68,43 +71,72 @@
         </section>
 
         <section class="dashboard-demo">
-            <h2 class="dashboard-title">Panel de Control: Configuración Activa (ID: {{ configuracion.id }})</h2>
+            <h2 class="dashboard-title">Panel de Control: Configuración Activa (ID: {{ configuracion.id|default:"N/A" }})</h2>
             
             <div class="grid-layout">
-                <!-- Panel 1: Parámetros -->
+                <!-- Panel 1: Parámetros Corregidos según el Modelo Configuracion -->
                 <div class="panel">
                     <h3>Configuración del Algoritmo</h3>
                     <div class="form-group">
                         <label>Población:</label>
-                        <div class="slider-container"><input type="range" disabled><span class="value-box">{{ configuracion.poblacion }}</span></div>
+                        <div class="slider-container">
+                            <input type="range" disabled value="{{ configuracion.poblacion|default:0 }}">
+                            <span class="value-box">{{ configuracion.poblacion|default:"0" }}</span>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Generaciones:</label>
-                        <div class="slider-container"><input type="range" disabled><span class="value-box">{{ configuracion.generaciones }}</span></div>
+                        <div class="slider-container">
+                            <input type="range" disabled value="{{ configuracion.generaciones|default:0 }}">
+                            <span class="value-box">{{ configuracion.generaciones|default:"0" }}</span>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Prob. Cruce:</label>
-                        <div class="slider-container"><input type="range" disabled><span class="value-box">{{ configuracion.probabilidad_de_cruce }}</span></div>
+                        <div class="slider-container">
+                            <input type="range" disabled step="0.01" min="0" max="1" value="{{ configuracion.probabilidad_de_cruce|default:0 }}">
+                            <span class="value-box">{{ configuracion.probabilidad_de_cruce|default:"0" }}</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Prob. Mutación:</label>
+                        <div class="slider-container">
+                            <input type="range" disabled step="0.01" min="0" max="1" value="{{ configuracion.probabilidad_de_reproduccion|default:0 }}">
+                            <span class="value-box">{{ configuracion.probabilidad_de_reproduccion|default:"0" }}</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Panel 2: Calendario -->
+                <!-- Panel 2: Calendario Dinámico Corregido según Modelo Juego y Relaciones -->
                 <div class="panel">
-                    <h3>Calendario Activo</h3>
-                    <table class="mock-table">
-                        <thead><tr><th>Fecha</th><th>Local</th><th>Visitante</th></tr></thead>
-                        <tbody>
-                            {% for juego in juegos %}
-                            <tr>
-                                <td>{{ juego.date }}</td>
-                                <td>{{ juego.team1 }}</td>
-                                <td>{{ juego.team2 }}</td>
-                            </tr>
-                            {% empty %}
-                            <tr><td colspan="3">Sin juegos generados</td></tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
+                    <h3>Calendario Activo: {{ calendario.torneo.nombre|default:"Sin Torneo" }} (ID: {{ calendario.id|default:"N/A" }})</h3>
+                    <div class="table-container">
+                        <table class="mock-table">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Local</th>
+                                    <th>Visitante</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for juego in juegos %}
+                                <tr>
+                                    <!-- Formateo de fecha_de_inicio compatible con el DateTimeField -->
+                                    <td>{{ juego.fecha_de_inicio|date:"d/m/Y"|default:juego.fecha_de_inicio }}</td>
+                                    <!-- Extracción de la propiedad team_abbreviation del modelo de relación Equipo -->
+                                    <td>{{ juego.equipo_en_casa.team_abbreviation|default:"EQA" }}</td>
+                                    <td>{{ juego.equipo_visita.team_abbreviation|default:"EQB" }}</td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="3" style="padding: 20px; color: #666;">No hay juegos generados para esta configuración.</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <p style="font-size: 0.75rem; color: #7f8c8d; text-align: center; margin-top: 5px;">Mostrando los encuentros del torneo registrados.</p>
                 </div>
 
                 <!-- Panel 3: Resultados Integrados -->
@@ -114,12 +146,21 @@
                         <div class="svg-miniature" onclick="openModal()">
                             {% autoescape off %}{{ svg_content }}{% endautoescape %}
                         </div>
-                        <p style="font-size: 0.7rem; color: #666; margin-top: 5px; text-align: center;">Haz clic en el gráfico para expandir</p>
+                        <p style="font-size: 0.7rem; color: #666; margin-top: 5px; text-align: center;">Haz clic en el árbol para expandir</p>
                         
-                        <div class="stats-row" style="margin-top: 10px;"><span>Costo Viaje:</span> <span>{{ distancia|floatformat:2 }} km</span></div>
-                        <div class="stats-row"><span>Violaciones:</span> <span>{{ diferencia|floatformat:2 }}</span></div>
+                        <div class="stats-row" style="margin-top: 10px;">
+                            <span>Costo Viaje:</span> 
+                            <!-- Inyección dinámica de la unidad del modelo Torneo -->
+                            <strong>{{ distancia|floatformat:2 }} {{ calendario.torneo.unidad|default:"km" }}</strong>
+                        </div>
+                        <div class="stats-row">
+                            <span>Violaciones:</span> 
+                            <strong>{{ diferencia|floatformat:0 }}</strong>
+                        </div>
                     {% else %}
-                        <p style="text-align: center; color: #666; padding: 20px;">Presiona ejecutar para ver resultados.</p>
+                        <div style="text-align: center; padding: 45px 10px; color: #7f8c8d; border: 1px dashed var(--border-color); border-radius: 8px;">
+                            <p>Presiona <strong>Ejecutar Optimización</strong> para procesar el algoritmo genético y ver el árbol de resultados.</p>
+                        </div>
                     {% endif %}
                     
                     <a href="?ejecutar=true" class="btn-primary-active" style="margin-top: 15px;">Ejecutar Optimización</a>
@@ -128,7 +169,7 @@
         </section>
     </div>
 
-    <!-- Modal para Zoom -->
+    <!-- Modal para Zoom de la gráfica generada -->
     <div id="svgModal" class="modal" onclick="closeModal()">
         <span class="close-btn">&times;</span>
         <div class="modal-content" onclick="event.stopPropagation()">

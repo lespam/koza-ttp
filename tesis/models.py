@@ -181,34 +181,70 @@ class Calendario(models.Model):
         #result = planificador.calcular_distancia(expresion)
         return result
     def ejecutar_programa_genetico(self):
-        planificador = ModuloPlanificador()
-        planificador.establecer_equipos(self.obtener_equipos_participantes())
-        lista_fechas = []
-        fecha = self.torneo.fecha_inicio
-        while fecha <= self.torneo.fecha_fin:
-            lista_fechas.append(fecha.isoformat())
-            fecha = fecha + datetime.timedelta(days=1)
-        planificador.establecer_fechas(lista_fechas)
-        planificador.setNumeroDeJuegosPorEquipoTorneo(self.get_numero_de_juegos_torneo())
-        planificador.establecer_numero_de_juegos_por_equipo(self.get_numero_de_juegos())
-        planificador.setNumeroDeSeriesPorEquipo(self.get_numero_de_series())
-        
-        # Fetch the QuerySet
-        queryset = Equipo.objects.filter(ligas__torneo__pk=self.torneo.pk).values_list('team_abbreviation', 'lat', 'lon')
-
-        # Check if the QuerySet is not empty
-        if queryset:
-            # Create the DataFrame
-            coordenadas_equipos = pd.DataFrame(list(queryset), columns=['equipo', 'lat', 'lon'])
-        else:
-            print("The QuerySet is empty. Please check your filter criteria.")
-        #coordenadas_equipos = pd.DataFrame(Equipo.objects.filter(ligas__torneo__pk=self.torneo.pk).values_list('team_abbreviation', 'lat', 'lon'), columns=['equipo', 'lat', 'lon'])
-        planificador.establecer_coordenadas_equipos(coordenadas_equipos)
-        result = planificador.ejecutar_programa_genetico()
-        resulta = result[0]
-        resultb = result[1]
-        
-        return [resulta, resultb]
+            planificador = ModuloPlanificador()
+            planificador.establecer_equipos(self.obtener_equipos_participantes())
+            
+            lista_fechas = []
+            fecha = self.torneo.fecha_inicio
+            while fecha <= self.torneo.fecha_fin:
+                lista_fechas.append(fecha.isoformat())
+                fecha = fecha + datetime.timedelta(days=1)
+            planificador.establecer_fechas(lista_fechas)
+            planificador.setNumeroDeJuegosPorEquipoTorneo(self.get_numero_de_juegos_torneo())
+            planificador.establecer_numero_de_juegos_por_equipo(self.get_numero_de_juegos())
+            planificador.setNumeroDeSeriesPorEquipo(self.get_numero_de_series())
+            
+            # Obtener coordenadas de los equipos
+            queryset = Equipo.objects.filter(ligas__torneo__pk=self.torneo.pk).values_list('team_abbreviation', 'lat', 'lon')
+            if queryset:
+                coordenadas_equipos = pd.DataFrame(list(queryset), columns=['equipo', 'lat', 'lon'])
+            else:
+                coordenadas_equipos = pd.DataFrame(columns=['equipo', 'lat', 'lon'])
+                print("The QuerySet is empty. Please check your filter criteria.")
+                
+            planificador.establecer_coordenadas_equipos(coordenadas_equipos)
+            
+            # 1. EJECUTAR EL ALGORITMO EVOLUTIVO
+            result = planificador.ejecutar_programa_genetico()
+            arbol_optimo = result[0]
+            diferencia_fitness = result[1]
+            
+            # =====================================================================
+            # 2. PERSISTENCIA EN BASE DE DATOS DE LOS JUEGOS OPTIMIZADOS
+            # =====================================================================
+            # Primero, limpiamos los juegos y series viejas de este calendario para evitar duplicados
+            Juego.objects.filter(serie__calendario=self).delete()
+            
+            # Extraemos los juegos calculados por el algoritmo evolutivo desde el planificador.
+            # Nota: Ajusta 'obtener_calendario_inicial()' por el método correspondiente de tu
+            # ModuloPlanificador que extraiga los juegos de la solución final si difiere de este.
+            try:
+                juegos_optimos = planificador.obtener_calendario_inicial() 
+                
+                for juego_dict in juegos_optimos:
+                    # Obtenemos o creamos la serie asignada en este calendario
+                    serie, _ = Serie.objects.get_or_create(
+                        calendario=self, 
+                        numero_de_serie=juego_dict['numero_de_serie']
+                    )
+                    
+                    # Obtenemos los objetos de los equipos correspondientes mediante su abreviación
+                    equipo_en_casa = Equipo.objects.get(team_abbreviation=juego_dict['equipo1'].team_abbreviation)
+                    equipo_visita = Equipo.objects.get(team_abbreviation=juego_dict['equipo2'].team_abbreviation)
+                    
+                    # Guardamos el juego optimizado de manera real en la Base de Datos
+                    Juego.objects.create(
+                        serie=serie,
+                        fecha_de_inicio=juego_dict['fecha_de_inicio'],
+                        fecha_de_fin=juego_dict['fecha_de_fin'],
+                        equipo_en_casa=equipo_en_casa,
+                        equipo_visita=equipo_visita
+                    )
+            except Exception as e:
+                print(f"Error guardando los encuentros optimizados en la BD: {e}")
+            
+            # 3. DEVOLVEMOS EL ÁRBOL Y EL FITNESS DE MANERA NORMAL
+            return [arbol_optimo, diferencia_fitness]
         #return result
     def ejecutar_programa_genetico_alt(self):
         planificador = ModuloPlanificador()
