@@ -43,7 +43,8 @@ ALLOWED_HOSTS = [
     "lesliedickinson.dev",
     "www.lesliedickinson.dev",
     "koza-ttp.lesliedickinson.dev",
-    "20.118.249.226",
+    "20.98.160.139",
+    "98.169.98.231"
 ]
 
 SECURE_HSTS_PRELOAD = True
