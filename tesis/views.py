@@ -32,7 +32,7 @@ class DashboardView(View):
     """
     def get(self, request, *args, **kwargs):
         # 1. Obtener la configuración por defecto (ID 5)
-        config = get_object_or_404(Configuracion, pk=5)
+        config = get_object_or_404(Configuracion, pk=4)
         
         # Empezamos asumiendo que mostraremos el calendario base de la configuración
         calendario_actual = config.calendario

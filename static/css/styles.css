@@ -1,0 +1,314 @@
+:root {
+    --bg-gradient: linear-gradient(135deg, #0d3b66, #006466);
+    --panel-bg: #ffffff;
+    --primary-blue: #0a2540;
+    --accent-green: #007f5f;
+    --accent-green-hover: #009624;
+    --text-dark: #333333;
+    --border-color: #dddddd;
+    --callout-bg: #eef9ff;
+    --modal-overlay: rgba(0, 0, 0, 0.85);
+}
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body { 
+    background-color: #f4f6f9; 
+    color: var(--text-dark); 
+    line-height: 1.6; 
+}
+
+header { 
+    background: var(--primary-blue); 
+    color: white; 
+    padding: 40px 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+.container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.section-content { 
+    background: white; 
+    padding: 30px; 
+    border-radius: 8px; 
+    margin-bottom: 30px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+}
+
+.section-content h2 { 
+    color: var(--primary-blue); 
+    border-bottom: 3px solid var(--accent-green); 
+    display: inline-block; 
+    margin-bottom: 15px; 
+    padding-bottom: 5px; 
+}
+
+.section-content h3 { 
+    color: var(--primary-blue); 
+    margin: 20px 0 10px 0; 
+    font-size: 1.25rem; 
+}
+
+.section-content h4 { 
+    color: var(--accent-green); 
+    margin: 15px 0 5px 0; 
+    font-size: 1.05rem; 
+}
+
+.section-content ul, .section-content ol { 
+    margin-left: 20px; 
+    margin-bottom: 15px; 
+}
+
+.section-content li { 
+    margin-bottom: 8px; 
+}
+
+.dashboard-demo { 
+    background: var(--bg-gradient); 
+    padding: 30px; 
+    border-radius: 12px; 
+    margin-bottom: 30px; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); 
+}
+
+.dashboard-title { 
+    color: white; 
+    font-size: 1.5rem; 
+    margin-bottom: 20px; 
+}
+
+.grid-layout { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 20px; 
+}
+
+.panel { 
+    background: var(--panel-bg); 
+    border-radius: 8px; 
+    padding: 20px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.panel h3 { 
+    background: var(--primary-blue); 
+    color: white; 
+    padding: 10px; 
+    margin: -20px -20px 20px -20px; 
+    border-radius: 8px 8px 0 0; 
+    font-size: 1.1rem; 
+}
+
+.form-group { 
+    margin-bottom: 15px; 
+}
+
+.slider-container { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+input, select { 
+    width: 100%; 
+    padding: 8px; 
+    border: 1px solid var(--border-color); 
+    border-radius: 4px; 
+    background: #f9f9f9; 
+}
+
+.value-box { 
+    background: #eee; 
+    padding: 4px 8px; 
+    border-radius: 4px; 
+    font-size: 0.85rem; 
+    font-weight: bold; 
+}
+
+.table-container { 
+    max-height: 250px; 
+    overflow-y: auto; 
+    margin-bottom: 10px; 
+    border: 1px solid var(--border-color); 
+    border-radius: 4px; 
+}
+
+.mock-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    font-size: 0.85rem; 
+}
+
+.mock-table th, .mock-table td { 
+    border-bottom: 1px solid var(--border-color); 
+    text-align: center; 
+    padding: 8px; 
+}
+
+.mock-table th { 
+    background-color: #f0f0f0; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1; 
+}
+
+.mock-table tbody tr:hover { 
+    background-color: #f9f9f9; 
+}
+
+.no-data {
+    padding: 20px; 
+    color: #666;
+}
+
+.footer-note {
+    font-size: 0.75rem; 
+    color: #7f8c8d; 
+    text-align: center; 
+    margin-top: 5px;
+}
+
+.stats-row { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 8px 0; 
+    border-bottom: 1px solid #eee; 
+}
+
+.btn-primary-active { 
+    display: block; 
+    width: 100%; 
+    padding: 12px; 
+    background-color: var(--accent-green); 
+    color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    border-radius: 4px; 
+    font-weight: bold; 
+    transition: 0.3s; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.btn-primary-active:hover { 
+    background-color: var(--accent-green-hover); 
+}
+
+footer { 
+    background: var(--primary-blue); 
+    color: white; 
+    text-align: center; 
+    padding: 25px; 
+    margin-top: 40px; 
+    font-size: 0.9rem; 
+}
+
+.svg-miniature { 
+    cursor: pointer; 
+    border: 2px solid var(--border-color); 
+    padding: 5px; 
+    background: #fff; 
+    border-radius: 4px; 
+    max-height: 180px; 
+    overflow: hidden; 
+    transition: transform 0.2s; 
+}
+
+.svg-miniature:hover { 
+    transform: scale(1.01); 
+    border-color: var(--accent-green); 
+}
+
+.svg-miniature svg { 
+    width: 100%; 
+    height: auto; 
+}
+
+.zoom-helper-text {
+    font-size: 0.7rem; 
+    color: #666; 
+    margin-top: 5px; 
+    text-align: center;
+}
+
+.empty-state-box {
+    text-align: center; 
+    padding: 45px 10px; 
+    color: #7f8c8d; 
+    border: 1px dashed var(--border-color); 
+    border-radius: 8px;
+}
+
+.execution-callout {
+    background-color: var(--callout-bg); 
+    padding: 15px; 
+    border-left: 4px solid var(--accent-green); 
+    margin: 15px 0; 
+    border-radius: 0 4px 4px 0;
+}
+
+.top-margin {
+    margin-top: 15px;
+}
+
+.modal { 
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: var(--modal-overlay); 
+    backdrop-filter: blur(4px); 
+}
+
+.modal-content { 
+    margin: 2% auto; 
+    width: 90%; 
+    max-width: 1000px; 
+    background: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    position: relative; 
+    max-height: 90vh; 
+    overflow: auto; 
+}
+
+.close-btn { 
+    position: absolute; 
+    top: 10px; 
+    right: 20px; 
+    font-size: 40px; 
+    cursor: pointer; 
+    color: var(--primary-blue); 
+    font-weight: bold; 
+}
+
+.svg-container-full svg { 
+    width: 100%; 
+    height: auto; 
+}
+
+code { 
+    background: #f0f0f0; 
+    padding: 2px 6px; 
+    border-radius: 4px; 
+    font-family: monospace; 
+    font-size: 0.95rem; 
+    color: #b7094c; 
+}

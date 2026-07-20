@@ -1,115 +1,67 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROGRAMACIÓN GENÉTICA - Planificación Béisbol</title>
-    <style>
-        :root {
-            --bg-gradient: linear-gradient(135deg, #0d3b66, #006466);
-            --panel-bg: #ffffff;
-            --primary-blue: #0a2540;
-            --accent-green: #007f5f;
-            --accent-green-hover: #009624;
-            --text-dark: #333333;
-            --border-color: #dddddd;
-        }
-
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #f4f6f9; color: var(--text-dark); line-height: 1.6; }
-        
-        header { background: var(--primary-blue); color: white; padding: 40px 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
-        
-        .section-content { background: white; padding: 30px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .section-content h2 { color: var(--primary-blue); border-bottom: 3px solid var(--accent-green); display: inline-block; margin-bottom: 15px; }
-
-        .dashboard-demo { background: var(--bg-gradient); padding: 30px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); }
-        .dashboard-title { color: white; font-size: 1.5rem; margin-bottom: 20px; }
-
-        .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
-        .panel { background: var(--panel-bg); border-radius: 8px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: flex; flex-direction: column; justify-content: space-between; }
-        .panel h3 { background: var(--primary-blue); color: white; padding: 10px; margin: -20px -20px 20px -20px; border-radius: 8px 8px 0 0; font-size: 1.1rem; }
-
-        .form-group { margin-bottom: 15px; }
-        .slider-container { display: flex; align-items: center; gap: 10px; }
-        input, select { width: 100%; padding: 8px; border: 1px solid var(--border-color); border-radius: 4px; background: #f9f9f9; }
-        .value-box { background: #eee; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; }
-
-        /* Estilos de la tabla dinámica */
-        .table-container { max-height: 250px; overflow-y: auto; margin-bottom: 10px; border: 1px solid var(--border-color); border-radius: 4px; }
-        .mock-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-        .mock-table th, .mock-table td { border-bottom: 1px solid var(--border-color); text-align: center; padding: 8px; }
-        .mock-table th { background-color: #f0f0f0; position: sticky; top: 0; z-index: 1; }
-        .mock-table tbody tr:hover { background-color: #f9f9f9; }
-
-        .stats-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee; }
-        
-        .btn-primary-active { display: block; width: 100%; padding: 12px; background-color: var(--accent-green); color: white; text-align: center; text-decoration: none; border-radius: 4px; font-weight: bold; transition: 0.3s; }
-        .btn-primary-active:hover { background-color: var(--accent-green-hover); }
-
-        footer { background: var(--primary-blue); color: white; text-align: center; padding: 25px; margin-top: 40px; font-size: 0.9rem; }
-
-        /* Estilos para el Modal y Miniatura */
-        .svg-miniature { cursor: pointer; border: 2px solid var(--border-color); padding: 5px; background: #fff; border-radius: 4px; max-height: 180px; overflow: hidden; transition: transform 0.2s; }
-        .svg-miniature:hover { transform: scale(1.01); border-color: var(--accent-green); }
-        .svg-miniature svg { width: 100%; height: auto; }
-
-        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); backdrop-filter: blur(4px); }
-        .modal-content { margin: 2% auto; width: 90%; max-width: 1000px; background: white; padding: 20px; border-radius: 8px; position: relative; max-height: 90vh; overflow: auto; }
-        .close-btn { position: absolute; top: 10px; right: 20px; font-size: 40px; cursor: pointer; color: var(--primary-blue); font-weight: bold; }
-        .svg-container-full svg { width: 100%; height: auto; }
-    </style>
+    <title>Programación genética - Planificación de béisbol</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <header><h1>PROGRAMACIÓN GENÉTICA EN LA PLANIFICACIÓN DE TEMPORADAS DE BÉISBOL</h1></header>
+    <header>
+        <h1>⚾ Programación genética en la planificación de temporadas de béisbol</h1>
+    </header>
 
     <div class="container">
+        
         <section class="section-content">
-            <h2>Introducción al Proyecto</h2>
-            <p>Optimización logística mediante algoritmos evolutivos para el diseño de calendarios deportivos eficientes.</p>
+            <h2>👋 ¡Bienvenido a la aplicación!</h2>
+            <p>Este sistema interactivo busca resolver de manera óptima la organización y logística de un calendario para una temporada completa de béisbol. Para lograrlo, implementamos una técnica de inteligencia artificial avanzada inspirada directamente en la evolución natural de las especies. 🌿</p>
+            
+            <p>La <strong>programación genética</strong> consiste en crear, evaluar y modificar soluciones de forma automática a partir de una población inicial de programas. Esto se logra ejecutando operaciones bioinspiradas como la selección natural, el cruzamiento y la mutación. En este entorno, cada programa generado se estructura internamente como un árbol de expresión que representa una solución potencial para nuestro calendario.</p>
+            
+            <p>El algoritmo evalúa continuamente cada árbol mediante un criterio estricto de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar características clave y generar nuevos árboles cada vez más prometedores. 📈 ¡Este proceso se repite en un bucle evolutivo hasta hallar la solución óptima y más eficiente!</p>
         </section>
 
         <section class="dashboard-demo">
-            <h2 class="dashboard-title">Panel de Control: Configuración Activa (ID: {{ configuracion.id|default:"N/A" }})</h2>
+            <h2 class="dashboard-title">🛠️ Panel de control: configuración activa (ID: {{ configuracion.id|default:"N/A" }})</h2>
             
             <div class="grid-layout">
-                <!-- Panel 1: Parámetros Corregidos según el Modelo Configuracion -->
                 <div class="panel">
-                    <h3>Configuración del Algoritmo</h3>
+                    <h3>⚙️ Configuración del algoritmo</h3>
                     <div class="form-group">
-                        <label>Población:</label>
+                        <label for="pop-slider">Tamaño de la población:</label>
                         <div class="slider-container">
-                            <input type="range" disabled value="{{ configuracion.poblacion|default:0 }}">
+                            <input type="range" id="pop-slider" disabled value="{{ configuracion.poblacion|default:0 }}">
                             <span class="value-box">{{ configuracion.poblacion|default:"0" }}</span>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Generaciones:</label>
+                        <label for="ngen-slider">Número de generaciones:</label>
                         <div class="slider-container">
-                            <input type="range" disabled value="{{ configuracion.generaciones|default:0 }}">
+                            <input type="range" id="ngen-slider" disabled value="{{ configuracion.generaciones|default:0 }}">
                             <span class="value-box">{{ configuracion.generaciones|default:"0" }}</span>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Prob. Cruce:</label>
+                        <label for="cxpb-slider">Probabilidad de cruce:</label>
                         <div class="slider-container">
-                            <input type="range" disabled step="0.01" min="0" max="1" value="{{ configuracion.probabilidad_de_cruce|default:0 }}">
+                            <input type="range" id="cxpb-slider" disabled step="0.01" min="0" max="1" value="{{ configuracion.probabilidad_de_cruce|default:0 }}">
                             <span class="value-box">{{ configuracion.probabilidad_de_cruce|default:"0" }}</span>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Prob. Mutación:</label>
+                        <label for="mutpb-slider">Probabilidad de mutación:</label>
                         <div class="slider-container">
-                            <input type="range" disabled step="0.01" min="0" max="1" value="{{ configuracion.probabilidad_de_reproduccion|default:0 }}">
+                            <input type="range" id="mutpb-slider" disabled step="0.01" min="0" max="1" value="{{ configuracion.probabilidad_de_reproduccion|default:0 }}">
                             <span class="value-box">{{ configuracion.probabilidad_de_reproduccion|default:"0" }}</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Panel 2: Calendario Dinámico Corregido según Modelo Juego y Relaciones -->
                 <div class="panel">
-                    <h3>Calendario Activo: {{ calendario.torneo.nombre|default:"Sin Torneo" }} (ID: {{ calendario.id|default:"N/A" }})</h3>
+                    <h3>📅 Calendario activo: {{ calendario.torneo.nombre|default:"Sin torneo" }} (ID: {{ calendario.id|default:"N/A" }})</h3>
                     <div class="table-container">
                         <table class="mock-table">
                             <thead>
@@ -122,68 +74,116 @@
                             <tbody>
                                 {% for juego in juegos %}
                                 <tr>
-                                    <!-- Formateo de fecha_de_inicio compatible con el DateTimeField -->
                                     <td>{{ juego.fecha_de_inicio|date:"d/m/Y"|default:juego.fecha_de_inicio }}</td>
-                                    <!-- Extracción de la propiedad team_abbreviation del modelo de relación Equipo -->
                                     <td>{{ juego.equipo_en_casa.team_abbreviation|default:"EQA" }}</td>
                                     <td>{{ juego.equipo_visita.team_abbreviation|default:"EQB" }}</td>
                                 </tr>
                                 {% empty %}
                                 <tr>
-                                    <td colspan="3" style="padding: 20px; color: #666;">No hay juegos generados para esta configuración.</td>
+                                    <td colspan="3" class="no-data">No hay juegos generados para esta configuración.</td>
                                 </tr>
                                 {% endfor %}
                             </tbody>
                         </table>
                     </div>
-                    <p style="font-size: 0.75rem; color: #7f8c8d; text-align: center; margin-top: 5px;">Mostrando los encuentros del torneo registrados.</p>
+                    <p class="footer-note">📍 Mostrando los encuentros del torneo registrados en la base de datos.</p>
                 </div>
 
-                <!-- Panel 3: Resultados Integrados -->
                 <div class="panel">
-                    <h3>Resultados de Optimización</h3>
+                    <h3>🏆 Resultados de optimización</h3>
                     {% if svg_content %}
-                        <div class="svg-miniature" onclick="openModal()">
+                        <div class="svg-miniature" id="open-modal-trigger">
                             {% autoescape off %}{{ svg_content }}{% endautoescape %}
                         </div>
-                        <p style="font-size: 0.7rem; color: #666; margin-top: 5px; text-align: center;">Haz clic en el árbol para expandir</p>
+                        <p class="zoom-helper-text">🔍 Haz clic en el árbol para expandir</p>
                         
-                        <div class="stats-row" style="margin-top: 10px;">
-                            <span>Costo Viaje:</span> 
-                            <!-- Inyección dinámica de la unidad del modelo Torneo -->
+                        <div class="stats-row top-margin">
+                            <span>Costo de viaje total:</span> 
                             <strong>{{ distancia|floatformat:2 }} {{ calendario.torneo.unidad|default:"km" }}</strong>
                         </div>
                         <div class="stats-row">
-                            <span>Violaciones:</span> 
+                            <span>Violaciones de reglas:</span> 
                             <strong>{{ diferencia|floatformat:0 }}</strong>
                         </div>
                     {% else %}
-                        <div style="text-align: center; padding: 45px 10px; color: #7f8c8d; border: 1px dashed var(--border-color); border-radius: 8px;">
-                            <p>Presiona <strong>Ejecutar Optimización</strong> para procesar el algoritmo genético y ver el árbol de resultados.</p>
+                        <div class="empty-state-box">
+                            <p>Presiona el botón de abajo para activar el algoritmo genético y desplegar el árbol de soluciones sintácticas. 🚀</p>
                         </div>
                     {% endif %}
                     
-                    <a href="?ejecutar=true" class="btn-primary-active" style="margin-top: 15px;">Ejecutar Optimización</a>
+                    <a href="?ejecutar=true" class="btn-primary-active top-margin">🚀 Ejecutar optimización</a>
                 </div>
             </div>
         </section>
+
+        <section class="section-content">
+            <h2>📖 Guía operativa del sistema</h2>
+            
+            <h3>🔹 Instrucciones de inicio rápido</h3>
+            <p>Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos secuenciales:</p>
+            <ol>
+                <li>Crea un equipo, una liga y un torneo respectivo en tus paneles administrativos. <strong>Nota importante:</strong> el número total de equipos participantes debe ser par. 👥</li>
+                <li>Una vez que tengas definidos los participantes, dirígete al panel de arriba, selecciona tu torneo activo y haz clic en el botón verde <strong>"Ejecutar optimización"</strong> para estructurar el calendario automatizado.</li>
+            </ol>
+
+            <h3>⚙️ Lógica interna y flujo algorítmico de la IA</h3>
+            <p>¿Qué sucede internamente cuando el software se pone en marcha? Aquí te mostramos paso a paso el ciclo de vida evasivo basado en programación genética:</p>
+
+            <h4>1. Configuración e hiperparámetros base</h4>
+            <p>Se cargan las variables del panel que definirán las generaciones, el tamaño inicial de la población, así como las tasas de probabilidad asociadas al cruce y la mutación genómica.</p>
+
+            <h4>2. Definición de operadores y bloques estructurales (gramática)</h4>
+            <ul>
+                <li><strong>Las primitivas:</strong> son las operaciones lógicas que un programa ejecuta para construir el árbol.
+                    <ul>
+                        <li><code>crear_juego(fecha, equipo_en_casa, equipo_de_visita, lista) -> lista</code></li>
+                        <li><code>agregar_lista(lista, lista) -> lista</code></li>
+                    </ul>
+                </li>
+                <li><strong>Las terminales:</strong> representan los datos constantes o variables básicas estructuradas del torneo.
+                    <ul>
+                        <li><code>Fecha</code> (listas maestros de días hábiles)</li>
+                        <li><code>Equipo</code> (tanto en condición de casa como de visita)</li>
+                        <li><code>Lista</code> (inicializador vacío)</li>
+                    </ul>
+                </li>
+                <li><strong>Las efímeras:</strong> son valores aleatorios puros que se introducen en nodos específicos para inyectar variabilidad matemática al sistema.
+                    <ul>
+                        <li>Fecha aleatoria y equipo aleatorio.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>3. Inicialización, ciclo evolutivo y convergencia</h4>
+            
+            <div class="execution-callout">
+                <strong>📍 Fase de ejecución en vivo:</strong> El sistema genera una población inicial aleatoria y convierte cada propuesta en una estructura jerárquica de árbol (syntax tree). ¡Aquí es donde ocurre la magia computacional! ✨
+            </div>
+
+            <ol start="3">
+                <li><strong>Visualización y muestreo:</strong> Se procesa la población inicial y se genera el renderizado de los árboles mediante el generador de sintaxis.</li>
+                <li><strong>Evaluación de aptitud:</strong> Se calcula el valor de <em>fitness</em> de cada individuo en base a la distancia acumulada en kilómetros y el cumplimiento normativo.</li>
+                <li><strong>Selección natural:</strong> Se escogen los mejores individuos de la ronda anterior para actuar como padres biológicos de la nueva generación.</li>
+                <li><strong>Cruzamiento, mutación y herencia:</strong> Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando mutaciones en nodos aleatorios.</li>
+                <li><strong>Bucle iterativo:</strong> Se repiten secuencialmente los pasos de evaluación, selección y reproducción hasta completar el total de generaciones configuradas en la interfaz.</li>
+                <li><strong>Resultados oficiales:</strong> El mejor individuo obtenido en la última iteración se valida y su estructura interna se almacena como el calendario definitivo del torneo de béisbol. 🏆🎉</li>
+            </ol>
+        </section>
+
     </div>
 
-    <!-- Modal para Zoom de la gráfica generada -->
-    <div id="svgModal" class="modal" onclick="closeModal()">
-        <span class="close-btn">&times;</span>
-        <div class="modal-content" onclick="event.stopPropagation()">
+    <div id="svgModal" class="modal">
+        <span class="close-btn" id="close-modal-trigger">&times;</span>
+        <div class="modal-content" id="modal-content-wrapper">
             <div class="svg-container-full">
                 {% autoescape off %}{{ svg_content }}{% endautoescape %}
             </div>
         </div>
     </div>
 
-    <script>
-        function openModal() { document.getElementById("svgModal").style.display = "block"; }
-        function closeModal() { document.getElementById("svgModal").style.display = "none"; }
-    </script>
-
-    <footer><p>© 2026 Leslie Dickinson | Tesis de Ingeniería en Computación | ITAM</p></footer>
+    <script src="{% static 'js/app.js' %}"></script>
+    <footer>
+        <p> © 2026 Leslie Dickinson | Tesis de Ingeniería en Computación | ITAM</p>
+    </footer>
 </body>
 </html>

@@ -33,7 +33,7 @@ except KeyError as e:
     raise RuntimeError("Could not find a SECRET_KEY in environment") from e
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ["SECRET_KEY"]
+DEBUG = False
 
 #ALLOWED_HOSTS = ['3.218.255.146', 'lespam.fun']
 ALLOWED_HOSTS = [
@@ -43,6 +43,8 @@ ALLOWED_HOSTS = [
     "lesliedickinson.dev",
     "www.lesliedickinson.dev",
     "koza-ttp.lesliedickinson.dev",
+    ".koza-ttp.lesliedickinson.dev",
+    "www.koza-ttp.lesliedickinson.dev",
     "20.98.160.139",
     "98.169.98.231"
 ]
