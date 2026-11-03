@@ -4,6 +4,7 @@ Copias de preservación de los materiales de la tesis. Todas llevan marca de agu
 
 | Archivo | Descripción | Fecha |
 |---|---|---|
+| `2026-05_tesis_version_pre-oficial.pdf` | Documento escrito de la tesis, **versión pre-oficial** (114 páginas). No es la versión oficial publicada por el ITAM | Mayo de 2026 |
 | `2026-07-23_defensa_presentacion.pdf` | Presentación de la defensa (12 diapositivas) | 23 de julio de 2026 |
 
 - **Autora:** Leslie Dickinson (tesis publicada como Leslie Pamela Brenes Valencia)
@@ -21,5 +22,14 @@ Si eres titular de alguna imagen y quieres que se retire, abre un *issue* en est
 `marca_de_agua.py` agrega la marca a cualquier PDF:
 
 ```bash
-python docs/tesis/marca_de_agua.py original.pdf salida.pdf
+python docs/tesis/marca_de_agua.py original.pdf salida.pdf ["Asunto"] ["Etiqueta"]
 ```
+
+Ejemplo usado para la tesis:
+
+```bash
+python docs/tesis/marca_de_agua.py Tesis_ITAM_Leslie_2026.pdf 2026-05_tesis_version_pre-oficial.pdf \
+  "Documento de tesis, ITAM, 2026 (versión pre-oficial)" "Versión pre-oficial"
+```
+
+El original sin marca no se guarda en este repositorio.

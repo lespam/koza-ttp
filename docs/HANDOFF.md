@@ -132,7 +132,7 @@ Dependencias: `deap pandas numpy matplotlib haversine django pygraphviz`. `pygra
 
 ## 8. Pendientes
 
-1. **Documento escrito de la tesis (versión pre-oficial).** `Tesis_ITAM_Leslie_2026.pdf`, de 3.77 MB. La subida por el chat falló dos veces y la causa es desconocida. Alternativa: subirlo por GitHub a `docs/tesis/` en la rama de trabajo. Después, aplicarle la marca de agua, borrar el original y marcarlo como "versión pre-oficial".
+1. ~~**Documento escrito de la tesis (versión pre-oficial).**~~ **Hecho (3 nov 2026):** `docs/tesis/2026-05_tesis_version_pre-oficial.pdf`. `Tesis_ITAM_Leslie_2026.pdf`, de 3.77 MB. La subida por el chat falló dos veces y la causa es desconocida. Alternativa: subirlo por GitHub a `docs/tesis/` en la rama de trabajo. Después, aplicarle la marca de agua, borrar el original y marcarlo como "versión pre-oficial".
 2. **Línea de tiempo.** Pedir a la autora las fechas clave: inicio, protocolo, avances, defensa y aprobación. El historial de git solo cubre de mayo a julio de 2026.
 3. Ajustar los dos puntos atados a Django (sección 5.2), si se aprueba la arquitectura híbrida.
 
@@ -142,4 +142,5 @@ Dependencias: `deap pandas numpy matplotlib haversine django pygraphviz`. `pygra
 - `docs/tesis/marca_de_agua.py`: script para aplicar la marca. Uso: `python docs/tesis/marca_de_agua.py original.pdf salida.pdf`.
 - `docs/tesis/README.md`: ficha de la tesis y aviso de uso de imágenes.
 - `README.md`: autoría y cita actualizadas.
+- `docs/tesis/2026-05_tesis_version_pre-oficial.pdf`: documento de la tesis con marca de agua y etiqueta "Versión pre-oficial".
 - `docs/HANDOFF.md`: este documento.
