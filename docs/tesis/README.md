@@ -10,7 +10,11 @@ Copias de preservación de los materiales de la tesis. Todas llevan marca de agu
 - **Asesor:** Dr. Andrés Gómez de Silva Garza
 - **Institución:** Instituto Tecnológico Autónomo de México (ITAM), Ingeniería en Computación
 
-Las imágenes de terceros que aparecen en la presentación pertenecen a sus autores. Las fuentes están en la última página del PDF.
+## Uso de imágenes de terceros
+
+Este es un proyecto académico y de divulgación **sin fines de lucro**. Las imágenes de terceros que aparecen en la presentación (logotipos, fotografías y capturas) pertenecen a sus respectivos autores y titulares. Se usan solo con fines educativos y de ilustración. Las fuentes están en la última página del PDF.
+
+Si eres titular de alguna imagen y quieres que se retire, abre un *issue* en este repositorio y se atenderá.
 
 ## Marca de agua
 
