@@ -1,0 +1,32 @@
+name: Deploy
+
+# Cada push a main se publica en la VM de Azure (deploy/deploy.sh).
+# Secretos del repositorio: VM_HOST (IP de la VM) y VM_SSH_KEY (llave privada koza_ttp_azure).
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Deploy over SSH
+        env:
+          VM_HOST: ${{ secrets.VM_HOST }}
+          VM_SSH_KEY: ${{ secrets.VM_SSH_KEY }}
+        run: |
+          if [ -z "$VM_HOST" ] || [ -z "$VM_SSH_KEY" ]; then
+            echo "VM_HOST / VM_SSH_KEY no están configurados; no se despliega."
+            exit 0
+          fi
+          mkdir -p ~/.ssh
+          echo "$VM_SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H "$VM_HOST" >> ~/.ssh/known_hosts
+          ssh ubuntu@"$VM_HOST" 'bash /srv/koza-ttp/deploy/deploy.sh'

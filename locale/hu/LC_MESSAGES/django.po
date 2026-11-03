@@ -1,0 +1,366 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: koza-ttp\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética - Planificación de béisbol"
+msgstr "Genetikai programozás – Baseball tervezés"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Idioma"
+msgstr "Nyelv"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambiar"
+msgstr "Változás"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética en la planificación de temporadas de béisbol"
+msgstr "Genetikai programozás a baseball szezontervezésben"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¡Bienvenido a la aplicación!"
+msgstr "Üdvözlünk az alkalmazásban!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Este sistema interactivo busca resolver de manera óptima la organización y "
+"logística de un calendario para una temporada completa de béisbol. Para "
+"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
+"inspirada directamente en la evolución natural de las especies."
+msgstr ""
+"Ez az interaktív rendszer arra törekszik, hogy optimálisan megoldja a naptár"
+" szervezését és logisztikáját egy teljes baseballszezonra. Ennek érdekében "
+"egy fejlett mesterséges intelligencia technikát vezettünk be, amelyet "
+"közvetlenül a fajok természetes evolúciója inspirál."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La <strong>programación genética</strong> consiste en crear, evaluar y "
+"modificar soluciones de forma automática a partir de una población inicial "
+"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
+"selección natural, el cruzamiento y la mutación. En este entorno, cada "
+"programa generado se estructura internamente como un árbol de expresión que "
+"representa una solución potencial para nuestro calendario."
+msgstr ""
+"<strong>A genetikai programozás</strong> automatikus megoldások "
+"létrehozását, értékelését és módosítását jelenti az első "
+"programpopulációból. Ezt biológiai inspirált műveletek, például természetes "
+"szelekció, keresztezés és mutáció végrehajtásával valósítják meg. Ebben a "
+"környezetben minden generált program belsőleg egy kifejezésfaként van "
+"felépítve, amely potenciális megoldást jelent a naptárunkban."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
+"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
+"características clave y generar nuevos árboles cada vez más prometedores."
+msgstr ""
+"Az algoritmus folyamatosan értékeli az egyes fákat egy szigorú minőségi "
+"kritérium ( <em>alkalmasságfüggvény) alapján,</em> azzal a céllal, hogy "
+"örökölje a kulcsfontosságú jellemzőket, és új, egyre ígéretesebb fák "
+"generálja."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
+"óptima y más eficiente!"
+msgstr ""
+"Ezt a folyamatot egy evolúciós körben ismétlődik, amíg meg nem találjuk az "
+"optimális és leghatékonyabb megoldást!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Panel de control: configuración activa (ID: %(id)s)"
+msgstr "Vezérlőpult: Aktív beállítások (ID: %(id)s)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración del algoritmo"
+msgstr "Algoritmusbeállítások"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tamaño de la población:"
+msgstr "Népesség mérete:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Número de generaciones:"
+msgstr "Generációk száma:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de cruce:"
+msgstr "Átkelés valószínűsége:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de mutación:"
+msgstr "Mutáció valószínűsége:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sin torneo"
+msgstr "Nincs torna"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
+msgstr "Aktív naptár: %(torneo)s (azonosító: %(id)s)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha"
+msgstr "Dátum"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Local"
+msgstr "Helyi"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visitante"
+msgstr "Távozzunk"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "No hay juegos generados para esta configuración."
+msgstr "Ehhez a konfigurációhoz nem generált játékok."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Mostrando los encuentros del torneo registrados en la base de datos."
+msgstr "Az adatbázisban regisztrált tornamérkőzések megjelenítése."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados de optimización"
+msgstr "Optimalizálási eredmények"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para expandir"
+msgstr "Kattints a fára a bővítéshez"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Costo de viaje total:"
+msgstr "Teljes utazási költség:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Violaciones de reglas:"
+msgstr "Szabálysértések:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
+" árbol de soluciones sintácticas."
+msgstr ""
+"Nyomja meg az alábbi gombot, hogy aktiválja a genetikai algoritmust és "
+"megjelenítse a szintaktikai megoldásfát."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ejecutar optimización"
+msgstr "Futtatás optimalizálása"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Guía operativa del sistema"
+msgstr "Rendszer működési útmutató"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Instrucciones de inicio rápido"
+msgstr "Gyors indítási utasítások"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
+" secuenciales:"
+msgstr ""
+"Ahhoz, hogy sikeresen interakciót kezdj el a demóval, kövesd ezeket a "
+"sorozatos lépéseket:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea un equipo, una liga y un torneo respectivo en tus paneles "
+"administrativos. <strong>Nota importante:</strong> el número total de "
+"equipos participantes debe ser par."
+msgstr ""
+"Hozz létre csapatot, ligát és tornát az adminisztratív panelekben. "
+"<strong>Fontos megjegyzés:</strong> A résztvevő csapatok teljes számának "
+"egyenlőnek kell lennie."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
+" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
+" optimización\"</strong> para estructurar el calendario automatizado."
+msgstr ""
+"Miután meghatároztad a résztvevőket, menj a fenti panelre, válaszd ki az "
+"aktív versenyedet, és kattints a zöld <strong>\"Run Optimization\"</strong> "
+"gombra, hogy felépítsd az automatizált menetrendet."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Lógica interna y flujo algorítmico de la IA"
+msgstr "Az MI belső logika és algoritmikus áramlása"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
+"mostramos paso a paso el ciclo de vida evasivo basado en programación "
+"genética:"
+msgstr ""
+"Mi történik belsőleg, amikor a szoftver elérhetővé válik? Íme egy lépésről "
+"lépésre áttekintés a genetikai programozás alapján kitérő életciklusról:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "1. Configuración e hiperparámetros base"
+msgstr "1. Alapkonfiguráció és hiperparaméterek"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se cargan las variables del panel que definirán las generaciones, el tamaño "
+"inicial de la población, así como las tasas de probabilidad asociadas al "
+"cruce y la mutación genómica."
+msgstr ""
+"Panelváltozók határozzák meg a generációkat, a kezdeti populációméretet, "
+"valamint a keresztezéssel és genomikai mutációval kapcsolatos valószínűségi "
+"arányokat."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "2. Definición de operadores y bloques estructurales (gramática)"
+msgstr "2. Az operátorok és szerkezeti blokkok (nyelvtan) meghatározása"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las primitivas:"
+msgstr "Az primitívek:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son las operaciones lógicas que un programa ejecuta para construir el árbol."
+msgstr ""
+"azok a logikai műveletek, amelyeket egy program végrehajt a fa "
+"felépítéséhez."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las terminales:"
+msgstr "A terminálok:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"representan los datos constantes o variables básicas estructuradas del "
+"torneo."
+msgstr ""
+"a torna állandó adatait vagy strukturált alapvető változóit képviselik."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "listas maestros de días hábiles"
+msgstr "Munkanapok fő listái"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "tanto en condición de casa como de visita"
+msgstr "otthon és idegenben egyaránt"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "inicializador vacío"
+msgstr "Üres inicializáló"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las efímeras:"
+msgstr "A múlóság:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son valores aleatorios puros que se introducen en nodos específicos para "
+"inyectar variabilidad matemática al sistema."
+msgstr ""
+"Ezek tiszta véletlenszerű értékek, amelyeket meghatározott csomópontokba "
+"juttatnak, hogy matematikai változékonyságot vigyenek be a rendszerbe."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha aleatoria y equipo aleatorio."
+msgstr "Véletlenszerű randi és véletlenszerű csapat."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "3. Inicialización, ciclo evolutivo y convergencia"
+msgstr "3. Inicializáció, evolúciós ciklus és konvergencia"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fase de ejecución en vivo:"
+msgstr "Élő végrehajtási fázis:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El sistema genera una población inicial aleatoria y convierte cada propuesta"
+" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
+"donde ocurre la magia computacional!"
+msgstr ""
+"A rendszer véletlenszerű kezdeti populációt generál, és minden javaslatot "
+"hierarchikus fa szerkezetté (<em>szintaxisfává</em>) alakít át. Itt történik"
+" a számítási varázslat!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visualización y muestreo:"
+msgstr "Vizualizáció és mintavétel:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se procesa la población inicial y se genera el renderizado de los árboles "
+"mediante el generador de sintaxis."
+msgstr ""
+"Az eredeti populációt feldolgozják, és a fákat a szintaxisgenerátor "
+"segítségével rendereljük."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Evaluación de aptitud:"
+msgstr "Alkalmasságfelmérés:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
+"distancia acumulada en kilómetros y el cumplimiento normativo."
+msgstr ""
+"Minden egyén <em>fittségi</em> értékét a kilométeres összesített távolság és"
+" a szabályozási megfelelés alapján számítják ki."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Selección natural:"
+msgstr "Természetes szelekció:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se escogen los mejores individuos de la ronda anterior para actuar como "
+"padres biológicos de la nueva generación."
+msgstr ""
+"Az előző kör legjobb egyénekét választják ki, hogy az új generáció biológiai"
+" szülőiként működjenek."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cruzamiento, mutación y herencia:"
+msgstr "Keresztezés, mutáció és öröklés:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
+" mutaciones en nodos aleatorios."
+msgstr ""
+"Új egyedeket hoznak létre úgy, hogy kiemelkedő fák ágait keverjük és "
+"véletlenszerű csomópontokban alkalmazzák a mutációkat."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Bucle iterativo:"
+msgstr "Iteratív kör:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
+" hasta completar el total de generaciones configuradas en la interfaz."
+msgstr ""
+"Az értékelés, kiválasztás és lejátszási lépések sorban ismétlődnek, amíg az "
+"interfészen konfigurált generációk száma be nem teljesül."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados oficiales:"
+msgstr "Hivatalos eredmények:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El mejor individuo obtenido en la última iteración se valida y su estructura"
+" interna se almacena como el calendario definitivo del torneo de béisbol."
+msgstr ""
+"Az utolsó verzióban elért legjobb személyt validálják, és belső struktúrája "
+"a végleges baseball versenynaptárként kerül tárolásra."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tesis de Ingeniería en Computación"
+msgstr "Számítástechnikai szakdolgozat"

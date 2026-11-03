@@ -1,0 +1,343 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: koza-ttp\n"
+"Language: am\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética - Planificación de béisbol"
+msgstr "የጄኔቲክ ፕሮግራም - የቤዝቦል እቅድ ማውጣት"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Idioma"
+msgstr "የጣቢያ ካርታ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambiar"
+msgstr "ለውጥ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética en la planificación de temporadas de béisbol"
+msgstr "በቤዝቦል ወቅት እቅድ ውስጥ የጄኔቲክ ፕሮግራሚንግ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¡Bienvenido a la aplicación!"
+msgstr "ወደ መተግበሪያው እንኳን በደህና መጡ!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Este sistema interactivo busca resolver de manera óptima la organización y "
+"logística de un calendario para una temporada completa de béisbol. Para "
+"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
+"inspirada directamente en la evolución natural de las especies."
+msgstr ""
+"ይህ በይነተገናኝ ስርዓት ለሙሉ የቤዝቦል ወቅት የቀን መቁጠሪያን አደረጃጀት እና ሎጂስቲክስ በጥሩ ሁኔታ ለመፍታት "
+"ይፈልጋል። ይህንን ለማሳካት በተፈጥሮ ዝርያዎች ዝግመተ ለውጥ በቀጥታ ተመስጦ የላቀ አርቴፊሻል ኢንተለጀንስ ዘዴን "
+"ተግባራዊ አድርገናል።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La <strong>programación genética</strong> consiste en crear, evaluar y "
+"modificar soluciones de forma automática a partir de una población inicial "
+"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
+"selección natural, el cruzamiento y la mutación. En este entorno, cada "
+"programa generado se estructura internamente como un árbol de expresión que "
+"representa una solución potencial para nuestro calendario."
+msgstr ""
+"<strong>የጄኔቲክ ፕሮግራሚንግ</strong> ከመጀመሪያው የፕሮግራሞች ስብስብ መፍትሄዎችን በራስ-ሰር መፍጠር፣ "
+"መገምገም እና ማሻሻልን ያካትታል። ይህ የሚከናወነው እንደ ተፈጥሯዊ ምርጫ፣ መሻገር እና ሚውቴሽን ያሉ ባዮአነሳሽነት "
+"ስራዎችን በማከናወን ነው። በዚህ አካባቢ፣ እያንዳንዱ የመነጨ ፕሮግራም ለቀን መቁጠሪያችን መፍትሄን የሚወክል እንደ "
+"አገላለጽ ዛፍ ከውስጥ የተዋቀረ ነው።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
+"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
+"características clave y generar nuevos árboles cada vez más prometedores."
+msgstr ""
+"አልጎሪዝም እያንዳንዱን ዛፍ ያለማቋረጥ ይገመግማል ጥብቅ የጥራት መስፈርት (የአካል ብቃት <em>ተግባር)</em> ቁልፍ "
+"ባህሪያትን ለመውረስ እና ከጊዜ ወደ ጊዜ ተስፋ ሰጪ የሆኑ አዳዲስ ዛፎችን ለማመንጨት ዓላማው."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
+"óptima y más eficiente!"
+msgstr "በጣም ጥሩው እና በጣም ቀልጣፋ መፍትሄ እስኪገኝ ድረስ ይህ ሂደት በዝግመተ ለውጥ ዑደት ውስጥ ይደገማል!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Panel de control: configuración activa (ID: %(id)s)"
+msgstr "የቁጥጥር ፓነል ንቁ ቅንብሮች (መታወቂያ %(id)s)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración del algoritmo"
+msgstr "የአልጎሪዝም ማሰናጃዎች"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tamaño de la población:"
+msgstr "የህዝብ ብዛት"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Número de generaciones:"
+msgstr "የትውልዶች ብዛት"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de cruce:"
+msgstr "የመሻገር እድል;"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de mutación:"
+msgstr "ሚውቴሽን እድል"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sin torneo"
+msgstr "ውድድር የለም"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
+msgstr "ንቁ የቀን መቁጠሪያ- %(torneo)s (መታወቂያ %(id)s)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha"
+msgstr "ቀን"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Local"
+msgstr "ኣካባብያዊ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visitante"
+msgstr "ርቆ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "No hay juegos generados para esta configuración."
+msgstr "ለዚህ ውቅር የተፈጠሩ ጨዋታዎች የሉም።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Mostrando los encuentros del torneo registrados en la base de datos."
+msgstr "በመረጃ ቋቱ ውስጥ የተመዘገቡትን የውድድር ግጥሚያዎች በማሳየት ላይ።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados de optimización"
+msgstr "የማመቻቸት ውጤቶች"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para expandir"
+msgstr "ለማስፋት ዛፉን ጠቅ ያድርጉ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Costo de viaje total:"
+msgstr "ጠቅላላ የጉዞ ወጪ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Violaciones de reglas:"
+msgstr "የደንብ ጥሰቶች -"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
+" árbol de soluciones sintácticas."
+msgstr "የጄኔቲክ ስልተ ቀመርን ለማግበር እና የአገባብ መፍትሄ ዛፉን ለማሳየት ከታች ያለውን ቁልፍ ይጫኑ።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ejecutar optimización"
+msgstr "ማመቻቸትን ያሂዱ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Guía operativa del sistema"
+msgstr "የስርዓት አሠራር መመሪያ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Instrucciones de inicio rápido"
+msgstr "ፈጣን ማስጀመሪያ መመሪያዎች"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
+" secuenciales:"
+msgstr "ከማሳያው ጋር በተሳካ ሁኔታ መስተጋብር መፍጠር ለመጀመር እነዚህን ተከታታይ ደረጃዎች ይከተሉ።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea un equipo, una liga y un torneo respectivo en tus paneles "
+"administrativos. <strong>Nota importante:</strong> el número total de "
+"equipos participantes debe ser par."
+msgstr ""
+"በአስተዳደራዊ ፓነሎችዎ ውስጥ ቡድን፣ ሊግ እና ውድድር ይፍጠሩ። <strong>ጠቃሚ ማሳሰቢያ</strong> የተሳታፊ "
+"ቡድኖች አጠቃላይ ብዛት እኩል መሆን አለበት።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
+" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
+" optimización\"</strong> para estructurar el calendario automatizado."
+msgstr ""
+"አንዴ ተሳታፊዎቹ ከተገለጹ በኋላ ከላይ ወዳለው ፓነል ይሂዱ፣ ንቁ ውድድርዎን ይምረጡ እና አውቶማቲክ መርሃ ግብሩን "
+"ለማዋቀር አረንጓዴውን <strong>\"ማመቻቸትን አሂድ\"</strong> ቁልፍን ጠቅ ያድርጉ።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Lógica interna y flujo algorítmico de la IA"
+msgstr "የ AI ውስጣዊ አመክንዮ እና አልጎሪዝም ፍሰት"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
+"mostramos paso a paso el ciclo de vida evasivo basado en programación "
+"genética:"
+msgstr ""
+"ሶፍትዌሩ በቀጥታ ሲሰራ በውስጥ ምን ይሆናል? በጄኔቲክ ፕሮግራሚንግ ላይ የተመሰረተ የማምለጫ የህይወት ዑደትን ደረጃ "
+"በደረጃ ይመልከቱ -"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "1. Configuración e hiperparámetros base"
+msgstr "1. የመሠረት ውቅር እና hyperparameters"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se cargan las variables del panel que definirán las generaciones, el tamaño "
+"inicial de la población, así como las tasas de probabilidad asociadas al "
+"cruce y la mutación genómica."
+msgstr ""
+"ትውልዶችን፣ የመጀመሪያውን የህዝብ ብዛትን፣ እንዲሁም ከመስቀለኛ መንገድ እና ከጂኖሚክ ሚውቴሽን ጋር የተያያዙ "
+"የፕሮባቢሊቲ መጠኖችን የሚገልጹ የፓነል ተለዋዋጮች ተጭነዋል።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "2. Definición de operadores y bloques estructurales (gramática)"
+msgstr "2. የኦፕሬተሮች እና መዋቅራዊ ብሎኮች ፍቺ (ሰዋሰው)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las primitivas:"
+msgstr "ቀዳሚዎቹ -"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son las operaciones lógicas que un programa ejecuta para construir el árbol."
+msgstr "አንድ ፕሮግራም ዛፉን ለመገንባት የሚያከናውናቸው አመክንዮአዊ ስራዎች ናቸው."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las terminales:"
+msgstr "ተርሚናሎቹ -"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"representan los datos constantes o variables básicas estructuradas del "
+"torneo."
+msgstr "የውድድሩን ቋሚ ውሂብ ወይም የተዋቀሩ መሰረታዊ ተለዋዋጮችን ይወክላሉ።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "listas maestros de días hábiles"
+msgstr "የሥራ ቀናት ዋና ዝርዝሮች"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "tanto en condición de casa como de visita"
+msgstr "በቤት ውስጥም ሆነ በመንገድ ላይ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "inicializador vacío"
+msgstr "ባዶ ማስጀመሪያ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las efímeras:"
+msgstr "ጊዜያዊ -"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son valores aleatorios puros que se introducen en nodos específicos para "
+"inyectar variabilidad matemática al sistema."
+msgstr ""
+"በስርዓቱ ውስጥ የሂሳብ ተለዋዋጭነትን ለማስገባት ወደ ተወሰኑ አንጓዎች የሚመገቡ ንጹህ የዘፈቀደ እሴቶች ናቸው።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha aleatoria y equipo aleatorio."
+msgstr "የዘፈቀደ ቀን እና የዘፈቀደ ቡድን።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "3. Inicialización, ciclo evolutivo y convergencia"
+msgstr "3. ማስጀመር, የዝግመተ ለውጥ ዑደት እና ውህደት"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fase de ejecución en vivo:"
+msgstr "የቀጥታ ማስፈጸሚያ ደረጃ -"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El sistema genera una población inicial aleatoria y convierte cada propuesta"
+" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
+"donde ocurre la magia computacional!"
+msgstr ""
+"ስርዓቱ የዘፈቀደ የመጀመሪያ ህዝብ ያመነጫል እና እያንዳንዱን ፕሮፖዛል ወደ ተዋረዳዊ የዛፍ መዋቅር (<em>አገባብ "
+"ዛፍ</em>) ይለውጠዋል። የስሌት አስማት የሚከሰተው እዚህ ላይ ነው!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visualización y muestreo:"
+msgstr "እይታ እና ናሙና;"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se procesa la población inicial y se genera el renderizado de los árboles "
+"mediante el generador de sintaxis."
+msgstr "የመጀመሪያው ህዝብ ተዘጋጅቷል እና ዛፎቹ የሚቀርቡት የአገባብ ጀነሬተርን በመጠቀም ነው."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Evaluación de aptitud:"
+msgstr "የብቃት ግምገማ -"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
+"distancia acumulada en kilómetros y el cumplimiento normativo."
+msgstr ""
+"የእያንዳንዱ ግለሰብ <em>የአካል ብቃት</em> ዋጋ የሚሰላው በኪሎሜትሮች ውስጥ ባለው ድምር ርቀት እና የቁጥጥር "
+"ተገዢነት ላይ በመመስረት ነው።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Selección natural:"
+msgstr "ተፈጥሯዊ ምርጫ;"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se escogen los mejores individuos de la ronda anterior para actuar como "
+"padres biológicos de la nueva generación."
+msgstr "ካለፈው ዙር ምርጥ ግለሰቦች የአዲሱ ትውልድ ባዮሎጂያዊ ወላጆች ሆነው እንዲሠሩ ተመርጠዋል."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cruzamiento, mutación y herencia:"
+msgstr "መሻገር፣ ሚውቴሽን እና ውርስ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
+" mutaciones en nodos aleatorios."
+msgstr ""
+"አዳዲስ ግለሰቦች የሚፈጠሩት የታዋቂ ዛፎችን ቅርንጫፎች በማቀላቀል እና በዘፈቀደ አንጓዎች ውስጥ ሚውቴሽን በመተግበር "
+"ነው።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Bucle iterativo:"
+msgstr "ተደጋጋሚ ዑደት"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
+" hasta completar el total de generaciones configuradas en la interfaz."
+msgstr ""
+"በይነገጹ ውስጥ የተዋቀሩት አጠቃላይ የትውልዶች ብዛት እስኪጠናቀቅ ድረስ የግምገማ፣ የምርጫ እና የመልሶ ማጫወት ደረጃዎች"
+" በቅደም ተከተል ይደጋገማሉ።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados oficiales:"
+msgstr "ኦፊሴላዊ ውጤቶች"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El mejor individuo obtenido en la última iteración se valida y su estructura"
+" interna se almacena como el calendario definitivo del torneo de béisbol."
+msgstr ""
+"በመጨረሻው ድግግሞሽ የተገኘው ምርጥ ግለሰብ የተረጋገጠ ሲሆን ውስጣዊ መዋቅሩ እንደ ትክክለኛው የቤዝቦል ውድድር መርሃ "
+"ግብር ተከማችቷል።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tesis de Ingeniería en Computación"
+msgstr "የኮምፒውተር ምህንድስና ተሲስ"

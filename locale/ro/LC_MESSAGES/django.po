@@ -1,0 +1,366 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: koza-ttp\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética - Planificación de béisbol"
+msgstr "Programare genetică - Planificarea baseball-ului"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Idioma"
+msgstr "Limbă"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambiar"
+msgstr "Schimbare"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética en la planificación de temporadas de béisbol"
+msgstr "Programarea genetică în planificarea sezonului de baseball"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¡Bienvenido a la aplicación!"
+msgstr "Bine ai venit în aplicație!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Este sistema interactivo busca resolver de manera óptima la organización y "
+"logística de un calendario para una temporada completa de béisbol. Para "
+"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
+"inspirada directamente en la evolución natural de las especies."
+msgstr ""
+"Acest sistem interactiv urmărește să rezolve optim organizarea și logistica "
+"unui calendar pentru un sezon complet de baseball. Pentru a realiza acest "
+"lucru, am implementat o tehnică avansată de inteligență artificială, "
+"inspirată direct de evoluția naturală a speciilor."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La <strong>programación genética</strong> consiste en crear, evaluar y "
+"modificar soluciones de forma automática a partir de una población inicial "
+"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
+"selección natural, el cruzamiento y la mutación. En este entorno, cada "
+"programa generado se estructura internamente como un árbol de expresión que "
+"representa una solución potencial para nuestro calendario."
+msgstr ""
+"<strong>Programarea genetică</strong> implică crearea, evaluarea și "
+"modificarea automată a soluțiilor dintr-o populație inițială de programe. "
+"Acest lucru se realizează prin executarea unor operații bioinspirate, precum"
+" selecția naturală, încrucișarea și mutația. În acest mediu, fiecare program"
+" generat este structurat intern ca un arbore de expresie care reprezintă o "
+"soluție potențială pentru calendarul nostru."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
+"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
+"características clave y generar nuevos árboles cada vez más prometedores."
+msgstr ""
+"Algoritmul evaluează continuu fiecare copac folosind un criteriu strict de "
+"calitate ( <em>funcția de fitness), cu</em> scopul de a moșteni "
+"caracteristici cheie și de a genera arbori noi din ce în ce mai promițători."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
+"óptima y más eficiente!"
+msgstr ""
+"Acest proces se repetă într-o buclă evolutivă până când se găsește soluția "
+"optimă și eficientă!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Panel de control: configuración activa (ID: %(id)s)"
+msgstr "Panoul de control: Setări active (ID: %(id)s)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración del algoritmo"
+msgstr "Setări ale algoritmului"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tamaño de la población:"
+msgstr "Dimensiunea populației:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Número de generaciones:"
+msgstr "Numărul de generații:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de cruce:"
+msgstr "Probabilitatea de traversare:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de mutación:"
+msgstr "Probabilitatea mutației:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sin torneo"
+msgstr "Niciun turneu"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
+msgstr "Calendar activ: %(torneo)s (ID: %(id)s)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha"
+msgstr "Data"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Local"
+msgstr "Local"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visitante"
+msgstr "Pleacă"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "No hay juegos generados para esta configuración."
+msgstr "Nu sunt generate jocuri pentru această configurație."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Mostrando los encuentros del torneo registrados en la base de datos."
+msgstr "Afișează meciurile de turneu înregistrate în baza de date."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados de optimización"
+msgstr "Rezultate de optimizare"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para expandir"
+msgstr "Apasă pe arbore pentru a extinde"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Costo de viaje total:"
+msgstr "Costul total al călătoriei:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Violaciones de reglas:"
+msgstr "Încălcări ale regulilor:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
+" árbol de soluciones sintácticas."
+msgstr ""
+"Apăsați butonul de mai jos pentru a activa algoritmul genetic și a afișa "
+"arborele de soluții sintactice."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ejecutar optimización"
+msgstr "Optimizarea alergării"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Guía operativa del sistema"
+msgstr "Ghid operațional al sistemului"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Instrucciones de inicio rápido"
+msgstr "Instrucțiuni de pornire rapidă"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
+" secuenciales:"
+msgstr ""
+"Pentru a începe să interacționezi cu succes cu demo-ul, urmează acești pași "
+"secvențiali:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea un equipo, una liga y un torneo respectivo en tus paneles "
+"administrativos. <strong>Nota importante:</strong> el número total de "
+"equipos participantes debe ser par."
+msgstr ""
+"Creează o echipă, o ligă și un turneu în panourile tale administrative. "
+"<strong>Notă importantă:</strong> Numărul total de echipe participante "
+"trebuie să fie par."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
+" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
+" optimización\"</strong> para estructurar el calendario automatizado."
+msgstr ""
+"Odată ce ai definiți participanții, mergi la panoul de mai sus, selectează "
+"turneul activ și apasă pe butonul <strong>verde \"Run "
+"Optimization\"</strong> pentru a structura programul automatizat."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Lógica interna y flujo algorítmico de la IA"
+msgstr "Logica internă și fluxul algoritmic al IA"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
+"mostramos paso a paso el ciclo de vida evasivo basado en programación "
+"genética:"
+msgstr ""
+"Ce se întâmplă intern când software-ul intră în funcțiune? Iată o privire "
+"pas cu pas asupra ciclului de viață evaziv bazat pe programarea genetică:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "1. Configuración e hiperparámetros base"
+msgstr "1. Configurația de bază și hiperparametrii"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se cargan las variables del panel que definirán las generaciones, el tamaño "
+"inicial de la población, así como las tasas de probabilidad asociadas al "
+"cruce y la mutación genómica."
+msgstr ""
+"Variabilele de tip panel care vor defini generațiile, dimensiunea inițială a"
+" populației, precum și ratele de probabilitate asociate cu mutațiile de "
+"crossover și genomice, sunt încărcate."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "2. Definición de operadores y bloques estructurales (gramática)"
+msgstr "2. Definiția operatorilor și blocurilor structurale (gramatică)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las primitivas:"
+msgstr "Primitivele:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son las operaciones lógicas que un programa ejecuta para construir el árbol."
+msgstr ""
+"sunt operațiile logice pe care un program le execută pentru a construi "
+"arborele."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las terminales:"
+msgstr "Terminalele:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"representan los datos constantes o variables básicas estructuradas del "
+"torneo."
+msgstr ""
+"reprezintă datele constante sau variabilele de bază structurate ale "
+"turneului."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "listas maestros de días hábiles"
+msgstr "Liste principale ale zilelor lucrătoare"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "tanto en condición de casa como de visita"
+msgstr "atât acasă, cât și în deplasare"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "inicializador vacío"
+msgstr "Inițializator gol"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las efímeras:"
+msgstr "Efemerul:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son valores aleatorios puros que se introducen en nodos específicos para "
+"inyectar variabilidad matemática al sistema."
+msgstr ""
+"Ele sunt valori pur aleatorii care sunt introduse în noduri specifice pentru"
+" a injecta variabilitate matematică în sistem."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha aleatoria y equipo aleatorio."
+msgstr "Întâlnire aleatorie și echipă aleatorie."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "3. Inicialización, ciclo evolutivo y convergencia"
+msgstr "3. Inițializare, ciclu evolutiv și convergență"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fase de ejecución en vivo:"
+msgstr "Faza de execuție live:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El sistema genera una población inicial aleatoria y convierte cada propuesta"
+" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
+"donde ocurre la magia computacional!"
+msgstr ""
+"Sistemul generează o populație inițială aleatorie și convertește fiecare "
+"propunere într-o structură ierarhică de arbore (<em>arbore sintactic</em>). "
+"Aici are loc magia computațională!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visualización y muestreo:"
+msgstr "Vizualizare și eșantionare:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se procesa la población inicial y se genera el renderizado de los árboles "
+"mediante el generador de sintaxis."
+msgstr ""
+"Populația inițială este procesată, iar arborii sunt redați folosind "
+"generatorul de sintaxă."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Evaluación de aptitud:"
+msgstr "Evaluarea aptitudinilor:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
+"distancia acumulada en kilómetros y el cumplimiento normativo."
+msgstr ""
+"Valoarea <em>de fitness</em> a fiecărei persoane este calculată pe baza "
+"distanței cumulative în kilometri și a conformității cu reglementările."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Selección natural:"
+msgstr "Selecția naturală:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se escogen los mejores individuos de la ronda anterior para actuar como "
+"padres biológicos de la nueva generación."
+msgstr ""
+"Cei mai buni indivizi din runda anterioară sunt aleși să acționeze ca "
+"părinți biologici ai noii generații."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cruzamiento, mutación y herencia:"
+msgstr "Încrucișarea, mutațiile și moștenirea:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
+" mutaciones en nodos aleatorios."
+msgstr ""
+"Indivizi noi sunt creați prin amestecarea ramurilor copacilor proeminenți și"
+" aplicarea mutațiilor în noduri aleatorii."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Bucle iterativo:"
+msgstr "Buclă iterativă:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
+" hasta completar el total de generaciones configuradas en la interfaz."
+msgstr ""
+"Pașii de evaluare, selecție și redare sunt repetați secvențial până când "
+"numărul total de generații configurate în interfață este complet."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados oficiales:"
+msgstr "Rezultate oficiale:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El mejor individuo obtenido en la última iteración se valida y su estructura"
+" interna se almacena como el calendario definitivo del torneo de béisbol."
+msgstr ""
+"Cel mai bun individ obținut în ultima iterație este validat, iar structura "
+"sa internă este stocată ca programul definitiv al turneului de baseball."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tesis de Ingeniería en Computación"
+msgstr "Teză de Inginerie Calculatoarelor"

@@ -1,0 +1,372 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: koza-ttp\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética - Planificación de béisbol"
+msgstr "Genetische Programmierung – Baseballplanung"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Idioma"
+msgstr "Sprache"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambiar"
+msgstr "Veränderung"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética en la planificación de temporadas de béisbol"
+msgstr "Genetische Programmierung in der Planung der Baseballsaison"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¡Bienvenido a la aplicación!"
+msgstr "Willkommen in der App!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Este sistema interactivo busca resolver de manera óptima la organización y "
+"logística de un calendario para una temporada completa de béisbol. Para "
+"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
+"inspirada directamente en la evolución natural de las especies."
+msgstr ""
+"Dieses interaktive System soll die Organisation und Logistik eines Kalenders"
+" für eine komplette Baseballsaison optimal lösen. Um dies zu erreichen, "
+"haben wir eine fortschrittliche künstliche Intelligenz implementiert, die "
+"direkt von der natürlichen Evolution der Arten inspiriert ist."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La <strong>programación genética</strong> consiste en crear, evaluar y "
+"modificar soluciones de forma automática a partir de una población inicial "
+"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
+"selección natural, el cruzamiento y la mutación. En este entorno, cada "
+"programa generado se estructura internamente como un árbol de expresión que "
+"representa una solución potencial para nuestro calendario."
+msgstr ""
+"<strong>Genetische Programmierung</strong> beinhaltet das automatische "
+"Erstellen, Bewerten und Modifizieren von Lösungen aus einer "
+"Anfangspopulation von Programmen. Dies wird durch bioinspirierte Operationen"
+" wie natürliche Auslese, Kreuzung und Mutation erreicht. In dieser Umgebung "
+"ist jedes generierte Programm intern als Expressionsbaum strukturiert, der "
+"eine potenzielle Lösung für unseren Kalender darstellt."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
+"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
+"características clave y generar nuevos árboles cada vez más prometedores."
+msgstr ""
+"Der Algorithmus bewertet jeden Baum kontinuierlich anhand eines strengen "
+"Qualitätskriteriums ( <em>Fitnessfunktion) mit</em> dem Ziel, "
+"Schlüsselmerkmale zu erben und neue Bäume zu generieren, die immer "
+"vielversprechender sind."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
+"óptima y más eficiente!"
+msgstr ""
+"Dieser Prozess wird in einer evolutionären Schleife wiederholt, bis die "
+"optimale und effizienteste Lösung gefunden ist!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Panel de control: configuración activa (ID: %(id)s)"
+msgstr "Kontrollpanel: Aktive Einstellungen (ID: %(id)s)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración del algoritmo"
+msgstr "Algorithmuseinstellungen"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tamaño de la población:"
+msgstr "Bevölkerungsgröße:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Número de generaciones:"
+msgstr "Anzahl der Generationen:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de cruce:"
+msgstr "Kreuzungswahrscheinlichkeit:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de mutación:"
+msgstr "Mutationswahrscheinlichkeit:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sin torneo"
+msgstr "Kein Turnier"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
+msgstr "Aktiver Kalender: %(torneo)s (ID: %(id)s)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha"
+msgstr "Datum"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Local"
+msgstr "Lokal"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visitante"
+msgstr "Weg"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "No hay juegos generados para esta configuración."
+msgstr "Für diese Konfiguration werden keine Spiele erstellt."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Mostrando los encuentros del torneo registrados en la base de datos."
+msgstr "Zeigt die in der Datenbank registrierten Turniermatches an."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados de optimización"
+msgstr "Optimierungsergebnisse"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para expandir"
+msgstr "Klicken Sie auf den Baum, um zu vergrößern"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Costo de viaje total:"
+msgstr "Gesamtreisekosten:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Violaciones de reglas:"
+msgstr "Regelverstöße:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
+" árbol de soluciones sintácticas."
+msgstr ""
+"Drücken Sie die Schaltfläche unten, um den genetischen Algorithmus zu "
+"aktivieren und den syntaktischen Lösungsbaum anzuzeigen."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ejecutar optimización"
+msgstr "Laufoptimierung"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Guía operativa del sistema"
+msgstr "Systembetriebsleitfaden"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Instrucciones de inicio rápido"
+msgstr "Schnellstartanleitung"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
+" secuenciales:"
+msgstr ""
+"Um erfolgreich mit der Demo zu interagieren, folgen Sie diesen sequentiellen"
+" Schritten:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea un equipo, una liga y un torneo respectivo en tus paneles "
+"administrativos. <strong>Nota importante:</strong> el número total de "
+"equipos participantes debe ser par."
+msgstr ""
+"Erstellen Sie in Ihren Verwaltungsgremien ein Team, eine Liga und ein "
+"Turnier. <strong>Wichtiger Hinweis:</strong> Die Gesamtzahl der "
+"teilnehmenden Teams muss ausgegliedert sein."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
+" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
+" optimización\"</strong> para estructurar el calendario automatizado."
+msgstr ""
+"Sobald Sie die Teilnehmer definiert haben, gehen Sie zum obigen Panel, "
+"wählen Sie Ihr aktives Turnier aus und klicken Sie auf die grüne "
+"<strong>Schaltfläche \"Run Optimization\",</strong> um den automatisierten "
+"Spielplan zu strukturieren."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Lógica interna y flujo algorítmico de la IA"
+msgstr "Interne Logik und algorithmischer Ablauf von KI"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
+"mostramos paso a paso el ciclo de vida evasivo basado en programación "
+"genética:"
+msgstr ""
+"Was passiert intern, wenn die Software live geht? Hier ist ein Schritt-für-"
+"Schritt-Blick auf den ausweichenden Lebenszyklus basierend auf genetischer "
+"Programmierung:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "1. Configuración e hiperparámetros base"
+msgstr "1. Basiskonfiguration und Hyperparameter"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se cargan las variables del panel que definirán las generaciones, el tamaño "
+"inicial de la población, así como las tasas de probabilidad asociadas al "
+"cruce y la mutación genómica."
+msgstr ""
+"Panelvariablen, die Generationen, anfängliche Populationsgröße sowie "
+"Wahrscheinlichkeitsraten für Crossover und genomische Mutation definieren, "
+"werden geladen."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "2. Definición de operadores y bloques estructurales (gramática)"
+msgstr "2. Definition von Operatoren und strukturellen Blöcken (Grammatik)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las primitivas:"
+msgstr "Die Primitive:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son las operaciones lógicas que un programa ejecuta para construir el árbol."
+msgstr ""
+"sind die logischen Operationen, die ein Programm ausführt, um den Baum zu "
+"erstellen."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las terminales:"
+msgstr "Die Terminals:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"representan los datos constantes o variables básicas estructuradas del "
+"torneo."
+msgstr ""
+"repräsentieren die konstanten Daten oder strukturierten Grundvariablen des "
+"Turniers."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "listas maestros de días hábiles"
+msgstr "Masterlisten der Arbeitstage"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "tanto en condición de casa como de visita"
+msgstr "sowohl zu Hause als auch auswärts"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "inicializador vacío"
+msgstr "Leerer Initialisierer"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las efímeras:"
+msgstr "Das Vergängliche:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son valores aleatorios puros que se introducen en nodos específicos para "
+"inyectar variabilidad matemática al sistema."
+msgstr ""
+"Es handelt sich um reine Zufallswerte, die in bestimmte Knoten eingespeist "
+"werden, um mathematische Variabilität ins System zu bringen."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha aleatoria y equipo aleatorio."
+msgstr "Zufälliges Datum und zufälliges Team."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "3. Inicialización, ciclo evolutivo y convergencia"
+msgstr "3. Initialisierung, Evolutionszyklus und Konvergenz"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fase de ejecución en vivo:"
+msgstr "Live-Umsetzungsphase:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El sistema genera una población inicial aleatoria y convierte cada propuesta"
+" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
+"donde ocurre la magia computacional!"
+msgstr ""
+"Das System erzeugt eine zufällige Anfangspopulation und wandelt jeden "
+"Vorschlag in eine hierarchische Baumstruktur (<em>Syntaxbaum</em>) um. Hier "
+"entsteht die rechnerische Magie!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visualización y muestreo:"
+msgstr "Visualisierung und Stichprobe:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se procesa la población inicial y se genera el renderizado de los árboles "
+"mediante el generador de sintaxis."
+msgstr ""
+"Die Anfangspopulation wird verarbeitet und die Bäume werden mit dem "
+"Syntaxgenerator dargestellt."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Evaluación de aptitud:"
+msgstr "Eignungsbewertung:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
+"distancia acumulada en kilómetros y el cumplimiento normativo."
+msgstr ""
+"Der <em>Fitnesswert</em> jedes Einzelnen wird anhand der kumulierten "
+"Entfernung in Kilometern und der Einhaltung gesetzlicher Vorschriften "
+"berechnet."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Selección natural:"
+msgstr "Natürliche Selektion:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se escogen los mejores individuos de la ronda anterior para actuar como "
+"padres biológicos de la nueva generación."
+msgstr ""
+"Die besten Individuen aus der vorherigen Runde werden ausgewählt, um als "
+"biologische Eltern der neuen Generation zu fungieren."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cruzamiento, mutación y herencia:"
+msgstr "Kreuzung, Mutation und Vererbung:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
+" mutaciones en nodos aleatorios."
+msgstr ""
+"Neue Individuen entstehen, indem sie Äste prominenter Bäume mischen und "
+"Mutationen in zufälligen Knoten anwenden."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Bucle iterativo:"
+msgstr "Iterative Schleife:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
+" hasta completar el total de generaciones configuradas en la interfaz."
+msgstr ""
+"Die Auswertungs-, Auswahl- und Wiedergabeschritte werden sequentiell "
+"wiederholt, bis die Gesamtzahl der in der Schnittstelle konfigurierten "
+"Generationen abgeschlossen ist."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados oficiales:"
+msgstr "Offizielle Ergebnisse:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El mejor individuo obtenido en la última iteración se valida y su estructura"
+" interna se almacena como el calendario definitivo del torneo de béisbol."
+msgstr ""
+"Der beste Spieler, der in der letzten Version gewonnen wurde, wird validiert"
+" und seine interne Struktur wird als maßgeblicher Baseballturnierplan "
+"gespeichert."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tesis de Ingeniería en Computación"
+msgstr "Abschlussarbeit für Computertechnik"

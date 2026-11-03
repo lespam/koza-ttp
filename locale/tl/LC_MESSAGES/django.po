@@ -1,0 +1,370 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: koza-ttp\n"
+"Language: tl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética - Planificación de béisbol"
+msgstr "Genetic Programming - Pagpaplano ng Baseball"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Idioma"
+msgstr "Wika"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambiar"
+msgstr "Pagbabago"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética en la planificación de temporadas de béisbol"
+msgstr "Genetic Programming sa Pagpaplano ng Baseball Season"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¡Bienvenido a la aplicación!"
+msgstr "Maligayang pagdating sa app!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Este sistema interactivo busca resolver de manera óptima la organización y "
+"logística de un calendario para una temporada completa de béisbol. Para "
+"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
+"inspirada directamente en la evolución natural de las especies."
+msgstr ""
+"Ang interactive na sistemang ito ay naglalayong lutasin nang optimal ang "
+"organisasyon at logistics ng kalendaryo para sa buong baseball season. Upang"
+" makamit ito, nagpatupad kami ng advanced na teknik ng artificial "
+"intelligence na direktang hango sa natural na ebolusyon ng mga species."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La <strong>programación genética</strong> consiste en crear, evaluar y "
+"modificar soluciones de forma automática a partir de una población inicial "
+"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
+"selección natural, el cruzamiento y la mutación. En este entorno, cada "
+"programa generado se estructura internamente como un árbol de expresión que "
+"representa una solución potencial para nuestro calendario."
+msgstr ""
+"<strong>Ang genetic programming</strong> ay kinabibilangan ng awtomatikong "
+"paglikha, pagsusuri, at pagbabago ng mga solusyon mula sa paunang populasyon"
+" ng mga programa. Ito ay nagagawa sa pamamagitan ng pagsasagawa ng mga "
+"bioinspired na operasyon tulad ng natural selection, crossing, at mutation. "
+"Sa kapaligiran na ito, bawat nabuo na programa ay internal na nakaayos "
+"bilang isang expression tree na kumakatawan sa isang potensyal na solusyon "
+"sa ating kalendaryo."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
+"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
+"características clave y generar nuevos árboles cada vez más prometedores."
+msgstr ""
+"Patuloy na sinusuri ng algorithm ang bawat puno gamit ang mahigpit na "
+"pamantayan sa kalidad (fitness <em>function) na</em> may layuning manahin "
+"ang mga pangunahing katangian at makabuo ng mga bagong puno na lalong "
+"nagiging promising."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
+"óptima y más eficiente!"
+msgstr ""
+"Uulitin ang prosesong ito sa isang evolutionary loop hanggang sa matagpuan "
+"ang pinakamainam at pinakaepektibong solusyon!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Panel de control: configuración activa (ID: %(id)s)"
+msgstr "Control Panel: Aktibong Mga Setting (ID: %(id)s)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración del algoritmo"
+msgstr "Mga Setting ng Algorithm"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tamaño de la población:"
+msgstr "Laki ng populasyon:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Número de generaciones:"
+msgstr "Bilang ng mga henerasyon:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de cruce:"
+msgstr "Posibilidad ng pagtawid:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de mutación:"
+msgstr "Posibilidad ng Mutasyon:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sin torneo"
+msgstr "Walang torneo"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
+msgstr "Aktibong Kalendaryo: %(torneo)s (ID: %(id)s)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha"
+msgstr "Petsa"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Local"
+msgstr "Lokal"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visitante"
+msgstr "Umalis"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "No hay juegos generados para esta configuración."
+msgstr "Walang mga laro na ginawa para sa ganitong configuration."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Mostrando los encuentros del torneo registrados en la base de datos."
+msgstr "Ipinapakita ang mga tournament matches na nakarehistro sa database."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados de optimización"
+msgstr "Mga resulta ng optimisasyon"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para expandir"
+msgstr "I-click ang puno upang palawakin"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Costo de viaje total:"
+msgstr "Kabuuang Gastos sa Paglalakbay:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Violaciones de reglas:"
+msgstr "Paglabag sa Patakaran:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
+" árbol de soluciones sintácticas."
+msgstr ""
+"Pindutin ang button sa ibaba upang i-activate ang genetic algorithm at "
+"ipakita ang syntactic solution tree."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ejecutar optimización"
+msgstr "Pag-optimize ng pagpapatakbo"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Guía operativa del sistema"
+msgstr "Gabay sa Operasyon ng Sistema"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Instrucciones de inicio rápido"
+msgstr "Mga Tagubilin sa Mabilisang Pagsisimula"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
+" secuenciales:"
+msgstr ""
+"Upang matagumpay na makipag-interact sa demo, sundin ang mga sunud-sunod na "
+"hakbang:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea un equipo, una liga y un torneo respectivo en tus paneles "
+"administrativos. <strong>Nota importante:</strong> el número total de "
+"equipos participantes debe ser par."
+msgstr ""
+"Gumawa ng koponan, liga, at torneo sa iyong mga administratibong panel. "
+"<strong>Mahalagang paalala:</strong> Dapat pantay ang kabuuang bilang ng mga"
+" kalahok na koponan."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
+" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
+" optimización\"</strong> para estructurar el calendario automatizado."
+msgstr ""
+"Kapag napili mo na ang mga kalahok, pumunta sa panel sa itaas, piliin ang "
+"iyong aktibong torneo at i-click ang berdeng <strong>button na \"Run "
+"Optimization\"</strong> upang ayusin ang awtomatikong iskedyul."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Lógica interna y flujo algorítmico de la IA"
+msgstr "Panloob na lohika at algorithmikong daloy ng AI"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
+"mostramos paso a paso el ciclo de vida evasivo basado en programación "
+"genética:"
+msgstr ""
+"Ano ang nangyayari sa loob kapag nag-live na ang software? Narito ang "
+"hakbang-hakbang na pagtingin sa evasive life cycle batay sa genetic "
+"programming:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "1. Configuración e hiperparámetros base"
+msgstr "1. Base configuration at hyperparameters"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se cargan las variables del panel que definirán las generaciones, el tamaño "
+"inicial de la población, así como las tasas de probabilidad asociadas al "
+"cruce y la mutación genómica."
+msgstr ""
+"Ang mga panel variable na magtatakda ng mga henerasyon, paunang laki ng "
+"populasyon, pati na rin ang mga rate ng probabilidad na kaugnay ng crossover"
+" at genomic mutation ay naka-load."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "2. Definición de operadores y bloques estructurales (gramática)"
+msgstr "2. Depinisyon ng mga operator at structural blocks (gramatika)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las primitivas:"
+msgstr "Ang mga primitibo:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son las operaciones lógicas que un programa ejecuta para construir el árbol."
+msgstr ""
+"ay ang mga lohikal na operasyon na isinasagawa ng isang programa upang buuin"
+" ang puno."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las terminales:"
+msgstr "Ang mga terminal:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"representan los datos constantes o variables básicas estructuradas del "
+"torneo."
+msgstr ""
+"kumatawan sa constant na datos o structured basic variables ng torneo."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "listas maestros de días hábiles"
+msgstr "Master Lists ng mga Araw ng Trabaho"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "tanto en condición de casa como de visita"
+msgstr "sa bahay at sa kalsada"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "inicializador vacío"
+msgstr "Walang laman na Initializer"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las efímeras:"
+msgstr "Ang panandalian:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son valores aleatorios puros que se introducen en nodos específicos para "
+"inyectar variabilidad matemática al sistema."
+msgstr ""
+"Ito ay purong random na mga halaga na ipinapasa sa mga partikular na node "
+"upang magdagdag ng matematikal na pagbabago sa sistema."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha aleatoria y equipo aleatorio."
+msgstr "Random na petsa at random na team."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "3. Inicialización, ciclo evolutivo y convergencia"
+msgstr "3. Inisyalasyon, siklo ng ebolusyon at konberhensiya"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fase de ejecución en vivo:"
+msgstr "Yugto ng Live Execution:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El sistema genera una población inicial aleatoria y convierte cada propuesta"
+" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
+"donde ocurre la magia computacional!"
+msgstr ""
+"Ang sistema ay bumubuo ng random na paunang populasyon at kino-convert ang "
+"bawat panukala sa isang hierarchical tree structure (<em>syntax tree</em>). "
+"Dito nangyayari ang computational magic!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visualización y muestreo:"
+msgstr "Visualization at sampling:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se procesa la población inicial y se genera el renderizado de los árboles "
+"mediante el generador de sintaxis."
+msgstr ""
+"Ang paunang populasyon ay pinoproseso at ang mga puno ay nire-render gamit "
+"ang syntax generator."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Evaluación de aptitud:"
+msgstr "Pagsusuri ng Kakayahan:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
+"distancia acumulada en kilómetros y el cumplimiento normativo."
+msgstr ""
+"Ang halaga ng <em>fitness</em> ng bawat indibidwal ay kinakalkula batay sa "
+"pinagsama-samang distansya sa kilometro at pagsunod sa regulasyon."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Selección natural:"
+msgstr "Natural na seleksyon:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se escogen los mejores individuos de la ronda anterior para actuar como "
+"padres biológicos de la nueva generación."
+msgstr ""
+"Ang pinakamahusay na mga indibidwal mula sa nakaraang yugto ay pinipili "
+"upang maging mga biyolohikal na magulang ng bagong henerasyon."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cruzamiento, mutación y herencia:"
+msgstr "Crossbreeding, mutasyon at mana:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
+" mutaciones en nodos aleatorios."
+msgstr ""
+"Ang mga bagong indibidwal ay nalilikha sa pamamagitan ng paghahalo ng mga "
+"sanga ng prominenteng puno at paglalapat ng mutasyon sa mga random na node."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Bucle iterativo:"
+msgstr "Iterative loop:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
+" hasta completar el total de generaciones configuradas en la interfaz."
+msgstr ""
+"Ang mga hakbang sa pagsusuri, pagpili, at playback ay inuulit nang sunud-"
+"sunod hanggang sa makumpleto ang kabuuang bilang ng mga henerasyon na naka-"
+"configure sa interface."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados oficiales:"
+msgstr "Opisyal na mga Resulta:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El mejor individuo obtenido en la última iteración se valida y su estructura"
+" interna se almacena como el calendario definitivo del torneo de béisbol."
+msgstr ""
+"Ang pinakamahusay na indibidwal na nakuha sa huling bersyon ay na-validate "
+"at ang internal na estruktura nito ay iniimbak bilang tiyak na iskedyul ng "
+"paligsahan sa baseball."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tesis de Ingeniería en Computación"
+msgstr "Tesis sa Computer Engineering"

@@ -1,0 +1,369 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: koza-ttp\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética - Planificación de béisbol"
+msgstr "Genetische programmering - Honkbalplanning"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Idioma"
+msgstr "Taal"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambiar"
+msgstr "Verandering"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética en la planificación de temporadas de béisbol"
+msgstr "Genetische programmering in het plannen van het honkbalseizoen"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¡Bienvenido a la aplicación!"
+msgstr "Welkom bij de app!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Este sistema interactivo busca resolver de manera óptima la organización y "
+"logística de un calendario para una temporada completa de béisbol. Para "
+"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
+"inspirada directamente en la evolución natural de las especies."
+msgstr ""
+"Dit interactieve systeem streeft ernaar de organisatie en logistiek van een "
+"kalender voor een volledig honkbalseizoen optimaal op te lossen. Om dit te "
+"bereiken hebben we een geavanceerde kunstmatige intelligentietechniek "
+"geïmplementeerd die direct geïnspireerd is op de natuurlijke evolutie van "
+"soorten."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La <strong>programación genética</strong> consiste en crear, evaluar y "
+"modificar soluciones de forma automática a partir de una población inicial "
+"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
+"selección natural, el cruzamiento y la mutación. En este entorno, cada "
+"programa generado se estructura internamente como un árbol de expresión que "
+"representa una solución potencial para nuestro calendario."
+msgstr ""
+"<strong>Genetisch programmeren</strong> houdt in dat oplossingen automatisch"
+" worden gecreëerd, geëvalueerd en aangepast uit een initiële populatie van "
+"programma's. Dit wordt bereikt door bio-geïnspireerde operaties uit te "
+"voeren zoals natuurlijke selectie, kruising en mutatie. In deze omgeving is "
+"elk gegenereerd programma intern gestructureerd als een expressieboom die "
+"een potentiële oplossing voor onze kalender vertegenwoordigt."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
+"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
+"características clave y generar nuevos árboles cada vez más prometedores."
+msgstr ""
+"Het algoritme evalueert elke boom continu met een strikt kwaliteitscriterium"
+" ( <em>fitnessfunctie) met</em> als doel sleutelkenmerken te erven en nieuwe"
+" bomen te genereren die veelbelovender zijn."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
+"óptima y más eficiente!"
+msgstr ""
+"Dit proces wordt herhaald in een evolutionaire lus totdat de optimale en "
+"meest efficiënte oplossing is gevonden!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Panel de control: configuración activa (ID: %(id)s)"
+msgstr "Configuratiescherm: Actieve instellingen (ID: %(id)s)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración del algoritmo"
+msgstr "Algoritme-instellingen"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tamaño de la población:"
+msgstr "Bevolkingsgrootte:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Número de generaciones:"
+msgstr "Aantal generaties:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de cruce:"
+msgstr "Kans op oversteek:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de mutación:"
+msgstr "Mutatiewaarschijnlijkheid:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sin torneo"
+msgstr "Geen toernooi"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
+msgstr "Actieve Agenda: %(torneo)s (ID: %(id)s)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha"
+msgstr "Datum"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Local"
+msgstr "Lokaal"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visitante"
+msgstr "Weg"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "No hay juegos generados para esta configuración."
+msgstr "Er zijn geen spellen gegenereerd voor deze configuratie."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Mostrando los encuentros del torneo registrados en la base de datos."
+msgstr "Toont de toernooiwedstrijden die in de database zijn geregistreerd."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados de optimización"
+msgstr "Optimalisatieresultaten"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para expandir"
+msgstr "Klik op de boom om uit te breiden"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Costo de viaje total:"
+msgstr "Totale reiskosten:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Violaciones de reglas:"
+msgstr "Regelovertredingen:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
+" árbol de soluciones sintácticas."
+msgstr ""
+"Druk op de knop hieronder om het genetische algoritme te activeren en de "
+"syntactische oplossingsboom te tonen."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ejecutar optimización"
+msgstr "Run optimalisatie"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Guía operativa del sistema"
+msgstr "Operationele Gids van het systeem"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Instrucciones de inicio rápido"
+msgstr "Snelstartinstructies"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
+" secuenciales:"
+msgstr ""
+"Om succesvol met de demo te kunnen interageren, volg je deze opeenvolgende "
+"stappen:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea un equipo, una liga y un torneo respectivo en tus paneles "
+"administrativos. <strong>Nota importante:</strong> el número total de "
+"equipos participantes debe ser par."
+msgstr ""
+"Maak een team, competitie en toernooi aan in je administratieve panelen. "
+"<strong>Belangrijke opmerking:</strong> Het totale aantal deelnemende teams "
+"moet even groot zijn."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
+" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
+" optimización\"</strong> para estructurar el calendario automatizado."
+msgstr ""
+"Zodra je de deelnemers hebt gedefinieerd, ga je naar het paneel hierboven, "
+"selecteer je je actieve toernooi en klik je op de groene <strong>knop \"Run "
+"Optimization\"</strong> om het geautomatiseerde schema te structureren."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Lógica interna y flujo algorítmico de la IA"
+msgstr "Interne logica en algoritmische stroom van AI"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
+"mostramos paso a paso el ciclo de vida evasivo basado en programación "
+"genética:"
+msgstr ""
+"Wat gebeurt er intern wanneer de software live gaat? Hier volgt een "
+"stapsgewijze blik op de ontwijkende levenscyclus gebaseerd op genetische "
+"programmering:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "1. Configuración e hiperparámetros base"
+msgstr "1. Basisconfiguratie en hyperparameters"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se cargan las variables del panel que definirán las generaciones, el tamaño "
+"inicial de la población, así como las tasas de probabilidad asociadas al "
+"cruce y la mutación genómica."
+msgstr ""
+"Panelvariabelen die generaties, initiële populatiegrootte en kansrates die "
+"samenhangen met crossover en genomische mutatie definiëren, worden geladen."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "2. Definición de operadores y bloques estructurales (gramática)"
+msgstr "2. Definitie van operatoren en structurele blokken (grammatica)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las primitivas:"
+msgstr "De primitieven:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son las operaciones lógicas que un programa ejecuta para construir el árbol."
+msgstr ""
+"zijn de logische bewerkingen die een programma uitvoert om de boom te "
+"bouwen."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las terminales:"
+msgstr "De terminals:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"representan los datos constantes o variables básicas estructuradas del "
+"torneo."
+msgstr ""
+"Vertegenwoordigen de constante data of gestructureerde basisvariabelen van "
+"het toernooi."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "listas maestros de días hábiles"
+msgstr "Hoofdlijsten van Werkdagen"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "tanto en condición de casa como de visita"
+msgstr "zowel thuis als op reis"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "inicializador vacío"
+msgstr "Lege initializer"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las efímeras:"
+msgstr "Het vluchtige:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son valores aleatorios puros que se introducen en nodos específicos para "
+"inyectar variabilidad matemática al sistema."
+msgstr ""
+"Het zijn pure willekeurige waarden die in specifieke knooppunten worden "
+"ingevoerd om wiskundige variabiliteit in het systeem te injecteren."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha aleatoria y equipo aleatorio."
+msgstr "Willekeurige datum en willekeurig team."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "3. Inicialización, ciclo evolutivo y convergencia"
+msgstr "3. Initialisatie, evolutionaire cyclus en convergentie"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fase de ejecución en vivo:"
+msgstr "Live uitvoeringsfase:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El sistema genera una población inicial aleatoria y convierte cada propuesta"
+" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
+"donde ocurre la magia computacional!"
+msgstr ""
+"Het systeem genereert een willekeurige initiële populatie en zet elk "
+"voorstel om in een hiërarchische boomstructuur (<em>syntaxisboom</em>). Hier"
+" gebeurt de computationele magie!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visualización y muestreo:"
+msgstr "Visualisatie en steekproefneming:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se procesa la población inicial y se genera el renderizado de los árboles "
+"mediante el generador de sintaxis."
+msgstr ""
+"De initiële populatie wordt verwerkt en de bomen worden weergegeven met "
+"behulp van de syntaxisgenerator."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Evaluación de aptitud:"
+msgstr "Geschiktheidsbeoordeling:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
+"distancia acumulada en kilómetros y el cumplimiento normativo."
+msgstr ""
+"De <em>fitnesswaarde</em> van elk individu wordt berekend op basis van de "
+"cumulatieve afstand in kilometers en naleving van regelgeving."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Selección natural:"
+msgstr "Natuurlijke selectie:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se escogen los mejores individuos de la ronda anterior para actuar como "
+"padres biológicos de la nueva generación."
+msgstr ""
+"De beste individuen uit de vorige ronde worden gekozen om als biologische "
+"ouders van de nieuwe generatie op te treden."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cruzamiento, mutación y herencia:"
+msgstr "Kruising, mutatie en overerving:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
+" mutaciones en nodos aleatorios."
+msgstr ""
+"Nieuwe individuen worden gecreëerd door takken van prominente bomen te "
+"mengen en mutaties toe te passen in willekeurige knooppunten."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Bucle iterativo:"
+msgstr "Iteratieve lus:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
+" hasta completar el total de generaciones configuradas en la interfaz."
+msgstr ""
+"De evaluatie-, selectie- en afspeelstappen worden sequentieel herhaald "
+"totdat het totale aantal generaties dat in de interface is geconfigureerd is"
+" voltooid."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados oficiales:"
+msgstr "Officiële resultaten:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El mejor individuo obtenido en la última iteración se valida y su estructura"
+" interna se almacena como el calendario definitivo del torneo de béisbol."
+msgstr ""
+"De beste persoon die in de vorige editie is behaald, wordt gevalideerd en de"
+" interne structuur wordt opgeslagen als het definitieve wedstrijdschema van "
+"honkbaltoernooien."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tesis de Ingeniería en Computación"
+msgstr "Scriptie Computertechniek"

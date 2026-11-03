@@ -1,0 +1,359 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: koza-ttp\n"
+"Language: ht\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética - Planificación de béisbol"
+msgstr "Jenetik pwogramasyon - Planifikasyon bezbòl"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Idioma"
+msgstr "Lang"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambiar"
+msgstr "Chanjman"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética en la planificación de temporadas de béisbol"
+msgstr "Pwogramasyon jenetik nan planifikasyon sezon bezbòl"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¡Bienvenido a la aplicación!"
+msgstr "Byenveni nan app a!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Este sistema interactivo busca resolver de manera óptima la organización y "
+"logística de un calendario para una temporada completa de béisbol. Para "
+"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
+"inspirada directamente en la evolución natural de las especies."
+msgstr ""
+"Sistèm entèaktif sa a ap chache optimally rezoud òganizasyon an ak lojistik "
+"nan yon kalandriye pou yon sezon bezbòl plen. Pou fè sa, nou aplike yon "
+"teknik entèlijans atifisyèl avanse dirèkteman enspire pa evolisyon natirèl "
+"la nan espès."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La <strong>programación genética</strong> consiste en crear, evaluar y "
+"modificar soluciones de forma automática a partir de una población inicial "
+"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
+"selección natural, el cruzamiento y la mutación. En este entorno, cada "
+"programa generado se estructura internamente como un árbol de expresión que "
+"representa una solución potencial para nuestro calendario."
+msgstr ""
+"<strong>Pwogramasyon jenetik</strong> enplike otomatikman kreye, evalye, ak "
+"modifye solisyon ki sòti nan yon premye popilasyon nan pwogram. Sa a se "
+"akonpli pa egzekite operasyon bioinspired tankou seleksyon natirèl, travèse,"
+" ak mitasyon. Nan anviwònman sa a, chak pwogram pwodwi entèn estriktire kòm "
+"yon pye bwa ekspresyon ki reprezante yon solisyon potansyèl nan kalandriye "
+"nou an."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
+"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
+"características clave y generar nuevos árboles cada vez más prometedores."
+msgstr ""
+"Algorithm la kontinyèlman evalye chak pye bwa lè l sèvi avèk yon kritè bon "
+"jan kalite strik ( <em>fonksyon kapasite) ak</em> objektif la nan eritye "
+"karakteristik kle ak génération nouvo pyebwa ki se de pli zan pli "
+"prometteur."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
+"óptima y más eficiente!"
+msgstr ""
+"Pwosesis sa a repete nan yon bouk evolisyonè jiskaske solisyon an pi bon ak "
+"pi efikas yo jwenn!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Panel de control: configuración activa (ID: %(id)s)"
+msgstr "Panèl Kontwòl: Anviwònman aktif (ID: %(id)s)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración del algoritmo"
+msgstr "Anviwònman algorithm"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tamaño de la población:"
+msgstr "Gwosè popilasyon an:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Número de generaciones:"
+msgstr "Kantite jenerasyon:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de cruce:"
+msgstr "Pwobabilite pou travèse:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de mutación:"
+msgstr "Pwobabilite Mitasyon:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sin torneo"
+msgstr "Pa gen tounwa"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
+msgstr "Kalandriye aktif: %(torneo)s (ID: %(id)s)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha"
+msgstr "Dat"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Local"
+msgstr "Lokal yo"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visitante"
+msgstr "Aleje"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "No hay juegos generados para esta configuración."
+msgstr "Pa gen okenn jwèt ki te pwodwi pou sa a konfigirasyon."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Mostrando los encuentros del torneo registrados en la base de datos."
+msgstr "Montre alimèt yo nan tounwa ki anrejistre nan baz done a."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados de optimización"
+msgstr "Rezilta optimize"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para expandir"
+msgstr "Klike sou pyebwa a pou elaji"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Costo de viaje total:"
+msgstr "Total Vwayaj Pri:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Violaciones de reglas:"
+msgstr "Vyolasyon règ:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
+" árbol de soluciones sintácticas."
+msgstr ""
+"Peze bouton ki anba a aktive algorithm jenetik la epi montre pye bwa a "
+"solisyon sentaktik."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ejecutar optimización"
+msgstr "Kouri optimize"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Guía operativa del sistema"
+msgstr "Gid Operasyon Sistèm"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Instrucciones de inicio rápido"
+msgstr "Quick Start Enstriksyon"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
+" secuenciales:"
+msgstr "Pou kòmanse avèk siksè kominike avèk Demo a, swiv etap sekans sa yo:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea un equipo, una liga y un torneo respectivo en tus paneles "
+"administrativos. <strong>Nota importante:</strong> el número total de "
+"equipos participantes debe ser par."
+msgstr ""
+"Kreye yon ekip, lig ak tounwa nan panno administratif ou yo. <strong>Nòt "
+"enpòtan:</strong> Kantite total ekip k ap patisipe yo dwe menm"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
+" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
+" optimización\"</strong> para estructurar el calendario automatizado."
+msgstr ""
+"Yon fwa ou gen patisipan yo defini, tèt nan panèl ki anwo a, chwazi tounwa "
+"aktif ou epi klike sou vèt <strong>la \"Kouri Optimize\"</strong> bouton "
+"estrikti orè otomatik la."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Lógica interna y flujo algorítmico de la IA"
+msgstr "Lojik entèn ak koule algorithmik nan AI"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
+"mostramos paso a paso el ciclo de vida evasivo basado en programación "
+"genética:"
+msgstr ""
+"Kisa k ap pase intern lè lojisyèl an ap viv? Isit la nan yon gade etap pa "
+"etap nan sik lavi evasif ki baze sou pwogramasyon jenetik:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "1. Configuración e hiperparámetros base"
+msgstr "1. Baz konfigirasyon ak hyperparameters"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se cargan las variables del panel que definirán las generaciones, el tamaño "
+"inicial de la población, así como las tasas de probabilidad asociadas al "
+"cruce y la mutación genómica."
+msgstr ""
+"Varyab panèl ki pral defini jenerasyon, gwosè premye popilasyon an, osi byen"
+" ke pousantaj pwobabilite ki asosye ak kwazman ak mitasyon jenomik yo chaje."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "2. Definición de operadores y bloques estructurales (gramática)"
+msgstr "2. Definisyon operatè ak blòk estriktirèl (gramè)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las primitivas:"
+msgstr "Primitif yo:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son las operaciones lógicas que un programa ejecuta para construir el árbol."
+msgstr "se operasyon ki lojik ke yon pwogram egzekite pou konstwi pye bwa a."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las terminales:"
+msgstr "Tèminal yo:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"representan los datos constantes o variables básicas estructuradas del "
+"torneo."
+msgstr "Reprezante konstan done yo oswa estriktire varyab debaz nan tounwa a."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "listas maestros de días hábiles"
+msgstr "Lis Mèt nan jou travay"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "tanto en condición de casa como de visita"
+msgstr "tou de nan kay la ak sou wout la"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "inicializador vacío"
+msgstr "Vide inisyalize"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las efímeras:"
+msgstr "Efemèr la:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son valores aleatorios puros que se introducen en nodos específicos para "
+"inyectar variabilidad matemática al sistema."
+msgstr ""
+"Yo se valè o aza pi ki manje nan nœuds espesifik pou enjekte varyabilite "
+"matematik nan sistèm nan."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha aleatoria y equipo aleatorio."
+msgstr "Dat o aza ak ekip o aza"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "3. Inicialización, ciclo evolutivo y convergencia"
+msgstr "3. Inisyal, evolisyonè sik ak convergence"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fase de ejecución en vivo:"
+msgstr "Faz ekzekisyon Live:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El sistema genera una población inicial aleatoria y convierte cada propuesta"
+" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
+"donde ocurre la magia computacional!"
+msgstr ""
+"Sistèm nan jenere yon o aza premye popilasyon ak konvèti chak pwopozisyon "
+"nan yon estrikti pye bwa yerarchik (<em>pye bwa sentaks</em>). Sa a se kote "
+"majik la enfòmatik rive!"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visualización y muestreo:"
+msgstr "Vizyalizasyon ak echantiyon:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se procesa la población inicial y se genera el renderizado de los árboles "
+"mediante el generador de sintaxis."
+msgstr ""
+"Popilasyon inisyal la trete ak pyebwa yo rann lè l sèvi avèk dèlko sentaks "
+"la."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Evaluación de aptitud:"
+msgstr "Evalyasyon aptitid:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
+"distancia acumulada en kilómetros y el cumplimiento normativo."
+msgstr ""
+"Se valè <em>kapasite</em> chak moun kalkile ki baze sou distans kimilatif "
+"nan kilomèt ak konfòmite regilasyon."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Selección natural:"
+msgstr "Seleksyon natirèl:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se escogen los mejores individuos de la ronda anterior para actuar como "
+"padres biológicos de la nueva generación."
+msgstr ""
+"Moun ki pi bon nan wonn anvan yo chwazi yo aji kòm paran byolojik nan nouvo "
+"jenerasyon an."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cruzamiento, mutación y herencia:"
+msgstr "Kwazman, mitasyon ak eritaj:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
+" mutaciones en nodos aleatorios."
+msgstr ""
+"Nouvo moun yo kreye pa melanje branch nan pyebwa enpòtan ak aplike mitasyon "
+"nan nœuds o aza."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Bucle iterativo:"
+msgstr "Loop iteratif:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
+" hasta completar el total de generaciones configuradas en la interfaz."
+msgstr ""
+"Evalyasyon an, seleksyon ak lèktur etap yo repete sekans jiskaske kantite "
+"total de jenerasyon configuré nan koòdone a fini."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados oficiales:"
+msgstr "Rezilta ofisyèl:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El mejor individuo obtenido en la última iteración se valida y su estructura"
+" interna se almacena como el calendario definitivo del torneo de béisbol."
+msgstr ""
+"Se pi bon moun ki jwenn nan dènye iterasyon an valide ak estrikti entèn li "
+"yo estoke kòm definitif bezbòl tounwa orè a."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tesis de Ingeniería en Computación"
+msgstr "Tèz Jeni Odinatè"
