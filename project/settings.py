@@ -33,7 +33,8 @@ except KeyError as e:
     raise RuntimeError("Could not find a SECRET_KEY in environment") from e
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# DEBUG IS ON THE ENV (DEBUG=True locally); defaults to False on the server
+DEBUG = os.environ.get("DEBUG", "False").lower() in ("true", "1")
 
 #ALLOWED_HOSTS = ['3.218.255.146', 'lespam.fun']
 ALLOWED_HOSTS = [
