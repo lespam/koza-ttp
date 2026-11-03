@@ -1,11 +1,9 @@
 name: Deploy
 
-# Cada push a main se publica en la VM de Azure (deploy/deploy.sh).
+# Publica en la VM de Azure (deploy/deploy.sh) solo cuando se ejecuta a mano:
+# Actions → Deploy → Run workflow. Un push o un merge a main NO publica.
 # Secretos del repositorio: VM_HOST (IP de la VM) y VM_SSH_KEY (llave privada koza_ttp_azure).
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 concurrency:

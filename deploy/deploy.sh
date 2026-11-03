@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Actualiza el sitio en la VM con lo último de la rama main. Lo corre setup_server.sh la
-# primera vez y GitHub Actions en cada push a main.
+# primera vez y GitHub Actions cuando se ejecuta a mano (Actions → Deploy → Run workflow).
 set -euo pipefail
 
 cd /srv/koza-ttp
