@@ -1,0 +1,56 @@
+{% load static i18n %}
+{% get_current_language as LANGUAGE_CODE %}{% get_current_language_bidi as LANGUAGE_BIDI %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block descripcion %}{% translate "Documentación de Koza-TTP: la tesis original y los avances posteriores." %}{% endblock %}">
+    <title>{% block titulo %}{% endblock %} · Koza-TTP</title>
+    {% for lang in site_languages %}
+    <link rel="alternate" hreflang="{{ lang.code }}" href="{{ request.scheme }}://{{ request.get_host }}{{ lang.url }}">
+    {% endfor %}
+    <link rel="stylesheet" href="{% static 'css/documentacion.css' %}">
+</head>
+<body>
+    <a class="saltar" href="#contenido">{% translate "Saltar al contenido" %}</a>
+
+    <header class="cabecera">
+        <div class="cabecera-interior">
+            <a class="marca" href="{% url 'tesis:dashboard' %}">Koza-TTP</a>
+
+            <nav aria-label="{% translate "Documentación" %}">
+                <ul class="menu">
+                    <li><a href="{% url 'documentacion:index' %}"{% if seccion == "inicio" %} aria-current="page"{% endif %}>{% translate "Documentación" %}</a></li>
+                    <li><a href="{% url 'documentacion:historico' %}"{% if seccion == "historico" %} aria-current="page"{% endif %}>{% translate "Histórico" %}</a></li>
+                    <li><a href="{% url 'documentacion:avances' %}"{% if seccion == "avances" %} aria-current="page"{% endif %}>{% translate "Avances" %}</a></li>
+                    <li><a href="{% url 'tesis:dashboard' %}">{% translate "Herramienta" %}</a></li>
+                </ul>
+            </nav>
+
+            <form class="idioma" action="{% url 'set_language' %}" method="post">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ request.get_full_path }}">
+                <label for="language-select">{% translate "Idioma" %}</label>
+                <select name="language" id="language-select">
+                    {% for lang in site_languages %}
+                    <option value="{{ lang.code }}" lang="{{ lang.code }}"{% if lang.code == LANGUAGE_CODE %} selected{% endif %}>{{ lang.native }}</option>
+                    {% endfor %}
+                </select>
+                <noscript><button type="submit">{% translate "Cambiar" %}</button></noscript>
+            </form>
+        </div>
+    </header>
+
+    <main id="contenido" tabindex="-1">
+        {% block contenido %}{% endblock %}
+    </main>
+
+    <footer class="pie">
+        <p>© 2026 Leslie Dickinson · {% translate "Tesis publicada como Leslie Pamela Brenes Valencia" %} · ITAM</p>
+        <p><a href="https://github.com/lespam/koza-ttp">{% translate "Código fuente en GitHub" %}</a></p>
+    </footer>
+
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>

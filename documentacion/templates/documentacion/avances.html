@@ -1,0 +1,103 @@
+{% extends "documentacion/base.html" %}
+{% load i18n %}
+
+{% block titulo %}{% translate "Avances después de la tesis" %}{% endblock %}
+{% block descripcion %}{% translate "Cambios y pruebas de Koza-TTP después de la tesis, con fecha y estado." %}{% endblock %}
+
+{% block contenido %}
+<div class="envoltura">
+    <p class="miga"><a href="{% url 'documentacion:index' %}">{% translate "Documentación" %}</a> / {% translate "Avances" %}</p>
+    <h1>{% translate "Avances: después de la tesis" %}</h1>
+    <p class="entrada">{% blocktranslate trimmed %}Aquí se registra cada cambio hecho después de la defensa. La versión de la tesis se conserva sin cambios, para poder comparar.{% endblocktranslate %}</p>
+
+    <section aria-labelledby="versiones">
+        <h2 id="versiones">{% translate "Versiones del motor" %}</h2>
+        <div class="tabla-envoltura" role="region" aria-labelledby="tabla-versiones" tabindex="0">
+            <table>
+                <caption id="tabla-versiones">{% translate "Versión de la tesis y versión mejorada" %}</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">{% translate "Versión" %}</th>
+                        <th scope="col">{% translate "Estado" %}</th>
+                        <th scope="col">{% translate "Distancia total (30 equipos)" %}</th>
+                        <th scope="col">{% translate "¿Supera al azar?" %}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">{% translate "Tesis (2026)" %}</th>
+                        <td><span class="estado estado-hecho">{% translate "Congelada" %}</span></td>
+                        <td>3,182,738.33 km</td>
+                        <td>{% translate "No" %}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{% translate "Versión mejorada" %}</th>
+                        <td><span class="estado estado-curso">{% translate "En desarrollo" %}</span></td>
+                        <td>{% translate "Sin resultados todavía" %}</td>
+                        <td>{% translate "Por medir" %}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section aria-labelledby="registro">
+        <h2 id="registro">{% translate "Registro de avances" %}</h2>
+        <p>{% translate "Del más reciente al más antiguo." %}</p>
+
+        <ol class="registro">
+            <li>
+                <article aria-labelledby="av-planeado-motor">
+                    <p class="meta"><span class="estado estado-planeado">{% translate "Planeado" %}</span></p>
+                    <h3 id="av-planeado-motor">{% translate "Operadores contextuales para el motor" %}</h3>
+                    <p>{% blocktranslate trimmed %}Cambiar los operadores genéricos por otros que intercambien series completas, para que los hijos sigan siendo calendarios válidos. Es el trabajo futuro que propuso la tesis.{% endblocktranslate %}</p>
+                </article>
+            </li>
+            <li>
+                <article aria-labelledby="av-planeado-flujo">
+                    <p class="meta"><span class="estado estado-planeado">{% translate "Planeado" %}</span></p>
+                    <h3 id="av-planeado-flujo">{% translate "Reparar el recorrido completo de la herramienta" %}</h3>
+                    <p>{% blocktranslate trimmed %}Que se pueda ir del registro de equipos hasta ver el calendario sin errores, con un recorrido guiado paso a paso.{% endblocktranslate %}</p>
+                </article>
+            </li>
+            <li>
+                <article aria-labelledby="av-diagnostico">
+                    <p class="meta"><time datetime="2026-11-03">{% translate "3 de noviembre de 2026" %}</time> · <span class="estado estado-curso">{% translate "En curso" %}</span></p>
+                    <h3 id="av-diagnostico">{% translate "Diagnóstico del motor" %}</h3>
+                    <p>{% blocktranslate trimmed %}Revisión del código para confirmar por qué la PG no supera al azar. El cruce y la mutación rompen la viabilidad de los calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra los padres de la generación inicial.{% endblocktranslate %}</p>
+                </article>
+            </li>
+            <li>
+                <article aria-labelledby="av-auditoria">
+                    <p class="meta"><time datetime="2026-11-03">{% translate "3 de noviembre de 2026" %}</time> · <span class="estado estado-hecho">{% translate "Hecho" %}</span></p>
+                    <h3 id="av-auditoria">{% translate "Auditoría de la experiencia" %}</h3>
+                    <p>{% blocktranslate trimmed %}Revisión de accesibilidad (WCAG 2.2 AA), usabilidad e interacción humano-IA. Encontró 28 puntos por mejorar. Se repetirá cuando el motor nuevo esté listo.{% endblocktranslate %}</p>
+                    <p><a href="https://github.com/lespam/koza-ttp/blob/main/docs/auditoria/2026-11-03_auditoria_experiencia.md">{% translate "Leer la auditoría" %}</a> ({% translate "en español" %})</p>
+                </article>
+            </li>
+            <li>
+                <article aria-labelledby="av-idiomas">
+                    <p class="meta"><time datetime="2026-11-03">{% translate "3 de noviembre de 2026" %}</time> · <span class="estado estado-hecho">{% translate "Hecho" %}</span></p>
+                    <h3 id="av-idiomas">{% translate "Sitio en 43 idiomas" %}</h3>
+                    <p>{% blocktranslate trimmed %}El sitio se ofrece en 43 idiomas. El original es el español de México. Las demás versiones son traducciones automáticas con Azure AI Translator y pueden tener errores.{% endblocktranslate %}</p>
+                </article>
+            </li>
+            <li>
+                <article aria-labelledby="av-servidor">
+                    <p class="meta"><time datetime="2026-11-03">{% translate "3 de noviembre de 2026" %}</time> · <span class="estado estado-hecho">{% translate "Hecho" %}</span></p>
+                    <h3 id="av-servidor">{% translate "Nuevo servidor" %}</h3>
+                    <p>{% blocktranslate trimmed %}La aplicación volvió a estar en línea en un servidor nuevo, con HTTPS. Cada versión se publica a mano, después de revisarla.{% endblocktranslate %}</p>
+                </article>
+            </li>
+            <li>
+                <article aria-labelledby="av-materiales">
+                    <p class="meta"><time datetime="2026-11-03">{% translate "3 de noviembre de 2026" %}</time> · <span class="estado estado-hecho">{% translate "Hecho" %}</span></p>
+                    <h3 id="av-materiales">{% translate "Materiales de la tesis en el repositorio" %}</h3>
+                    <p>{% blocktranslate trimmed %}El documento de la tesis y la presentación de la defensa están en el repositorio, con marca de agua.{% endblocktranslate %}</p>
+                    <p><a href="{% url 'documentacion:historico' %}#materiales">{% translate "Ver los materiales" %}</a></p>
+                </article>
+            </li>
+        </ol>
+    </section>
+</div>
+{% endblock %}

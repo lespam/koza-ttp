@@ -1,0 +1,24 @@
+{% extends "documentacion/base.html" %}
+{% load i18n %}
+
+{% block titulo %}{% translate "Documentación" %}{% endblock %}
+
+{% block contenido %}
+<div class="envoltura">
+    <h1>{% translate "Documentación del proyecto" %}</h1>
+    <p class="entrada">{% blocktranslate trimmed %}Koza-TTP aplica la programación genética a la planificación de temporadas de béisbol. La documentación tiene dos partes: lo que se hizo en la tesis y lo que se ha hecho después.{% endblocktranslate %}</p>
+
+    <ul class="tarjetas">
+        <li class="tarjeta">
+            <h2><a href="{% url 'documentacion:historico' %}">{% translate "Histórico: la tesis (2026)" %}</a></h2>
+            <p>{% blocktranslate trimmed %}El problema, el método, los resultados y lo que aprendimos. Incluye el hallazgo principal: con operadores genéricos, la programación genética no superó a la búsqueda aleatoria.{% endblocktranslate %}</p>
+            <p class="nota">{% translate "Esta parte no cambia. Es el registro del trabajo aprobado el 23 de julio de 2026." %}</p>
+        </li>
+        <li class="tarjeta">
+            <h2><a href="{% url 'documentacion:avances' %}">{% translate "Avances: después de la tesis" %}</a></h2>
+            <p>{% blocktranslate trimmed %}Los cambios y las pruebas nuevas, con su fecha y su estado. Aquí se verá la versión mejorada del motor junto a la versión de la tesis.{% endblocktranslate %}</p>
+            <p class="nota">{% translate "Esta parte crece con cada avance." %}</p>
+        </li>
+    </ul>
+</div>
+{% endblock %}

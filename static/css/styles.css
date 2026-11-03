@@ -344,3 +344,5 @@ code {
     font-size: 0.95rem; 
     color: #b7094c; 
 }
+/* Enlaces del pie: blancos y subrayados para mantener el contraste sobre el fondo oscuro */
+footer a, footer a:visited { color: #ffffff; text-decoration: underline; }

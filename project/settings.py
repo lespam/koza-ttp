@@ -75,6 +75,7 @@ INSTALLED_APPS = [
     'myapp',
     'tesis',
     'programa_genetico',
+    'documentacion',
 ]
 
 MIDDLEWARE = [
