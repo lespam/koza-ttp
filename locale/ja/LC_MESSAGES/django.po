@@ -9,23 +9,23 @@ msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Programación genética - Planificación de béisbol"
-msgstr ""
+msgstr "遺伝的プログラミング - 野球計画"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
-msgstr ""
+msgstr "言語"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
-msgstr ""
+msgstr "変化"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr ""
+msgstr "野球シーズン計画における遺伝的プログラミング"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¡Bienvenido a la aplicación!"
-msgstr ""
+msgstr "アプリへようこそ!"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -34,6 +34,7 @@ msgid ""
 "lograrlo, implementamos una técnica de inteligencia artificial avanzada "
 "inspirada directamente en la evolución natural de las especies."
 msgstr ""
+"このインタラクティブシステムは、野球シーズン全体のカレンダーの組織化と物流を最適に解決しようとしています。これを実現するために、種の自然進化に直接着想を得た高度な人工知能技術を実装しました。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -44,6 +45,7 @@ msgid ""
 "programa generado se estructura internamente como un árbol de expresión que "
 "representa una solución potencial para nuestro calendario."
 msgstr ""
+"<strong>遺伝的プログラミングは</strong>、初期のプログラム集団から自動的に解を作成、評価、修正することを含みます。これは自然選択、交配、突然変異などの生体模倣操作を実行することで実現されます。この環境では、生成された各プログラムは内部的に発現木として構造化され、カレンダーの潜在的な解決策を表しています。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -51,104 +53,106 @@ msgid ""
 "de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
 "características clave y generar nuevos árboles cada vez más prometedores."
 msgstr ""
+"アルゴリズムは厳密な品質基準(適応 "
+"<em>度関数</em>)を用いて各木を継続的に評価し、主要な特徴を継承し、ますます有望な新しい木を生成することを目的としています。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
 "óptima y más eficiente!"
-msgstr ""
+msgstr "このプロセスは最適かつ最も効率的な解決策が見つかるまで進化ループで繰り返されます!"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr ""
+msgstr "コントロールパネル:アクティブ設定(ID: %(id)s)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Configuración del algoritmo"
-msgstr ""
+msgstr "アルゴリズム設定"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
-msgstr ""
+msgstr "人口規模:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Número de generaciones:"
-msgstr ""
+msgstr "世代数:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Probabilidad de cruce:"
-msgstr ""
+msgstr "交差確率:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Probabilidad de mutación:"
-msgstr ""
+msgstr "突然変異確率:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Sin torneo"
-msgstr ""
+msgstr "トーナメントなし"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr ""
+msgstr "アクティブカレンダー: %(torneo)s (ID: %(id)s)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
-msgstr ""
+msgstr "日付"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Local"
-msgstr ""
+msgstr "ローカル"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Visitante"
-msgstr ""
+msgstr "離れろ"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
-msgstr ""
+msgstr "この構成ではゲームが生成されません。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr ""
+msgstr "データベースに登録されたトーナメントマッチの一覧。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
-msgstr ""
+msgstr "最適化結果"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Haz clic en el árbol para expandir"
-msgstr ""
+msgstr "ツリーをクリックすると展開します"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Costo de viaje total:"
-msgstr ""
+msgstr "総交通費用:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Violaciones de reglas:"
-msgstr ""
+msgstr "ルール違反:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
 " árbol de soluciones sintácticas."
-msgstr ""
+msgstr "下のボタンを押すと遺伝的アルゴリズムが起動し、構文解の木が表示されます。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
-msgstr ""
+msgstr "ラン最適化"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Guía operativa del sistema"
-msgstr ""
+msgstr "システム運用ガイド"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Instrucciones de inicio rápido"
-msgstr ""
+msgstr "クイックスタートの手順"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
 " secuenciales:"
-msgstr ""
+msgstr "デモと円滑に関わるために、以下の手順に従ってください:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -156,6 +160,8 @@ msgid ""
 "administrativos. <strong>Nota importante:</strong> el número total de "
 "equipos participantes debe ser par."
 msgstr ""
+"管理パネルでチーム、リーグ、トーナメントを作成しましょう。 <strong>重要な注意点:</strong> "
+"参加チームの総数は偶数でなければなりません。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -163,10 +169,12 @@ msgid ""
 " selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
 " optimización\"</strong> para estructurar el calendario automatizado."
 msgstr ""
+"参加者を定義したら、上のパネルに移動し、アクティブなトーナメントを選択し、緑色の <strong>「ラン最適化」</strong> "
+"ボタンをクリックして自動スケジュールを組みましょう。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr ""
+msgstr "AIの内部論理とアルゴリズムの流れ"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -174,142 +182,143 @@ msgid ""
 "mostramos paso a paso el ciclo de vida evasivo basado en programación "
 "genética:"
 msgstr ""
+"ソフトウェアが稼働すると内部で何が起こるのでしょうか?ここでは遺伝子プログラミングに基づく回避ライフサイクルのステップバイステップをご紹介します。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "1. Configuración e hiperparámetros base"
-msgstr ""
+msgstr "1. 基本構成とハイパーパラメータ"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se cargan las variables del panel que definirán las generaciones, el tamaño "
 "inicial de la población, así como las tasas de probabilidad asociadas al "
 "cruce y la mutación genómica."
-msgstr ""
+msgstr "世代、初期集団規模、クロスオーバーおよびゲノム変異に関連する確率率を定義するパネル変数が読み込まれます。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr ""
+msgstr "2. 演算子と構造ブロックの定義(文法)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las primitivas:"
-msgstr ""
+msgstr "プリミティブ:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr ""
+msgstr "は、プログラムが木を構築するために実行する論理操作です。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las terminales:"
-msgstr ""
+msgstr "ターミナル:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "representan los datos constantes o variables básicas estructuradas del "
 "torneo."
-msgstr ""
+msgstr "大会の定数データまたは構造化された基本変数を表します。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "listas maestros de días hábiles"
-msgstr ""
+msgstr "マスター・リスト・オブ・ワーキング・デイズ"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "tanto en condición de casa como de visita"
-msgstr ""
+msgstr "ホームでもアウェイでも両方"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "inicializador vacío"
-msgstr ""
+msgstr "空のイニショナイザ"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las efímeras:"
-msgstr ""
+msgstr "儚いもの:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "son valores aleatorios puros que se introducen en nodos específicos para "
 "inyectar variabilidad matemática al sistema."
-msgstr ""
+msgstr "それらは純粋にランダムな値を特定のノードに入力し、システムに数学的変動性を注入します。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Fecha aleatoria y equipo aleatorio."
-msgstr ""
+msgstr "ランダムな日付とチーム。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr ""
+msgstr "3. 初期化、進化サイクルと収束"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Fase de ejecución en vivo:"
-msgstr ""
+msgstr "ライブ実行フェーズ:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El sistema genera una población inicial aleatoria y convierte cada propuesta"
 " en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
 "donde ocurre la magia computacional!"
-msgstr ""
+msgstr "システムはランダムな初期集団を生成し、各提案を階層的な木構造(<em>構文木</em>)に変換します。ここで計算の魔法が起こるのです!"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Visualización y muestreo:"
-msgstr ""
+msgstr "可視化とサンプリング:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se procesa la población inicial y se genera el renderizado de los árboles "
 "mediante el generador de sintaxis."
-msgstr ""
+msgstr "初期の人口が処理され、木は構文ジェネレーターでレンダリングされます。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Evaluación de aptitud:"
-msgstr ""
+msgstr "適性評価:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
 "distancia acumulada en kilómetros y el cumplimiento normativo."
-msgstr ""
+msgstr "各個人の <em>フィットネス</em> 値は、累積距離(キロメートル)と規制遵守状況に基づいて計算されます。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Selección natural:"
-msgstr ""
+msgstr "自然選択:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se escogen los mejores individuos de la ronda anterior para actuar como "
 "padres biológicos de la nueva generación."
-msgstr ""
+msgstr "前回のラウンドで優秀な個人が選ばれ、新世代の生物学的な親として行動します。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cruzamiento, mutación y herencia:"
-msgstr ""
+msgstr "交配、突然変異、遺伝:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
 " mutaciones en nodos aleatorios."
-msgstr ""
+msgstr "新しい個体は、顕著な木の枝を混ぜてランダムなノードに突然変異を適用することで作成されます。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Bucle iterativo:"
-msgstr ""
+msgstr "反復ループ:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
 " hasta completar el total de generaciones configuradas en la interfaz."
-msgstr ""
+msgstr "評価、選択、再生の手順は、インターフェースで設定された総世代数が完成するまで順次繰り返し行われます。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados oficiales:"
-msgstr ""
+msgstr "公式結果:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El mejor individuo obtenido en la última iteración se valida y su estructura"
 " interna se almacena como el calendario definitivo del torneo de béisbol."
-msgstr ""
+msgstr "前回のバージョンで得られた最良の選手が検証され、その内部構造が決定的な野球トーナメントスケジュールとして保存されます。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
-msgstr ""
+msgstr "コンピュータ工学論文"

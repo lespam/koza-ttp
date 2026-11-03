@@ -9,23 +9,23 @@ msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Programación genética - Planificación de béisbol"
-msgstr ""
+msgstr "Genetic Programming - Baseball Planning"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
-msgstr ""
+msgstr "Asụsụ"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
-msgstr ""
+msgstr "Mgbanwe"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr ""
+msgstr "Genetic Programming in Baseball Season Planning"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¡Bienvenido a la aplicación!"
-msgstr ""
+msgstr "Welcome ịkpọtụrụ anyị na APP!"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -34,6 +34,9 @@ msgid ""
 "lograrlo, implementamos una técnica de inteligencia artificial avanzada "
 "inspirada directamente en la evolución natural de las especies."
 msgstr ""
+"Usoro mmekọrịta a na-achọ idozi nhazi na lọjistik nke kalenda maka oge "
+"baseball zuru ezu. Iji mezuo nke a, anyị mejupụtara usoro ọgụgụ isi dị elu "
+"nke sitere n'ike mmụọ nsọ site na evolushọn sitere n'okike nke ụdị."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -44,6 +47,11 @@ msgid ""
 "programa generado se estructura internamente como un árbol de expresión que "
 "representa una solución potencial para nuestro calendario."
 msgstr ""
+"<strong>Mmemme mkpụrụ ndụ ihe nketa</strong> na-agụnye ịmepụta, nyochaa, na "
+"ịgbanwe ihe ngwọta site na mmemme mbụ. A na-eme nke a site na ịme arụmọrụ "
+"bioinspired dị ka nhọrọ okike, ịgafe, na mgbanwe. Na gburugburu ebe obibi a,"
+" a na-ahazi mmemme ọ bụla dị ka osisi okwu nke na-anọchite anya ihe ngwọta "
+"maka kalenda anyị."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -51,104 +59,111 @@ msgid ""
 "de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
 "características clave y generar nuevos árboles cada vez más prometedores."
 msgstr ""
+"Algọridim na-aga n'ihu na-enyocha osisi ọ bụla site na iji njirisi ogo siri "
+"ike ( <em>ọrụ ahụike) na</em> ebumnuche nke iketa njirimara ndị bụ isi na "
+"ịmepụta osisi ọhụrụ na-ekwe nkwa karịa."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
 "óptima y más eficiente!"
 msgstr ""
+"A na-eme usoro a n'ụzọ zuru ezu ruo mgbe a ga-achọta ihe ngwọta kachasị mma "
+"na nke kachasị mma!"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr ""
+msgstr "Ogwe njikwa: Ntọala na-arụ ọrụ (ID: %(id)s)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Configuración del algoritmo"
-msgstr ""
+msgstr "Nhazi algọridim"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
-msgstr ""
+msgstr "Ọnụ ọgụgụ ndị bi na ya:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Número de generaciones:"
-msgstr ""
+msgstr "Ọnụ ọgụgụ nke ọgbọ:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Probabilidad de cruce:"
-msgstr ""
+msgstr "Ohere nke ịgafe:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Probabilidad de mutación:"
-msgstr ""
+msgstr "Mgbanwe nke puru omume:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Sin torneo"
-msgstr ""
+msgstr "Enweghị asọmpi"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr ""
+msgstr "Kalenda na-arụ ọrụ: %(torneo)s (ID: %(id)s)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
-msgstr ""
+msgstr "Ụbọchị"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Local"
-msgstr ""
+msgstr "Mpaghara"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Visitante"
-msgstr ""
+msgstr "Pụọ"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
-msgstr ""
+msgstr "Enweghị egwuregwu ọ bụla e mepụtara maka nhazi a."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr ""
+msgstr "Na-egosi egwuregwu egwuregwu ndị edebanyere aha na nchekwa data."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
-msgstr ""
+msgstr "Nsonaazụ njikarịcha"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Haz clic en el árbol para expandir"
-msgstr ""
+msgstr "Pịa osisi ahụ ka ị gbasaa"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Costo de viaje total:"
-msgstr ""
+msgstr "Mkpokọta njem na-akwụ ụgwọ:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Violaciones de reglas:"
-msgstr ""
+msgstr "Mmebi iwu:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
 " árbol de soluciones sintácticas."
 msgstr ""
+"Pịa bọtịnụ dị n'okpuru iji rụọ ọrụ mkpụrụ ndụ ihe nketa ma gosipụta osisi "
+"ngwọta syntactic."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
-msgstr ""
+msgstr "Run njikarịcha"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Guía operativa del sistema"
-msgstr ""
+msgstr "Ntuziaka Sistemụ"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Instrucciones de inicio rápido"
-msgstr ""
+msgstr "Ntuziaka mmalite ngwa ngwa"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
 " secuenciales:"
-msgstr ""
+msgstr "Iji malite ịrụ ọrụ nke ọma na demo, soro usoro ndị a:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -156,6 +171,8 @@ msgid ""
 "administrativos. <strong>Nota importante:</strong> el número total de "
 "equipos participantes debe ser par."
 msgstr ""
+"Mepụta otu, otu, na asọmpi na ogwe nchịkwa gị. <strong>Ihe dị mkpa:</strong>"
+" Ọnụ ọgụgụ ndị otu na-ekere òkè ga-abụ otu."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -163,10 +180,13 @@ msgid ""
 " selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
 " optimización\"</strong> para estructurar el calendario automatizado."
 msgstr ""
+"Ozugbo akọwapụtara ndị sonyere, gaa na panel dị n'elu, họrọ asọmpi gị na-"
+"arụsi ọrụ ike wee pịa bọtịnụ <strong>\"Run Optimization\"</strong> iji hazie"
+" usoro akpaaka."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr ""
+msgstr "Esịtilite logic na algorithmic eruba nke AI"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -174,10 +194,13 @@ msgid ""
 "mostramos paso a paso el ciclo de vida evasivo basado en programación "
 "genética:"
 msgstr ""
+"Kedu ihe na-eme n'ime ụlọ ma ọ bụrụ na ngwanrọ ahụ na-aga n'ihu? Nke a bụ "
+"nzọụkwụ site nzọụkwụ na usoro ndụ evasive dabere na mmemme mkpụrụ ndụ ihe "
+"nketa:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "1. Configuración e hiperparámetros base"
-msgstr ""
+msgstr "1. Ntọala nhazi na hyperparameters"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -185,63 +208,70 @@ msgid ""
 "inicial de la población, así como las tasas de probabilidad asociadas al "
 "cruce y la mutación genómica."
 msgstr ""
+"A na-ebu mgbanwe panel nke ga-akọwa ọgbọ, ọnụ ọgụgụ ndị mmadụ mbụ, yana "
+"ọnụego nke puru omume metụtara crossover na genomic mutation na-ebu."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr ""
+msgstr "2. Nkọwa nke ndị ọrụ na ihe owuwu (asụsụ)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las primitivas:"
-msgstr ""
+msgstr "Ndị na-eto eto na-eto eto:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "son las operaciones lógicas que un programa ejecuta para construir el árbol."
 msgstr ""
+"Nke a bụ ihe ezi uche dị na ya nke usoro ihe omume na-eme iji wuo osisi ahụ."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las terminales:"
-msgstr ""
+msgstr "Ọdụ ụgbọ mmiri:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "representan los datos constantes o variables básicas estructuradas del "
 "torneo."
 msgstr ""
+"na-anọchite anya data na-adịgide adịgide ma ọ bụ mgbanwe ndị bụ isi nke "
+"asọmpi ahụ."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "listas maestros de días hábiles"
-msgstr ""
+msgstr "Ndepụta nke ụbọchị ọrụ"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "tanto en condición de casa como de visita"
-msgstr ""
+msgstr "Ma n'ụlọ ma n'okporo ụzọ."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "inicializador vacío"
-msgstr ""
+msgstr "Ghewe mbido-mbido oghe"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las efímeras:"
-msgstr ""
+msgstr "Ephemeral:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "son valores aleatorios puros que se introducen en nodos específicos para "
 "inyectar variabilidad matemática al sistema."
 msgstr ""
+"Ha bụ ụkpụrụ dị ọcha nke a na-etinye n'ime ọnụ ndị a kapịrị ọnụ iji tinye "
+"mgbakọ na mwepụ n'ime usoro ahụ."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Fecha aleatoria y equipo aleatorio."
-msgstr ""
+msgstr "Random ụbọchị na random team."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr ""
+msgstr "3. Mbido, evolushọn okirikiri na convergence"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Fase de ejecución en vivo:"
-msgstr ""
+msgstr "Live Execution Phase:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -249,67 +279,82 @@ msgid ""
 " en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
 "donde ocurre la magia computacional!"
 msgstr ""
+"Usoro a na-emepụta ọnụ ọgụgụ mbụ na-enweghị atụ ma gbanwee atụmatụ ọ bụla "
+"n'ime usoro osisi hierarchical (<em>osisi syntax</em>). Nke a bụ ebe anwansi"
+" mgbakọ na mwepụ na-eme!"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Visualización y muestreo:"
-msgstr ""
+msgstr "Visualization na nlele:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se procesa la población inicial y se genera el renderizado de los árboles "
 "mediante el generador de sintaxis."
 msgstr ""
+"A na-ahazi ọnụ ọgụgụ ndị mbụ ma sụgharịa osisi ahụ site na iji generator "
+"syntax."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Evaluación de aptitud:"
-msgstr ""
+msgstr "Aptitude Assessment:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
 "distancia acumulada en kilómetros y el cumplimiento normativo."
 msgstr ""
+"A na-agbakọ uru <em>ahụike</em> nke onye ọ bụla dabere na mkpokọta anya na "
+"kilomita na nnabata iwu."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Selección natural:"
-msgstr ""
+msgstr "Nhọrọ okike:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se escogen los mejores individuos de la ronda anterior para actuar como "
 "padres biológicos de la nueva generación."
 msgstr ""
+"A na-ahọpụta ndị kachasị mma site na gburugburu gara aga ka ha rụọ ọrụ dị ka"
+" nne na nna nke ọgbọ ọhụrụ."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cruzamiento, mutación y herencia:"
-msgstr ""
+msgstr "Crossbreeding, mutation na ihe nketa:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
 " mutaciones en nodos aleatorios."
 msgstr ""
+"A na-emepụta ndị ọhụrụ site na ịgwakọta alaka nke osisi ndị a ma ama ma "
+"tinye mgbanwe na ọnụọgụ na-enweghị atụ."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Bucle iterativo:"
-msgstr ""
+msgstr "Iterative loop:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
 " hasta completar el total de generaciones configuradas en la interfaz."
 msgstr ""
+"A na-emegharị usoro nyocha, nhọrọ, na playback n'usoro ruo mgbe ọnụ ọgụgụ "
+"nke ọgbọ ndị a haziri na interface ahụ gwụchara."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados oficiales:"
-msgstr ""
+msgstr "Nsonaazụ gọọmentị:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El mejor individuo obtenido en la última iteración se valida y su estructura"
 " interna se almacena como el calendario definitivo del torneo de béisbol."
 msgstr ""
+"A na-akwado onye kachasị mma enwetara na iteration ikpeazụ ma echekwa usoro "
+"ya dị ka usoro asọmpi baseball doro anya."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
-msgstr ""
+msgstr "Computer Engineering Thesis"

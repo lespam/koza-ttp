@@ -9,23 +9,23 @@ msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Programación genética - Planificación de béisbol"
-msgstr ""
+msgstr "Genetic Programming - Baseball Planning"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
-msgstr ""
+msgstr "Language"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
-msgstr ""
+msgstr "Change"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr ""
+msgstr "Genetic Programming in Baseball Season Planning"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¡Bienvenido a la aplicación!"
-msgstr ""
+msgstr "Welcome to the app!"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -34,6 +34,10 @@ msgid ""
 "lograrlo, implementamos una técnica de inteligencia artificial avanzada "
 "inspirada directamente en la evolución natural de las especies."
 msgstr ""
+"This interactive system seeks to optimally solve the organization and "
+"logistics of a calendar for a full baseball season. To achieve this, we "
+"implemented an advanced artificial intelligence technique directly inspired "
+"by the natural evolution of species."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -44,6 +48,12 @@ msgid ""
 "programa generado se estructura internamente como un árbol de expresión que "
 "representa una solución potencial para nuestro calendario."
 msgstr ""
+"<strong>Genetic programming</strong> involves automatically creating, "
+"evaluating, and modifying solutions from an initial population of programs. "
+"This is accomplished by executing bioinspired operations such as natural "
+"selection, crossing, and mutation. In this environment, each generated "
+"program is internally structured as an expression tree that represents a "
+"potential solution to our calendar."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -51,104 +61,113 @@ msgid ""
 "de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
 "características clave y generar nuevos árboles cada vez más prometedores."
 msgstr ""
+"The algorithm continuously evaluates each tree using a strict quality "
+"criterion (fitness <em>function) with</em> the goal of inheriting key "
+"characteristics and generating new trees that are increasingly promising."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
 "óptima y más eficiente!"
 msgstr ""
+"This process is repeated in an evolutionary loop until the optimal and most "
+"efficient solution is found!"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr ""
+msgstr "Control Panel: Active Settings (ID: %(id)s)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Configuración del algoritmo"
-msgstr ""
+msgstr "Algorithm Settings"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
-msgstr ""
+msgstr "Population size:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Número de generaciones:"
-msgstr ""
+msgstr "Number of generations:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Probabilidad de cruce:"
-msgstr ""
+msgstr "Probability of crossing:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Probabilidad de mutación:"
-msgstr ""
+msgstr "Mutation Probability:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Sin torneo"
-msgstr ""
+msgstr "No tournament"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr ""
+msgstr "Active Calendar: %(torneo)s (ID: %(id)s)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
-msgstr ""
+msgstr "Date"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Local"
-msgstr ""
+msgstr "Local"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Visitante"
-msgstr ""
+msgstr "Away"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
-msgstr ""
+msgstr "There are no games generated for this configuration."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr ""
+msgstr "Showing the tournament matches registered in the database."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
-msgstr ""
+msgstr "Optimization results"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Haz clic en el árbol para expandir"
-msgstr ""
+msgstr "Click the tree to expand"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Costo de viaje total:"
-msgstr ""
+msgstr "Total Travel Cost:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Violaciones de reglas:"
-msgstr ""
+msgstr "Rule Violations:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
 " árbol de soluciones sintácticas."
 msgstr ""
+"Press the button below to activate the genetic algorithm and display the "
+"syntactic solution tree."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
-msgstr ""
+msgstr "Run optimization"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Guía operativa del sistema"
-msgstr ""
+msgstr "System Operational Guide"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Instrucciones de inicio rápido"
-msgstr ""
+msgstr "Quick Start Instructions"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
 " secuenciales:"
 msgstr ""
+"To start successfully interacting with the demo, follow these sequential "
+"steps:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -156,6 +175,9 @@ msgid ""
 "administrativos. <strong>Nota importante:</strong> el número total de "
 "equipos participantes debe ser par."
 msgstr ""
+"Create a team, league, and tournament in your administrative panels. "
+"<strong>Important note:</strong> The total number of participating teams "
+"must be even."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -163,10 +185,13 @@ msgid ""
 " selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
 " optimización\"</strong> para estructurar el calendario automatizado."
 msgstr ""
+"Once you have the participants defined, head to the panel above, select your"
+" active tournament and click on the green <strong>\"Run "
+"Optimization\"</strong> button to structure the automated schedule."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr ""
+msgstr "Internal logic and algorithmic flow of AI"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -174,10 +199,12 @@ msgid ""
 "mostramos paso a paso el ciclo de vida evasivo basado en programación "
 "genética:"
 msgstr ""
+"What happens internally when the software goes live? Here's a step-by-step "
+"look at the evasive life cycle based on genetic programming:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "1. Configuración e hiperparámetros base"
-msgstr ""
+msgstr "1. Base configuration and hyperparameters"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -185,63 +212,69 @@ msgid ""
 "inicial de la población, así como las tasas de probabilidad asociadas al "
 "cruce y la mutación genómica."
 msgstr ""
+"Panel variables that will define generations, initial population size, as "
+"well as probability rates associated with crossover and genomic mutation are"
+" loaded."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr ""
+msgstr "2. Definition of operators and structural blocks (grammar)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las primitivas:"
-msgstr ""
+msgstr "The primitives:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr ""
+msgstr "are the logical operations that a program executes to build the tree."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las terminales:"
-msgstr ""
+msgstr "The terminals:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "representan los datos constantes o variables básicas estructuradas del "
 "torneo."
 msgstr ""
+"represent the constant data or structured basic variables of the tournament."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "listas maestros de días hábiles"
-msgstr ""
+msgstr "Master Lists of Working Days"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "tanto en condición de casa como de visita"
-msgstr ""
+msgstr "both at home and on the road"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "inicializador vacío"
-msgstr ""
+msgstr "Empty Initializer"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las efímeras:"
-msgstr ""
+msgstr "The ephemeral:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "son valores aleatorios puros que se introducen en nodos específicos para "
 "inyectar variabilidad matemática al sistema."
 msgstr ""
+"They are pure random values that are fed into specific nodes to inject "
+"mathematical variability into the system."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Fecha aleatoria y equipo aleatorio."
-msgstr ""
+msgstr "Random date and random team."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr ""
+msgstr "3. Initialization, evolutionary cycle and convergence"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Fase de ejecución en vivo:"
-msgstr ""
+msgstr "Live Execution Phase:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -249,67 +282,83 @@ msgid ""
 " en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
 "donde ocurre la magia computacional!"
 msgstr ""
+"The system generates a random initial population and converts each proposal "
+"into a hierarchical tree structure (<em>syntax tree</em>). This is where the"
+" computational magic happens!"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Visualización y muestreo:"
-msgstr ""
+msgstr "Visualization and sampling:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se procesa la población inicial y se genera el renderizado de los árboles "
 "mediante el generador de sintaxis."
 msgstr ""
+"The initial population is processed and the trees are rendered using the "
+"syntax generator."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Evaluación de aptitud:"
-msgstr ""
+msgstr "Aptitude Assessment:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
 "distancia acumulada en kilómetros y el cumplimiento normativo."
 msgstr ""
+"Each individual's <em>fitness</em> value is calculated based on cumulative "
+"distance in kilometers and regulatory compliance."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Selección natural:"
-msgstr ""
+msgstr "Natural selection:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se escogen los mejores individuos de la ronda anterior para actuar como "
 "padres biológicos de la nueva generación."
 msgstr ""
+"The best individuals from the previous round are chosen to act as biological"
+" parents of the new generation."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cruzamiento, mutación y herencia:"
-msgstr ""
+msgstr "Crossbreeding, mutation and inheritance:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
 " mutaciones en nodos aleatorios."
 msgstr ""
+"New individuals are created by mixing branches of prominent trees and "
+"applying mutations in random nodes."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Bucle iterativo:"
-msgstr ""
+msgstr "Iterative loop:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
 " hasta completar el total de generaciones configuradas en la interfaz."
 msgstr ""
+"The evaluation, selection, and playback steps are repeated sequentially "
+"until the total number of generations configured in the interface is "
+"completed."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados oficiales:"
-msgstr ""
+msgstr "Official Results:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El mejor individuo obtenido en la última iteración se valida y su estructura"
 " interna se almacena como el calendario definitivo del torneo de béisbol."
 msgstr ""
+"The best individual obtained in the last iteration is validated and its "
+"internal structure is stored as the definitive baseball tournament schedule."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
-msgstr ""
+msgstr "Computer Engineering Thesis"

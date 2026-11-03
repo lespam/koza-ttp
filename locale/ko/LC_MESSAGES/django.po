@@ -9,23 +9,23 @@ msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Programación genética - Planificación de béisbol"
-msgstr ""
+msgstr "유전 프로그래밍 - 야구 계획"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
-msgstr ""
+msgstr "언어"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
-msgstr ""
+msgstr "변화"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr ""
+msgstr "야구 시즌 계획에서의 유전 프로그래밍"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¡Bienvenido a la aplicación!"
-msgstr ""
+msgstr "앱에 오신 것을 환영합니다!"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -34,6 +34,8 @@ msgid ""
 "lograrlo, implementamos una técnica de inteligencia artificial avanzada "
 "inspirada directamente en la evolución natural de las especies."
 msgstr ""
+"이 인터랙티브 시스템은 야구 시즌 전체를 위한 일정의 조직과 물류를 최적으로 해결하고자 합니다. 이를 위해 우리는 종의 자연 진화에서 "
+"직접 영감을 받은 첨단 인공지능 기법을 도입했습니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -44,6 +46,9 @@ msgid ""
 "programa generado se estructura internamente como un árbol de expresión que "
 "representa una solución potencial para nuestro calendario."
 msgstr ""
+"<strong>유전 프로그래밍은</strong> 초기 프로그램 집단에서 자동으로 해를 생성, 평가, 수정하는 것을 포함합니다. 이는 "
+"자연선택, 교배, 돌연변이와 같은 생체 모방 작업을 실행함으로써 이루어집니다. 이 환경에서 생성된 각 프로그램은 내부적으로 표현 트리로 "
+"구성되어 있으며, 이는 우리의 달력에 대한 잠재적 해답을 나타냅니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -51,104 +56,106 @@ msgid ""
 "de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
 "características clave y generar nuevos árboles cada vez más prometedores."
 msgstr ""
+"알고리즘은 엄격한 품질 기준(적합도 함수)을 사용하여 각 트리를 지속적으로 평가 <em>하여</em> 주요 특성을 상속하고 점점 더 "
+"유망해지는 새로운 트리를 생성하는 것을 목표로 합니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
 "óptima y más eficiente!"
-msgstr ""
+msgstr "이 과정은 최적이자 가장 효율적인 해법이 발견될 때까지 진화적 루프를 반복합니다!"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr ""
+msgstr "제어판: 활성 설정 (ID: %(id)s)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Configuración del algoritmo"
-msgstr ""
+msgstr "알고리즘 설정"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
-msgstr ""
+msgstr "인구 규모:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Número de generaciones:"
-msgstr ""
+msgstr "세대 수:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Probabilidad de cruce:"
-msgstr ""
+msgstr "교차 확률:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Probabilidad de mutación:"
-msgstr ""
+msgstr "돌연변이 확률:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Sin torneo"
-msgstr ""
+msgstr "토너먼트는 없다"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr ""
+msgstr "활성 캘린더: %(torneo)s (ID: %(id)s)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
-msgstr ""
+msgstr "날짜"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Local"
-msgstr ""
+msgstr "지역"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Visitante"
-msgstr ""
+msgstr "멀리"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
-msgstr ""
+msgstr "이 구성에 대해서는 게임이 생성되지 않습니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr ""
+msgstr "데이터베이스에 등록된 토너먼트 경기 결과를 보여줍니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
-msgstr ""
+msgstr "최적화 결과"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Haz clic en el árbol para expandir"
-msgstr ""
+msgstr "트리를 클릭하면 확장됩니다"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Costo de viaje total:"
-msgstr ""
+msgstr "총 여행 비용:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Violaciones de reglas:"
-msgstr ""
+msgstr "규칙 위반:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
 " árbol de soluciones sintácticas."
-msgstr ""
+msgstr "아래 버튼을 눌러 유전 알고리즘을 활성화하고 구문 해법 트리를 표시합니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
-msgstr ""
+msgstr "런 최적화"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Guía operativa del sistema"
-msgstr ""
+msgstr "시스템 운영 가이드"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Instrucciones de inicio rápido"
-msgstr ""
+msgstr "빠른 시작 지침"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
 " secuenciales:"
-msgstr ""
+msgstr "데모와 성공적으로 상호작용을 시작하려면 다음 단계들을 따라야 합니다:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -156,6 +163,7 @@ msgid ""
 "administrativos. <strong>Nota importante:</strong> el número total de "
 "equipos participantes debe ser par."
 msgstr ""
+"행정 패널에서 팀, 리그, 토너먼트를 생성하세요. <strong>중요 참고:</strong> 참가 팀 수는 반드시 짝수여야 합니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -163,10 +171,12 @@ msgid ""
 " selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
 " optimización\"</strong> para estructurar el calendario automatizado."
 msgstr ""
+"참가자를 정의한 후에는 위 패널로 가서 진행 중인 토너먼트를 선택한 후 녹색 <strong>\"Run "
+"Optimization\"</strong> 버튼을 클릭하여 자동 일정을 구성하세요."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr ""
+msgstr "내부 논리와 AI의 알고리즘적 흐름"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -174,74 +184,75 @@ msgid ""
 "mostramos paso a paso el ciclo de vida evasivo basado en programación "
 "genética:"
 msgstr ""
+"소프트웨어가 가동되면 내부에서는 어떤 일이 벌어질까요? 다음은 유전자 프로그래밍을 기반으로 한 회피 생명 주기를 단계별로 살펴보겠습니다:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "1. Configuración e hiperparámetros base"
-msgstr ""
+msgstr "1. 기본 구성 및 하이퍼파라미터"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se cargan las variables del panel que definirán las generaciones, el tamaño "
 "inicial de la población, así como las tasas de probabilidad asociadas al "
 "cruce y la mutación genómica."
-msgstr ""
+msgstr "세대, 초기 개체군 규모, 교차 및 유전체 돌연변이와 관련된 확률을 정의하는 패널 변수들이 로드됩니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr ""
+msgstr "2. 연산자 및 구조 블록의 정의(문법)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las primitivas:"
-msgstr ""
+msgstr "원시 생물들:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr ""
+msgstr "이 연산은 트리를 구축하기 위해 프로그램이 실행하는 논리적 연산입니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las terminales:"
-msgstr ""
+msgstr "터미널:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "representan los datos constantes o variables básicas estructuradas del "
 "torneo."
-msgstr ""
+msgstr "토너먼트의 상수 데이터 또는 구조화된 기본 변수를 나타냅니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "listas maestros de días hábiles"
-msgstr ""
+msgstr "근무일 마스터 리스트"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "tanto en condición de casa como de visita"
-msgstr ""
+msgstr "홈과 원정 모두에서"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "inicializador vacío"
-msgstr ""
+msgstr "빈 초기화 장치"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las efímeras:"
-msgstr ""
+msgstr "덧없음:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "son valores aleatorios puros que se introducen en nodos específicos para "
 "inyectar variabilidad matemática al sistema."
-msgstr ""
+msgstr "이들은 특정 노드에 입력되는 순수 무작위 값으로, 시스템에 수학적 변동성을 주입합니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Fecha aleatoria y equipo aleatorio."
-msgstr ""
+msgstr "무작위 날짜와 무작위 팀."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr ""
+msgstr "3. 초기화, 진화 주기 및 수렴"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Fase de ejecución en vivo:"
-msgstr ""
+msgstr "실시간 실행 단계:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -249,67 +260,69 @@ msgid ""
 " en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
 "donde ocurre la magia computacional!"
 msgstr ""
+"시스템은 무작위 초기 인구를 생성하고 각 제안을 계층적 트리 구조(<em>구문 트리</em>)로 변환합니다. 여기서 계산의 마법이 "
+"일어납니다!"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Visualización y muestreo:"
-msgstr ""
+msgstr "시각화 및 샘플링:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se procesa la población inicial y se genera el renderizado de los árboles "
 "mediante el generador de sintaxis."
-msgstr ""
+msgstr "초기 인구가 처리되고 트리는 구문 생성기를 사용해 렌더링됩니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Evaluación de aptitud:"
-msgstr ""
+msgstr "적성 평가:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
 "distancia acumulada en kilómetros y el cumplimiento normativo."
-msgstr ""
+msgstr "각 개인의 <em>체력</em> 값은 누적 거리(킬로미터)와 규정 준수 여부를 기준으로 계산됩니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Selección natural:"
-msgstr ""
+msgstr "자연선택:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se escogen los mejores individuos de la ronda anterior para actuar como "
 "padres biológicos de la nueva generación."
-msgstr ""
+msgstr "이전 라운드에서 가장 우수한 인재들이 새 세대의 생물학적 부모로 선정됩니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cruzamiento, mutación y herencia:"
-msgstr ""
+msgstr "교배, 돌연변이 및 유전:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
 " mutaciones en nodos aleatorios."
-msgstr ""
+msgstr "새로운 개체는 주요 나무의 가지를 섞고 무작위 노드에 돌연변이를 적용하여 생성됩니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Bucle iterativo:"
-msgstr ""
+msgstr "반복 루프:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
 " hasta completar el total de generaciones configuradas en la interfaz."
-msgstr ""
+msgstr "평가, 선택, 재생 단계는 인터페이스에서 설정된 총 세대 수가 완료될 때까지 순차적으로 반복됩니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados oficiales:"
-msgstr ""
+msgstr "공식 결과:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El mejor individuo obtenido en la última iteración se valida y su estructura"
 " interna se almacena como el calendario definitivo del torneo de béisbol."
-msgstr ""
+msgstr "지난 버전에서 얻은 최고의 선수가 검증되고, 그 내부 구조가 최종 야구 토너먼트 일정으로 저장됩니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
-msgstr ""
+msgstr "컴퓨터 공학 논문"

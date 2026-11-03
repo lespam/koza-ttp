@@ -11,7 +11,7 @@ SUBSCRIPTION="${AZURE_SUBSCRIPTION_ID:-8907b1f1-8f8b-45ec-bb26-65438e9e267c}"
 RESOURCE_GROUP="${RESOURCE_GROUP:-rg-koza-ttp}"
 LOCATION="${LOCATION:-southcentralus}"   # Texas: la región más cercana a México
 VM_NAME="${VM_NAME:-vm-koza-ttp}"
-VM_SIZE="${VM_SIZE:-Standard_B1s}"        # 1 vCPU / 1 GB (+ swap); subir a Standard_B2s si hace falta
+VM_SIZE="${VM_SIZE:-Standard_B2ats_v2}"   # 2 vCPU / 1 GB (+ swap); subir a Standard_B2als_v2 (4 GB) si hace falta
 ADMIN_USER="${ADMIN_USER:-ubuntu}"
 SSH_KEY="${SSH_KEY:-$HOME/.ssh/koza_ttp_azure}"
 TRANSLATOR_NAME="${TRANSLATOR_NAME:-translator-koza-ttp}"
@@ -25,7 +25,10 @@ if [ ! -f "${SSH_KEY}" ]; then
   ssh-keygen -t ed25519 -f "${SSH_KEY}" -N "" -C "koza-ttp-azure"
 fi
 
-az group create --name "${RESOURCE_GROUP}" --location "${LOCATION}" --output none
+# El grupo puede estar en otra región que la VM (se creó en southcentralus)
+if ! az group show --name "${RESOURCE_GROUP}" >/dev/null 2>&1; then
+  az group create --name "${RESOURCE_GROUP}" --location "${LOCATION}" --output none
+fi
 
 if ! az vm show --resource-group "${RESOURCE_GROUP}" --name "${VM_NAME}" >/dev/null 2>&1; then
   az vm create \
@@ -33,6 +36,7 @@ if ! az vm show --resource-group "${RESOURCE_GROUP}" --name "${VM_NAME}" >/dev/n
     --name "${VM_NAME}" \
     --image Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest \
     --size "${VM_SIZE}" \
+    --location "${LOCATION}" \
     --admin-username "${ADMIN_USER}" \
     --ssh-key-values "${SSH_KEY}.pub" \
     --public-ip-sku Standard \

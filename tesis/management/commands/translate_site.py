@@ -18,6 +18,7 @@ No necesita gettext: usa polib para leer, escribir y compilar los catálogos.
 import ast
 import os
 import re
+import time
 import uuid
 from pathlib import Path
 
@@ -41,6 +42,7 @@ GETTEXT_CALL = re.compile(r"""\bgettext\(u?('(?:[^'\\]|\\.)*'|"(?:[^"\\]|\\.)*")
 PLACEHOLDER = re.compile(r"%\([a-zA-Z_][a-zA-Z0-9_]*\)[sd]")
 TAG = re.compile(r"</?[a-zA-Z][^>]*>")
 AZURE_BATCH = 50
+AZURE_RETRIES = 10
 
 
 class Command(BaseCommand):
@@ -166,14 +168,21 @@ class Command(BaseCommand):
         results = []
         for start in range(0, len(texts), AZURE_BATCH):
             batch = texts[start:start + AZURE_BATCH]
-            response = requests.post(
-                "https://api.cognitive.microsofttranslator.com/translate",
-                params={"api-version": "3.0", "from": MACHINE_SOURCE_LANGUAGE,
-                        "to": LANGUAGE_MAP_AZURE[code], "textType": "html"},
-                headers=headers,
-                json=[{"text": protect(text)} for text in batch],
-                timeout=60,
-            )
+            # La capa gratuita (F0) limita los caracteres por minuto: si responde 429, se espera
+            for attempt in range(AZURE_RETRIES):
+                response = requests.post(
+                    "https://api.cognitive.microsofttranslator.com/translate",
+                    params={"api-version": "3.0", "from": MACHINE_SOURCE_LANGUAGE,
+                            "to": LANGUAGE_MAP_AZURE[code], "textType": "html"},
+                    headers=headers,
+                    json=[{"text": protect(text)} for text in batch],
+                    timeout=60,
+                )
+                if response.status_code != 429:
+                    break
+                wait = int(response.headers.get("Retry-After", 60))
+                self.stdout.write(f"{code}: límite de Azure alcanzado, esperando {wait} s...")
+                time.sleep(wait)
             if response.status_code != 200:
                 raise CommandError(f"Azure Translator respondió {response.status_code}: {response.text}")
             results += [unprotect(item["translations"][0]["text"]) for item in response.json()]

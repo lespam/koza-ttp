@@ -66,7 +66,7 @@ TARGET_LANGUAGES = [code for code, _e, _n in SITE_LANGUAGES if code != SOURCE_LA
 
 # Site language code -> code the machine translation service expects.
 LANGUAGE_MAP = {code: code for code in TARGET_LANGUAGES}
-LANGUAGE_MAP_AZURE = {**LANGUAGE_MAP, "zh-hans": "zh-Hans", "zh-hant": "zh-Hant"}
+LANGUAGE_MAP_AZURE = {**LANGUAGE_MAP, "zh-hans": "zh-Hans", "zh-hant": "zh-Hant", "tl": "fil"}
 LANGUAGE_MAP_GOOGLE = {**LANGUAGE_MAP, "zh-hans": "zh-CN", "zh-hant": "zh-TW", "he": "iw"}
 
 # Django doesn't ship locale info for these, so we register it on startup.

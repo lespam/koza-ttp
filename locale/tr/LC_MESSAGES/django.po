@@ -9,23 +9,23 @@ msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Programación genética - Planificación de béisbol"
-msgstr ""
+msgstr "Genetik Programlama - Beyzbol Planlaması"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
-msgstr ""
+msgstr "Dil"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
-msgstr ""
+msgstr "Değişim"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr ""
+msgstr "Beyzbol Sezonu Planlamasında Genetik Programlama"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¡Bienvenido a la aplicación!"
-msgstr ""
+msgstr "Uygulamaya hoş geldiniz!"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -34,6 +34,10 @@ msgid ""
 "lograrlo, implementamos una técnica de inteligencia artificial avanzada "
 "inspirada directamente en la evolución natural de las especies."
 msgstr ""
+"Bu etkileşimli sistem, tam bir beyzbol sezonu için takvimin organizasyonunu "
+"ve lojistiğini en iyi şekilde çözmeyi amaçlar. Bunu başarmak için, türlerin "
+"doğal evriminden doğrudan ilham alan gelişmiş bir yapay zeka tekniği "
+"uyguladık."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -44,6 +48,12 @@ msgid ""
 "programa generado se estructura internamente como un árbol de expresión que "
 "representa una solución potencial para nuestro calendario."
 msgstr ""
+"<strong>Genetik programlama</strong>, ilk program popülasyonundan otomatik "
+"olarak çözümler oluşturmayı, değerlendirmeyi ve değiştirmeyi içerir. Bu, "
+"doğal seçilim, çaprazlama ve mutasyon gibi biyoeshamlı işlemlerin "
+"gerçekleştirilmesiyle gerçekleştirilir. Bu ortamda, oluşturulan her program,"
+" takvimimize potansiyel bir çözümü temsil eden bir ifade ağacı olarak iç "
+"yapılandırılır."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -51,104 +61,113 @@ msgid ""
 "de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
 "características clave y generar nuevos árboles cada vez más prometedores."
 msgstr ""
+"Algoritma, her ağacı kesin bir kalite kriteriyle ( <em>uygunluk fonksiyonu) "
+"kullanarak sürekli olarak değerlendirir ve</em> temel özellikleri miras "
+"almak ve giderek umut vaat eden yeni ağaçlar üretmeyi hedefler."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
 "óptima y más eficiente!"
 msgstr ""
+"Bu süreç, optimal ve en verimli çözüm bulunana kadar evrimsel bir döngüde "
+"tekrarlanır!"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr ""
+msgstr "Kontrol Paneli: Aktif Ayarlar (ID: %(id)s)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Configuración del algoritmo"
-msgstr ""
+msgstr "Algoritma Ayarları"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
-msgstr ""
+msgstr "Nüfus büyüklüğü:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Número de generaciones:"
-msgstr ""
+msgstr "Nesil sayısı:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Probabilidad de cruce:"
-msgstr ""
+msgstr "Geçiş olasılığı:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Probabilidad de mutación:"
-msgstr ""
+msgstr "Mutasyon Olasılığı:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Sin torneo"
-msgstr ""
+msgstr "Turnuva yok"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr ""
+msgstr "Aktif Takvim: %(torneo)s (ID: %(id)s)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
-msgstr ""
+msgstr "Tarih"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Local"
-msgstr ""
+msgstr "Yerel"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Visitante"
-msgstr ""
+msgstr "Uzaklaş"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
-msgstr ""
+msgstr "Bu konfigürasyon için oluşturulan oyun yok."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr ""
+msgstr "Veritabanında kayıtlı turnuva maçlarını gösteriyor."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
-msgstr ""
+msgstr "Optimizasyon sonuçları"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Haz clic en el árbol para expandir"
-msgstr ""
+msgstr "Genişletmek için ağaca tıklayın"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Costo de viaje total:"
-msgstr ""
+msgstr "Toplam Seyahat Masrafı:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Violaciones de reglas:"
-msgstr ""
+msgstr "Kural İhlalleri:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
 " árbol de soluciones sintácticas."
 msgstr ""
+"Aşağıdaki butona basarak genetik algoritmayı etkinleştirin ve sözdizimsel "
+"çözüm ağacını gösterin."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
-msgstr ""
+msgstr "Çalışma optimizasyonu"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Guía operativa del sistema"
-msgstr ""
+msgstr "Sistem Operasyonel Rehberi"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Instrucciones de inicio rápido"
-msgstr ""
+msgstr "Hızlı Başlatma Talimatları"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
 " secuenciales:"
 msgstr ""
+"Demo ile başarılı bir şekilde etkileşime başlamak için şu ardışık adımları "
+"izleyin:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -156,6 +175,8 @@ msgid ""
 "administrativos. <strong>Nota importante:</strong> el número total de "
 "equipos participantes debe ser par."
 msgstr ""
+"İdari panellerinizde bir takım, lig ve turnuva oluşturun. <strong>Önemli "
+"not:</strong> Katılımcı takımların toplam sayısı eşit olmalıdır."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -163,10 +184,13 @@ msgid ""
 " selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
 " optimización\"</strong> para estructurar el calendario automatizado."
 msgstr ""
+"Katılımcıları belirledikten sonra, yukarıdaki panele gidin, aktif "
+"turnuvanızı seçin ve otomatik programı yapılandırmak için yeşil "
+"<strong>\"Run Optimization\"</strong> butonuna tıklayın."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr ""
+msgstr "Yapay Zeka'nın iç mantığı ve algoritmik akışı"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -174,10 +198,12 @@ msgid ""
 "mostramos paso a paso el ciclo de vida evasivo basado en programación "
 "genética:"
 msgstr ""
+"Yazılım yayına girdiğinde dahili olarak ne olur? İşte genetik programlamaya "
+"dayalı kaçınma yaşam döngüsüne adım adım bir bakış:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "1. Configuración e hiperparámetros base"
-msgstr ""
+msgstr "1. Temel yapılandırma ve hiperparametreler"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -185,63 +211,70 @@ msgid ""
 "inicial de la población, así como las tasas de probabilidad asociadas al "
 "cruce y la mutación genómica."
 msgstr ""
+"Nesilleri, başlangıç popülasyon büyüklüğünü ve kesişme ile genomik "
+"mutasyonla ilişkili olasılık oranlarını belirleyecek panel değişkenleri "
+"yüklenir."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr ""
+msgstr "2. Operatörlerin ve yapısal blokların tanımı (gramer)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las primitivas:"
-msgstr ""
+msgstr "İlkel Varlıklar:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr ""
+msgstr "bir programın ağacı oluşturmak için yürüttüğü mantıksal işlemlerdir."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las terminales:"
-msgstr ""
+msgstr "Terminaller:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "representan los datos constantes o variables básicas estructuradas del "
 "torneo."
 msgstr ""
+"turnuvanın sabit verilerini veya yapılandırılmış temel değişkenlerini temsil"
+" eder."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "listas maestros de días hábiles"
-msgstr ""
+msgstr "Çalışma Günlerinin Ana Listeleri"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "tanto en condición de casa como de visita"
-msgstr ""
+msgstr "Hem evde hem de deplasmanda"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "inicializador vacío"
-msgstr ""
+msgstr "Boş Başlatıcı"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las efímeras:"
-msgstr ""
+msgstr "Geçici olanlar:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "son valores aleatorios puros que se introducen en nodos específicos para "
 "inyectar variabilidad matemática al sistema."
 msgstr ""
+"Bunlar, matematiksel değişkenlik sağlamak için belirli düğümlere beslenen "
+"saf rastgele değerlerdir."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Fecha aleatoria y equipo aleatorio."
-msgstr ""
+msgstr "Rastgele buluşma ve rastgele bir ekip."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr ""
+msgstr "3. Başlatma, evrimsel döngü ve yakınsamaya"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Fase de ejecución en vivo:"
-msgstr ""
+msgstr "Canlı İnfaz Evresi:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -249,67 +282,82 @@ msgid ""
 " en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
 "donde ocurre la magia computacional!"
 msgstr ""
+"Sistem rastgele bir başlangıç nüfusu oluşturur ve her öneriyi hiyerarşik bir"
+" ağaç yapısına (<em>sözdizimi ağacı)</em> dönüştürür. İşte hesaplama büyüsü "
+"burada gerçekleşir!"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Visualización y muestreo:"
-msgstr ""
+msgstr "Görselleştirme ve örnekleme:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se procesa la población inicial y se genera el renderizado de los árboles "
 "mediante el generador de sintaxis."
 msgstr ""
+"İlk popülasyon işlenir ve ağaçlar sözdizimi oluşturucu kullanılarak render "
+"edilir."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Evaluación de aptitud:"
-msgstr ""
+msgstr "Yetenek Değerlendirmesi:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
 "distancia acumulada en kilómetros y el cumplimiento normativo."
 msgstr ""
+"Her bireyin <em>uygunluk</em> değeri, kilometre cinsinden kümülatif mesafe "
+"ve düzenleyici uyumluluk temelinde hesaplanır."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Selección natural:"
-msgstr ""
+msgstr "Doğal seçilim:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se escogen los mejores individuos de la ronda anterior para actuar como "
 "padres biológicos de la nueva generación."
 msgstr ""
+"Önceki turdan en iyi bireyler, yeni neslin biyolojik ebeveynleri olarak "
+"seçilir."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cruzamiento, mutación y herencia:"
-msgstr ""
+msgstr "Melezleşme, mutasyon ve kalıtım:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
 " mutaciones en nodos aleatorios."
 msgstr ""
+"Yeni bireyler öne çıkan ağaçların dalları karıştırılıp rastgele düğümlerde "
+"mutasyonlar uygulanarak oluşturulur."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Bucle iterativo:"
-msgstr ""
+msgstr "Yinelemeli döngü:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
 " hasta completar el total de generaciones configuradas en la interfaz."
 msgstr ""
+"Değerlendirme, seçim ve oynatma adımları, arayüzde yapılandırılan toplam "
+"nesil sayısı tamamlanana kadar ardışık olarak tekrarlanır."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados oficiales:"
-msgstr ""
+msgstr "Resmi Sonuçlar:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El mejor individuo obtenido en la última iteración se valida y su estructura"
 " interna se almacena como el calendario definitivo del torneo de béisbol."
 msgstr ""
+"Son sürümde elde edilen en iyi kişi doğrulanır ve iç yapısı kesin beyzbol "
+"turnuvası programı olarak saklanır."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
-msgstr ""
+msgstr "Bilgisayar Mühendisliği Tezi"
