@@ -136,6 +136,10 @@ Dependencias: `deap pandas numpy matplotlib haversine django pygraphviz`. `pygra
 2. **Línea de tiempo.** Pedir a la autora las fechas clave: inicio, protocolo, avances, defensa y aprobación. El historial de git solo cubre de mayo a julio de 2026.
 3. Ajustar los dos puntos atados a Django (sección 5.2), si se aprueba la arquitectura híbrida.
 
+## 8.1 Auditoría de la experiencia
+
+El 3 de noviembre de 2026 se hizo una auditoría completa de accesibilidad, HCI e interacción humano-IA: `docs/auditoria/2026-11-03_auditoria_experiencia.md`. Es un **punto de control**: se repite después de limpiar el motor, antes de decidir la experiencia final.
+
 ## 9. Archivos creados en esta etapa
 
 - `docs/tesis/2026-07-23_defensa_presentacion.pdf`: presentación de la defensa con marca de agua.
