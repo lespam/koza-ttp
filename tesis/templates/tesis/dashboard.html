@@ -1,58 +1,73 @@
-{% load static %}
+{% load static i18n %}
+{% get_current_language as LANGUAGE_CODE %}{% get_current_language_bidi as LANGUAGE_BIDI %}
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{ LANGUAGE_CODE }}" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programación genética - Planificación de béisbol</title>
+    <title>{% translate "Programación genética - Planificación de béisbol" %}</title>
+    {% for lang in site_languages %}
+    <link rel="alternate" hreflang="{{ lang.code }}" href="{{ request.scheme }}://{{ request.get_host }}{{ lang.url }}">
+    {% endfor %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
     <header>
-        <h1>⚾ Programación genética en la planificación de temporadas de béisbol</h1>
+        <form class="language-picker" action="{% url 'set_language' %}" method="post">
+            {% csrf_token %}
+            <input name="next" type="hidden" value="{{ request.get_full_path }}">
+            <label for="language-select">🌐 <span class="visually-hidden">{% translate "Idioma" %}</span></label>
+            <select name="language" id="language-select">
+                {% for lang in site_languages %}
+                <option value="{{ lang.code }}" lang="{{ lang.code }}"{% if lang.code == LANGUAGE_CODE %} selected{% endif %}>{{ lang.native }}</option>
+                {% endfor %}
+            </select>
+            <noscript><button type="submit">{% translate "Cambiar" %}</button></noscript>
+        </form>
+        <h1>⚾ {% translate "Programación genética en la planificación de temporadas de béisbol" %}</h1>
     </header>
 
     <div class="container">
-        
+
         <section class="section-content">
-            <h2>👋 ¡Bienvenido a la aplicación!</h2>
-            <p>Este sistema interactivo busca resolver de manera óptima la organización y logística de un calendario para una temporada completa de béisbol. Para lograrlo, implementamos una técnica de inteligencia artificial avanzada inspirada directamente en la evolución natural de las especies. 🌿</p>
-            
-            <p>La <strong>programación genética</strong> consiste en crear, evaluar y modificar soluciones de forma automática a partir de una población inicial de programas. Esto se logra ejecutando operaciones bioinspiradas como la selección natural, el cruzamiento y la mutación. En este entorno, cada programa generado se estructura internamente como un árbol de expresión que representa una solución potencial para nuestro calendario.</p>
-            
-            <p>El algoritmo evalúa continuamente cada árbol mediante un criterio estricto de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar características clave y generar nuevos árboles cada vez más prometedores. 📈 ¡Este proceso se repite en un bucle evolutivo hasta hallar la solución óptima y más eficiente!</p>
+            <h2>👋 {% translate "¡Bienvenido a la aplicación!" %}</h2>
+            <p>{% blocktranslate trimmed %}Este sistema interactivo busca resolver de manera óptima la organización y logística de un calendario para una temporada completa de béisbol. Para lograrlo, implementamos una técnica de inteligencia artificial avanzada inspirada directamente en la evolución natural de las especies.{% endblocktranslate %} 🌿</p>
+
+            <p>{% blocktranslate trimmed %}La <strong>programación genética</strong> consiste en crear, evaluar y modificar soluciones de forma automática a partir de una población inicial de programas. Esto se logra ejecutando operaciones bioinspiradas como la selección natural, el cruzamiento y la mutación. En este entorno, cada programa generado se estructura internamente como un árbol de expresión que representa una solución potencial para nuestro calendario.{% endblocktranslate %}</p>
+
+            <p>{% blocktranslate trimmed %}El algoritmo evalúa continuamente cada árbol mediante un criterio estricto de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar características clave y generar nuevos árboles cada vez más prometedores.{% endblocktranslate %} 📈 {% translate "¡Este proceso se repite en un bucle evolutivo hasta hallar la solución óptima y más eficiente!" %}</p>
         </section>
 
         <section class="dashboard-demo">
-            <h2 class="dashboard-title">🛠️ Panel de control: configuración activa (ID: {{ configuracion.id|default:"N/A" }})</h2>
-            
+            <h2 class="dashboard-title">🛠️ {% blocktranslate trimmed with id=configuracion.id|default:"N/A" %}Panel de control: configuración activa (ID: {{ id }}){% endblocktranslate %}</h2>
+
             <div class="grid-layout">
                 <div class="panel">
-                    <h3>⚙️ Configuración del algoritmo</h3>
+                    <h3>⚙️ {% translate "Configuración del algoritmo" %}</h3>
                     <div class="form-group">
-                        <label for="pop-slider">Tamaño de la población:</label>
+                        <label for="pop-slider">{% translate "Tamaño de la población:" %}</label>
                         <div class="slider-container">
                             <input type="range" id="pop-slider" disabled value="{{ configuracion.poblacion|default:0 }}">
                             <span class="value-box">{{ configuracion.poblacion|default:"0" }}</span>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="ngen-slider">Número de generaciones:</label>
+                        <label for="ngen-slider">{% translate "Número de generaciones:" %}</label>
                         <div class="slider-container">
                             <input type="range" id="ngen-slider" disabled value="{{ configuracion.generaciones|default:0 }}">
                             <span class="value-box">{{ configuracion.generaciones|default:"0" }}</span>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="cxpb-slider">Probabilidad de cruce:</label>
+                        <label for="cxpb-slider">{% translate "Probabilidad de cruce:" %}</label>
                         <div class="slider-container">
                             <input type="range" id="cxpb-slider" disabled step="0.01" min="0" max="1" value="{{ configuracion.probabilidad_de_cruce|default:0 }}">
                             <span class="value-box">{{ configuracion.probabilidad_de_cruce|default:"0" }}</span>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="mutpb-slider">Probabilidad de mutación:</label>
+                        <label for="mutpb-slider">{% translate "Probabilidad de mutación:" %}</label>
                         <div class="slider-container">
                             <input type="range" id="mutpb-slider" disabled step="0.01" min="0" max="1" value="{{ configuracion.probabilidad_de_reproduccion|default:0 }}">
                             <span class="value-box">{{ configuracion.probabilidad_de_reproduccion|default:"0" }}</span>
@@ -61,14 +76,15 @@
                 </div>
 
                 <div class="panel">
-                    <h3>📅 Calendario activo: {{ calendario.torneo.nombre|default:"Sin torneo" }} (ID: {{ calendario.id|default:"N/A" }})</h3>
+                    {% translate "Sin torneo" as sin_torneo %}
+                    <h3>📅 {% blocktranslate trimmed with torneo=calendario.torneo.nombre|default:sin_torneo id=calendario.id|default:"N/A" %}Calendario activo: {{ torneo }} (ID: {{ id }}){% endblocktranslate %}</h3>
                     <div class="table-container">
                         <table class="mock-table">
                             <thead>
                                 <tr>
-                                    <th>Fecha</th>
-                                    <th>Local</th>
-                                    <th>Visitante</th>
+                                    <th>{% translate "Fecha" %}</th>
+                                    <th>{% translate "Local" %}</th>
+                                    <th>{% translate "Visitante" %}</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -80,93 +96,93 @@
                                 </tr>
                                 {% empty %}
                                 <tr>
-                                    <td colspan="3" class="no-data">No hay juegos generados para esta configuración.</td>
+                                    <td colspan="3" class="no-data">{% translate "No hay juegos generados para esta configuración." %}</td>
                                 </tr>
                                 {% endfor %}
                             </tbody>
                         </table>
                     </div>
-                    <p class="footer-note">📍 Mostrando los encuentros del torneo registrados en la base de datos.</p>
+                    <p class="footer-note">📍 {% translate "Mostrando los encuentros del torneo registrados en la base de datos." %}</p>
                 </div>
 
                 <div class="panel">
-                    <h3>🏆 Resultados de optimización</h3>
+                    <h3>🏆 {% translate "Resultados de optimización" %}</h3>
                     {% if svg_content %}
                         <div class="svg-miniature" id="open-modal-trigger">
                             {% autoescape off %}{{ svg_content }}{% endautoescape %}
                         </div>
-                        <p class="zoom-helper-text">🔍 Haz clic en el árbol para expandir</p>
-                        
+                        <p class="zoom-helper-text">🔍 {% translate "Haz clic en el árbol para expandir" %}</p>
+
                         <div class="stats-row top-margin">
-                            <span>Costo de viaje total:</span> 
+                            <span>{% translate "Costo de viaje total:" %}</span>
                             <strong>{{ distancia|floatformat:2 }} {{ calendario.torneo.unidad|default:"km" }}</strong>
                         </div>
                         <div class="stats-row">
-                            <span>Violaciones de reglas:</span> 
+                            <span>{% translate "Violaciones de reglas:" %}</span>
                             <strong>{{ diferencia|floatformat:0 }}</strong>
                         </div>
                     {% else %}
                         <div class="empty-state-box">
-                            <p>Presiona el botón de abajo para activar el algoritmo genético y desplegar el árbol de soluciones sintácticas. 🚀</p>
+                            <p>{% translate "Presiona el botón de abajo para activar el algoritmo genético y desplegar el árbol de soluciones sintácticas." %} 🚀</p>
                         </div>
                     {% endif %}
-                    
-                    <a href="?ejecutar=true" class="btn-primary-active top-margin">🚀 Ejecutar optimización</a>
+
+                    <a href="?ejecutar=true" class="btn-primary-active top-margin">🚀 {% translate "Ejecutar optimización" %}</a>
                 </div>
             </div>
         </section>
 
         <section class="section-content">
-            <h2>📖 Guía operativa del sistema</h2>
-            
-            <h3>🔹 Instrucciones de inicio rápido</h3>
-            <p>Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos secuenciales:</p>
+            <h2>📖 {% translate "Guía operativa del sistema" %}</h2>
+
+            <h3>🔹 {% translate "Instrucciones de inicio rápido" %}</h3>
+            <p>{% translate "Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos secuenciales:" %}</p>
             <ol>
-                <li>Crea un equipo, una liga y un torneo respectivo en tus paneles administrativos. <strong>Nota importante:</strong> el número total de equipos participantes debe ser par. 👥</li>
-                <li>Una vez que tengas definidos los participantes, dirígete al panel de arriba, selecciona tu torneo activo y haz clic en el botón verde <strong>"Ejecutar optimización"</strong> para estructurar el calendario automatizado.</li>
+                <li>{% blocktranslate trimmed %}Crea un equipo, una liga y un torneo respectivo en tus paneles administrativos. <strong>Nota importante:</strong> el número total de equipos participantes debe ser par.{% endblocktranslate %} 👥</li>
+                <li>{% blocktranslate trimmed %}Una vez que tengas definidos los participantes, dirígete al panel de arriba, selecciona tu torneo activo y haz clic en el botón verde <strong>"Ejecutar optimización"</strong> para estructurar el calendario automatizado.{% endblocktranslate %}</li>
             </ol>
 
-            <h3>⚙️ Lógica interna y flujo algorítmico de la IA</h3>
-            <p>¿Qué sucede internamente cuando el software se pone en marcha? Aquí te mostramos paso a paso el ciclo de vida evasivo basado en programación genética:</p>
+            <h3>⚙️ {% translate "Lógica interna y flujo algorítmico de la IA" %}</h3>
+            <p>{% translate "¿Qué sucede internamente cuando el software se pone en marcha? Aquí te mostramos paso a paso el ciclo de vida evasivo basado en programación genética:" %}</p>
 
-            <h4>1. Configuración e hiperparámetros base</h4>
-            <p>Se cargan las variables del panel que definirán las generaciones, el tamaño inicial de la población, así como las tasas de probabilidad asociadas al cruce y la mutación genómica.</p>
+            <h4>{% translate "1. Configuración e hiperparámetros base" %}</h4>
+            <p>{% translate "Se cargan las variables del panel que definirán las generaciones, el tamaño inicial de la población, así como las tasas de probabilidad asociadas al cruce y la mutación genómica." %}</p>
 
-            <h4>2. Definición de operadores y bloques estructurales (gramática)</h4>
+            <h4>{% translate "2. Definición de operadores y bloques estructurales (gramática)" %}</h4>
             <ul>
-                <li><strong>Las primitivas:</strong> son las operaciones lógicas que un programa ejecuta para construir el árbol.
+                <li><strong>{% translate "Las primitivas:" %}</strong> {% translate "son las operaciones lógicas que un programa ejecuta para construir el árbol." %}
                     <ul>
                         <li><code>crear_juego(fecha, equipo_en_casa, equipo_de_visita, lista) -> lista</code></li>
                         <li><code>agregar_lista(lista, lista) -> lista</code></li>
                     </ul>
                 </li>
-                <li><strong>Las terminales:</strong> representan los datos constantes o variables básicas estructuradas del torneo.
+                <li><strong>{% translate "Las terminales:" %}</strong> {% translate "representan los datos constantes o variables básicas estructuradas del torneo." %}
                     <ul>
-                        <li><code>Fecha</code> (listas maestros de días hábiles)</li>
-                        <li><code>Equipo</code> (tanto en condición de casa como de visita)</li>
-                        <li><code>Lista</code> (inicializador vacío)</li>
+                        <li><code>Fecha</code> ({% translate "listas maestros de días hábiles" %})</li>
+                        <li><code>Equipo</code> ({% translate "tanto en condición de casa como de visita" %})</li>
+                        <li><code>Lista</code> ({% translate "inicializador vacío" %})</li>
                     </ul>
                 </li>
-                <li><strong>Las efímeras:</strong> son valores aleatorios puros que se introducen en nodos específicos para inyectar variabilidad matemática al sistema.
+                <li><strong>{% translate "Las efímeras:" %}</strong> {% translate "son valores aleatorios puros que se introducen en nodos específicos para inyectar variabilidad matemática al sistema." %}
                     <ul>
-                        <li>Fecha aleatoria y equipo aleatorio.</li>
+                        <li>{% translate "Fecha aleatoria y equipo aleatorio." %}</li>
                     </ul>
                 </li>
             </ul>
 
-            <h4>3. Inicialización, ciclo evolutivo y convergencia</h4>
-            
+            <h4>{% translate "3. Inicialización, ciclo evolutivo y convergencia" %}</h4>
+
             <div class="execution-callout">
-                <strong>📍 Fase de ejecución en vivo:</strong> El sistema genera una población inicial aleatoria y convierte cada propuesta en una estructura jerárquica de árbol (syntax tree). ¡Aquí es donde ocurre la magia computacional! ✨
+                <strong>📍 {% translate "Fase de ejecución en vivo:" %}</strong> {% blocktranslate trimmed %}El sistema genera una población inicial aleatoria y convierte cada propuesta en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es donde ocurre la magia computacional!{% endblocktranslate %} ✨
             </div>
 
             <ol start="3">
-                <li><strong>Visualización y muestreo:</strong> Se procesa la población inicial y se genera el renderizado de los árboles mediante el generador de sintaxis.</li>
-                <li><strong>Evaluación de aptitud:</strong> Se calcula el valor de <em>fitness</em> de cada individuo en base a la distancia acumulada en kilómetros y el cumplimiento normativo.</li>
-                <li><strong>Selección natural:</strong> Se escogen los mejores individuos de la ronda anterior para actuar como padres biológicos de la nueva generación.</li>
-                <li><strong>Cruzamiento, mutación y herencia:</strong> Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando mutaciones en nodos aleatorios.</li>
-                <li><strong>Bucle iterativo:</strong> Se repiten secuencialmente los pasos de evaluación, selección y reproducción hasta completar el total de generaciones configuradas en la interfaz.</li>
-                <li><strong>Resultados oficiales:</strong> El mejor individuo obtenido en la última iteración se valida y su estructura interna se almacena como el calendario definitivo del torneo de béisbol. 🏆🎉</li>
+                <li><strong>{% translate "Visualización y muestreo:" %}</strong> {% translate "Se procesa la población inicial y se genera el renderizado de los árboles mediante el generador de sintaxis." %}</li>
+                <li><strong>{% translate "Evaluación de aptitud:" %}</strong> {% blocktranslate trimmed %}Se calcula el valor de <em>fitness</em> de cada individuo en base a la distancia acumulada en kilómetros y el cumplimiento normativo.{% endblocktranslate %}</li>
+                <li><strong>{% translate "Selección natural:" %}</strong> {% translate "Se escogen los mejores individuos de la ronda anterior para actuar como padres biológicos de la nueva generación." %}</li>
+                <li><strong>{% translate "Cruzamiento, mutación y herencia:" %}</strong> {% translate "Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando mutaciones en nodos aleatorios." %}</li>
+                <li><strong>{% translate "Bucle iterativo:" %}</strong> {% translate "Se repiten secuencialmente los pasos de evaluación, selección y reproducción hasta completar el total de generaciones configuradas en la interfaz." %}</li>
+                <li><strong>{% translate "Resultados oficiales:" %}</strong> {% translate "El mejor individuo obtenido en la última iteración se valida y su estructura interna se almacena como el calendario definitivo del torneo de béisbol." %} 🏆🎉</li>
             </ol>
         </section>
 
@@ -183,7 +199,7 @@
 
     <script src="{% static 'js/app.js' %}"></script>
     <footer>
-        <p> © 2026 Leslie Dickinson | Tesis de Ingeniería en Computación | ITAM</p>
+        <p> © 2026 Leslie Dickinson | {% translate "Tesis de Ingeniería en Computación" %} | ITAM</p>
     </footer>
 </body>
 </html>

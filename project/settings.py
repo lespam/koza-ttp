@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+from django.conf.locale import LANG_INFO
+from project.languages import EXTRA_LANG_INFO, LANGUAGES as SITE_LANGUAGES
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 load_dotenv()
 import sys
@@ -36,22 +38,26 @@ except KeyError as e:
 # DEBUG IS ON THE ENV (DEBUG=True locally); defaults to False on the server
 DEBUG = os.environ.get("DEBUG", "False").lower() in ("true", "1")
 
-#ALLOWED_HOSTS = ['3.218.255.146', 'lespam.fun']
-ALLOWED_HOSTS = [
-    "localhost",
-    "127.0.0.1",
-    "172.25.98.109",
-    "lesliedickinson.dev",
-    "www.lesliedickinson.dev",
-    "koza-ttp.lesliedickinson.dev",
-    ".koza-ttp.lesliedickinson.dev",
-    "www.koza-ttp.lesliedickinson.dev",
-    "20.98.160.139",
-    "98.169.98.231"
-]
+def env_list(name, default=""):
+    """Comma-separated env var -> list, e.g. ALLOWED_HOSTS=a.com,b.com"""
+    return [item.strip() for item in os.environ.get(name, default).split(",") if item.strip()]
 
+# HOSTS ARE ON THE ENV; the VM's public IP goes in the server's .env, not here
+ALLOWED_HOSTS = env_list(
+    "ALLOWED_HOSTS",
+    "localhost,127.0.0.1,koza-ttp.lesliedickinson.dev,www.koza-ttp.lesliedickinson.dev",
+)
+CSRF_TRUSTED_ORIGINS = env_list(
+    "CSRF_TRUSTED_ORIGINS",
+    "https://koza-ttp.lesliedickinson.dev,https://www.koza-ttp.lesliedickinson.dev",
+)
+
+# HTTPS-only behaviour is switched on in production (DEBUG off), when nginx terminates TLS
+SECURE_SSL_REDIRECT = not DEBUG
+SESSION_COOKIE_SECURE = not DEBUG
+CSRF_COOKIE_SECURE = not DEBUG
 SECURE_HSTS_PRELOAD = True
-SECURE_HSTS_SECONDS = 30 #2_592_000  # 30 days
+SECURE_HSTS_SECONDS = 0 if DEBUG else 2_592_000  # 30 days
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 SECURE_REFERRER_POLICY = "strict-origin-when-cross-origin"
@@ -74,6 +80,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -93,6 +100,8 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
+                'django.template.context_processors.i18n',
+                'project.context_processors.languages',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -136,7 +145,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-mx'
+# Mexican Spanish plus the 42 other languages (see project/languages.py).
+LANGUAGES = SITE_LANGUAGES
+LANG_INFO.update(EXTRA_LANG_INFO)
+# Built by `python manage.py translate_site` (see tesis/management/commands)
+LOCALE_PATHS = [BASE_DIR / 'locale']
 
 TIME_ZONE = 'UTC'
 

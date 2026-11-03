@@ -1,0 +1,315 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: koza-ttp\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética - Planificación de béisbol"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Idioma"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambiar"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Programación genética en la planificación de temporadas de béisbol"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¡Bienvenido a la aplicación!"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Este sistema interactivo busca resolver de manera óptima la organización y "
+"logística de un calendario para una temporada completa de béisbol. Para "
+"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
+"inspirada directamente en la evolución natural de las especies."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La <strong>programación genética</strong> consiste en crear, evaluar y "
+"modificar soluciones de forma automática a partir de una población inicial "
+"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
+"selección natural, el cruzamiento y la mutación. En este entorno, cada "
+"programa generado se estructura internamente como un árbol de expresión que "
+"representa una solución potencial para nuestro calendario."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
+"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
+"características clave y generar nuevos árboles cada vez más prometedores."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
+"óptima y más eficiente!"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Panel de control: configuración activa (ID: %(id)s)"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración del algoritmo"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tamaño de la población:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Número de generaciones:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de cruce:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Probabilidad de mutación:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sin torneo"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Local"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visitante"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "No hay juegos generados para esta configuración."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Mostrando los encuentros del torneo registrados en la base de datos."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados de optimización"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para expandir"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Costo de viaje total:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Violaciones de reglas:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
+" árbol de soluciones sintácticas."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ejecutar optimización"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Guía operativa del sistema"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Instrucciones de inicio rápido"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
+" secuenciales:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea un equipo, una liga y un torneo respectivo en tus paneles "
+"administrativos. <strong>Nota importante:</strong> el número total de "
+"equipos participantes debe ser par."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
+" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
+" optimización\"</strong> para estructurar el calendario automatizado."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Lógica interna y flujo algorítmico de la IA"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
+"mostramos paso a paso el ciclo de vida evasivo basado en programación "
+"genética:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "1. Configuración e hiperparámetros base"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se cargan las variables del panel que definirán las generaciones, el tamaño "
+"inicial de la población, así como las tasas de probabilidad asociadas al "
+"cruce y la mutación genómica."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "2. Definición de operadores y bloques estructurales (gramática)"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las primitivas:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son las operaciones lógicas que un programa ejecuta para construir el árbol."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las terminales:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"representan los datos constantes o variables básicas estructuradas del "
+"torneo."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "listas maestros de días hábiles"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "tanto en condición de casa como de visita"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "inicializador vacío"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las efímeras:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"son valores aleatorios puros que se introducen en nodos específicos para "
+"inyectar variabilidad matemática al sistema."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fecha aleatoria y equipo aleatorio."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "3. Inicialización, ciclo evolutivo y convergencia"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Fase de ejecución en vivo:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El sistema genera una población inicial aleatoria y convierte cada propuesta"
+" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
+"donde ocurre la magia computacional!"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Visualización y muestreo:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se procesa la población inicial y se genera el renderizado de los árboles "
+"mediante el generador de sintaxis."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Evaluación de aptitud:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
+"distancia acumulada en kilómetros y el cumplimiento normativo."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Selección natural:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se escogen los mejores individuos de la ronda anterior para actuar como "
+"padres biológicos de la nueva generación."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cruzamiento, mutación y herencia:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
+" mutaciones en nodos aleatorios."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Bucle iterativo:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
+" hasta completar el total de generaciones configuradas en la interfaz."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Resultados oficiales:"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El mejor individuo obtenido en la última iteración se valida y su estructura"
+" interna se almacena como el calendario definitivo del torneo de béisbol."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tesis de Ingeniería en Computación"
+msgstr ""

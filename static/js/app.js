@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Cambia de idioma en cuanto se elige uno en el selector
+    const languageSelect = document.getElementById('language-select');
+    if (languageSelect) {
+        languageSelect.addEventListener('change', () => {
+            languageSelect.form.submit();
+        });
+    }
+
     const modal = document.getElementById('svgModal');
     const openTrigger = document.getElementById('open-modal-trigger');
     const closeTrigger = document.getElementById('close-modal-trigger');

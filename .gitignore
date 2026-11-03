@@ -230,3 +230,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Server logs and old database copies
+nohup.out
+*.sqlite3
+desktop.ini
+

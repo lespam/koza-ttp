@@ -1,0 +1,13 @@
+[Unit]
+Description=koza-ttp (gunicorn)
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/srv/koza-ttp
+ExecStart=/srv/koza-ttp/env/bin/gunicorn -c config/gunicorn/prod.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
