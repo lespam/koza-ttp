@@ -74,5 +74,6 @@ class LenguasIndigenas(SimpleTestCase):
 
     def test_numero_de_idiomas_al_dia(self):
         from django.conf import settings
-        r = self.client.get(reverse("documentacion:avances"))
+        # URL fija: reverse() usaría el idioma que dejó activo la prueba anterior
+        r = self.client.get("/documentacion/avances/")
         self.assertContains(r, f"{len(settings.LANGUAGES)} idiomas")
