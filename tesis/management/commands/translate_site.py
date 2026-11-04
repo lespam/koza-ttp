@@ -106,9 +106,7 @@ class Command(BaseCommand):
     def extract_msgids(self):
         """Todos los textos marcados en las plantillas, en orden de aparición."""
         msgids = {}
-        for path in sorted(Path(settings.BASE_DIR).rglob("*.html")):
-            if SKIP_DIRS & set(path.relative_to(settings.BASE_DIR).parts):
-                continue
+        for path in self.template_paths(Path(settings.BASE_DIR)):
             source = path.read_text(encoding="utf-8")
             if "translate" not in source and "trans " not in source:
                 continue
@@ -117,6 +115,19 @@ class Command(BaseCommand):
                 location = str(path.relative_to(settings.BASE_DIR)).replace(os.sep, "/")
                 msgids.setdefault(msgid, location)
         return msgids
+
+    @staticmethod
+    def template_paths(base):
+        """Las plantillas .html del proyecto, sin entrar a SKIP_DIRS.
+
+        Las carpetas se descartan antes de recorrerlas: un entorno virtual copiado
+        de Linux a Windows tiene enlaces (como env/lib64) que Windows no puede abrir.
+        """
+        paths = []
+        for root, dirs, files in os.walk(base):
+            dirs[:] = sorted(d for d in dirs if d not in SKIP_DIRS)
+            paths.extend(Path(root) / f for f in files if f.endswith(".html"))
+        return sorted(paths)
 
     @staticmethod
     def update_catalog(po_path, code, msgids):
