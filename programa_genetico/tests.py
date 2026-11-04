@@ -39,3 +39,26 @@ class IniciarPlanificacionTests(SimpleTestCase):
         juegos = planificador.obtener_calendario_inicial()
         self.assertEqual(len(juegos), 2 * 2 * 2)  # series * juegos * parejas por fecha
         self.assertIsInstance(resultado, str)
+
+
+class MotorSeriesTests(SimpleTestCase):
+    """El motor por series nunca rompe el número de juegos por equipo."""
+
+    def test_juegos_por_equipo_se_conservan(self):
+        import random
+
+        from programa_genetico.motor_series import Instancia, evolucionar
+
+        equipos = ["AAA", "BBB", "CCC", "DDD", "EEE", "FFF"]
+        posiciones = {e: i for i, e in enumerate(equipos)}
+        inst = Instancia(equipos, lambda a, b: abs(posiciones[a] - posiciones[b]),
+                         num_series=6, dias_por_serie=3)
+        cal0 = inst.calendario_aleatorio(random.Random(0))
+        avance = []
+        r = evolucionar(inst, cal0, generaciones=5, tam_poblacion=20, semilla=0,
+                        on_generation=lambda g, c1, c2: avance.append(g))
+
+        self.assertEqual(r.fitness[0], 0)  # C1 = 0: todos juegan 18
+        self.assertEqual(inst.evaluar(r.mejor_calendario), r.fitness)
+        self.assertLessEqual(r.fitness[1], r.historial[0][2])  # el elitismo nunca empeora
+        self.assertEqual(avance, [0, 1, 2, 3, 4])
