@@ -470,17 +470,6 @@ msgid "en español"
 msgstr "西班牙语"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "网站提供43种语言"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr "该网站提供43种语言版本。原文为墨西哥西班牙语。其他所有版本均为带有Azure AI翻译器的机器翻译，可能存在错误。"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "新服务器"
 
@@ -798,9 +787,20 @@ msgstr "这部分随着每次进步而增长。"
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "机器翻译，正在审核中。"
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
-msgstr ""
+msgstr "本页面由人工智能翻译，可能存在错误。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "%(total)s语言网站"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
+msgstr "该网站提供 %(total)s 种语言。原文为墨西哥西班牙语。其他版本是使用 Azure AI 翻译器的自动翻译，可能存在错误。"

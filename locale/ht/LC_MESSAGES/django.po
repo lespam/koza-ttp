@@ -524,19 +524,6 @@ msgid "en español"
 msgstr "an panyòl"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "Sit nan 43 lang"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"Sit la ofri nan 43 lang. Orijinal la se Meksiken Panyòl. Tout lòt vèsyon yo "
-"se tradiksyon machin ak Azure AI Translator epi yo ka gen erè."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "Nouvo sèvè"
 
@@ -892,9 +879,22 @@ msgstr "Pati sa a ap grandi ak chak avans."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "tradiksyon machin, anba revizyon"
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
+msgstr "Paj sa a tradui ak entèlijans atifisyèl epi li ka gen erè."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "Sit nan lang %(total)s"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
 msgstr ""
+"Sit la ofri nan lang %(total)s . Orijinal la se Meksiken Panyòl. Lòt vèsyon "
+"yo se tradiksyon otomatik ak Azure AI Translator epi yo ka gen erè."

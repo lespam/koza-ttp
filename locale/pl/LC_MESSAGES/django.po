@@ -535,20 +535,6 @@ msgid "en español"
 msgstr "po hiszpańsku"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "Strona w 43 językach"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"Strona jest dostępna w 43 językach. Oryginał to meksykański hiszpański. "
-"Wszystkie pozostałe wersje są tłumaczeniami maszynowymi z Azure AI "
-"Translator i mogą zawierać błędy."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "Nowy serwer"
 
@@ -917,9 +903,25 @@ msgstr "Ta część rośnie z każdym postępem."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "Tłumaczenie maszynowe, w trakcie recenzji."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
 msgstr ""
+"Ta strona została przetłumaczona za pomocą sztucznej inteligencji i może "
+"zawierać błędy."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "Strona w %(total)s językach"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
+msgstr ""
+"Strona jest dostępna w %(total)s językach. Oryginał to meksykański "
+"hiszpański. Pozostałe wersje to automatyczne tłumaczenia z Azure AI "
+"Translator i mogą zawierać błędy."

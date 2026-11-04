@@ -488,19 +488,6 @@ msgid "en español"
 msgstr "스페인어로"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "43개 언어로 된 사이트"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"사이트는 43개 언어로 제공됩니다. 원본은 멕시코 스페인어입니다. 나머지 모든 버전은 Azure AI 번역기를 이용한 기계 번역으로, "
-"오류가 있을 수 있습니다."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "새 서버"
 
@@ -836,9 +823,22 @@ msgstr "이 부분은 진행할 때마다 커져요."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "기계 번역, 검토 중."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
+msgstr "이 페이지는 인공지능으로 번역되었으며 오류가 있을 수 있습니다."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "%(total)s 언어 사이트"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
 msgstr ""
+"사이트는 %(total)s 언어로 제공됩니다. 원본은 멕시코어 스페인어입니다. 다른 버전들은 Azure AI 번역기를 이용한 자동 "
+"번역으로 오류가 있을 수 있습니다."

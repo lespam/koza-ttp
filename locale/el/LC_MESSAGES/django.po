@@ -541,20 +541,6 @@ msgid "en español"
 msgstr "στα Ισπανικά"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "Ιστοσελίδα σε 43 γλώσσες"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"Ο ιστότοπος προσφέρεται σε 43 γλώσσες. Το πρωτότυπο είναι τα μεξικάνικα "
-"ισπανικά. Όλες οι άλλες εκδόσεις είναι αυτόματες μεταφράσεις με το Azure AI "
-"Translator και ενδέχεται να έχουν σφάλματα."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "Νέος διακομιστής"
 
@@ -926,9 +912,25 @@ msgstr "Αυτό το μέρος μεγαλώνει με κάθε πρόοδο."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "Αυτόματη μετάφραση, υπό εξέταση."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
 msgstr ""
+"Αυτή η σελίδα μεταφράστηκε με τεχνητή νοημοσύνη και ενδέχεται να έχει "
+"σφάλματα."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "Ιστότοπος σε %(total)s γλώσσες"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
+msgstr ""
+"Ο ιστότοπος προσφέρεται σε %(total)s γλώσσες. Το πρωτότυπο είναι τα "
+"μεξικάνικα ισπανικά. Οι άλλες εκδόσεις είναι αυτόματες μεταφράσεις με το "
+"Azure AI Translator και ενδέχεται να έχουν σφάλματα."

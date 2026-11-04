@@ -524,20 +524,6 @@ msgid "en español"
 msgstr "Ni ede Spani"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "Oju-iwe ayelujara ni awọn ede 43"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"Oju opo wẹẹbu naa wa ni awọn ede 43. Atilẹba jẹ ede Spani Mexico. Gbogbo "
-"awọn ẹya miiran jẹ awọn itumọ ẹrọ pẹlu Azure AI Translator ati pe o le ni "
-"awọn aṣiṣe."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "Olupin tuntun"
 
@@ -897,9 +883,23 @@ msgstr "Apakan yii n dagba pẹlu ilọsiwaju kọọkan."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "Ẹrọ translation, labẹ awotẹlẹ."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
+msgstr "Oju-iwe yii ni a tumọ pẹlu oye atọwọda ati pe o le ni awọn aṣiṣe."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "Oju opo wẹẹbu ni awọn ede %(total)s"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
 msgstr ""
+"Oju opo wẹẹbu naa wa ni awọn ede %(total)s . Atilẹba jẹ ede Spani Mexico. "
+"Awọn ẹya miiran jẹ awọn itumọ laifọwọyi pẹlu Azure AI Translator ati pe o le"
+" ni awọn aṣiṣe."

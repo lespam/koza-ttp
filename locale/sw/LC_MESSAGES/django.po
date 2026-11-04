@@ -532,20 +532,6 @@ msgid "en español"
 msgstr "kwa Kihispania"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "Tovuti katika lugha 43"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"Tovuti inatolewa katika lugha 43. Asili ni Kihispania cha Mexico. Matoleo "
-"mengine yote ni tafsiri za mashine na Azure AI Translator na inaweza kuwa na"
-" makosa."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "Seva mpya"
 
@@ -911,9 +897,24 @@ msgstr "Sehemu hii inakua kwa kila mapema."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "Tafsiri ya mashine, chini ya ukaguzi."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
 msgstr ""
+"Ukurasa huu ulitafsiriwa kwa akili ya bandia na inaweza kuwa na makosa."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "Tovuti katika lugha %(total)s"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
+msgstr ""
+"Tovuti inatolewa katika lugha %(total)s . Asili ni Kihispania cha Mexico. "
+"Matoleo mengine ni tafsiri za kiotomatiki na Azure AI Translator na inaweza "
+"kuwa na makosa."

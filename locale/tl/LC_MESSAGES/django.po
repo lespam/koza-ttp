@@ -541,20 +541,6 @@ msgid "en español"
 msgstr "sa Espanyol"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "Site sa 43 na wika"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"Ang site ay inaalok sa 43 wika. Ang orihinal ay Mexican Spanish. Ang lahat "
-"ng ibang bersyon ay mga machine translation gamit ang Azure AI Translator at"
-" maaaring magkaroon ng mga error."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "Bagong server"
 
@@ -931,9 +917,25 @@ msgstr "Lumalaki ang bahaging ito sa bawat pag-usad."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "Machine translation, kasalukuyang sinusuri."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
 msgstr ""
+"Ang pahinang ito ay isinalin gamit ang artificial intelligence at maaaring "
+"may mga error."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "Site sa %(total)s wika"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
+msgstr ""
+"Ang site ay inaalok sa %(total)s wika. Ang orihinal ay Mexican Spanish. Ang "
+"ibang bersyon ay awtomatikong pagsasalin gamit ang Azure AI Translator at "
+"maaaring may mga error."
