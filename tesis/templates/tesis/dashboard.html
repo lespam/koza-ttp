@@ -11,6 +11,7 @@
     {% endfor %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aviso.css' %}">
 </head>
 <body>
     <header>
@@ -27,6 +28,7 @@
         </form>
         <h1>⚾ {% translate "Programación genética en la planificación de temporadas de béisbol" %}</h1>
     </header>
+    {% include "compartido/aviso_traduccion.html" %}
 
     <div class="container">
 

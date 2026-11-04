@@ -13,6 +13,9 @@ Motores de traducción (--backend):
             Necesita AZURE_TRANSLATOR_KEY (+ AZURE_TRANSLATOR_REGION) en el .env.
     google  Google Translate vía el paquete deep-translator. Sin clave; útil para pruebas.
 
+El náhuatl (nhe) y el zapoteco (zap) solo existen en Google Translate, así que siempre
+se traducen con Google, aunque el motor elegido sea Azure.
+
 No necesita gettext: usa polib para leer, escribir y compilar los catálogos.
 """
 import ast
@@ -30,6 +33,7 @@ from django.utils.translation import to_locale
 from django.utils.translation.template import templatize
 
 from project.languages import (
+    GOOGLE_ONLY_LANGUAGES,
     LANGUAGE_MAP_AZURE,
     LANGUAGE_MAP_GOOGLE,
     MACHINE_SOURCE_LANGUAGE,
@@ -76,11 +80,12 @@ class Command(BaseCommand):
         msgids = self.extract_msgids()
         self.stdout.write(f"{len(msgids)} textos encontrados en las plantillas.")
 
-        translate = None
-        if not options["no_translate"]:
-            translate = self.azure_translate if options["backend"] == "azure" else self.google_translate
-
         for code in options["languages"]:
+            translate = None
+            if not options["no_translate"]:
+                use_google = options["backend"] == "google" or code in GOOGLE_ONLY_LANGUAGES
+                translate = self.google_translate if use_google else self.azure_translate
+
             po_path = self.po_path(locale_dir, code)
             po = self.update_catalog(po_path, code, msgids)
 
@@ -223,9 +228,7 @@ class Command(BaseCommand):
         return results
 
     def google_translate(self, texts, code):
-        from deep_translator import GoogleTranslator
-
-        translator = GoogleTranslator(source=MACHINE_SOURCE_LANGUAGE, target=LANGUAGE_MAP_GOOGLE[code])
+        translator = self.google_translator(LANGUAGE_MAP_GOOGLE[code])
         results = []
         for text in texts:
             # Las variables %(x)s se cambian por {0}, {1}... que Google respeta
@@ -242,3 +245,16 @@ class Command(BaseCommand):
                 translated = translated.replace("{%d}" % i, name, 1)
             results.append(translated)
         return results
+
+    @staticmethod
+    def google_translator(target):
+        """deep-translator solo acepta los idiomas de su lista fija, que es anterior a
+        las lenguas que Google agregó en 2024 (náhuatl, zapoteco, maya...). Se le pasa la
+        lista ampliada con el código que falte."""
+        from deep_translator import GoogleTranslator
+        from deep_translator.constants import GOOGLE_LANGUAGES_TO_CODES
+
+        languages = dict(GOOGLE_LANGUAGES_TO_CODES)
+        if target not in languages.values():
+            languages[target] = target
+        return GoogleTranslator(source=MACHINE_SOURCE_LANGUAGE, target=target, languages=languages)

@@ -11,6 +11,7 @@
     <link rel="alternate" hreflang="{{ lang.code }}" href="{{ request.scheme }}://{{ request.get_host }}{{ lang.url }}">
     {% endfor %}
     <link rel="stylesheet" href="{% static 'css/documentacion.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aviso.css' %}">
 </head>
 <body>
     <a class="saltar" href="#contenido">{% translate "Saltar al contenido" %}</a>
@@ -41,6 +42,7 @@
             </form>
         </div>
     </header>
+    {% include "compartido/aviso_traduccion.html" %}
 
     <main id="contenido" tabindex="-1">
         {% block contenido %}{% endblock %}

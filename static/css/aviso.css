@@ -1,0 +1,18 @@
+/* Aviso de traducción automática (lenguas indígenas). Contraste ≥ 4.5:1. */
+.aviso-traduccion {
+    max-width: 68rem;
+    margin: 1rem auto;
+    padding: 0.75rem 1rem;
+    background: #fff4e0;
+    color: #3d2200;
+    border-inline-start: 5px solid #7a4100;
+    border-radius: 6px;
+    font-size: 0.97rem;
+    line-height: 1.5;
+}
+.aviso-traduccion p { margin: 0.25rem 0; }
+.aviso-traduccion a, .aviso-traduccion a:visited { color: #6b2f00; font-weight: 600; }
+@media (prefers-color-scheme: dark) {
+    .aviso-traduccion { background: #43300f; color: #ffe9c7; border-inline-start-color: #ffd9a0; }
+    .aviso-traduccion a, .aviso-traduccion a:visited { color: #ffd9a0; }
+}
