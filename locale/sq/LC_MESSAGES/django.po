@@ -536,20 +536,6 @@ msgid "en español"
 msgstr "në spanjisht"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "Faqja në 43 gjuhë"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"Faqja ofrohet në 43 gjuhë. Origjinali është spanjishtja meksikane. Të gjitha"
-" versionet e tjera janë përkthime automatike me Azure AI Translator dhe mund"
-" të kenë gabime."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "Serveri i ri"
 
@@ -917,9 +903,25 @@ msgstr "Kjo pjesë rritet me çdo përparim."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "Përkthimi makinerik, në shqyrtim."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
 msgstr ""
+"Kjo faqe është përkthyer me inteligjencë artificiale dhe mund të ketë "
+"gabime."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "Faqja në %(total)s gjuhë"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
+msgstr ""
+"Faqja ofrohet në %(total)s gjuhë. Origjinali është spanjishtja meksikane. "
+"Versionet e tjera janë përkthime automatike me Azure AI Translator dhe mund "
+"të kenë gabime."

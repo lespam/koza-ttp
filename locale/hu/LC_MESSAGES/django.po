@@ -534,19 +534,6 @@ msgid "en español"
 msgstr "spanyol nyelven"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "Oldal 43 nyelven"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"Az oldal 43 nyelven érhető el. Az eredeti mexikói spanyol. Minden más verzió"
-" gépi fordítás Azure AI Translatorrel, és hibák lehetnek."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "Új szerver"
 
@@ -915,9 +902,24 @@ msgstr "Ez a rész minden előrelépéssel nő."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "Gépi fordítás, felülvizsgálat alatt."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
 msgstr ""
+"Ezt az oldalt mesterséges intelligenciával fordították, és előfordulhatnak "
+"hibák."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "Oldal %(total)s nyelveken"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
+msgstr ""
+"Az oldal %(total)s nyelven érhető el. Az eredeti mexikói spanyol nyelvű. A "
+"többi verzió automatikus fordítás Azure AI Fordítóval, és hibákat okozhat."

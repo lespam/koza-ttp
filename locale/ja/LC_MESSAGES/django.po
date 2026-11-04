@@ -481,19 +481,6 @@ msgid "en español"
 msgstr "スペイン語で"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "43言語のサイト"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"サイトは43言語で提供されています。オリジナルはメキシコスペイン語です。その他のバージョンはすべてAzure "
-"AI翻訳機による機械翻訳で、誤りがある場合があります。"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "新しいサーバー"
 
@@ -822,9 +809,22 @@ msgstr "この部分は進むたびに成長していきます。"
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "機械翻訳、審査中。"
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
+msgstr "このページは人工知能で翻訳されており、誤りがある可能性があります。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "%(total)s言語でのサイト"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
 msgstr ""
+"サイトは %(total)s 言語で提供されています。元の翻訳はメキシコスペイン語です。その他のバージョンはAzure "
+"AI翻訳機による自動翻訳で、誤りがある場合があります。"

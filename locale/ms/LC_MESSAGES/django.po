@@ -535,20 +535,6 @@ msgid "en español"
 msgstr "dalam bahasa Sepanyol"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "Laman dalam 43 bahasa"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"Laman ini ditawarkan dalam 43 bahasa. Versi asal adalah bahasa Sepanyol "
-"Mexico. Semua versi lain adalah terjemahan mesin dengan Azure AI Translator "
-"dan mungkin mempunyai ralat."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "Pelayan baru"
 
@@ -919,9 +905,25 @@ msgstr "Bahagian ini berkembang dengan setiap kemajuan."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "Terjemahan mesin, sedang disemak."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
 msgstr ""
+"Halaman ini telah diterjemahkan dengan kecerdasan buatan dan mungkin "
+"mempunyai kesilapan."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "Laman dalam bahasa %(total)s"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
+msgstr ""
+"Laman ini ditawarkan dalam %(total)s bahasa. Versi asal adalah bahasa "
+"Sepanyol Mexico. Versi lain adalah terjemahan automatik dengan Azure AI "
+"Translator dan mungkin mempunyai ralat."

@@ -536,20 +536,6 @@ msgid "en español"
 msgstr "на испанском языке"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "Сайт на 43 языках"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"Сайт доступен на 43 языках. Оригинал — мексиканский испанский. Все остальные"
-" версии — это машинный перевод с помощью Azure AI Translator и могут "
-"содержать ошибки."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "Новый сервер"
 
@@ -921,9 +907,25 @@ msgstr "Эта часть растёт с каждым продвижением.
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "Машинный перевод находится на рассмотрении."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
 msgstr ""
+"Эта страница была переведена с помощью искусственного интеллекта и может "
+"содержать ошибки."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "Сайт на %(total)s языках"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
+msgstr ""
+"Сайт доступен на %(total)s языках. Оригинал — мексиканский испанский. "
+"Остальные версии — это автоматический перевод с помощью Azure AI Translator "
+"и могут содержать ошибки."

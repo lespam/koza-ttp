@@ -522,20 +522,6 @@ msgid "en español"
 msgstr "به زبان اسپانیایی"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "سایت به ۴۳ زبان"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"این سایت به ۴۳ زبان ارائه می شود. نسخه اصلی مکزیکی اسپانیایی است. تمام نسخه "
-"های دیگر ترجمه ماشینی با Azure AI Translator هستند و ممکن است دارای خطا "
-"باشند."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "سرور جدید"
 
@@ -894,9 +880,23 @@ msgstr "این بخش با هر پیشروی بزرگ تر می شود."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "ترجمه ماشینی، در دست بررسی."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
+msgstr "این صفحه با هوش مصنوعی ترجمه شده و ممکن است دارای خطا باشد."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "سایت به زبان های %(total)s"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
 msgstr ""
+"این سایت به زبان های %(total)s ارائه می شود. نسخه اصلی مکزیکی اسپانیایی است."
+" نسخه های دیگر ترجمه خودکار با Azure AI Translator هستند و ممکن است دارای "
+"خطا باشند."

@@ -515,19 +515,6 @@ msgid "en español"
 msgstr "בספרדית"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "אתר ב-43 שפות"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"האתר מוצע ב-43 שפות. המקור הוא ספרדית מקסיקנית. כל הגרסאות האחרות הן תרגום "
-"מכונה עם Azure AI Translator וייתכן שיש בהן שגיאות."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "שרת חדש"
 
@@ -877,9 +864,22 @@ msgstr "החלק הזה גדל עם כל התקדמות."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "תרגום מכונה, בבדיקה."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
+msgstr "עמוד זה תורגם באמצעות בינה מלאכותית וייתכן שיש בו טעויות."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "אתר בשפות %(total)s"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
 msgstr ""
+"האתר מוצע בשפות %(total)s . המקור הוא ספרדית מקסיקנית. הגרסאות האחרות הן "
+"תרגומים אוטומטיים עם Azure AI Translator ועלולות להכיל שגיאות."

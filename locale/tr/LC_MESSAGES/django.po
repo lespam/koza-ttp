@@ -531,19 +531,6 @@ msgid "en español"
 msgstr "İspanyolca"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "43 dilde site"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"Site 43 dilde sunulmaktadır. Orijinali Meksika İspanyolcasıdır. Diğer tüm "
-"sürümler makine çevirisi ve Azure AI Translator ile hata olabilir."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "Yeni sunucu"
 
@@ -902,9 +889,23 @@ msgstr "Bu kısım her ilerlemede büyür."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "Makine çevirisi, inceleme aşamasında."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
+msgstr "Bu sayfa yapay zeka ile çevrilmiştir ve hatalar içerebilir."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "%(total)s dillerdeki site"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
 msgstr ""
+"Site %(total)s dilde sunulmaktadır. Orijinali Meksika İspanyolcasıdır. Diğer"
+" sürümler ise Azure AI Translator ile otomatik çeviridir ve hatalar "
+"içerebilir."

@@ -529,20 +529,6 @@ msgid "en español"
 msgstr "bằng tiếng Tây Ban Nha"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "Trang web bằng 43 ngôn ngữ"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"Trang web được cung cấp bằng 43 ngôn ngữ. Bản gốc là tiếng Tây Ban Nha "
-"Mexico. Tất cả các phiên bản khác đều là bản dịch máy với Azure AI "
-"Translator và có thể có lỗi."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "Máy chủ mới"
 
@@ -904,9 +890,23 @@ msgstr "Phần này sẽ lớn dần theo từng bước tiến gần."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "Dịch máy, đang được xem xét."
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
+msgstr "Trang này được dịch bằng trí tuệ nhân tạo và có thể có lỗi."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "Trang web bằng %(total)s ngôn ngữ"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
 msgstr ""
+"Trang web được cung cấp bằng %(total)s ngôn ngữ. Bản gốc là tiếng Tây Ban "
+"Nha Mexico. Các phiên bản khác là dịch tự động với Azure AI Translator và có"
+" thể có lỗi."

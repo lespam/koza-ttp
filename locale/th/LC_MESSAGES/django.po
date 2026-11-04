@@ -513,19 +513,6 @@ msgid "en español"
 msgstr "เป็นภาษาสเปน"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Sitio en 43 idiomas"
-msgstr "เว็บไซต์ใน 43 ภาษา"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
-"demás versiones son traducciones automáticas con Azure AI Translator y "
-"pueden tener errores."
-msgstr ""
-"เว็บไซต์นี้มีให้บริการใน 43 ภาษาต้นฉบับเป็นภาษาสเปนเม็กซิกันเวอร์ชันอื่น ๆ "
-"ทั้งหมดเป็นการแปลด้วยเครื่องด้วย Azure AI Translator และอาจมีข้อผิดพลาด"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Nuevo servidor"
 msgstr "เซิร์ฟเวอร์ใหม่"
 
@@ -879,9 +866,23 @@ msgstr "ส่วนนี้จะเติบโตขึ้นทุกคร
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid "Traducción automática, en revisión."
-msgstr ""
+msgstr "แปลด้วยเครื่อง กําลังอยู่ระหว่างการตรวจสอบ"
 
 #: documentacion/templates/compartido/aviso_traduccion.html
 msgid ""
 "Esta página se tradujo con inteligencia artificial y puede tener errores."
+msgstr "หน้านี้แปลด้วยปัญญาประดิษฐ์และอาจมีข้อผิดพลาด"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en %(total)s idiomas"
+msgstr "เว็บไซต์ใน %(total)s ภาษา"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en %(total)s idiomas. El original es el español de "
+"México. Las demás versiones son traducciones automáticas con Azure AI "
+"Translator y pueden tener errores."
 msgstr ""
+"เว็บไซต์นี้มีให้บริการใน %(total)s "
+"ภาษาต้นฉบับเป็นภาษาสเปนเม็กซิกันเวอร์ชันอื่น ๆ เป็นการแปลอัตโนมัติด้วย Azure"
+" AI Translator และอาจมีข้อผิดพลาด"
