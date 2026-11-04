@@ -77,3 +77,28 @@ class LenguasIndigenas(SimpleTestCase):
         # URL fija: reverse() usaría el idioma que dejó activo la prueba anterior
         r = self.client.get("/documentacion/avances/")
         self.assertContains(r, f"{len(settings.LANGUAGES)} idiomas")
+
+
+class CambioDeIdioma(SimpleTestCase):
+    """El selector debe llevar a la misma página en el idioma elegido, sin importar
+    la cookie de idioma que ya tenga el navegador."""
+
+    casos = [
+        # (cookie previa, página de origen, idioma elegido, destino esperado)
+        (None, "/yua/documentacion/", "es-mx", "/documentacion/"),
+        ("es-mx", "/otq/documentacion/historico/", "es-mx", "/documentacion/historico/"),
+        ("en", "/yua/documentacion/", "es-mx", "/documentacion/"),
+        ("yua", "/documentacion/avances/", "en", "/en/documentacion/avances/"),
+        ("en", "/fr/documentacion/", "yua", "/yua/documentacion/"),
+        (None, "/documentacion/", "otq", "/otq/documentacion/"),
+    ]
+
+    def test_selector_de_idioma(self):
+        from django.conf import settings
+        for cookie, origen, idioma, destino in self.casos:
+            with self.subTest(cookie=cookie, origen=origen, idioma=idioma):
+                self.client.cookies.clear()
+                if cookie:
+                    self.client.cookies[settings.LANGUAGE_COOKIE_NAME] = cookie
+                r = self.client.post(reverse("set_language"), {"language": idioma, "next": origen})
+                self.assertRedirects(r, destino, fetch_redirect_response=False)
