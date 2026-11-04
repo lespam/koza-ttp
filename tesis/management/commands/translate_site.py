@@ -13,7 +13,7 @@ Motores de traducción (--backend):
             Necesita AZURE_TRANSLATOR_KEY (+ AZURE_TRANSLATOR_REGION) en el .env.
     google  Google Translate vía el paquete deep-translator. Sin clave; útil para pruebas.
 
-El zapoteco (zap) solo existe en Google Translate, así que siempre se traduce con
+Las lenguas de GOOGLE_ONLY_LANGUAGES (project/languages.py) siempre se traducen con
 Google, aunque el motor elegido sea Azure.
 
 No necesita gettext: usa polib para leer, escribir y compilar los catálogos.

@@ -49,10 +49,10 @@ class EscaparPorcentaje(SimpleTestCase):
 
 
 class LenguasIndigenas(SimpleTestCase):
-    """Maya, zapoteco y otomí: traducción automática con aviso de revisión."""
+    """Maya y otomí: traducción automática con aviso de revisión."""
 
     def test_aviso_solo_en_lenguas_indigenas(self):
-        for code in ("yua", "zap", "otq"):
+        for code in ("yua", "otq"):
             with self.subTest(idioma=code):
                 r = self.client.get(f"/{code}/documentacion/")
                 self.assertEqual(r.status_code, 200)
@@ -63,16 +63,14 @@ class LenguasIndigenas(SimpleTestCase):
             with self.subTest(url=url):
                 self.assertNotContains(self.client.get(url), 'class="aviso-traduccion"')
 
-    def test_zapoteco_usa_google(self):
-        from project.languages import GOOGLE_ONLY_LANGUAGES
+    def test_google_acepta_lenguas_que_no_conoce(self):
+        # deep-translator no conoce el maya; el comando debe aceptarlo igual
         from tesis.management.commands.translate_site import Command
-        self.assertEqual(GOOGLE_ONLY_LANGUAGES, ["zap"])
-        # deep-translator no los conoce; el comando debe aceptarlos igual
-        for code in GOOGLE_ONLY_LANGUAGES + ["yua"]:
-            self.assertEqual(Command.google_translator(code)._target, code)
+        self.assertEqual(Command.google_translator("yua")._target, "yua")
 
-    def test_sin_nahuatl(self):
-        self.assertEqual(self.client.get("/nhe/documentacion/").status_code, 404)
+    def test_sin_lenguas_de_google(self):
+        for code in ("nhe", "zap"):
+            self.assertEqual(self.client.get(f"/{code}/documentacion/").status_code, 404)
 
     def test_numero_de_idiomas_al_dia(self):
         from django.conf import settings
