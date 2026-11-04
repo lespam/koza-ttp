@@ -324,8 +324,10 @@ class ProgramaGenetico():
         pset.addTerminal([], ret_type=creator.ListType, name="[]")
         
         for each in self.getEquipos():
-            pset_inicial.addTerminal(each, creator.StrType)
-            pset.addTerminal(each, creator.StrType)
+            # La web pasa objetos Equipo; su repr ("<Equipo: ARI>") no compila como
+            # código. Se registra la abreviatura (str) como terminal.
+            pset_inicial.addTerminal(str(each), creator.StrType)
+            pset.addTerminal(str(each), creator.StrType)
         for each in self.getFechas():
             pset_inicial.addTerminal(each, creator.DateType)
             pset.addTerminal(each, creator.DateType)
