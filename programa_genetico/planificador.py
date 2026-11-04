@@ -338,7 +338,7 @@ class ModuloPlanificador():
         """
         calendario_inicial = self.crear_calendario_inicial()
         self.establecer_calendario_inicial(calendario_inicial)
-        pg = self.getProgramaGenetico()
+        pg = self.get_programa_genetico()
         
         pg.establecer_calendario_inicial(calendario_inicial)
         pg.setCalculadora(self.obtener_coordenadas_equipos(), self.metodo_calculo, self.unidad_distancia)
@@ -360,7 +360,7 @@ class ModuloPlanificador():
         Returns:
             El árbol de expresiones generado.
         """
-        pg = self.getProgramaGenetico()
+        pg = self.get_programa_genetico()
         result = pg.crear_arbol()
         return result
     
@@ -376,7 +376,7 @@ class ModuloPlanificador():
             float: La distancia total que el equipo tiene que recorrer en casa.
         """
         calendario = pd.DataFrame(juegos)
-        pg = self.getProgramaGenetico()
+        pg = self.get_programa_genetico()
         pg.setCalculadora(self.obtener_coordenadas_equipos(), self.metodo_calculo, self.unidad_distancia)        
         calculadora = pg.getCalculadora()
         distancia_en_casa = 0.0

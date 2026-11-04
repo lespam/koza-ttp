@@ -70,10 +70,14 @@ def agregar_juego(juego):
 
 def juegos_a_arbol(games, pset):
     calendar_str = "[]"
-    for game in reversed(games()):
+    # Acepta la lista de juegos o una función que la devuelve.
+    juegos = games() if callable(games) else games
+    for game in reversed(juegos):
         if game != ():
-            cfecha, equipo1, equipo2 = game
-            fecha, _, _ = game
+            fecha, equipo1, equipo2 = game
+            # Las fechas llegan entre comillas ("'2026-04-06'"), pero las terminales
+            # del pset se registran sin comillas. Sin esto, from_string falla con TypeError.
+            fecha = str(fecha).strip("'")
             calendar_str = f'obtener_calendario(crear_juego({fecha}, {equipo1}, {equipo2}, {calendar_str}), [])'
         else:
             calendar_str = f'obtener_calendario([], [])'
