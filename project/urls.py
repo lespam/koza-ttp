@@ -20,10 +20,12 @@ from django.views.generic import RedirectView
 from django.conf.urls.static import static
 from django.conf import settings
 
+from project.views import set_language
+
 
 urlpatterns = [
     # Language picker posts here (sets the language cookie and redirects)
-    path('i18n/', include('django.conf.urls.i18n')),
+    path('i18n/setlang/', set_language, name='set_language'),
     # Mexican Spanish is the only Spanish: /es/... and /es-mx/... go to the unprefixed page
     re_path(r'^es(?:-mx)?/(?P<rest>.*)$', RedirectView.as_view(url='/%(rest)s', permanent=True,
                                                              query_string=True)),
