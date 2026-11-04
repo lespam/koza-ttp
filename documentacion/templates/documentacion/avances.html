@@ -78,8 +78,8 @@
             <li>
                 <article aria-labelledby="av-idiomas">
                     <p class="meta"><time datetime="2026-11-03">{% translate "3 de noviembre de 2026" %}</time> · <span class="estado estado-hecho">{% translate "Hecho" %}</span></p>
-                    <h3 id="av-idiomas">{% translate "Sitio en 43 idiomas" %}</h3>
-                    <p>{% blocktranslate trimmed %}El sitio se ofrece en 43 idiomas. El original es el español de México. Las demás versiones son traducciones automáticas con Azure AI Translator y pueden tener errores.{% endblocktranslate %}</p>
+                    <h3 id="av-idiomas">{% blocktranslate trimmed with total=site_languages|length %}Sitio en {{ total }} idiomas{% endblocktranslate %}</h3>
+                    <p>{% blocktranslate trimmed with total=site_languages|length %}El sitio se ofrece en {{ total }} idiomas. El original es el español de México. Las demás versiones son traducciones automáticas con Azure AI Translator y pueden tener errores.{% endblocktranslate %}</p>
                 </article>
             </li>
             <li>

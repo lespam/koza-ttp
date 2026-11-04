@@ -13,8 +13,8 @@ Motores de traducción (--backend):
             Necesita AZURE_TRANSLATOR_KEY (+ AZURE_TRANSLATOR_REGION) en el .env.
     google  Google Translate vía el paquete deep-translator. Sin clave; útil para pruebas.
 
-El náhuatl (nhe) y el zapoteco (zap) solo existen en Google Translate, así que siempre
-se traducen con Google, aunque el motor elegido sea Azure.
+El zapoteco (zap) solo existe en Google Translate, así que siempre se traduce con
+Google, aunque el motor elegido sea Azure.
 
 No necesita gettext: usa polib para leer, escribir y compilar los catálogos.
 """
@@ -49,6 +49,9 @@ LONE_PERCENT = re.compile(r"(?<!%)%(?![%(])")
 TAG = re.compile(r"</?[a-zA-Z][^>]*>")
 AZURE_BATCH = 50
 AZURE_RETRIES = 10
+# Google permite unas 5 solicitudes por segundo; se deja margen
+GOOGLE_PAUSE = 0.5
+GOOGLE_RETRIES = 3
 
 
 class Command(BaseCommand):
@@ -236,11 +239,19 @@ class Command(BaseCommand):
             masked = text
             for i, name in enumerate(names):
                 masked = masked.replace(name, "{%d}" % i, 1)
-            try:
-                translated = translator.translate(masked) or ""
-            except Exception as error:  # una frase fallida no detiene el resto
-                self.stderr.write(f"{code}: no se pudo traducir {text[:40]!r}: {error}")
-                translated = ""
+            translated = ""
+            for attempt in range(GOOGLE_RETRIES):
+                time.sleep(GOOGLE_PAUSE)
+                try:
+                    translated = translator.translate(masked) or ""
+                    break
+                except Exception as error:  # una frase fallida no detiene el resto
+                    if "too many requests" in str(error).lower() and attempt + 1 < GOOGLE_RETRIES:
+                        self.stdout.write(f"{code}: límite de Google alcanzado, esperando 60 s...")
+                        time.sleep(60)
+                        continue
+                    self.stderr.write(f"{code}: no se pudo traducir {text[:40]!r}: {error}")
+                    break
             for i, name in enumerate(names):
                 translated = translated.replace("{%d}" % i, name, 1)
             results.append(translated)
