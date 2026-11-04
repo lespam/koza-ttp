@@ -370,3 +370,556 @@ msgstr ""
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
 msgstr "Διατριβή Μηχανικού Η/Υ"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances después de la tesis"
+msgstr "Πρόοδος μετά τη διατριβή"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Cambios y pruebas de Koza-TTP después de la tesis, con fecha y estado."
+msgstr ""
+"Αλλαγές και δοκιμές Koza-TTP μετά τη διατριβή, με ημερομηνία και κατάσταση."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Documentación"
+msgstr "Τεκμηρίωση"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances"
+msgstr "Πρόοδος"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances: después de la tesis"
+msgstr "Πρόοδοι: μετά τη διατριβή"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Aquí se registra cada cambio hecho después de la defensa. La versión de la "
+"tesis se conserva sin cambios, para poder comparar."
+msgstr ""
+"Εδώ καταγράφεται κάθε αλλαγή που γίνεται μετά την υπεράσπιση. Η εκδοχή της "
+"διατριβής διατηρείται αμετάβλητη, ώστε να μπορεί να συγκριθεί."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versiones del motor"
+msgstr "Εκδόσεις κινητήρα"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión de la tesis y versión mejorada"
+msgstr "Έκδοση διατριβής και βελτιωμένη έκδοση"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión"
+msgstr "Έκδοση"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Estado"
+msgstr "Κατάσταση"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Distancia total (30 equipos)"
+msgstr "Συνολική απόσταση (30 ομάδες)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "¿Supera al azar?"
+msgstr "Χτυπάει τυχαία;"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Tesis (2026)"
+msgstr "Πτυχιακή Εργασία (2026)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Congelada"
+msgstr "Κατεψυγμένα"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "No"
+msgstr "Όχι"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión mejorada"
+msgstr "Βελτιωμένη έκδοση"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En desarrollo"
+msgstr "Υπό ανάπτυξη"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sin resultados todavía"
+msgstr "Δεν υπάρχουν ακόμη αποτελέσματα"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Por medir"
+msgstr "Προς μέτρηση"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Registro de avances"
+msgstr "Αρχείο καταγραφής προόδου"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Del más reciente al más antiguo."
+msgstr "Από το πιο πρόσφατο έως το παλαιότερο."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Planeado"
+msgstr "Προγραμματισμένο"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Operadores contextuales para el motor"
+msgstr "Συμφραζόμενοι χειριστές για τον κινητήρα"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Cambiar los operadores genéricos por otros que intercambien series "
+"completas, para que los hijos sigan siendo calendarios válidos. Es el "
+"trabajo futuro que propuso la tesis."
+msgstr ""
+"Αλλαγή γενικών τελεστών για άλλους που ανταλλάσσουν πλήρεις σειρές, έτσι "
+"ώστε τα παιδιά να παραμένουν έγκυρα ημερολόγια. Αυτή είναι η μελλοντική "
+"εργασία που προτείνεται από τη διατριβή."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Reparar el recorrido completo de la herramienta"
+msgstr "Επιδιορθώστε την πλήρη διαδρομή του εργαλείου"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
+" con un recorrido guiado paso a paso."
+msgstr ""
+"Μπορείτε να μεταβείτε από την εγγραφή της ομάδας για να δείτε το ημερολόγιο "
+"χωρίς σφάλματα, με μια καθοδηγούμενη περιήγηση βήμα προς βήμα."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "3 de noviembre de 2026"
+msgstr "Νοέμβριος 3, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En curso"
+msgstr "Σε εξέλιξη"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Diagnóstico del motor"
+msgstr "Διαγνωστικά κινητήρα"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión del código para confirmar por qué la PG no supera al azar. El cruce"
+" y la mutación rompen la viabilidad de los calendarios, y los pesos de la "
+"aptitud hacen que los hijos pierdan contra los padres de la generación "
+"inicial."
+msgstr ""
+"Αναθεώρηση κώδικα για να επιβεβαιωθεί γιατί το PG δεν ξεπερνά την τύχη. Η "
+"διασταύρωση και η μετάλλαξη σπάνε τη βιωσιμότητα των ημερολογίων και τα βάρη"
+" της φυσικής κατάστασης προκαλούν απώλεια απογόνων από τους γονείς της "
+"αρχικής γενιάς."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Hecho"
+msgstr "Γεγονός"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Auditoría de la experiencia"
+msgstr "Έλεγχος εμπειρίας"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión de accesibilidad (WCAG 2.2 AA), usabilidad e interacción humano-IA."
+" Encontró 28 puntos por mejorar. Se repetirá cuando el motor nuevo esté "
+"listo."
+msgstr ""
+"Προσβασιμότητα (WCAG 2.2 AA), χρηστικότητα και ανασκόπηση αλληλεπίδρασης "
+"ανθρώπου-AI. Βρέθηκαν 28 σημεία για βελτίωση. Θα επαναληφθεί όταν ο νέος "
+"κινητήρας είναι έτοιμος."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la auditoría"
+msgstr "Διαβάστε τον έλεγχο"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "en español"
+msgstr "στα Ισπανικά"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en 43 idiomas"
+msgstr "Ιστοσελίδα σε 43 γλώσσες"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
+"demás versiones son traducciones automáticas con Azure AI Translator y "
+"pueden tener errores."
+msgstr ""
+"Ο ιστότοπος προσφέρεται σε 43 γλώσσες. Το πρωτότυπο είναι τα μεξικάνικα "
+"ισπανικά. Όλες οι άλλες εκδόσεις είναι αυτόματες μεταφράσεις με το Azure AI "
+"Translator και ενδέχεται να έχουν σφάλματα."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Nuevo servidor"
+msgstr "Νέος διακομιστής"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"La aplicación volvió a estar en línea en un servidor nuevo, con HTTPS. Cada "
+"versión se publica a mano, después de revisarla."
+msgstr ""
+"Η εφαρμογή επανήλθε στο διαδίκτυο σε νέο διακομιστή, με HTTPS. Κάθε έκδοση "
+"δημοσιεύεται με το χέρι, μετά από έλεγχο."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Materiales de la tesis en el repositorio"
+msgstr "Υλικό διατριβής στο αποθετήριο"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El documento de la tesis y la presentación de la defensa están en el "
+"repositorio, con marca de agua."
+msgstr ""
+"Το έγγραφο της διατριβής και η παρουσίαση υπεράσπισης βρίσκονται στο "
+"αποθετήριο, υδατογραφημένα."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver los materiales"
+msgstr "Προβολή Υλικών"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Documentación de Koza-TTP: la tesis original y los avances posteriores."
+msgstr "Τεκμηρίωση Koza-TTP: η αρχική διατριβή και οι επακόλουθες εξελίξεις."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Saltar al contenido"
+msgstr "Μετάβαση στο περιεχόμενο"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Histórico"
+msgstr "Ιστορία"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Herramienta"
+msgstr "Εργαλείο"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
+msgstr "Η διατριβή δημοσιεύτηκε ως Leslie Pamela Brenes Valencia"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Código fuente en GitHub"
+msgstr "Πηγαίος κώδικας στο GitHub"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis"
+msgstr "Ιστορικά: η διατριβή"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis de Koza-TTP: problema, método, resultados y hallazgo principal."
+msgstr ""
+"Η διατριβή Koza-TTP: πρόβλημα, μέθοδος, αποτελέσματα και κύριο εύρημα."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis (2026)"
+msgstr "Ιστορική: η διατριβή (2026)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<cite>Programación genética en la planificación de temporadas de béisbol. "
+"Problema de viabilidad y optimización.</cite> Tesis de Ingeniería en "
+"Computación, ITAM. Asesor: Dr. Andrés Gómez de Silva Garza. Aprobada el 23 "
+"de julio de 2026."
+msgstr ""
+"<cite>Γενετικός προγραμματισμός στον προγραμματισμό σεζόν του μπέιζμπολ. "
+"Πρόβλημα σκοπιμότητας και βελτιστοποίησης.</cite> Διατριβή Μηχανικού "
+"Υπολογιστών, ITAM. Σύμβουλος: Dr. Andrés Gómez de Silva Garza. Εγκρίθηκε "
+"στις 23 Ιουλίου 2026."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "En esta página"
+msgstr "Σε αυτήν τη σελίδα"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El problema"
+msgstr "Το πρόβλημα"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El método"
+msgstr "Η μέθοδος"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Los resultados"
+msgstr "Τα αποτελέσματα"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El hallazgo principal"
+msgstr "Το κύριο εύρημα"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Trabajo futuro"
+msgstr "Μελλοντικές εργασίες"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cronología"
+msgstr "Χρονοδιάγραμμα"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Materiales y cita"
+msgstr "Υλικό και παραπομπή"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La MLB programa 2,430 juegos para 30 equipos en unos 180 días. Cada equipo "
+"viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
+"2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
+msgstr ""
+"Το MLB προγραμματίζει 2,430 παιχνίδια για 30 ομάδες σε περίπου 180 ημέρες. "
+"Κάθε ομάδα ταξιδεύει μεταξύ πόλεων και η απόσταση ποικίλλει πολύ από ομάδα "
+"σε ομάδα. Το 2016, το Σιάτλ ταξίδεψε 76,683 χιλιόμετρα και οι Chicago Cubs "
+"ταξίδεψαν 39,015 χιλιόμετρα."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Encontrar el calendario con la menor distancia total se conoce como el "
+"Problema de Transportación de Torneo (PTT). Es un problema NP-duro: el "
+"número de calendarios posibles crece tan rápido que no se pueden revisar "
+"todos."
+msgstr ""
+"Η εύρεση του προγράμματος με τη χαμηλότερη συνολική απόσταση είναι γνωστή ως"
+" Πρόβλημα Μεταφοράς Τουρνουά (PTT). Είναι ένα δύσκολο πρόβλημα NP: ο αριθμός"
+" των πιθανών δρομολογίων αυξάνεται τόσο γρήγορα που δεν μπορείτε να τα "
+"ελέγξετε όλα."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La programación genética (PG), propuesta por John Koza en 1992, imita la "
+"evolución. Crea una población de soluciones, se queda con las mejores y las "
+"combina y modifica para formar una nueva generación."
+msgstr ""
+"Ο γενετικός προγραμματισμός (PG), που προτάθηκε από τον John Koza το 1992, "
+"μιμείται την εξέλιξη. Δημιουργεί έναν πληθυσμό λύσεων, παίρνει τις καλύτερες"
+" και τις συνδυάζει και τις τροποποιεί για να σχηματίσει μια νέα γενιά."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Representación:</strong> cada calendario es un árbol. Sus nodos son "
+"operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
+"visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
+msgstr ""
+"<strong>Αναπαράσταση: Κάθε</strong> ημερολόγιο είναι ένα δέντρο. Οι κόμβοι "
+"του είναι λειτουργίες όπως <code>crear_juego</code> (ημερομηνία, γηπεδούχος,"
+" φιλοξενούμενη ομάδα) και <code>obtener_calendario</code>, που ενώνει δύο "
+"λίστες παιχνιδιών."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Viabilidad (C1):</strong> cada equipo debe jugar exactamente el "
+"número de juegos que pide el torneo. Un valor de 0 significa que el "
+"calendario es válido."
+msgstr ""
+"<strong>Βιωσιμότητα (C1):</strong> Κάθε ομάδα πρέπει να παίξει ακριβώς τον "
+"αριθμό των παιχνιδιών που απαιτεί το τουρνουά. Η τιμή 0 σημαίνει ότι το "
+"πρόγραμμα είναι έγκυρο."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Distancia (C2):</strong> la suma de los traslados, calculada con la "
+"fórmula de haversine sobre las coordenadas de cada estadio."
+msgstr ""
+"<strong>Απόσταση (C2):</strong> το άθροισμα των μεταγραφών, που υπολογίζεται"
+" με τον τύπο του haversine στις συντεταγμένες κάθε σταδίου."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Software:</strong> tres módulos (planificador, calculadora y "
+"programa genético) con la biblioteca DEAP, separados de una aplicación web "
+"en Django."
+msgstr ""
+"<strong>Λογισμικό:</strong> τρία modules (planner, calculator και genetic "
+"program) με τη βιβλιοθήκη DEAP, ξεχωριστά από μια web εφαρμογή στο Django."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
+"generaciones."
+msgstr ""
+"Δοκιμάστε 30 ομάδες, 163 παιχνίδια ανά ομάδα, σειρές 5 αγώνων και 20 γενιές."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Comparación de la búsqueda aleatoria y la programación genética"
+msgstr "Σύγκριση Τυχαίας Αναζήτησης και Γενετικού Προγραμματισμού"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Método"
+msgstr "Μέθοδος"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de cruce"
+msgstr "Prob. διέλευσης"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de mutación"
+msgstr "Prob. της μετάλλαξης"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Viabilidad (C1)"
+msgstr "Σκοπιμότητα (C1)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Distancia total (C2)"
+msgstr "Συνολική απόσταση (C2)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Tiempo"
+msgstr "Χρόνος"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Búsqueda aleatoria"
+msgstr "Τυχαία αναζήτηση"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "0 (válido)"
+msgstr "0 (έγκυρο)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "menor distancia"
+msgstr "Μικρότερη απόσταση"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Programación genética"
+msgstr "Γενετικός προγραμματισμός"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>La programación genética no superó a la búsqueda aleatoria.</strong>"
+" Dio una distancia 19.5%% mayor y tardó casi 17 veces más. El mejor "
+"calendario siempre salió de la generación inicial, que es aleatoria."
+msgstr ""
+"<strong>Ο γενετικός προγραμματισμός δεν ξεπέρασε την τυχαία "
+"αναζήτηση.</strong> Έδωσε 19,5% μεγαλύτερη απόσταση και χρειάστηκε σχεδόν 17"
+" φορές περισσότερο. Το καλύτερο ημερολόγιο προερχόταν πάντα από την αρχική "
+"γενιά, η οποία είναι τυχαία."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "La tesis identificó estas causas:"
+msgstr "Η διατριβή εντόπισε αυτές τις αιτίες:"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Los operadores genéricos de cruce y mutación cambian nodos sin conocer el "
+"problema. Casi siempre producen calendarios inválidos."
+msgstr ""
+"Οι γενικοί τελεστές διασταύρωσης και μετάλλαξης αλλάζουν κόμβους χωρίς να "
+"γνωρίζουν το πρόβλημα. Σχεδόν πάντα παράγουν μη έγκυρα ημερολόγια."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La función de aptitud le da mucho más peso a la viabilidad que a la "
+"distancia. Un hijo inválido pierde siempre contra un padre válido."
+msgstr ""
+"Η λειτουργία φυσικής κατάστασης δίνει πολύ μεγαλύτερη βαρύτητα στη "
+"βιωσιμότητα παρά στην απόσταση. Ένα ανάπηρο παιδί χάνει πάντα από έναν "
+"έγκυρο γονέα."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El algoritmo convergió pronto en un óptimo local y conservó solo las "
+"soluciones iniciales."
+msgstr ""
+"Ο αλγόριθμος σύντομα συνέκλινε σε ένα τοπικό βέλτιστο και διατήρησε μόνο τις"
+" αρχικές λύσεις."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Un resultado negativo también es un resultado. Muestra que la representación"
+" y los operadores importan tanto como el algoritmo."
+msgstr ""
+"Ένα αρνητικό αποτέλεσμα είναι επίσης αποτέλεσμα. Δείχνει ότι η αναπαράσταση "
+"και οι τελεστές έχουν τόση σημασία όσο και ο αλγόριθμος."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis propuso operadores contextuales: en lugar de cambiar nodos al azar,"
+" intercambiar series o bloques completos que mantengan el calendario válido."
+" También mencionó la computación cuántica para explorar muchas "
+"configuraciones a la vez."
+msgstr ""
+"Η διατριβή πρότεινε τελεστές με βάση τα συμφραζόμενα: αντί να αλλάζετε "
+"κόμβους τυχαία, ανταλλάξτε ολόκληρες σειρές ή μπλοκ που διατηρούν το "
+"ημερολόγιο έγκυρο. Ανέφερε επίσης τον κβαντικό υπολογισμό για να εξερευνήσει"
+" πολλές διαμορφώσεις ταυτόχρονα."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Ver qué se ha hecho después de la tesis"
+msgstr "Δείτε τι έγινε μετά τη διατριβή"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mayo de 2026"
+msgstr "Μάιος 2026"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Versión pre-oficial del documento de la tesis."
+msgstr "Προ-επίσημη έκδοση του εγγράφου της διατριβής."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "23 de julio de 2026"
+msgstr "Ιούλιος 23, 2026"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Defensa en la Ciudad de México. Tesis aprobada."
+msgstr "Άμυνα στην Πόλη του Μεξικού. Η διατριβή εγκρίθηκε."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Documento de la tesis, versión pre-oficial"
+msgstr "Έγγραφο διατριβής, προεπίσημη έκδοση"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Presentación de la defensa"
+msgstr "Παρουσίαση της υπεράσπισης"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cita en formato APA:"
+msgstr "Παραπομπή σε μορφή APA:"
+
+#: documentacion/templates/documentacion/index.html
+msgid "Documentación del proyecto"
+msgstr "Τεκμηρίωση Έργου"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Koza-TTP aplica la programación genética a la planificación de temporadas de"
+" béisbol. La documentación tiene dos partes: lo que se hizo en la tesis y lo"
+" que se ha hecho después."
+msgstr ""
+"Το Koza-TTP εφαρμόζει γενετικό προγραμματισμό στον προγραμματισμό της σεζόν "
+"του μπέιζμπολ. Η τεκμηρίωση έχει δύο μέρη: τι έγινε στη διατριβή και τι "
+"έγινε μετά."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"El problema, el método, los resultados y lo que aprendimos. Incluye el "
+"hallazgo principal: con operadores genéricos, la programación genética no "
+"superó a la búsqueda aleatoria."
+msgstr ""
+"Το πρόβλημα, η μέθοδος, τα αποτελέσματα και τι μάθαμε. Περιλαμβάνει το κύριο"
+" εύρημα: με τους γενικούς τελεστές, ο γενετικός προγραμματισμός δεν ξεπέρασε"
+" την τυχαία αναζήτηση."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Esta parte no cambia. Es el registro del trabajo aprobado el 23 de julio de "
+"2026."
+msgstr ""
+"Αυτό το μέρος δεν αλλάζει. Είναι το αρχείο εργασίας που εγκρίθηκε στις 23 "
+"Ιουλίου 2026."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Los cambios y las pruebas nuevas, con su fecha y su estado. Aquí se verá la "
+"versión mejorada del motor junto a la versión de la tesis."
+msgstr ""
+"Οι αλλαγές και οι νέες δοκιμές, με την ημερομηνία και την κατάστασή τους. "
+"Εδώ θα δείτε τη βελτιωμένη έκδοση του κινητήρα δίπλα στην έκδοση της "
+"διατριβής."
+
+#: documentacion/templates/documentacion/index.html
+msgid "Esta parte crece con cada avance."
+msgstr "Αυτό το μέρος μεγαλώνει με κάθε πρόοδο."

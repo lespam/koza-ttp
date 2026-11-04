@@ -322,3 +322,500 @@ msgstr "前回のバージョンで得られた最良の選手が検証され、
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
 msgstr "コンピュータ工学論文"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances después de la tesis"
+msgstr "論文後の進捗"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Cambios y pruebas de Koza-TTP después de la tesis, con fecha y estado."
+msgstr "Koza-TTPは論文作成後に日付と状況を記載して変更・テストを行います。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Documentación"
+msgstr "文書"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances"
+msgstr "進展"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances: después de la tesis"
+msgstr "進展:論文後"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Aquí se registra cada cambio hecho después de la defensa. La versión de la "
+"tesis se conserva sin cambios, para poder comparar."
+msgstr "ここでは、防御後に行われたすべての変更が記録されています。主張のバージョンは変更せずに保存され、比較が可能です。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versiones del motor"
+msgstr "エンジンバージョン"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión de la tesis y versión mejorada"
+msgstr "論文版と改良版"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión"
+msgstr "バージョン"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Estado"
+msgstr "現状"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Distancia total (30 equipos)"
+msgstr "総距離(30チーム)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "¿Supera al azar?"
+msgstr "ランダムに鼓動しますか?"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Tesis (2026)"
+msgstr "論文(2026年)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Congelada"
+msgstr "フローズン"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "No"
+msgstr "いいえ"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión mejorada"
+msgstr "改良版"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En desarrollo"
+msgstr "開発中"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sin resultados todavía"
+msgstr "まだ結果はありません"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Por medir"
+msgstr "測定される"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Registro de avances"
+msgstr "進捗記録"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Del más reciente al más antiguo."
+msgstr "最新のものから古いものまで。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Planeado"
+msgstr "計画"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Operadores contextuales para el motor"
+msgstr "エンジンのコンテキストオペレーター"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Cambiar los operadores genéricos por otros que intercambien series "
+"completas, para que los hijos sigan siendo calendarios válidos. Es el "
+"trabajo futuro que propuso la tesis."
+msgstr "完全な系列を交換する他の汎用演算子を変更し、子カレンダーが有効なカレンダーのままにする。これが論文で提案された今後の研究である。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Reparar el recorrido completo de la herramienta"
+msgstr "ツールパス全体を修復してください"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
+" con un recorrido guiado paso a paso."
+msgstr "チーム登録からカレンダーをエラーなく確認でき、ガイド付きのステップバイステップツアーも利用できます。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "3 de noviembre de 2026"
+msgstr "2026年11月3日"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En curso"
+msgstr "進行中"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Diagnóstico del motor"
+msgstr "エンジンの診断"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión del código para confirmar por qué la PG no supera al azar. El cruce"
+" y la mutación rompen la viabilidad de los calendarios, y los pesos de la "
+"aptitud hacen que los hijos pierdan contra los padres de la generación "
+"inicial."
+msgstr ""
+"なぜPGが偶然を上回らないのかを確認するためのコードレビュー。交差や突然変異はカレンダーの存続を妨げ、適応度の重みが子孫を初期世代の親に負けさせます。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Hecho"
+msgstr "事実"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Auditoría de la experiencia"
+msgstr "エクスペリエンス監査"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión de accesibilidad (WCAG 2.2 AA), usabilidad e interacción humano-IA."
+" Encontró 28 puntos por mejorar. Se repetirá cuando el motor nuevo esté "
+"listo."
+msgstr ""
+"アクセシビリティ(WCAG 2.2 "
+"AA)、ユーザビリティ、人間とAIのインタラクションレビュー。改善点が28点ありました。新エンジンが準備でき次第、再度実施されます。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la auditoría"
+msgstr "監査を読んでください"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "en español"
+msgstr "スペイン語で"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en 43 idiomas"
+msgstr "43言語のサイト"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
+"demás versiones son traducciones automáticas con Azure AI Translator y "
+"pueden tener errores."
+msgstr ""
+"サイトは43言語で提供されています。オリジナルはメキシコスペイン語です。その他のバージョンはすべてAzure "
+"AI翻訳機による機械翻訳で、誤りがある場合があります。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Nuevo servidor"
+msgstr "新しいサーバー"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"La aplicación volvió a estar en línea en un servidor nuevo, con HTTPS. Cada "
+"versión se publica a mano, después de revisarla."
+msgstr "アプリは新しいサーバーでHTTPSで再稼働しました。各バージョンはレビュー後に手作業で公開されています。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Materiales de la tesis en el repositorio"
+msgstr "リポジトリ内の論文資料"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El documento de la tesis y la presentación de la defensa están en el "
+"repositorio, con marca de agua."
+msgstr "論文と防衛発表はリポジトリにウォーターマーク付きで保管されています。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver los materiales"
+msgstr "資料を見る"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Documentación de Koza-TTP: la tesis original y los avances posteriores."
+msgstr "Koza-TTPの文書:元の論文とその後の進展。"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Saltar al contenido"
+msgstr "内容へスキップ"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Histórico"
+msgstr "歴史"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Herramienta"
+msgstr "ツール"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
+msgstr "論文はレスリー・パメラ・ブレネス・バレンシアとして発表されました"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Código fuente en GitHub"
+msgstr "GitHubのソースコード"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis"
+msgstr "歴史的:主張"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis de Koza-TTP: problema, método, resultados y hallazgo principal."
+msgstr "Koza-TTPの論文:問題、方法、結果、そして主な発見。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis (2026)"
+msgstr "歴史的:論文(2026年)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<cite>Programación genética en la planificación de temporadas de béisbol. "
+"Problema de viabilidad y optimización.</cite> Tesis de Ingeniería en "
+"Computación, ITAM. Asesor: Dr. Andrés Gómez de Silva Garza. Aprobada el 23 "
+"de julio de 2026."
+msgstr ""
+"<cite>野球シーズン計画における遺伝的プログラミング。実現可能性と最適化問題。</cite> "
+"コンピュータ工学論文、ITAM。指導教員:アンドレス・ゴメス・デ・シルバ・ガルサ博士。2026年7月23日承認。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "En esta página"
+msgstr "このページで"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El problema"
+msgstr "問題点"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El método"
+msgstr "方法"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Los resultados"
+msgstr "結果"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El hallazgo principal"
+msgstr "主な発見"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Trabajo futuro"
+msgstr "今後の活動"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cronología"
+msgstr "タイムライン"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Materiales y cita"
+msgstr "資料と引用"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La MLB programa 2,430 juegos para 30 equipos en unos 180 días. Cada equipo "
+"viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
+"2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
+msgstr ""
+"MLBは約180日間で30チームで2,430試合をスケジュールしています。各チームは都市間で移動し、その距離はチームごとに大きく異なります。2016年にはシアトルが76,683km、シカゴ・カブスが39,015kmを移動しました。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Encontrar el calendario con la menor distancia total se conoce como el "
+"Problema de Transportación de Torneo (PTT). Es un problema NP-duro: el "
+"número de calendarios posibles crece tan rápido que no se pueden revisar "
+"todos."
+msgstr ""
+"総距離が最も短いスケジュールを見つけることはトーナメント交通問題(PTT)と呼ばれます。これはNP難易度の問題で、可能なスケジュールの数が非常に速く増えてすべてを確認できないのです。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La programación genética (PG), propuesta por John Koza en 1992, imita la "
+"evolución. Crea una población de soluciones, se queda con las mejores y las "
+"combina y modifica para formar una nueva generación."
+msgstr ""
+"遺伝子プログラミング(PG)は、1992年にジョン・コザによって提案され、進化を模倣します。それは解決策の集団を作り、最良のものを取り出し、それらを組み合わせて新しい世代を形成します。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Representación:</strong> cada calendario es un árbol. Sus nodos son "
+"operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
+"visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
+msgstr ""
+"<strong>表現:</strong> 各カレンダーは木構造です。そのノードは <code>crear_juego</code> "
+"(日付、ホームチーム、アウェイチーム)や <code>obtener_calendario</code>などの操作で、2つの試合リストに加わります。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Viabilidad (C1):</strong> cada equipo debe jugar exactamente el "
+"número de juegos que pide el torneo. Un valor de 0 significa que el "
+"calendario es válido."
+msgstr ""
+"<strong>生存可能性(C1):</strong> "
+"各チームはトーナメントで求められる正確な試合数をプレイしなければなりません。0の値はスケジュールが有効であることを示します。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Distancia (C2):</strong> la suma de los traslados, calculada con la "
+"fórmula de haversine sobre las coordenadas de cada estadio."
+msgstr "<strong>距離(C2):</strong> 各スタジアムの座標にハヴェルサインの式で計算された移送の合計。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Software:</strong> tres módulos (planificador, calculadora y "
+"programa genético) con la biblioteca DEAP, separados de una aplicación web "
+"en Django."
+msgstr ""
+"<strong>ソフトウェア:</strong> "
+"3つのモジュール(プランナー、計算機、遺伝子プログラム)で、DEAPライブラリを用い、Djangoのウェブアプリケーションとは別です。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
+"generaciones."
+msgstr "30チーム、1チーム163試合、5試合シリーズ、20世代を試してみてください。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Comparación de la búsqueda aleatoria y la programación genética"
+msgstr "ランダムサーチと遺伝的プログラミングの比較"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Método"
+msgstr "方法"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de cruce"
+msgstr "おそらく。渡りの"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de mutación"
+msgstr "おそらく。突然変異の"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Viabilidad (C1)"
+msgstr "実現可能性(C1)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Distancia total (C2)"
+msgstr "総距離(C2)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Tiempo"
+msgstr "時間"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Búsqueda aleatoria"
+msgstr "ランダムサーチ"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "0 (válido)"
+msgstr "0(有効)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "menor distancia"
+msgstr "短距離"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Programación genética"
+msgstr "遺伝的プログラミング"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>La programación genética no superó a la búsqueda aleatoria.</strong>"
+" Dio una distancia 19.5%% mayor y tardó casi 17 veces más. El mejor "
+"calendario siempre salió de la generación inicial, que es aleatoria."
+msgstr ""
+"<strong>遺伝子プログラミングはランダム検索を上回ることはありませんでした。</strong> "
+"19.5%長く距離を得て、ほぼ17倍の時間がかかりました。最良のカレンダーは常にランダムな初期世代から得られます。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "La tesis identificó estas causas:"
+msgstr "論文は以下の原因を特定しました。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Los operadores genéricos de cruce y mutación cambian nodos sin conocer el "
+"problema. Casi siempre producen calendarios inválidos."
+msgstr "一般的なクロスオーバーや突然変異演算子は問題を知らずにノードを変えます。ほとんどの場合、無効なカレンダーを生成します。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La función de aptitud le da mucho más peso a la viabilidad que a la "
+"distancia. Un hijo inválido pierde siempre contra un padre válido."
+msgstr "適応度関数は距離よりも生存可能性にはるかに大きな重みを与えます。無効な子は常に有効な親に負けます。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El algoritmo convergió pronto en un óptimo local y conservó solo las "
+"soluciones iniciales."
+msgstr "アルゴリズムはすぐに局所最適解に収束し、初期解のみを保持しました。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Un resultado negativo también es un resultado. Muestra que la representación"
+" y los operadores importan tanto como el algoritmo."
+msgstr "否定の結果も結果です。これは、表現や演算子がアルゴリズムと同じくらい重要であることを示しています。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis propuso operadores contextuales: en lugar de cambiar nodos al azar,"
+" intercambiar series o bloques completos que mantengan el calendario válido."
+" También mencionó la computación cuántica para explorar muchas "
+"configuraciones a la vez."
+msgstr ""
+"論文は文脈演算子を提案しました:ノードをランダムに変える代わりに、カレンダーを有効に保つ一連のやブロック全体を交換するというものです。また、多くの構成を同時に探求するために量子コンピューティングにも言及しました。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Ver qué se ha hecho después de la tesis"
+msgstr "論文の後に何が行われたか見てみましょう"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mayo de 2026"
+msgstr "2026年5月"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Versión pre-oficial del documento de la tesis."
+msgstr "論文文書の公式版です。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "23 de julio de 2026"
+msgstr "2026年7月23日"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Defensa en la Ciudad de México. Tesis aprobada."
+msgstr "メキシコシティでの防衛。論文承認。"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Documento de la tesis, versión pre-oficial"
+msgstr "論文文書、公式以前のバージョン"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Presentación de la defensa"
+msgstr "弁護側の提示"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cita en formato APA:"
+msgstr "APA形式での引用:"
+
+#: documentacion/templates/documentacion/index.html
+msgid "Documentación del proyecto"
+msgstr "プロジェクト文書"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Koza-TTP aplica la programación genética a la planificación de temporadas de"
+" béisbol. La documentación tiene dos partes: lo que se hizo en la tesis y lo"
+" que se ha hecho después."
+msgstr ""
+"Koza-"
+"TTPは、野球シーズン計画に遺伝子プログラミングを適用します。文書は2つの部分から成り立っています:論文で行われたことと、その後に行われたことです。"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"El problema, el método, los resultados y lo que aprendimos. Incluye el "
+"hallazgo principal: con operadores genéricos, la programación genética no "
+"superó a la búsqueda aleatoria."
+msgstr ""
+"問題、方法、結果、そして私たちが学んだこと。主な発見は、ジェネリックオペレーターでは遺伝子プログラミングがランダム検索を上回らなかったということです。"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Esta parte no cambia. Es el registro del trabajo aprobado el 23 de julio de "
+"2026."
+msgstr "この部分は変わりません。2026年7月23日に承認された作業記録です。"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Los cambios y las pruebas nuevas, con su fecha y su estado. Aquí se verá la "
+"versión mejorada del motor junto a la versión de la tesis."
+msgstr "変更点と新しいテスト、その日付と状況。ここでは、論文のバージョンの隣に改良版のエンジンが掲載されています。"
+
+#: documentacion/templates/documentacion/index.html
+msgid "Esta parte crece con cada avance."
+msgstr "この部分は進むたびに成長していきます。"

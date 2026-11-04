@@ -358,3 +358,546 @@ msgstr ""
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
 msgstr "کمپیوٹر انجینئرنگ تھیسس"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances después de la tesis"
+msgstr "تھیسس کے بعد پیش رفت"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Cambios y pruebas de Koza-TTP después de la tesis, con fecha y estado."
+msgstr ""
+"کوزا-ٹی ٹی پی تھیسس کے بعد تبدیلیاں اور ٹیسٹ کرتا ہے، تاریخ اور حیثیت کے "
+"ساتھ۔"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Documentación"
+msgstr "دستاویزات"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances"
+msgstr "پیش رفت"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances: después de la tesis"
+msgstr "ایڈوانسز: تھیسس کے بعد"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Aquí se registra cada cambio hecho después de la defensa. La versión de la "
+"tesis se conserva sin cambios, para poder comparar."
+msgstr ""
+"یہاں دفاع کے بعد کی گئی ہر تبدیلی ریکارڈ کی جاتی ہے۔ تھیسس کا ورژن بغیر "
+"تبدیلی کے محفوظ رکھا جاتا ہے تاکہ اس کا موازنہ کیا جا سکے۔"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versiones del motor"
+msgstr "انجن ورژنز"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión de la tesis y versión mejorada"
+msgstr "تھیسس ورژن اور بہتر ورژن"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión"
+msgstr "ورژن"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Estado"
+msgstr "حیثیت"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Distancia total (30 equipos)"
+msgstr "کل فاصلہ (30 ٹیمیں)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "¿Supera al azar?"
+msgstr "کیا یہ بے ترتیب دھڑکتا ہے؟"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Tesis (2026)"
+msgstr "تھیسس (2026)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Congelada"
+msgstr "منجمد"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "No"
+msgstr "نہیں"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión mejorada"
+msgstr "بہتر ورژن"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En desarrollo"
+msgstr "ترقی کے مراحل میں"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sin resultados todavía"
+msgstr "ابھی تک کوئی نتائج نہیں ملے"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Por medir"
+msgstr "پیمائش کے لیے"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Registro de avances"
+msgstr "پروگریس لاگ"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Del más reciente al más antiguo."
+msgstr "سب سے حالیہ سے سب سے پرانے تک۔"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Planeado"
+msgstr "منصوبہ بند"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Operadores contextuales para el motor"
+msgstr "انجن کے سیاق و سباق کے آپریٹرز"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Cambiar los operadores genéricos por otros que intercambien series "
+"completas, para que los hijos sigan siendo calendarios válidos. Es el "
+"trabajo futuro que propuso la tesis."
+msgstr ""
+"مکمل سیریز کا تبادلہ کرنے والے دیگر آپریٹرز کے لیے عمومی آپریٹرز تبدیل کرنا،"
+" تاکہ بچے درست کیلنڈر رہیں۔ یہ تھیسس میں تجویز کردہ مستقبل کا کام ہے۔"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Reparar el recorrido completo de la herramienta"
+msgstr "مکمل ٹول پاتھ کی مرمت کریں"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
+" con un recorrido guiado paso a paso."
+msgstr ""
+"آپ ٹیم رجسٹر سے جا کر کیلنڈر بغیر کسی غلطی کے دیکھ سکتے ہیں، جس میں ایک "
+"رہنمائی شدہ مرحلہ وار دورہ ہوتا ہے۔"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "3 de noviembre de 2026"
+msgstr "3 نومبر، 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En curso"
+msgstr "جاری"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Diagnóstico del motor"
+msgstr "انجن ڈائیگنوسٹکس"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión del código para confirmar por qué la PG no supera al azar. El cruce"
+" y la mutación rompen la viabilidad de los calendarios, y los pesos de la "
+"aptitud hacen que los hijos pierdan contra los padres de la generación "
+"inicial."
+msgstr ""
+"کوڈ کا جائزہ اس بات کی تصدیق کے لیے کہ پی جی چانس سے بہتر کیوں نہیں ہے۔ کراس"
+" اوور اور میوٹیشن کیلنڈرز کی پائیداری کو خراب کر دیتے ہیں، اور فٹنس کے وزن "
+"کی وجہ سے اولاد ابتدائی نسل کے والدین سے ہار جاتی ہے۔"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Hecho"
+msgstr "حقیقت"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Auditoría de la experiencia"
+msgstr "تجربے کا آڈٹ"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión de accesibilidad (WCAG 2.2 AA), usabilidad e interacción humano-IA."
+" Encontró 28 puntos por mejorar. Se repetirá cuando el motor nuevo esté "
+"listo."
+msgstr ""
+"رسائی (WCAG 2.2 AA)، استعمال کی آسانی، اور انسانی-AI تعامل کا جائزہ۔ بہتری "
+"کے لیے 28 پوائنٹس ملے۔ جب نیا انجن تیار ہو جائے گا تو اسے دوبارہ دہرایا جائے"
+" گا۔"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la auditoría"
+msgstr "آڈٹ پڑھیں"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "en español"
+msgstr "ہسپانوی زبان میں"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en 43 idiomas"
+msgstr "43 زبانوں میں سائٹ"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
+"demás versiones son traducciones automáticas con Azure AI Translator y "
+"pueden tener errores."
+msgstr ""
+"یہ سائٹ 43 زبانوں میں دستیاب ہے۔ اصل ورژنز میکسیکن ہسپانوی زبان میں ہے۔ باقی"
+" تمام ورژنز Azure AI Translator کے ساتھ مشین ترجمے ہیں اور ان میں غلطیاں ہو "
+"سکتی ہیں۔"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Nuevo servidor"
+msgstr "نیا سرور"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"La aplicación volvió a estar en línea en un servidor nuevo, con HTTPS. Cada "
+"versión se publica a mano, después de revisarla."
+msgstr ""
+"ایپ ایک نئے سرور پر، HTTPS کے ساتھ دوبارہ آن لائن آئی۔ ہر ورژن ہاتھ سے شائع "
+"کیا جاتا ہے، جائزے کے بعد۔"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Materiales de la tesis en el repositorio"
+msgstr "ذخیرے میں تھیسس کے مواد"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El documento de la tesis y la presentación de la defensa están en el "
+"repositorio, con marca de agua."
+msgstr ""
+"تھیسس دستاویز اور دفاعی پریزنٹیشن ریپوزٹری میں واٹر مارک کے ساتھ موجود ہیں۔"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver los materiales"
+msgstr "مواد دیکھیں"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Documentación de Koza-TTP: la tesis original y los avances posteriores."
+msgstr "کوزا-ٹی ٹی پی دستاویزات: اصل تھیسس اور بعد کی پیش رفت۔"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Saltar al contenido"
+msgstr "مواد پر جائیں"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Histórico"
+msgstr "تاریخ"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Herramienta"
+msgstr "آلہ"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
+msgstr "تھیسس لیسلی پامیلہ برینیس ویلنشیا کے نام سے شائع ہوا"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Código fuente en GitHub"
+msgstr "GitHub پر سورس کوڈ"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis"
+msgstr "تاریخی: تھیسس"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis de Koza-TTP: problema, método, resultados y hallazgo principal."
+msgstr "کوزا-ٹی ٹی پی تھیسس: مسئلہ، طریقہ، نتائج اور مرکزی نتیجہ۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis (2026)"
+msgstr "تاریخی: تھیسس (2026)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<cite>Programación genética en la planificación de temporadas de béisbol. "
+"Problema de viabilidad y optimización.</cite> Tesis de Ingeniería en "
+"Computación, ITAM. Asesor: Dr. Andrés Gómez de Silva Garza. Aprobada el 23 "
+"de julio de 2026."
+msgstr ""
+"<cite>بیس بال سیزن کی منصوبہ بندی میں جینیاتی پروگرامنگ۔ فزیبلٹی اور "
+"آپٹیمائزیشن کا مسئلہ۔</cite> کمپیوٹر انجینئرنگ تھیسس، ITAM۔ مشیر: ڈاکٹر "
+"آندریس گومیز ڈی سلوا گارزا۔ 23 جولائی 2026 کو منظور شدہ۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "En esta página"
+msgstr "اس صفحے پر"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El problema"
+msgstr "مسئلہ"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El método"
+msgstr "طریقہ کار"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Los resultados"
+msgstr "نتائج"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El hallazgo principal"
+msgstr "اہم دریافت"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Trabajo futuro"
+msgstr "مستقبل کا کام"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cronología"
+msgstr "ٹائم لائن"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Materiales y cita"
+msgstr "مواد اور حوالہ جات"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La MLB programa 2,430 juegos para 30 equipos en unos 180 días. Cada equipo "
+"viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
+"2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
+msgstr ""
+"ایم ایل بی تقریبا 180 دنوں میں 30 ٹیموں کے لیے 2,430 میچز شیڈول کرتا ہے۔ ہر "
+"ٹیم شہروں کے درمیان سفر کرتی ہے، اور فاصلہ ٹیم سے ٹیم میں بہت مختلف ہوتا ہے۔"
+" 2016 میں، سیئٹل نے 76,683 کلومیٹر کا سفر کیا، اور شکاگو کبز نے 39,015 "
+"کلومیٹر۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Encontrar el calendario con la menor distancia total se conoce como el "
+"Problema de Transportación de Torneo (PTT). Es un problema NP-duro: el "
+"número de calendarios posibles crece tan rápido que no se pueden revisar "
+"todos."
+msgstr ""
+"سب سے کم کل فاصلے والا شیڈول تلاش کرنا ٹورنامنٹ ٹرانسپورٹیشن پرابلم (PTT) "
+"کہلاتا ہے۔ یہ NP کا مشکل مسئلہ ہے: ممکنہ شیڈولز کی تعداد اتنی تیزی سے بڑھتی "
+"ہے کہ آپ سب کو چیک نہیں کر سکتے۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La programación genética (PG), propuesta por John Koza en 1992, imita la "
+"evolución. Crea una población de soluciones, se queda con las mejores y las "
+"combina y modifica para formar una nueva generación."
+msgstr ""
+"جینیاتی پروگرامنگ (PG)، جو جان کوزا نے 1992 میں تجویز کی تھی، ارتقاء کی نقل "
+"کرتی ہے۔ یہ حلوں کی ایک آبادی بناتی ہے، بہترین حلوں کو لے کر انہیں ملا کر "
+"تبدیل کر کے ایک نئی نسل بناتی ہے۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Representación:</strong> cada calendario es un árbol. Sus nodos son "
+"operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
+"visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
+msgstr ""
+"<strong>نمائندگی:</strong> ہر کیلنڈر ایک درخت ہے۔ اس کے نوڈز آپریشنز ہیں "
+"جیسے <code>crear_juego</code> (تاریخ، ہوم ٹیم، اوے ٹیم) اور "
+"<code>obtener_calendario</code>، جو دو کھیلوں کی فہرستوں میں شامل ہوتے ہیں۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Viabilidad (C1):</strong> cada equipo debe jugar exactamente el "
+"número de juegos que pide el torneo. Un valor de 0 significa que el "
+"calendario es válido."
+msgstr ""
+"<strong>قابل عمل (C1):</strong> ہر ٹیم کو بالکل وہی میچز کھیلنے ہوں گے جتنے "
+"ٹورنامنٹ میں کہا گیا ہو۔ 0 کی قیمت کا مطلب ہے کہ شیڈول درست ہے۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Distancia (C2):</strong> la suma de los traslados, calculada con la "
+"fórmula de haversine sobre las coordenadas de cada estadio."
+msgstr ""
+"<strong>فاصلہ (C2):</strong> منتقلیوں کا مجموعہ، جو ہر اسٹیڈیم کے کوآرڈینیٹس"
+" پر ہیورسائن کے فارمولا سے حساب کیا جاتا ہے۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Software:</strong> tres módulos (planificador, calculadora y "
+"programa genético) con la biblioteca DEAP, separados de una aplicación web "
+"en Django."
+msgstr ""
+"<strong>سافٹ ویئر:</strong> تین ماڈیولز (پلانر، کیلکولیٹر اور جینیاتی "
+"پروگرام) جن میں DEAP لائبریری شامل ہے، جو Django میں ویب ایپلیکیشن سے الگ "
+"ہے۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
+"generaciones."
+msgstr ""
+"30 ٹیمیں، ہر ٹیم میں 163 میچز، 5 میچز کی سیریز، اور 20 جنریشنز آزما لیں۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Comparación de la búsqueda aleatoria y la programación genética"
+msgstr "رینڈم سرچ اور جینیاتی پروگرامنگ کا موازنہ"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Método"
+msgstr "طریقہ کار"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de cruce"
+msgstr "مسئلہ۔ پار کرنے کا"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de mutación"
+msgstr "امکان۔ میوٹیشن کا"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Viabilidad (C1)"
+msgstr "فزیبلٹی (C1)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Distancia total (C2)"
+msgstr "کل فاصلہ (C2)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Tiempo"
+msgstr "وقت"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Búsqueda aleatoria"
+msgstr "رینڈم سرچ"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "0 (válido)"
+msgstr "0 (درست)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "menor distancia"
+msgstr "کم فاصلہ"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Programación genética"
+msgstr "جینیاتی پروگرامنگ"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>La programación genética no superó a la búsqueda aleatoria.</strong>"
+" Dio una distancia 19.5%% mayor y tardó casi 17 veces más. El mejor "
+"calendario siempre salió de la generación inicial, que es aleatoria."
+msgstr ""
+"<strong>جینیاتی پروگرامنگ نے رینڈم سرچ سے بہتر کارکردگی نہیں "
+"دکھائی۔</strong> اس نے 19.5٪ زیادہ فاصلہ دیا اور تقریبا 17 گنا زیادہ وقت "
+"لیا۔ بہترین کیلنڈر ہمیشہ ابتدائی نسل سے آتا تھا، جو کہ بے ترتیب ہوتی ہے۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "La tesis identificó estas causas:"
+msgstr "تھیسس نے ان وجوہات کی نشاندہی کی:"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Los operadores genéricos de cruce y mutación cambian nodos sin conocer el "
+"problema. Casi siempre producen calendarios inválidos."
+msgstr ""
+"جنیرک کراس اوور اور میوٹیشن آپریٹرز مسئلے کو جانے بغیر نوڈز تبدیل کرتے ہیں۔ "
+"وہ تقریبا ہمیشہ غلط کیلنڈرز بناتے ہیں۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La función de aptitud le da mucho más peso a la viabilidad que a la "
+"distancia. Un hijo inválido pierde siempre contra un padre válido."
+msgstr ""
+"فٹنس فنکشن بقا کو فاصلے کے مقابلے میں زیادہ اہمیت دیتا ہے۔ ایک نااہل بچہ "
+"ہمیشہ درست والدین سے ہار جاتا ہے۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El algoritmo convergió pronto en un óptimo local y conservó solo las "
+"soluciones iniciales."
+msgstr ""
+"الگورتھم جلد ہی ایک مقامی بہترین حالت پر پہنچ گیا اور صرف ابتدائی حل برقرار "
+"رکھے۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Un resultado negativo también es un resultado. Muestra que la representación"
+" y los operadores importan tanto como el algoritmo."
+msgstr ""
+"منفی نتیجہ بھی نتیجہ ہوتا ہے۔ یہ ظاہر کرتا ہے کہ نمائندگی اور آپریٹرز "
+"الگورتھم جتنا ہی اہم ہیں۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis propuso operadores contextuales: en lugar de cambiar nodos al azar,"
+" intercambiar series o bloques completos que mantengan el calendario válido."
+" También mencionó la computación cuántica para explorar muchas "
+"configuraciones a la vez."
+msgstr ""
+"تھیسس میں سیاق و سباق کے آپریٹرز تجویز کیے گئے: نوڈز کو بے ترتیب تبدیل کرنے "
+"کے بجائے، پورے سیریز یا بلاکس کو تبدیل کریں جو کیلنڈر کو درست رکھیں۔ انہوں "
+"نے کوانٹم کمپیوٹنگ کا بھی ذکر کیا تاکہ ایک ساتھ کئی کنفیگریشنز کو دریافت کیا"
+" جا سکے۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Ver qué se ha hecho después de la tesis"
+msgstr "دیکھیں تھیسس کے بعد کیا کیا گیا"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mayo de 2026"
+msgstr "مئی 2026"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Versión pre-oficial del documento de la tesis."
+msgstr "تھیسس دستاویز کا پری آفیشل ورژن۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "23 de julio de 2026"
+msgstr "23 جولائی، 2026"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Defensa en la Ciudad de México. Tesis aprobada."
+msgstr "میکسیکو سٹی میں دفاع۔ تھیسس منظور ہو گیا۔"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Documento de la tesis, versión pre-oficial"
+msgstr "تھیسس دستاویز، پری آفیشل ورژن"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Presentación de la defensa"
+msgstr "دفاع کی پیشکش"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cita en formato APA:"
+msgstr "APA فارمیٹ میں حوالہ:"
+
+#: documentacion/templates/documentacion/index.html
+msgid "Documentación del proyecto"
+msgstr "منصوبے کی دستاویزات"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Koza-TTP aplica la programación genética a la planificación de temporadas de"
+" béisbol. La documentación tiene dos partes: lo que se hizo en la tesis y lo"
+" que se ha hecho después."
+msgstr ""
+"کوزا-ٹی ٹی پی بیس بال سیزن کی منصوبہ بندی میں جینیاتی پروگرامنگ لاگو کرتا "
+"ہے۔ دستاویزات دو حصوں پر مشتمل ہیں: تھیسس میں کیا کیا گیا اور بعد میں کیا "
+"کیا گیا۔"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"El problema, el método, los resultados y lo que aprendimos. Incluye el "
+"hallazgo principal: con operadores genéricos, la programación genética no "
+"superó a la búsqueda aleatoria."
+msgstr ""
+"مسئلہ، طریقہ، نتائج، اور جو کچھ ہم نے سیکھا۔ اس میں بنیادی نتیجہ شامل ہے: "
+"جنیرک آپریٹرز کے ساتھ، جینیاتی پروگرامنگ نے رینڈم سرچ سے بہتر کارکردگی نہیں "
+"دکھائی۔"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Esta parte no cambia. Es el registro del trabajo aprobado el 23 de julio de "
+"2026."
+msgstr ""
+"یہ حصہ تبدیل نہیں ہوتا۔ یہ ورک ریکارڈ ہے جو 23 جولائی 2026 کو منظور ہوا۔"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Los cambios y las pruebas nuevas, con su fecha y su estado. Aquí se verá la "
+"versión mejorada del motor junto a la versión de la tesis."
+msgstr ""
+"تبدیلیاں اور نئے ٹیسٹ، ان کی تاریخ اور حیثیت کے ساتھ۔ یہاں آپ تھیسس کے ورژن "
+"کے ساتھ انجن کا بہتر ورژن دیکھیں گے۔"
+
+#: documentacion/templates/documentacion/index.html
+msgid "Esta parte crece con cada avance."
+msgstr "یہ حصہ ہر پیش رفت کے ساتھ بڑھتا جاتا ہے۔"

@@ -358,3 +358,546 @@ msgstr ""
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
 msgstr "Luận văn Kỹ thuật Máy tính"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances después de la tesis"
+msgstr "Tiến trình sau luận án"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Cambios y pruebas de Koza-TTP después de la tesis, con fecha y estado."
+msgstr ""
+"Koza-TTP thay đổi và kiểm tra sau luận văn, kèm theo ngày tháng và trạng "
+"thái."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Documentación"
+msgstr "Tài liệu tham khảo"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances"
+msgstr "Tiến bộ"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances: después de la tesis"
+msgstr "Tiến bộ: sau luận văn"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Aquí se registra cada cambio hecho después de la defensa. La versión de la "
+"tesis se conserva sin cambios, para poder comparar."
+msgstr ""
+"Ở đây, mọi thay đổi được thực hiện sau khi bảo vệ đều được ghi lại. Phiên "
+"bản luận điểm được giữ nguyên để có thể so sánh."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versiones del motor"
+msgstr "Phiên bản động cơ"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión de la tesis y versión mejorada"
+msgstr "Phiên bản luận văn và phiên bản cải tiến"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión"
+msgstr "Phiên bản"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Estado"
+msgstr "Tình trạng"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Distancia total (30 equipos)"
+msgstr "Tổng quãng đường (30 đội)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "¿Supera al azar?"
+msgstr "Nó có đập ngẫu nhiên không?"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Tesis (2026)"
+msgstr "Luận văn (2026)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Congelada"
+msgstr "bị đóng băng"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "No"
+msgstr "Không"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión mejorada"
+msgstr "Phiên bản cải tiến"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En desarrollo"
+msgstr "Đang phát triển"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sin resultados todavía"
+msgstr "Chưa có kết quả"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Por medir"
+msgstr "Đang được đo"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Registro de avances"
+msgstr "Nhật ký tiến trình"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Del más reciente al más antiguo."
+msgstr "Từ người mới nhất đến người lâu đời nhất."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Planeado"
+msgstr "Đã lên kế hoạch"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Operadores contextuales para el motor"
+msgstr "Các toán tử ngữ cảnh cho engine"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Cambiar los operadores genéricos por otros que intercambien series "
+"completas, para que los hijos sigan siendo calendarios válidos. Es el "
+"trabajo futuro que propuso la tesis."
+msgstr ""
+"Thay đổi toán tử tổng quát cho các toán tử khác trao đổi chuỗi hoàn chỉnh, "
+"để con cái vẫn là lịch hợp lệ. Đây là công trình tương lai được đề xuất "
+"trong luận án."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Reparar el recorrido completo de la herramienta"
+msgstr "Sửa toàn bộ đường dẫn dụng cụ"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
+" con un recorrido guiado paso a paso."
+msgstr ""
+"Bạn có thể từ sổ đăng ký nhóm để xem lịch mà không gặp lỗi, với hướng dẫn "
+"từng bước có hướng dẫn."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "3 de noviembre de 2026"
+msgstr "Ngày 3 tháng 11 năm 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En curso"
+msgstr "Đang diễn ra"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Diagnóstico del motor"
+msgstr "Chẩn đoán động cơ"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión del código para confirmar por qué la PG no supera al azar. El cruce"
+" y la mutación rompen la viabilidad de los calendarios, y los pesos de la "
+"aptitud hacen que los hijos pierdan contra los padres de la generación "
+"inicial."
+msgstr ""
+"Xem xét mã để xác nhận lý do tại sao PG không vượt trội hơn sự ngẫu nhiên. "
+"Giao thoa và đột biến làm mất khả năng tồn tại của lịch, và trọng lượng thể "
+"lực khiến con cái thua cha mẹ thế hệ đầu."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Hecho"
+msgstr "Sự thật"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Auditoría de la experiencia"
+msgstr "Kiểm toán trải nghiệm"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión de accesibilidad (WCAG 2.2 AA), usabilidad e interacción humano-IA."
+" Encontró 28 puntos por mejorar. Se repetirá cuando el motor nuevo esté "
+"listo."
+msgstr ""
+"Đánh giá khả năng tiếp cận (WCAG 2.2 AA), khả năng sử dụng và tương tác giữa"
+" con người và AI. Tìm thấy 28 điểm cần cải thiện. Sẽ được lặp lại khi engine"
+" mới sẵn sàng."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la auditoría"
+msgstr "Đọc bản kiểm toán"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "en español"
+msgstr "bằng tiếng Tây Ban Nha"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en 43 idiomas"
+msgstr "Trang web bằng 43 ngôn ngữ"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
+"demás versiones son traducciones automáticas con Azure AI Translator y "
+"pueden tener errores."
+msgstr ""
+"Trang web được cung cấp bằng 43 ngôn ngữ. Bản gốc là tiếng Tây Ban Nha "
+"Mexico. Tất cả các phiên bản khác đều là bản dịch máy với Azure AI "
+"Translator và có thể có lỗi."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Nuevo servidor"
+msgstr "Máy chủ mới"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"La aplicación volvió a estar en línea en un servidor nuevo, con HTTPS. Cada "
+"versión se publica a mano, después de revisarla."
+msgstr ""
+"Ứng dụng đã hoạt động trở lại trên một máy chủ mới, với HTTPS. Mỗi phiên bản"
+" đều được xuất bản thủ công, sau khi được xem xét."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Materiales de la tesis en el repositorio"
+msgstr "Tài liệu luận văn trong kho lưu trữ"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El documento de la tesis y la presentación de la defensa están en el "
+"repositorio, con marca de agua."
+msgstr ""
+"Tài liệu luận văn và bài thuyết trình bảo vệ đều nằm trong kho lưu trữ, đã "
+"được gắn dấu mì."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver los materiales"
+msgstr "Xem Tài liệu"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Documentación de Koza-TTP: la tesis original y los avances posteriores."
+msgstr "Tài liệu Koza-TTP: luận văn gốc và những tiến bộ tiếp theo."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Saltar al contenido"
+msgstr "Bỏ qua nội dung"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Histórico"
+msgstr "Lịch sử"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Herramienta"
+msgstr "Dụng cụ"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
+msgstr "Luận văn được xuất bản với tên Leslie Pamela Brenes Valencia"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Código fuente en GitHub"
+msgstr "Mã nguồn trên GitHub"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis"
+msgstr "Lịch sử: luận văn"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis de Koza-TTP: problema, método, resultados y hallazgo principal."
+msgstr "Luận điểm Koza-TTP: vấn đề, phương pháp, kết quả và phát hiện chính."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis (2026)"
+msgstr "Lịch sử: luận văn (2026)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<cite>Programación genética en la planificación de temporadas de béisbol. "
+"Problema de viabilidad y optimización.</cite> Tesis de Ingeniería en "
+"Computación, ITAM. Asesor: Dr. Andrés Gómez de Silva Garza. Aprobada el 23 "
+"de julio de 2026."
+msgstr ""
+"<cite>Lập trình di truyền trong lập kế hoạch mùa giải bóng chày. Bài toán "
+"khả thi và tối ưu hóa.</cite> Luận văn Kỹ thuật Máy tính, ITAM. Cố vấn: Tiến"
+" sĩ Andrés Gómez de Silva Garza. Được phê duyệt vào ngày 23 tháng 7 năm "
+"2026."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "En esta página"
+msgstr "Trên trang này"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El problema"
+msgstr "Vấn đề"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El método"
+msgstr "Phương pháp"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Los resultados"
+msgstr "Kết quả"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El hallazgo principal"
+msgstr "Phát hiện chính"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Trabajo futuro"
+msgstr "Công việc trong tương lai"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cronología"
+msgstr "Dòng thời gian"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Materiales y cita"
+msgstr "Tài liệu và trích dẫn"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La MLB programa 2,430 juegos para 30 equipos en unos 180 días. Cada equipo "
+"viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
+"2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
+msgstr ""
+"MLB lên lịch thi đấu 2.430 trận cho 30 đội trong khoảng 180 ngày. Mỗi đội di"
+" chuyển giữa các thành phố, và khoảng cách rất khác nhau giữa các đội. Năm "
+"2016, Seattle di chuyển 76.683 km, còn Chicago Cubs di chuyển 39.015 km."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Encontrar el calendario con la menor distancia total se conoce como el "
+"Problema de Transportación de Torneo (PTT). Es un problema NP-duro: el "
+"número de calendarios posibles crece tan rápido que no se pueden revisar "
+"todos."
+msgstr ""
+"Việc tìm lịch trình có tổng quãng đường thấp nhất được gọi là Vấn đề Vận "
+"chuyển Giải đấu (PTT). Đây là một vấn đề NP-khó: số lượng lịch trình có thể "
+"tăng nhanh đến mức bạn không thể kiểm tra hết."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La programación genética (PG), propuesta por John Koza en 1992, imita la "
+"evolución. Crea una población de soluciones, se queda con las mejores y las "
+"combina y modifica para formar una nueva generación."
+msgstr ""
+"Lập trình di truyền (PG), do John Koza đề xuất năm 1992, mô phỏng tiến hóa. "
+"Nó tạo ra một quần thể các giải pháp, lấy những giải pháp tốt nhất, kết hợp "
+"và điều chỉnh chúng để tạo thành một thế hệ mới."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Representación:</strong> cada calendario es un árbol. Sus nodos son "
+"operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
+"visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
+msgstr ""
+"<strong>Biểu diễn:</strong> Mỗi lịch là một cây. Các nút của nó là các phép "
+"toán như <code>crear_juego</code> (ngày, đội nhà, đội khách) và "
+"<code>obtener_calendario</code>, kết nối hai danh sách trò chơi."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Viabilidad (C1):</strong> cada equipo debe jugar exactamente el "
+"número de juegos que pide el torneo. Un valor de 0 significa que el "
+"calendario es válido."
+msgstr ""
+"Tính <strong>khả thi (C1):</strong> Mỗi đội phải chơi đúng số trận mà giải "
+"đấu yêu cầu. Giá trị 0 nghĩa là lịch thi đấu hợp lệ."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Distancia (C2):</strong> la suma de los traslados, calculada con la "
+"fórmula de haversine sobre las coordenadas de cada estadio."
+msgstr ""
+"<strong>Khoảng cách (C2):</strong> tổng các lần chuyển nhượng, được tính "
+"bằng công thức Haversine trên tọa độ của mỗi sân vận động."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Software:</strong> tres módulos (planificador, calculadora y "
+"programa genético) con la biblioteca DEAP, separados de una aplicación web "
+"en Django."
+msgstr ""
+"Phần <strong>mềm:</strong> ba mô-đun (lập kế hoạch, máy tính và chương trình"
+" di truyền) với thư viện DEAP, tách biệt với ứng dụng web trong Django."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
+"generaciones."
+msgstr "Hãy thử 30 đội, 163 trận mỗi đội, loạt 5 trận và 20 thế hệ."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Comparación de la búsqueda aleatoria y la programación genética"
+msgstr "So sánh Tìm kiếm Ngẫu nhiên và Lập trình Di truyền"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Método"
+msgstr "Phương pháp"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de cruce"
+msgstr "Vấn đề. của việc vượt qua"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de mutación"
+msgstr "Có thể. của đột biến"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Viabilidad (C1)"
+msgstr "Tính khả thi (C1)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Distancia total (C2)"
+msgstr "Tổng quãng đường (C2)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Tiempo"
+msgstr "Thời gian"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Búsqueda aleatoria"
+msgstr "Tìm kiếm ngẫu nhiên"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "0 (válido)"
+msgstr "0 (hợp lệ)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "menor distancia"
+msgstr "Khoảng cách ngắn hơn"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Programación genética"
+msgstr "Lập trình di truyền"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>La programación genética no superó a la búsqueda aleatoria.</strong>"
+" Dio una distancia 19.5%% mayor y tardó casi 17 veces más. El mejor "
+"calendario siempre salió de la generación inicial, que es aleatoria."
+msgstr ""
+"<strong>Lập trình di truyền không vượt trội hơn tìm kiếm ngẫu "
+"nhiên.</strong> Nó cho khoảng cách lớn hơn 19,5% và mất gần 17 lần lâu hơn. "
+"Lịch tốt nhất luôn đến từ thế hệ đầu tiên, vốn là ngẫu nhiên."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "La tesis identificó estas causas:"
+msgstr "Luận án đã xác định các nguyên nhân sau:"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Los operadores genéricos de cruce y mutación cambian nodos sin conocer el "
+"problema. Casi siempre producen calendarios inválidos."
+msgstr ""
+"Các toán tử giao thoa và đột biến tổng quát thay đổi nút mà không biết vấn "
+"đề. Chúng gần như luôn tạo ra lịch không hợp lệ."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La función de aptitud le da mucho más peso a la viabilidad que a la "
+"distancia. Un hijo inválido pierde siempre contra un padre válido."
+msgstr ""
+"Hàm thích nghi đặt trọng tâm lớn hơn nhiều vào khả năng tồn tại so với "
+"khoảng cách. Một đứa trẻ tàn tật luôn thua trước một phụ huynh hợp pháp."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El algoritmo convergió pronto en un óptimo local y conservó solo las "
+"soluciones iniciales."
+msgstr ""
+"Thuật toán nhanh chóng hội tụ về một tối ưu cục bộ và chỉ giữ lại các nghiệm"
+" ban đầu."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Un resultado negativo también es un resultado. Muestra que la representación"
+" y los operadores importan tanto como el algoritmo."
+msgstr ""
+"Kết quả âm cũng là kết quả. Nó cho thấy biểu diễn và toán tử quan trọng "
+"ngang với thuật toán."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis propuso operadores contextuales: en lugar de cambiar nodos al azar,"
+" intercambiar series o bloques completos que mantengan el calendario válido."
+" También mencionó la computación cuántica para explorar muchas "
+"configuraciones a la vez."
+msgstr ""
+"Luận án đề xuất các toán tử ngữ cảnh: thay vì thay đổi nút một cách ngẫu "
+"nhiên, hãy hoán đổi toàn bộ chuỗi hoặc khối giữ cho lịch hợp lệ. Ông cũng đề"
+" cập đến tính toán lượng tử để khám phá nhiều cấu hình cùng lúc."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Ver qué se ha hecho después de la tesis"
+msgstr "Xem những gì đã được thực hiện sau luận văn"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mayo de 2026"
+msgstr "Tháng 5 năm 2026"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Versión pre-oficial del documento de la tesis."
+msgstr "Phiên bản tiền chính thức của tài liệu luận văn."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "23 de julio de 2026"
+msgstr "Ngày 23 tháng 7 năm 2026"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Defensa en la Ciudad de México. Tesis aprobada."
+msgstr "Phòng thủ ở Thành phố Mexico. Luận án được chấp thuận."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Documento de la tesis, versión pre-oficial"
+msgstr "Tài liệu luận văn, phiên bản tiền chính thức"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Presentación de la defensa"
+msgstr "Giới thiệu về bản bào chữa"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cita en formato APA:"
+msgstr "Trích dẫn theo định dạng APA:"
+
+#: documentacion/templates/documentacion/index.html
+msgid "Documentación del proyecto"
+msgstr "Tài liệu dự án"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Koza-TTP aplica la programación genética a la planificación de temporadas de"
+" béisbol. La documentación tiene dos partes: lo que se hizo en la tesis y lo"
+" que se ha hecho después."
+msgstr ""
+"Koza-TTP áp dụng lập trình di truyền vào việc lập kế hoạch mùa giải bóng "
+"chày. Tài liệu này gồm hai phần: những gì đã được thực hiện trong luận án và"
+" những gì đã được thực hiện sau đó."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"El problema, el método, los resultados y lo que aprendimos. Incluye el "
+"hallazgo principal: con operadores genéricos, la programación genética no "
+"superó a la búsqueda aleatoria."
+msgstr ""
+"Vấn đề, phương pháp, kết quả và những gì chúng tôi học được. Nó bao gồm phát"
+" hiện chính: với các toán tử tổng quát, lập trình di truyền không vượt trội "
+"hơn tìm kiếm ngẫu nhiên."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Esta parte no cambia. Es el registro del trabajo aprobado el 23 de julio de "
+"2026."
+msgstr ""
+"Phần này không thay đổi. Đây là hồ sơ công việc được phê duyệt vào ngày 23 "
+"tháng 7 năm 2026."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Los cambios y las pruebas nuevas, con su fecha y su estado. Aquí se verá la "
+"versión mejorada del motor junto a la versión de la tesis."
+msgstr ""
+"Các thay đổi và kiểm tra mới, kèm theo ngày tháng và trạng thái của chúng. Ở"
+" đây bạn sẽ thấy phiên bản cải tiến của engine bên cạnh phiên bản luận văn."
+
+#: documentacion/templates/documentacion/index.html
+msgid "Esta parte crece con cada avance."
+msgstr "Phần này sẽ lớn dần theo từng bước tiến gần."

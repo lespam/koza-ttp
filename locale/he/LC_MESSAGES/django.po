@@ -349,3 +349,528 @@ msgstr ""
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
 msgstr "עבודת גמר בהנדסת מחשבים"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances después de la tesis"
+msgstr "התקדמות לאחר התזה"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Cambios y pruebas de Koza-TTP después de la tesis, con fecha y estado."
+msgstr "Koza-TTP משתנים ונבחנים לאחר התזה, עם תאריך וסטטוס."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Documentación"
+msgstr "תיעוד"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances"
+msgstr "התקדמות"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances: después de la tesis"
+msgstr "התקדמות: לאחר התזה"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Aquí se registra cada cambio hecho después de la defensa. La versión de la "
+"tesis se conserva sin cambios, para poder comparar."
+msgstr ""
+"כאן נרשם כל שינוי שנעשה לאחר ההגנה. גרסת התזה נשמרת ללא שינוי, כדי שניתן "
+"יהיה להשוותה."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versiones del motor"
+msgstr "גרסאות מנוע"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión de la tesis y versión mejorada"
+msgstr "גרסת תזה וגרסה משופרת"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión"
+msgstr "גרסה"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Estado"
+msgstr "סטטוס"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Distancia total (30 equipos)"
+msgstr "מרחק כולל (30 קבוצות)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "¿Supera al azar?"
+msgstr "האם הוא פועם באקראי?"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Tesis (2026)"
+msgstr "תזה (2026)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Congelada"
+msgstr "קפוא"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "No"
+msgstr "לא"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión mejorada"
+msgstr "גרסה משופרת"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En desarrollo"
+msgstr "בפיתוח"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sin resultados todavía"
+msgstr "עדיין אין תוצאות"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Por medir"
+msgstr "למדידה"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Registro de avances"
+msgstr "יומן התקדמות"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Del más reciente al más antiguo."
+msgstr "מהאחרון ועד הישן ביותר."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Planeado"
+msgstr "מתוכנן"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Operadores contextuales para el motor"
+msgstr "מפעילים קונטקסטואליים למנוע"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Cambiar los operadores genéricos por otros que intercambien series "
+"completas, para que los hijos sigan siendo calendarios válidos. Es el "
+"trabajo futuro que propuso la tesis."
+msgstr ""
+"החלפת אופרטורים גנריים עבור אחרים שמחליפים סדרות שלמות, כך שהילדים יישארו "
+"לוחות שנה תקפים. זהו העבודה העתידית שמוצעת על ידי התזה."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Reparar el recorrido completo de la herramienta"
+msgstr "תיקון מסלול הכלי המלא"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
+" con un recorrido guiado paso a paso."
+msgstr ""
+"ניתן לעבור מרשימת הקבוצה כדי לראות את הלוח שנה ללא טעויות, עם סיור מודרך שלב"
+" אחר שלב."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "3 de noviembre de 2026"
+msgstr "3 בנובמבר 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En curso"
+msgstr "מתמשך"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Diagnóstico del motor"
+msgstr "אבחון מנוע"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión del código para confirmar por qué la PG no supera al azar. El cruce"
+" y la mutación rompen la viabilidad de los calendarios, y los pesos de la "
+"aptitud hacen que los hijos pierdan contra los padres de la generación "
+"inicial."
+msgstr ""
+"סקירת קוד כדי לאשר מדוע PG לא עולה על המזל. חפיפה ומוטציה שוברים את הקיימות "
+"של לוחות שנה, ומשקל הכושר גורם לילדים לאבד להורים מהדור הראשון."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Hecho"
+msgstr "עובדה"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Auditoría de la experiencia"
+msgstr "ביקורת ניסיון"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión de accesibilidad (WCAG 2.2 AA), usabilidad e interacción humano-IA."
+" Encontró 28 puntos por mejorar. Se repetirá cuando el motor nuevo esté "
+"listo."
+msgstr ""
+"נגישות (WCAG 2.2 AA), שימושיות וסקירת אינטראקציה בין אדם לבינה מלאכותית. "
+"נמצא 28 נקודות לשיפור. יחזור על זה כשהמנוע החדש יהיה מוכן."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la auditoría"
+msgstr "קרא את הביקורת"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "en español"
+msgstr "בספרדית"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en 43 idiomas"
+msgstr "אתר ב-43 שפות"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
+"demás versiones son traducciones automáticas con Azure AI Translator y "
+"pueden tener errores."
+msgstr ""
+"האתר מוצע ב-43 שפות. המקור הוא ספרדית מקסיקנית. כל הגרסאות האחרות הן תרגום "
+"מכונה עם Azure AI Translator וייתכן שיש בהן שגיאות."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Nuevo servidor"
+msgstr "שרת חדש"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"La aplicación volvió a estar en línea en un servidor nuevo, con HTTPS. Cada "
+"versión se publica a mano, después de revisarla."
+msgstr "האפליקציה חזרה לשרת חדש, עם HTTPS. כל גרסה מתפרסמת ידנית, לאחר בדיקה."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Materiales de la tesis en el repositorio"
+msgstr "חומרי התזה במאגר"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El documento de la tesis y la presentación de la defensa están en el "
+"repositorio, con marca de agua."
+msgstr "מסמך התזה והצגת ההגנה נמצאים במאגר, מסומנים במים."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver los materiales"
+msgstr "הצג חומרים"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Documentación de Koza-TTP: la tesis original y los avances posteriores."
+msgstr "תיעוד Koza-TTP: התזה המקורית וההתקדמות שבאה לאחר מכן."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Saltar al contenido"
+msgstr "דלג לתוכן"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Histórico"
+msgstr "היסטוריה"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Herramienta"
+msgstr "כלי"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
+msgstr "התזה פורסמה בשם לסלי פמלה ברנס ולנסיה"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Código fuente en GitHub"
+msgstr "קוד מקור ב-GitHub"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis"
+msgstr "היסטורי: התזה"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis de Koza-TTP: problema, método, resultados y hallazgo principal."
+msgstr "תזה של Koza-TTP: בעיה, שיטה, תוצאות וממצא עיקרי."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis (2026)"
+msgstr "היסטורי: התזה (2026)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<cite>Programación genética en la planificación de temporadas de béisbol. "
+"Problema de viabilidad y optimización.</cite> Tesis de Ingeniería en "
+"Computación, ITAM. Asesor: Dr. Andrés Gómez de Silva Garza. Aprobada el 23 "
+"de julio de 2026."
+msgstr ""
+"<cite>תכנות גנטי בתכנון עונת הבייסבול. בעיית היתכנות ואופטימיזציה.</cite> "
+"עבודת גמר בהנדסת מחשבים, ITAM. יועץ: ד\"ר אנדרס גומז דה סילבה גרזה. אושר "
+"ב-23 ביולי 2026."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "En esta página"
+msgstr "בעמוד זה"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El problema"
+msgstr "הבעיה"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El método"
+msgstr "השיטה"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Los resultados"
+msgstr "התוצאות"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El hallazgo principal"
+msgstr "הממצא המרכזי"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Trabajo futuro"
+msgstr "עבודות עתידיות"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cronología"
+msgstr "ציר זמן"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Materiales y cita"
+msgstr "חומרים וציטוט"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La MLB programa 2,430 juegos para 30 equipos en unos 180 días. Cada equipo "
+"viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
+"2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
+msgstr ""
+"ה-MLB מתכנן 2,430 משחקים ל-30 קבוצות בכ-180 ימים. כל קבוצה נוסעת בין ערים, "
+"והמרחק משתנה מאוד מקבוצה לקבוצה. בשנת 2016, סיאטל נסעה 76,683 ק\"מ, ושיקגו "
+"קאבס נסעו 39,015 ק\"מ."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Encontrar el calendario con la menor distancia total se conoce como el "
+"Problema de Transportación de Torneo (PTT). Es un problema NP-duro: el "
+"número de calendarios posibles crece tan rápido que no se pueden revisar "
+"todos."
+msgstr ""
+"מציאת לוח הזמנים עם המרחק הכולל הנמוך ביותר נקראת בעיית התחבורה בטורניר "
+"(PTT). זו בעיה קשה של NP: מספר הלוחות זמנים האפשריים גדל כל כך מהר שאי אפשר "
+"לבדוק את כולם."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La programación genética (PG), propuesta por John Koza en 1992, imita la "
+"evolución. Crea una población de soluciones, se queda con las mejores y las "
+"combina y modifica para formar una nueva generación."
+msgstr ""
+"תכנות גנטי (PG), שהוצע על ידי ג'ון קוזה ב-1992, מחקה אבולוציה. הוא יוצר "
+"אוכלוסייה של פתרונות, לוקח את הטובים ביותר, ומשלב ומשנה אותם ליצירת דור חדש."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Representación:</strong> cada calendario es un árbol. Sus nodos son "
+"operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
+"visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
+msgstr ""
+"<strong>ייצוג:</strong> כל לוח שנה הוא עץ. הצמתים שלו הם פעולות כמו "
+"<code>crear_juego</code> (תאריך, קבוצה ביתית, קבוצה אורחת) ו "
+"<code>obtener_calendario</code>-, שמצטרף לשתי רשימות משחקים."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Viabilidad (C1):</strong> cada equipo debe jugar exactamente el "
+"número de juegos que pide el torneo. Un valor de 0 significa que el "
+"calendario es válido."
+msgstr ""
+"<strong>כדאיות (C1):</strong> כל קבוצה חייבת לשחק בדיוק את מספר המשחקים "
+"שהטורניר דורש. ערך של 0 אומר שהלוח זמנים תקף."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Distancia (C2):</strong> la suma de los traslados, calculada con la "
+"fórmula de haversine sobre las coordenadas de cada estadio."
+msgstr ""
+"<strong>מרחק (C2):</strong> סכום ההעברות, מחושב לפי נוסחת הברסין על "
+"הקואורדינטות של כל אצטדיון."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Software:</strong> tres módulos (planificador, calculadora y "
+"programa genético) con la biblioteca DEAP, separados de una aplicación web "
+"en Django."
+msgstr ""
+"<strong>תוכנה:</strong> שלושה מודולים (מתכנן, מחשבון ותוכנית גנטית) עם "
+"ספריית DEAP, נפרדת מאפליקציית ווב בג'אנגו."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
+"generaciones."
+msgstr "נסה 30 קבוצות, 163 משחקים לכל קבוצה, סדרות של 5 משחקים, ו-20 דורות."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Comparación de la búsqueda aleatoria y la programación genética"
+msgstr "השוואה בין חיפוש אקראי לתכנות גנטי"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Método"
+msgstr "שיטה"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de cruce"
+msgstr "בעיה. של חצייה"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de mutación"
+msgstr "בעיה. של מוטציה"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Viabilidad (C1)"
+msgstr "היתכנות (C1)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Distancia total (C2)"
+msgstr "מרחק כולל (C2)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Tiempo"
+msgstr "זמן"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Búsqueda aleatoria"
+msgstr "חיפוש אקראי"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "0 (válido)"
+msgstr "0 (תקף)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "menor distancia"
+msgstr "מרחק קצר יותר"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Programación genética"
+msgstr "תכנות גנטי"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>La programación genética no superó a la búsqueda aleatoria.</strong>"
+" Dio una distancia 19.5%% mayor y tardó casi 17 veces más. El mejor "
+"calendario siempre salió de la generación inicial, que es aleatoria."
+msgstr ""
+"<strong>התכנות הגנטי לא הצליח להתעלות על חיפוש אקראי.</strong> הוא נתן מרחק "
+"גדול ב-19.5% ולקח כמעט פי 17 יותר. לוח השנה הטוב ביותר תמיד הגיע מהדור "
+"הראשוני, שהוא אקראי."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "La tesis identificó estas causas:"
+msgstr "התזה זיהתה את הסיבות הבאות:"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Los operadores genéricos de cruce y mutación cambian nodos sin conocer el "
+"problema. Casi siempre producen calendarios inválidos."
+msgstr ""
+"אופרטורים גנריים של קרוסאובר ומוטציה מחליפים צמתים מבלי לדעת את הבעיה. הם "
+"כמעט תמיד מייצרים לוחות שנה לא תקפים."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La función de aptitud le da mucho más peso a la viabilidad que a la "
+"distancia. Un hijo inválido pierde siempre contra un padre válido."
+msgstr ""
+"פונקציית הכושר נותנת הרבה יותר משקל לקיימות מאשר למרחק. ילד לא תקין תמיד "
+"מפסיד להורה תקף."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El algoritmo convergió pronto en un óptimo local y conservó solo las "
+"soluciones iniciales."
+msgstr "האלגוריתם התכנס במהרה לאופטימום מקומי ושמר רק על הפתרונות ההתחלתיים."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Un resultado negativo también es un resultado. Muestra que la representación"
+" y los operadores importan tanto como el algoritmo."
+msgstr ""
+"תוצאה שלילית היא גם תוצאה. זה מראה שהייצוג והאופרטורים חשובים לא פחות "
+"מהאלגוריתם."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis propuso operadores contextuales: en lugar de cambiar nodos al azar,"
+" intercambiar series o bloques completos que mantengan el calendario válido."
+" También mencionó la computación cuántica para explorar muchas "
+"configuraciones a la vez."
+msgstr ""
+"התזה הציעה אופרטורים קונטקסטואליים: במקום לשנות צמתים באקראי, החליפו סדרות "
+"או בלוקים שלמים ששומרים על תקף לוח השנה. הוא גם הזכיר מחשוב קוונטי כדי לחקור"
+" תצורות רבות בו-זמנית."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Ver qué se ha hecho después de la tesis"
+msgstr "ראה מה נעשה אחרי התזה"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mayo de 2026"
+msgstr "מאי 2026"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Versión pre-oficial del documento de la tesis."
+msgstr "גרסה רשמית מראש של מסמך התזה."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "23 de julio de 2026"
+msgstr "23 ביולי 2026"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Defensa en la Ciudad de México. Tesis aprobada."
+msgstr "הגנה במקסיקו סיטי. התזה אושרה."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Documento de la tesis, versión pre-oficial"
+msgstr "מסמך תזה, גרסה טרום רשמית"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Presentación de la defensa"
+msgstr "הצגת ההגנה"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cita en formato APA:"
+msgstr "ציטוט בפורמט APA:"
+
+#: documentacion/templates/documentacion/index.html
+msgid "Documentación del proyecto"
+msgstr "תיעוד הפרויקט"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Koza-TTP aplica la programación genética a la planificación de temporadas de"
+" béisbol. La documentación tiene dos partes: lo que se hizo en la tesis y lo"
+" que se ha hecho después."
+msgstr ""
+"Koza-TTP מיישם תכנות גנטי לתכנון עונת הבייסבול. התיעוד מורכב משני חלקים: מה "
+"נעשה בתזה ומה שנעשה לאחר מכן."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"El problema, el método, los resultados y lo que aprendimos. Incluye el "
+"hallazgo principal: con operadores genéricos, la programación genética no "
+"superó a la búsqueda aleatoria."
+msgstr ""
+"הבעיה, השיטה, התוצאות, ומה שלמדנו. זה כולל את הממצא העיקרי: עם אופרטורים "
+"גנריים, התכנות הגנטי לא הצליח להתעלות על חיפוש אקראי."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Esta parte no cambia. Es el registro del trabajo aprobado el 23 de julio de "
+"2026."
+msgstr "חלק זה אינו משתנה. זהו רישום העבודה שאושר ב-23 ביולי 2026."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Los cambios y las pruebas nuevas, con su fecha y su estado. Aquí se verá la "
+"versión mejorada del motor junto a la versión de la tesis."
+msgstr ""
+"השינויים והבדיקות החדשות, עם התאריך והסטטוס שלהם. כאן תראו את הגרסה המשופרת "
+"של המנוע לצד גרסת התזה."
+
+#: documentacion/templates/documentacion/index.html
+msgid "Esta parte crece con cada avance."
+msgstr "החלק הזה גדל עם כל התקדמות."

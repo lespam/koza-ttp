@@ -361,3 +361,541 @@ msgstr ""
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
 msgstr "Bilgisayar Mühendisliği Tezi"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances después de la tesis"
+msgstr "Tezden sonraki ilerleme"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Cambios y pruebas de Koza-TTP después de la tesis, con fecha y estado."
+msgstr ""
+"Koza-TTP, tezden sonra değişir ve test edilir, tarih ve statü ile birlikte."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Documentación"
+msgstr "Dokümantasyon"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances"
+msgstr "İlerleme"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances: después de la tesis"
+msgstr "İlerlemeler: tezden sonra"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Aquí se registra cada cambio hecho después de la defensa. La versión de la "
+"tesis se conserva sin cambios, para poder comparar."
+msgstr ""
+"Burada savunmadan sonra yapılan her değişiklik kaydedilir. Tezin versiyonu "
+"değişmeden korunur, böylece karşılaştırılabilir."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versiones del motor"
+msgstr "Motor Versiyonları"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión de la tesis y versión mejorada"
+msgstr "Tez versiyonu ve geliştirilmiş versiyon"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión"
+msgstr "Versiyon"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Estado"
+msgstr "Durum"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Distancia total (30 equipos)"
+msgstr "Toplam mesafe (30 takım)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "¿Supera al azar?"
+msgstr "Rastgele mi atıyor?"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Tesis (2026)"
+msgstr "Tez (2026)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Congelada"
+msgstr "Donmuş"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "No"
+msgstr "Hayır"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión mejorada"
+msgstr "Geliştirilmiş versiyon"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En desarrollo"
+msgstr "Geliştirme aşamasında"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sin resultados todavía"
+msgstr "Henüz sonuç yok"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Por medir"
+msgstr "Ölçülecek"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Registro de avances"
+msgstr "İlerleme Günlüğü"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Del más reciente al más antiguo."
+msgstr "En yenisinden en eskisine kadar."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Planeado"
+msgstr "Planlanıyor"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Operadores contextuales para el motor"
+msgstr "Motor için bağlamsal operatörler"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Cambiar los operadores genéricos por otros que intercambien series "
+"completas, para que los hijos sigan siendo calendarios válidos. Es el "
+"trabajo futuro que propuso la tesis."
+msgstr ""
+"Tam serileri değiştiren diğerleri için genel operatörlerin değiştirilmesi, "
+"böylece çocuklar geçerli takvim olarak kalır. Bu, tezin önerdiği gelecekteki"
+" çalışmadır."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Reparar el recorrido completo de la herramienta"
+msgstr "Tam alet yolunu tamir et"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
+" con un recorrido guiado paso a paso."
+msgstr ""
+"Takım kaydından takvimi hatasız olarak rehberli adım adım tur ile "
+"görebilirsiniz."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "3 de noviembre de 2026"
+msgstr "3 Kasım 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En curso"
+msgstr "Devam Ediyor"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Diagnóstico del motor"
+msgstr "Motor Tanı"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión del código para confirmar por qué la PG no supera al azar. El cruce"
+" y la mutación rompen la viabilidad de los calendarios, y los pesos de la "
+"aptitud hacen que los hijos pierdan contra los padres de la generación "
+"inicial."
+msgstr ""
+"PG'nin şansı aşmamasının nedenini doğrulamak için kod incelemesi. Kesişme ve"
+" mutasyon, takvimlerin geçerliliğini bozur ve fitness ağırlıkları çocukların"
+" ilk nesil ebeveynlere karşı kaybetmesine neden olur."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Hecho"
+msgstr "Gerçek"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Auditoría de la experiencia"
+msgstr "Deneyim Denetimi"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión de accesibilidad (WCAG 2.2 AA), usabilidad e interacción humano-IA."
+" Encontró 28 puntos por mejorar. Se repetirá cuando el motor nuevo esté "
+"listo."
+msgstr ""
+"Erişilebilirlik (WCAG 2.2 AA), kullanılabilirlik ve insan-yapay zeka "
+"etkileşimi incelemesi. İyileştirme için 28 puan bulundu. Yeni motor hazır "
+"olduğunda tekrar edilecek."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la auditoría"
+msgstr "Denetimi okuyun"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "en español"
+msgstr "İspanyolca"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en 43 idiomas"
+msgstr "43 dilde site"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
+"demás versiones son traducciones automáticas con Azure AI Translator y "
+"pueden tener errores."
+msgstr ""
+"Site 43 dilde sunulmaktadır. Orijinali Meksika İspanyolcasıdır. Diğer tüm "
+"sürümler makine çevirisi ve Azure AI Translator ile hata olabilir."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Nuevo servidor"
+msgstr "Yeni sunucu"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"La aplicación volvió a estar en línea en un servidor nuevo, con HTTPS. Cada "
+"versión se publica a mano, después de revisarla."
+msgstr ""
+"Uygulama yeni bir sunucuda, HTTPS ile tekrar çevrimiçi oldu. Her sürüm "
+"incelemeden sonra el ile yayınlanıyor."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Materiales de la tesis en el repositorio"
+msgstr "Depodaki tez materyalleri"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El documento de la tesis y la presentación de la defensa están en el "
+"repositorio, con marca de agua."
+msgstr ""
+"Tez belgesi ve savunma sunumu depoda su işaretli olarak yer almaktadır."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver los materiales"
+msgstr "Materyalleri Görüntüle"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Documentación de Koza-TTP: la tesis original y los avances posteriores."
+msgstr "Koza-TTP dokümantasyonu: orijinal tez ve sonraki gelişmeler."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Saltar al contenido"
+msgstr "İçeriğe geç"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Histórico"
+msgstr "Tarihçe"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Herramienta"
+msgstr "Araç"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
+msgstr "Tez Leslie Pamela Brenes Valencia adıyla yayımlandı"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Código fuente en GitHub"
+msgstr "GitHub'daki kaynak kodu"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis"
+msgstr "Tarihsel: tez"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis de Koza-TTP: problema, método, resultados y hallazgo principal."
+msgstr "Koza-TTP tezi: problem, yöntem, sonuçlar ve ana bulgu."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis (2026)"
+msgstr "Tarihi: tez (2026)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<cite>Programación genética en la planificación de temporadas de béisbol. "
+"Problema de viabilidad y optimización.</cite> Tesis de Ingeniería en "
+"Computación, ITAM. Asesor: Dr. Andrés Gómez de Silva Garza. Aprobada el 23 "
+"de julio de 2026."
+msgstr ""
+"<cite>Beyzbol sezon planlamasında genetik programlama. Fizibilite ve "
+"optimizasyon problemi.</cite> Bilgisayar Mühendisliği Tezi, ITAM. Danışman: "
+"Dr. Andrés Gómez de Silva Garza. 23 Temmuz 2026'da onaylandı."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "En esta página"
+msgstr "Bu sayfada"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El problema"
+msgstr "Sorun"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El método"
+msgstr "Yöntem"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Los resultados"
+msgstr "Sonuçlar"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El hallazgo principal"
+msgstr "Ana bulgu"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Trabajo futuro"
+msgstr "Gelecek çalışmalar"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cronología"
+msgstr "Zaman çizelgesi"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Materiales y cita"
+msgstr "Materyaller ve atıf"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La MLB programa 2,430 juegos para 30 equipos en unos 180 días. Cada equipo "
+"viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
+"2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
+msgstr ""
+"MLB, yaklaşık 180 günde 30 takım için 2.430 maç planlıyor. Her takım "
+"şehirler arasında seyahat ediyor ve mesafe takımdan takıma büyük ölçüde "
+"değişiyor. 2016'da Seattle 76.683 km, Chicago Cubs ise 39.015 km yol kat "
+"etti."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Encontrar el calendario con la menor distancia total se conoce como el "
+"Problema de Transportación de Torneo (PTT). Es un problema NP-duro: el "
+"número de calendarios posibles crece tan rápido que no se pueden revisar "
+"todos."
+msgstr ""
+"En düşük toplam mesafeye sahip programı bulmak, Turnuva Ulaşım Problemi "
+"(PTT) olarak bilinir. Bu NP-zor bir problem: olası programların sayısı o "
+"kadar hızlı büyür ki hepsini kontrol edemezsiniz."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La programación genética (PG), propuesta por John Koza en 1992, imita la "
+"evolución. Crea una población de soluciones, se queda con las mejores y las "
+"combina y modifica para formar una nueva generación."
+msgstr ""
+"John Koza tarafından 1992'de önerilen genetik programlama (PG) evrimi taklit"
+" eder. Çözümler popülasyonu oluşturur, en iyilerini alır ve bunları "
+"birleştirip yeni bir nesil oluşturmak için değiştirir."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Representación:</strong> cada calendario es un árbol. Sus nodos son "
+"operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
+"visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
+msgstr ""
+"<strong>Temsil:</strong> Her takvim bir ağaçtır. Düğümleri (tarih, ev sahibi"
+" takım, deplasman takımı) ve <code>obtener_calendario</code>, gibi "
+"işlemlerdir <code>crear_juego</code> ; bu da iki oyun listesine katılır."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Viabilidad (C1):</strong> cada equipo debe jugar exactamente el "
+"número de juegos que pide el torneo. Un valor de 0 significa que el "
+"calendario es válido."
+msgstr ""
+"<strong>Kullanılabilirlik (C1):</strong> Her takım, turnuvanın gerektirdiği "
+"maç sayısını tam olarak oynamalıdır. 0 değeri, takvimin geçerli olduğu "
+"anlamına gelir."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Distancia (C2):</strong> la suma de los traslados, calculada con la "
+"fórmula de haversine sobre las coordenadas de cada estadio."
+msgstr ""
+"<strong>Mesafe (C2):</strong> transferlerin toplamı, her stadyumun "
+"koordinatları üzerinde Haversine formülüyle hesaplanır."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Software:</strong> tres módulos (planificador, calculadora y "
+"programa genético) con la biblioteca DEAP, separados de una aplicación web "
+"en Django."
+msgstr ""
+"<strong>Yazılım:</strong> DEAP kütüphanesiyle üç modül (planlayıcı, "
+"hesaplayıcı ve genetik program) ve Django'daki bir web uygulamasından ayrı."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
+"generaciones."
+msgstr "30 takım, takım başına 163 maç, 5 maçlık seri ve 20 nesil deneyin."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Comparación de la búsqueda aleatoria y la programación genética"
+msgstr "Rastgele Arama ve Genetik Programlamanın Karşılaştırılması"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Método"
+msgstr "Yöntem"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de cruce"
+msgstr "Muhtemelen. Geçiş"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de mutación"
+msgstr "muhtemelen. mutasyonun"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Viabilidad (C1)"
+msgstr "Fizibilite (C1)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Distancia total (C2)"
+msgstr "Toplam mesafe (C2)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Tiempo"
+msgstr "Zaman"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Búsqueda aleatoria"
+msgstr "Rastgele arama"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "0 (válido)"
+msgstr "0 (geçerli)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "menor distancia"
+msgstr "Daha kısa mesafe"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Programación genética"
+msgstr "Genetik programlama"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>La programación genética no superó a la búsqueda aleatoria.</strong>"
+" Dio una distancia 19.5%% mayor y tardó casi 17 veces más. El mejor "
+"calendario siempre salió de la generación inicial, que es aleatoria."
+msgstr ""
+"<strong>Genetik programlama rastgele aramayı geride bırakmadı.</strong> "
+"%19,5 daha fazla mesafe sağladı ve neredeyse 17 kat daha uzun sürdü. En iyi "
+"takvim her zaman rastgele olan ilk nesildən gelirdi."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "La tesis identificó estas causas:"
+msgstr "Tez şu nedenleri belirledi:"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Los operadores genéricos de cruce y mutación cambian nodos sin conocer el "
+"problema. Casi siempre producen calendarios inválidos."
+msgstr ""
+"Genel çapraz geçiş ve mutasyon operatörleri sorunu bilmeden düğümleri "
+"değiştirir. Neredeyse her zaman geçersiz takvimler üretirler."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La función de aptitud le da mucho más peso a la viabilidad que a la "
+"distancia. Un hijo inválido pierde siempre contra un padre válido."
+msgstr ""
+"Uygunluk fonksiyonu, mesafeden çok daha fazla önem verir. Geçerli bir çocuk "
+"her zaman geçerli bir ebeveyne kaybeder."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El algoritmo convergió pronto en un óptimo local y conservó solo las "
+"soluciones iniciales."
+msgstr ""
+"Algoritma kısa sürede yerel bir optimuma yaklaştı ve sadece ilk çözümleri "
+"korudu."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Un resultado negativo también es un resultado. Muestra que la representación"
+" y los operadores importan tanto como el algoritmo."
+msgstr ""
+"Negatif sonuç da bir sonuçtur. Bu, temsil ve operatörlerin algoritma kadar "
+"önemli olduğunu gösterir."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis propuso operadores contextuales: en lugar de cambiar nodos al azar,"
+" intercambiar series o bloques completos que mantengan el calendario válido."
+" También mencionó la computación cuántica para explorar muchas "
+"configuraciones a la vez."
+msgstr ""
+"Tez, bağlamsal operatörler önerdi: düğümleri rastgele değiştirmek yerine, "
+"takvimi geçerli tutan tüm seri veya blokları değiştirin. Ayrıca kuantum "
+"hesaplamanın birçok konfigürasyonu aynı anda keşfetmesini de belirtti."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Ver qué se ha hecho después de la tesis"
+msgstr "Tezden sonra neler yapıldığını görün"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mayo de 2026"
+msgstr "Mayıs 2026"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Versión pre-oficial del documento de la tesis."
+msgstr "Tez belgesinin resmi öncesi versiyonu."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "23 de julio de 2026"
+msgstr "23 Temmuz 2026"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Defensa en la Ciudad de México. Tesis aprobada."
+msgstr "Meksiko Şehri'nde savunma. Tez onaylandı."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Documento de la tesis, versión pre-oficial"
+msgstr "Tez belgesi, resmi öncesi versiyon"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Presentación de la defensa"
+msgstr "Savunmanın sunumu"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cita en formato APA:"
+msgstr "APA formatında atıf:"
+
+#: documentacion/templates/documentacion/index.html
+msgid "Documentación del proyecto"
+msgstr "Proje Dokümantasyonu"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Koza-TTP aplica la programación genética a la planificación de temporadas de"
+" béisbol. La documentación tiene dos partes: lo que se hizo en la tesis y lo"
+" que se ha hecho después."
+msgstr ""
+"Koza-TTP, beyzbol sezon planlamasına genetik programlama uygular. "
+"Dokümantasyon iki bölümden oluşur: tezde ne yapıldı ve sonrasında neler "
+"yapıldı."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"El problema, el método, los resultados y lo que aprendimos. Incluye el "
+"hallazgo principal: con operadores genéricos, la programación genética no "
+"superó a la búsqueda aleatoria."
+msgstr ""
+"Sorun, yöntem, sonuçlar ve öğrendiklerimiz. Ana bulguyu içerir: genel "
+"operatörlerle, genetik programlama rastgele aramayı geride bırakmadı."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Esta parte no cambia. Es el registro del trabajo aprobado el 23 de julio de "
+"2026."
+msgstr "Bu bölüm değişmez. Bu, 23 Temmuz 2026'da onaylanan çalışma kaydıdır."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Los cambios y las pruebas nuevas, con su fecha y su estado. Aquí se verá la "
+"versión mejorada del motor junto a la versión de la tesis."
+msgstr ""
+"Değişiklikler ve yeni testler, tarihleri ve durumlarıyla birlikte. Burada, "
+"tezin versiyonunun yanında motorun geliştirilmiş versiyonunu göreceksiniz."
+
+#: documentacion/templates/documentacion/index.html
+msgid "Esta parte crece con cada avance."
+msgstr "Bu kısım her ilerlemede büyür."

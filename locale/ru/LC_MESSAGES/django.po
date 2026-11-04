@@ -366,3 +366,555 @@ msgstr ""
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
 msgstr "Диссертация по компьютерной инженерии"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances después de la tesis"
+msgstr "Прогресс после диссертации"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Cambios y pruebas de Koza-TTP después de la tesis, con fecha y estado."
+msgstr ""
+"Koza-TTP изменяется и тестируется после диссертации, с датой и статусом."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Documentación"
+msgstr "Документация"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances"
+msgstr "Прогресс"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances: después de la tesis"
+msgstr "Достижения: после диссертации"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Aquí se registra cada cambio hecho después de la defensa. La versión de la "
+"tesis se conserva sin cambios, para poder comparar."
+msgstr ""
+"Здесь фиксируется каждое изменение, внесённое после защиты. Версия тезиса "
+"сохраняется без изменений, чтобы её можно было сравнивать."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versiones del motor"
+msgstr "Версии двигателя"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión de la tesis y versión mejorada"
+msgstr "Версия диссертации и улучшенная версия"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión"
+msgstr "Версия"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Estado"
+msgstr "Статус"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Distancia total (30 equipos)"
+msgstr "Общая дистанция (30 команд)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "¿Supera al azar?"
+msgstr "Он бьётся случайно?"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Tesis (2026)"
+msgstr "Диссертация (2026)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Congelada"
+msgstr "Замороженный"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "No"
+msgstr "Нет"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión mejorada"
+msgstr "Улучшенная версия"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En desarrollo"
+msgstr "В разработке"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sin resultados todavía"
+msgstr "Пока нет результатов"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Por medir"
+msgstr "Для измерения"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Registro de avances"
+msgstr "Журнал прогресса"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Del más reciente al más antiguo."
+msgstr "От самых свежих до самых старых."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Planeado"
+msgstr "Планируется"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Operadores contextuales para el motor"
+msgstr "Контекстуальные операторы для движка"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Cambiar los operadores genéricos por otros que intercambien series "
+"completas, para que los hijos sigan siendo calendarios válidos. Es el "
+"trabajo futuro que propuso la tesis."
+msgstr ""
+"Изменение универсальных операторов на другие, которые обмениваются полными "
+"рядами, чтобы дочерние календари оставались действительными. Это будущая "
+"работа, предлагаемая в диссертации."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Reparar el recorrido completo de la herramienta"
+msgstr "Отремонтировать полный путь инструмента"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
+" con un recorrido guiado paso a paso."
+msgstr ""
+"Вы можете перейти из командной регистрации, чтобы посмотреть календарь без "
+"ошибок, с пошаговым экскурсией с гидом по шагу."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "3 de noviembre de 2026"
+msgstr "3 ноября 2026 года"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En curso"
+msgstr "Продолжается"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Diagnóstico del motor"
+msgstr "Диагностика двигателя"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión del código para confirmar por qué la PG no supera al azar. El cruce"
+" y la mutación rompen la viabilidad de los calendarios, y los pesos de la "
+"aptitud hacen que los hijos pierdan contra los padres de la generación "
+"inicial."
+msgstr ""
+"Пересмотр кода, чтобы подтвердить, почему PG не превосходит случайность. "
+"Кроссовер и мутации нарушают жизнеспособность календарей, а вес фитнеса "
+"приводит к тому, что потомство теряет потомство родителям первого поколения."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Hecho"
+msgstr "Факт"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Auditoría de la experiencia"
+msgstr "Аудит опыта"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión de accesibilidad (WCAG 2.2 AA), usabilidad e interacción humano-IA."
+" Encontró 28 puntos por mejorar. Se repetirá cuando el motor nuevo esté "
+"listo."
+msgstr ""
+"Доступность (WCAG 2.2 AA), удобство использования и обзор взаимодействия "
+"человека с ИИ. Обнаружено 28 баллов для улучшения. Повторюсь, когда новый "
+"движок будет готов."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la auditoría"
+msgstr "Прочитайте аудит"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "en español"
+msgstr "на испанском языке"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en 43 idiomas"
+msgstr "Сайт на 43 языках"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
+"demás versiones son traducciones automáticas con Azure AI Translator y "
+"pueden tener errores."
+msgstr ""
+"Сайт доступен на 43 языках. Оригинал — мексиканский испанский. Все остальные"
+" версии — это машинный перевод с помощью Azure AI Translator и могут "
+"содержать ошибки."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Nuevo servidor"
+msgstr "Новый сервер"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"La aplicación volvió a estar en línea en un servidor nuevo, con HTTPS. Cada "
+"versión se publica a mano, después de revisarla."
+msgstr ""
+"Приложение снова заработало на новом сервере с HTTPS. Каждая версия "
+"публикуется вручную после проверки."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Materiales de la tesis en el repositorio"
+msgstr "Материалы диссертаций в репозитории"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El documento de la tesis y la presentación de la defensa están en el "
+"repositorio, con marca de agua."
+msgstr ""
+"Диссертация и презентация защиты находятся в репозитории с водяным знаком."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver los materiales"
+msgstr "Смотреть материалы"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Documentación de Koza-TTP: la tesis original y los avances posteriores."
+msgstr ""
+"Документация Koza-TTP: оригинальная диссертация и последующие достижения."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Saltar al contenido"
+msgstr "Перейти к содержанию"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Histórico"
+msgstr "История"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Herramienta"
+msgstr "Инструмент"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
+msgstr ""
+"Диссертация, опубликованная под названием Leslie Pamela Brenes Valencia"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Código fuente en GitHub"
+msgstr "Исходный код на GitHub"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis"
+msgstr "Историческая: диссертация"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis de Koza-TTP: problema, método, resultados y hallazgo principal."
+msgstr "Тезис Коза-ТТП: проблема, метод, результаты и основное заключение."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis (2026)"
+msgstr "Историческая: диссертация (2026)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<cite>Programación genética en la planificación de temporadas de béisbol. "
+"Problema de viabilidad y optimización.</cite> Tesis de Ingeniería en "
+"Computación, ITAM. Asesor: Dr. Andrés Gómez de Silva Garza. Aprobada el 23 "
+"de julio de 2026."
+msgstr ""
+"<cite>Генетическое программирование в планировании бейсбольного сезона. "
+"Задача осуществимости и оптимизации.</cite> Диссертация по компьютерной "
+"инженерии, ITAM. Научный руководитель: доктор Андрес Гомес де Сильва Гарса. "
+"Утверждено 23 июля 2026 года."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "En esta página"
+msgstr "На этой странице"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El problema"
+msgstr "Проблема"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El método"
+msgstr "Метод"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Los resultados"
+msgstr "Результаты"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El hallazgo principal"
+msgstr "Основное открытие"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Trabajo futuro"
+msgstr "Будущая работа"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cronología"
+msgstr "Хронология"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Materiales y cita"
+msgstr "Материалы и цитирование"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La MLB programa 2,430 juegos para 30 equipos en unos 180 días. Cada equipo "
+"viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
+"2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
+msgstr ""
+"MLB запланировала 2 430 игр для 30 команд примерно за 180 дней. Каждая "
+"команда путешествует между городами, и расстояние сильно варьируется от "
+"команды к команде. В 2016 году Сиэтл проехал 76 683 км, а Чикаго Кабс — 39 "
+"015 км."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Encontrar el calendario con la menor distancia total se conoce como el "
+"Problema de Transportación de Torneo (PTT). Es un problema NP-duro: el "
+"número de calendarios posibles crece tan rápido que no se pueden revisar "
+"todos."
+msgstr ""
+"Поиск расписания с наименьшей общей дистанцией называется задачей Tournament"
+" Transportation Problem (PTT). Это сложная задача, связанная с NP: "
+"количество возможных расписаний растёт так быстро, что невозможно проверить "
+"их все."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La programación genética (PG), propuesta por John Koza en 1992, imita la "
+"evolución. Crea una población de soluciones, se queda con las mejores y las "
+"combina y modifica para formar una nueva generación."
+msgstr ""
+"Генетическое программирование (PG), предложенное Джоном Козой в 1992 году, "
+"имитирует эволюцию. Оно создаёт популяцию решений, берёт лучшие из них и "
+"объединяет их, чтобы создать новое поколение."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Representación:</strong> cada calendario es un árbol. Sus nodos son "
+"operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
+"visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
+msgstr ""
+"<strong>Представление:</strong> Каждый календарь представляет собой дерево. "
+"Его узлы — это операции, такие <code>crear_juego</code> как (дата, домашняя "
+"команда, гостевая команда) и <code>obtener_calendario</code>, которые "
+"объединяют два списка игр."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Viabilidad (C1):</strong> cada equipo debe jugar exactamente el "
+"número de juegos que pide el torneo. Un valor de 0 significa que el "
+"calendario es válido."
+msgstr ""
+"<strong>Жизнеспособность (C1):</strong> Каждая команда должна сыграть ровно "
+"столько матчей, сколько требует турнир. Значение 0 означает, что расписание "
+"действительно."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Distancia (C2):</strong> la suma de los traslados, calculada con la "
+"fórmula de haversine sobre las coordenadas de cada estadio."
+msgstr ""
+"<strong>Расстояние (C2):</strong> сумма трансферов, вычисляемая по формуле "
+"Хаверсина на координатах каждого стадиона."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Software:</strong> tres módulos (planificador, calculadora y "
+"programa genético) con la biblioteca DEAP, separados de una aplicación web "
+"en Django."
+msgstr ""
+"<strong>Программное обеспечение:</strong> три модуля (планер, калькулятор и "
+"генетическая программа) с библиотекой DEAP, отдельно от веб-приложения в "
+"Django."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
+"generaciones."
+msgstr ""
+"Попробуйте 30 команд, по 163 игры на команду, 5-игровые серии и 20 "
+"поколений."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Comparación de la búsqueda aleatoria y la programación genética"
+msgstr "Сравнение случайного поиска и генетического программирования"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Método"
+msgstr "Метод"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de cruce"
+msgstr "Наверное. пересечения"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de mutación"
+msgstr "Вероятно. мутации"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Viabilidad (C1)"
+msgstr "Осуществимость (C1)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Distancia total (C2)"
+msgstr "Общее расстояние (C2)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Tiempo"
+msgstr "Время"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Búsqueda aleatoria"
+msgstr "Случайный поиск"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "0 (válido)"
+msgstr "0 (действительно)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "menor distancia"
+msgstr "Короткое расстояние"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Programación genética"
+msgstr "Генетическое программирование"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>La programación genética no superó a la búsqueda aleatoria.</strong>"
+" Dio una distancia 19.5%% mayor y tardó casi 17 veces más. El mejor "
+"calendario siempre salió de la generación inicial, que es aleatoria."
+msgstr ""
+"<strong>Генетическое программирование не превосходило случайный "
+"поиск.</strong> Оно давало на 19,5% большее расстояние и занимало почти в 17"
+" раз больше времени. Лучший календарь всегда исходил из начального "
+"поколения, которое происходит случайно."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "La tesis identificó estas causas:"
+msgstr "В диссертации были выявлены следующие причины:"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Los operadores genéricos de cruce y mutación cambian nodos sin conocer el "
+"problema. Casi siempre producen calendarios inválidos."
+msgstr ""
+"Общие операторы кроссовера и мутаций меняют узлы, не зная проблемы. Они "
+"почти всегда создают недопустимые календари."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La función de aptitud le da mucho más peso a la viabilidad que a la "
+"distancia. Un hijo inválido pierde siempre contra un padre válido."
+msgstr ""
+"Функция приспособленности придаёт гораздо больше значения жизнеспособности, "
+"чем расстоянию. Невалидный ребёнок всегда проигрывает действительному "
+"родителю."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El algoritmo convergió pronto en un óptimo local y conservó solo las "
+"soluciones iniciales."
+msgstr ""
+"Алгоритм вскоре сблизился к локальному оптимуму и сохранил только исходные "
+"решения."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Un resultado negativo también es un resultado. Muestra que la representación"
+" y los operadores importan tanto como el algoritmo."
+msgstr ""
+"Отрицательный результат также является результатом. Он показывает, что "
+"представление и операторы имеют такое же значение, как и алгоритм."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis propuso operadores contextuales: en lugar de cambiar nodos al azar,"
+" intercambiar series o bloques completos que mantengan el calendario válido."
+" También mencionó la computación cuántica para explorar muchas "
+"configuraciones a la vez."
+msgstr ""
+"В диссертации предлагались контекстные операторы: вместо случайной смены "
+"узлов можно поменять местами целые серии или блоки, которые сохраняют "
+"календарь действительным. Он также упомянул квантовые вычисления для "
+"изучения множества конфигураций одновременно."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Ver qué se ha hecho después de la tesis"
+msgstr "Посмотрите, что было сделано после диссертации"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mayo de 2026"
+msgstr "Май 2026"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Versión pre-oficial del documento de la tesis."
+msgstr "Предофициальная версия дипломного документа."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "23 de julio de 2026"
+msgstr "23 июля 2026 года"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Defensa en la Ciudad de México. Tesis aprobada."
+msgstr "Оборона в Мехико. Диссертация одобрена."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Documento de la tesis, versión pre-oficial"
+msgstr "Диссертация, предофициальная версия"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Presentación de la defensa"
+msgstr "Представление защиты"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cita en formato APA:"
+msgstr "Цитата в формате APA:"
+
+#: documentacion/templates/documentacion/index.html
+msgid "Documentación del proyecto"
+msgstr "Документация проекта"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Koza-TTP aplica la programación genética a la planificación de temporadas de"
+" béisbol. La documentación tiene dos partes: lo que se hizo en la tesis y lo"
+" que se ha hecho después."
+msgstr ""
+"Koza-TTP применяет генетическое программирование к планированию бейсбольного"
+" сезона. Документация состоит из двух частей: что было сделано в диссертации"
+" и что было сделано после."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"El problema, el método, los resultados y lo que aprendimos. Incluye el "
+"hallazgo principal: con operadores genéricos, la programación genética no "
+"superó a la búsqueda aleatoria."
+msgstr ""
+"Проблема, метод, результаты и то, что мы узнали. В ней есть главное "
+"открытие: с общими операторами генетическое программирование не превосходило"
+" случайный поиск."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Esta parte no cambia. Es el registro del trabajo aprobado el 23 de julio de "
+"2026."
+msgstr ""
+"Эта часть не меняется. Это трудовая запись, утверждённая 23 июля 2026 года."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Los cambios y las pruebas nuevas, con su fecha y su estado. Aquí se verá la "
+"versión mejorada del motor junto a la versión de la tesis."
+msgstr ""
+"Изменения и новые тесты, с их датой и статусом. Здесь вы увидите улучшенную "
+"версию движка рядом с версией диссертации."
+
+#: documentacion/templates/documentacion/index.html
+msgid "Esta parte crece con cada avance."
+msgstr "Эта часть растёт с каждым продвижением."

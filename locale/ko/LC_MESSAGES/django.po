@@ -326,3 +326,510 @@ msgstr "지난 버전에서 얻은 최고의 선수가 검증되고, 그 내부 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
 msgstr "컴퓨터 공학 논문"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances después de la tesis"
+msgstr "논문 이후의 진전"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Cambios y pruebas de Koza-TTP después de la tesis, con fecha y estado."
+msgstr "Koza-TTP는 논문 작성 후 날짜와 상태를 포함하여 변경되고 테스트됩니다."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Documentación"
+msgstr "문서"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances"
+msgstr "진행 상황"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances: después de la tesis"
+msgstr "논문 이후 발전"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Aquí se registra cada cambio hecho después de la defensa. La versión de la "
+"tesis se conserva sin cambios, para poder comparar."
+msgstr "여기에는 방어 이후에 이루어진 모든 변경 사항이 기록됩니다. 논문 버전은 변경 없이 보존되어 비교가 가능합니다."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versiones del motor"
+msgstr "엔진 버전"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión de la tesis y versión mejorada"
+msgstr "논문 버전 및 개선 버전"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión"
+msgstr "버전"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Estado"
+msgstr "현황"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Distancia total (30 equipos)"
+msgstr "총 거리 (30개 팀)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "¿Supera al azar?"
+msgstr "심장이 무작위로 뛰나요?"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Tesis (2026)"
+msgstr "논문 (2026)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Congelada"
+msgstr "얼어붙었어"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "No"
+msgstr "아니"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión mejorada"
+msgstr "개선된 버전"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En desarrollo"
+msgstr "개발 중"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sin resultados todavía"
+msgstr "아직 결과는 없어요"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Por medir"
+msgstr "측정 대상이 될 것이다"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Registro de avances"
+msgstr "진행 기록"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Del más reciente al más antiguo."
+msgstr "가장 최근부터 가장 오래된 것까지."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Planeado"
+msgstr "계획"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Operadores contextuales para el motor"
+msgstr "엔진의 상황별 연산자"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Cambiar los operadores genéricos por otros que intercambien series "
+"completas, para que los hijos sigan siendo calendarios válidos. Es el "
+"trabajo futuro que propuso la tesis."
+msgstr ""
+"완전한 연산자를 교환하는 다른 연산자로 일반 연산자를 변경하여 자식들이 유효한 달력을 유지하도록 하는 것입니다. 이것이 논문에서 제안한 "
+"미래 연구입니다."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Reparar el recorrido completo de la herramienta"
+msgstr "전체 공구 경로를 수리하세요"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
+" con un recorrido guiado paso a paso."
+msgstr "팀 등록부에서 오류 없이 달력을 확인할 수 있으며, 단계별 가이드 투어가 제공됩니다."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "3 de noviembre de 2026"
+msgstr "2026년 11월 3일"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En curso"
+msgstr "진행 중"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Diagnóstico del motor"
+msgstr "엔진 진단"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión del código para confirmar por qué la PG no supera al azar. El cruce"
+" y la mutación rompen la viabilidad de los calendarios, y los pesos de la "
+"aptitud hacen que los hijos pierdan contra los padres de la generación "
+"inicial."
+msgstr ""
+"PG가 우연보다 뛰어나지 않은 이유를 확인하기 위한 코드 리뷰. 교차와 돌연변이는 달력의 생존 가능성을 무너뜨리고, 적합도의 무게가 "
+"자손을 초기 세대 부모에게 밀어줍니다."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Hecho"
+msgstr "사실"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Auditoría de la experiencia"
+msgstr "경험 감사"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión de accesibilidad (WCAG 2.2 AA), usabilidad e interacción humano-IA."
+" Encontró 28 puntos por mejorar. Se repetirá cuando el motor nuevo esté "
+"listo."
+msgstr ""
+"접근성(WCAG 2.2 AA), 사용성, 인간-AI 상호작용 검토. 개선 지점 28점을 발견했습니다. 새 엔진이 준비되면 반복될 "
+"예정입니다."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la auditoría"
+msgstr "감사 보고서를 읽어보세요"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "en español"
+msgstr "스페인어로"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en 43 idiomas"
+msgstr "43개 언어로 된 사이트"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
+"demás versiones son traducciones automáticas con Azure AI Translator y "
+"pueden tener errores."
+msgstr ""
+"사이트는 43개 언어로 제공됩니다. 원본은 멕시코 스페인어입니다. 나머지 모든 버전은 Azure AI 번역기를 이용한 기계 번역으로, "
+"오류가 있을 수 있습니다."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Nuevo servidor"
+msgstr "새 서버"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"La aplicación volvió a estar en línea en un servidor nuevo, con HTTPS. Cada "
+"versión se publica a mano, después de revisarla."
+msgstr "앱은 HTTPS와 함께 새 서버에서 다시 온라인에 올랐습니다. 각 버전은 검토 후 수작업으로 배포됩니다."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Materiales de la tesis en el repositorio"
+msgstr "저장소 내 논문 자료"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El documento de la tesis y la presentación de la defensa están en el "
+"repositorio, con marca de agua."
+msgstr "논문 문서와 방어 발표는 저장소에 워터마크가 되어 있습니다."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver los materiales"
+msgstr "자료 보기"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Documentación de Koza-TTP: la tesis original y los avances posteriores."
+msgstr "Koza-TTP 문서: 원래의 주장과 이후 발전."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Saltar al contenido"
+msgstr "내용으로 건너뛰기"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Histórico"
+msgstr "역사"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Herramienta"
+msgstr "도구"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
+msgstr "논문은 레슬리 파멜라 브레네스 발렌시아라는 제목으로 출판됨"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Código fuente en GitHub"
+msgstr "GitHub의 소스 코드"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis"
+msgstr "역사적: 주장"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis de Koza-TTP: problema, método, resultados y hallazgo principal."
+msgstr "코자-TTP 논제: 문제, 방법, 결과 및 주요 발견."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis (2026)"
+msgstr "역사적: 논문 (2026)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<cite>Programación genética en la planificación de temporadas de béisbol. "
+"Problema de viabilidad y optimización.</cite> Tesis de Ingeniería en "
+"Computación, ITAM. Asesor: Dr. Andrés Gómez de Silva Garza. Aprobada el 23 "
+"de julio de 2026."
+msgstr ""
+"<cite>야구 시즌 계획에서의 유전 프로그래밍. 타당성 및 최적화 문제.</cite> 컴퓨터공학 논문, ITAM. 지도교수: 안드레스 "
+"고메스 데 실바 가르사 박사. 2026년 7월 23일 승인."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "En esta página"
+msgstr "이 페이지에서"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El problema"
+msgstr "문제"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El método"
+msgstr "방법"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Los resultados"
+msgstr "결과"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El hallazgo principal"
+msgstr "주요 발견"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Trabajo futuro"
+msgstr "향후 활동"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cronología"
+msgstr "연대표"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Materiales y cita"
+msgstr "자료 및 인용문"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La MLB programa 2,430 juegos para 30 equipos en unos 180 días. Cada equipo "
+"viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
+"2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
+msgstr ""
+"MLB는 약 180일 동안 30개 팀에 2,430경기를 일정 조정합니다. 각 팀은 도시 간 이동을 하며, 팀마다 거리가 크게 다릅니다. "
+"2016년 시애틀은 76,683km, 시카고 컵스는 39,015km를 이동했습니다."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Encontrar el calendario con la menor distancia total se conoce como el "
+"Problema de Transportación de Torneo (PTT). Es un problema NP-duro: el "
+"número de calendarios posibles crece tan rápido que no se pueden revisar "
+"todos."
+msgstr ""
+"총 거리가 가장 짧은 일정을 찾는 것을 토너먼트 교통 문제(PTT)라고 합니다. 이것은 NP 어려운 문제로, 가능한 일정 수가 너무 "
+"빠르게 늘어나 모두 확인할 수 없습니다."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La programación genética (PG), propuesta por John Koza en 1992, imita la "
+"evolución. Crea una población de soluciones, se queda con las mejores y las "
+"combina y modifica para formar una nueva generación."
+msgstr ""
+"유전적 프로그래밍(PG)은 1992년 존 코자가 제안한 진화를 모방합니다. 이 방법은 여러 해답을 만들고, 가장 좋은 것들을 조합하고 "
+"변형하여 새로운 세대를 만듭니다."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Representación:</strong> cada calendario es un árbol. Sus nodos son "
+"operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
+"visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
+msgstr ""
+"<strong>표현:</strong> 각 달력은 트리입니다. 노드는 (날짜, 홈팀, 원정팀) 와 "
+"<code>obtener_calendario</code>같은 <code>crear_juego</code> 연산으로, 두 경기 리스트에 "
+"연결됩니다."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Viabilidad (C1):</strong> cada equipo debe jugar exactamente el "
+"número de juegos que pide el torneo. Un valor de 0 significa que el "
+"calendario es válido."
+msgstr ""
+"<strong>유효성(C1):</strong> 각 팀은 토너먼트가 요구하는 정확한 경기 수를 치러야 합니다. 0이 되면 일정이 유효하다는"
+" 뜻입니다."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Distancia (C2):</strong> la suma de los traslados, calculada con la "
+"fórmula de haversine sobre las coordenadas de cada estadio."
+msgstr "<strong>거리(C2):</strong> 각 경기장 좌표에 대한 하버사인 공식으로 계산한 전송 횟수의 합."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Software:</strong> tres módulos (planificador, calculadora y "
+"programa genético) con la biblioteca DEAP, separados de una aplicación web "
+"en Django."
+msgstr ""
+"<strong>소프트웨어:</strong> DEAP 라이브러리와 함께 Django 웹 애플리케이션과 분리된 세 가지 모듈(계획기, "
+"계산기, 유전 프로그램)입니다."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
+"generaciones."
+msgstr "30개 팀, 팀당 163경기, 5경기 시리즈, 20세대를 시도해 보세요."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Comparación de la búsqueda aleatoria y la programación genética"
+msgstr "무작위 탐색과 유전 프로그래밍의 비교"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Método"
+msgstr "방법"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de cruce"
+msgstr "아마도. 건너는 것에 대해"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de mutación"
+msgstr "아마도. 돌연변이에 대해"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Viabilidad (C1)"
+msgstr "타당성 (C1)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Distancia total (C2)"
+msgstr "총 거리 (C2)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Tiempo"
+msgstr "시간"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Búsqueda aleatoria"
+msgstr "무작위 탐색"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "0 (válido)"
+msgstr "0 (유효)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "menor distancia"
+msgstr "짧은 거리"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Programación genética"
+msgstr "유전 프로그래밍"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>La programación genética no superó a la búsqueda aleatoria.</strong>"
+" Dio una distancia 19.5%% mayor y tardó casi 17 veces más. El mejor "
+"calendario siempre salió de la generación inicial, que es aleatoria."
+msgstr ""
+"<strong>유전자 프로그래밍은 무작위 탐색보다 더 뛰어나지 않았습니다. 무작위 탐색</strong> 은 19.5% 더 긴 거리를 "
+"제공했고, 거의 17배 더 오래 걸렸습니다. 가장 좋은 달력은 항상 무작위인 초기 세대에서 나왔습니다."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "La tesis identificó estas causas:"
+msgstr "논문은 다음과 같은 원인들을 밝혀냈다:"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Los operadores genéricos de cruce y mutación cambian nodos sin conocer el "
+"problema. Casi siempre producen calendarios inválidos."
+msgstr "일반적인 교차 및 돌연변이 연산자는 문제를 모른 채 노드를 변경합니다. 거의 항상 유효하지 않은 달력을 생성합니다."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La función de aptitud le da mucho más peso a la viabilidad que a la "
+"distancia. Un hijo inválido pierde siempre contra un padre válido."
+msgstr "적합도 함수는 거리보다 생존 가능성에 훨씬 더 큰 비중을 둡니다. 무효 아동은 항상 유효한 부모에게 패배합니다."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El algoritmo convergió pronto en un óptimo local y conservó solo las "
+"soluciones iniciales."
+msgstr "알고리즘은 곧 국소 최적에 수렴하여 초기 해만 유지했다."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Un resultado negativo también es un resultado. Muestra que la representación"
+" y los operadores importan tanto como el algoritmo."
+msgstr "음수 결과도 결과입니다. 이는 표현과 연산자가 알고리즘만큼 중요함을 보여줍니다."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis propuso operadores contextuales: en lugar de cambiar nodos al azar,"
+" intercambiar series o bloques completos que mantengan el calendario válido."
+" También mencionó la computación cuántica para explorar muchas "
+"configuraciones a la vez."
+msgstr ""
+"논문은 맥락적 연산자를 제안했습니다: 노드를 무작위로 바꾸는 대신, 달력을 유효하게 유지하는 전체 시리즈나 블록을 교체하는 것. 그는 "
+"또한 양자 컴퓨팅을 언급하여 여러 구성을 동시에 탐구했습니다."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Ver qué se ha hecho después de la tesis"
+msgstr "논문 이후에 어떤 작업이 이루어졌는지 확인해 보세요"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mayo de 2026"
+msgstr "2026년 5월"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Versión pre-oficial del documento de la tesis."
+msgstr "논문 문서의 공식 이전 버전입니다."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "23 de julio de 2026"
+msgstr "2026년 7월 23일"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Defensa en la Ciudad de México. Tesis aprobada."
+msgstr "수심 심사는 멕시코시티. 논문 승인."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Documento de la tesis, versión pre-oficial"
+msgstr "논문 문서, 공식 이전 버전"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Presentación de la defensa"
+msgstr "변호 측 제시"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cita en formato APA:"
+msgstr "APA 형식의 인용:"
+
+#: documentacion/templates/documentacion/index.html
+msgid "Documentación del proyecto"
+msgstr "프로젝트 문서"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Koza-TTP aplica la programación genética a la planificación de temporadas de"
+" béisbol. La documentación tiene dos partes: lo que se hizo en la tesis y lo"
+" que se ha hecho después."
+msgstr ""
+"Koza-TTP는 유전 프로그래밍을 야구 시즌 계획에 적용합니다. 문서는 두 부분으로 나뉩니다: 논문에서 수행된 내용과 그 이후에 "
+"이루어진 내용입니다."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"El problema, el método, los resultados y lo que aprendimos. Incluye el "
+"hallazgo principal: con operadores genéricos, la programación genética no "
+"superó a la búsqueda aleatoria."
+msgstr ""
+"문제, 방법, 결과, 그리고 우리가 배운 내용. 주요 발견은 다음과 같습니다: 일반 연산자에서는 유전자 프로그래밍이 무작위 탐색보다 더 "
+"뛰어난 성능을 보이지 않았습니다."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Esta parte no cambia. Es el registro del trabajo aprobado el 23 de julio de "
+"2026."
+msgstr "이 부분은 변경되지 않습니다. 2026년 7월 23일에 승인된 작업 기록입니다."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Los cambios y las pruebas nuevas, con su fecha y su estado. Aquí se verá la "
+"versión mejorada del motor junto a la versión de la tesis."
+msgstr ""
+"변경 사항과 새로운 테스트, 그 날짜와 상태가 포함되어 있습니다. 여기서 개선된 엔진 버전이 논문 버전 옆에 있는 것을 볼 수 있습니다."
+
+#: documentacion/templates/documentacion/index.html
+msgid "Esta parte crece con cada avance."
+msgstr "이 부분은 진행할 때마다 커져요."

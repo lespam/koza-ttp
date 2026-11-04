@@ -361,3 +361,555 @@ msgstr ""
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
 msgstr "Tietotekniikan opinnäytetyö"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances después de la tesis"
+msgstr "Edistys opinnäytetyön jälkeen"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Cambios y pruebas de Koza-TTP después de la tesis, con fecha y estado."
+msgstr ""
+"Koza-TTP muuttuu ja testaa opinnäytetyön jälkeen, päivämäärän ja tilanteen "
+"mukaan."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Documentación"
+msgstr "Dokumentaatio"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances"
+msgstr "Edistys"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances: después de la tesis"
+msgstr "Edistysaskeleet: opinnäytetyön jälkeen"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Aquí se registra cada cambio hecho después de la defensa. La versión de la "
+"tesis se conserva sin cambios, para poder comparar."
+msgstr ""
+"Tässä kaikki puolustuksen jälkeen tehdyt muutokset kirjataan. Väitöskirjan "
+"versio säilytetään muuttumattomana, jotta sitä voidaan verrata."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versiones del motor"
+msgstr "Moottoriversiot"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión de la tesis y versión mejorada"
+msgstr "Väitöskirjaversio ja parannettu versio"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión"
+msgstr "Versio"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Estado"
+msgstr "Tila"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Distancia total (30 equipos)"
+msgstr "Kokonaismatka (30 joukkuetta)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "¿Supera al azar?"
+msgstr "Lyökö se satunnaisesti?"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Tesis (2026)"
+msgstr "Väitöskirja (2026)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Congelada"
+msgstr "Jäätynyt"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "No"
+msgstr "Ei"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión mejorada"
+msgstr "Parannettu versio"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En desarrollo"
+msgstr "Kehityksessä"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sin resultados todavía"
+msgstr "Tuloksia ei ole vielä"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Por medir"
+msgstr "Mitattava"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Registro de avances"
+msgstr "Edistymisloki"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Del más reciente al más antiguo."
+msgstr "Viimeisimmästä vanhimpaan."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Planeado"
+msgstr "Suunniteltu"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Operadores contextuales para el motor"
+msgstr "Moottorin kontekstuaaliset operaattorit"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Cambiar los operadores genéricos por otros que intercambien series "
+"completas, para que los hijos sigan siendo calendarios válidos. Es el "
+"trabajo futuro que propuso la tesis."
+msgstr ""
+"Geneeristen operaattoreiden muuttaminen muille, jotka vaihtavat kokonaisia "
+"sarjoja, jotta lapset pysyvät voimassa olevina kalentereina. Tämä on "
+"väitöskirjan ehdottama tuleva työ."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Reparar el recorrido completo de la herramienta"
+msgstr "Korjaa koko työkalun polku"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
+" con un recorrido guiado paso a paso."
+msgstr ""
+"Voit mennä tiimien rekisteristä nähdäksesi kalenterin virheettömästi, "
+"opastetulla vaiheittaisella kierroksella."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "3 de noviembre de 2026"
+msgstr "3. marraskuuta 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En curso"
+msgstr "Käynnissä"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Diagnóstico del motor"
+msgstr "Moottorin diagnostiikka"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión del código para confirmar por qué la PG no supera al azar. El cruce"
+" y la mutación rompen la viabilidad de los calendarios, y los pesos de la "
+"aptitud hacen que los hijos pierdan contra los padres de la generación "
+"inicial."
+msgstr ""
+"Kooditarkistus vahvistaa, miksi PG ei ylitä sattumaa. Crossover ja mutaatiot"
+" rikkovat kalenterien elinkelpoisuuden, ja kuntoilun painot saavat "
+"jälkeläiset häviämään alkuperäisen sukupolven vanhemmille."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Hecho"
+msgstr "Fakta"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Auditoría de la experiencia"
+msgstr "Kokemustarkastus"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión de accesibilidad (WCAG 2.2 AA), usabilidad e interacción humano-IA."
+" Encontró 28 puntos por mejorar. Se repetirá cuando el motor nuevo esté "
+"listo."
+msgstr ""
+"Saavutettavuus (WCAG 2.2 AA), käytettävyys ja ihmisen ja tekoälyn "
+"vuorovaikutus -arviointi. Löysin 28 parannuspistettä. Toistetaan, kun uusi "
+"moottori on valmis."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la auditoría"
+msgstr "Lue tarkastus"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "en español"
+msgstr "espanjaksi"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en 43 idiomas"
+msgstr "Sivusto 43 kielellä"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
+"demás versiones son traducciones automáticas con Azure AI Translator y "
+"pueden tener errores."
+msgstr ""
+"Sivusto on saatavilla 43 kielellä. Alkuperäinen versio on meksikolaista "
+"espanjaa. Kaikki muut versiot ovat konekäännöksiä Azure AI Translatorilla ja"
+" niissä voi olla virheitä."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Nuevo servidor"
+msgstr "Uusi palvelin"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"La aplicación volvió a estar en línea en un servidor nuevo, con HTTPS. Cada "
+"versión se publica a mano, después de revisarla."
+msgstr ""
+"Sovellus palasi uuteen palvelimeen, HTTPS:llä. Jokainen versio julkaistaan "
+"käsin, tarkastelun jälkeen."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Materiales de la tesis en el repositorio"
+msgstr "Väitöskirjamateriaalit arkistossa"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El documento de la tesis y la presentación de la defensa están en el "
+"repositorio, con marca de agua."
+msgstr ""
+"Väitöskirja ja puolustuksen esitys ovat arkistossa, vesileimalla "
+"varustettuina."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver los materiales"
+msgstr "Katso materiaalit"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Documentación de Koza-TTP: la tesis original y los avances posteriores."
+msgstr ""
+"Koza-TTP-dokumentaatio: alkuperäinen väitöskirja ja myöhemmät "
+"edistysaskeleet."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Saltar al contenido"
+msgstr "Siirry sisältöön"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Histórico"
+msgstr "Historia"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Herramienta"
+msgstr "Työkalu"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
+msgstr "Väitöskirja julkaistu nimellä Leslie Pamela Brenes Valencia"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Código fuente en GitHub"
+msgstr "Lähdekoodi GitHubissa"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis"
+msgstr "Historiallinen: väitöskirja"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis de Koza-TTP: problema, método, resultados y hallazgo principal."
+msgstr "Koza-TTP-teesi: ongelma, menetelmä, tulokset ja päähavainto."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis (2026)"
+msgstr "Historiallinen: väitöskirja (2026)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<cite>Programación genética en la planificación de temporadas de béisbol. "
+"Problema de viabilidad y optimización.</cite> Tesis de Ingeniería en "
+"Computación, ITAM. Asesor: Dr. Andrés Gómez de Silva Garza. Aprobada el 23 "
+"de julio de 2026."
+msgstr ""
+"<cite>Geneettinen ohjelmointi baseball-kauden suunnittelussa. "
+"Toteutettavuus- ja optimointiongelma.</cite> Tietokonetekniikan "
+"opinnäytetyö, ITAM. Ohjaaja: Dr. Andrés Gómez de Silva Garza. Hyväksytty 23."
+" heinäkuuta 2026."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "En esta página"
+msgstr "Tällä sivulla"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El problema"
+msgstr "Ongelma"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El método"
+msgstr "Menetelmä"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Los resultados"
+msgstr "Tulokset"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El hallazgo principal"
+msgstr "Pääasiallinen löytö"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Trabajo futuro"
+msgstr "Tuleva työ"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cronología"
+msgstr "Aikajana"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Materiales y cita"
+msgstr "Materiaalit ja viittaukset"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La MLB programa 2,430 juegos para 30 equipos en unos 180 días. Cada equipo "
+"viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
+"2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
+msgstr ""
+"MLB aikatauluttaa 2 430 ottelua 30 joukkueelle noin 180 päivän aikana. "
+"Jokainen joukkue matkustaa kaupunkien välillä, ja etäisyydet vaihtelevat "
+"suuresti joukkueittain. Vuonna 2016 Seattle matkusti 76 683 km ja Chicago "
+"Cubs 39 015 km."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Encontrar el calendario con la menor distancia total se conoce como el "
+"Problema de Transportación de Torneo (PTT). Es un problema NP-duro: el "
+"número de calendarios posibles crece tan rápido que no se pueden revisar "
+"todos."
+msgstr ""
+"Aikataulun löytämistä, jossa on vähin kokonaismatka, tunnetaan nimellä "
+"Tournament Transportation Problem (PTT). Se on NP-vaikea ongelma: "
+"mahdollisten aikataulujen määrä kasvaa niin nopeasti, ettei kaikkia voi "
+"tarkistaa."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La programación genética (PG), propuesta por John Koza en 1992, imita la "
+"evolución. Crea una población de soluciones, se queda con las mejores y las "
+"combina y modifica para formar una nueva generación."
+msgstr ""
+"John Kozan vuonna 1992 ehdottama geneettinen ohjelmointi (PG) jäljittelee "
+"evoluutiota. Se luo ratkaisupopulaation, ottaa parhaat ja yhdistää sekä "
+"muokkaa niitä muodostaakseen uuden sukupolven."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Representación:</strong> cada calendario es un árbol. Sus nodos son "
+"operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
+"visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
+msgstr ""
+"<strong>Esitys:</strong> Jokainen kalenteri on puu. Sen solmut ovat "
+"operaatioita kuten <code>crear_juego</code> (päivämäärä, kotijoukkue, "
+"vierasjoukkue) ja <code>obtener_calendario</code>, jotka yhdistävät kaksi "
+"pelilistaa."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Viabilidad (C1):</strong> cada equipo debe jugar exactamente el "
+"número de juegos que pide el torneo. Un valor de 0 significa que el "
+"calendario es válido."
+msgstr ""
+"<strong>Kannattavuus (C1):</strong> Jokaisen joukkueen on pelattava "
+"täsmälleen sen määrän pelejä, joita turnaus vaatii. Arvo 0 tarkoittaa, että "
+"aikataulu on voimassa."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Distancia (C2):</strong> la suma de los traslados, calculada con la "
+"fórmula de haversine sobre las coordenadas de cada estadio."
+msgstr ""
+"<strong>Etäisyys (C2):</strong> siirtojen summa, joka lasketaan Haverinen "
+"kaavalla kunkin stadionin koordinaatista."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Software:</strong> tres módulos (planificador, calculadora y "
+"programa genético) con la biblioteca DEAP, separados de una aplicación web "
+"en Django."
+msgstr ""
+"<strong>Ohjelmisto:</strong> kolme moduulia (suunnittelija, laskin ja "
+"geneettinen ohjelma) DEAP-kirjastolla, erillään Djangon verkkosovelluksesta."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
+"generaciones."
+msgstr ""
+"Kokeile 30 joukkuetta, 163 ottelua per joukkue, 5 ottelun sarja ja 20 "
+"sukupolvea."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Comparación de la búsqueda aleatoria y la programación genética"
+msgstr "Satunnaishaun ja geneettisen ohjelmoinnin vertailu"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Método"
+msgstr "Menetelmä"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de cruce"
+msgstr "Todennäköisesti. ylityksestä"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de mutación"
+msgstr "Todennäköisesti. mutaation"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Viabilidad (C1)"
+msgstr "Toteutettavuus (C1)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Distancia total (C2)"
+msgstr "Kokonaisetäisyys (C2)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Tiempo"
+msgstr "Aika"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Búsqueda aleatoria"
+msgstr "Satunnaishaku"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "0 (válido)"
+msgstr "0 (pätevä)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "menor distancia"
+msgstr "Lyhyempi matka"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Programación genética"
+msgstr "Geneettinen ohjelmointi"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>La programación genética no superó a la búsqueda aleatoria.</strong>"
+" Dio una distancia 19.5%% mayor y tardó casi 17 veces más. El mejor "
+"calendario siempre salió de la generación inicial, que es aleatoria."
+msgstr ""
+"<strong>Geneettinen ohjelmointi ei ylittänyt satunnaishakua.</strong> Se "
+"antoi 19,5 % pidemmän matkan ja kesti lähes 17 kertaa kauemmin. Paras "
+"kalenteri tuli aina alkuperäisestä sukupolvesta, joka on satunnainen."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "La tesis identificó estas causas:"
+msgstr "Väitöskirjassa tunnistettiin seuraavat syyt:"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Los operadores genéricos de cruce y mutación cambian nodos sin conocer el "
+"problema. Casi siempre producen calendarios inválidos."
+msgstr ""
+"Geneeriset crossover- ja mutaatiooperaattorit vaihtavat solmuja tietämättä "
+"ongelmaa. Ne tuottavat lähes aina virheellisiä kalentereita."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La función de aptitud le da mucho más peso a la viabilidad que a la "
+"distancia. Un hijo inválido pierde siempre contra un padre válido."
+msgstr ""
+"Soveltuvuusfunktio antaa paljon enemmän painoarvoa elinkelpoisuudelle kuin "
+"etäisyydelle. Virheellinen lapsi häviää aina pätevälle vanhemmalle."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El algoritmo convergió pronto en un óptimo local y conservó solo las "
+"soluciones iniciales."
+msgstr ""
+"Algoritmi konvergoi pian paikalliseen optimaaliin ja säilytti vain "
+"alkuperäiset ratkaisut."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Un resultado negativo también es un resultado. Muestra que la representación"
+" y los operadores importan tanto como el algoritmo."
+msgstr ""
+"Negatiivinen tulos on myös tulos. Se osoittaa, että esitys ja operaattorit "
+"ovat yhtä tärkeitä kuin algoritmi."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis propuso operadores contextuales: en lugar de cambiar nodos al azar,"
+" intercambiar series o bloques completos que mantengan el calendario válido."
+" También mencionó la computación cuántica para explorar muchas "
+"configuraciones a la vez."
+msgstr ""
+"Väitöskirja ehdotti kontekstuaalisia operaattoreita: solmujen satunnaisen "
+"vaihtamisen sijaan vaihdetaan kokonaisia sarjoja tai lohkoja, jotka pitävät "
+"kalenterin voimassa. Hän mainitsi myös kvanttilaskennan tutkiakseen monia "
+"konfiguraatioita samanaikaisesti."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Ver qué se ha hecho después de la tesis"
+msgstr "Katso, mitä tehtiin opinnäytetyön jälkeen"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mayo de 2026"
+msgstr "Toukokuu 2026"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Versión pre-oficial del documento de la tesis."
+msgstr "Esivirallinen versio väitöskirjasta."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "23 de julio de 2026"
+msgstr "23. heinäkuuta 2026"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Defensa en la Ciudad de México. Tesis aprobada."
+msgstr "Puolustus Mexico Cityssä. Väitöskirja hyväksytty."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Documento de la tesis, versión pre-oficial"
+msgstr "Väitöskirja, esivirallinen versio"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Presentación de la defensa"
+msgstr "Puolustuksen esittäminen"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cita en formato APA:"
+msgstr "Viittaus APA-muodossa:"
+
+#: documentacion/templates/documentacion/index.html
+msgid "Documentación del proyecto"
+msgstr "Projektin dokumentaatio"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Koza-TTP aplica la programación genética a la planificación de temporadas de"
+" béisbol. La documentación tiene dos partes: lo que se hizo en la tesis y lo"
+" que se ha hecho después."
+msgstr ""
+"Koza-TTP soveltaa geneettistä ohjelmointia baseball-kauden suunnitteluun. "
+"Dokumentaatio koostuu kahdesta osasta: mitä opinnäytetyössä tehtiin ja mitä "
+"on tehty sen jälkeen."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"El problema, el método, los resultados y lo que aprendimos. Incluye el "
+"hallazgo principal: con operadores genéricos, la programación genética no "
+"superó a la búsqueda aleatoria."
+msgstr ""
+"Ongelma, menetelmä, tulokset ja mitä opimme. Se sisältää päähavainnon: "
+"geneettisten operaattoreiden kanssa geneettinen ohjelmointi ei ylittänyt "
+"satunnaishakua."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Esta parte no cambia. Es el registro del trabajo aprobado el 23 de julio de "
+"2026."
+msgstr ""
+"Tämä osa ei muutu. Se on työpöytäkirja, joka hyväksyttiin 23. heinäkuuta "
+"2026."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Los cambios y las pruebas nuevas, con su fecha y su estado. Aquí se verá la "
+"versión mejorada del motor junto a la versión de la tesis."
+msgstr ""
+"Muutokset ja uudet testit sekä niiden päivämäärä ja tila. Tässä näet "
+"parannetun version moottorista opinnäytetyön version vieressä."
+
+#: documentacion/templates/documentacion/index.html
+msgid "Esta parte crece con cada avance."
+msgstr "Tämä osa kasvaa jokaisen edistyksen myötä."

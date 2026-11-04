@@ -364,3 +364,551 @@ msgstr ""
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
 msgstr "Számítástechnikai szakdolgozat"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances después de la tesis"
+msgstr "Előrehaladás a szakdolgozat után"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Cambios y pruebas de Koza-TTP después de la tesis, con fecha y estado."
+msgstr ""
+"A Koza-TTP a szakdolgozat után változik és tesztel, dátummal és státuszsal."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Documentación"
+msgstr "Dokumentáció"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances"
+msgstr "Előrehaladás"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances: después de la tesis"
+msgstr "Előrelépések: a szakdolgozat után"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Aquí se registra cada cambio hecho después de la defensa. La versión de la "
+"tesis se conserva sin cambios, para poder comparar."
+msgstr ""
+"Itt minden a védekezés után végrehajtott változtatást rögzítik. A tézis "
+"változata változatlan marad megőrizve, hogy összehasonlítható legyen."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versiones del motor"
+msgstr "Motoros változatok"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión de la tesis y versión mejorada"
+msgstr "Szakdolgozat változata és továbbfejlesztett változat"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión"
+msgstr "Verzió"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Estado"
+msgstr "Státusz"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Distancia total (30 equipos)"
+msgstr "Teljes táv (30 csapat)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "¿Supera al azar?"
+msgstr "Véletlenszerűen ver?"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Tesis (2026)"
+msgstr "Szakdolgozat (2026)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Congelada"
+msgstr "Fagyott"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "No"
+msgstr "Nem"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión mejorada"
+msgstr "Továbbfejlesztett változat"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En desarrollo"
+msgstr "Fejlesztés alatt"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sin resultados todavía"
+msgstr "Még nincs eredmény"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Por medir"
+msgstr "Mérendők"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Registro de avances"
+msgstr "Haladási napló"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Del más reciente al más antiguo."
+msgstr "A legfrissebbtől a legrégebbig."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Planeado"
+msgstr "Tervezett"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Operadores contextuales para el motor"
+msgstr "A motor kontextuális operátorai"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Cambiar los operadores genéricos por otros que intercambien series "
+"completas, para que los hijos sigan siendo calendarios válidos. Es el "
+"trabajo futuro que propuso la tesis."
+msgstr ""
+"Generikus operátorok megváltoztatása azoknál, akik teljes sorozatokat "
+"cserélnek, hogy a gyermekek érvényes naptárak maradjanak. Ez a tézis által "
+"javasolt jövőbeli munka."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Reparar el recorrido completo de la herramienta"
+msgstr "Javítsd meg a teljes szerszámút"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
+" con un recorrido guiado paso a paso."
+msgstr ""
+"A csapat regisztrációjából hibázás nélkül megtekintheted a naptárt, egy "
+"lépésről lépésre vezetett körúttal."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "3 de noviembre de 2026"
+msgstr "2026. november 3."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En curso"
+msgstr "Folyamatban"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Diagnóstico del motor"
+msgstr "Motordiagnostika"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión del código para confirmar por qué la PG no supera al azar. El cruce"
+" y la mutación rompen la viabilidad de los calendarios, y los pesos de la "
+"aptitud hacen que los hijos pierdan contra los padres de la generación "
+"inicial."
+msgstr ""
+"Kódfelülvizsgálat annak megerősítésére, hogy miért nem teljesíti felül a PG "
+"a Chance-t. A kereszteződés és a mutáció megtöri a naptárak életképességét, "
+"és a fitnesz súlya miatt az utódok veszítenek az első generációs szülőkhöz."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Hecho"
+msgstr "Tény"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Auditoría de la experiencia"
+msgstr "Tapasztalati audit"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión de accesibilidad (WCAG 2.2 AA), usabilidad e interacción humano-IA."
+" Encontró 28 puntos por mejorar. Se repetirá cuando el motor nuevo esté "
+"listo."
+msgstr ""
+"Hozzáférhetőség (WCAG 2.2 AA), használhatóság és ember-mesterséges "
+"intelligencia interakció áttekintése. 28 javítási pontot találtam. Ezt "
+"megismételjük, amikor az új motor elkészül."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la auditoría"
+msgstr "Olvassa el az auditot"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "en español"
+msgstr "spanyol nyelven"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en 43 idiomas"
+msgstr "Oldal 43 nyelven"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
+"demás versiones son traducciones automáticas con Azure AI Translator y "
+"pueden tener errores."
+msgstr ""
+"Az oldal 43 nyelven érhető el. Az eredeti mexikói spanyol. Minden más verzió"
+" gépi fordítás Azure AI Translatorrel, és hibák lehetnek."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Nuevo servidor"
+msgstr "Új szerver"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"La aplicación volvió a estar en línea en un servidor nuevo, con HTTPS. Cada "
+"versión se publica a mano, después de revisarla."
+msgstr ""
+"Az alkalmazás egy új szerveren tért vissza az internetre, HTTPS-szel. Minden"
+" verziót kézzel publikálnak, átvizsgálás után."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Materiales de la tesis en el repositorio"
+msgstr "Szakdolgozati anyagok a tárházban"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El documento de la tesis y la presentación de la defensa están en el "
+"repositorio, con marca de agua."
+msgstr "A szakdolgozat dokumentum és a védekezés a tárban van, vízjellel."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver los materiales"
+msgstr "Anyagok megtekintése"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Documentación de Koza-TTP: la tesis original y los avances posteriores."
+msgstr ""
+"Koza-TTP dokumentáció: az eredeti tézis és az azt követő előrelépések."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Saltar al contenido"
+msgstr "Ugrás a tartalomra"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Histórico"
+msgstr "Történelem"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Herramienta"
+msgstr "Eszköz"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
+msgstr "Értekezés Leslie Pamela Brenes Valencia címen jelent meg"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Código fuente en GitHub"
+msgstr "Forráskód a GitHubon"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis"
+msgstr "Történelmi: a tézis"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis de Koza-TTP: problema, método, resultados y hallazgo principal."
+msgstr "A Koza-TTP tézis: probléma, módszer, eredmények és fő eredmények."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis (2026)"
+msgstr "Történelmi: a tézis (2026)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<cite>Programación genética en la planificación de temporadas de béisbol. "
+"Problema de viabilidad y optimización.</cite> Tesis de Ingeniería en "
+"Computación, ITAM. Asesor: Dr. Andrés Gómez de Silva Garza. Aprobada el 23 "
+"de julio de 2026."
+msgstr ""
+"<cite>Genetikai programozás a baseball szezontervezésben. Megvalósíthatósági"
+" és optimalizálási probléma.</cite> Számítógép-mérnöki szakdolgozat, ITAM. "
+"Témavezető: Dr. Andrés Gómez de Silva Garza. 2026. július 23-án hagyták "
+"jóvá."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "En esta página"
+msgstr "Ezen az oldalon"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El problema"
+msgstr "A probléma"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El método"
+msgstr "A módszer"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Los resultados"
+msgstr "Az eredmények"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El hallazgo principal"
+msgstr "A fő felfedezés"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Trabajo futuro"
+msgstr "Jövőbeli munkák"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cronología"
+msgstr "Idővonal"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Materiales y cita"
+msgstr "Anyagok és hivatkozások"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La MLB programa 2,430 juegos para 30 equipos en unos 180 días. Cada equipo "
+"viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
+"2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
+msgstr ""
+"Az MLB körülbelül 180 nap alatt 2 430 mérkőzést tervez 30 csapatnak. Minden "
+"csapat városok között utazik, és a távolság csapatonként jelentősen eltér. "
+"2016-ban Seattle 76 683 km-t tett meg, míg a Chicago Cubs 39 015 km-t."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Encontrar el calendario con la menor distancia total se conoce como el "
+"Problema de Transportación de Torneo (PTT). Es un problema NP-duro: el "
+"número de calendarios posibles crece tan rápido que no se pueden revisar "
+"todos."
+msgstr ""
+"A legkisebb össztávolságú menetrend megtalálását Tournament Transportation "
+"Problem-nek (PTT) nevezik. Ez egy NP-nehéz probléma: a lehetséges "
+"menetrendek száma olyan gyorsan nő, hogy nem tudod mindet ellenőrizni."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La programación genética (PG), propuesta por John Koza en 1992, imita la "
+"evolución. Crea una población de soluciones, se queda con las mejores y las "
+"combina y modifica para formar una nueva generación."
+msgstr ""
+"A genetikai programozás (PG), amelyet John Koza javasolt 1992-ben, az "
+"evolúciót utánozza. Megoldások populációját hozza létre, a legjobbakat "
+"választja, majd egyesíti és módosítja őket, hogy új generációt alkosson."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Representación:</strong> cada calendario es un árbol. Sus nodos son "
+"operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
+"visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
+msgstr ""
+"<strong>Ábrázolás:</strong> Minden naptár egy fa. Csomópontjai olyan "
+"műveletek, mint <code>crear_juego</code> (dátum, hazai csapat, idegen "
+"csapat) és <code>obtener_calendario</code>, amelyek két meccslistához "
+"csatlakoznak."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Viabilidad (C1):</strong> cada equipo debe jugar exactamente el "
+"número de juegos que pide el torneo. Un valor de 0 significa que el "
+"calendario es válido."
+msgstr ""
+"<strong>Életképesség (C1):</strong> Minden csapatnak pontosan annyi "
+"mérkőzést kell játszania, amennyit a torna előír. 0 érték azt jelenti, hogy "
+"a menetrend érvényes."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Distancia (C2):</strong> la suma de los traslados, calculada con la "
+"fórmula de haversine sobre las coordenadas de cada estadio."
+msgstr ""
+"<strong>Távolság (C2):</strong> az áthelyezések összege, amelyet a stadionok"
+" koordinátáiról alkotott Haversine képletével számítanak ki."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Software:</strong> tres módulos (planificador, calculadora y "
+"programa genético) con la biblioteca DEAP, separados de una aplicación web "
+"en Django."
+msgstr ""
+"<strong>Szoftver:</strong> három modul (tervező, számoló és genetikai "
+"program) a DEAP könyvtárral, külön egy webalkalmazástól Django-ban."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
+"generaciones."
+msgstr ""
+"Próbálj ki 30 csapatot, 163 meccset csapatonként, 5 meccses sorozatot és 20 "
+"generációt."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Comparación de la búsqueda aleatoria y la programación genética"
+msgstr "A véletlenszerű keresés és a genetikai programozás összehasonlítása"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Método"
+msgstr "Módszer"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de cruce"
+msgstr "Valószínűség. átkelés"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de mutación"
+msgstr "Valószínűség. a mutáció"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Viabilidad (C1)"
+msgstr "Megvalósíthatóság (C1)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Distancia total (C2)"
+msgstr "Teljes távolság (C2)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Tiempo"
+msgstr "Idő"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Búsqueda aleatoria"
+msgstr "Véletlenszerű keresés"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "0 (válido)"
+msgstr "0 (érvényes)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "menor distancia"
+msgstr "Rövidebb távolság"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Programación genética"
+msgstr "Genetikai programozás"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>La programación genética no superó a la búsqueda aleatoria.</strong>"
+" Dio una distancia 19.5%% mayor y tardó casi 17 veces más. El mejor "
+"calendario siempre salió de la generación inicial, que es aleatoria."
+msgstr ""
+"<strong>A genetikai programozás nem teljesítette felül a véletlenszerű "
+"keresést.</strong> 19,5%-kal nagyobb távolságot adott, és majdnem 17-szer "
+"tovább tartott. A legjobb naptár mindig az első generációból származik, ami "
+"véletlenszerű."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "La tesis identificó estas causas:"
+msgstr "A szakdolgozat ezeket az okokat azonosította:"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Los operadores genéricos de cruce y mutación cambian nodos sin conocer el "
+"problema. Casi siempre producen calendarios inválidos."
+msgstr ""
+"A generikus crossover és mutációs operátorok anélkül, hogy tudnák volna a "
+"problémát, cserélnek csomópontokat. Szinte mindig érvénytelen naptárakat "
+"eredményeznek."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La función de aptitud le da mucho más peso a la viabilidad que a la "
+"distancia. Un hijo inválido pierde siempre contra un padre válido."
+msgstr ""
+"A alkalmasságfüggvény sokkal nagyobb súlyt ad az életképességnek, mint a "
+"távolságnak. Egy betegtelen gyermek mindig veszít egy érvényes szülővel "
+"szemben."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El algoritmo convergió pronto en un óptimo local y conservó solo las "
+"soluciones iniciales."
+msgstr ""
+"Az algoritmus hamarosan egy helyi optimumhoz konvergálódott, és csak az "
+"eredeti megoldásokat tartotta meg."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Un resultado negativo también es un resultado. Muestra que la representación"
+" y los operadores importan tanto como el algoritmo."
+msgstr ""
+"A negatív eredmény is eredmény. Ez azt mutatja, hogy a reprezentáció és az "
+"operátorok ugyanolyan fontosak, mint az algoritmus."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis propuso operadores contextuales: en lugar de cambiar nodos al azar,"
+" intercambiar series o bloques completos que mantengan el calendario válido."
+" También mencionó la computación cuántica para explorar muchas "
+"configuraciones a la vez."
+msgstr ""
+"A tézis kontextuális operátorokat javasolt: ahelyett, hogy véletlenszerűen "
+"cserélnénk csomópontokat, cserélj egy egész sorozatot vagy blokkot, amelyek "
+"fenntartják a naptárt. Megemlítette a kvantumszámítást is, hogy egyszerre "
+"sok konfigurációt lehet felfedezni."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Ver qué se ha hecho después de la tesis"
+msgstr "Nézd meg, mi történt a szakdolgozat után"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mayo de 2026"
+msgstr "2026. május"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Versión pre-oficial del documento de la tesis."
+msgstr "A szakdolgozat hivatalos előzetes változata."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "23 de julio de 2026"
+msgstr "2026. július 23."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Defensa en la Ciudad de México. Tesis aprobada."
+msgstr "Védelem Mexikóvárosban. A szakdolgozat jóváhagyva."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Documento de la tesis, versión pre-oficial"
+msgstr "Szakdolgozat, prehivatalos változat"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Presentación de la defensa"
+msgstr "A védelem bemutatása"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cita en formato APA:"
+msgstr "Hivatkozás APA formátumban:"
+
+#: documentacion/templates/documentacion/index.html
+msgid "Documentación del proyecto"
+msgstr "Projektdokumentáció"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Koza-TTP aplica la programación genética a la planificación de temporadas de"
+" béisbol. La documentación tiene dos partes: lo que se hizo en la tesis y lo"
+" que se ha hecho después."
+msgstr ""
+"A Koza-TTP genetikai programozást alkalmaz a baseball szezontervezéshez. A "
+"dokumentáció két részből áll: mi történt a szakdolgozatban, és mi történt "
+"utána."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"El problema, el método, los resultados y lo que aprendimos. Incluye el "
+"hallazgo principal: con operadores genéricos, la programación genética no "
+"superó a la búsqueda aleatoria."
+msgstr ""
+"A probléma, a módszer, az eredmények és amit tanultunk. Ez magában foglalja "
+"a fő megállapítást: generikus operátorokkal a genetikai programozás nem "
+"múlta felül a véletlenszerű keresést."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Esta parte no cambia. Es el registro del trabajo aprobado el 23 de julio de "
+"2026."
+msgstr ""
+"Ez a rész nem változik. Ez a munkanyilvántartás, amelyet 2026. július 23-án "
+"hagytak jóvá."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Los cambios y las pruebas nuevas, con su fecha y su estado. Aquí se verá la "
+"versión mejorada del motor junto a la versión de la tesis."
+msgstr ""
+"A változtatások és új tesztek, dátummal és állapotukkal. Itt a motor "
+"továbbfejlesztett változatát láthatja a szakdolgozat változata mellett."
+
+#: documentacion/templates/documentacion/index.html
+msgid "Esta parte crece con cada avance."
+msgstr "Ez a rész minden előrelépéssel nő."

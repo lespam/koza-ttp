@@ -359,3 +359,542 @@ msgstr ""
 #: tesis/templates/tesis/dashboard.html
 msgid "Tesis de Ingeniería en Computación"
 msgstr "Diplomová práce z počítačového inženýrství"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances después de la tesis"
+msgstr "Postup po diplomové práci"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Cambios y pruebas de Koza-TTP después de la tesis, con fecha y estado."
+msgstr "Koza-TTP se mění a testuje po disertační práci, s datem a stavem."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Documentación"
+msgstr "Dokumentace"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances"
+msgstr "Pokrok"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Avances: después de la tesis"
+msgstr "Pokroky: po diplomové práci"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Aquí se registra cada cambio hecho después de la defensa. La versión de la "
+"tesis se conserva sin cambios, para poder comparar."
+msgstr ""
+"Zde je zaznamenána každá změna provedená po obhajobě. Verze teze je "
+"zachována beze změny, aby mohla být porovnána."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versiones del motor"
+msgstr "Verze motoru"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión de la tesis y versión mejorada"
+msgstr "Verze diplomové práce a vylepšená verze"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión"
+msgstr "Verze"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Estado"
+msgstr "Stav"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Distancia total (30 equipos)"
+msgstr "Celková vzdálenost (30 týmů)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "¿Supera al azar?"
+msgstr "Stéká náhodně?"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Tesis (2026)"
+msgstr "Diplomová práce (2026)"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Congelada"
+msgstr "Zmrazené"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "No"
+msgstr "Ne"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Versión mejorada"
+msgstr "Vylepšená verze"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En desarrollo"
+msgstr "Ve vývoji"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sin resultados todavía"
+msgstr "Zatím žádné výsledky"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Por medir"
+msgstr "Bude měřeno"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Registro de avances"
+msgstr "Průběh"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Del más reciente al más antiguo."
+msgstr "Od nejnovějších po nejstarší."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Planeado"
+msgstr "Plánováno"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Operadores contextuales para el motor"
+msgstr "Kontextové operátory pro engine"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Cambiar los operadores genéricos por otros que intercambien series "
+"completas, para que los hijos sigan siendo calendarios válidos. Es el "
+"trabajo futuro que propuso la tesis."
+msgstr ""
+"Změna generických operátorů pro jiné, které vyměňují kompletní série, aby "
+"děti zůstaly platnými kalendáři. Toto je budoucí práce navržená v diplomové "
+"práci."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Reparar el recorrido completo de la herramienta"
+msgstr "Opravte celou dráhu nástroje"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
+" con un recorrido guiado paso a paso."
+msgstr ""
+"Můžete přejít z týmové registrace a bez chyb si prohlédnout kalendář s "
+"průvodcem krok za krokem."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "3 de noviembre de 2026"
+msgstr "3. listopadu 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En curso"
+msgstr "Pokračující"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Diagnóstico del motor"
+msgstr "Diagnostika motoru"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión del código para confirmar por qué la PG no supera al azar. El cruce"
+" y la mutación rompen la viabilidad de los calendarios, y los pesos de la "
+"aptitud hacen que los hijos pierdan contra los padres de la generación "
+"inicial."
+msgstr ""
+"Kontrola kódu pro potvrzení, proč PG nepřekonává náhodu. Křížení a mutace "
+"narušují životaschopnost kalendářů a váhy fitness způsobují, že potomci "
+"prohrávají s rodiči první generace."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Hecho"
+msgstr "Fakt"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Auditoría de la experiencia"
+msgstr "Audit zkušeností"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión de accesibilidad (WCAG 2.2 AA), usabilidad e interacción humano-IA."
+" Encontró 28 puntos por mejorar. Se repetirá cuando el motor nuevo esté "
+"listo."
+msgstr ""
+"Recenze přístupnosti (WCAG 2.2 AA), použitelnosti a interakce člověka s AI. "
+"Bylo nalezeno 28 bodů ke zlepšení. Bude to zopakováno, až bude nový engine "
+"připraven."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la auditoría"
+msgstr "Přečtěte si audit"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "en español"
+msgstr "ve španělštině"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sitio en 43 idiomas"
+msgstr "Stránka ve 43 jazycích"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El sitio se ofrece en 43 idiomas. El original es el español de México. Las "
+"demás versiones son traducciones automáticas con Azure AI Translator y "
+"pueden tener errores."
+msgstr ""
+"Stránka je nabízena ve 43 jazycích. Originál je mexická španělština. Všechny"
+" ostatní verze jsou strojové překlady s Azure AI Translatorem a mohou "
+"obsahovat chyby."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Nuevo servidor"
+msgstr "Nový server"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"La aplicación volvió a estar en línea en un servidor nuevo, con HTTPS. Cada "
+"versión se publica a mano, después de revisarla."
+msgstr ""
+"Aplikace se znovu spustila na novém serveru s HTTPS. Každá verze je "
+"publikována ručně po kontrole."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Materiales de la tesis en el repositorio"
+msgstr "Materiály diplomové práce v repozitáři"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"El documento de la tesis y la presentación de la defensa están en el "
+"repositorio, con marca de agua."
+msgstr ""
+"Diplomová práce a obhajoba jsou uloženy v repozitáři, označené vodoznakem."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver los materiales"
+msgstr "Zobrazit materiály"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Documentación de Koza-TTP: la tesis original y los avances posteriores."
+msgstr "Dokumentace Koza-TTP: původní teze a následné pokroky."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Saltar al contenido"
+msgstr "Přeskočit na obsah"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Histórico"
+msgstr "Historie"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Herramienta"
+msgstr "Nástroj"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
+msgstr "Diplomová práce publikovaná jako Leslie Pamela Brenes Valencia"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Código fuente en GitHub"
+msgstr "Zdrojový kód na GitHubu"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis"
+msgstr "Historické: diplomová práce"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis de Koza-TTP: problema, método, resultados y hallazgo principal."
+msgstr "Dizertační práce Koza-TTP: problém, metoda, výsledky a hlavní nález."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Histórico: la tesis (2026)"
+msgstr "Historické: diplomová práce (2026)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<cite>Programación genética en la planificación de temporadas de béisbol. "
+"Problema de viabilidad y optimización.</cite> Tesis de Ingeniería en "
+"Computación, ITAM. Asesor: Dr. Andrés Gómez de Silva Garza. Aprobada el 23 "
+"de julio de 2026."
+msgstr ""
+"<cite>Genetické programování při plánování baseballové sezóny. Problém "
+"proveditelnosti a optimalizace.</cite> Diplomová práce z počítačového "
+"inženýrství, ITAM. Školitel: Dr. Andrés Gómez de Silva Garza. Schváleno 23. "
+"července 2026."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "En esta página"
+msgstr "Na této stránce"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El problema"
+msgstr "Problém"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El método"
+msgstr "Metoda"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Los resultados"
+msgstr "Výsledky"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "El hallazgo principal"
+msgstr "Hlavní zjištění"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Trabajo futuro"
+msgstr "Budoucí práce"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cronología"
+msgstr "Časová osa"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Materiales y cita"
+msgstr "Materiály a citace"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La MLB programa 2,430 juegos para 30 equipos en unos 180 días. Cada equipo "
+"viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
+"2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
+msgstr ""
+"MLB plánuje 2 430 zápasů pro 30 týmů během přibližně 180 dnů. Každý tým "
+"cestuje mezi městy a vzdálenost se výrazně liší tým od týmu. V roce 2016 "
+"Seattle urazil 76 683 km a Chicago Cubs 39 015 km."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Encontrar el calendario con la menor distancia total se conoce como el "
+"Problema de Transportación de Torneo (PTT). Es un problema NP-duro: el "
+"número de calendarios posibles crece tan rápido que no se pueden revisar "
+"todos."
+msgstr ""
+"Nalezení jízdního rozpisu s nejnižší celkovou vzdáleností je známé jako "
+"problém turnajové dopravy (PTT). Je to problém NP-těžký: počet možných "
+"rozpisů roste tak rychle, že je nelze všechny zkontrolovat."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La programación genética (PG), propuesta por John Koza en 1992, imita la "
+"evolución. Crea una población de soluciones, se queda con las mejores y las "
+"combina y modifica para formar una nueva generación."
+msgstr ""
+"Genetické programování (PG), navržené Johnem Kozou v roce 1992, napodobuje "
+"evoluci. Vytváří populaci řešení, bere ta nejlepší a kombinuje je a "
+"upravuje, aby vznikla nová generace."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Representación:</strong> cada calendario es un árbol. Sus nodos son "
+"operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
+"visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
+msgstr ""
+"<strong>Reprezentace:</strong> Každý kalendář je strom. Jeho uzly jsou "
+"operace jako <code>crear_juego</code> (datum, domácí tým, hostující tým) a "
+"<code>obtener_calendario</code>, které spojují dva seznamy zápasů."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Viabilidad (C1):</strong> cada equipo debe jugar exactamente el "
+"número de juegos que pide el torneo. Un valor de 0 significa que el "
+"calendario es válido."
+msgstr ""
+"<strong>Životaschopnost (C1):</strong> Každý tým musí odehrát přesně ten "
+"počet zápasů, kolik turnaj vyžaduje. Hodnota 0 znamená, že rozpis je platný."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Distancia (C2):</strong> la suma de los traslados, calculada con la "
+"fórmula de haversine sobre las coordenadas de cada estadio."
+msgstr ""
+"<strong>Vzdálenost (C2):</strong> součet přestupů, vypočítaný pomocí "
+"Haversinova vzorce na souřadnicích každého stadionu."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>Software:</strong> tres módulos (planificador, calculadora y "
+"programa genético) con la biblioteca DEAP, separados de una aplicación web "
+"en Django."
+msgstr ""
+"<strong>Software:</strong> tři moduly (plánovač, kalkulačka a genetický "
+"program) s knihovnou DEAP, oddělené od webové aplikace v Django."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
+"generaciones."
+msgstr "Zkuste 30 týmů, 163 zápasů na tým, série na 5 zápasů a 20 generací."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Comparación de la búsqueda aleatoria y la programación genética"
+msgstr "Srovnání náhodného vyhledávání a genetického programování"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Método"
+msgstr "Metoda"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de cruce"
+msgstr "Pravděpodobně. překročení"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Prob. de mutación"
+msgstr "Pravděpodobně. mutace"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Viabilidad (C1)"
+msgstr "Proveditelnost (C1)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Distancia total (C2)"
+msgstr "Celková vzdálenost (C2)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Tiempo"
+msgstr "Čas"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Búsqueda aleatoria"
+msgstr "Náhodné vyhledávání"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "0 (válido)"
+msgstr "0 (platná)"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "menor distancia"
+msgstr "Kratší vzdálenost"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Programación genética"
+msgstr "Genetické programování"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"<strong>La programación genética no superó a la búsqueda aleatoria.</strong>"
+" Dio una distancia 19.5%% mayor y tardó casi 17 veces más. El mejor "
+"calendario siempre salió de la generación inicial, que es aleatoria."
+msgstr ""
+"<strong>Genetické programování nepřekonalo náhodné vyhledávání.</strong> "
+"Ukázalo vzdálenost o 19,5 % větší a trvalo téměř 17krát déle. Nejlepší "
+"kalendář vždy pocházel z počáteční generace, která je náhodná."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "La tesis identificó estas causas:"
+msgstr "Práce identifikovala tyto příčiny:"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Los operadores genéricos de cruce y mutación cambian nodos sin conocer el "
+"problema. Casi siempre producen calendarios inválidos."
+msgstr ""
+"Generické operátory křížení a mutací mění uzly, aniž by znaly problém. Téměř"
+" vždy produkují neplatné kalendáře."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La función de aptitud le da mucho más peso a la viabilidad que a la "
+"distancia. Un hijo inválido pierde siempre contra un padre válido."
+msgstr ""
+"Funkce způsobilosti klade mnohem větší váhu životaschopnosti než "
+"vzdálenosti. Neplatné dítě vždy prohrává s platným rodičem."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El algoritmo convergió pronto en un óptimo local y conservó solo las "
+"soluciones iniciales."
+msgstr ""
+"Algoritmus brzy konvergoval k lokálnímu optimumu a ponechal pouze počáteční "
+"řešení."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"Un resultado negativo también es un resultado. Muestra que la representación"
+" y los operadores importan tanto como el algoritmo."
+msgstr ""
+"Negativní výsledek je také výsledkem. Ukazuje, že reprezentace a operátory "
+"jsou stejně důležité jako algoritmus."
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"La tesis propuso operadores contextuales: en lugar de cambiar nodos al azar,"
+" intercambiar series o bloques completos que mantengan el calendario válido."
+" También mencionó la computación cuántica para explorar muchas "
+"configuraciones a la vez."
+msgstr ""
+"Práce navrhovala kontextové operátory: místo náhodné změny uzlů vyměňujte "
+"celé řady nebo bloky, které udržují kalendář platný. Zmínil také kvantové "
+"výpočty pro zkoumání mnoha konfigurací najednou."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Ver qué se ha hecho después de la tesis"
+msgstr "Podívejte se, co bylo uděláno po diplomové práci"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mayo de 2026"
+msgstr "Květen 2026"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Versión pre-oficial del documento de la tesis."
+msgstr "Předoficiální verze diplomové práce."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "23 de julio de 2026"
+msgstr "23. července 2026"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Defensa en la Ciudad de México. Tesis aprobada."
+msgstr "Obrana v Mexico City. Diplomová práce schválena."
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Documento de la tesis, versión pre-oficial"
+msgstr "Diplomová dokumentace, předoficiální verze"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Presentación de la defensa"
+msgstr "Prezentace obhajoby"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Cita en formato APA:"
+msgstr "Citace ve formátu APA:"
+
+#: documentacion/templates/documentacion/index.html
+msgid "Documentación del proyecto"
+msgstr "Dokumentace projektu"
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Koza-TTP aplica la programación genética a la planificación de temporadas de"
+" béisbol. La documentación tiene dos partes: lo que se hizo en la tesis y lo"
+" que se ha hecho después."
+msgstr ""
+"Koza-TTP aplikuje genetické programování na plánování baseballové sezóny. "
+"Dokumentace má dvě části: co bylo provedeno v diplomové práci a co bylo "
+"provedeno poté."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"El problema, el método, los resultados y lo que aprendimos. Incluye el "
+"hallazgo principal: con operadores genéricos, la programación genética no "
+"superó a la búsqueda aleatoria."
+msgstr ""
+"Problém, metoda, výsledky a to, co jsme se naučili. Zahrnuje hlavní "
+"zjištění: u generických operátorů genetické programování nepřekonalo náhodné"
+" vyhledávání."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Esta parte no cambia. Es el registro del trabajo aprobado el 23 de julio de "
+"2026."
+msgstr ""
+"Tato část se nemění. Jedná se o pracovní záznam schválený 23. července 2026."
+
+#: documentacion/templates/documentacion/index.html
+msgid ""
+"Los cambios y las pruebas nuevas, con su fecha y su estado. Aquí se verá la "
+"versión mejorada del motor junto a la versión de la tesis."
+msgstr ""
+"Změny a nové testy, s jejich datem a stavem. Zde uvidíte vylepšenou verzi "
+"enginu vedle verze diplomové práce."
+
+#: documentacion/templates/documentacion/index.html
+msgid "Esta parte crece con cada avance."
+msgstr "Tato část roste s každým postupem."
