@@ -11,7 +11,6 @@ This module must stay importable from settings.py, so it has no Django imports.
 SITE_LANGUAGES = [
     ("es-mx", "Spanish (Mexico)", "Español de México"),
     # Lenguas indígenas de México: van junto al español para que se encuentren rápido
-    ("nhe", "Nahuatl (Eastern Huasteca)", "Náhuatl (Huasteca)"),
     ("yua", "Yucatec Maya", "Maaya t'aan"),
     ("zap", "Zapotec", "Zapoteco"),
     ("otq", "Querétaro Otomi", "Hñäñho"),
@@ -71,11 +70,13 @@ TARGET_LANGUAGES = [code for code, _e, _n in SITE_LANGUAGES if code != SOURCE_LA
 
 # Mexican indigenous languages. Their machine translations are less reliable, so the
 # site shows a notice asking native speakers to review them.
-INDIGENOUS_LANGUAGES = ["nhe", "yua", "zap", "otq"]
+INDIGENOUS_LANGUAGES = ["yua", "zap", "otq"]
 
 # Only Google Translate offers these (Azure doesn't). translate_site uses Google for
-# them even when the backend is Azure. Sources: machinetranslate.org/nahuatl, /zapotec.
-GOOGLE_ONLY_LANGUAGES = ["nhe", "zap"]
+# them even when the backend is Azure. Source: machinetranslate.org/zapotec.
+# Nahuatl (nhe) is also Google-only; it was left out on 2026-11-04 because Google
+# blocked the requests. To add it back, put it here and in SITE_LANGUAGES.
+GOOGLE_ONLY_LANGUAGES = ["zap"]
 
 # Site language code -> code the machine translation service expects.
 LANGUAGE_MAP = {code: code for code in TARGET_LANGUAGES}
@@ -90,8 +91,6 @@ EXTRA_LANG_INFO = {
     "tl": {"bidi": False, "code": "tl", "name": "Tagalog", "name_local": "Tagalog"},
     "yo": {"bidi": False, "code": "yo", "name": "Yoruba", "name_local": "Yorùbá"},
     "zu": {"bidi": False, "code": "zu", "name": "Zulu", "name_local": "isiZulu"},
-    "nhe": {"bidi": False, "code": "nhe", "name": "Nahuatl (Eastern Huasteca)",
-            "name_local": "Náhuatl (Huasteca)"},
     "yua": {"bidi": False, "code": "yua", "name": "Yucatec Maya", "name_local": "Maaya t'aan"},
     "zap": {"bidi": False, "code": "zap", "name": "Zapotec", "name_local": "Zapoteco"},
     "otq": {"bidi": False, "code": "otq", "name": "Querétaro Otomi", "name_local": "Hñäñho"},
