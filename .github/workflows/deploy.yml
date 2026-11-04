@@ -20,11 +20,11 @@ jobs:
           VM_SSH_KEY: ${{ secrets.VM_SSH_KEY }}
         run: |
           if [ -z "$VM_HOST" ] || [ -z "$VM_SSH_KEY" ]; then
-            echo "VM_HOST / VM_SSH_KEY no están configurados; no se despliega."
-            exit 0
+            echo "::error::Faltan los secretos VM_HOST / VM_SSH_KEY; no se publicó nada."
+            exit 1
           fi
           mkdir -p ~/.ssh
           echo "$VM_SSH_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -H "$VM_HOST" >> ~/.ssh/known_hosts
-          ssh ubuntu@"$VM_HOST" 'bash /srv/koza-ttp/deploy/deploy.sh'
+          ssh -i ~/.ssh/id_ed25519 ubuntu@"$VM_HOST" 'bash /srv/koza-ttp/deploy/deploy.sh'

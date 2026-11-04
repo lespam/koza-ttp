@@ -1,0 +1,29 @@
+name: Pruebas
+
+# Corre las pruebas en cada PR y en cada push a main. No publica nada.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  pruebas:
+    runs-on: ubuntu-24.04
+    env:
+      # Valores solo para las pruebas. Con DEBUG=False el sitio redirige todo a HTTPS.
+      SECRET_KEY: solo-para-pruebas
+      DEBUG: "True"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Instalar Graphviz (lo necesita pygraphviz)
+        run: sudo apt-get update && sudo apt-get install -y graphviz libgraphviz-dev
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+      - name: Compilar traducciones
+        run: python manage.py translate_site --compile-only
+      - name: Pruebas
+        run: python manage.py test
