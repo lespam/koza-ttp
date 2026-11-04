@@ -6,7 +6,6 @@ import datetime
 from datetime import timezone
 from typing import Any
 
-import pygraphviz as pgv
 from django.conf import settings
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin

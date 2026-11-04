@@ -22,7 +22,6 @@ import matplotlib.pyplot as plt
 # ------------------------------------
 
 from deap import base, creator, tools, gp
-import pygraphviz as pgv
 
 from programa_genetico.calculadora import Calculadora
 
@@ -375,6 +374,10 @@ class ProgramaGenetico():
         timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
         nodes, edges, labels = grafica
         
+        # Import local: pygraphviz necesita compilar C en Windows. Así el resto del
+        # proyecto (por ejemplo, manage.py translate_site) funciona sin instalarlo.
+        import pygraphviz as pgv
+
         g = pgv.AGraph()
         g.add_nodes_from(nodes)
         g.add_edges_from(edges)

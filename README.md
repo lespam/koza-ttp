@@ -49,3 +49,14 @@ sudo apt-get install -y graphviz graphviz-dev libgraphviz-dev
 pip install pygraphviz==1.9
 pip install -r requirements.txt
 ```
+## En Windows, sin compilador de C
+
+`pygraphviz` necesita compilar código en C, y en Windows eso pide Microsoft C++ Build Tools. Si solo necesitas tareas que no dibujan el árbol, como traducir el sitio, instala todo menos `pygraphviz`:
+
+```
+findstr /v pygraphviz requirements.txt > requirements-windows.txt
+pip install -r requirements-windows.txt
+python manage.py translate_site
+```
+
+El dibujo del árbol (al ejecutar la optimización) sí necesita `pygraphviz`.
