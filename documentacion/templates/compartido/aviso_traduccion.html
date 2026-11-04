@@ -1,0 +1,13 @@
+{% load i18n %}{% if traduccion_en_revision %}{% get_current_language as LANGUAGE_CODE %}
+<aside class="aviso-traduccion" aria-labelledby="aviso-traduccion-titulo">
+    <p id="aviso-traduccion-titulo"><strong>{% translate "Traducción automática, en revisión." %}</strong>
+    {% translate "Esta página se tradujo con inteligencia artificial y puede tener errores." %}</p>
+    {% comment %}El mismo aviso en español, por si la traducción no se entiende{% endcomment %}
+    <p lang="es-MX"><strong>Traducción automática, en revisión.</strong>
+    Esta página se tradujo con inteligencia artificial. Si hablas esta lengua, ayúdanos a corregirla.</p>
+    <p lang="es-MX">
+        <a href="https://github.com/lespam/koza-ttp/issues/new?title=Correcci%C3%B3n%20de%20traducci%C3%B3n%20({{ LANGUAGE_CODE }})">Enviar una corrección</a>
+        {% for lang in site_languages %}{% if lang.code == "es-mx" %}· <a href="{{ lang.url }}">Ver en español</a>{% endif %}{% endfor %}
+    </p>
+</aside>
+{% endif %}

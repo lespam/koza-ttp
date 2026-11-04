@@ -46,3 +46,27 @@ class EscaparPorcentaje(SimpleTestCase):
                          "A 19.5%% greater, %(n)s times.")
         self.assertEqual(Command.escape_percent(fuente, "A 19.5%% greater."), "A 19.5%% greater.")
         self.assertFalse(Command.same_markup(fuente, "A 19.5% greater, %(n)s times."))
+
+
+class LenguasIndigenas(SimpleTestCase):
+    """Náhuatl, maya, zapoteco y otomí: traducción automática con aviso de revisión."""
+
+    def test_aviso_solo_en_lenguas_indigenas(self):
+        for code in ("nhe", "yua", "zap", "otq"):
+            with self.subTest(idioma=code):
+                r = self.client.get(f"/{code}/documentacion/")
+                self.assertEqual(r.status_code, 200)
+                self.assertContains(r, f'lang="{code}"')
+                self.assertContains(r, 'class="aviso-traduccion"')
+                self.assertContains(r, "Enviar una corrección")
+        for url in ("/documentacion/", "/en/documentacion/"):
+            with self.subTest(url=url):
+                self.assertNotContains(self.client.get(url), 'class="aviso-traduccion"')
+
+    def test_nahuatl_y_zapoteco_usan_google(self):
+        from project.languages import GOOGLE_ONLY_LANGUAGES
+        from tesis.management.commands.translate_site import Command
+        self.assertEqual(sorted(GOOGLE_ONLY_LANGUAGES), ["nhe", "zap"])
+        # deep-translator no los conoce; el comando debe aceptarlos igual
+        for code in GOOGLE_ONLY_LANGUAGES + ["yua"]:
+            self.assertEqual(Command.google_translator(code)._target, code)
