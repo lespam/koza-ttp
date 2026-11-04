@@ -41,6 +41,13 @@
             <p>{% blocktranslate trimmed %}El algoritmo evalúa continuamente cada árbol mediante un criterio estricto de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar características clave y generar nuevos árboles cada vez más prometedores.{% endblocktranslate %} 📈 {% translate "¡Este proceso se repite en un bucle evolutivo hasta hallar la solución óptima y más eficiente!" %}</p>
         </section>
 
+        {% if not configuracion %}
+        <section class="dashboard-demo">
+            <h2 class="dashboard-title">{% translate "Todavía no hay ninguna configuración" %}</h2>
+            <p>{% translate "Para optimizar un calendario, primero registra los equipos, la liga y el torneo, y después crea una configuración." %}</p>
+            <p><a class="btn-primary-active" href="{% url 'tesis:configuracion_create' %}">{% translate "Crear una configuración" %}</a></p>
+        </section>
+        {% else %}
         <section class="dashboard-demo">
             <h2 class="dashboard-title">🛠️ {% blocktranslate trimmed with id=configuracion.id|default:"N/A" %}Panel de control: configuración activa (ID: {{ id }}){% endblocktranslate %}</h2>
 
@@ -129,10 +136,11 @@
                         </div>
                     {% endif %}
 
-                    <a href="?ejecutar=true" class="btn-primary-active top-margin">🚀 {% translate "Ejecutar optimización" %}</a>
+                    <a href="?configuracion={{ configuracion.pk }}&amp;ejecutar=true" class="btn-primary-active top-margin">🚀 {% translate "Ejecutar optimización" %}</a>
                 </div>
             </div>
         </section>
+        {% endif %}
 
         <section class="section-content">
             <h2>📖 {% translate "Guía operativa del sistema" %}</h2>

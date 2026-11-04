@@ -10,6 +10,7 @@ from django.conf import settings
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.core import serializers
+from django.db.models import Count
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse, reverse_lazy
@@ -30,9 +31,12 @@ class DashboardView(View):
     la ejecución del algoritmo genético al presionar el botón en el dashboard.
     """
     def get(self, request, *args, **kwargs):
-        # 1. Obtener la configuración por defecto (ID 5)
-        config = get_object_or_404(Configuracion, pk=4)
-        
+        # 1. La configuración elegida (?configuracion=<id>) o, si no se eligió, la que
+        #    tiene el calendario con más juegos. Con la base vacía no hay ninguna.
+        config = self.configuracion_elegida(request)
+        if config is None:
+            return render(request, 'tesis/dashboard.html', {"configuracion": None, "juegos": []})
+
         # Empezamos asumiendo que mostraremos el calendario base de la configuración
         calendario_actual = config.calendario
         
@@ -65,6 +69,16 @@ class DashboardView(View):
         
         return render(request, 'tesis/dashboard.html', context)
 
+    @staticmethod
+    def configuracion_elegida(request):
+        pk = request.GET.get('configuracion')
+        if pk:
+            return get_object_or_404(Configuracion, pk=pk)
+        return (Configuracion.objects
+                .annotate(num_juegos=Count('calendario__series__juegos'))
+                .order_by('-num_juegos', '-pk')
+                .first())
+
 def my_view(request):
     ruta_svg = os.path.join(settings.BASE_DIR, 'media', 'svg', 'arbol.svg')
     try:
@@ -95,7 +109,6 @@ class EquipoDetailView(generic.DetailView):
     template_name = "tesis/equipo_detail.html"
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)
-        context["calcula"] = self.object.test_communication_equipo()
         return context
 
 class EquipoUpdateView(SuccessMessageMixin, generic.UpdateView):
@@ -134,7 +147,6 @@ class LigaDetailView(generic.DetailView):
     template_name = "tesis/liga_detail.html"
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)
-        context["calcula"] = self.object.test_communication_liga()
         return context
 
 class LigaUpdateView(SuccessMessageMixin, generic.UpdateView):
@@ -323,7 +335,6 @@ class JuegoDetailView(generic.DetailView):
     model = Juego
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)
-        context["calcula"] = self.object.test_communication_juego()
         return context
 
 class JuegoUpdateView(SuccessMessageMixin, generic.UpdateView):
@@ -448,7 +459,6 @@ class SerieDetailView(generic.DetailView):
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)
         context["juegos"] = Juego.objects.filter(serie=self.object)
-        context["calcula"] = self.object.test_communication_serie()
         return context
 
 class SerieUpdateView(SuccessMessageMixin, generic.UpdateView):
@@ -485,7 +495,6 @@ class CondicionDetailView(generic.DetailView):
     model = Condicion
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)
-        context["calcula"] = self.object.test_communication_condicion()
         return context
 
 class CondicionUpdateView(SuccessMessageMixin, generic.UpdateView):
@@ -507,7 +516,7 @@ class CondicionDeleteView(SuccessMessageMixin, generic.DeleteView):
 # PROGRAMACIÓN GENÉTICA (Vistas Auxiliares)
 # ==========================================
 class ProgramaFacadeView(generic.TemplateView):
-    template_name = "tesis/programa_facade.html"
+    template_name = "tesis/programa_facade_detail.html"
 
 class ProgramaFacadeFormView(SuccessMessageMixin, generic.FormView):
     form_class = ProgramaFacadeForm

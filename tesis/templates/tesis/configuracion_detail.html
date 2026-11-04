@@ -76,7 +76,7 @@
       <h2>Programacion Genética</h2>
       <p><a href="{% url 'tesis:crear_arbol' configuracion.id %}">Ver arbol</a></p>
 
-      <a href="{% url 'tesis:programacion_genetica' configuracion.id %}">Ejecutar PF para el calendario {{ configuracion.calendario.id }}</a>
+      <a href="{% url 'tesis:ejecutar_programa_genetico' configuracion.id %}">Ejecutar PF para el calendario {{ configuracion.calendario.id }}</a>
     </section>
   </body>
 </html>
