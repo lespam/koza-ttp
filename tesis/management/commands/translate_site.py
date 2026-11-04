@@ -40,6 +40,8 @@ SKIP_DIRS = {"env", "venv", ".venv", "staticfiles", "media", "node_modules", ".g
 # templatize() convierte cada {% translate %} en  gettext(u'...')  con repr() de Python
 GETTEXT_CALL = re.compile(r"""\bgettext\(u?('(?:[^'\\]|\\.)*'|"(?:[^"\\]|\\.)*")\)""")
 PLACEHOLDER = re.compile(r"%\([a-zA-Z_][a-zA-Z0-9_]*\)[sd]")
+# Un % que no es parte de %(x)s ni de %%
+LONE_PERCENT = re.compile(r"(?<!%)%(?![%(])")
 TAG = re.compile(r"</?[a-zA-Z][^>]*>")
 AZURE_BATCH = 50
 AZURE_RETRIES = 10
@@ -82,12 +84,18 @@ class Command(BaseCommand):
             po_path = self.po_path(locale_dir, code)
             po = self.update_catalog(po_path, code, msgids)
 
+            # Repara traducciones viejas que perdieron el %% de un porcentaje
+            for entry in po:
+                if entry.msgstr:
+                    entry.msgstr = self.escape_percent(entry.msgid, entry.msgstr)
+
             pending = [entry for entry in po if not entry.msgstr and not entry.obsolete]
             done = 0
             if translate and pending:
                 sources = [entry.msgid for entry in pending]
                 results = translate(sources, code)
                 for entry, result in zip(pending, results):
+                    result = self.escape_percent(entry.msgid, result) if result else result
                     if result and self.same_markup(entry.msgid, result):
                         entry.msgstr = result
                         done += 1
@@ -152,8 +160,23 @@ class Command(BaseCommand):
         return po
 
     @staticmethod
+    def escape_percent(source, translation):
+        """En {% blocktranslate %} un % literal se escribe %%. Los traductores lo
+        devuelven como un solo %, y Django falla al mostrar la página (ValueError).
+        Si el original tiene %%, todo % suelto de la traducción vuelve a ser %%."""
+        if "%%" not in source:
+            return translation
+        return LONE_PERCENT.sub("%%", translation)
+
+    @staticmethod
     def same_markup(source, translation):
-        """Rechaza traducciones que perdieron variables %(x)s o etiquetas HTML."""
+        """Rechaza traducciones que perdieron variables %(x)s o etiquetas HTML,
+        o que Django no podría formatear."""
+        if "%%" in source or "%(" in source:
+            try:
+                translation % {name: "" for name in re.findall(r"%\(([a-zA-Z_][a-zA-Z0-9_]*)\)", source)}
+            except (ValueError, TypeError, KeyError):
+                return False
         return (sorted(PLACEHOLDER.findall(source)) == sorted(PLACEHOLDER.findall(translation))
                 and len(TAG.findall(source)) == len(TAG.findall(translation)))
 
