@@ -34,6 +34,7 @@ urlpatterns += i18n_patterns(
     #path('admin/', admin.site.urls),
     path('myapp/', include('myapp.urls')),
     #path('', include('myapp.urls')),
+    path('documentacion/', include('documentacion.urls')),
     path('', include('tesis.urls')),
     path('pg/', include('programa_genetico.urls')),
     prefix_default_language=False,

@@ -1,0 +1,117 @@
+{% extends "documentacion/base.html" %}
+{% load i18n %}
+
+{% block titulo %}{% translate "Histórico: la tesis" %}{% endblock %}
+{% block descripcion %}{% translate "La tesis de Koza-TTP: problema, método, resultados y hallazgo principal." %}{% endblock %}
+
+{% block contenido %}
+<div class="envoltura">
+    <p class="miga"><a href="{% url 'documentacion:index' %}">{% translate "Documentación" %}</a> / {% translate "Histórico" %}</p>
+    <h1>{% translate "Histórico: la tesis (2026)" %}</h1>
+    <p class="entrada">{% blocktranslate trimmed %}<cite>Programación genética en la planificación de temporadas de béisbol. Problema de viabilidad y optimización.</cite> Tesis de Ingeniería en Computación, ITAM. Asesor: Dr. Andrés Gómez de Silva Garza. Aprobada el 23 de julio de 2026.{% endblocktranslate %}</p>
+
+    <nav class="indice" aria-labelledby="indice-titulo">
+        <h2 id="indice-titulo">{% translate "En esta página" %}</h2>
+        <ol>
+            <li><a href="#problema">{% translate "El problema" %}</a></li>
+            <li><a href="#metodo">{% translate "El método" %}</a></li>
+            <li><a href="#resultados">{% translate "Los resultados" %}</a></li>
+            <li><a href="#hallazgo">{% translate "El hallazgo principal" %}</a></li>
+            <li><a href="#futuro">{% translate "Trabajo futuro" %}</a></li>
+            <li><a href="#cronologia">{% translate "Cronología" %}</a></li>
+            <li><a href="#materiales">{% translate "Materiales y cita" %}</a></li>
+        </ol>
+    </nav>
+
+    <section aria-labelledby="problema">
+        <h2 id="problema">{% translate "El problema" %}</h2>
+        <p>{% blocktranslate trimmed %}La MLB programa 2,430 juegos para 30 equipos en unos 180 días. Cada equipo viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En 2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km.{% endblocktranslate %}</p>
+        <p>{% blocktranslate trimmed %}Encontrar el calendario con la menor distancia total se conoce como el Problema de Transportación de Torneo (PTT). Es un problema NP-duro: el número de calendarios posibles crece tan rápido que no se pueden revisar todos.{% endblocktranslate %}</p>
+    </section>
+
+    <section aria-labelledby="metodo">
+        <h2 id="metodo">{% translate "El método" %}</h2>
+        <p>{% blocktranslate trimmed %}La programación genética (PG), propuesta por John Koza en 1992, imita la evolución. Crea una población de soluciones, se queda con las mejores y las combina y modifica para formar una nueva generación.{% endblocktranslate %}</p>
+        <ol>
+            <li>{% blocktranslate trimmed %}<strong>Representación:</strong> cada calendario es un árbol. Sus nodos son operaciones como <code>crear_juego</code> (fecha, equipo local, equipo visitante) y <code>obtener_calendario</code>, que une dos listas de juegos.{% endblocktranslate %}</li>
+            <li>{% blocktranslate trimmed %}<strong>Viabilidad (C1):</strong> cada equipo debe jugar exactamente el número de juegos que pide el torneo. Un valor de 0 significa que el calendario es válido.{% endblocktranslate %}</li>
+            <li>{% blocktranslate trimmed %}<strong>Distancia (C2):</strong> la suma de los traslados, calculada con la fórmula de haversine sobre las coordenadas de cada estadio.{% endblocktranslate %}</li>
+            <li>{% blocktranslate trimmed %}<strong>Software:</strong> tres módulos (planificador, calculadora y programa genético) con la biblioteca DEAP, separados de una aplicación web en Django.{% endblocktranslate %}</li>
+        </ol>
+    </section>
+
+    <section aria-labelledby="resultados">
+        <h2 id="resultados">{% translate "Los resultados" %}</h2>
+        <p>{% translate "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 generaciones." %}</p>
+        <div class="tabla-envoltura" role="region" aria-labelledby="tabla-resultados" tabindex="0">
+            <table>
+                <caption id="tabla-resultados">{% translate "Comparación de la búsqueda aleatoria y la programación genética" %}</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">{% translate "Método" %}</th>
+                        <th scope="col">{% translate "Prob. de cruce" %}</th>
+                        <th scope="col">{% translate "Prob. de mutación" %}</th>
+                        <th scope="col">{% translate "Viabilidad (C1)" %}</th>
+                        <th scope="col">{% translate "Distancia total (C2)" %}</th>
+                        <th scope="col">{% translate "Tiempo" %}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">{% translate "Búsqueda aleatoria" %}</th>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>{% translate "0 (válido)" %}</td>
+                        <td class="mejor">2,663,470.70 km <span class="etiqueta">{% translate "menor distancia" %}</span></td>
+                        <td>200.25 s</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{% translate "Programación genética" %}</th>
+                        <td>0.8</td>
+                        <td>0.2</td>
+                        <td>{% translate "0 (válido)" %}</td>
+                        <td>3,182,738.33 km</td>
+                        <td>3,337.81 s</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section aria-labelledby="hallazgo" class="destacado">
+        <h2 id="hallazgo">{% translate "El hallazgo principal" %}</h2>
+        <p>{% blocktranslate trimmed %}<strong>La programación genética no superó a la búsqueda aleatoria.</strong> Dio una distancia 19.5% mayor y tardó casi 17 veces más. El mejor calendario siempre salió de la generación inicial, que es aleatoria.{% endblocktranslate %}</p>
+        <p>{% translate "La tesis identificó estas causas:" %}</p>
+        <ul>
+            <li>{% blocktranslate trimmed %}Los operadores genéricos de cruce y mutación cambian nodos sin conocer el problema. Casi siempre producen calendarios inválidos.{% endblocktranslate %}</li>
+            <li>{% blocktranslate trimmed %}La función de aptitud le da mucho más peso a la viabilidad que a la distancia. Un hijo inválido pierde siempre contra un padre válido.{% endblocktranslate %}</li>
+            <li>{% blocktranslate trimmed %}El algoritmo convergió pronto en un óptimo local y conservó solo las soluciones iniciales.{% endblocktranslate %}</li>
+        </ul>
+        <p>{% blocktranslate trimmed %}Un resultado negativo también es un resultado. Muestra que la representación y los operadores importan tanto como el algoritmo.{% endblocktranslate %}</p>
+    </section>
+
+    <section aria-labelledby="futuro">
+        <h2 id="futuro">{% translate "Trabajo futuro" %}</h2>
+        <p>{% blocktranslate trimmed %}La tesis propuso operadores contextuales: en lugar de cambiar nodos al azar, intercambiar series o bloques completos que mantengan el calendario válido. También mencionó la computación cuántica para explorar muchas configuraciones a la vez.{% endblocktranslate %}</p>
+        <p><a href="{% url 'documentacion:avances' %}">{% translate "Ver qué se ha hecho después de la tesis" %}</a></p>
+    </section>
+
+    <section aria-labelledby="cronologia">
+        <h2 id="cronologia">{% translate "Cronología" %}</h2>
+        <ol class="linea">
+            <li><time datetime="2026-05">{% translate "Mayo de 2026" %}</time> · {% translate "Versión pre-oficial del documento de la tesis." %}</li>
+            <li><time datetime="2026-07-23">{% translate "23 de julio de 2026" %}</time> · {% translate "Defensa en la Ciudad de México. Tesis aprobada." %}</li>
+        </ol>
+    </section>
+
+    <section aria-labelledby="materiales">
+        <h2 id="materiales">{% translate "Materiales y cita" %}</h2>
+        <ul>
+            <li><a href="https://github.com/lespam/koza-ttp/blob/main/docs/tesis/2026-05_tesis_version_pre-oficial.pdf">{% translate "Documento de la tesis, versión pre-oficial" %}</a> (PDF, 4.8 MB, {% translate "en español" %})</li>
+            <li><a href="https://github.com/lespam/koza-ttp/blob/main/docs/tesis/2026-07-23_defensa_presentacion.pdf">{% translate "Presentación de la defensa" %}</a> (PDF, 2.9 MB, {% translate "en español" %})</li>
+        </ul>
+        <p>{% translate "Cita en formato APA:" %}</p>
+        <p class="cita" lang="es-MX">Brenes Valencia, L. P. (2026). <i>Programación genética en la planificación de temporadas de béisbol</i> (Tesis de Ingeniería en Computación). Instituto Tecnológico Autónomo de México (ITAM), Ciudad de México, México.</p>
+    </section>
+</div>
+{% endblock %}

@@ -1,0 +1,220 @@
+/* Documentación de Koza-TTP.
+   Contraste: todo texto cumple al menos 4.5:1 (WCAG 2.2 AA), en modo claro y oscuro. */
+
+:root {
+    --fondo: #f7f8fa;
+    --superficie: #ffffff;
+    --texto: #1f2933;
+    --texto-suave: #4b5563;
+    --enlace: #0b5cad;
+    --enlace-visitado: #6b3fa0;
+    --borde: #c9d1db;
+    --cabecera: #0a2540;
+    --cabecera-texto: #ffffff;
+    --foco: #ffbf47;
+    --destacado: #eef6ff;
+    --hecho-fondo: #e6f4ea;  --hecho-texto: #1b5e20;
+    --curso-fondo: #fff4e0;  --curso-texto: #7a4100;
+    --plan-fondo: #eceff1;   --plan-texto: #37474f;
+    color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fondo: #0f1720;
+        --superficie: #17212b;
+        --texto: #e6e9ee;
+        --texto-suave: #b8c0cc;
+        --enlace: #8cc4ff;
+        --enlace-visitado: #c9a8ff;
+        --borde: #3a4756;
+        --cabecera: #0a1a2c;
+        --destacado: #13263a;
+        --hecho-fondo: #183d24;  --hecho-texto: #b9e6c4;
+        --curso-fondo: #43300f;  --curso-texto: #ffd9a0;
+        --plan-fondo: #2b353f;   --plan-texto: #d5dde3;
+        color-scheme: dark;
+    }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+}
+
+a { color: var(--enlace); text-underline-offset: 0.15em; }
+a:visited { color: var(--enlace-visitado); }
+a:hover { text-decoration-thickness: 2px; }
+
+:focus-visible {
+    outline: 3px solid var(--foco);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px #000;
+}
+
+/* Enlace para saltar al contenido: visible solo al recibir foco */
+.saltar {
+    position: absolute;
+    left: 1rem;
+    top: -4rem;
+    z-index: 10;
+    padding: 0.6rem 1rem;
+    background: var(--superficie);
+    color: var(--enlace);
+    font-weight: 600;
+}
+.saltar:focus { top: 1rem; }
+
+/* Cabecera */
+.cabecera { background: var(--cabecera); color: var(--cabecera-texto); }
+.cabecera-interior {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1.5rem;
+}
+.cabecera a, .cabecera a:visited { color: var(--cabecera-texto); }
+.marca { font-weight: 700; font-size: 1.15rem; text-decoration: none; margin-inline-end: auto; }
+
+.menu { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.25rem; }
+.menu a {
+    display: inline-block;
+    min-height: 44px;
+    padding: 0.55rem 0.75rem;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+.menu a:hover { border-bottom-color: rgba(255, 255, 255, 0.6); }
+.menu a[aria-current="page"] { border-bottom-color: var(--foco); font-weight: 600; }
+
+.idioma { display: flex; align-items: center; gap: 0.5rem; }
+.idioma label { font-size: 0.95rem; }
+.idioma select, .idioma button {
+    min-height: 44px;
+    font: inherit;
+    font-size: 0.95rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+    background: var(--cabecera);
+    color: var(--cabecera-texto);
+}
+
+/* Contenido */
+main { display: block; }
+main:focus { outline: none; }
+.envoltura { max-width: 46rem; margin: 0 auto; padding: 2rem 1rem 3rem; }
+
+h1, h2, h3 { line-height: 1.25; }
+h1 { font-size: 2rem; margin: 0.25rem 0 1rem; }
+h2 { font-size: 1.45rem; margin: 2.5rem 0 0.75rem; }
+h3 { font-size: 1.15rem; margin: 0.25rem 0 0.5rem; }
+section > h2:first-child { scroll-margin-top: 1rem; }
+
+.entrada { font-size: 1.15rem; color: var(--texto-suave); }
+.miga { font-size: 0.95rem; color: var(--texto-suave); margin: 0; }
+.nota { font-size: 0.95rem; color: var(--texto-suave); }
+code { font-family: ui-monospace, "Cascadia Mono", Menlo, monospace; font-size: 0.92em; }
+li + li { margin-top: 0.35rem; }
+.menu li + li, .tarjetas li + li { margin-top: 0; }
+
+/* Tarjetas de la portada */
+.tarjetas { list-style: none; padding: 0; display: grid; gap: 1rem; margin: 2rem 0 0; }
+@media (min-width: 44rem) { .tarjetas { grid-template-columns: 1fr 1fr; } }
+.tarjeta {
+    margin: 0;
+    padding: 1.25rem;
+    background: var(--superficie);
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+}
+.tarjeta h2 { margin-top: 0; font-size: 1.25rem; }
+
+/* Índice de la página */
+.indice {
+    margin: 1.5rem 0;
+    padding: 1rem 1.25rem;
+    background: var(--superficie);
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+}
+.indice h2 { font-size: 1.05rem; margin: 0 0 0.5rem; }
+.indice ol { margin: 0; padding-inline-start: 1.25rem; }
+
+/* Bloque destacado del hallazgo principal */
+.destacado {
+    margin-top: 2.5rem;
+    padding: 0.25rem 1.25rem 1rem;
+    background: var(--destacado);
+    border-inline-start: 5px solid var(--enlace);
+    border-radius: 6px;
+}
+.destacado h2 { margin-top: 1rem; }
+
+/* Tablas: se desplazan en pantallas angostas sin romper la página */
+.tabla-envoltura { overflow-x: auto; margin: 1rem 0; border: 1px solid var(--borde); border-radius: 8px; background: var(--superficie); }
+table { border-collapse: collapse; width: 100%; min-width: 36rem; font-size: 0.97rem; }
+caption { text-align: start; font-weight: 600; padding: 0.75rem 1rem; }
+th, td { padding: 0.6rem 1rem; text-align: start; border-top: 1px solid var(--borde); vertical-align: top; }
+thead th { font-size: 0.92rem; }
+.mejor { font-weight: 600; }
+.etiqueta { display: block; font-size: 0.85rem; font-weight: 400; color: var(--texto-suave); }
+
+/* Estados: el texto dice el estado; el color solo lo refuerza */
+.estado {
+    display: inline-block;
+    padding: 0.1rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.estado-hecho { background: var(--hecho-fondo); color: var(--hecho-texto); }
+.estado-curso { background: var(--curso-fondo); color: var(--curso-texto); }
+.estado-planeado { background: var(--plan-fondo); color: var(--plan-texto); }
+
+/* Registro de avances y cronología */
+.registro { list-style: none; padding: 0; margin: 1rem 0 0; }
+.registro > li + li { margin-top: 1rem; }
+.registro article {
+    padding: 1rem 1.25rem;
+    background: var(--superficie);
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+}
+.meta { margin: 0 0 0.25rem; font-size: 0.95rem; color: var(--texto-suave); }
+.linea { padding-inline-start: 1.25rem; }
+
+.cita {
+    padding: 0.75rem 1rem;
+    background: var(--superficie);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    font-size: 0.97rem;
+}
+
+/* Pie */
+.pie {
+    border-top: 1px solid var(--borde);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--texto-suave);
+}
+.pie p { margin: 0.25rem 0; }
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
+@media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+}
