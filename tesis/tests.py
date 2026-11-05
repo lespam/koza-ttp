@@ -76,3 +76,48 @@ class TodasLasPaginas(TestCase):
             url = "/" + ruta.replace("<int:pk>", str(pks.get(prefijo, calendario.pk)))
             with self.subTest(url=url):
                 self.assertEqual(self.client.get(url).status_code, 200)
+
+
+class FlujoCompleto(TestCase):
+    """Del registro al calendario, como lo haría una persona con los formularios:
+    equipos → liga → torneo → calendario → configuración → generar juegos → inicio."""
+
+    def test_del_registro_al_calendario(self):
+        equipos = [("SEA", 47.59, -122.33), ("CHC", 41.94, -87.65),
+                   ("NYY", 40.83, -73.93), ("BOS", 42.35, -71.10)]
+        for abreviatura, lat, lon in equipos:
+            r = self.client.post("/equipo/create/", {"team_abbreviation": abreviatura,
+                                                     "team_name": abreviatura, "lat": lat, "lon": lon})
+            self.assertEqual(r.status_code, 302)
+
+        r = self.client.post("/liga/create/", {"nombre": "Liga", "equipos": list(
+            Equipo.objects.values_list("pk", flat=True))})
+        self.assertEqual(r.status_code, 302)
+
+        r = self.client.post("/torneo/create/", {
+            "nombre": "Torneo", "liga": [Liga.objects.get().pk], "fecha_inicio": "2026-04-01",
+            "fecha_fin": "2026-09-30", "dias_seleccionados": "Lunes, Martes",
+            "numero_de_juegos": 6, "numero_de_series": 3, "metodo": "haversine", "unidad": "km"})
+        self.assertEqual(r.status_code, 302)
+        torneo = Torneo.objects.get()
+
+        r = self.client.post(f"/calendario/create/{torneo.pk}/", {"torneo": torneo.pk})
+        self.assertEqual(r.status_code, 302)
+        calendario = Calendario.objects.get()
+
+        r = self.client.post(f"/configuracion/create/{calendario.pk}/", {
+            "calendario": calendario.pk, "nombre": "Prueba", "poblacion": 10, "generaciones": 1,
+            "probabilidad_de_cruce": 0.8, "probabilidad_de_reproduccion": 0.2})
+        self.assertEqual(r.status_code, 302)
+        configuracion = Configuracion.objects.get()
+
+        r = self.client.get(f"/configuracion/{configuracion.pk}/generar_juegos/")
+        self.assertRedirects(r, f"/calendario/{calendario.pk}/")
+        juegos = Juego.objects.filter(serie__calendario=calendario).count()
+        self.assertGreater(juegos, 0)
+
+        r = self.client.get(f"/calendario/{calendario.pk}/")
+        self.assertEqual(r.status_code, 200)
+        r = self.client.get(f"/?configuracion={configuracion.pk}")
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual(len(r.context["juegos"]), min(juegos, 50))
