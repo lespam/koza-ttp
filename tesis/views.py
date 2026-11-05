@@ -12,7 +12,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.core import serializers
 from django.db.models import Count
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse, reverse_lazy
 from django.utils.safestring import mark_safe
 from django.views import View, generic
@@ -25,6 +25,16 @@ from .services import run_genetic_algorithm_logic
 # ==========================================
 # VISTA PRINCIPAL (DASHBOARD INTEGRADO)
 # ==========================================
+class InicioView(View):
+    """Portada. Los enlaces viejos a la demo (/?ejecutar=true, /?configuracion=4)
+    siguen funcionando: se mandan a /demo/ con la misma consulta."""
+
+    def get(self, request):
+        if request.GET.get("ejecutar") or request.GET.get("configuracion"):
+            return redirect(f"{reverse('tesis:dashboard')}?{request.GET.urlencode()}")
+        return render(request, "tesis/inicio.html", {"seccion": "inicio_sitio"})
+
+
 class DashboardView(View):
     """
     Vista principal que integra la configuración por defecto y 
@@ -35,7 +45,7 @@ class DashboardView(View):
         #    tiene el calendario con más juegos. Con la base vacía no hay ninguna.
         config = self.configuracion_elegida(request)
         if config is None:
-            return render(request, 'tesis/dashboard.html', {"configuracion": None, "juegos": []})
+            return render(request, 'tesis/dashboard.html', {"configuracion": None, "juegos": [], "seccion": "demo"})
 
         # Empezamos asumiendo que mostraremos el calendario base de la configuración
         calendario_actual = config.calendario
@@ -59,6 +69,7 @@ class DashboardView(View):
             juegos = []
 
         context = {
+            "seccion": "demo",
             "configuracion": config,
             "calendario": calendario_actual, 
             "juegos": juegos,

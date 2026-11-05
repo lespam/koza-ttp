@@ -1,5 +1,6 @@
 import datetime
 
+from django.urls import reverse
 from django.test import TestCase
 from django.urls import URLPattern
 
@@ -33,22 +34,37 @@ def crear_datos_de_ejemplo():
 
 
 class PaginaDeInicio(TestCase):
-    def test_base_vacia_muestra_como_empezar(self):
+    def test_portada(self):
         r = self.client.get("/")
         self.assertEqual(r.status_code, 200)
-        self.assertContains(r, "Crear una configuración")
+        self.assertContains(r, "el algoritmo no le ganó al azar")
+        self.assertContains(r, 'id="boton-tema"')
+        for nombre in ("documentacion:index", "tesis:guia", "documentacion:historico"):
+            self.assertContains(r, f'href="{reverse(nombre)}"')
+
+    def test_enlaces_viejos_a_la_demo_siguen_funcionando(self):
+        r = self.client.get("/?configuracion=4&ejecutar=true")
+        self.assertRedirects(r, "/demo/?configuracion=4&ejecutar=true", fetch_redirect_response=False)
+
+
+class PaginaDeDemo(TestCase):
+    def test_base_vacia_muestra_como_empezar(self):
+        r = self.client.get("/demo/")
+        self.assertEqual(r.status_code, 200)
+        self.assertContains(r, "Todavía no hay ninguna configuración")
+        self.assertContains(r, "Para presentarlo a tu equipo")
 
     def test_elige_la_configuracion_con_juegos(self):
         Configuracion.objects.create(nombre="Sin calendario", poblacion=1, generaciones=1,
                                      probabilidad_de_cruce=0, probabilidad_de_reproduccion=0)
         configuracion = crear_datos_de_ejemplo()
-        r = self.client.get("/")
+        r = self.client.get("/demo/")
         self.assertEqual(r.context["configuracion"], configuracion)
         self.assertEqual(len(r.context["juegos"]), 2)
         self.assertContains(r, f"?configuracion={configuracion.pk}&amp;ejecutar=true")
 
     def test_configuracion_inexistente_da_404(self):
-        self.assertEqual(self.client.get("/?configuracion=999").status_code, 404)
+        self.assertEqual(self.client.get("/demo/?configuracion=999").status_code, 404)
 
 
 class TodasLasPaginas(TestCase):
@@ -118,7 +134,7 @@ class FlujoCompleto(TestCase):
 
         r = self.client.get(f"/calendario/{calendario.pk}/")
         self.assertEqual(r.status_code, 200)
-        r = self.client.get(f"/?configuracion={configuracion.pk}")
+        r = self.client.get(f"/demo/?configuracion={configuracion.pk}")
         self.assertEqual(r.status_code, 200)
         self.assertEqual(len(r.context["juegos"]), min(juegos, 50))
 
