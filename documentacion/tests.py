@@ -102,3 +102,47 @@ class CambioDeIdioma(SimpleTestCase):
                     self.client.cookies[settings.LANGUAGE_COOKIE_NAME] = cookie
                 r = self.client.post(reverse("set_language"), {"language": idioma, "next": origen})
                 self.assertRedirects(r, destino, fetch_redirect_response=False)
+
+
+class IdiomaAutomatico(SimpleTestCase):
+    """La primera visita lleva al idioma del navegador; el selector manda."""
+
+    pagina = "/documentacion/historico/"
+
+    def test_navegador_en_ingles_va_a_ingles(self):
+        r = self.client.get(self.pagina + "?x=1", HTTP_ACCEPT_LANGUAGE="en-US,en;q=0.9")
+        self.assertRedirects(r, "/en/documentacion/historico/?x=1", fetch_redirect_response=False)
+
+    def test_navegador_en_chino(self):
+        r = self.client.get(self.pagina, HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.9")
+        self.assertRedirects(r, "/zh-hans/documentacion/historico/", fetch_redirect_response=False)
+
+    def test_navegador_en_espanol_se_queda(self):
+        for idioma in ("es-MX", "es-ES,es;q=0.9", "es-AR"):
+            with self.subTest(idioma=idioma):
+                r = self.client.get(self.pagina, HTTP_ACCEPT_LANGUAGE=idioma)
+                self.assertEqual(r.status_code, 200)
+
+    def test_sin_idioma_se_queda_en_espanol(self):
+        r = self.client.get(self.pagina)
+        self.assertEqual(r.status_code, 200)
+        self.assertIn("Accept-Language", r["Vary"])
+
+    def test_idioma_no_disponible_se_queda_en_espanol(self):
+        r = self.client.get(self.pagina, HTTP_ACCEPT_LANGUAGE="xx")
+        self.assertEqual(r.status_code, 200)
+
+    def test_elegir_espanol_gana_al_navegador(self):
+        self.client.post(reverse("set_language"), {"language": "es-mx", "next": "/en" + self.pagina})
+        r = self.client.get(self.pagina, HTTP_ACCEPT_LANGUAGE="en-US")
+        self.assertEqual(r.status_code, 200)
+
+    def test_pagina_con_prefijo_no_cambia(self):
+        r = self.client.get("/fr" + self.pagina, HTTP_ACCEPT_LANGUAGE="en-US")
+        self.assertEqual(r.status_code, 200)
+
+    def test_formularios_post_no_se_redirigen(self):
+        r = self.client.post(reverse("set_language"), {"language": "en", "next": "/"},
+                             HTTP_ACCEPT_LANGUAGE="en-US")
+        self.assertEqual(r.status_code, 302)
+        self.assertEqual(r["Location"], "/en/")
