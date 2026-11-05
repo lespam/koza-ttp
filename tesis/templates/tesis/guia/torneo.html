@@ -1,0 +1,12 @@
+{% extends "tesis/guia/_base.html" %}
+{% load i18n %}
+{% block titulo %}{% translate "Paso 3: torneo" %}{% endblock %}
+{% block paso %}
+<h1>{% translate "Paso 3: torneo" %}</h1>
+<p class="entrada">{% blocktranslate trimmed with liga=liga.nombre %}El torneo usa los equipos de la liga «{{ liga }}». Los juegos se programan de lunes a jueves y los sábados, entre el primer y el último día.{% endblocktranslate %}</p>
+<form method="post" novalidate>
+    {% csrf_token %}
+    {% include "tesis/guia/_formulario.html" %}
+    <button type="submit" class="boton">{% translate "Guardar y seguir al paso 4" %}</button>
+</form>
+{% endblock %}

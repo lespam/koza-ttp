@@ -1,0 +1,10 @@
+{% extends "documentacion/base.html" %}
+{% load i18n static %}
+{% block contenido %}
+<div class="envoltura guia">
+    <p class="miga"><a href="{% url 'tesis:guia' %}">{% translate "Guía" %}</a>{% if numero %} / {% blocktranslate trimmed with n=numero t=total %}Paso {{ n }} de {{ t }}{% endblocktranslate %}{% endif %}</p>
+    {% include "tesis/guia/_pasos.html" %}
+    {% include "tesis/guia/_mensajes.html" %}
+    {% block paso %}{% endblock %}
+</div>
+{% endblock %}

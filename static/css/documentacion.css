@@ -218,3 +218,53 @@ thead th { font-size: 0.92rem; }
 @media (prefers-reduced-motion: no-preference) {
     html { scroll-behavior: smooth; }
 }
+
+/* Guía de 5 pasos */
+.visualmente-oculto {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+.pasos ol { list-style: none; padding: 0; margin: 1rem 0 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.pasos li + li { margin-top: 0; }
+.pasos a {
+    display: flex; align-items: center; gap: 0.5rem; min-height: 44px; padding: 0.35rem 0.75rem;
+    border: 1px solid var(--borde); border-radius: 999px; background: var(--superficie);
+    color: var(--texto); text-decoration: none;
+}
+.pasos a:visited { color: var(--texto); }
+.paso-numero {
+    display: inline-grid; place-items: center; width: 1.6rem; height: 1.6rem; border-radius: 50%;
+    background: var(--plan-fondo); color: var(--plan-texto); font-weight: 700; font-size: 0.9rem;
+}
+.paso-hecho .paso-numero { background: var(--hecho-fondo); color: var(--hecho-texto); }
+.paso-actual a { border: 2px solid var(--enlace); font-weight: 600; }
+
+.boton, .boton-secundario {
+    display: inline-block; min-height: 44px; padding: 0.6rem 1.1rem; border-radius: 8px;
+    font: inherit; font-weight: 600; text-decoration: none; cursor: pointer;
+}
+.boton, .boton:visited { background: var(--enlace); color: var(--superficie); border: 2px solid var(--enlace); }
+.boton-secundario { background: var(--superficie); color: var(--enlace); border: 2px solid var(--enlace); }
+.acciones { margin-top: 1.5rem; }
+
+.guia form { margin: 1rem 0; }
+.campo { margin-bottom: 1rem; }
+.campo label, .campo legend { display: block; font-weight: 600; margin-bottom: 0.25rem; }
+.campo input[type="text"], .campo input[type="number"], .campo input[type="date"] {
+    width: 100%; max-width: 24rem; min-height: 44px; padding: 0.4rem 0.6rem; font: inherit;
+    color: var(--texto); background: var(--superficie); border: 1px solid var(--texto-suave); border-radius: 6px;
+}
+.campo fieldset { border: 1px solid var(--borde); border-radius: 8px; padding: 0.75rem 1rem; margin: 0; }
+.opciones { display: grid; grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr)); gap: 0.25rem 1rem; }
+.campo .opcion { font-weight: 400; display: flex; gap: 0.4rem; align-items: center; min-height: 32px; }
+.requerido, .ayuda { font-weight: 400; color: var(--texto-suave); font-size: 0.95rem; margin: 0 0 0.25rem; }
+.error { color: #b3261e; font-weight: 600; margin: 0 0 0.25rem; }
+.campo-con-error input { border: 2px solid #b3261e; }
+.error-resumen { border-inline-start: 5px solid #b3261e; background: var(--superficie); padding: 0.5rem 1rem; margin: 1rem 0; }
+.mensajes .mensaje { padding: 0.5rem 1rem; border-radius: 6px; background: var(--hecho-fondo); color: var(--hecho-texto); }
+.aviso-honesto { border-inline-start: 5px solid var(--curso-texto); background: var(--curso-fondo); color: var(--curso-texto); padding: 0.5rem 1rem; border-radius: 6px; }
+@media (prefers-color-scheme: dark) {
+    .error { color: #ffb4ab; }
+    .campo-con-error input, .error-resumen { border-color: #ffb4ab; }
+}
+.opcion input { width: 1.2rem; height: 1.2rem; }

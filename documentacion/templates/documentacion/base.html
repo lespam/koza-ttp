@@ -25,6 +25,7 @@
                     <li><a href="{% url 'documentacion:index' %}"{% if seccion == "inicio" %} aria-current="page"{% endif %}>{% translate "Documentación" %}</a></li>
                     <li><a href="{% url 'documentacion:historico' %}"{% if seccion == "historico" %} aria-current="page"{% endif %}>{% translate "Histórico" %}</a></li>
                     <li><a href="{% url 'documentacion:avances' %}"{% if seccion == "avances" %} aria-current="page"{% endif %}>{% translate "Avances" %}</a></li>
+                    <li><a href="{% url 'tesis:guia' %}"{% if seccion == "guia" %} aria-current="page"{% endif %}>{% translate "Guía" %}</a></li>
                     <li><a href="{% url 'tesis:dashboard' %}">{% translate "Herramienta" %}</a></li>
                 </ul>
             </nav>
