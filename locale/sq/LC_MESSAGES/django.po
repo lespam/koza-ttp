@@ -8,79 +8,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Programación genética - Planificación de béisbol"
-msgstr "Programimi Gjenetik - Planifikimi i Bejsbollit"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
 msgstr "Gjuha"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
 msgstr "Ndryshimi"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr "Programimi Gjenetik në Planifikimin e Sezonit të Bejsbollit"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "¡Bienvenido a la aplicación!"
-msgstr "Mirësevini në aplikacion!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Este sistema interactivo busca resolver de manera óptima la organización y "
-"logística de un calendario para una temporada completa de béisbol. Para "
-"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
-"inspirada directamente en la evolución natural de las especies."
-msgstr ""
-"Ky sistem interaktiv synon të zgjidhë në mënyrë optimale organizimin dhe "
-"logjistikën e një kalendari për një sezon të plotë bejsbolli. Për ta arritur"
-" këtë, ne zbatuam një teknikë të avancuar të inteligjencës artificiale të "
-"frymëzuar drejtpërdrejt nga evolucioni natyror i specieve."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"La <strong>programación genética</strong> consiste en crear, evaluar y "
-"modificar soluciones de forma automática a partir de una población inicial "
-"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
-"selección natural, el cruzamiento y la mutación. En este entorno, cada "
-"programa generado se estructura internamente como un árbol de expresión que "
-"representa una solución potencial para nuestro calendario."
-msgstr ""
-"<strong>Programimi gjenetik</strong> përfshin krijimin, vlerësimin dhe "
-"modifikimin automatik të zgjidhjeve nga një popullatë fillestare programesh."
-" Kjo arrihet duke ekzekutuar operacione të frymëzuara bio si seleksioni "
-"natyror, kryqëzimi dhe mutacioni. Në këtë mjedis, çdo program i gjeneruar "
-"strukturohet brenda si një pemë shprehjeje që përfaqëson një zgjidhje të "
-"mundshme për kalendarin tonë."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
-"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
-"características clave y generar nuevos árboles cada vez más prometedores."
-msgstr ""
-"Algoritmi vlerëson vazhdimisht çdo pemë duke përdorur një kriter të rreptë "
-"cilësie ( <em>funksioni</em> i përshtatshmërisë) me qëllim trashëgiminë e "
-"karakteristikave kyçe dhe gjenerimin e pemëve të reja që janë gjithnjë e më "
-"premtuese."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
-"óptima y más eficiente!"
-msgstr ""
-"Ky proces përsëritet në një cikël evolucionar derisa të gjendet zgjidhja "
-"optimale dhe më efikase!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr "Paneli i Kontrollit: Cilësimet Aktive (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración del algoritmo"
-msgstr "Cilësimet e Algoritmit"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
@@ -103,10 +36,6 @@ msgid "Sin torneo"
 msgstr "Nuk ka turne"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr "Kalendari Aktiv: %(torneo)s (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
 msgstr "Data"
 
@@ -121,11 +50,6 @@ msgstr "Larg"
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
 msgstr "Nuk ka lojëra të gjeneruara për këtë konfigurim."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr ""
-"Duke shfaqur ndeshjet e turneut të regjistruara në bazën e të dhënave."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
@@ -144,228 +68,8 @@ msgid "Violaciones de reglas:"
 msgstr "Shkeljet e Rregullave:"
 
 #: tesis/templates/tesis/dashboard.html
-msgid ""
-"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
-" árbol de soluciones sintácticas."
-msgstr ""
-"Shtypni butonin më poshtë për të aktivizuar algoritmin gjenetik dhe për të "
-"shfaqur pemën e zgjidhjeve sintaksore."
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Optimizimi i ekzekutimit"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Guía operativa del sistema"
-msgstr "Udhëzuesi Operativ i Sistemit"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Instrucciones de inicio rápido"
-msgstr "Udhëzime për Fillim të Shpejtë"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
-" secuenciales:"
-msgstr ""
-"Për të filluar ndërveprimin e suksesshëm me demonstrimin, ndiqni këto hapa "
-"të njëpasnjëshëm:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Crea un equipo, una liga y un torneo respectivo en tus paneles "
-"administrativos. <strong>Nota importante:</strong> el número total de "
-"equipos participantes debe ser par."
-msgstr ""
-"Krijoni një ekip, ligë dhe turne në panelet tuaja administrative. Shënim i "
-"<strong>rëndësishëm:</strong> Numri total i ekipeve pjesëmarrëse duhet të "
-"jetë i barabartë."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
-" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
-" optimización\"</strong> para estructurar el calendario automatizado."
-msgstr ""
-"Pasi të keni përcaktuar pjesëmarrësit, shkoni te paneli më sipër, zgjidhni "
-"turneun tuaj aktiv dhe klikoni butonin jeshil <strong>\"Run "
-"Optimization\"</strong> për të strukturuar orarin automatik."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr "Logjika e brendshme dhe rrjedha algoritmike e IA-së"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
-"mostramos paso a paso el ciclo de vida evasivo basado en programación "
-"genética:"
-msgstr ""
-"Çfarë ndodh brenda kompanisë kur softueri aktivizohet? Ja një vështrim hap "
-"pas hapi mbi ciklin e jetës evaziv bazuar në programimin gjenetik:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "1. Configuración e hiperparámetros base"
-msgstr "1. Konfigurimi bazë dhe hiperparametrat"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se cargan las variables del panel que definirán las generaciones, el tamaño "
-"inicial de la población, así como las tasas de probabilidad asociadas al "
-"cruce y la mutación genómica."
-msgstr ""
-"Variablat panel që do të përcaktojnë gjeneratat, madhësinë fillestare të "
-"popullatës, si dhe normat e probabilitetit të lidhura me ndërthurjen dhe "
-"mutacionin gjenomik ngarkohen."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr "2. Përkufizimi i operatorëve dhe blloqeve strukturore (gramatikë)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las primitivas:"
-msgstr "Primitivet:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr ""
-"janë operacionet logjike që një program ekzekuton për të ndërtuar pemën."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las terminales:"
-msgstr "Terminalet:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"representan los datos constantes o variables básicas estructuradas del "
-"torneo."
-msgstr ""
-"përfaqësojnë të dhënat konstante ose variablat bazë të strukturuara të "
-"turneut."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "listas maestros de días hábiles"
-msgstr "Lista Kryesore të Ditëve të Punës"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "tanto en condición de casa como de visita"
-msgstr "si në shtëpi ashtu edhe jashtë"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "inicializador vacío"
-msgstr "Inicializuesi bosh"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las efímeras:"
-msgstr "E përkohshmja:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son valores aleatorios puros que se introducen en nodos específicos para "
-"inyectar variabilidad matemática al sistema."
-msgstr ""
-"Ato janë vlera të rastësishme të pastra që ushqehen në nyje specifike për të"
-" injektuar variabilitet matematikor në sistem."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fecha aleatoria y equipo aleatorio."
-msgstr "Takim i rastësishëm dhe ekip i rastësishëm."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr "3. Inicializimi, cikli evolucionar dhe konvergjenca"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fase de ejecución en vivo:"
-msgstr "Faza e Ekzekutimit të Drejtpërdrejtë:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El sistema genera una población inicial aleatoria y convierte cada propuesta"
-" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
-"donde ocurre la magia computacional!"
-msgstr ""
-"Sistemi gjeneron një popullatë fillestare të rastësishme dhe konverton çdo "
-"propozim në një strukturë hierarkike të pemës (<em>pemë sintaksore</em>). "
-"Këtu ndodh magjia kompjuterike!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Visualización y muestreo:"
-msgstr "Vizualizimi dhe marrja e mostrave:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se procesa la población inicial y se genera el renderizado de los árboles "
-"mediante el generador de sintaxis."
-msgstr ""
-"Popullata fillestare përpunohet dhe pemët renderohen duke përdorur "
-"gjeneratorin e sintaksës."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Evaluación de aptitud:"
-msgstr "Vlerësimi i Aftësive:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
-"distancia acumulada en kilómetros y el cumplimiento normativo."
-msgstr ""
-"Vlera e <em>përshtatshmërisë</em> së secilit individ llogaritet bazuar në "
-"distancën kumulative në kilometra dhe përputhshmërinë me rregulloret."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Selección natural:"
-msgstr "Seleksioni natyror:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se escogen los mejores individuos de la ronda anterior para actuar como "
-"padres biológicos de la nueva generación."
-msgstr ""
-"Individët më të mirë nga raundi i kaluar zgjidhen për të vepruar si prindër "
-"biologjikë të brezit të ri."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Cruzamiento, mutación y herencia:"
-msgstr "Kryqëzimi, mutacioni dhe trashëgimia:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
-" mutaciones en nodos aleatorios."
-msgstr ""
-"Individë të rinj krijohen duke përzier degë të pemëve të shquara dhe duke "
-"aplikuar mutacione në nyje të rastësishme."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Bucle iterativo:"
-msgstr "Cikël iterativ:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
-" hasta completar el total de generaciones configuradas en la interfaz."
-msgstr ""
-"Hapat e vlerësimit, përzgjedhjes dhe riprodhimit përsëriten në mënyrë të "
-"njëpasnjëshme derisa të përfundojë numri total i gjeneratave të konfiguruara"
-" në ndërfaqe."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Resultados oficiales:"
-msgstr "Rezultatet Zyrtare:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El mejor individuo obtenido en la última iteración se valida y su estructura"
-" interna se almacena como el calendario definitivo del torneo de béisbol."
-msgstr ""
-"Individi më i mirë i marrë në iteracionin e fundit verifikohet dhe struktura"
-" e tij e brendshme ruhet si orari përfundimtar i turneut të bejsbollit."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Tesis de Ingeniería en Computación"
-msgstr "Teza e Inxhinierisë Kompjuterike"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Avances después de la tesis"
@@ -575,10 +279,6 @@ msgstr "Kalo te përmbajtja"
 #: documentacion/templates/documentacion/base.html
 msgid "Histórico"
 msgstr "Historia"
-
-#: documentacion/templates/documentacion/base.html
-msgid "Herramienta"
-msgstr "Vegla"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
@@ -925,3 +625,543 @@ msgstr ""
 "Faqja ofrohet në %(total)s gjuhë. Origjinali është spanjishtja meksikane. "
 "Versionet e tjera janë përkthime automatike me Azure AI Translator dhe mund "
 "të kenë gabime."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Principal"
+msgstr "Kryesore"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Guía"
+msgstr "Udhëzues"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Demo"
+msgstr "Demo"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Modo oscuro"
+msgstr "Modaliteti i Errët"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo: calendario y viaje por equipo"
+msgstr "Demo: Orari dhe Udhëtimi i Ekipit"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Genera un calendario de béisbol con programación genética y mide cuánto "
+"viaja cada equipo."
+msgstr ""
+"Ai gjeneron një kalendar bejsbolli me programim gjenetik dhe mat sa shumë "
+"udhëton secila skuadër."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo · Viaje justo entre equipos"
+msgstr "Demo · Udhëtim i drejtë mes ekipeve"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Genera un calendario y"
+msgstr "Gjeneroni një kalendar dhe"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "mide cuánto viaja cada equipo."
+msgstr "Matni sa shumë udhëton secili ekip."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La IA (programación genética) busca calendarios donde el viaje sea corto y "
+"parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
+"pasos</a>."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Todavía no hay ninguna configuración"
+msgstr "Ende nuk ka konfigurim"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para optimizar un calendario, primero registra los equipos, la liga y el "
+"torneo, y después crea una configuración."
+msgstr ""
+"Për të optimizuar një orar, së pari regjistro ekipet, ligën dhe turneun, dhe"
+" pastaj krijo një konfigurim."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Abrir la guía"
+msgstr "Hap udhëzuesin"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver el árbol en grande"
+msgstr "Shiko pemën në tërësi"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón para ejecutar el motor y ver el árbol del mejor "
+"calendario."
+msgstr ""
+"Shtyp butonin për të ndezur motorin dhe për të parë pemën më të mirë të "
+"kalendarit."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tarda unos segundos."
+msgstr "Zgjat disa sekonda."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al "
+"azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, "
+"eso es una ventaja: tienes una línea base y una mejora que puedes medir."
+msgstr ""
+"<strong>Shënim:</strong> versioni i tezës nuk e kaloi një kalendar të "
+"rastësishëm. Motori i ri e mundi, në testet paraprake. Për një projekt "
+"shkollor, kjo është një avantazh: ke një bazë dhe një përmirësim që mund ta "
+"matësh."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario: %(torneo)s"
+msgstr "Orari: %(torneo)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración %(id)s"
+msgstr "Konfigurimi %(id)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Para presentarlo a tu equipo"
+msgstr "Ta prezantosh atë te ekipi yt"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las respuestas que te van a pedir en clase."
+msgstr "Përgjigjet që do t'ju kërkojnë në klasë."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Dónde está la IA?"
+msgstr "Ku është AI-ja?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Un calendario es un árbol que evoluciona. El código está en "
+"<code>programa_genetico/</code> y usa la biblioteca DEAP."
+msgstr ""
+"Një kalendar është një pemë që evoluon. Kodi është në "
+"<code>programa_genetico/</code> dhe përdor bibliotekën DEAP."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Qué patrones usa?"
+msgstr "Çfarë modelesh përdorni?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Django separa modelo, vista y plantilla. <code>ProgramaFacadeView</code> "
+"esconde el motor detrás de una sola entrada."
+msgstr ""
+"Django ndan modelin, pamjen dhe shabllonin. <code>ProgramaFacadeView</code> "
+"Ai fsheh motorin pas një hyrjeje të vetme."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Cómo lo adapto?"
+msgstr "Si ta përshtas atë?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambia equipos y reglas"
+msgstr "Ndryshimi i skuadrave dhe rregullave"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
+" el patrón Strategy para la medida de “viaje justo”."
+msgstr ""
+"Ekipet dhe koordinatat regjistrohen në udhëzues. Një ide për ekipin tuaj: "
+"përdorni modelin e Strategjisë për masën e \"udhëtimit të drejtë\"."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Puedo usarlo?"
+msgstr "A mund ta përdor?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sí, con GPL-3.0"
+msgstr "Po, me GPL-3.0"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Puedes modificarlo. Conserva el crédito y cita la tesis."
+msgstr "Mund ta modifikosh. Mbaje kreditet dhe cito tezën."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cómo citar"
+msgstr "Si të citoni"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo y pide ayuda"
+msgstr "Drejtoje dhe kërko ndihmë"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo en tu computadora"
+msgstr "Ekzekutoje në kompjuterin tënd"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Pídele ayuda a tu asistente de IA"
+msgstr "Kërko ndihmë nga asistenti yt AI"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
+"programa_genetico/programagenetico.py."
+msgstr ""
+"Kopjo këtë pyetje dhe ngjite në magjistarin që përdor, së bashku me skedarin"
+" programa_genetico/programagenetico.py."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Explícame paso a paso cómo este programa genético crea y evalúa un "
+"calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
+" la diferencia entre el equipo que más viaja y el que menos."
+msgstr ""
+"Më shpjego hap pas hapi se si ky program gjenetik krijon dhe vlerëson një "
+"orar. Pastaj më thuaj çfarë do të ndryshoje në mënyrë që masa e \"udhëtimit "
+"të drejtë\" të jetë diferenca midis ekipit që udhëton më shumë dhe atij që "
+"udhëton më pak."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
+msgstr "Kontrollo çfarë të tregon krahasuar me kodin. AI mund ta gabojë."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cerrar"
+msgstr "Mbyll"
+
+#: tesis/templates/tesis/guia/_base.html
+msgid "Paso %(n)s de %(t)s"
+msgstr "Hapi %(n)s i %(t)s"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "Revisa los campos marcados."
+msgstr "Kontrollo fushat e shënuara."
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "obligatorio"
+msgstr "E detyrueshme"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "Pasos de la guía"
+msgstr "Hapat udhëzues"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "hecho"
+msgstr "Fakt"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "pendiente"
+msgstr "Në pritje"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Paso 5: calendario"
+msgstr "Hapi 5: Kalendari"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid ""
+"Genera los juegos del torneo «%(torneo)s». El primer calendario se arma al "
+"azar; después puedes optimizarlo con el algoritmo genético."
+msgstr ""
+"Gjeneroni lojërat e turneut \"%(torneo)s\". Orari i parë përgatitet "
+"rastësisht; pastaj mund ta optimizoni me algoritmin gjenetik."
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Volver a generar los juegos"
+msgstr "Rindërtoni lojërat"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Generar los juegos"
+msgstr "Gjenero lojërat"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "se muestran los primeros 50"
+msgstr "Top 50 të shfaqura"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "¿Y ahora?"
+msgstr "Po tani?"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Abrir este calendario en el panel y optimizarlo"
+msgstr "Hapni këtë kalendar në panelin e kontrollit dhe optimizojeni"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "(tarda unos 20 segundos)"
+msgstr "(merr rreth 20 sekonda)"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Ver el detalle del calendario"
+msgstr "Shiko detajet e kalendarit"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Leer por qué la versión de la tesis no superó a la búsqueda aleatoria"
+msgstr ""
+"Lexoni pse versioni i tezës nuk performoi më mirë se kërkimi i rastësishëm"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Paso 4: configuración"
+msgstr "Hapi 4: Përgatitja"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Estos son los parámetros del algoritmo genético para el torneo."
+msgstr "Këto janë parametrat e algoritmit gjenetik për turneun."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Importante:"
+msgstr "E rëndësishme:"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid ""
+"la versión del motor de la tesis guarda estos valores, pero al optimizar usa"
+" siempre población 100, 20 generaciones, cruce 0.8 y mutación 0.2. La "
+"versión mejorada del motor sí los usará."
+msgstr ""
+"Versioni i motorit i tezës ruan këto vlera, por kur optimizon gjithmonë "
+"përdor popullsinë 100, 20 gjenerata, crossover 0.8 dhe mutacionin 0.2. "
+"Versioni i përmirësuar i motorit do t'i përdorë ato."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Guardar y seguir al paso 5"
+msgstr "Ruaj dhe vazhdo në hapin 5"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Paso 1: equipos"
+msgstr "Hapi 1: Ekipet"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Puedes usar los que ya existen o agregar uno nuevo."
+msgstr "Mund të përdorësh ato ekzistuese ose të shtosh një të re."
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Ver los últimos equipos registrados"
+msgstr "Shiko ekipet më të fundit të regjistruara"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar un equipo"
+msgstr "Shto një ekip"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar equipo"
+msgstr "Shto Pajisje"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Seguir al paso 2: liga"
+msgstr "Vazhdo në Hapin 2: Liga"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Necesitas al menos 2 equipos para seguir."
+msgstr "Duhet të ndjekësh të paktën 2 ekipe."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Guía: del registro al calendario"
+msgstr "Udhëzues: Nga Regjistrimi te Kalendari"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
+" el algoritmo y generas un calendario de juegos."
+msgstr ""
+"Në 5 hapa regjistron ekipet, vendos një ligë dhe një turne, zgjedh si të "
+"ekzekutosh algoritmin dhe gjeneron një orar ndeshjesh."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
+msgstr ""
+"Skuadrat: regjistrohuni të paktën 2, me vendndodhjen e stadiumit të tyre."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Liga: elige qué equipos juegan juntos."
+msgstr "Liga: Zgjidhni cilat ekipe luajnë së bashku."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Torneo: define las fechas, las series y los juegos."
+msgstr "Turneu: Përcaktoni datat, seritë dhe ndeshjet."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Configuración: elige los parámetros del algoritmo genético."
+msgstr "Cilësimet: Zgjidhni parametrat e algoritmit gjenetik."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Calendario: genera los juegos y revísalos."
+msgstr "Kalendari: Gjeneroni dhe rishikoni ndeshjet."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"Lo que crees aquí lo ve cualquier visitante del sitio. No escribas datos "
+"personales."
+msgstr ""
+"Ajo që krijoni këtu shihet nga çdo vizitor i faqes. Mos shkruani të dhëna "
+"personale."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Empezar"
+msgstr "Filloni"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Paso 2: liga"
+msgstr "Hapi 2: Lidhja"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid ""
+"Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
+"equipos: con un número impar, uno se queda sin rival en cada serie."
+msgstr ""
+"Një ligë është grupi i skuadrave që luajnë kundër njëra-tjetrës. Përdorni "
+"një numër çift skuadrash: me numër tek, njëra mbetet pa kundërshtar në çdo "
+"seri."
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Guardar y seguir al paso 3"
+msgstr "Ruaj dhe vazhdo te hapi 3"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Paso 3: torneo"
+msgstr "Hapi 3: Turneu"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid ""
+"El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
+"lunes a jueves y los sábados, entre el primer y el último día."
+msgstr ""
+"Turneu përdor ekipet e ligës \"%(liga)s\". Ndeshjet janë planifikuar nga e "
+"hëna në të enjte dhe të shtunave, midis ditës së parë dhe të fundit."
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Guardar y seguir al paso 4"
+msgstr "Ruaj dhe vazhdo në hapin 4"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Programación genética para calendarios de béisbol"
+msgstr "Programimi Gjenetik për Kalendarët e Bejsbollit"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
+"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
+msgstr ""
+"Koza-TTP: Teza e Leslie Dickinson (ITAM) mbi programimin gjenetik për "
+"kalendarët e bejsbollit, me rezultatin e tij të ndershëm dhe motorin e "
+"përmirësuar."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Tesis ITAM · Programación genética · Béisbol"
+msgstr "Teza ITAM · Programimi Gjenetik · Bejsbolli"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Mi tesis dijo la verdad:"
+msgstr "Teza ime thoshte të vërtetën:"
+
+#: tesis/templates/tesis/inicio.html
+msgid "el algoritmo no le ganó al azar."
+msgstr "Algoritmi nuk e mundi rastësisht."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
+"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
+"corrigiendo en público."
+msgstr ""
+"Koza-TTP e merr këtë tezë për të krijuar kalendarë sezoni bejsbolli me "
+"programim gjenetik. Këtu do të shihni çfarë shkoi keq, pse, dhe si po e "
+"korrigjoj publikisht."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ingeniería en Computación, ITAM"
+msgstr "Inxhinieri Kompjuterike, ITAM"
+
+#: tesis/templates/tesis/inicio.html
+msgid "¿Cuánto tiempo tienes?"
+msgstr "Sa kohë ke?"
+
+#: tesis/templates/tesis/inicio.html
+msgid "2 minutos"
+msgstr "2 minuta"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Entender la idea"
+msgstr "Kuptimi i Idesë"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Qué es la programación genética y por qué un calendario de béisbol es un "
+"problema difícil."
+msgstr ""
+"Çfarë është programimi gjenetik dhe pse një kalendar bejsbolli është një "
+"problem i vështirë."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Empezar aquí"
+msgstr "Filloni këtu"
+
+#: tesis/templates/tesis/inicio.html
+msgid "5 minutos · 5 pasos"
+msgstr "5 minuta · 5 hapa"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Probar la herramienta"
+msgstr "Provo mjetin"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
+msgstr ""
+"Regjistro ekipe, ndërto një ligë dhe krijo kalendarin tënd. Pa llogari."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Sin prisa"
+msgstr "Pa nxitim"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Leer la tesis y el código"
+msgstr "Lexo tezën dhe kodin"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"El documento original, la bitácora de avances y el repositorio abierto."
+msgstr "Dokumenti origjinal, regjistri i progresit dhe depozita e hapur."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ir a la tesis"
+msgstr "Shko te teza"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Qué tan confiable es cada parte"
+msgstr "Sa e besueshme është secila pjesë"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Para que sepas qué puedes citar y qué todavía cambia."
+msgstr "Pra, e dini çfarë mund të citoni dhe çfarë ndryshon ende."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Final"
+msgstr "Finalja"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Resultados de la tesis"
+msgstr "Rezultatet e tezës"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Publicados en 2026. No se modifican."
+msgstr "Botuar në vitin 2026. Nuk janë të modifikuara."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Preliminar"
+msgstr "Paraprake"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Motor mejorado"
+msgstr "Motor i përmirësuar"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En pruebas: 31 %% menos distancia en 3 corridas."
+msgstr "Në teste: 31%% më pak distancë në 3 vrapime."
+
+#: tesis/templates/tesis/inicio.html
+msgid "En revisión"
+msgstr "Në Rishikim"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Traducciones"
+msgstr "Përkthime"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Automáticas, incluidas maya y otomí. Puedes corregirlas."
+msgstr "Automatike, përfshirë Mayan dhe Otomín. Mund t'i rregullosh."

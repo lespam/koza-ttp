@@ -8,75 +8,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Programación genética - Planificación de béisbol"
-msgstr "โปรแกรมพันธุกรรม - การวางแผนเบสบอล"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
 msgstr "ภาษา"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
 msgstr "การเปลี่ยนแปลง"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr "โปรแกรมพันธุกรรมในการวางแผนฤดูกาลเบสบอล"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "¡Bienvenido a la aplicación!"
-msgstr "ยินดีต้อนรับสู่แอป!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Este sistema interactivo busca resolver de manera óptima la organización y "
-"logística de un calendario para una temporada completa de béisbol. Para "
-"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
-"inspirada directamente en la evolución natural de las especies."
-msgstr ""
-"ระบบอินเทอร์แอคทีฟนี้มุ่งแก้ปัญหาการจัดการและการจัดการปฏิทินสําหรับฤดูกาลเบสบอลเต็มฤดูกาลอย่างเหมาะสมที่สุดเพื่อให้บรรลุเป้าหมายนี้"
-" "
-"เราได้นําเทคนิคปัญญาประดิษฐ์ขั้นสูงที่ได้รับแรงบันดาลใจโดยตรงจากวิวัฒนาการตามธรรมชาติของสายพันธุ์มาใช้"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"La <strong>programación genética</strong> consiste en crear, evaluar y "
-"modificar soluciones de forma automática a partir de una población inicial "
-"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
-"selección natural, el cruzamiento y la mutación. En este entorno, cada "
-"programa generado se estructura internamente como un árbol de expresión que "
-"representa una solución potencial para nuestro calendario."
-msgstr ""
-"<strong>โปรแกรมพันธุกรรม</strong>เกี่ยวข้องกับการสร้าง ประเมิน "
-"และปรับแก้โดยอัตโนมัติจากประชากรโปรแกรมเริ่มต้นสิ่งนี้ทําได้โดยการดําเนินปฏิบัติการที่ได้รับแรงบันดาลใจจากชีวภาพ"
-" เช่น การคัดเลือกโดยธรรมชาติ การผสมพันธุ์ และการกลายพันธุ์ในสภาพแวดล้อมนี้ "
-"โปรแกรมแต่ละโปรแกรมที่สร้างขึ้นจะถูกจัดโครงสร้างภายในเป็นต้นไม้แสดงออกที่แสดงถึงทางออกที่เป็นไปได้สําหรับปฏิทินของเรา"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
-"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
-"características clave y generar nuevos árboles cada vez más prometedores."
-msgstr ""
-"อัลกอริทึมจะประเมินต้นไม้แต่ละต้นอย่างต่อเนื่องโดยใช้เกณฑ์คุณภาพที่เข้มงวด "
-"(ฟังก์ชันความเหมาะสม <em>) "
-"โดยมี</em>เป้าหมายเพื่อสืบทอดลักษณะสําคัญและสร้างต้นไม้ใหม่ที่มีแนวโน้มดีขึ้นเรื่อย"
-" ๆ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
-"óptima y más eficiente!"
-msgstr ""
-"กระบวนการนี้จะถูกทําซ้ําในวงจรวิวัฒนาการจนกว่าจะพบวิธีแก้ไขที่เหมาะสมและมีประสิทธิภาพที่สุด!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr "แผงควบคุม: การตั้งค่าที่ใช้งานอยู่ (รหัส: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración del algoritmo"
-msgstr "การตั้งค่าอัลกอริทึม"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
@@ -99,10 +36,6 @@ msgid "Sin torneo"
 msgstr "ไม่มีการแข่งขัน"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr "ปฏิทินที่ใช้งานอยู่: %(torneo)s (รหัส: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
 msgstr "วันที่"
 
@@ -117,10 +50,6 @@ msgstr "ออกไป"
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
 msgstr "ไม่มีเกมที่สร้างขึ้นสําหรับการตั้งค่านี้"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr "แสดงการแข่งขันที่ลงทะเบียนในฐานข้อมูล"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
@@ -139,213 +68,8 @@ msgid "Violaciones de reglas:"
 msgstr "การละเมิดกฎ:"
 
 #: tesis/templates/tesis/dashboard.html
-msgid ""
-"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
-" árbol de soluciones sintácticas."
-msgstr ""
-"กดปุ่มด้านล่างเพื่อเปิดใช้งานอัลกอริทึมพันธุกรรมและแสดงต้นไม้คําตอบทางไวยากรณ์"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "การเพิ่มประสิทธิภาพการทํางาน"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Guía operativa del sistema"
-msgstr "คู่มือการดําเนินงานของระบบ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Instrucciones de inicio rápido"
-msgstr "คําแนะนําเริ่มต้นอย่างรวดเร็ว"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
-" secuenciales:"
-msgstr "เพื่อเริ่มโต้ตอบกับเดโมได้สําเร็จ ให้ทําตามขั้นตอนตามลําดับดังนี้:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Crea un equipo, una liga y un torneo respectivo en tus paneles "
-"administrativos. <strong>Nota importante:</strong> el número total de "
-"equipos participantes debe ser par."
-msgstr ""
-"สร้างทีม ลีก และทัวร์นาเมนต์ในแผงผู้ดูแลระบบของคุณ "
-"<strong>หมายเหตุสําคัญ:</strong> "
-"จํานวนทีมที่เข้าร่วมทั้งหมดต้องเป็นจํานวนเท่ากัน"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
-" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
-" optimización\"</strong> para estructurar el calendario automatizado."
-msgstr ""
-"เมื่อคุณกําหนดรายชื่อผู้เข้าร่วมได้แล้ว ให้ไปที่แผงด้านบน "
-"เลือกทัวร์นาเมนต์ที่กําลังเล่นอยู่ แล้วคลิกปุ่มสีเขียว <strong>\"Run "
-"Optimization\"</strong> เพื่อจัดตารางการแข่งขันอัตโนมัติ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr "ตรรกะภายในและการไหลของอัลกอริทึมของ AI"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
-"mostramos paso a paso el ciclo de vida evasivo basado en programación "
-"genética:"
-msgstr ""
-"จะเกิดอะไรขึ้นภายในเมื่อซอฟต์แวร์เริ่มใช้งานจริง?นี่คือภาพทีละขั้นตอนของวงจรชีวิตที่หลบเลี่ยงโดยอิงจากโปรแกรมพันธุกรรม:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "1. Configuración e hiperparámetros base"
-msgstr "1. การกําหนดค่าพื้นฐานและไฮเปอร์พารามิเตอร์"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se cargan las variables del panel que definirán las generaciones, el tamaño "
-"inicial de la población, así como las tasas de probabilidad asociadas al "
-"cruce y la mutación genómica."
-msgstr ""
-"ตัวแปรกลุ่มที่กําหนดรุ่น ขนาดประชากรเริ่มต้น "
-"รวมถึงอัตราความน่าจะเป็นที่เกี่ยวข้องกับการข้ามสายและการกลายพันธุ์ทางจีโนมจะถูกเพิ่มเข้ามา"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr "2. คํานิยามของตัวดําเนินการและบล็อกโครงสร้าง (ไวยากรณ์)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las primitivas:"
-msgstr "ดึกดําบรรพ์:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr "เป็นการดําเนินการเชิงตรรกะที่โปรแกรมดําเนินการเพื่อสร้างต้นไม้"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las terminales:"
-msgstr "เทอร์มินัล:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"representan los datos constantes o variables básicas estructuradas del "
-"torneo."
-msgstr "แทนข้อมูลคงที่หรือตัวแปรพื้นฐานที่มีโครงสร้างของการแข่งขัน"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "listas maestros de días hábiles"
-msgstr "รายการหลักของวันทํางาน"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "tanto en condición de casa como de visita"
-msgstr "ทั้งที่บ้านและขณะเดินทาง"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "inicializador vacío"
-msgstr "ตัวเริ่มต้นว่างเปล่า"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las efímeras:"
-msgstr "สิ่งที่ชั่วคราว:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son valores aleatorios puros que se introducen en nodos específicos para "
-"inyectar variabilidad matemática al sistema."
-msgstr ""
-"มันเป็นค่าสุ่มบริสุทธิ์ที่ถูกป้อนเข้าสู่โหนดเฉพาะเพื่อเพิ่มความแปรปรวนทางคณิตศาสตร์ในระบบ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fecha aleatoria y equipo aleatorio."
-msgstr "วันที่สุ่มและทีมสุ่ม"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr "3. การเริ่มต้น วงจรวิวัฒนาการ และการบรรจบกัน"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fase de ejecución en vivo:"
-msgstr "ขั้นตอนการดําเนินการสด:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El sistema genera una población inicial aleatoria y convierte cada propuesta"
-" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
-"donde ocurre la magia computacional!"
-msgstr ""
-"ระบบจะสร้างประชากรเริ่มต้นแบบสุ่มและแปลงข้อเสนอแต่ละชิ้นเป็นโครงสร้างต้นไม้แบบลําดับชั้น"
-" (<em>syntax tree</em>)นี่คือจุดที่เวทมนตร์เชิงคํานวณเกิดขึ้น!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Visualización y muestreo:"
-msgstr "การแสดงผลและการสุ่มตัวอย่าง:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se procesa la población inicial y se genera el renderizado de los árboles "
-"mediante el generador de sintaxis."
-msgstr ""
-"ประชากรเริ่มต้นจะถูกประมวลผลและต้นไม้จะถูกเรนเดอร์โดยใช้ตัวสร้างไวยากรณ์"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Evaluación de aptitud:"
-msgstr "การประเมินความสามารถ:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
-"distancia acumulada en kilómetros y el cumplimiento normativo."
-msgstr ""
-"ค่า <em>ความฟิต</em> "
-"ของแต่ละบุคคลจะคํานวณจากระยะทางสะสมเป็นกิโลเมตรและการปฏิบัติตามกฎระเบียบ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Selección natural:"
-msgstr "การคัดเลือกโดยธรรมชาติ:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se escogen los mejores individuos de la ronda anterior para actuar como "
-"padres biológicos de la nueva generación."
-msgstr ""
-"บุคคลที่ดีที่สุดจากรอบก่อนหน้าจะถูกเลือกให้เป็นพ่อแม่ทางชีวภาพของคนรุ่นใหม่"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Cruzamiento, mutación y herencia:"
-msgstr "การผสมข้ามสายพันธุ์ การกลายพันธุ์ และการถ่ายทอด:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
-" mutaciones en nodos aleatorios."
-msgstr ""
-"บุคคลใหม่ถูกสร้างขึ้นโดยการผสมกิ่งก้านของต้นไม้เด่นและใช้การกลายพันธุ์ในโหนดสุ่ม"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Bucle iterativo:"
-msgstr "ลูปวนซ้ํา:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
-" hasta completar el total de generaciones configuradas en la interfaz."
-msgstr ""
-"ขั้นตอนการประเมิน การเลือก "
-"และการเล่นจะถูกทําซ้ําตามลําดับจนกว่าจํานวนการสร้างทั้งหมดที่กําหนดไว้ในอินเทอร์เฟซจะเสร็จสมบูรณ์"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Resultados oficiales:"
-msgstr "ผลการแข่งขันอย่างเป็นทางการ:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El mejor individuo obtenido en la última iteración se valida y su estructura"
-" interna se almacena como el calendario definitivo del torneo de béisbol."
-msgstr ""
-"บุคคลที่ดีที่สุดที่ได้ในรอบสุดท้ายจะถูกตรวจสอบและโครงสร้างภายในจะถูกบันทึกเป็นตารางการแข่งขันเบสบอลที่สมบูรณ์"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Tesis de Ingeniería en Computación"
-msgstr "วิทยานิพนธ์วิศวกรรมคอมพิวเตอร์"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Avances después de la tesis"
@@ -550,10 +274,6 @@ msgstr "ข้ามไปยังเนื้อหา"
 #: documentacion/templates/documentacion/base.html
 msgid "Histórico"
 msgstr "ประวัติศาสตร์"
-
-#: documentacion/templates/documentacion/base.html
-msgid "Herramienta"
-msgstr "เครื่องมือ"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
@@ -886,3 +606,533 @@ msgstr ""
 "เว็บไซต์นี้มีให้บริการใน %(total)s "
 "ภาษาต้นฉบับเป็นภาษาสเปนเม็กซิกันเวอร์ชันอื่น ๆ เป็นการแปลอัตโนมัติด้วย Azure"
 " AI Translator และอาจมีข้อผิดพลาด"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Principal"
+msgstr "หลัก"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Guía"
+msgstr "คู่มือ"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Demo"
+msgstr "เดโม"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Modo oscuro"
+msgstr "โหมดมืด"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo: calendario y viaje por equipo"
+msgstr "สาธิต: ตารางเวลาและการเดินทางของทีม"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Genera un calendario de béisbol con programación genética y mide cuánto "
+"viaja cada equipo."
+msgstr ""
+"มันสร้างปฏิทินเบสบอลพร้อมโปรแกรมพันธุกรรมและวัดระยะทางที่แต่ละทีมเดินทาง"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo · Viaje justo entre equipos"
+msgstr "สาธิต ·การเดินทางอย่างเป็นธรรมระหว่างทีม"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Genera un calendario y"
+msgstr "สร้างปฏิทินและ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "mide cuánto viaja cada equipo."
+msgstr "วัดระยะทางที่แต่ละทีมเดินทาง"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La IA (programación genética) busca calendarios donde el viaje sea corto y "
+"parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
+"pasos</a>."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Todavía no hay ninguna configuración"
+msgstr "ยังไม่ได้ตั้งค่า"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para optimizar un calendario, primero registra los equipos, la liga y el "
+"torneo, y después crea una configuración."
+msgstr ""
+"เพื่อเพิ่มประสิทธิภาพตารางเวลา ให้บันทึกทีม ลีก และทัวร์นาเมนต์ก่อน "
+"จากนั้นจึงสร้างการตั้งค่า"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Abrir la guía"
+msgstr "เปิดคู่มือ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver el árbol en grande"
+msgstr "ชมต้นไม้ในภาพรวม"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón para ejecutar el motor y ver el árbol del mejor "
+"calendario."
+msgstr "กดปุ่มเพื่อรันเอนจินและดูต้นไม้ปฏิทินที่ดีที่สุด"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tarda unos segundos."
+msgstr "ใช้เวลาแค่ไม่กี่วินาที"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al "
+"azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, "
+"eso es una ventaja: tienes una línea base y una mejora que puedes medir."
+msgstr ""
+"<strong>หมายเหตุ:</strong> "
+"เวอร์ชันวิทยานิพนธ์ไม่ได้ชนะปฏิทินสุ่มแต่เอนจินใหม่ชนะในการทดสอบเบื้องต้นสําหรับโครงการโรงเรียน"
+" นั่นถือเป็นข้อได้เปรียบ: คุณมีข้อมูลพื้นฐานและพัฒนาการที่สามารถวัดผลได้"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario: %(torneo)s"
+msgstr "กําหนดการ: %(torneo)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración %(id)s"
+msgstr "%(id)sการกําหนดค่า"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Para presentarlo a tu equipo"
+msgstr "เพื่อแนะนําให้กับทีมของคุณ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las respuestas que te van a pedir en clase."
+msgstr "คําตอบที่คุณจะได้รับในชั้นเรียน"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Dónde está la IA?"
+msgstr "AI อยู่ที่ไหน?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Un calendario es un árbol que evoluciona. El código está en "
+"<code>programa_genetico/</code> y usa la biblioteca DEAP."
+msgstr ""
+"ปฏิทินคือต้นไม้ที่พัฒนาไปเรื่อย ๆโค้ดอยู่ใน <code>programa_genetico/</code> "
+"และใช้ไลบรารี DEAP"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Qué patrones usa?"
+msgstr "คุณใช้แพทเทิร์นแบบไหนบ้าง?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Django separa modelo, vista y plantilla. <code>ProgramaFacadeView</code> "
+"esconde el motor detrás de una sola entrada."
+msgstr ""
+"Django แยกโมเดล, วิว และเทมเพลต <code>ProgramaFacadeView</code> "
+"มันซ่อนเอนจินไว้หลังอินพุตเดียว"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Cómo lo adapto?"
+msgstr "ฉันจะปรับมันยังไงดี?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambia equipos y reglas"
+msgstr "เปลี่ยนทีมและกติกา"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
+" el patrón Strategy para la medida de “viaje justo”."
+msgstr ""
+"ทีมและพิกัดจะถูกบันทึกไว้ในคู่มือไอเดียสําหรับทีมของคุณ: "
+"ใช้รูปแบบกลยุทธ์สําหรับการวัด \"การเดินทางที่ยุติธรรม\""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Puedo usarlo?"
+msgstr "ฉันใช้ได้ไหม?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sí, con GPL-3.0"
+msgstr "ใช่ พร้อม GPL-3.0"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Puedes modificarlo. Conserva el crédito y cita la tesis."
+msgstr "คุณสามารถแก้ไขได้เก็บเครดิตไว้และอ้างอิงวิทยานิพนธ์"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cómo citar"
+msgstr "วิธีการอ้างอิง"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo y pide ayuda"
+msgstr "รันแล้วขอความช่วยเหลือ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo en tu computadora"
+msgstr "รันบนคอมพิวเตอร์ของคุณ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Pídele ayuda a tu asistente de IA"
+msgstr "ขอความช่วยเหลือจากผู้ช่วย AI ของคุณ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
+"programa_genetico/programagenetico.py."
+msgstr ""
+"คัดลอกคําถามนี้และวางลงในตัวช่วยสร้างที่คุณใช้ พร้อมกับไฟล์ "
+"programa_genetico/programagenetico.py"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Explícame paso a paso cómo este programa genético crea y evalúa un "
+"calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
+" la diferencia entre el equipo que más viaja y el que menos."
+msgstr ""
+"อธิบายทีละขั้นตอนว่าโปรแกรมพันธุกรรมนี้สร้างและประเมินตารางอย่างไรแล้วบอกฉันว่าคุณจะเปลี่ยนแปลงอะไรเพื่อให้การวัด"
+" \"การเดินทางอย่างเป็นธรรม\" "
+"เป็นความแตกต่างระหว่างทีมที่เดินทางมากที่สุดกับทีมที่เดินทางน้อยที่สุด"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
+msgstr "ตรวจสอบสิ่งที่มันบอกกับโค้ด AI อาจผิดพลาดได้"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cerrar"
+msgstr "ปิด"
+
+#: tesis/templates/tesis/guia/_base.html
+msgid "Paso %(n)s de %(t)s"
+msgstr "ขั้นตอนที่ %(n)s ของการ %(t)s"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "Revisa los campos marcados."
+msgstr "ตรวจสอบช่องที่ทําเครื่องหมายไว้"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "obligatorio"
+msgstr "บังคับ"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "Pasos de la guía"
+msgstr "ขั้นตอนนําทาง"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "hecho"
+msgstr "ข้อเท็จจริง"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "pendiente"
+msgstr "รอดําเนินการ"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Paso 5: calendario"
+msgstr "ขั้นตอนที่ 5: ปฏิทิน"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid ""
+"Genera los juegos del torneo «%(torneo)s». El primer calendario se arma al "
+"azar; después puedes optimizarlo con el algoritmo genético."
+msgstr ""
+"สร้างเกมทัวร์นาเมนต์ "
+"\"%(torneo)s\"ตารางการแข่งขันแรกจะถูกสุ่มขึ้นมา;จากนั้นคุณสามารถปรับแต่งด้วยอัลกอริทึมพันธุกรรม"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Volver a generar los juegos"
+msgstr "สร้างเกมขึ้นมาใหม่"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Generar los juegos"
+msgstr "สร้างเกม"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "se muestran los primeros 50"
+msgstr "50 อันดับแรกที่แสดง"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "¿Y ahora?"
+msgstr "แล้วตอนนี้ล่ะ?"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Abrir este calendario en el panel y optimizarlo"
+msgstr "เปิดปฏิทินนี้ในแดชบอร์ดและปรับแต่งให้เหมาะสม"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "(tarda unos 20 segundos)"
+msgstr "(ใช้เวลาประมาณ 20 วินาที)"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Ver el detalle del calendario"
+msgstr "ดูรายละเอียดปฏิทิน"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Leer por qué la versión de la tesis no superó a la búsqueda aleatoria"
+msgstr "อ่านเหตุผลว่าทําไมเวอร์ชันวิทยานิพนธ์จึงไม่ดีกว่าการค้นหาแบบสุ่ม"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Paso 4: configuración"
+msgstr "ขั้นตอนที่ 4: การตั้งค่า"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Estos son los parámetros del algoritmo genético para el torneo."
+msgstr "นี่คือพารามิเตอร์ของอัลกอริทึมพันธุกรรมสําหรับการแข่งขัน"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Importante:"
+msgstr "สําคัญ:"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid ""
+"la versión del motor de la tesis guarda estos valores, pero al optimizar usa"
+" siempre población 100, 20 generaciones, cruce 0.8 y mutación 0.2. La "
+"versión mejorada del motor sí los usará."
+msgstr ""
+"เวอร์ชันเอนจินของวิทยานิพนธ์จะเก็บค่าเหล่านี้ไว้ "
+"แต่เมื่อปรับแต่งจะใช้ประชากร 100, 20 เจเนอเรชั่น, ครอสโอเวอร์ 0.8 "
+"และมิวเทชัน 0.2 เสมอเวอร์ชันที่ปรับปรุงของเอนจินจะใช้ค่าเหล่านี้"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Guardar y seguir al paso 5"
+msgstr "บันทึกและดําเนินการต่อไปยังขั้นตอนที่ 5"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Paso 1: equipos"
+msgstr "ขั้นตอนที่ 1: ทีม"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Puedes usar los que ya existen o agregar uno nuevo."
+msgstr "คุณสามารถใช้ระบบที่มีอยู่แล้วหรือเพิ่มรหัสใหม่ก็ได้"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Ver los últimos equipos registrados"
+msgstr "ดูทีมที่ลงทะเบียนล่าสุด"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar un equipo"
+msgstr "เพิ่มทีม"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar equipo"
+msgstr "เพิ่มอุปกรณ์"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Seguir al paso 2: liga"
+msgstr "ไปยังขั้นตอนที่ 2: ลีก"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Necesitas al menos 2 equipos para seguir."
+msgstr "คุณต้องมีทีมอย่างน้อย 2 ทีมเพื่อตาม"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Guía: del registro al calendario"
+msgstr "คู่มือ: จากการลงทะเบียนจนถึงปฏิทิน"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
+" el algoritmo y generas un calendario de juegos."
+msgstr ""
+"ใน 5 ขั้นตอน คุณสามารถลงทะเบียนทีม ตั้งลีกและทัวร์นาเมนต์ "
+"เลือกวิธีรันอัลกอริทึม และสร้างตารางการแข่งขัน"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
+msgstr "จํานวนทีม: ลงทะเบียนอย่างน้อย 2 ทีม พร้อมสถานที่ตั้งของสนาม"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Liga: elige qué equipos juegan juntos."
+msgstr "ลีก: เลือกทีมที่เล่นร่วมกัน"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Torneo: define las fechas, las series y los juegos."
+msgstr "ทัวร์นาเมนต์: กําหนดวันที่ ซีรีส์ และเกม"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Configuración: elige los parámetros del algoritmo genético."
+msgstr "การตั้งค่า: เลือกพารามิเตอร์ของอัลกอริทึมพันธุกรรม"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Calendario: genera los juegos y revísalos."
+msgstr "ปฏิทิน: สร้างและตรวจสอบเกม"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"Lo que crees aquí lo ve cualquier visitante del sitio. No escribas datos "
+"personales."
+msgstr ""
+"สิ่งที่คุณสร้างขึ้นที่นี่จะถูกเห็นโดยผู้เยี่ยมชมเว็บไซต์ทุกคนอย่าเขียนข้อมูลส่วนบุคคล"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Empezar"
+msgstr "เริ่มต้นใช้งาน"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Paso 2: liga"
+msgstr "ขั้นตอนที่ 2: สร้างสายสัมพันธ์"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid ""
+"Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
+"equipos: con un número impar, uno se queda sin rival en cada serie."
+msgstr ""
+"ลีกคือกลุ่มของทีมที่เล่นกันเองใช้จํานวนทีมเป็นเลขคู่: ถ้าเป็นเลขคี่ "
+"ทีมหนึ่งจะไม่มีคู่แข่งในแต่ละซีรีส์"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Guardar y seguir al paso 3"
+msgstr "บันทึกและดําเนินการต่อไปยังขั้นตอนที่ 3"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Paso 3: torneo"
+msgstr "ขั้นตอนที่ 3: ทัวร์นาเมนต์"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid ""
+"El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
+"lunes a jueves y los sábados, entre el primer y el último día."
+msgstr ""
+"การแข่งขันใช้ทีมจากลีก "
+"\"%(liga)s\"การแข่งขันจัดขึ้นตั้งแต่วันจันทร์ถึงวันพฤหัสบดี "
+"และวันเสาร์ระหว่างวันแรกกับวันสุดท้าย"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Guardar y seguir al paso 4"
+msgstr "บันทึกและดําเนินการต่อไปยังขั้นตอนที่ 4"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Programación genética para calendarios de béisbol"
+msgstr "โปรแกรมพันธุกรรมสําหรับปฏิทินเบสบอล"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
+"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
+msgstr ""
+"Koza-TTP: วิทยานิพนธ์ของ Leslie Dickinson (ITAM) "
+"เกี่ยวกับโปรแกรมพันธุกรรมสําหรับปฏิทินเบสบอล "
+"พร้อมผลลัพธ์ที่ซื่อสัตย์และเครื่องมือที่ดีขึ้น"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Tesis ITAM · Programación genética · Béisbol"
+msgstr "วิทยานิพนธ์ ITAM ·โปรแกรมพันธุกรรม ·เบสบอล"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Mi tesis dijo la verdad:"
+msgstr "วิทยานิพนธ์ของฉันพูดความจริง:"
+
+#: tesis/templates/tesis/inicio.html
+msgid "el algoritmo no le ganó al azar."
+msgstr "อัลกอริทึมไม่ได้เอาชนะเขาแบบสุ่ม"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
+"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
+"corrigiendo en público."
+msgstr ""
+"Koza-TTP "
+"สานต่อแนวคิดนี้ในการสร้างปฏิทินฤดูกาลเบสบอลด้วยโปรแกรมพันธุกรรมที่นี่คุณจะเห็นว่าเกิดอะไรขึ้น"
+" ทําไม และผมแก้ไขอย่างไรในที่สาธารณะ"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ingeniería en Computación, ITAM"
+msgstr "วิศวกรรมคอมพิวเตอร์, ITAM"
+
+#: tesis/templates/tesis/inicio.html
+msgid "¿Cuánto tiempo tienes?"
+msgstr "คุณมีเวลาเท่าไหร่?"
+
+#: tesis/templates/tesis/inicio.html
+msgid "2 minutos"
+msgstr "2 นาที"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Entender la idea"
+msgstr "ทําความเข้าใจแนวคิด"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Qué es la programación genética y por qué un calendario de béisbol es un "
+"problema difícil."
+msgstr "โปรแกรมพันธุกรรมคืออะไร และทําไมปฏิทินเบสบอลจึงเป็นปัญหาที่ยาก"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Empezar aquí"
+msgstr "เริ่มต้นที่นี่"
+
+#: tesis/templates/tesis/inicio.html
+msgid "5 minutos · 5 pasos"
+msgstr "5 นาที ·5 ขั้นบันได"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Probar la herramienta"
+msgstr "ลองใช้เครื่องมือ"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
+msgstr "ลงทะเบียนทีม สร้างลีก และสร้างปฏิทินของคุณเองไม่ต้องมีบัญชี"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Sin prisa"
+msgstr "ไม่ต้องรีบ"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Leer la tesis y el código"
+msgstr "อ่านวิทยานิพนธ์และโค้ด"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"El documento original, la bitácora de avances y el repositorio abierto."
+msgstr "เอกสารต้นฉบับ บันทึกความคืบหน้า และที่เก็บข้อมูลที่เปิดอยู่"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ir a la tesis"
+msgstr "ไปที่วิทยานิพนธ์"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Qué tan confiable es cada parte"
+msgstr "ความน่าเชื่อถือของแต่ละชิ้นส่วน"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Para que sepas qué puedes citar y qué todavía cambia."
+msgstr ""
+"ดังนั้นคุณจึงรู้ว่าคุณสามารถอ้างอิงอะไรได้บ้างและอะไรที่ยังคงเปลี่ยนแปลงอยู่"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Final"
+msgstr "รอบชิงชนะเลิศ"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Resultados de la tesis"
+msgstr "ผลลัพธ์ของวิทยานิพนธ์"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Publicados en 2026. No se modifican."
+msgstr "เผยแพร่ในปี 2026 ไม่มีการแก้ไข"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Preliminar"
+msgstr "เบื้องต้น"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Motor mejorado"
+msgstr "เครื่องยนต์ที่ได้รับการปรับปรุง"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En pruebas: 31 %% menos distancia en 3 corridas."
+msgstr "ในการทดสอบ: ระยะทางลดลง 31%% ใน 3 รอบ"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En revisión"
+msgstr "กําลังทบทวน"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Traducciones"
+msgstr "การแปล"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Automáticas, incluidas maya y otomí. Puedes corregirlas."
+msgstr "อัตโนมัติ รวมถึงมายะและโอโตมีคุณซ่อมได้"

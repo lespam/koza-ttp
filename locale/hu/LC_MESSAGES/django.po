@@ -8,79 +8,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Programación genética - Planificación de béisbol"
-msgstr "Genetikai programozás – Baseball tervezés"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
 msgstr "Nyelv"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
 msgstr "Változás"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr "Genetikai programozás a baseball szezontervezésben"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "¡Bienvenido a la aplicación!"
-msgstr "Üdvözlünk az alkalmazásban!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Este sistema interactivo busca resolver de manera óptima la organización y "
-"logística de un calendario para una temporada completa de béisbol. Para "
-"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
-"inspirada directamente en la evolución natural de las especies."
-msgstr ""
-"Ez az interaktív rendszer arra törekszik, hogy optimálisan megoldja a naptár"
-" szervezését és logisztikáját egy teljes baseballszezonra. Ennek érdekében "
-"egy fejlett mesterséges intelligencia technikát vezettünk be, amelyet "
-"közvetlenül a fajok természetes evolúciója inspirál."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"La <strong>programación genética</strong> consiste en crear, evaluar y "
-"modificar soluciones de forma automática a partir de una población inicial "
-"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
-"selección natural, el cruzamiento y la mutación. En este entorno, cada "
-"programa generado se estructura internamente como un árbol de expresión que "
-"representa una solución potencial para nuestro calendario."
-msgstr ""
-"<strong>A genetikai programozás</strong> automatikus megoldások "
-"létrehozását, értékelését és módosítását jelenti az első "
-"programpopulációból. Ezt biológiai inspirált műveletek, például természetes "
-"szelekció, keresztezés és mutáció végrehajtásával valósítják meg. Ebben a "
-"környezetben minden generált program belsőleg egy kifejezésfaként van "
-"felépítve, amely potenciális megoldást jelent a naptárunkban."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
-"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
-"características clave y generar nuevos árboles cada vez más prometedores."
-msgstr ""
-"Az algoritmus folyamatosan értékeli az egyes fákat egy szigorú minőségi "
-"kritérium ( <em>alkalmasságfüggvény) alapján,</em> azzal a céllal, hogy "
-"örökölje a kulcsfontosságú jellemzőket, és új, egyre ígéretesebb fák "
-"generálja."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
-"óptima y más eficiente!"
-msgstr ""
-"Ezt a folyamatot egy evolúciós körben ismétlődik, amíg meg nem találjuk az "
-"optimális és leghatékonyabb megoldást!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr "Vezérlőpult: Aktív beállítások (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración del algoritmo"
-msgstr "Algoritmusbeállítások"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
@@ -103,10 +36,6 @@ msgid "Sin torneo"
 msgstr "Nincs torna"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr "Aktív naptár: %(torneo)s (azonosító: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
 msgstr "Dátum"
 
@@ -121,10 +50,6 @@ msgstr "Távozzunk"
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
 msgstr "Ehhez a konfigurációhoz nem generált játékok."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr "Az adatbázisban regisztrált tornamérkőzések megjelenítése."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
@@ -143,227 +68,8 @@ msgid "Violaciones de reglas:"
 msgstr "Szabálysértések:"
 
 #: tesis/templates/tesis/dashboard.html
-msgid ""
-"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
-" árbol de soluciones sintácticas."
-msgstr ""
-"Nyomja meg az alábbi gombot, hogy aktiválja a genetikai algoritmust és "
-"megjelenítse a szintaktikai megoldásfát."
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Futtatás optimalizálása"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Guía operativa del sistema"
-msgstr "Rendszer működési útmutató"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Instrucciones de inicio rápido"
-msgstr "Gyors indítási utasítások"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
-" secuenciales:"
-msgstr ""
-"Ahhoz, hogy sikeresen interakciót kezdj el a demóval, kövesd ezeket a "
-"sorozatos lépéseket:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Crea un equipo, una liga y un torneo respectivo en tus paneles "
-"administrativos. <strong>Nota importante:</strong> el número total de "
-"equipos participantes debe ser par."
-msgstr ""
-"Hozz létre csapatot, ligát és tornát az adminisztratív panelekben. "
-"<strong>Fontos megjegyzés:</strong> A résztvevő csapatok teljes számának "
-"egyenlőnek kell lennie."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
-" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
-" optimización\"</strong> para estructurar el calendario automatizado."
-msgstr ""
-"Miután meghatároztad a résztvevőket, menj a fenti panelre, válaszd ki az "
-"aktív versenyedet, és kattints a zöld <strong>\"Run Optimization\"</strong> "
-"gombra, hogy felépítsd az automatizált menetrendet."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr "Az MI belső logika és algoritmikus áramlása"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
-"mostramos paso a paso el ciclo de vida evasivo basado en programación "
-"genética:"
-msgstr ""
-"Mi történik belsőleg, amikor a szoftver elérhetővé válik? Íme egy lépésről "
-"lépésre áttekintés a genetikai programozás alapján kitérő életciklusról:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "1. Configuración e hiperparámetros base"
-msgstr "1. Alapkonfiguráció és hiperparaméterek"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se cargan las variables del panel que definirán las generaciones, el tamaño "
-"inicial de la población, así como las tasas de probabilidad asociadas al "
-"cruce y la mutación genómica."
-msgstr ""
-"Panelváltozók határozzák meg a generációkat, a kezdeti populációméretet, "
-"valamint a keresztezéssel és genomikai mutációval kapcsolatos valószínűségi "
-"arányokat."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr "2. Az operátorok és szerkezeti blokkok (nyelvtan) meghatározása"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las primitivas:"
-msgstr "Az primitívek:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr ""
-"azok a logikai műveletek, amelyeket egy program végrehajt a fa "
-"felépítéséhez."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las terminales:"
-msgstr "A terminálok:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"representan los datos constantes o variables básicas estructuradas del "
-"torneo."
-msgstr ""
-"a torna állandó adatait vagy strukturált alapvető változóit képviselik."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "listas maestros de días hábiles"
-msgstr "Munkanapok fő listái"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "tanto en condición de casa como de visita"
-msgstr "otthon és idegenben egyaránt"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "inicializador vacío"
-msgstr "Üres inicializáló"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las efímeras:"
-msgstr "A múlóság:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son valores aleatorios puros que se introducen en nodos específicos para "
-"inyectar variabilidad matemática al sistema."
-msgstr ""
-"Ezek tiszta véletlenszerű értékek, amelyeket meghatározott csomópontokba "
-"juttatnak, hogy matematikai változékonyságot vigyenek be a rendszerbe."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fecha aleatoria y equipo aleatorio."
-msgstr "Véletlenszerű randi és véletlenszerű csapat."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr "3. Inicializáció, evolúciós ciklus és konvergencia"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fase de ejecución en vivo:"
-msgstr "Élő végrehajtási fázis:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El sistema genera una población inicial aleatoria y convierte cada propuesta"
-" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
-"donde ocurre la magia computacional!"
-msgstr ""
-"A rendszer véletlenszerű kezdeti populációt generál, és minden javaslatot "
-"hierarchikus fa szerkezetté (<em>szintaxisfává</em>) alakít át. Itt történik"
-" a számítási varázslat!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Visualización y muestreo:"
-msgstr "Vizualizáció és mintavétel:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se procesa la población inicial y se genera el renderizado de los árboles "
-"mediante el generador de sintaxis."
-msgstr ""
-"Az eredeti populációt feldolgozják, és a fákat a szintaxisgenerátor "
-"segítségével rendereljük."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Evaluación de aptitud:"
-msgstr "Alkalmasságfelmérés:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
-"distancia acumulada en kilómetros y el cumplimiento normativo."
-msgstr ""
-"Minden egyén <em>fittségi</em> értékét a kilométeres összesített távolság és"
-" a szabályozási megfelelés alapján számítják ki."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Selección natural:"
-msgstr "Természetes szelekció:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se escogen los mejores individuos de la ronda anterior para actuar como "
-"padres biológicos de la nueva generación."
-msgstr ""
-"Az előző kör legjobb egyénekét választják ki, hogy az új generáció biológiai"
-" szülőiként működjenek."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Cruzamiento, mutación y herencia:"
-msgstr "Keresztezés, mutáció és öröklés:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
-" mutaciones en nodos aleatorios."
-msgstr ""
-"Új egyedeket hoznak létre úgy, hogy kiemelkedő fák ágait keverjük és "
-"véletlenszerű csomópontokban alkalmazzák a mutációkat."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Bucle iterativo:"
-msgstr "Iteratív kör:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
-" hasta completar el total de generaciones configuradas en la interfaz."
-msgstr ""
-"Az értékelés, kiválasztás és lejátszási lépések sorban ismétlődnek, amíg az "
-"interfészen konfigurált generációk száma be nem teljesül."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Resultados oficiales:"
-msgstr "Hivatalos eredmények:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El mejor individuo obtenido en la última iteración se valida y su estructura"
-" interna se almacena como el calendario definitivo del torneo de béisbol."
-msgstr ""
-"Az utolsó verzióban elért legjobb személyt validálják, és belső struktúrája "
-"a végleges baseball versenynaptárként kerül tárolásra."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Tesis de Ingeniería en Computación"
-msgstr "Számítástechnikai szakdolgozat"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Avances después de la tesis"
@@ -572,10 +278,6 @@ msgstr "Ugrás a tartalomra"
 #: documentacion/templates/documentacion/base.html
 msgid "Histórico"
 msgstr "Történelem"
-
-#: documentacion/templates/documentacion/base.html
-msgid "Herramienta"
-msgstr "Eszköz"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
@@ -923,3 +625,541 @@ msgid ""
 msgstr ""
 "Az oldal %(total)s nyelven érhető el. Az eredeti mexikói spanyol nyelvű. A "
 "többi verzió automatikus fordítás Azure AI Fordítóval, és hibákat okozhat."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Principal"
+msgstr "Fő"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Guía"
+msgstr "Útmutató"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Demo"
+msgstr "Demó"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Modo oscuro"
+msgstr "Sötét mód"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo: calendario y viaje por equipo"
+msgstr "Demó: Menetrend és csapatutazás"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Genera un calendario de béisbol con programación genética y mide cuánto "
+"viaja cada equipo."
+msgstr ""
+"Generál egy baseball naptárt genetikai programozással, és méri, mennyit "
+"utazik az egyes csapatok."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo · Viaje justo entre equipos"
+msgstr "Demó · Tisztességes utazás csapatok között"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Genera un calendario y"
+msgstr "Generálj egy naptárt és"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "mide cuánto viaja cada equipo."
+msgstr "Mérd meg, mennyit utaznak az egyes csapatok."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La IA (programación genética) busca calendarios donde el viaje sea corto y "
+"parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
+"pasos</a>."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Todavía no hay ninguna configuración"
+msgstr "Még nincs konfiguráció"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para optimizar un calendario, primero registra los equipos, la liga y el "
+"torneo, y después crea una configuración."
+msgstr ""
+"A menetrend optimalizálásához először rögzítse a csapatokat, a ligát és a "
+"tornát, majd hozzon létre egy konfigurációt."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Abrir la guía"
+msgstr "Nyisd ki az útmutatót"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver el árbol en grande"
+msgstr "Lásd a fát nagyban"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón para ejecutar el motor y ver el árbol del mejor "
+"calendario."
+msgstr ""
+"Nyomd meg a gombot, hogy beindítsd a motort, és lásd a legjobb naptárfát."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tarda unos segundos."
+msgstr "Néhány másodpercig tart."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al "
+"azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, "
+"eso es una ventaja: tienes una línea base y una mejora que puedes medir."
+msgstr ""
+"<strong>Megjegyzés:</strong> a szakdolgozat változata nem győzte meg a "
+"véletlenszerű naptárt. Az új motor igen, az előzetes teszteken. Egy iskolai "
+"projektnél ez előny: van egy alapvonal és egy fejlődés, amit mérni tudsz."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario: %(torneo)s"
+msgstr "Menetrend: %(torneo)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración %(id)s"
+msgstr "Konfiguráció %(id)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Para presentarlo a tu equipo"
+msgstr "Hogy bemutasd a csapatodnak"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las respuestas que te van a pedir en clase."
+msgstr "A válaszokat, amiket az órán fognak kérni."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Dónde está la IA?"
+msgstr "Hol van az MI?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Un calendario es un árbol que evoluciona. El código está en "
+"<code>programa_genetico/</code> y usa la biblioteca DEAP."
+msgstr ""
+"A naptár egy fejlődő fa. A kód benne <code>programa_genetico/</code> van, és"
+" használja a DEAP könyvtárat."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Qué patrones usa?"
+msgstr "Milyen mintákat használsz?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Django separa modelo, vista y plantilla. <code>ProgramaFacadeView</code> "
+"esconde el motor detrás de una sola entrada."
+msgstr ""
+"A Django elválasztja a modellt, a nézetet és a sablont. "
+"<code>ProgramaFacadeView</code> A motort egyetlen bemenet mögé rejti."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Cómo lo adapto?"
+msgstr "Hogyan tudom ezt adaptálni?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambia equipos y reglas"
+msgstr "Csapatokat és szabályokat váltson"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
+" el patrón Strategy para la medida de “viaje justo”."
+msgstr ""
+"A csapatok és koordináták fel vannak jegyezve az útmutatóban. Egy ötlet a "
+"csapatodnak: használd a Stratégia mintát a \"fair trip\" mérőszámhoz."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Puedo usarlo?"
+msgstr "Használhatom?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sí, con GPL-3.0"
+msgstr "Igen, a GPL-3.0-val"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Puedes modificarlo. Conserva el crédito y cita la tesis."
+msgstr "Módosíthatod. Tartsd meg a kreditet, és hivatkozz a tézisre."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cómo citar"
+msgstr "Hogyan hivatkozzunk"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo y pide ayuda"
+msgstr "Futtasd le, és kérj segítséget"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo en tu computadora"
+msgstr "Futtasd a számítógépedön"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Pídele ayuda a tu asistente de IA"
+msgstr "Kérj segítséget az MI asszisztensedtől"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
+"programa_genetico/programagenetico.py."
+msgstr ""
+"Másold le ezt a kérdést, és beilleszted a használt varázslóba, valamint a "
+"programa_genetico/programagenetico.py fájlba."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Explícame paso a paso cómo este programa genético crea y evalúa un "
+"calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
+" la diferencia entre el equipo que más viaja y el que menos."
+msgstr ""
+"Magyarázd el lépésről lépésre, hogyan készít és értékeli ez a genetikai "
+"program egy menetrendet. Aztán mondd el, mit változtatnál meg, hogy a \"fair"
+" travel\" mértéke a különbség legyen a legtöbbet utazó és a legkevesebb "
+"utazó csapat között."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
+msgstr "Nézd meg, mit mond a kóddal szemben. Az MI hibázhat."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cerrar"
+msgstr "Zárt"
+
+#: tesis/templates/tesis/guia/_base.html
+msgid "Paso %(n)s de %(t)s"
+msgstr "%(n)s lépés %(t)s"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "Revisa los campos marcados."
+msgstr "Ellenőrizd a jelölt mezőket."
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "obligatorio"
+msgstr "Kötelező"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "Pasos de la guía"
+msgstr "Útmutató lépések"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "hecho"
+msgstr "Tény"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "pendiente"
+msgstr "Függőben"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Paso 5: calendario"
+msgstr "5. lépés: Naptár"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid ""
+"Genera los juegos del torneo «%(torneo)s». El primer calendario se arma al "
+"azar; después puedes optimizarlo con el algoritmo genético."
+msgstr ""
+"Generáld a \"%(torneo)s\" tornajátékokat. Az első menetrendet "
+"véletlenszerűen állítják össze; ezután a genetikai algoritmussal "
+"optimalizálhatod."
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Volver a generar los juegos"
+msgstr "Újjáépítsd a játékokat"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Generar los juegos"
+msgstr "Generáld a játékokat"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "se muestran los primeros 50"
+msgstr "Top 50 bemutatva"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "¿Y ahora?"
+msgstr "És most?"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Abrir este calendario en el panel y optimizarlo"
+msgstr "Nyisd meg ezt a naptárt az irányítópulton, és optimalizáld"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "(tarda unos 20 segundos)"
+msgstr "(kb. 20 másodpercig tart)"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Ver el detalle del calendario"
+msgstr "Tekintse meg a naptár részleteit"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Leer por qué la versión de la tesis no superó a la búsqueda aleatoria"
+msgstr ""
+"Olvasd el, miért nem múlta felül a szakdolgozati változat a véletlenszerű "
+"keresést"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Paso 4: configuración"
+msgstr "4. lépés: Beállítás"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Estos son los parámetros del algoritmo genético para el torneo."
+msgstr "Ezek a torna genetikai algoritmusának paraméterei."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Importante:"
+msgstr "Fontos:"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid ""
+"la versión del motor de la tesis guarda estos valores, pero al optimizar usa"
+" siempre población 100, 20 generaciones, cruce 0.8 y mutación 0.2. La "
+"versión mejorada del motor sí los usará."
+msgstr ""
+"A dolgozat motoros változata ezeket az értékeket menti, de optimalizáláskor "
+"mindig 100, 20 generáció, kereszteződés 0,8 és mutáció 0,2 értéket használ. "
+"A motorok továbbfejlesztett verziója ezeket fogja használni."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Guardar y seguir al paso 5"
+msgstr "Mentsd el, és folytasd az 5. lépést"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Paso 1: equipos"
+msgstr "1. lépés: Csapatok"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Puedes usar los que ya existen o agregar uno nuevo."
+msgstr "Használhatod a meglévőket, vagy hozzáadhatsz egy újat."
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Ver los últimos equipos registrados"
+msgstr "Tekintse meg a legfrissebb regisztrált csapatokat"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar un equipo"
+msgstr "Csapat hozzáadása"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar equipo"
+msgstr "Felszerelés hozzáadása"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Seguir al paso 2: liga"
+msgstr "Folytasd a 2. lépésre: Liga"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Necesitas al menos 2 equipos para seguir."
+msgstr "Legalább két csapatra van szükséged, hogy követd."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Guía: del registro al calendario"
+msgstr "Útmutató: A regisztrációtól a naptárig"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
+" el algoritmo y generas un calendario de juegos."
+msgstr ""
+"Öt lépésben regisztrálod a csapatokat, beállítod a ligát és a tornát, "
+"eldöntöd, hogyan futtatod az algoritmust, és generálsz egy meccsmenetet."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
+msgstr "Csapatok: legalább 2 regisztráljanak a stadionjuk helyével együtt."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Liga: elige qué equipos juegan juntos."
+msgstr "Liga: Válaszd ki, mely csapatok játszanak együtt."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Torneo: define las fechas, las series y los juegos."
+msgstr "Verseny: Határozd meg a dátumokat, sorozatokat és mérkőzéseket."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Configuración: elige los parámetros del algoritmo genético."
+msgstr "Beállítások: Válaszd ki a genetikai algoritmus paramétereit."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Calendario: genera los juegos y revísalos."
+msgstr "Naptár: Generáld és értékeld a játékokat."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"Lo que crees aquí lo ve cualquier visitante del sitio. No escribas datos "
+"personales."
+msgstr ""
+"Amit itt létrehozol, az minden látogató számára látható. Ne írj személyes "
+"adatokat."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Empezar"
+msgstr "Kezdj el"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Paso 2: liga"
+msgstr "2. lépés: Kötelék"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid ""
+"Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
+"equipos: con un número impar, uno se queda sin rival en cada serie."
+msgstr ""
+"A liga az a csapatcsoport, amely egymással játszik. Páros számú csapat "
+"használata: páratlan szám esetén minden sorozatban ellenfél nélkül marad."
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Guardar y seguir al paso 3"
+msgstr "Mentsd el, és folytasd a 3. lépést"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Paso 3: torneo"
+msgstr "3. lépés: Verseny"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid ""
+"El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
+"lunes a jueves y los sábados, entre el primer y el último día."
+msgstr ""
+"A tornán az \"%(liga)s\" liga csapatai szerepelnek. A mérkőzések hétfőtől "
+"csütörtökig, valamint szombaton, az első és utolsó nap között zajlanak."
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Guardar y seguir al paso 4"
+msgstr "Mentsd el, és folytasd a 4. lépést"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Programación genética para calendarios de béisbol"
+msgstr "Genetikai programozás baseball naptárak számára"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
+"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
+msgstr ""
+"Koza-TTP: Leslie Dickinson (ITAM) szakdolgozata a baseball naptárak "
+"genetikai programozásáról, őszinte eredménnyel és továbbfejlesztett "
+"motorral."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Tesis ITAM · Programación genética · Béisbol"
+msgstr "ITAM szakdolgozat · Genetikai programozás · Baseball"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Mi tesis dijo la verdad:"
+msgstr "A szakdolgozatom igazat mondott:"
+
+#: tesis/templates/tesis/inicio.html
+msgid "el algoritmo no le ganó al azar."
+msgstr "Az algoritmus nem győzte meg véletlenszerűen."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
+"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
+"corrigiendo en público."
+msgstr ""
+"A Koza-TTP ezt a tézist a genetikai programozással baseball szezonnaptárak "
+"készítésével folytatja. Itt látni fogja, mi ment félre, miért, és hogyan "
+"javítom nyilvánosan."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ingeniería en Computación, ITAM"
+msgstr "Számítástechnika, ITAM"
+
+#: tesis/templates/tesis/inicio.html
+msgid "¿Cuánto tiempo tienes?"
+msgstr "Mennyi időd van?"
+
+#: tesis/templates/tesis/inicio.html
+msgid "2 minutos"
+msgstr "2 perc"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Entender la idea"
+msgstr "Az ötlet megértése"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Qué es la programación genética y por qué un calendario de béisbol es un "
+"problema difícil."
+msgstr ""
+"Mi az a genetikai programozás, és miért nehéz probléma a baseball naptár?"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Empezar aquí"
+msgstr "Kezdjük itt"
+
+#: tesis/templates/tesis/inicio.html
+msgid "5 minutos · 5 pasos"
+msgstr "5 perc · 5 lépés"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Probar la herramienta"
+msgstr "Próbáld ki az eszközt"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
+msgstr ""
+"Regisztrálj csapatokat, építs egy ligát, és készíts saját naptáradat. Nincs "
+"fiók."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Sin prisa"
+msgstr "Nincs sietség"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Leer la tesis y el código"
+msgstr "Olvasd el a szakdolgozatot és a kódot"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"El documento original, la bitácora de avances y el repositorio abierto."
+msgstr "Az eredeti dokumentum, a haladási napló és a nyitott tároló."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ir a la tesis"
+msgstr "Nézz a szakdolgozathoz"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Qué tan confiable es cada parte"
+msgstr "Mennyire megbízhatóak minden alkatrész"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Para que sepas qué puedes citar y qué todavía cambia."
+msgstr "Tehát tudod, mit tudsz idézni, és mi változik mégis."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Final"
+msgstr "Döntő"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Resultados de la tesis"
+msgstr "A szakdolgozat eredményei"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Publicados en 2026. No se modifican."
+msgstr "2026-ban jelent meg. Nem módosítottak."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Preliminar"
+msgstr "Előkészítő"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Motor mejorado"
+msgstr "Továbbfejlesztett motor"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En pruebas: 31 %% menos distancia en 3 corridas."
+msgstr "Teszteken: 31%%-kal kevesebb távolság 3 futásból."
+
+#: tesis/templates/tesis/inicio.html
+msgid "En revisión"
+msgstr "Áttekintésben"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Traducciones"
+msgstr "Fordítások"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Automáticas, incluidas maya y otomí. Puedes corregirlas."
+msgstr "Automatikus, beleértve Mayat és Otomít is. Meg tudod javítani őket."
