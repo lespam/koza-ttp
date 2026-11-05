@@ -8,78 +8,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Programación genética - Planificación de béisbol"
-msgstr "Programare genetică - Planificarea baseball-ului"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
 msgstr "Limbă"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
 msgstr "Schimbare"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr "Programarea genetică în planificarea sezonului de baseball"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "¡Bienvenido a la aplicación!"
-msgstr "Bine ai venit în aplicație!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Este sistema interactivo busca resolver de manera óptima la organización y "
-"logística de un calendario para una temporada completa de béisbol. Para "
-"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
-"inspirada directamente en la evolución natural de las especies."
-msgstr ""
-"Acest sistem interactiv urmărește să rezolve optim organizarea și logistica "
-"unui calendar pentru un sezon complet de baseball. Pentru a realiza acest "
-"lucru, am implementat o tehnică avansată de inteligență artificială, "
-"inspirată direct de evoluția naturală a speciilor."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"La <strong>programación genética</strong> consiste en crear, evaluar y "
-"modificar soluciones de forma automática a partir de una población inicial "
-"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
-"selección natural, el cruzamiento y la mutación. En este entorno, cada "
-"programa generado se estructura internamente como un árbol de expresión que "
-"representa una solución potencial para nuestro calendario."
-msgstr ""
-"<strong>Programarea genetică</strong> implică crearea, evaluarea și "
-"modificarea automată a soluțiilor dintr-o populație inițială de programe. "
-"Acest lucru se realizează prin executarea unor operații bioinspirate, precum"
-" selecția naturală, încrucișarea și mutația. În acest mediu, fiecare program"
-" generat este structurat intern ca un arbore de expresie care reprezintă o "
-"soluție potențială pentru calendarul nostru."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
-"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
-"características clave y generar nuevos árboles cada vez más prometedores."
-msgstr ""
-"Algoritmul evaluează continuu fiecare copac folosind un criteriu strict de "
-"calitate ( <em>funcția de fitness), cu</em> scopul de a moșteni "
-"caracteristici cheie și de a genera arbori noi din ce în ce mai promițători."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
-"óptima y más eficiente!"
-msgstr ""
-"Acest proces se repetă într-o buclă evolutivă până când se găsește soluția "
-"optimă și eficientă!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr "Panoul de control: Setări active (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración del algoritmo"
-msgstr "Setări ale algoritmului"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
@@ -102,10 +36,6 @@ msgid "Sin torneo"
 msgstr "Niciun turneu"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr "Calendar activ: %(torneo)s (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
 msgstr "Data"
 
@@ -120,10 +50,6 @@ msgstr "Pleacă"
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
 msgstr "Nu sunt generate jocuri pentru această configurație."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr "Afișează meciurile de turneu înregistrate în baza de date."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
@@ -142,228 +68,8 @@ msgid "Violaciones de reglas:"
 msgstr "Încălcări ale regulilor:"
 
 #: tesis/templates/tesis/dashboard.html
-msgid ""
-"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
-" árbol de soluciones sintácticas."
-msgstr ""
-"Apăsați butonul de mai jos pentru a activa algoritmul genetic și a afișa "
-"arborele de soluții sintactice."
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Optimizarea alergării"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Guía operativa del sistema"
-msgstr "Ghid operațional al sistemului"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Instrucciones de inicio rápido"
-msgstr "Instrucțiuni de pornire rapidă"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
-" secuenciales:"
-msgstr ""
-"Pentru a începe să interacționezi cu succes cu demo-ul, urmează acești pași "
-"secvențiali:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Crea un equipo, una liga y un torneo respectivo en tus paneles "
-"administrativos. <strong>Nota importante:</strong> el número total de "
-"equipos participantes debe ser par."
-msgstr ""
-"Creează o echipă, o ligă și un turneu în panourile tale administrative. "
-"<strong>Notă importantă:</strong> Numărul total de echipe participante "
-"trebuie să fie par."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
-" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
-" optimización\"</strong> para estructurar el calendario automatizado."
-msgstr ""
-"Odată ce ai definiți participanții, mergi la panoul de mai sus, selectează "
-"turneul activ și apasă pe butonul <strong>verde \"Run "
-"Optimization\"</strong> pentru a structura programul automatizat."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr "Logica internă și fluxul algoritmic al IA"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
-"mostramos paso a paso el ciclo de vida evasivo basado en programación "
-"genética:"
-msgstr ""
-"Ce se întâmplă intern când software-ul intră în funcțiune? Iată o privire "
-"pas cu pas asupra ciclului de viață evaziv bazat pe programarea genetică:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "1. Configuración e hiperparámetros base"
-msgstr "1. Configurația de bază și hiperparametrii"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se cargan las variables del panel que definirán las generaciones, el tamaño "
-"inicial de la población, así como las tasas de probabilidad asociadas al "
-"cruce y la mutación genómica."
-msgstr ""
-"Variabilele de tip panel care vor defini generațiile, dimensiunea inițială a"
-" populației, precum și ratele de probabilitate asociate cu mutațiile de "
-"crossover și genomice, sunt încărcate."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr "2. Definiția operatorilor și blocurilor structurale (gramatică)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las primitivas:"
-msgstr "Primitivele:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr ""
-"sunt operațiile logice pe care un program le execută pentru a construi "
-"arborele."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las terminales:"
-msgstr "Terminalele:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"representan los datos constantes o variables básicas estructuradas del "
-"torneo."
-msgstr ""
-"reprezintă datele constante sau variabilele de bază structurate ale "
-"turneului."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "listas maestros de días hábiles"
-msgstr "Liste principale ale zilelor lucrătoare"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "tanto en condición de casa como de visita"
-msgstr "atât acasă, cât și în deplasare"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "inicializador vacío"
-msgstr "Inițializator gol"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las efímeras:"
-msgstr "Efemerul:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son valores aleatorios puros que se introducen en nodos específicos para "
-"inyectar variabilidad matemática al sistema."
-msgstr ""
-"Ele sunt valori pur aleatorii care sunt introduse în noduri specifice pentru"
-" a injecta variabilitate matematică în sistem."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fecha aleatoria y equipo aleatorio."
-msgstr "Întâlnire aleatorie și echipă aleatorie."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr "3. Inițializare, ciclu evolutiv și convergență"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fase de ejecución en vivo:"
-msgstr "Faza de execuție live:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El sistema genera una población inicial aleatoria y convierte cada propuesta"
-" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
-"donde ocurre la magia computacional!"
-msgstr ""
-"Sistemul generează o populație inițială aleatorie și convertește fiecare "
-"propunere într-o structură ierarhică de arbore (<em>arbore sintactic</em>). "
-"Aici are loc magia computațională!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Visualización y muestreo:"
-msgstr "Vizualizare și eșantionare:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se procesa la población inicial y se genera el renderizado de los árboles "
-"mediante el generador de sintaxis."
-msgstr ""
-"Populația inițială este procesată, iar arborii sunt redați folosind "
-"generatorul de sintaxă."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Evaluación de aptitud:"
-msgstr "Evaluarea aptitudinilor:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
-"distancia acumulada en kilómetros y el cumplimiento normativo."
-msgstr ""
-"Valoarea <em>de fitness</em> a fiecărei persoane este calculată pe baza "
-"distanței cumulative în kilometri și a conformității cu reglementările."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Selección natural:"
-msgstr "Selecția naturală:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se escogen los mejores individuos de la ronda anterior para actuar como "
-"padres biológicos de la nueva generación."
-msgstr ""
-"Cei mai buni indivizi din runda anterioară sunt aleși să acționeze ca "
-"părinți biologici ai noii generații."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Cruzamiento, mutación y herencia:"
-msgstr "Încrucișarea, mutațiile și moștenirea:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
-" mutaciones en nodos aleatorios."
-msgstr ""
-"Indivizi noi sunt creați prin amestecarea ramurilor copacilor proeminenți și"
-" aplicarea mutațiilor în noduri aleatorii."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Bucle iterativo:"
-msgstr "Buclă iterativă:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
-" hasta completar el total de generaciones configuradas en la interfaz."
-msgstr ""
-"Pașii de evaluare, selecție și redare sunt repetați secvențial până când "
-"numărul total de generații configurate în interfață este complet."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Resultados oficiales:"
-msgstr "Rezultate oficiale:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El mejor individuo obtenido en la última iteración se valida y su estructura"
-" interna se almacena como el calendario definitivo del torneo de béisbol."
-msgstr ""
-"Cel mai bun individ obținut în ultima iterație este validat, iar structura "
-"sa internă este stocată ca programul definitiv al turneului de baseball."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Tesis de Ingeniería en Computación"
-msgstr "Teză de Inginerie Calculatoarelor"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Avances después de la tesis"
@@ -572,10 +278,6 @@ msgstr "Sari la conținut"
 #: documentacion/templates/documentacion/base.html
 msgid "Histórico"
 msgstr "Istoric"
-
-#: documentacion/templates/documentacion/base.html
-msgid "Herramienta"
-msgstr "Unealtă"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
@@ -923,3 +625,542 @@ msgstr ""
 "Site-ul este oferit în %(total)s limbi. Originalul este în spaniolă "
 "mexicană. Celelalte versiuni sunt traduceri automate cu Azure AI Translator "
 "și pot conține erori."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Principal"
+msgstr "Principal"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Guía"
+msgstr "Ghid"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Demo"
+msgstr "Demo"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Modo oscuro"
+msgstr "Modul întunecat"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo: calendario y viaje por equipo"
+msgstr "Demonstrație: Program și deplasări ale echipei"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Genera un calendario de béisbol con programación genética y mide cuánto "
+"viaja cada equipo."
+msgstr ""
+"Generează un calendar de baseball cu programare genetică și măsoară cât de "
+"mult călătorește fiecare echipă."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo · Viaje justo entre equipos"
+msgstr "Demo · Călătorie corectă între echipe"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Genera un calendario y"
+msgstr "Generează un calendar și"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "mide cuánto viaja cada equipo."
+msgstr "Măsoară cât de mult călătorește fiecare echipă."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La IA (programación genética) busca calendarios donde el viaje sea corto y "
+"parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
+"pasos</a>."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Todavía no hay ninguna configuración"
+msgstr "Încă nicio configurație"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para optimizar un calendario, primero registra los equipos, la liga y el "
+"torneo, y después crea una configuración."
+msgstr ""
+"Pentru a optimiza un program, înregistrează mai întâi echipele, liga și "
+"turneul, apoi creează o configurație."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Abrir la guía"
+msgstr "Deschide ghidul"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver el árbol en grande"
+msgstr "Vezi arborele în mărime"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón para ejecutar el motor y ver el árbol del mejor "
+"calendario."
+msgstr ""
+"Apasă butonul pentru a porni motorul și a vedea cel mai bun arbore "
+"calendaristic."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tarda unos segundos."
+msgstr "Durează câteva secunde."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al "
+"azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, "
+"eso es una ventaja: tienes una línea base y una mejora que puedes medir."
+msgstr ""
+"<strong>Notă:</strong> versiunea de teză nu a depășit un calendar aleatoriu."
+" Noul motor a făcut-o, la testele preliminare. Pentru un proiect școlar, "
+"acesta este un avantaj: ai un punct de referință și o îmbunătățire pe care o"
+" poți măsura."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario: %(torneo)s"
+msgstr "Program: %(torneo)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración %(id)s"
+msgstr "Configurația %(id)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Para presentarlo a tu equipo"
+msgstr "Să o introduci echipei tale"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las respuestas que te van a pedir en clase."
+msgstr "Răspunsurile pe care ți se va cere la curs."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Dónde está la IA?"
+msgstr "Unde este AI-ul?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Un calendario es un árbol que evoluciona. El código está en "
+"<code>programa_genetico/</code> y usa la biblioteca DEAP."
+msgstr ""
+"Un calendar este un arbore care evoluează. Codul este în "
+"<code>programa_genetico/</code> și folosește biblioteca DEAP."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Qué patrones usa?"
+msgstr "Ce modele folosești?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Django separa modelo, vista y plantilla. <code>ProgramaFacadeView</code> "
+"esconde el motor detrás de una sola entrada."
+msgstr ""
+"Django separă modelul, vizualizarea și șablonul. "
+"<code>ProgramaFacadeView</code> Ascunde motorul în spatele unei singure "
+"intrări."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Cómo lo adapto?"
+msgstr "Cum îl adaptez?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambia equipos y reglas"
+msgstr "Schimbă echipele și regulile"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
+" el patrón Strategy para la medida de “viaje justo”."
+msgstr ""
+"Echipele și coordonatele sunt înregistrate în ghid. O idee pentru echipa ta:"
+" folosește modelul Strategie pentru măsura \"călătorie corectă\"."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Puedo usarlo?"
+msgstr "Pot să-l folosesc?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sí, con GPL-3.0"
+msgstr "Da, cu GPL-3.0"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Puedes modificarlo. Conserva el crédito y cita la tesis."
+msgstr "Poți să o modifici. Păstrează meritele și citează teza."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cómo citar"
+msgstr "Cum să citezi"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo y pide ayuda"
+msgstr "Rulează-l și cere ajutor"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo en tu computadora"
+msgstr "Rulează-l pe calculatorul tău"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Pídele ayuda a tu asistente de IA"
+msgstr "Cere ajutorul asistentului tău AI"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
+"programa_genetico/programagenetico.py."
+msgstr ""
+"Copiază această întrebare și lipește-o în vrăjitorul pe care îl folosești, "
+"împreună cu fișierul programa_genetico/programagenetico.py."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Explícame paso a paso cómo este programa genético crea y evalúa un "
+"calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
+" la diferencia entre el equipo que más viaja y el que menos."
+msgstr ""
+"Explică-mi pas cu pas cum acest program genetic creează și evaluează un "
+"program. Apoi spune-mi ce ai schimba astfel încât măsura \"călătoriei "
+"corecte\" să fie diferența dintre echipa care călătorește cel mai mult și "
+"cea care călătorește cel mai puțin."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
+msgstr "Verifică ce îți spune în raport cu codul. AI-ul poate greși."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cerrar"
+msgstr "Închide"
+
+#: tesis/templates/tesis/guia/_base.html
+msgid "Paso %(n)s de %(t)s"
+msgstr "Pasul %(n)s al %(t)s"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "Revisa los campos marcados."
+msgstr "Verifică câmpurile marcate."
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "obligatorio"
+msgstr "Obligatoriu"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "Pasos de la guía"
+msgstr "Pași ghid"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "hecho"
+msgstr "Fapt"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "pendiente"
+msgstr "În așteptare"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Paso 5: calendario"
+msgstr "Pasul 5: Calendar"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid ""
+"Genera los juegos del torneo «%(torneo)s». El primer calendario se arma al "
+"azar; después puedes optimizarlo con el algoritmo genético."
+msgstr ""
+"Generează jocurile de turneu \"%(torneo)s\". Primul program este alcătuit "
+"aleatoriu; apoi îl poți optimiza cu algoritmul genetic."
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Volver a generar los juegos"
+msgstr "Reconstruiește jocurile"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Generar los juegos"
+msgstr "Generează jocurile"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "se muestran los primeros 50"
+msgstr "Top 50 prezentate"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "¿Y ahora?"
+msgstr "Și acum?"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Abrir este calendario en el panel y optimizarlo"
+msgstr "Deschide acest calendar din dashboard și optimizează-l"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "(tarda unos 20 segundos)"
+msgstr "(durează cam 20 de secunde)"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Ver el detalle del calendario"
+msgstr "Vezi detaliile calendarului"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Leer por qué la versión de la tesis no superó a la búsqueda aleatoria"
+msgstr "Citește de ce versiunea tezei nu a depășit căutarea aleatorie"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Paso 4: configuración"
+msgstr "Pasul 4: Configurarea"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Estos son los parámetros del algoritmo genético para el torneo."
+msgstr "Aceștia sunt parametrii algoritmului genetic pentru turneu."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Importante:"
+msgstr "Important:"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid ""
+"la versión del motor de la tesis guarda estos valores, pero al optimizar usa"
+" siempre población 100, 20 generaciones, cruce 0.8 y mutación 0.2. La "
+"versión mejorada del motor sí los usará."
+msgstr ""
+"Versiunea de motor a tezei salvează aceste valori, dar la optimizare "
+"folosește întotdeauna populația 100, 20 generații, crossover 0.8 și mutație "
+"0.2. Versiunea îmbunătățită a motorului le va folosi."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Guardar y seguir al paso 5"
+msgstr "Salvează și continuă la pasul 5"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Paso 1: equipos"
+msgstr "Pasul 1: Echipe"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Puedes usar los que ya existen o agregar uno nuevo."
+msgstr "Poți folosi cele existente sau adăuga una nouă."
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Ver los últimos equipos registrados"
+msgstr "Vezi cele mai recente echipe înregistrate"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar un equipo"
+msgstr "Adaugă o echipă"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar equipo"
+msgstr "Adaugă echipament"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Seguir al paso 2: liga"
+msgstr "Continuă la Pasul 2: Ligă"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Necesitas al menos 2 equipos para seguir."
+msgstr "Ai nevoie de cel puțin 2 echipe pe care să le urmezi."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Guía: del registro al calendario"
+msgstr "Ghid: De la înregistrare la calendar"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
+" el algoritmo y generas un calendario de juegos."
+msgstr ""
+"În 5 pași înregistrezi echipele, stabilești o ligă și un turneu, alegi cum "
+"să rulezi algoritmul și generezi un program de meciuri."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
+msgstr "Echipe: înregistrează cel puțin 2, cu locația stadionului lor."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Liga: elige qué equipos juegan juntos."
+msgstr "Ligă: Alege ce echipe joacă împreună."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Torneo: define las fechas, las series y los juegos."
+msgstr "Turneu: Definește datele, seriile și meciurile."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Configuración: elige los parámetros del algoritmo genético."
+msgstr "Setări: Alegeți parametrii algoritmului genetic."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Calendario: genera los juegos y revísalos."
+msgstr "Calendar: Generează și recenzează jocurile."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"Lo que crees aquí lo ve cualquier visitante del sitio. No escribas datos "
+"personales."
+msgstr ""
+"Ceea ce creezi aici este văzut de orice vizitator al site-ului. Nu scrie "
+"date personale."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Empezar"
+msgstr "Începe"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Paso 2: liga"
+msgstr "Pasul 2: Legătura"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid ""
+"Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
+"equipos: con un número impar, uno se queda sin rival en cada serie."
+msgstr ""
+"O ligă este grupul de echipe care se joacă între ele. Se folosește un număr "
+"par de echipe: cu un număr impar, una rămâne fără adversar în fiecare serie."
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Guardar y seguir al paso 3"
+msgstr "Salvează și continuă la pasul 3"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Paso 3: torneo"
+msgstr "Pasul 3: Turneu"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid ""
+"El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
+"lunes a jueves y los sábados, entre el primer y el último día."
+msgstr ""
+"Turneul folosește echipele ligii \"%(liga)s\". Meciurile sunt programate de "
+"luni până joi și sâmbăta, între prima și ultima zi."
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Guardar y seguir al paso 4"
+msgstr "Salvează și continuă la pasul 4"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Programación genética para calendarios de béisbol"
+msgstr "Programarea genetică pentru calendarele de baseball"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
+"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
+msgstr ""
+"Koza-TTP: Teza lui Leslie Dickinson (ITAM) despre programarea genetică "
+"pentru calendarele de baseball, cu rezultatul său sincer și motorul "
+"îmbunătățit."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Tesis ITAM · Programación genética · Béisbol"
+msgstr "Teză ITAM · Programare genetică · Baseball"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Mi tesis dijo la verdad:"
+msgstr "Teza mea spunea adevărul:"
+
+#: tesis/templates/tesis/inicio.html
+msgid "el algoritmo no le ganó al azar."
+msgstr "Algoritmul nu l-a învins la întâmplare."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
+"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
+"corrigiendo en público."
+msgstr ""
+"Koza-TTP preia această teză pentru a crea calendare pentru sezonul de "
+"baseball folosind programare genetică. Aici veți vedea ce a mers prost, de "
+"ce și cum corectez acest lucru în public."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ingeniería en Computación, ITAM"
+msgstr "Inginerie Calculatoare, ITAM"
+
+#: tesis/templates/tesis/inicio.html
+msgid "¿Cuánto tiempo tienes?"
+msgstr "Cât timp ai la dispoziție?"
+
+#: tesis/templates/tesis/inicio.html
+msgid "2 minutos"
+msgstr "2 minute"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Entender la idea"
+msgstr "Înțelegerea ideii"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Qué es la programación genética y por qué un calendario de béisbol es un "
+"problema difícil."
+msgstr ""
+"Ce este programarea genetică și de ce un calendar de baseball este o "
+"problemă dificilă."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Empezar aquí"
+msgstr "Începe aici"
+
+#: tesis/templates/tesis/inicio.html
+msgid "5 minutos · 5 pasos"
+msgstr "5 minute · 5 pași"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Probar la herramienta"
+msgstr "Încearcă unealta"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
+msgstr ""
+"Înregistrează echipe, construiește o ligă și generează-ți propriul calendar."
+" Fără cont."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Sin prisa"
+msgstr "Nicio grabă"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Leer la tesis y el código"
+msgstr "Citește teza și codul"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"El documento original, la bitácora de avances y el repositorio abierto."
+msgstr "Documentul original, jurnalul de progres și depozitul deschis."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ir a la tesis"
+msgstr "Mergi la teză"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Qué tan confiable es cada parte"
+msgstr "Cât de fiabilă este fiecare piesă"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Para que sepas qué puedes citar y qué todavía cambia."
+msgstr "Ca să știi ce poți cita și ce se mai schimbă."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Final"
+msgstr "Finala"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Resultados de la tesis"
+msgstr "Rezultatele tezei"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Publicados en 2026. No se modifican."
+msgstr "Publicat în 2026. Nu sunt modificate."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Preliminar"
+msgstr "Preliminar"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Motor mejorado"
+msgstr "Motor îmbunătățit"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En pruebas: 31 %% menos distancia en 3 corridas."
+msgstr "În teste: cu 31%% distanță mai mică în 3 alergări."
+
+#: tesis/templates/tesis/inicio.html
+msgid "En revisión"
+msgstr "În recapitulare"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Traducciones"
+msgstr "Traduceri"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Automáticas, incluidas maya y otomí. Puedes corregirlas."
+msgstr "Automat, inclusiv Maya și Otomí. Poți să-i repari."

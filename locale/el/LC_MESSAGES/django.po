@@ -8,79 +8,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Programación genética - Planificación de béisbol"
-msgstr "Γενετικός Προγραμματισμός - Σχεδιασμός Μπέιζμπολ"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
 msgstr "Γλώσσα"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
 msgstr "Αλλαγή"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr "Γενετικός Προγραμματισμός στον Προγραμματισμό Σεζόν του Μπέιζμπολ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "¡Bienvenido a la aplicación!"
-msgstr "Καλώς ήρθατε στην εφαρμογή!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Este sistema interactivo busca resolver de manera óptima la organización y "
-"logística de un calendario para una temporada completa de béisbol. Para "
-"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
-"inspirada directamente en la evolución natural de las especies."
-msgstr ""
-"Αυτό το διαδραστικό σύστημα επιδιώκει να λύσει βέλτιστα την οργάνωση και την"
-" επιμελητεία ενός ημερολογίου για μια πλήρη σεζόν μπέιζμπολ. Για να το "
-"πετύχουμε αυτό, εφαρμόσαμε μια προηγμένη τεχνική τεχνητής νοημοσύνης άμεσα "
-"εμπνευσμένη από τη φυσική εξέλιξη των ειδών."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"La <strong>programación genética</strong> consiste en crear, evaluar y "
-"modificar soluciones de forma automática a partir de una población inicial "
-"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
-"selección natural, el cruzamiento y la mutación. En este entorno, cada "
-"programa generado se estructura internamente como un árbol de expresión que "
-"representa una solución potencial para nuestro calendario."
-msgstr ""
-"<strong>Ο γενετικός προγραμματισμός</strong> περιλαμβάνει την αυτόματη "
-"δημιουργία, αξιολόγηση και τροποποίηση λύσεων από έναν αρχικό πληθυσμό "
-"προγραμμάτων. Αυτό επιτυγχάνεται με την εκτέλεση βιοεμπνευσμένων λειτουργιών"
-" όπως η φυσική επιλογή, η διασταύρωση και η μετάλλαξη. Σε αυτό το "
-"περιβάλλον, κάθε πρόγραμμα που δημιουργείται είναι εσωτερικά δομημένο ως ένα"
-" δέντρο έκφρασης που αντιπροσωπεύει μια πιθανή λύση στο ημερολόγιό μας."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
-"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
-"características clave y generar nuevos árboles cada vez más prometedores."
-msgstr ""
-"Ο αλγόριθμος αξιολογεί συνεχώς κάθε δέντρο χρησιμοποιώντας ένα αυστηρό "
-"κριτήριο ποιότητας ( <em>συνάρτηση φυσικής κατάστασης) με</em> στόχο την "
-"κληρονομικότητα βασικών χαρακτηριστικών και τη δημιουργία νέων δέντρων που "
-"είναι όλο και πιο ελπιδοφόρα."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
-"óptima y más eficiente!"
-msgstr ""
-"Αυτή η διαδικασία επαναλαμβάνεται σε έναν εξελικτικό βρόχο μέχρι να βρεθεί η"
-" βέλτιστη και πιο αποτελεσματική λύση!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr "Πίνακας Ελέγχου: Ενεργές Ρυθμίσεις (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración del algoritmo"
-msgstr "Ρυθμίσεις αλγορίθμου"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
@@ -103,10 +36,6 @@ msgid "Sin torneo"
 msgstr "Χωρίς τουρνουά"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr "Ενεργό ημερολόγιο: %(torneo)s (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
 msgstr "Ημερομηνία"
 
@@ -121,11 +50,6 @@ msgstr "Μακριά"
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
 msgstr "Δεν δημιουργούνται παιχνίδια για αυτήν τη διαμόρφωση."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr ""
-"Εμφάνιση των αγώνων του τουρνουά που είναι εγγεγραμμένοι στη βάση δεδομένων."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
@@ -144,232 +68,8 @@ msgid "Violaciones de reglas:"
 msgstr "Παραβιάσεις κανόνων:"
 
 #: tesis/templates/tesis/dashboard.html
-msgid ""
-"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
-" árbol de soluciones sintácticas."
-msgstr ""
-"Πατήστε το παρακάτω κουμπί για να ενεργοποιήσετε τον γενετικό αλγόριθμο και "
-"να εμφανίσετε το δέντρο συντακτικής λύσης."
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Βελτιστοποίηση εκτέλεσης"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Guía operativa del sistema"
-msgstr "Οδηγός λειτουργίας συστήματος"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Instrucciones de inicio rápido"
-msgstr "Οδηγίες γρήγορης εκκίνησης"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
-" secuenciales:"
-msgstr ""
-"Για να ξεκινήσετε την επιτυχή αλληλεπίδραση με την επίδειξη, ακολουθήστε "
-"αυτά τα διαδοχικά βήματα:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Crea un equipo, una liga y un torneo respectivo en tus paneles "
-"administrativos. <strong>Nota importante:</strong> el número total de "
-"equipos participantes debe ser par."
-msgstr ""
-"Δημιουργήστε μια ομάδα, ένα πρωτάθλημα και ένα τουρνουά στους πίνακες "
-"διαχείρισης. <strong>Σημαντική σημείωση:</strong> Ο συνολικός αριθμός των "
-"ομάδων που συμμετέχουν πρέπει να είναι ζυγός."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
-" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
-" optimización\"</strong> para estructurar el calendario automatizado."
-msgstr ""
-"Μόλις ορίσετε τους συμμετέχοντες, μεταβείτε στον παραπάνω πίνακα, επιλέξτε "
-"το ενεργό τουρνουά σας και κάντε κλικ στο πράσινο κουμπί "
-"<strong>\"Βελτιστοποίηση εκτέλεσης\"</strong> για να δομήσετε το "
-"αυτοματοποιημένο πρόγραμμα."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr "Εσωτερική λογική και αλγοριθμική ροή της ΤΝ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
-"mostramos paso a paso el ciclo de vida evasivo basado en programación "
-"genética:"
-msgstr ""
-"Τι συμβαίνει εσωτερικά όταν το λογισμικό τίθεται σε λειτουργία; Ακολουθεί "
-"μια βήμα προς βήμα ματιά στον κύκλο ζωής της αποφυγής που βασίζεται στον "
-"γενετικό προγραμματισμό:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "1. Configuración e hiperparámetros base"
-msgstr "1. Βασική διαμόρφωση και υπερπαράμετροι"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se cargan las variables del panel que definirán las generaciones, el tamaño "
-"inicial de la población, así como las tasas de probabilidad asociadas al "
-"cruce y la mutación genómica."
-msgstr ""
-"Φορτώνονται μεταβλητές πάνελ που θα καθορίσουν τις γενιές, το αρχικό μέγεθος"
-" του πληθυσμού, καθώς και τα ποσοστά πιθανότητας που σχετίζονται με τη "
-"διασταύρωση και τη γονιδιωματική μετάλλαξη."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr "2. Ορισμός τελεστών και δομικών μπλοκ (γραμματική)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las primitivas:"
-msgstr "Οι πρωτόγονοι:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr ""
-"είναι οι λογικές πράξεις που εκτελεί ένα πρόγραμμα για να δημιουργήσει το "
-"δέντρο."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las terminales:"
-msgstr "Τα τερματικά:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"representan los datos constantes o variables básicas estructuradas del "
-"torneo."
-msgstr ""
-"αντιπροσωπεύουν τα σταθερά δεδομένα ή τις δομημένες βασικές μεταβλητές του "
-"τουρνουά."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "listas maestros de días hábiles"
-msgstr "Κύριοι κατάλογοι εργάσιμων ημερών"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "tanto en condición de casa como de visita"
-msgstr "τόσο στο σπίτι όσο και στο δρόμο"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "inicializador vacío"
-msgstr "Empty Initializer"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las efímeras:"
-msgstr "Το εφήμερο:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son valores aleatorios puros que se introducen en nodos específicos para "
-"inyectar variabilidad matemática al sistema."
-msgstr ""
-"Είναι καθαρές τυχαίες τιμές που τροφοδοτούνται σε συγκεκριμένους κόμβους για"
-" να εισάγουν μαθηματική μεταβλητότητα στο σύστημα."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fecha aleatoria y equipo aleatorio."
-msgstr "Τυχαία ημερομηνία και τυχαία ομάδα."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr "3. Αρχικοποίηση, εξελικτικός κύκλος και σύγκλιση"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fase de ejecución en vivo:"
-msgstr "Φάση Ζωντανής Εκτέλεσης:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El sistema genera una población inicial aleatoria y convierte cada propuesta"
-" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
-"donde ocurre la magia computacional!"
-msgstr ""
-"Το σύστημα δημιουργεί έναν τυχαίο αρχικό πληθυσμό και μετατρέπει κάθε "
-"πρόταση σε μια ιεραρχική δομή δέντρου (<em>συντακτικό δέντρο</em>). Εδώ "
-"συμβαίνει η υπολογιστική μαγεία!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Visualización y muestreo:"
-msgstr "Οπτικοποίηση και δειγματοληψία:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se procesa la población inicial y se genera el renderizado de los árboles "
-"mediante el generador de sintaxis."
-msgstr ""
-"Ο αρχικός πληθυσμός υποβάλλεται σε επεξεργασία και τα δέντρα αποδίδονται "
-"χρησιμοποιώντας τη γεννήτρια σύνταξης."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Evaluación de aptitud:"
-msgstr "Αξιολόγηση επάρκειας:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
-"distancia acumulada en kilómetros y el cumplimiento normativo."
-msgstr ""
-"Η τιμή <em>φυσικής κατάστασης</em> κάθε ατόμου υπολογίζεται με βάση τη "
-"σωρευτική απόσταση σε χιλιόμετρα και τη συμμόρφωση με τους κανονισμούς."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Selección natural:"
-msgstr "Φυσική επιλογή:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se escogen los mejores individuos de la ronda anterior para actuar como "
-"padres biológicos de la nueva generación."
-msgstr ""
-"Τα καλύτερα άτομα από τον προηγούμενο γύρο επιλέγονται για να λειτουργήσουν "
-"ως βιολογικοί γονείς της νέας γενιάς."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Cruzamiento, mutación y herencia:"
-msgstr "Διασταύρωση, μετάλλαξη και κληρονομικότητα:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
-" mutaciones en nodos aleatorios."
-msgstr ""
-"Νέα άτομα δημιουργούνται με την ανάμειξη κλαδιών προεξέχοντων δέντρων και "
-"την εφαρμογή μεταλλάξεων σε τυχαίους κόμβους."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Bucle iterativo:"
-msgstr "Επαναληπτικός βρόχος:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
-" hasta completar el total de generaciones configuradas en la interfaz."
-msgstr ""
-"Τα βήματα αξιολόγησης, επιλογής και αναπαραγωγής επαναλαμβάνονται διαδοχικά "
-"μέχρι να ολοκληρωθεί ο συνολικός αριθμός των γενεών που έχουν διαμορφωθεί "
-"στη διεπαφή."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Resultados oficiales:"
-msgstr "Επίσημα αποτελέσματα:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El mejor individuo obtenido en la última iteración se valida y su estructura"
-" interna se almacena como el calendario definitivo del torneo de béisbol."
-msgstr ""
-"Το καλύτερο άτομο που αποκτήθηκε στην τελευταία επανάληψη επικυρώνεται και η"
-" εσωτερική του δομή αποθηκεύεται ως το οριστικό πρόγραμμα τουρνουά "
-"μπέιζμπολ."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Tesis de Ingeniería en Computación"
-msgstr "Διατριβή Μηχανικού Η/Υ"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Avances después de la tesis"
@@ -580,10 +280,6 @@ msgstr "Μετάβαση στο περιεχόμενο"
 #: documentacion/templates/documentacion/base.html
 msgid "Histórico"
 msgstr "Ιστορία"
-
-#: documentacion/templates/documentacion/base.html
-msgid "Herramienta"
-msgstr "Εργαλείο"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
@@ -934,3 +630,553 @@ msgstr ""
 "Ο ιστότοπος προσφέρεται σε %(total)s γλώσσες. Το πρωτότυπο είναι τα "
 "μεξικάνικα ισπανικά. Οι άλλες εκδόσεις είναι αυτόματες μεταφράσεις με το "
 "Azure AI Translator και ενδέχεται να έχουν σφάλματα."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Principal"
+msgstr "Κύρια"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Guía"
+msgstr "Οδηγός"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Demo"
+msgstr "Διαδήλωση"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Modo oscuro"
+msgstr "Σκοτεινή λειτουργία"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo: calendario y viaje por equipo"
+msgstr "Επίδειξη: Πρόγραμμα και ομαδικά ταξίδια"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Genera un calendario de béisbol con programación genética y mide cuánto "
+"viaja cada equipo."
+msgstr ""
+"Δημιουργεί ένα ημερολόγιο μπέιζμπολ με γενετικό προγραμματισμό και μετρά "
+"πόσο ταξιδεύει κάθε ομάδα."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo · Viaje justo entre equipos"
+msgstr "Επίδειξη · Δίκαια ταξίδια μεταξύ ομάδων"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Genera un calendario y"
+msgstr "Δημιουργήστε ένα ημερολόγιο και"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "mide cuánto viaja cada equipo."
+msgstr "Μετρήστε πόσο ταξιδεύει κάθε ομάδα."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La IA (programación genética) busca calendarios donde el viaje sea corto y "
+"parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
+"pasos</a>."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Todavía no hay ninguna configuración"
+msgstr "Δεν υπάρχει ακόμη διαμόρφωση"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para optimizar un calendario, primero registra los equipos, la liga y el "
+"torneo, y después crea una configuración."
+msgstr ""
+"Για να βελτιστοποιήσετε ένα χρονοδιάγραμμα, καταγράψτε πρώτα τις ομάδες, το "
+"πρωτάθλημα και το τουρνουά και, στη συνέχεια, δημιουργήστε μια ρύθμιση "
+"παραμέτρων."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Abrir la guía"
+msgstr "Ανοίξτε τον οδηγό"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver el árbol en grande"
+msgstr "Δείτε το δέντρο σε μεγάλο βαθμό"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón para ejecutar el motor y ver el árbol del mejor "
+"calendario."
+msgstr ""
+"Πατήστε το κουμπί για να λειτουργήσει ο κινητήρας και να δείτε το καλύτερο "
+"δέντρο ημερολογίου."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tarda unos segundos."
+msgstr "Χρειάζονται λίγα δευτερόλεπτα."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al "
+"azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, "
+"eso es una ventaja: tienes una línea base y una mejora que puedes medir."
+msgstr ""
+"<strong>Σημείωση:</strong> η έκδοση της διατριβής δεν κέρδισε ένα τυχαίο "
+"ημερολόγιο. Η νέα μηχανή το έκανε, σε προκαταρκτικές δοκιμές. Για ένα "
+"σχολικό έργο, αυτό είναι ένα πλεονέκτημα: έχετε μια βασική γραμμή και μια "
+"βελτίωση που μπορείτε να μετρήσετε."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario: %(torneo)s"
+msgstr "Πρόγραμμα: %(torneo)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración %(id)s"
+msgstr "Διαμόρφωση %(id)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Para presentarlo a tu equipo"
+msgstr "Για να το παρουσιάσετε στην ομάδα σας"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las respuestas que te van a pedir en clase."
+msgstr "Οι απαντήσεις που θα σας ζητηθούν στην τάξη."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Dónde está la IA?"
+msgstr "Πού είναι το AI;"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Un calendario es un árbol que evoluciona. El código está en "
+"<code>programa_genetico/</code> y usa la biblioteca DEAP."
+msgstr ""
+"Ένα ημερολόγιο είναι ένα δέντρο που εξελίσσεται. Ο κώδικας βρίσκεται και "
+"<code>programa_genetico/</code> χρησιμοποιεί τη βιβλιοθήκη DEAP."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Qué patrones usa?"
+msgstr "Τι μοτίβα χρησιμοποιείτε;"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Django separa modelo, vista y plantilla. <code>ProgramaFacadeView</code> "
+"esconde el motor detrás de una sola entrada."
+msgstr ""
+"Το Django διαχωρίζει το μοντέλο, το view και το template. "
+"<code>ProgramaFacadeView</code> Κρύβει τη μηχανή πίσω από μία μόνο είσοδο."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Cómo lo adapto?"
+msgstr "Πώς μπορώ να το προσαρμόσω;"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambia equipos y reglas"
+msgstr "Αλλαγή ομάδων και κανόνων"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
+" el patrón Strategy para la medida de “viaje justo”."
+msgstr ""
+"Οι ομάδες και οι συντεταγμένες καταγράφονται στον οδηγό. Μια ιδέα για την "
+"ομάδα σας: χρησιμοποιήστε το μοτίβο στρατηγικής για το μέτρο \"δίκαιο "
+"ταξίδι\"."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Puedo usarlo?"
+msgstr "Μπορώ να το χρησιμοποιήσω;"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sí, con GPL-3.0"
+msgstr "Ναι, με την GPL-3.0"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Puedes modificarlo. Conserva el crédito y cita la tesis."
+msgstr ""
+"Μπορείτε να το τροποποιήσετε. Κρατήστε τα εύσημα και αναφέρετε τη διατριβή."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cómo citar"
+msgstr "Πώς να αναφέρετε"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo y pide ayuda"
+msgstr "Τρέξτε το και ζητήστε βοήθεια"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo en tu computadora"
+msgstr "Εκτελέστε το στον υπολογιστή σας"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Pídele ayuda a tu asistente de IA"
+msgstr "Ζητήστε βοήθεια από τον βοηθό AI"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
+"programa_genetico/programagenetico.py."
+msgstr ""
+"Αντιγράψτε αυτήν την ερώτηση και επικολλήστε την στον οδηγό που "
+"χρησιμοποιείτε, μαζί με το αρχείο programa_genetico/programagenetico.py."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Explícame paso a paso cómo este programa genético crea y evalúa un "
+"calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
+" la diferencia entre el equipo que más viaja y el que menos."
+msgstr ""
+"Εξηγήστε μου βήμα προς βήμα πώς αυτό το γενετικό πρόγραμμα δημιουργεί και "
+"αξιολογεί ένα πρόγραμμα. Στη συνέχεια, πείτε μου τι θα αλλάζατε ώστε το "
+"μέτρο του «δίκαιου ταξιδιού» να είναι η διαφορά μεταξύ της ομάδας που "
+"ταξιδεύει περισσότερο και αυτής που ταξιδεύει λιγότερο."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
+msgstr ""
+"Ελέγξτε τι σας λέει σε σχέση με τον κώδικα. Η τεχνητή νοημοσύνη μπορεί να το"
+" κάνει λάθος."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cerrar"
+msgstr "Κλείσιμο"
+
+#: tesis/templates/tesis/guia/_base.html
+msgid "Paso %(n)s de %(t)s"
+msgstr "Βήμα %(n)s του %(t)s"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "Revisa los campos marcados."
+msgstr "Ελέγξτε τα επισημασμένα πεδία."
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "obligatorio"
+msgstr "Υποχρεωτικό"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "Pasos de la guía"
+msgstr "Βήματα οδηγού"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "hecho"
+msgstr "Γεγονός"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "pendiente"
+msgstr "Σε εκκρεμότητα"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Paso 5: calendario"
+msgstr "Βήμα 5: Ημερολόγιο"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid ""
+"Genera los juegos del torneo «%(torneo)s». El primer calendario se arma al "
+"azar; después puedes optimizarlo con el algoritmo genético."
+msgstr ""
+"Δημιουργήστε τα παιχνίδια τουρνουά \"%(torneo)s\". Το πρώτο πρόγραμμα "
+"συντάσσεται τυχαία. τότε μπορείτε να το βελτιστοποιήσετε με τον γενετικό "
+"αλγόριθμο."
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Volver a generar los juegos"
+msgstr "Ξαναχτίστε τα παιχνίδια"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Generar los juegos"
+msgstr "Δημιουργήστε τα παιχνίδια"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "se muestran los primeros 50"
+msgstr "Εμφανίζονται τα 50 κορυφαία"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "¿Y ahora?"
+msgstr "Και τώρα?"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Abrir este calendario en el panel y optimizarlo"
+msgstr "Ανοίξτε αυτό το ημερολόγιο στον πίνακα ελέγχου και βελτιστοποιήστε το"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "(tarda unos 20 segundos)"
+msgstr "(διαρκεί περίπου 20 δευτερόλεπτα)"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Ver el detalle del calendario"
+msgstr "Προβολή λεπτομερειών ημερολογίου"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Leer por qué la versión de la tesis no superó a la búsqueda aleatoria"
+msgstr ""
+"Διαβάστε γιατί η έκδοση της διατριβής δεν ξεπέρασε την τυχαία αναζήτηση"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Paso 4: configuración"
+msgstr "Βήμα 4: Ρύθμιση"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Estos son los parámetros del algoritmo genético para el torneo."
+msgstr "Αυτές είναι οι παράμετροι του γενετικού αλγορίθμου για το τουρνουά."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Importante:"
+msgstr "Σημαντικό:"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid ""
+"la versión del motor de la tesis guarda estos valores, pero al optimizar usa"
+" siempre población 100, 20 generaciones, cruce 0.8 y mutación 0.2. La "
+"versión mejorada del motor sí los usará."
+msgstr ""
+"Η έκδοση κινητήρα της διατριβής αποθηκεύει αυτές τις τιμές, αλλά κατά τη "
+"βελτιστοποίηση χρησιμοποιεί πάντα πληθυσμό 100, 20 γενιές, crossover 0.8 και"
+" μετάλλαξη 0.2. Η βελτιωμένη έκδοση του κινητήρα θα τα χρησιμοποιήσει."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Guardar y seguir al paso 5"
+msgstr "Αποθηκεύστε και συνεχίστε στο βήμα 5"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Paso 1: equipos"
+msgstr "Βήμα 1: Ομάδες"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Puedes usar los que ya existen o agregar uno nuevo."
+msgstr "Μπορείτε να χρησιμοποιήσετε υπάρχοντα ή να προσθέσετε ένα νέο."
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Ver los últimos equipos registrados"
+msgstr "Δείτε τις πιο πρόσφατες εγγεγραμμένες ομάδες"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar un equipo"
+msgstr "Προσθήκη ομάδας"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar equipo"
+msgstr "Προσθήκη εξοπλισμού"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Seguir al paso 2: liga"
+msgstr "Συνεχίστε στο Βήμα 2: League"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Necesitas al menos 2 equipos para seguir."
+msgstr "Χρειάζεστε τουλάχιστον 2 ομάδες για να ακολουθήσετε."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Guía: del registro al calendario"
+msgstr "Οδηγός: Από την εγγραφή στο ημερολόγιο"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
+" el algoritmo y generas un calendario de juegos."
+msgstr ""
+"Σε 5 βήματα εγγράφετε ομάδες, δημιουργείτε ένα πρωτάθλημα και ένα τουρνουά, "
+"επιλέγετε πώς θα εκτελέσετε τον αλγόριθμο και δημιουργείτε ένα πρόγραμμα "
+"παιχνιδιών."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
+msgstr "Ομάδες: δηλώστε τουλάχιστον 2, με την τοποθεσία του γηπέδου τους."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Liga: elige qué equipos juegan juntos."
+msgstr "League: Επιλέξτε ποιες ομάδες θα παίξουν μαζί."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Torneo: define las fechas, las series y los juegos."
+msgstr "Τουρνουά: Καθορίστε ημερομηνίες, σειρές και παιχνίδια."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Configuración: elige los parámetros del algoritmo genético."
+msgstr "Ρυθμίσεις: Επιλέξτε τις παραμέτρους του γενετικού αλγορίθμου."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Calendario: genera los juegos y revísalos."
+msgstr "Ημερολόγιο: Δημιουργήστε και ελέγξτε τα παιχνίδια."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"Lo que crees aquí lo ve cualquier visitante del sitio. No escribas datos "
+"personales."
+msgstr ""
+"Αυτό που δημιουργείτε εδώ είναι ορατό από οποιονδήποτε επισκέπτη του "
+"ιστότοπου. Μην γράφετε προσωπικά δεδομένα."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Empezar"
+msgstr "Ξεκινήστε"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Paso 2: liga"
+msgstr "Βήμα 2: Δεσμός"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid ""
+"Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
+"equipos: con un número impar, uno se queda sin rival en cada serie."
+msgstr ""
+"Ένα πρωτάθλημα είναι η ομάδα των ομάδων που παίζουν μεταξύ τους. "
+"Χρησιμοποιήστε ζυγό αριθμό ομάδων: με μονό αριθμό, μία μένει χωρίς αντίπαλο "
+"σε κάθε σειρά."
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Guardar y seguir al paso 3"
+msgstr "Αποθήκευση και συνέχεια στο βήμα 3"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Paso 3: torneo"
+msgstr "Βήμα 3: Τουρνουά"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid ""
+"El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
+"lunes a jueves y los sábados, entre el primer y el último día."
+msgstr ""
+"Το τουρνουά χρησιμοποιεί τις ομάδες του πρωταθλήματος «%(liga)s». Οι αγώνες "
+"είναι προγραμματισμένοι από Δευτέρα έως Πέμπτη και τα Σάββατα, μεταξύ της "
+"πρώτης και της τελευταίας ημέρας."
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Guardar y seguir al paso 4"
+msgstr "Αποθηκεύστε και συνεχίστε στο βήμα 4"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Programación genética para calendarios de béisbol"
+msgstr "Γενετικός Προγραμματισμός για Ημερολόγια Μπέιζμπολ"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
+"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
+msgstr ""
+"Koza-TTP: Η διατριβή της Leslie Dickinson (ITAM) σχετικά με τον γενετικό "
+"προγραμματισμό για ημερολόγια μπέιζμπολ, με το ειλικρινές αποτέλεσμα και τη "
+"βελτιωμένη μηχανή της."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Tesis ITAM · Programación genética · Béisbol"
+msgstr "Διατριβή ITAM · Γενετικός προγραμματισμός · Μπέιζμπολ"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Mi tesis dijo la verdad:"
+msgstr "Η διατριβή μου έλεγε την αλήθεια:"
+
+#: tesis/templates/tesis/inicio.html
+msgid "el algoritmo no le ganó al azar."
+msgstr "Ο αλγόριθμος δεν τον κέρδισε τυχαία."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
+"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
+"corrigiendo en público."
+msgstr ""
+"Το Koza-TTP αναλαμβάνει αυτή τη διατριβή για να φτιάξει ημερολόγια σεζόν "
+"μπέιζμπολ με γενετικό προγραμματισμό. Εδώ θα δείτε τι πήγε στραβά, γιατί και"
+" πώς το διορθώνω δημόσια."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ingeniería en Computación, ITAM"
+msgstr "Μηχανικός Υπολογιστών, ITAM"
+
+#: tesis/templates/tesis/inicio.html
+msgid "¿Cuánto tiempo tienes?"
+msgstr "Πόσο χρόνο έχετε;"
+
+#: tesis/templates/tesis/inicio.html
+msgid "2 minutos"
+msgstr "2 λεπτά"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Entender la idea"
+msgstr "Κατανόηση της Ιδέας"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Qué es la programación genética y por qué un calendario de béisbol es un "
+"problema difícil."
+msgstr ""
+"Τι είναι ο γενετικός προγραμματισμός και γιατί ένα ημερολόγιο μπέιζμπολ "
+"είναι ένα δύσκολο πρόβλημα."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Empezar aquí"
+msgstr "Ξεκινήστε εδώ"
+
+#: tesis/templates/tesis/inicio.html
+msgid "5 minutos · 5 pasos"
+msgstr "5 λεπτά · 5 βήματα"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Probar la herramienta"
+msgstr "Δοκιμάστε το εργαλείο"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
+msgstr ""
+"Καταχωρίστε ομάδες, δημιουργήστε ένα πρωτάθλημα και δημιουργήστε το δικό σας"
+" ημερολόγιο. Χωρίς λογαριασμό."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Sin prisa"
+msgstr "Καμία βιασύνη"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Leer la tesis y el código"
+msgstr "Διαβάστε τη διατριβή και τον κώδικα"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"El documento original, la bitácora de avances y el repositorio abierto."
+msgstr ""
+"Το αρχικό έγγραφο, το αρχείο καταγραφής προόδου και το ανοιχτό αποθετήριο."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ir a la tesis"
+msgstr "Μετάβαση στη διπλωματική εργασία"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Qué tan confiable es cada parte"
+msgstr "Πόσο αξιόπιστο είναι κάθε εξάρτημα"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Para que sepas qué puedes citar y qué todavía cambia."
+msgstr "Έτσι ξέρετε τι μπορείτε να αναφέρετε και τι αλλάζει ακόμα."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Final"
+msgstr "Τελικός"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Resultados de la tesis"
+msgstr "Αποτελέσματα της διατριβής"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Publicados en 2026. No se modifican."
+msgstr "Δημοσιεύτηκε το 2026. Δεν τροποποιούνται."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Preliminar"
+msgstr "Προκαταρκτικά"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Motor mejorado"
+msgstr "Βελτιωμένος κινητήρας"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En pruebas: 31 %% menos distancia en 3 corridas."
+msgstr "Στις δοκιμές: 31%% λιγότερη απόσταση σε 3 διαδρομές."
+
+#: tesis/templates/tesis/inicio.html
+msgid "En revisión"
+msgstr "Σε ανασκόπηση"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Traducciones"
+msgstr "Μεταφράσεις"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Automáticas, incluidas maya y otomí. Puedes corregirlas."
+msgstr ""
+"Αυτόματο, συμπεριλαμβανομένων των Maya και Otomí. Μπορείτε να τα διορθώσετε."

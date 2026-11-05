@@ -8,80 +8,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Programación genética - Planificación de béisbol"
-msgstr "Programmation génétique - Planification du baseball"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
 msgstr "Langue"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
 msgstr "Changement"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr "Programmation génétique dans la planification des saisons de baseball"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "¡Bienvenido a la aplicación!"
-msgstr "Bienvenue sur l’application !"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Este sistema interactivo busca resolver de manera óptima la organización y "
-"logística de un calendario para una temporada completa de béisbol. Para "
-"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
-"inspirada directamente en la evolución natural de las especies."
-msgstr ""
-"Ce système interactif vise à résoudre de manière optimale l’organisation et "
-"la logistique d’un calendrier pour une saison complète de baseball. Pour y "
-"parvenir, nous avons mis en place une technique avancée d’intelligence "
-"artificielle directement inspirée par l’évolution naturelle des espèces."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"La <strong>programación genética</strong> consiste en crear, evaluar y "
-"modificar soluciones de forma automática a partir de una población inicial "
-"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
-"selección natural, el cruzamiento y la mutación. En este entorno, cada "
-"programa generado se estructura internamente como un árbol de expresión que "
-"representa una solución potencial para nuestro calendario."
-msgstr ""
-"<strong>La programmation génétique</strong> consiste à créer, évaluer et "
-"modifier automatiquement des solutions à partir d’une population initiale de"
-" programmes. Cela est réalisé en exécutant des opérations bioinspirées "
-"telles que la sélection naturelle, le croisement et la mutation. Dans cet "
-"environnement, chaque programme généré est structuré en interne comme un "
-"arbre d’expression qui représente une solution potentielle à notre "
-"calendrier."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
-"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
-"características clave y generar nuevos árboles cada vez más prometedores."
-msgstr ""
-"L’algorithme évalue continuellement chaque arbre en utilisant un critère de "
-"qualité strict ( <em>fonction d’aptitude) dans</em> le but d’hériter de "
-"caractéristiques clés et de générer de nouveaux arbres de plus en plus "
-"prometteurs."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
-"óptima y más eficiente!"
-msgstr ""
-"Ce processus est répété dans une boucle évolutive jusqu’à ce que la solution"
-" optimale et la plus efficace soit trouvée !"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr "Panneau de configuration : Paramètres actifs (ID : %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración del algoritmo"
-msgstr "Paramètres de l’algorithme"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
@@ -104,10 +36,6 @@ msgid "Sin torneo"
 msgstr "Pas de tournoi"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr "Calendrier actif : %(torneo)s (ID : %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
 msgstr "Date"
 
@@ -122,10 +50,6 @@ msgstr "En route"
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
 msgstr "Aucun jeu n’est généré pour cette configuration."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr "Affichage des matchs de tournoi enregistrés dans la base de données."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
@@ -144,231 +68,8 @@ msgid "Violaciones de reglas:"
 msgstr "Violations des règles :"
 
 #: tesis/templates/tesis/dashboard.html
-msgid ""
-"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
-" árbol de soluciones sintácticas."
-msgstr ""
-"Appuyez sur le bouton ci-dessous pour activer l’algorithme génétique et "
-"afficher l’arbre de solutions syntaxiques."
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Optimisation des courses"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Guía operativa del sistema"
-msgstr "Guide opérationnel du système"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Instrucciones de inicio rápido"
-msgstr "Instructions de démarrage rapide"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
-" secuenciales:"
-msgstr ""
-"Pour commencer à interagir avec succès avec la démo, suivez ces étapes "
-"séquentielles :"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Crea un equipo, una liga y un torneo respectivo en tus paneles "
-"administrativos. <strong>Nota importante:</strong> el número total de "
-"equipos participantes debe ser par."
-msgstr ""
-"Créez une équipe, une ligue et un tournoi dans vos panneaux administratifs. "
-"<strong>Note importante :</strong> Le nombre total d’équipes participantes "
-"doit être uniforme."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
-" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
-" optimización\"</strong> para estructurar el calendario automatizado."
-msgstr ""
-"Une fois les participants définis, rendez-vous dans le panneau ci-dessus, "
-"sélectionnez votre tournoi actif et cliquez sur le bouton <strong>vert « Run"
-" Optimization »</strong> pour structurer le calendrier automatisé."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr "Logique interne et flux algorithmique de l’IA"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
-"mostramos paso a paso el ciclo de vida evasivo basado en programación "
-"genética:"
-msgstr ""
-"Que se passe-t-il en interne lorsque le logiciel est en ligne ? Voici un "
-"aperçu étape par étape du cycle de vie d’évitement basé sur la programmation"
-" génétique :"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "1. Configuración e hiperparámetros base"
-msgstr "1. Configuration de base et hyperparamètres"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se cargan las variables del panel que definirán las generaciones, el tamaño "
-"inicial de la población, así como las tasas de probabilidad asociadas al "
-"cruce y la mutación genómica."
-msgstr ""
-"Les variables de panel qui définiront les générations, la taille initiale de"
-" la population, ainsi que les taux de probabilité associés au croisement et "
-"à la mutation génomique sont chargées."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr "2. Définition des opérateurs et des blocs structurels (grammaire)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las primitivas:"
-msgstr "Les primitifs :"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr ""
-"sont les opérations logiques qu’un programme exécute pour construire "
-"l’arbre."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las terminales:"
-msgstr "Les terminaux :"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"representan los datos constantes o variables básicas estructuradas del "
-"torneo."
-msgstr ""
-"représentent les données constantes ou les variables de base structurées du "
-"tournoi."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "listas maestros de días hábiles"
-msgstr "Listes maîtresses des jours ouvrables"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "tanto en condición de casa como de visita"
-msgstr "À domicile comme à l’extérieur"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "inicializador vacío"
-msgstr "Initialiseur vide"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las efímeras:"
-msgstr "L’éphémère :"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son valores aleatorios puros que se introducen en nodos específicos para "
-"inyectar variabilidad matemática al sistema."
-msgstr ""
-"Ce sont des valeurs purement aléatoires qui sont injectées dans des nœuds "
-"spécifiques pour injecter une variabilité mathématique dans le système."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fecha aleatoria y equipo aleatorio."
-msgstr "Date aléatoire et équipe aléatoire."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr "3. Initialisation, cycle évolutif et convergence"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fase de ejecución en vivo:"
-msgstr "Phase d’exécution en direct :"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El sistema genera una población inicial aleatoria y convierte cada propuesta"
-" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
-"donde ocurre la magia computacional!"
-msgstr ""
-"Le système génère une population initiale aléatoire et convertit chaque "
-"proposition en une structure hiérarchique en arbre (<em>arbre "
-"syntaxique</em>). C’est là que la magie computationnelle opère !"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Visualización y muestreo:"
-msgstr "Visualisation et échantillonnage :"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se procesa la población inicial y se genera el renderizado de los árboles "
-"mediante el generador de sintaxis."
-msgstr ""
-"La population initiale est traitée et les arbres sont rendus à l’aide du "
-"générateur de syntaxe."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Evaluación de aptitud:"
-msgstr "Évaluation des aptitudes :"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
-"distancia acumulada en kilómetros y el cumplimiento normativo."
-msgstr ""
-"La valeur <em>de fitness</em> de chaque individu est calculée en fonction de"
-" la distance cumulative en kilomètres et de la conformité réglementaire."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Selección natural:"
-msgstr "Sélection naturelle :"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se escogen los mejores individuos de la ronda anterior para actuar como "
-"padres biológicos de la nueva generación."
-msgstr ""
-"Les meilleurs individus du cycle précédent sont choisis pour agir comme "
-"parents biologiques de la nouvelle génération."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Cruzamiento, mutación y herencia:"
-msgstr "Croisement, mutation et héritage :"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
-" mutaciones en nodos aleatorios."
-msgstr ""
-"De nouveaux individus sont créés en mélangeant des branches d’arbres "
-"importants et en appliquant des mutations dans des nœuds aléatoires."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Bucle iterativo:"
-msgstr "Boucle itérative :"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
-" hasta completar el total de generaciones configuradas en la interfaz."
-msgstr ""
-"Les étapes d’évaluation, de sélection et de lecture sont répétées "
-"séquentiellement jusqu’à ce que le nombre total de générations configurées "
-"dans l’interface soit complété."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Resultados oficiales:"
-msgstr "Résultats officiels :"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El mejor individuo obtenido en la última iteración se valida y su estructura"
-" interna se almacena como el calendario definitivo del torneo de béisbol."
-msgstr ""
-"Le meilleur individu obtenu dans la dernière itération est validé et sa "
-"structure interne est enregistrée comme calendrier définitif du tournoi de "
-"baseball."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Tesis de Ingeniería en Computación"
-msgstr "Thèse en génie informatique"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Avances después de la tesis"
@@ -582,10 +283,6 @@ msgstr "Passer au contenu"
 #: documentacion/templates/documentacion/base.html
 msgid "Histórico"
 msgstr "Histoire"
-
-#: documentacion/templates/documentacion/base.html
-msgid "Herramienta"
-msgstr "Outil"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
@@ -939,3 +636,550 @@ msgstr ""
 "Le site est proposé en %(total)s langues. L’original est en espagnol "
 "mexicain. Les autres versions sont des traductions automatiques avec Azure "
 "AI Translator et peuvent comporter des erreurs."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Principal"
+msgstr "Principaux"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Guía"
+msgstr "Guide"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Demo"
+msgstr "Démo"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Modo oscuro"
+msgstr "Mode Sombre"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo: calendario y viaje por equipo"
+msgstr "Démonstration : Calendrier et déplacements d’équipe"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Genera un calendario de béisbol con programación genética y mide cuánto "
+"viaja cada equipo."
+msgstr ""
+"Il génère un calendrier de baseball avec une programmation génétique et "
+"mesure combien chaque équipe voyage."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo · Viaje justo entre equipos"
+msgstr "Démo · Voyages équitables entre équipes"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Genera un calendario y"
+msgstr "Générez un calendrier et"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "mide cuánto viaja cada equipo."
+msgstr "Mesurez combien chaque équipe voyage."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La IA (programación genética) busca calendarios donde el viaje sea corto y "
+"parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
+"pasos</a>."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Todavía no hay ninguna configuración"
+msgstr "Pas encore de configuration"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para optimizar un calendario, primero registra los equipos, la liga y el "
+"torneo, y después crea una configuración."
+msgstr ""
+"Pour optimiser un calendrier, il faut d’abord noter les équipes, la ligue et"
+" le tournoi, puis créer une configuration."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Abrir la guía"
+msgstr "Ouvre le guide"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver el árbol en grande"
+msgstr "Voir l’arbre en grand"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón para ejecutar el motor y ver el árbol del mejor "
+"calendario."
+msgstr ""
+"Appuyez sur le bouton pour lancer le moteur et voir le meilleur arbre de "
+"calendrier."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tarda unos segundos."
+msgstr "Cela prend quelques secondes."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al "
+"azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, "
+"eso es una ventaja: tienes una línea base y una mejora que puedes medir."
+msgstr ""
+"<strong>Note :</strong> la version mémoire ne battait pas un calendrier "
+"aléatoire. Le nouveau moteur l’a fait, lors des tests préliminaires. Pour un"
+" projet scolaire, c’est un avantage : vous avez une base et une amélioration"
+" que vous pouvez mesurer."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario: %(torneo)s"
+msgstr "Planning : %(torneo)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración %(id)s"
+msgstr "Configuration %(id)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Para presentarlo a tu equipo"
+msgstr "Pour l’introduire à votre équipe"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las respuestas que te van a pedir en clase."
+msgstr "Les réponses qu’on vous demandera en cours."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Dónde está la IA?"
+msgstr "Où est l’IA ?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Un calendario es un árbol que evoluciona. El código está en "
+"<code>programa_genetico/</code> y usa la biblioteca DEAP."
+msgstr ""
+"Un calendrier est un arbre qui évolue. Le code est dans "
+"<code>programa_genetico/</code> et utilise la bibliothèque DEAP."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Qué patrones usa?"
+msgstr "Quels patrons utilisez-vous ?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Django separa modelo, vista y plantilla. <code>ProgramaFacadeView</code> "
+"esconde el motor detrás de una sola entrada."
+msgstr ""
+"Django sépare modèle, vue et modèle. <code>ProgramaFacadeView</code> Il "
+"cache le moteur derrière une seule entrée."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Cómo lo adapto?"
+msgstr "Comment puis-je l’adapter ?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambia equipos y reglas"
+msgstr "Changement d’équipe et de règles"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
+" el patrón Strategy para la medida de “viaje justo”."
+msgstr ""
+"Les équipes et coordonnées sont enregistrées dans le guide. Une idée pour "
+"votre équipe : utilisez le schéma Stratégie pour la mesure du « fair trip »."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Puedo usarlo?"
+msgstr "Puis-je l’utiliser ?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sí, con GPL-3.0"
+msgstr "Oui, avec la GPL-3.0"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Puedes modificarlo. Conserva el crédito y cita la tesis."
+msgstr "Vous pouvez la modifier. Gardez le crédit et citez la thèse."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cómo citar"
+msgstr "Comment citer"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo y pide ayuda"
+msgstr "Fais-le tourner et demande de l’aide"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo en tu computadora"
+msgstr "Lance-le sur ton ordinateur"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Pídele ayuda a tu asistente de IA"
+msgstr "Demandez de l’aide à votre assistant IA"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
+"programa_genetico/programagenetico.py."
+msgstr ""
+"Copiez cette question et collez-la dans l’assistant que vous utilisez, ainsi"
+" que le fichier programa_genetico/programagenetico.py."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Explícame paso a paso cómo este programa genético crea y evalúa un "
+"calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
+" la diferencia entre el equipo que más viaja y el que menos."
+msgstr ""
+"Expliquez-moi étape par étape comment ce programme génétique crée et évalue "
+"un planning. Puis dites-moi ce que vous changeriez pour que la mesure du « "
+"voyage équitable » soit la différence entre l’équipe qui voyage le plus et "
+"celle qui voyage le moins."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
+msgstr "Vérifie ce qu’il te dit par rapport au code. L’IA peut se tromper."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cerrar"
+msgstr "Fermer"
+
+#: tesis/templates/tesis/guia/_base.html
+msgid "Paso %(n)s de %(t)s"
+msgstr "Étape %(n)s de %(t)s"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "Revisa los campos marcados."
+msgstr "Vérifiez les champs marqués."
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "obligatorio"
+msgstr "Obligatoire"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "Pasos de la guía"
+msgstr "Étapes guides"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "hecho"
+msgstr "Fait"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "pendiente"
+msgstr "En attente"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Paso 5: calendario"
+msgstr "Étape 5 : Calendrier"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid ""
+"Genera los juegos del torneo «%(torneo)s». El primer calendario se arma al "
+"azar; después puedes optimizarlo con el algoritmo genético."
+msgstr ""
+"Générez les parties de tournoi «%(torneo)s». Le premier calendrier est "
+"élaboré aléatoirement ; puis vous pouvez l’optimiser avec l’algorithme "
+"génétique."
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Volver a generar los juegos"
+msgstr "Reconstruire les jeux"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Generar los juegos"
+msgstr "Générez les jeux"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "se muestran los primeros 50"
+msgstr "Top 50 affichés"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "¿Y ahora?"
+msgstr "Et maintenant ?"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Abrir este calendario en el panel y optimizarlo"
+msgstr "Ouvrez ce calendrier dans le tableau de bord et optimisez-le"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "(tarda unos 20 segundos)"
+msgstr "(ça prend environ 20 secondes)"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Ver el detalle del calendario"
+msgstr "Voir les détails du calendrier"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Leer por qué la versión de la tesis no superó a la búsqueda aleatoria"
+msgstr ""
+"Lisez pourquoi la version de la thèse n’a pas surpassé la recherche "
+"aléatoire"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Paso 4: configuración"
+msgstr "Étape 4 : Installation"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Estos son los parámetros del algoritmo genético para el torneo."
+msgstr "Ce sont les paramètres de l’algorithme génétique du tournoi."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Importante:"
+msgstr "Important :"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid ""
+"la versión del motor de la tesis guarda estos valores, pero al optimizar usa"
+" siempre población 100, 20 generaciones, cruce 0.8 y mutación 0.2. La "
+"versión mejorada del motor sí los usará."
+msgstr ""
+"La version moteur de la thèse sauvegarde ces valeurs, mais lors de "
+"l’optimisation, elle utilise toujours la population 100, 20 générations, le "
+"crossover 0,8 et la mutation 0,2. La version améliorée du moteur les "
+"utilisera."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Guardar y seguir al paso 5"
+msgstr "Sauvegarder et continuer jusqu’à l’étape 5"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Paso 1: equipos"
+msgstr "Étape 1 : Équipes"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Puedes usar los que ya existen o agregar uno nuevo."
+msgstr "Vous pouvez utiliser des modèles existants ou en ajouter un nouveau."
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Ver los últimos equipos registrados"
+msgstr "Voir les dernières équipes enregistrées"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar un equipo"
+msgstr "Ajouter une équipe"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar equipo"
+msgstr "Ajouter du matériel"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Seguir al paso 2: liga"
+msgstr "Continuer à l’étape 2 : Ligue"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Necesitas al menos 2 equipos para seguir."
+msgstr "Il faut au moins 2 équipes à suivre."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Guía: del registro al calendario"
+msgstr "Guide : De l’inscription au calendrier"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
+" el algoritmo y generas un calendario de juegos."
+msgstr ""
+"En 5 étapes, vous inscrivez les équipes, mettez en place une ligue et un "
+"tournoi, choisissez comment exécuter l’algorithme et générez un calendrier "
+"de match."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
+msgstr ""
+"Équipes : inscrivez-vous au moins 2, avec l’emplacement de leur stade."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Liga: elige qué equipos juegan juntos."
+msgstr "Ligue : Choisissez quelles équipes jouent ensemble."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Torneo: define las fechas, las series y los juegos."
+msgstr "Tournoi : Définissez les dates, les séries et les matchs."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Configuración: elige los parámetros del algoritmo genético."
+msgstr "Paramètres : Choisissez les paramètres de l’algorithme génétique."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Calendario: genera los juegos y revísalos."
+msgstr "Calendrier : Générez et testez les jeux."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"Lo que crees aquí lo ve cualquier visitante del sitio. No escribas datos "
+"personales."
+msgstr ""
+"Ce que vous créez ici est vu par tout visiteur du site. N’écrivez pas de "
+"données personnelles."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Empezar"
+msgstr "Commencez"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Paso 2: liga"
+msgstr "Étape 2 : Créer un lien"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid ""
+"Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
+"equipos: con un número impar, uno se queda sin rival en cada serie."
+msgstr ""
+"Une ligue est le groupe d’équipes qui s’affrontent entre elles. Utilisez un "
+"nombre pair d’équipes : avec un nombre impair, il en reste une sans "
+"adversaire dans chaque série."
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Guardar y seguir al paso 3"
+msgstr "Sauvegardez et continuez à l’étape 3"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Paso 3: torneo"
+msgstr "Étape 3 : Tournoi"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid ""
+"El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
+"lunes a jueves y los sábados, entre el primer y el último día."
+msgstr ""
+"Le tournoi utilise les équipes de la ligue «%(liga)s». Les matchs sont "
+"programmés du lundi au jeudi et le samedi, entre le premier et le dernier "
+"jour."
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Guardar y seguir al paso 4"
+msgstr "Sauvegarder et continuer à l’étape 4"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Programación genética para calendarios de béisbol"
+msgstr "Programmation génétique pour les calendriers de baseball"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
+"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
+msgstr ""
+"Koza-TTP : la thèse de Leslie Dickinson (ITAM) sur la programmation "
+"génétique pour les calendriers de baseball, avec son résultat honnête et son"
+" moteur amélioré."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Tesis ITAM · Programación genética · Béisbol"
+msgstr "Thèse ITAM · Programmation génétique · Baseball"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Mi tesis dijo la verdad:"
+msgstr "Mon mémoire disait la vérité :"
+
+#: tesis/templates/tesis/inicio.html
+msgid "el algoritmo no le ganó al azar."
+msgstr "L’algorithme ne l’a pas battu au hasard."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
+"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
+"corrigiendo en público."
+msgstr ""
+"Koza-TTP reprend cette thèse pour créer des calendriers de saison de "
+"baseball avec une programmation génétique. Ici, vous verrez ce qui a mal "
+"tourné, pourquoi, et comment je corrige cela en public."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ingeniería en Computación, ITAM"
+msgstr "Génie informatique, ITAM"
+
+#: tesis/templates/tesis/inicio.html
+msgid "¿Cuánto tiempo tienes?"
+msgstr "Combien de temps as-tu ?"
+
+#: tesis/templates/tesis/inicio.html
+msgid "2 minutos"
+msgstr "2 minutes"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Entender la idea"
+msgstr "Comprendre l’idée"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Qué es la programación genética y por qué un calendario de béisbol es un "
+"problema difícil."
+msgstr ""
+"Qu’est-ce que la programmation génétique et pourquoi un calendrier de "
+"baseball est un problème complexe ?"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Empezar aquí"
+msgstr "Commencez ici"
+
+#: tesis/templates/tesis/inicio.html
+msgid "5 minutos · 5 pasos"
+msgstr "5 minutes · 5 étapes"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Probar la herramienta"
+msgstr "Essaie l’outil"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
+msgstr ""
+"Inscrivez des équipes, créez une ligue et générez votre propre calendrier. "
+"Pas de compte."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Sin prisa"
+msgstr "Pas de précipitation"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Leer la tesis y el código"
+msgstr "Lisez la thèse et le code"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"El documento original, la bitácora de avances y el repositorio abierto."
+msgstr "Le document original, le journal de progression et le dépôt ouvert."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ir a la tesis"
+msgstr "Va à la thèse"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Qué tan confiable es cada parte"
+msgstr "Quelle est la fiabilité de chaque pièce"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Para que sepas qué puedes citar y qué todavía cambia."
+msgstr ""
+"Pour que vous sachiez ce que vous pouvez citer et ce qui change encore."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Final"
+msgstr "Finale"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Resultados de la tesis"
+msgstr "Résultats de la thèse"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Publicados en 2026. No se modifican."
+msgstr "Publié en 2026. Ils ne sont pas modifiés."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Preliminar"
+msgstr "Préliminaire"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Motor mejorado"
+msgstr "Moteur amélioré"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En pruebas: 31 %% menos distancia en 3 corridas."
+msgstr "Aux tests : 31 %% de distance en moins en 3 courses."
+
+#: tesis/templates/tesis/inicio.html
+msgid "En revisión"
+msgstr "Résumé"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Traducciones"
+msgstr "Traductions"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Automáticas, incluidas maya y otomí. Puedes corregirlas."
+msgstr "Automatique, y compris Maya et Otomí. Tu peux les réparer."
