@@ -46,3 +46,16 @@ Si utilizas este código o los métodos de la investigación en tu propio proyec
   address      = {Ciudad de México, México},
   url          = {https://github.com/lespam/koza-ttp}
 }
+
+---
+
+## English summary
+
+This summary is provided for convenience. The Spanish text above and the official GPL-3.0 text in [`LICENSE`](LICENSE) are the binding terms.
+
+- **License:** GNU General Public License v3.0 or later. Copyright (c) 2026 Leslie Pamela Brenes Valencia (Leslie Pamela Dickinson).
+- **You may** use, study, modify and share this code, including in school and research projects.
+- **If you distribute** this program or a modified version, it must remain under GPL-3.0 and you must share its source code.
+- **Additional term (GPL-3.0, section 7 b): author attribution.** Anyone who distributes this program or a modified version must keep (1) the copyright notice above and (2) a visible reference to the original thesis, as shown in "Cómo citar este trabajo / Citation". In a version with a user interface, it is enough to include this reference in the documentation or on an "About" or "Credits" screen.
+- **ITAM addendum:** the author grants the Instituto Tecnológico Autónomo de México (ITAM) and the Raúl Bailléres Jr. Library a free, permanent authorization to store and share the thesis, including this source code, in any medium (Mexican Federal Copyright Law, articles 21 and 27).
+- **Citation:** Brenes Valencia, L. P. (2026). *Programación genética en la planificación de temporadas de béisbol* [Genetic programming for baseball season scheduling] (Computer Engineering thesis). Instituto Tecnológico Autónomo de México (ITAM), Mexico City, Mexico.
