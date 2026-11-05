@@ -46,6 +46,7 @@ Si utilizas este código o los métodos de la investigación en tu propio proyec
   address      = {Ciudad de México, México},
   url          = {https://github.com/lespam/koza-ttp}
 }
+```
 
 ---
 
