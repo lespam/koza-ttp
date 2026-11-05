@@ -6,7 +6,16 @@ Este programa es software libre: usted puede redistribuirlo y/o modificarlo bajo
 
 Este programa se distribuye con la esperanza de que sea útil, pero SIN NINGUNA GARANTÍA; ni siquiera la garantía implícita de COMERCIALIZACIÓN o ADECUACIÓN PARA UN PROPÓSITO PARTICULAR. Consulte la Licencia Pública General GNU para más detalles.
 
-Puedes consultar una copia completa de la licencia en [GNU Licenses](https://www.gnu.org/licenses/gpl-3.0.html).
+El texto oficial y completo de la licencia está en el archivo [`LICENSE`](LICENSE) de este repositorio (también en [gnu.org](https://www.gnu.org/licenses/gpl-3.0.html)). Este archivo es un resumen en español; si hay diferencias, vale el texto oficial.
+
+## Término adicional: reconocimiento de autoría (sección 7 b de la GPL-3.0)
+
+Quien distribuya este programa o una versión modificada debe conservar:
+
+1. El aviso de copyright de arriba.
+2. Una referencia visible a la tesis original, como la que aparece en la sección «Cómo citar este trabajo».
+
+En una versión con interfaz de usuario, basta con incluir esa referencia en la documentación o en una pantalla de «Acerca de» o «Créditos».
 
 ---
 
@@ -28,12 +37,12 @@ Si utilizas este código o los métodos de la investigación en tu propio proyec
 
 ### Formato BibTeX (para LaTeX)
 ```bibtex
-@thesis{dickinson2026programacion,
+@thesis{brenesvalencia2026programacion,
   author       = {Brenes Valencia, Leslie Pamela},
   title        = {Programación genética en la planificación de temporadas de béisbol},
   school       = {Instituto Tecnológico Autónomo de México (ITAM)},
   year         = {2026},
   type         = {Tesis de Ingeniería en Computación},
   address      = {Ciudad de México, México},
-  url          = {[https://github.com/lespam/koza-ttp](https://github.com/lespam/koza-ttp)}
+  url          = {https://github.com/lespam/koza-ttp}
 }

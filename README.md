@@ -26,6 +26,10 @@ Si utilizas este código o los métodos de la investigación en tu propio proyec
 }
 ```
 
+## Licencia
+
+Código bajo **GPL-3.0** (texto oficial en [`LICENSE`](LICENSE)). Puedes usarlo, estudiarlo y modificarlo, también para proyectos escolares. Si distribuyes una versión modificada, debe seguir siendo GPL-3.0, conservar el crédito a la autora y citar la tesis. Detalles, adenda del ITAM y término de reconocimiento: [`LICENSE.md`](LICENSE.md).
+
 # Pasos para replicar
 Crea una máquina virtual. Antes de instalar los paquetes, asegurate de hacer
 ```
