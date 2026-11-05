@@ -140,7 +140,8 @@ main:focus { outline: none; }
 .envoltura { max-width: 46rem; margin: 0 auto; padding: 2rem 1rem 3rem; }
 
 h1, h2, h3 { line-height: 1.25; }
-h1 { font-family: "Bodoni Moda", Didot, Georgia, serif; font-weight: 500; font-size: 2.4rem; margin: 0.25rem 0 1rem; }
+/* Bodoni con tamaño óptico de texto: sus trazos finos quedan gruesos y legibles en títulos grandes */
+h1 { font-family: "Bodoni Moda", Didot, Georgia, serif; font-weight: 600; font-optical-sizing: none; font-variation-settings: "opsz" 11; font-size: 2.4rem; margin: 0.25rem 0 1rem; }
 h2 { font-size: 1.45rem; margin: 2.5rem 0 0.75rem; }
 h3 { font-size: 1.15rem; margin: 0.25rem 0 0.5rem; }
 section > h2:first-child { scroll-margin-top: 1rem; }
