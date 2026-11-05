@@ -1,0 +1,14 @@
+{% load i18n %}
+<nav class="pasos" aria-label="{% translate "Pasos de la guía" %}">
+    <ol>
+        {% for p in pasos %}
+        <li class="paso{% if p.hecho %} paso-hecho{% endif %}{% if p.actual %} paso-actual{% endif %}">
+            <a href="{{ p.url }}"{% if p.actual %} aria-current="step"{% endif %}>
+                <span class="paso-numero" aria-hidden="true">{% if p.hecho %}✓{% else %}{{ p.numero }}{% endif %}</span>
+                <span class="paso-nombre">{{ p.nombre }}</span>
+                <span class="visualmente-oculto">{% if p.hecho %}({% translate "hecho" %}){% else %}({% translate "pendiente" %}){% endif %}</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ol>
+</nav>

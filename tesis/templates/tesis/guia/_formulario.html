@@ -1,0 +1,22 @@
+{% load i18n %}
+{% if form.non_field_errors %}
+<div class="error-resumen" role="alert">{% for e in form.non_field_errors %}<p>{{ e }}</p>{% endfor %}</div>
+{% elif form.errors %}
+<div class="error-resumen" role="alert"><p>{% translate "Revisa los campos marcados." %}</p></div>
+{% endif %}
+{% for campo in form %}
+<div class="campo{% if campo.errors %} campo-con-error{% endif %}">
+    {% if campo.widget_type == "checkboxselectmultiple" %}
+    <fieldset aria-describedby="{% if campo.errors %}{{ campo.auto_id }}-error{% endif %}">
+        <legend>{{ campo.label }}</legend>
+        {% if campo.errors %}<p class="error" id="{{ campo.auto_id }}-error">{{ campo.errors|join:" " }}</p>{% endif %}
+        <div class="opciones">{% for opcion in campo %}<label class="opcion">{{ opcion.tag }} {{ opcion.choice_label }}</label>{% endfor %}</div>
+    </fieldset>
+    {% else %}
+    <label for="{{ campo.id_for_label }}">{{ campo.label }}{% if campo.field.required %} <span class="requerido">({% translate "obligatorio" %})</span>{% endif %}</label>
+    {% if campo.help_text %}<p class="ayuda" id="{{ campo.auto_id }}-ayuda">{{ campo.help_text }}</p>{% endif %}
+    {% if campo.errors %}<p class="error" id="{{ campo.auto_id }}-error">{{ campo.errors|join:" " }}</p>{% endif %}
+    {{ campo }}
+    {% endif %}
+</div>
+{% endfor %}

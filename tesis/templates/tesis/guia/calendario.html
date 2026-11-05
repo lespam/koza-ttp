@@ -1,0 +1,30 @@
+{% extends "tesis/guia/_base.html" %}
+{% load i18n %}
+{% block titulo %}{% translate "Paso 5: calendario" %}{% endblock %}
+{% block paso %}
+<h1>{% translate "Paso 5: calendario" %}</h1>
+<p class="entrada">{% blocktranslate trimmed with torneo=torneo.nombre %}Genera los juegos del torneo «{{ torneo }}». El primer calendario se arma al azar; después puedes optimizarlo con el algoritmo genético.{% endblocktranslate %}</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit" class="boton">{% if total_juegos %}{% translate "Volver a generar los juegos" %}{% else %}{% translate "Generar los juegos" %}{% endif %}</button>
+</form>
+{% if total_juegos %}
+<div class="tabla-envoltura" role="region" aria-labelledby="tabla-juegos" tabindex="0">
+    <table>
+        <caption id="tabla-juegos">{% blocktranslate trimmed count n=total_juegos %}{{ n }} juego generado{% plural %}{{ n }} juegos generados{% endblocktranslate %}{% if total_juegos > 50 %} · {% translate "se muestran los primeros 50" %}{% endif %}</caption>
+        <thead><tr><th scope="col">{% translate "Fecha" %}</th><th scope="col">{% translate "Local" %}</th><th scope="col">{% translate "Visitante" %}</th></tr></thead>
+        <tbody>
+            {% for juego in juegos %}
+            <tr><td>{{ juego.fecha_de_inicio|date:"Y-m-d" }}</td><td>{{ juego.equipo_en_casa.team_abbreviation }}</td><td>{{ juego.equipo_visita.team_abbreviation }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<h2>{% translate "¿Y ahora?" %}</h2>
+<ul>
+    <li><a href="{% url 'tesis:dashboard' %}?configuracion={{ configuracion.pk }}">{% translate "Abrir este calendario en el panel y optimizarlo" %}</a> {% translate "(tarda unos 20 segundos)" %}</li>
+    <li><a href="{% url 'tesis:calendario_detail' calendario.pk %}">{% translate "Ver el detalle del calendario" %}</a></li>
+    <li><a href="{% url 'documentacion:historico' %}">{% translate "Leer por qué la versión de la tesis no superó a la búsqueda aleatoria" %}</a></li>
+</ul>
+{% endif %}
+{% endblock %}
