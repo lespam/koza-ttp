@@ -62,3 +62,14 @@ class MotorSeriesTests(SimpleTestCase):
         self.assertEqual(inst.evaluar(r.mejor_calendario), r.fitness)
         self.assertLessEqual(r.fitness[1], r.historial[0][2])  # el elitismo nunca empeora
         self.assertEqual(avance, [0, 1, 2, 3, 4])
+
+    def test_viaje_total_sigue_a_cada_equipo_serie_por_serie(self):
+        from programa_genetico.motor_series import Calendario, Instancia
+
+        pos = {"A": 0, "B": 1, "C": 5, "D": 6}
+        inst = Instancia(list(pos), lambda a, b: abs(pos[a] - pos[b]), num_series=2, dias_por_serie=1)
+        cal = Calendario([(("A", "B"), ("C", "D")), (("C", "A"), ("D", "B"))])
+        # Serie 1: B va a A (1), D va a C (1).
+        # Serie 2: A va de A a C (5), C se queda (0), D va de C a D (1), B va de A a D (6).
+        # Regreso a casa: A de C (5), B de D (5), C y D ya están en casa.
+        self.assertEqual(inst.viaje_total(cal), 24)

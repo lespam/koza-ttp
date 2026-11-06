@@ -19,9 +19,13 @@ Modelo
 Tipos: ``Calendario``, ``Serie`` (número de serie) y ``Posicion`` (número de
 pareja dentro de la serie). Los números se toman módulo el tamaño real.
 
-Fitness (igual que la tesis, para comparar):
+Fitness:
 - C1 = -suma(|juegos del equipo - juegos esperados|). Cero es lo mejor.
-- C2 = suma de la distancia entre los rivales de cada juego (km).
+- C2 depende de ``Instancia.fitness``:
+  - "viaje" (por defecto): kilómetros que viajan todos los equipos en la
+    temporada, serie por serie, empezando y terminando en casa.
+  - "rivales": la definición de la tesis, la suma de la distancia entre los
+    rivales de cada juego. Sirve para comparar con la tesis.
 Orden lexicográfico: primero C1, luego C2.
 
 No depende de Django.
@@ -62,16 +66,18 @@ class Instancia:
     distancia: Callable[[str, str], float]
     num_series: int = 54
     dias_por_serie: int = 3
+    fitness: str = "viaje"  # "viaje" (viaje real) o "rivales" (definición de la tesis)
 
     def __post_init__(self):
         if len(self.equipos) % 2:
             raise ValueError("El número de equipos debe ser par.")
         self.equipos = list(self.equipos)
+        if self.fitness not in ("viaje", "rivales"):
+            raise ValueError("fitness debe ser 'viaje' o 'rivales'.")
         self._dist = {}
         for a in self.equipos:
             for b in self.equipos:
-                if a != b:
-                    self._dist[(a, b)] = float(self.distancia(a, b))
+                self._dist[(a, b)] = 0.0 if a == b else float(self.distancia(a, b))
 
     @property
     def juegos_por_equipo(self) -> int:
@@ -92,15 +98,43 @@ class Instancia:
 
     def evaluar(self, cal: Calendario) -> tuple:
         conteo = {e: 0 for e in self.equipos}
-        total = 0.0
         L = self.dias_por_serie
         for serie in cal:
             for a, b in serie:
                 conteo[a] += L
                 conteo[b] += L
-                total += L * self._dist[(a, b)]
         c1 = -sum(abs(n - self.juegos_por_equipo) for n in conteo.values())
+        if self.fitness == "viaje":
+            return c1, self.viaje_total(cal)
+        total = sum(L * self._dist[par] for serie in cal for par in serie)
         return c1, total
+
+    def viaje_total(self, cal: Calendario) -> float:
+        """Kilómetros que viajan todos los equipos en la temporada.
+
+        Cada equipo empieza en su casa. En cada serie está en el estadio del
+        local; entre series viaja del estadio anterior al siguiente. Al final
+        regresa a casa. Dentro de una serie no hay viaje.
+        """
+        dist = self._dist
+        donde = {e: e for e in self.equipos}
+        total = 0.0
+        for serie in cal:
+            for local, visita in serie:
+                total += dist[(donde[local], local)] + dist[(donde[visita], local)]
+                donde[local] = local
+                donde[visita] = local
+        total += sum(dist[(lugar, e)] for e, lugar in donde.items())
+        return total
+
+    def series_contra_mismo_rival(self, cal: Calendario) -> int:
+        """Máximo de series que una misma pareja juega en la temporada."""
+        conteo: dict = {}
+        for serie in cal:
+            for a, b in serie:
+                clave = (a, b) if a <= b else (b, a)
+                conteo[clave] = conteo.get(clave, 0) + 1
+        return max(conteo.values())
 
     def juegos_en_casa(self, cal: Calendario) -> dict:
         casa = {e: 0 for e in self.equipos}
@@ -173,31 +207,63 @@ def _pos_al_azar(n):
 # ----------------------------------------------------------------------
 # Conjuntos de primitivas (árbol principal + ADF0)
 # ----------------------------------------------------------------------
-def crear_cruzar_si_mejora(instancia: Instancia):
-    """Primitiva con conocimiento del dominio: de las tres formas de emparejar
-    a los cuatro equipos de las parejas p y q, deja la de menor distancia."""
+def _lugar(cal, s, equipo):
+    """Estadio donde está ``equipo`` durante la serie s (o su casa fuera de rango)."""
+    if s < 0 or s >= len(cal):
+        return equipo
+    for local, visita in cal[s]:
+        if equipo in (local, visita):
+            return local
+    return equipo
+
+
+def _costo_local(instancia: Instancia, cal, s, equipos) -> float:
+    """Costo de la serie s para ``equipos``, según el fitness de la instancia.
+
+    - "rivales": distancia entre los rivales de las parejas de esos equipos.
+    - "viaje": viaje de esos equipos para llegar a la serie s y salir de ella.
+    """
     dist = instancia._dist
+    if instancia.fitness == "rivales":
+        return sum(dist[par] for par in cal[s] if par[0] in equipos or par[1] in equipos)
+    total = 0.0
+    for e in equipos:
+        aqui = _lugar(cal, s, e)
+        total += dist[(_lugar(cal, s - 1, e), aqui)] + dist[(aqui, _lugar(cal, s + 1, e))]
+    return total
+
+
+def crear_primitivas_si_mejora(instancia: Instancia):
+    """Primitivas con conocimiento del dominio: prueban un cambio en una serie
+    y lo conservan solo si baja el costo local de los equipos afectados."""
+
+    def _equipos(cal, s, *ps):
+        serie = cal[s % len(cal)]
+        return {e for p in ps for e in serie[p % len(serie)]}
 
     def cruzar_si_mejora(cal, s, p, q):
+        """De las tres formas de emparejar a los cuatro equipos de p y q, deja la mejor."""
         opciones = [cal, _cruzar(cal, s, p, q, 0), _cruzar(cal, s, p, q, 1)]
-        s %= len(cal)
+        n = len(cal[s % len(cal)])
+        qq = q % n if q % n != p % n else (q + 1) % n
+        equipos = _equipos(cal, s, p, qq)
+        return min(opciones, key=lambda c: _costo_local(instancia, c, s % len(cal), equipos))
 
-        def costo(c):
-            serie = c[s]
-            n = len(serie)
-            pp, qq = p % n, q % n
-            if pp == qq:
-                qq = (qq + 1) % n
-            return dist[serie[pp]] + dist[serie[qq]]
+    def invertir_si_mejora(cal, s, p):
+        """Invierte la localía de la pareja p solo si baja el viaje."""
+        equipos = _equipos(cal, s, p)
+        otro = invertir_localia(cal, s, p)
+        ss = s % len(cal)
+        if _costo_local(instancia, otro, ss, equipos) < _costo_local(instancia, cal, ss, equipos):
+            return otro
+        return cal
 
-        return min(opciones, key=costo)
-
-    return cruzar_si_mejora
+    return cruzar_si_mejora, invertir_si_mejora
 
 
 def crear_psets(instancia: Instancia):
     ns, np_ = instancia.num_series, instancia.parejas_por_serie
-    cruzar_si_mejora = crear_cruzar_si_mejora(instancia)
+    cruzar_si_mejora, invertir_si_mejora = crear_primitivas_si_mejora(instancia)
 
     adf = gp.PrimitiveSetTyped("ADF0", [Calendario, Serie], Calendario)
     main = gp.PrimitiveSetTyped("MAIN", [Calendario], Calendario)
@@ -207,6 +273,8 @@ def crear_psets(instancia: Instancia):
         ps.addPrimitive(invertir_localia, [Calendario, Serie, Posicion], Calendario)
         ps.addPrimitive(cruzar_si_mejora, [Calendario, Serie, Posicion, Posicion], Calendario,
                         name="cruzar_si_mejora")
+        ps.addPrimitive(invertir_si_mejora, [Calendario, Serie, Posicion], Calendario,
+                        name="invertir_si_mejora")
         ps.addPrimitive(siguiente, [Serie], Serie)
         ps.addPrimitive(otra_pos, [Posicion], Posicion)
         ps.addEphemeralConstant(f"pos_{np_}", functools.partial(_pos_al_azar, np_), Posicion)

@@ -35,13 +35,14 @@ def main() -> None:
     p.add_argument("--generaciones", type=int, default=50)
     p.add_argument("--poblacion", type=int, default=100)
     p.add_argument("--semillas", type=int, default=5)
+    p.add_argument("--fitness", choices=["viaje", "rivales"], default="viaje")
     args = p.parse_args()
 
     coords = cargar_equipos(args.equipos)
     inst = Instancia(list(coords), lambda a, b: haversine(coords[a], coords[b]),
-                     num_series=args.series, dias_por_serie=args.dias)
+                     num_series=args.series, dias_por_serie=args.dias, fitness=args.fitness)
     print(f"{len(coords)} equipos, {inst.num_series} series de {inst.dias_por_serie} días "
-          f"= {inst.juegos_por_equipo} juegos por equipo")
+          f"= {inst.juegos_por_equipo} juegos por equipo, fitness={inst.fitness}")
 
     mejoras = []
     for semilla in range(args.semillas):
@@ -49,13 +50,17 @@ def main() -> None:
         cal0 = inst.calendario_aleatorio(random.Random(semilla))
         r = evolucionar(inst, cal0, generaciones=args.generaciones,
                         tam_poblacion=args.poblacion, semilla=semilla)
-        _, fit_b = busqueda_aleatoria(inst, r.evaluaciones, random.Random(10_000 + semilla))
+        cal_b, fit_b = busqueda_aleatoria(inst, r.evaluaciones, random.Random(10_000 + semilla))
         mejora = 100 * (fit_b[1] - r.fitness[1]) / fit_b[1]
         mejoras.append(mejora)
         print(f"semilla {semilla}: PG C1={r.fitness[0]} C2={r.fitness[1]:,.0f} km "
               f"(cal0 {r.fitness_cal0[1]:,.0f}, mejor en gen {r.generacion_del_mejor}) | "
               f"aleatoria C1={fit_b[0]} C2={fit_b[1]:,.0f} km | evals={r.evaluaciones} | "
               f"mejora {mejora:.1f}% | {time.time() - t:.0f}s")
+        for nombre, cal in (("PG", r.mejor_calendario), ("aleatoria", cal_b)):
+            casa = inst.juegos_en_casa(cal).values()
+            print(f"    {nombre}: juegos en casa {min(casa)}-{max(casa)}, "
+                  f"máx. series contra el mismo rival {inst.series_contra_mismo_rival(cal)}")
     gana = sum(1 for m in mejoras if m > 0)
     print(f"\nPG gana en {gana} de {len(mejoras)} semillas. Mejora media {statistics.mean(mejoras):.1f}%")
 
