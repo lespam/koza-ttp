@@ -133,6 +133,61 @@ def juegos_str_a_arbol(games, pset):
 # ==========================================
 # Clase ProgramaGenetico
 # ==========================================
+# Colores del árbol: texto casi negro sobre fondos claros (contraste mayor a 7:1).
+_TINTA_ARBOL = "#17181c"
+_FONDO_FUNCION = "#dbe7ff"   # funciones: cajas azul claro
+_FONDO_TERMINAL = "#fff4cc"  # valores (equipos, fechas): óvalos amarillo claro
+
+
+def construir_grafica_arbol(nodes, edges, labels):
+    """Arma la gráfica del árbol de PG con Graphviz, sin nodos encimados.
+
+    Las etiquetas se ponen ANTES de calcular el acomodo. Antes se ponían
+    después: Graphviz acomodaba nodos con etiquetas cortas (0, 1, 2...) y al
+    cambiarlas por textos largos como "New York Yankees" los nodos se
+    encimaban.
+    """
+    # Import local: pygraphviz necesita compilar C en Windows. Así el resto del
+    # proyecto (por ejemplo, manage.py translate_site) funciona sin instalarlo.
+    import pygraphviz as pgv
+
+    g = pgv.AGraph(directed=True, strict=False)
+    g.graph_attr.update(
+        rankdir="TB",
+        ordering="out",  # hijos en el orden de los argumentos
+        nodesep="0.35",  # espacio mínimo entre nodos vecinos (pulgadas)
+        ranksep="0.6",   # espacio entre niveles
+        bgcolor="white",
+        pad="0.3",
+    )
+    # Verdana es ancha y clara; DejaVu Sans (en el servidor) mide casi igual,
+    # así el texto no se sale de su caja en el navegador.
+    g.node_attr.update(
+        fontname="Verdana, DejaVu Sans, sans-serif",
+        fontsize="16",
+        fontcolor=_TINTA_ARBOL,
+        color=_TINTA_ARBOL,
+        penwidth="1.5",
+        style="filled",
+        margin="0.15,0.08",
+    )
+    g.edge_attr.update(color=_TINTA_ARBOL, penwidth="1.5", arrowhead="none")
+
+    padres = {origen for origen, _ in edges}
+    for nodo in nodes:
+        es_funcion = nodo in padres
+        g.add_node(
+            nodo,
+            label=str(labels[nodo]),
+            shape="box" if es_funcion else "ellipse",
+            style="rounded,filled" if es_funcion else "filled",
+            fillcolor=_FONDO_FUNCION if es_funcion else _FONDO_TERMINAL,
+        )
+    g.add_edges_from(edges)
+    g.layout(prog="dot")
+    return g
+
+
 class ProgramaGenetico():
     def __init__(self):
         self.calculadora = Calculadora([], metodo="haversine", unidad="km")
@@ -411,17 +466,8 @@ class ProgramaGenetico():
         
     def genera_grafica(self, grafica):
         timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
-        nodes, edges, labels = grafica
-        
-        # Import local: pygraphviz necesita compilar C en Windows. Así el resto del
-        # proyecto (por ejemplo, manage.py translate_site) funciona sin instalarlo.
-        import pygraphviz as pgv
+        g = construir_grafica_arbol(*grafica)
 
-        g = pgv.AGraph()
-        g.add_nodes_from(nodes)
-        g.add_edges_from(edges)
-        g.layout(prog="dot")
-        
         # Guardar archivo dot
         dot_path = os.path.join(settings.BASE_DIR, 'file.dot')
         g.write(dot_path)
@@ -436,10 +482,6 @@ class ProgramaGenetico():
         os.makedirs(wbmp_dir, exist_ok=True)
         os.makedirs(svg_dir, exist_ok=True)
         
-        for i in nodes:
-            n = g.get_node(i)
-            n.attr["label"] = labels[i]
-            
         pdf_path = os.path.join(pdf_dir, f"ptree-{timestamp}.pdf")
         wbmp_path = os.path.join(wbmp_dir, "arbol.wbmp")
         svg_path = os.path.join(svg_dir, "arbol.svg")
