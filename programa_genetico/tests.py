@@ -73,3 +73,16 @@ class MotorSeriesTests(SimpleTestCase):
         # Serie 2: A va de A a C (5), C se queda (0), D va de C a D (1), B va de A a D (6).
         # Regreso a casa: A de C (5), B de D (5), C y D ya están en casa.
         self.assertEqual(inst.viaje_total(cal), 24)
+
+    def test_reglas_de_localia_y_rivales_entran_en_c1(self):
+        from programa_genetico.motor_series import Calendario, Instancia
+
+        pos = {"A": 0, "B": 1, "C": 5, "D": 6}
+        inst = Instancia(list(pos), lambda a, b: abs(pos[a] - pos[b]), num_series=2,
+                         dias_por_serie=1, tolerancia_casa=0, max_series_pareja=1)
+        # A y C juegan las dos series en casa (2 en casa; lo justo es 1) y
+        # las parejas A-B y C-D se repiten (máximo 1 serie).
+        cal = Calendario([(("A", "B"), ("C", "D")), (("A", "B"), ("C", "D"))])
+        # Localía: A +1, B -1, C +1, D -1 -> 4 juegos. Rivales: 2 parejas con 1 de más -> 2.
+        self.assertEqual(inst.penalizacion(cal), 6)
+        self.assertEqual(inst.evaluar(cal)[0], -6)

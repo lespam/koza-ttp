@@ -46,7 +46,49 @@ from deap import base, creator, gp, tools
 # Tipos
 # ----------------------------------------------------------------------
 class Calendario(tuple):
-    """Tupla de series; cada serie es una tupla de parejas (local, visitante)."""
+    """Tupla de series; cada serie es una tupla de parejas (local, visitante).
+
+    Guarda en ``_info`` los conteos de series en casa por equipo y de series
+    por pareja, para no recorrer todo el calendario en cada primitiva.
+    """
+
+
+def _pareja(a, b):
+    return (a, b) if a <= b else (b, a)
+
+
+def _info(cal: Calendario) -> tuple:
+    """(series en casa por equipo, series por pareja), calculado una vez."""
+    info = getattr(cal, "_info", None)
+    if info is None:
+        casa, pares = {}, {}
+        for serie in cal:
+            for a, b in serie:
+                casa[a] = casa.get(a, 0) + 1
+                k = _pareja(a, b)
+                pares[k] = pares.get(k, 0) + 1
+        info = (casa, pares)
+        cal._info = info
+    return info
+
+
+def _reemplazar_serie(cal: Calendario, s: int, nueva: tuple) -> Calendario:
+    """Devuelve un calendario con la serie s cambiada y los conteos al día."""
+    lista = list(cal)
+    vieja = lista[s]
+    lista[s] = nueva
+    nuevo = Calendario(lista)
+    casa, pares = _info(cal)
+    casa, pares = casa.copy(), pares.copy()
+    for a, b in vieja:
+        casa[a] -= 1
+        pares[_pareja(a, b)] -= 1
+    for a, b in nueva:
+        casa[a] = casa.get(a, 0) + 1
+        k = _pareja(a, b)
+        pares[k] = pares.get(k, 0) + 1
+    nuevo._info = (casa, pares)
+    return nuevo
 
 
 class Serie(int):
@@ -67,6 +109,8 @@ class Instancia:
     num_series: int = 54
     dias_por_serie: int = 3
     fitness: str = "viaje"  # "viaje" (viaje real) o "rivales" (definición de la tesis)
+    tolerancia_casa: Optional[int] = 3  # juegos en casa: mitad ± tolerancia (None = sin regla)
+    max_series_pareja: Optional[int] = 4  # series por pareja en la temporada (None = sin regla)
 
     def __post_init__(self):
         if len(self.equipos) % 2:
@@ -104,10 +148,34 @@ class Instancia:
                 conteo[a] += L
                 conteo[b] += L
         c1 = -sum(abs(n - self.juegos_por_equipo) for n in conteo.values())
+        c1 -= self.penalizacion(cal)
         if self.fitness == "viaje":
             return c1, self.viaje_total(cal)
         total = sum(L * self._dist[par] for serie in cal for par in serie)
         return c1, total
+
+    def exceso_casa(self, series_en_casa: int) -> int:
+        """Juegos en casa fuera del rango mitad ± tolerancia."""
+        if self.tolerancia_casa is None:
+            return 0
+        desvio = abs(series_en_casa * self.dias_por_serie - self.juegos_por_equipo / 2)
+        return int(max(0, desvio - self.tolerancia_casa))
+
+    def exceso_pareja(self, series: int) -> int:
+        """Juegos de una pareja por encima del máximo de series."""
+        if self.max_series_pareja is None:
+            return 0
+        return max(0, series - self.max_series_pareja) * self.dias_por_serie
+
+    def penalizacion(self, cal: Calendario) -> int:
+        """Juegos que rompen las reglas de localía y de rivales repetidos.
+
+        Se resta de C1, así que un calendario que rompe una regla nunca le gana
+        a uno que las cumple todas.
+        """
+        casa, pares = _info(cal)
+        return (sum(self.exceso_casa(casa.get(e, 0)) for e in self.equipos)
+                + sum(self.exceso_pareja(n) for n in pares.values()))
 
     def viaje_total(self, cal: Calendario) -> float:
         """Kilómetros que viajan todos los equipos en la temporada.
@@ -129,12 +197,7 @@ class Instancia:
 
     def series_contra_mismo_rival(self, cal: Calendario) -> int:
         """Máximo de series que una misma pareja juega en la temporada."""
-        conteo: dict = {}
-        for serie in cal:
-            for a, b in serie:
-                clave = (a, b) if a <= b else (b, a)
-                conteo[clave] = conteo.get(clave, 0) + 1
-        return max(conteo.values())
+        return max(_info(cal)[1].values())
 
     def juegos_en_casa(self, cal: Calendario) -> dict:
         casa = {e: 0 for e in self.equipos}
@@ -148,11 +211,10 @@ class Instancia:
 # Primitivas (todas conservan un calendario válido)
 # ----------------------------------------------------------------------
 def _cruzar(cal, s, p, q, modo):
-    cal = list(cal)
     s %= len(cal)
     serie = list(cal[s])
     if len(serie) < 2:
-        return Calendario(cal)
+        return cal
     p %= len(serie)
     q %= len(serie)
     if p == q:
@@ -162,8 +224,7 @@ def _cruzar(cal, s, p, q, modo):
         serie[p], serie[q] = (a, c), (b, d)
     else:
         serie[p], serie[q] = (a, d), (b, c)
-    cal[s] = tuple(serie)
-    return Calendario(cal)
+    return _reemplazar_serie(cal, s, tuple(serie))
 
 
 def cruzar_rivales_a(cal, s, p, q):
@@ -178,14 +239,12 @@ def cruzar_rivales_b(cal, s, p, q):
 
 def invertir_localia(cal, s, p):
     """El visitante de la pareja p pasa a ser local en toda la serie."""
-    cal = list(cal)
     s %= len(cal)
     serie = list(cal[s])
     p %= len(serie)
     a, b = serie[p]
     serie[p] = (b, a)
-    cal[s] = tuple(serie)
-    return Calendario(cal)
+    return _reemplazar_serie(cal, s, tuple(serie))
 
 
 def siguiente(s):
@@ -217,20 +276,27 @@ def _lugar(cal, s, equipo):
     return equipo
 
 
-def _costo_local(instancia: Instancia, cal, s, equipos) -> float:
-    """Costo de la serie s para ``equipos``, según el fitness de la instancia.
+def _costo_local(instancia: Instancia, cal, s, equipos) -> tuple:
+    """Costo de la serie s para ``equipos``: (reglas rotas, distancia).
 
+    Primero cuenta los juegos que rompen las reglas de localía y de rivales
+    repetidos entre esos equipos. Luego la distancia, según el fitness:
     - "rivales": distancia entre los rivales de las parejas de esos equipos.
     - "viaje": viaje de esos equipos para llegar a la serie s y salir de ella.
     """
+    casa, pares = _info(cal)
+    lista = sorted(equipos)
+    rotas = sum(instancia.exceso_casa(casa.get(e, 0)) for e in lista)
+    rotas += sum(instancia.exceso_pareja(pares.get((a, b), 0))
+                 for i, a in enumerate(lista) for b in lista[i + 1:])
     dist = instancia._dist
     if instancia.fitness == "rivales":
-        return sum(dist[par] for par in cal[s] if par[0] in equipos or par[1] in equipos)
+        return rotas, sum(dist[par] for par in cal[s] if par[0] in equipos or par[1] in equipos)
     total = 0.0
     for e in equipos:
         aqui = _lugar(cal, s, e)
         total += dist[(_lugar(cal, s - 1, e), aqui)] + dist[(aqui, _lugar(cal, s + 1, e))]
-    return total
+    return rotas, total
 
 
 def crear_primitivas_si_mejora(instancia: Instancia):
@@ -250,7 +316,7 @@ def crear_primitivas_si_mejora(instancia: Instancia):
         return min(opciones, key=lambda c: _costo_local(instancia, c, s % len(cal), equipos))
 
     def invertir_si_mejora(cal, s, p):
-        """Invierte la localía de la pareja p solo si baja el viaje."""
+        """Invierte la localía de la pareja p solo si baja el costo local."""
         equipos = _equipos(cal, s, p)
         otro = invertir_localia(cal, s, p)
         ss = s % len(cal)
