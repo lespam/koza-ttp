@@ -37,6 +37,7 @@ def main() -> None:
     p.add_argument("--semillas", type=int, default=5)
     p.add_argument("--fitness", choices=["viaje", "rivales"], default="viaje")
     p.add_argument("--combinar", action="store_true", help="agrega mezclar_serie y ADF1")
+    p.add_argument("--iniciales", type=int, default=1, help="calendarios de inicio (cal0, cal1, ...)")
     args = p.parse_args()
 
     coords = cargar_equipos(args.equipos)
@@ -48,10 +49,12 @@ def main() -> None:
     mejoras = []
     for semilla in range(args.semillas):
         t = time.time()
-        cal0 = inst.calendario_aleatorio(random.Random(semilla))
+        rng_ini = random.Random(semilla)
+        cal0 = inst.calendario_aleatorio(rng_ini)
+        extra = [inst.calendario_aleatorio(rng_ini) for _ in range(args.iniciales - 1)]
         r = evolucionar(inst, cal0, generaciones=args.generaciones,
                         tam_poblacion=args.poblacion, semilla=semilla,
-                        combinar=args.combinar)
+                        combinar=args.combinar, iniciales_extra=extra)
         cal_b, fit_b = busqueda_aleatoria(inst, r.evaluaciones, random.Random(10_000 + semilla))
         mejora = 100 * (fit_b[1] - r.fitness[1]) / fit_b[1]
         mejoras.append(mejora)

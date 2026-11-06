@@ -336,19 +336,21 @@ def crear_primitivas_si_mejora(instancia: Instancia):
     return cruzar_si_mejora, invertir_si_mejora
 
 
-def crear_psets(instancia: Instancia, combinar: bool = False):
+def crear_psets(instancia: Instancia, combinar: bool = False, num_iniciales: int = 1):
     """Devuelve (MAIN, ADF0) o, con ``combinar``, (MAIN, ADF0, ADF1).
 
     - ADF0(cal, serie): receta que transforma una serie.
     - ADF1(cal_a, cal_b): receta que combina dos calendarios con mezclar_serie.
       Con ``combinar``, el árbol principal también puede usar mezclar_serie,
       así dos ramas transforman cal0 de forma distinta y luego se juntan.
+    - ``num_iniciales``: cuántos calendarios de inicio recibe el árbol
+      principal como terminales (cal0, cal1, ...).
     """
     ns, np_ = instancia.num_series, instancia.parejas_por_serie
     cruzar_si_mejora, invertir_si_mejora = crear_primitivas_si_mejora(instancia)
 
     adf = gp.PrimitiveSetTyped("ADF0", [Calendario, Serie], Calendario)
-    main = gp.PrimitiveSetTyped("MAIN", [Calendario], Calendario)
+    main = gp.PrimitiveSetTyped("MAIN", [Calendario] * num_iniciales, Calendario)
     for ps in (adf, main):
         ps.addPrimitive(cruzar_rivales_a, [Calendario, Serie, Posicion, Posicion], Calendario)
         ps.addPrimitive(cruzar_rivales_b, [Calendario, Serie, Posicion, Posicion], Calendario)
@@ -362,7 +364,7 @@ def crear_psets(instancia: Instancia, combinar: bool = False):
         ps.addEphemeralConstant(f"pos_{np_}", functools.partial(_pos_al_azar, np_), Posicion)
     main.addEphemeralConstant(f"serie_{ns}", functools.partial(_serie_al_azar, ns), Serie)
     adf.renameArguments(ARG0="cal", ARG1="serie")
-    main.renameArguments(ARG0="cal0")
+    main.renameArguments(**{f"ARG{i}": f"cal{i}" for i in range(num_iniciales)})
     if not combinar:
         main.addADF(adf)
         return main, adf
@@ -409,6 +411,7 @@ def evolucionar(instancia: Instancia,
                 altura_max: int = 10,
                 iterar_adf: bool = True,
                 combinar: bool = False,
+                iniciales_extra: Sequence[Calendario] = (),
                 semilla: Optional[int] = None,
                 on_generation: Optional[Callable[[int, float, float], None]] = None,
                 ) -> Resultado:
@@ -418,7 +421,8 @@ def evolucionar(instancia: Instancia,
     generación, para mostrar el avance en la web.
     """
     random.seed(semilla)  # DEAP usa el módulo random global
-    psets = crear_psets(instancia, combinar=combinar)
+    iniciales = [cal0, *iniciales_extra]
+    psets = crear_psets(instancia, combinar=combinar, num_iniciales=len(iniciales))
     adf = psets[1]
 
     tb = base.Toolbox()
@@ -430,17 +434,20 @@ def evolucionar(instancia: Instancia,
     evaluaciones = 0
 
     def ejecutar(ind):
-        """Aplica el individuo a cal0.
+        """Aplica el individuo a los calendarios de inicio (cal0, cal1, ...).
 
-        Con ``iterar_adf``, primero se aplica la receta ADF0 a cada serie
-        (una rama de iteración fija, al estilo de Koza) y luego el árbol principal.
+        Con ``iterar_adf``, primero se aplica la receta ADF0 a cada serie de
+        cada calendario (una rama de iteración fija, al estilo de Koza) y
+        luego el árbol principal, que puede combinarlos.
         """
-        cal = cal0
+        cals = list(iniciales)
         if iterar_adf:
             receta = gp.compile(ind[1], adf)
-            for s in range(len(cal)):
-                cal = receta(cal, Serie(s))
-        return gp.compileADF(ind, psets)(cal)
+            for i, cal in enumerate(cals):
+                for s in range(len(cal)):
+                    cal = receta(cal, Serie(s))
+                cals[i] = cal
+        return gp.compileADF(ind, psets)(*cals)
 
     def evaluar(ind):
         nonlocal evaluaciones
