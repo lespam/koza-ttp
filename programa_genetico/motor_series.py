@@ -255,6 +255,25 @@ def otra_pos(p):
     return Posicion(p + 1)
 
 
+def intercambiar_series(cal, s1, s2):
+    """Cambia de lugar dos series completas: mismos juegos, otras fechas.
+
+    No cambia ningún conteo (juegos, localía, rivales), solo el orden, que
+    importa para el viaje real.
+    """
+    s1 %= len(cal)
+    s2 %= len(cal)
+    if s1 == s2:
+        return cal
+    lista = list(cal)
+    lista[s1], lista[s2] = lista[s2], lista[s1]
+    nuevo = Calendario(lista)
+    info = getattr(cal, "_info", None)
+    if info is not None:
+        nuevo._info = info  # los conteos no cambian
+    return nuevo
+
+
 def mezclar_serie(cal_a, cal_b, s):
     """Pone en cal_a la serie s de cal_b. Sigue siendo válido: cada serie
     es un emparejamiento completo, venga del calendario que venga."""
@@ -333,7 +352,41 @@ def crear_primitivas_si_mejora(instancia: Instancia):
             return otro
         return cal
 
-    return cruzar_si_mejora, invertir_si_mejora
+    def _ubicaciones(cal, s):
+        if s < 0 or s >= len(cal):
+            return None  # en casa
+        lugar = {}
+        for local, visita in cal[s]:
+            lugar[local] = local
+            lugar[visita] = local
+        return lugar
+
+    def _viaje_alrededor(cal, s1, s2):
+        """Viaje de todos los equipos para entrar y salir de las series s1 y s2."""
+        dist = instancia._dist
+        total = 0.0
+        for s in {s1, s2}:
+            antes, aqui, despues = (_ubicaciones(cal, s - 1), _ubicaciones(cal, s),
+                                    _ubicaciones(cal, s + 1))
+            for e in instancia.equipos:
+                a = antes[e] if antes else e
+                b = despues[e] if despues else e
+                total += dist[(a, aqui[e])] + dist[(aqui[e], b)]
+        return total
+
+    def intercambiar_si_mejora(cal, s1, s2):
+        """Cambia de lugar dos series solo si baja el viaje."""
+        if instancia.fitness != "viaje":
+            return cal  # con "rivales" el orden no cambia el fitness
+        otro = intercambiar_series(cal, s1, s2)
+        if otro is cal:
+            return cal
+        a, b = s1 % len(cal), s2 % len(cal)
+        if _viaje_alrededor(otro, a, b) < _viaje_alrededor(cal, a, b):
+            return otro
+        return cal
+
+    return cruzar_si_mejora, invertir_si_mejora, intercambiar_si_mejora
 
 
 def crear_psets(instancia: Instancia, combinar: bool = False, num_iniciales: int = 1):
@@ -347,7 +400,7 @@ def crear_psets(instancia: Instancia, combinar: bool = False, num_iniciales: int
       principal como terminales (cal0, cal1, ...).
     """
     ns, np_ = instancia.num_series, instancia.parejas_por_serie
-    cruzar_si_mejora, invertir_si_mejora = crear_primitivas_si_mejora(instancia)
+    cruzar_si_mejora, invertir_si_mejora, intercambiar_si_mejora = crear_primitivas_si_mejora(instancia)
 
     adf = gp.PrimitiveSetTyped("ADF0", [Calendario, Serie], Calendario)
     main = gp.PrimitiveSetTyped("MAIN", [Calendario] * num_iniciales, Calendario)
@@ -359,6 +412,9 @@ def crear_psets(instancia: Instancia, combinar: bool = False, num_iniciales: int
                         name="cruzar_si_mejora")
         ps.addPrimitive(invertir_si_mejora, [Calendario, Serie, Posicion], Calendario,
                         name="invertir_si_mejora")
+        ps.addPrimitive(intercambiar_series, [Calendario, Serie, Serie], Calendario)
+        ps.addPrimitive(intercambiar_si_mejora, [Calendario, Serie, Serie], Calendario,
+                        name="intercambiar_si_mejora")
         ps.addPrimitive(siguiente, [Serie], Serie)
         ps.addPrimitive(otra_pos, [Posicion], Posicion)
         ps.addEphemeralConstant(f"pos_{np_}", functools.partial(_pos_al_azar, np_), Posicion)

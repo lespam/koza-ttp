@@ -105,3 +105,14 @@ class MotorSeriesTests(SimpleTestCase):
                 conteo[a] += 3
                 conteo[b] += 3
         self.assertEqual(set(conteo.values()), {18})
+
+    def test_intercambiar_series_solo_cambia_el_orden(self):
+        from programa_genetico.motor_series import Calendario, Instancia, intercambiar_series
+
+        pos = {"A": 0, "B": 1, "C": 5, "D": 6}
+        inst = Instancia(list(pos), lambda a, b: abs(pos[a] - pos[b]), num_series=3, dias_por_serie=1)
+        cal = Calendario([(("A", "B"), ("C", "D")), (("C", "A"), ("D", "B")), (("A", "D"), ("B", "C"))])
+        otro = intercambiar_series(cal, 0, 1)
+        self.assertEqual(otro, Calendario([cal[1], cal[0], cal[2]]))
+        self.assertEqual(inst.penalizacion(otro), inst.penalizacion(cal))
+        self.assertEqual((inst.viaje_total(cal), inst.viaje_total(otro)), (44, 42))
