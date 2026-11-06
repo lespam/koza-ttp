@@ -3,7 +3,7 @@ from unittest import mock
 from django.test import SimpleTestCase
 
 from programa_genetico.planificador import ModuloPlanificador
-from programa_genetico.programagenetico import ProgramaGenetico
+from programa_genetico.programagenetico import ProgramaGenetico, cruce_un_punto_sesgado
 
 
 class _EquipoFalso:
@@ -39,3 +39,21 @@ class IniciarPlanificacionTests(SimpleTestCase):
         juegos = planificador.obtener_calendario_inicial()
         self.assertEqual(len(juegos), 2 * 2 * 2)  # series * juegos * parejas por fecha
         self.assertIsInstance(resultado, str)
+
+
+class CruceTests(SimpleTestCase):
+    """deap.gp.cxOnePointLeafBiased falla en Python 3.11+ (random.sample con un set)."""
+
+    def test_cruce_intercambia_subarboles_del_mismo_tipo(self):
+        import operator
+        from deap import gp
+        pset = gp.PrimitiveSet("MAIN", 0)
+        pset.addPrimitive(operator.add, 2)
+        pset.addTerminal(1)
+        pset.addTerminal(2)
+        a = gp.PrimitiveTree.from_string("add(add(1, 1), 1)", pset)
+        b = gp.PrimitiveTree.from_string("add(2, add(2, 2))", pset)
+        nodos = len(a) + len(b)
+        a, b = cruce_un_punto_sesgado(a, b, termpb=0)
+        self.assertEqual(len(a) + len(b), nodos)
+        self.assertEqual(str(a).count("1") + str(b).count("1"), 3)
