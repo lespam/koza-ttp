@@ -25,6 +25,39 @@ from deap import base, creator, tools, gp
 
 from programa_genetico.calculadora import Calculadora
 
+
+def cruce_un_punto_sesgado(ind1, ind2, termpb):
+    """Igual que deap.gp.cxOnePointLeafBiased, pero funciona en Python 3.11 o más nuevo.
+
+    DEAP 1.4.1 llama random.sample() con un set, y desde Python 3.11 eso lanza
+    TypeError. Era la causa del "Server Error (500)" al ejecutar la demo.
+    Aquí los tipos comunes se guardan en una lista, en el orden en que aparecen.
+    """
+    if len(ind1) < 2 or len(ind2) < 2:
+        return ind1, ind2
+
+    def acepta(prob):
+        if random.random() < prob:
+            return lambda aridad: aridad == 0   # hoja (terminal)
+        return lambda aridad: aridad > 0        # primitiva
+
+    acepta1, acepta2 = acepta(termpb), acepta(termpb)
+    tipos1, tipos2 = {}, {}
+    for idx, nodo in enumerate(ind1[1:], 1):
+        if acepta1(nodo.arity):
+            tipos1.setdefault(nodo.ret, []).append(idx)
+    for idx, nodo in enumerate(ind2[1:], 1):
+        if acepta2(nodo.arity):
+            tipos2.setdefault(nodo.ret, []).append(idx)
+
+    comunes = [tipo for tipo in tipos1 if tipo in tipos2]
+    if comunes:
+        tipo = random.choice(comunes)
+        corte1 = ind1.searchSubtree(random.choice(tipos1[tipo]))
+        corte2 = ind2.searchSubtree(random.choice(tipos2[tipo]))
+        ind1[corte1], ind2[corte2] = ind2[corte2], ind1[corte1]
+    return ind1, ind2
+
 creator.create("DateType", datetime.datetime)
 creator.create("StrType", str)
 creator.create("TupleType", tuple)
@@ -496,7 +529,7 @@ class ProgramaGenetico():
         toolbox.register('compile', self.parse_games, pset=main_cal)
         toolbox.register('evaluate', self.eval_calendario)
         toolbox.register('select', tools.selTournament, tournsize=15, fit_attr = 'fitness')
-        toolbox.register('mate', gp.cxOnePointLeafBiased, termpb = 0)
+        toolbox.register('mate', cruce_un_punto_sesgado, termpb=0)
         toolbox.register('expr', gp.genGrow, min_=10, max_=1000)
         toolbox.register('mutate', gp.mutNodeReplacement, pset=main_cal)
         

@@ -1,8 +1,11 @@
 import datetime
+from unittest import mock
 
 from django.urls import reverse
 from django.test import TestCase
 from django.urls import URLPattern
+
+from programa_genetico.programagenetico import ProgramaGenetico
 
 from .models import Calendario, Configuracion, Equipo, Juego, Liga, Serie, Torneo
 from .urls import urlpatterns
@@ -62,6 +65,14 @@ class PaginaDeDemo(TestCase):
         self.assertEqual(r.context["configuracion"], configuracion)
         self.assertEqual(len(r.context["juegos"]), 2)
         self.assertContains(r, f"?configuracion={configuracion.pk}&amp;ejecutar=true")
+
+    def test_ejecutar_optimizacion_no_da_error(self):
+        # Regresión: "Server Error (500)" por DEAP 1.4.1 con Python 3.11 o más nuevo.
+        configuracion = crear_datos_de_ejemplo()
+        # La gráfica del árbol necesita pygraphviz y escribe en media/; no es parte de esta prueba.
+        with mock.patch.object(ProgramaGenetico, "genera_grafica"):
+            r = self.client.get(f"/demo/?configuracion={configuracion.pk}&ejecutar=true")
+        self.assertEqual(r.status_code, 200)
 
     def test_configuracion_inexistente_da_404(self):
         self.assertEqual(self.client.get("/demo/?configuracion=999").status_code, 404)
