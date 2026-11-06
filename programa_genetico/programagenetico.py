@@ -7,6 +7,7 @@ import ast
 import datetime
 import itertools
 import random
+import copy
 import json
 
 from django.conf import settings
@@ -24,6 +25,26 @@ import matplotlib.pyplot as plt
 from deap import base, creator, tools, gp
 
 from programa_genetico.calculadora import Calculadora
+
+
+def evaluar_arbol(arbol, pset):
+    """Evalúa un árbol de DEAP sin pasar por eval().
+
+    gp.compile convierte el árbol en texto y lo evalúa con eval(). Un calendario
+    con más de unos 100 juegos anida más de 200 paréntesis, y Python lanza
+    SyntaxError ("too many nested parentheses"). Era el "Server Error (500)" de
+    "Generar juegos" con torneos grandes. Aquí se recorre el árbol con una pila.
+    """
+    pila = []
+    for nodo in reversed(arbol):
+        if isinstance(nodo, gp.Primitive):
+            argumentos = [pila.pop() for _ in range(nodo.arity)]
+            pila.append(pset.context[nodo.name](*argumentos))
+        elif nodo.conv_fct is str:  # terminal con nombre: su valor está en el contexto
+            pila.append(copy.deepcopy(pset.context.get(nodo.value, nodo.value)))
+        else:
+            pila.append(copy.deepcopy(nodo.value))
+    return pila.pop()
 
 
 def cruce_un_punto_sesgado(ind1, ind2, termpb):
@@ -457,7 +478,7 @@ class ProgramaGenetico():
         
         nuevo_texto = juegos_a_arbol(calendario, pset)
         nuevo_texto = gp.PrimitiveTree.from_string(nuevo_texto, pset)
-        composed = toolbox.compile([nuevo_texto,None])
+        composed = evaluar_arbol(nuevo_texto, pset)
         respuesta = f'{composed}'
         grafica = gp.graph(nuevo_texto)
         self.genera_grafica(grafica)

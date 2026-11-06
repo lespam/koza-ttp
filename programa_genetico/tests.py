@@ -86,3 +86,22 @@ class GraficaArbolTests(SimpleTestCase):
                 if abs(a[1] - b[1]) < 1:  # mismo nivel
                     self.assertGreaterEqual(abs(a[0] - b[0]), (a[2] + b[2]) / 2)
         self.assertEqual(g.get_node(1).attr["label"], "New York Yankees")
+
+
+class CalendarioGrandeTests(SimpleTestCase):
+    """Regresión: con más de unos 100 juegos, gp.compile (eval) lanzaba
+    SyntaxError "too many nested parentheses" en "Generar juegos"."""
+
+    def test_iniciar_planificacion_con_muchos_juegos(self):
+        planificador = ModuloPlanificador()
+        equipos = [_EquipoFalso(letra * 3) for letra in "ABCDEFGHIJ"]
+        planificador.establecer_equipos(equipos)
+        planificador.establecer_fechas([f"2026-05-{dia:02d}" for dia in range(1, 31)])
+        planificador.establecer_numero_de_juegos_por_equipo(3)
+        planificador.setNumeroDeSeriesPorEquipo(10)
+
+        with mock.patch.object(ProgramaGenetico, "genera_grafica"):
+            resultado = planificador.iniciar_planificacion()
+
+        self.assertGreater(len(planificador.obtener_calendario_inicial()), 100)
+        self.assertIsInstance(resultado, str)
