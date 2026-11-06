@@ -255,6 +255,15 @@ def otra_pos(p):
     return Posicion(p + 1)
 
 
+def mezclar_serie(cal_a, cal_b, s):
+    """Pone en cal_a la serie s de cal_b. Sigue siendo válido: cada serie
+    es un emparejamiento completo, venga del calendario que venga."""
+    s %= len(cal_a)
+    if cal_a[s] == cal_b[s]:
+        return cal_a
+    return _reemplazar_serie(cal_a, s, cal_b[s])
+
+
 def _serie_al_azar(n):
     return Serie(random.randrange(n))
 
@@ -327,7 +336,14 @@ def crear_primitivas_si_mejora(instancia: Instancia):
     return cruzar_si_mejora, invertir_si_mejora
 
 
-def crear_psets(instancia: Instancia):
+def crear_psets(instancia: Instancia, combinar: bool = False):
+    """Devuelve (MAIN, ADF0) o, con ``combinar``, (MAIN, ADF0, ADF1).
+
+    - ADF0(cal, serie): receta que transforma una serie.
+    - ADF1(cal_a, cal_b): receta que combina dos calendarios con mezclar_serie.
+      Con ``combinar``, el árbol principal también puede usar mezclar_serie,
+      así dos ramas transforman cal0 de forma distinta y luego se juntan.
+    """
     ns, np_ = instancia.num_series, instancia.parejas_por_serie
     cruzar_si_mejora, invertir_si_mejora = crear_primitivas_si_mejora(instancia)
 
@@ -347,8 +363,19 @@ def crear_psets(instancia: Instancia):
     main.addEphemeralConstant(f"serie_{ns}", functools.partial(_serie_al_azar, ns), Serie)
     adf.renameArguments(ARG0="cal", ARG1="serie")
     main.renameArguments(ARG0="cal0")
+    if not combinar:
+        main.addADF(adf)
+        return main, adf
+
+    adf1 = gp.PrimitiveSetTyped("ADF1", [Calendario, Calendario], Calendario)
+    adf1.addPrimitive(mezclar_serie, [Calendario, Calendario, Serie], Calendario)
+    adf1.addPrimitive(siguiente, [Serie], Serie)
+    adf1.addEphemeralConstant(f"serie_{ns}", functools.partial(_serie_al_azar, ns), Serie)
+    adf1.renameArguments(ARG0="cal_a", ARG1="cal_b")
+    main.addPrimitive(mezclar_serie, [Calendario, Calendario, Serie], Calendario)
     main.addADF(adf)
-    return main, adf
+    main.addADF(adf1)
+    return main, adf, adf1
 
 
 if not hasattr(creator, "FitnessSeries"):
@@ -381,6 +408,7 @@ def evolucionar(instancia: Instancia,
                 elite: int = 1,
                 altura_max: int = 10,
                 iterar_adf: bool = True,
+                combinar: bool = False,
                 semilla: Optional[int] = None,
                 on_generation: Optional[Callable[[int, float, float], None]] = None,
                 ) -> Resultado:
@@ -390,15 +418,14 @@ def evolucionar(instancia: Instancia,
     generación, para mostrar el avance en la web.
     """
     random.seed(semilla)  # DEAP usa el módulo random global
-    main, adf = crear_psets(instancia)
-    psets = (main, adf)
+    psets = crear_psets(instancia, combinar=combinar)
+    adf = psets[1]
 
     tb = base.Toolbox()
-    tb.register("expr_main", gp.genHalfAndHalf, pset=main, min_=1, max_=4)
-    tb.register("expr_adf", gp.genHalfAndHalf, pset=adf, min_=1, max_=3)
-    tb.register("MAIN", tools.initIterate, gp.PrimitiveTree, tb.expr_main)
-    tb.register("ADF", tools.initIterate, gp.PrimitiveTree, tb.expr_adf)
-    tb.register("individual", tools.initCycle, creator.IndividuoSeries, [tb.MAIN, tb.ADF], n=1)
+    exprs = [functools.partial(gp.genHalfAndHalf, pset=ps, min_=1, max_=4 if i == 0 else 3)
+             for i, ps in enumerate(psets)]
+    arboles = [functools.partial(tools.initIterate, gp.PrimitiveTree, e) for e in exprs]
+    tb.register("individual", tools.initCycle, creator.IndividuoSeries, arboles, n=1)
 
     evaluaciones = 0
 
@@ -458,9 +485,9 @@ def evolucionar(instancia: Instancia,
             if random.random() < prob_mutacion:
                 nuevo = tb.clone(ind)
                 t = random.randrange(len(nuevo))
-                pset = psets[t]
-                expr = tb.expr_main if t == 0 else tb.expr_adf
-                nuevo[t], = gp.mutUniform(nuevo[t], expr=lambda pset, type_: expr(type_=type_), pset=pset)
+                expr = exprs[t]
+                nuevo[t], = gp.mutUniform(nuevo[t], expr=lambda pset, type_: expr(type_=type_),
+                                          pset=psets[t])
                 hijos[i] = ajustar(ind, nuevo)
                 del hijos[i].fitness.values
 

@@ -86,3 +86,22 @@ class MotorSeriesTests(SimpleTestCase):
         # Localía: A +1, B -1, C +1, D -1 -> 4 juegos. Rivales: 2 parejas con 1 de más -> 2.
         self.assertEqual(inst.penalizacion(cal), 6)
         self.assertEqual(inst.evaluar(cal)[0], -6)
+
+    def test_combinar_con_adf1_conserva_las_reglas_duras(self):
+        import random
+
+        from programa_genetico.motor_series import Instancia, evolucionar
+
+        equipos = ["AAA", "BBB", "CCC", "DDD", "EEE", "FFF"]
+        posiciones = {e: i for i, e in enumerate(equipos)}
+        inst = Instancia(equipos, lambda a, b: abs(posiciones[a] - posiciones[b]),
+                         num_series=6, dias_por_serie=3)
+        r = evolucionar(inst, inst.calendario_aleatorio(random.Random(1)), generaciones=4,
+                        tam_poblacion=20, semilla=1, combinar=True)
+        self.assertEqual(len(r.mejor_individuo), 3)  # MAIN, ADF0, ADF1
+        conteo = {e: 0 for e in equipos}
+        for serie in r.mejor_calendario:
+            for a, b in serie:
+                conteo[a] += 3
+                conteo[b] += 3
+        self.assertEqual(set(conteo.values()), {18})

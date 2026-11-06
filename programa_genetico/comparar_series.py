@@ -36,6 +36,7 @@ def main() -> None:
     p.add_argument("--poblacion", type=int, default=100)
     p.add_argument("--semillas", type=int, default=5)
     p.add_argument("--fitness", choices=["viaje", "rivales"], default="viaje")
+    p.add_argument("--combinar", action="store_true", help="agrega mezclar_serie y ADF1")
     args = p.parse_args()
 
     coords = cargar_equipos(args.equipos)
@@ -49,7 +50,8 @@ def main() -> None:
         t = time.time()
         cal0 = inst.calendario_aleatorio(random.Random(semilla))
         r = evolucionar(inst, cal0, generaciones=args.generaciones,
-                        tam_poblacion=args.poblacion, semilla=semilla)
+                        tam_poblacion=args.poblacion, semilla=semilla,
+                        combinar=args.combinar)
         cal_b, fit_b = busqueda_aleatoria(inst, r.evaluaciones, random.Random(10_000 + semilla))
         mejora = 100 * (fit_b[1] - r.fitness[1]) / fit_b[1]
         mejoras.append(mejora)
