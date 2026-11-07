@@ -116,3 +116,22 @@ class MotorSeriesTests(SimpleTestCase):
         self.assertEqual(otro, Calendario([cal[1], cal[0], cal[2]]))
         self.assertEqual(inst.penalizacion(otro), inst.penalizacion(cal))
         self.assertEqual((inst.viaje_total(cal), inst.viaje_total(otro)), (44, 42))
+
+    def test_reglas_por_division_liga_e_interliga(self):
+        from programa_genetico.motor_series import Calendario, Instancia, ReglaNivel
+
+        # 2 ligas x 1 división x 2 equipos: A-B y C-D son división, A-C liga no existe,
+        # así que A-C, A-D, B-C, B-D son interliga.
+        divisiones = {"X Div": ["A", "B"], "Y Div": ["C", "D"]}
+        reglas = {
+            "division": ReglaNivel(juegos=2, tolerancia=0, min_series=2, max_series=2),
+            "liga": ReglaNivel(juegos=0, tolerancia=0, min_series=0, max_series=0),
+            "interliga": ReglaNivel(juegos=2, tolerancia=0, min_series=1, max_series=1),
+        }
+        inst = Instancia(["A", "B", "C", "D"], lambda a, b: 1.0, num_series=4, dias_por_serie=1,
+                         tolerancia_casa=None, divisiones=divisiones, reglas_nivel=reglas)
+        bueno = Calendario([(("A", "B"), ("C", "D")), (("A", "C"), ("B", "D")),
+                            (("A", "D"), ("B", "C")), (("B", "A"), ("D", "C"))])
+        self.assertEqual(inst.penalizacion(bueno), 0)
+        malo = Calendario([(("A", "B"), ("C", "D"))] * 4)
+        self.assertGreater(inst.penalizacion(malo), 0)

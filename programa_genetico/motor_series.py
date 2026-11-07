@@ -102,6 +102,40 @@ class Posicion(int):
 # ----------------------------------------------------------------------
 # Instancia y generación 0
 # ----------------------------------------------------------------------
+# Ligas y divisiones de MLB (códigos de static/csv/teams.csv).
+MLB_DIVISIONES = {
+    "AL Este": ["BAL", "BOS", "NYA", "TBA", "TOR"],
+    "AL Central": ["CHA", "CLE", "DET", "KCA", "MIN"],
+    "AL Oeste": ["ANA", "HOU", "OAK", "SEA", "TEX"],
+    "NL Este": ["ATL", "MIA", "NYN", "PHI", "WAS"],
+    "NL Central": ["CHN", "CIN", "MIL", "PIT", "SLN"],
+    "NL Oeste": ["ARI", "COL", "LAN", "SDN", "SFN"],
+}
+
+
+@dataclass
+class ReglaNivel:
+    """Regla para un nivel de la jerarquía (división, liga o interliga).
+
+    - ``juegos``: juegos que cada equipo debe jugar contra ese nivel (con
+      ``tolerancia`` de margen, porque las series son de días fijos).
+    - ``min_series`` / ``max_series``: series contra cada rival de ese nivel.
+    """
+    juegos: int
+    tolerancia: int
+    min_series: int
+    max_series: int
+
+
+# Regla de MLB desde 2023 (52 división, 64 resto de la liga, 46 interliga),
+# adaptada a series de 3 días: lo más cercano posible es 51 / 63 / 48.
+REGLAS_MLB_2023 = {
+    "division": ReglaNivel(juegos=52, tolerancia=1, min_series=4, max_series=5),
+    "liga": ReglaNivel(juegos=64, tolerancia=1, min_series=2, max_series=3),
+    "interliga": ReglaNivel(juegos=46, tolerancia=2, min_series=1, max_series=2),
+}
+
+
 @dataclass
 class Instancia:
     equipos: Sequence[str]
@@ -111,6 +145,11 @@ class Instancia:
     fitness: str = "viaje"  # "viaje" (viaje real) o "rivales" (definición de la tesis)
     tolerancia_casa: Optional[int] = 3  # juegos en casa: mitad ± tolerancia (None = sin regla)
     max_series_pareja: Optional[int] = 4  # series por pareja en la temporada (None = sin regla)
+    # Jerarquía opcional: {nombre de división: [equipos]}. La liga es el prefijo
+    # del nombre ("AL", "NL"). Con divisiones, las reglas por nivel reemplazan
+    # a max_series_pareja.
+    divisiones: Optional[dict] = None
+    reglas_nivel: Optional[dict] = None
 
     def __post_init__(self):
         if len(self.equipos) % 2:
@@ -122,6 +161,23 @@ class Instancia:
         for a in self.equipos:
             for b in self.equipos:
                 self._dist[(a, b)] = 0.0 if a == b else float(self.distancia(a, b))
+        self._nivel = {}
+        if self.divisiones:
+            if self.reglas_nivel is None:
+                self.reglas_nivel = REGLAS_MLB_2023
+            div_de = {e: d for d, lista in self.divisiones.items() for e in lista}
+            faltan = set(self.equipos) - set(div_de)
+            if faltan:
+                raise ValueError(f"Equipos sin división: {sorted(faltan)}")
+            for i, a in enumerate(self.equipos):
+                for b in self.equipos[i + 1:]:
+                    if div_de[a] == div_de[b]:
+                        nivel = "division"
+                    elif div_de[a].split()[0] == div_de[b].split()[0]:
+                        nivel = "liga"
+                    else:
+                        nivel = "interliga"
+                    self._nivel[_pareja(a, b)] = nivel
 
     @property
     def juegos_por_equipo(self) -> int:
@@ -161,11 +217,31 @@ class Instancia:
         desvio = abs(series_en_casa * self.dias_por_serie - self.juegos_por_equipo / 2)
         return int(max(0, desvio - self.tolerancia_casa))
 
-    def exceso_pareja(self, series: int) -> int:
-        """Juegos de una pareja por encima del máximo de series."""
+    def exceso_pareja(self, series: int, pareja: tuple = None) -> int:
+        """Juegos de una pareja fuera de su rango de series.
+
+        Con divisiones, el rango depende del nivel de la pareja. Sin ellas,
+        solo hay un máximo (``max_series_pareja``).
+        """
+        if self._nivel and pareja is not None:
+            regla = self.reglas_nivel[self._nivel[pareja]]
+            falta = max(0, regla.min_series - series) + max(0, series - regla.max_series)
+            return falta * self.dias_por_serie
         if self.max_series_pareja is None:
             return 0
         return max(0, series - self.max_series_pareja) * self.dias_por_serie
+
+    def exceso_niveles(self, equipo: str, pares: dict) -> int:
+        """Juegos del equipo fuera de la meta de cada nivel (división, liga, interliga)."""
+        if not self._nivel:
+            return 0
+        juegos = {nivel: 0 for nivel in self.reglas_nivel}
+        for otro in self.equipos:
+            if otro != equipo:
+                k = _pareja(equipo, otro)
+                juegos[self._nivel[k]] += pares.get(k, 0) * self.dias_por_serie
+        return sum(int(max(0, abs(juegos[n] - r.juegos) - r.tolerancia))
+                   for n, r in self.reglas_nivel.items())
 
     def penalizacion(self, cal: Calendario) -> int:
         """Juegos que rompen las reglas de localía y de rivales repetidos.
@@ -174,8 +250,13 @@ class Instancia:
         a uno que las cumple todas.
         """
         casa, pares = _info(cal)
-        return (sum(self.exceso_casa(casa.get(e, 0)) for e in self.equipos)
-                + sum(self.exceso_pareja(n) for n in pares.values()))
+        total = sum(self.exceso_casa(casa.get(e, 0)) for e in self.equipos)
+        if self._nivel:
+            total += sum(self.exceso_pareja(pares.get(k, 0), k) for k in self._nivel)
+            total += sum(self.exceso_niveles(e, pares) for e in self.equipos)
+        else:
+            total += sum(self.exceso_pareja(n) for n in pares.values())
+        return total
 
     def viaje_total(self, cal: Calendario) -> float:
         """Kilómetros que viajan todos los equipos en la temporada.
@@ -315,8 +396,9 @@ def _costo_local(instancia: Instancia, cal, s, equipos) -> tuple:
     casa, pares = _info(cal)
     lista = sorted(equipos)
     rotas = sum(instancia.exceso_casa(casa.get(e, 0)) for e in lista)
-    rotas += sum(instancia.exceso_pareja(pares.get((a, b), 0))
+    rotas += sum(instancia.exceso_pareja(pares.get((a, b), 0), (a, b))
                  for i, a in enumerate(lista) for b in lista[i + 1:])
+    rotas += sum(instancia.exceso_niveles(e, pares) for e in lista)
     dist = instancia._dist
     if instancia.fitness == "rivales":
         return rotas, sum(dist[par] for par in cal[s] if par[0] in equipos or par[1] in equipos)

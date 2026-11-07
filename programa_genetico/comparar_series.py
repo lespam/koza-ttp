@@ -16,7 +16,7 @@ from pathlib import Path
 
 from haversine import haversine
 
-from programa_genetico.motor_series import Instancia, busqueda_aleatoria, evolucionar
+from programa_genetico.motor_series import MLB_DIVISIONES, Instancia, busqueda_aleatoria, evolucionar
 
 RAIZ = Path(__file__).resolve().parent.parent
 
@@ -37,12 +37,14 @@ def main() -> None:
     p.add_argument("--semillas", type=int, default=5)
     p.add_argument("--fitness", choices=["viaje", "rivales"], default="viaje")
     p.add_argument("--combinar", action="store_true", help="agrega mezclar_serie y ADF1")
+    p.add_argument("--divisiones", action="store_true", help="reglas de MLB 2023 por división, liga e interliga")
     p.add_argument("--iniciales", type=int, default=1, help="calendarios de inicio (cal0, cal1, ...)")
     args = p.parse_args()
 
     coords = cargar_equipos(args.equipos)
     inst = Instancia(list(coords), lambda a, b: haversine(coords[a], coords[b]),
-                     num_series=args.series, dias_por_serie=args.dias, fitness=args.fitness)
+                     num_series=args.series, dias_por_serie=args.dias, fitness=args.fitness,
+                     divisiones=MLB_DIVISIONES if args.divisiones else None)
     print(f"{len(coords)} equipos, {inst.num_series} series de {inst.dias_por_serie} días "
           f"= {inst.juegos_por_equipo} juegos por equipo, fitness={inst.fitness}")
 
