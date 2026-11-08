@@ -41,6 +41,140 @@ class IniciarPlanificacionTests(SimpleTestCase):
         self.assertIsInstance(resultado, str)
 
 
+class MotorSeriesTests(SimpleTestCase):
+    """El motor por series nunca rompe el número de juegos por equipo."""
+
+    def test_juegos_por_equipo_se_conservan(self):
+        import random
+
+        from programa_genetico.motor_series import Instancia, evolucionar
+
+        equipos = ["AAA", "BBB", "CCC", "DDD", "EEE", "FFF"]
+        posiciones = {e: i for i, e in enumerate(equipos)}
+        inst = Instancia(equipos, lambda a, b: abs(posiciones[a] - posiciones[b]),
+                         num_series=6, dias_por_serie=3)
+        cal0 = inst.calendario_aleatorio(random.Random(0))
+        avance = []
+        r = evolucionar(inst, cal0, generaciones=5, tam_poblacion=20, semilla=0,
+                        on_generation=lambda g, c1, c2: avance.append(g))
+
+        self.assertEqual(r.fitness[0], 0)  # C1 = 0: todos juegan 18
+        self.assertEqual(inst.evaluar(r.mejor_calendario), r.fitness)
+        self.assertLessEqual(r.fitness[1], r.historial[0][2])  # el elitismo nunca empeora
+        self.assertEqual(avance, [0, 1, 2, 3, 4])
+
+    def test_viaje_total_sigue_a_cada_equipo_serie_por_serie(self):
+        from programa_genetico.motor_series import Calendario, Instancia
+
+        pos = {"A": 0, "B": 1, "C": 5, "D": 6}
+        inst = Instancia(list(pos), lambda a, b: abs(pos[a] - pos[b]), num_series=2, dias_por_serie=1)
+        cal = Calendario([(("A", "B"), ("C", "D")), (("C", "A"), ("D", "B"))])
+        # Serie 1: B va a A (1), D va a C (1).
+        # Serie 2: A va de A a C (5), C se queda (0), D va de C a D (1), B va de A a D (6).
+        # Regreso a casa: A de C (5), B de D (5), C y D ya están en casa.
+        self.assertEqual(inst.viaje_total(cal), 24)
+
+    def test_reglas_de_localia_y_rivales_entran_en_c1(self):
+        from programa_genetico.motor_series import Calendario, Instancia
+
+        pos = {"A": 0, "B": 1, "C": 5, "D": 6}
+        inst = Instancia(list(pos), lambda a, b: abs(pos[a] - pos[b]), num_series=2,
+                         dias_por_serie=1, tolerancia_casa=0, max_series_pareja=1)
+        # A y C juegan las dos series en casa (2 en casa; lo justo es 1) y
+        # las parejas A-B y C-D se repiten (máximo 1 serie).
+        cal = Calendario([(("A", "B"), ("C", "D")), (("A", "B"), ("C", "D"))])
+        # Localía: A +1, B -1, C +1, D -1 -> 4 juegos. Rivales: 2 parejas con 1 de más -> 2.
+        self.assertEqual(inst.penalizacion(cal), 6)
+        self.assertEqual(inst.evaluar(cal)[0], -6)
+
+    def test_combinar_con_adf1_conserva_las_reglas_duras(self):
+        import random
+
+        from programa_genetico.motor_series import Instancia, evolucionar
+
+        equipos = ["AAA", "BBB", "CCC", "DDD", "EEE", "FFF"]
+        posiciones = {e: i for i, e in enumerate(equipos)}
+        inst = Instancia(equipos, lambda a, b: abs(posiciones[a] - posiciones[b]),
+                         num_series=6, dias_por_serie=3)
+        r = evolucionar(inst, inst.calendario_aleatorio(random.Random(1)), generaciones=4,
+                        tam_poblacion=20, semilla=1, combinar=True)
+        self.assertEqual(len(r.mejor_individuo), 3)  # MAIN, ADF0, ADF1
+        conteo = {e: 0 for e in equipos}
+        for serie in r.mejor_calendario:
+            for a, b in serie:
+                conteo[a] += 3
+                conteo[b] += 3
+        self.assertEqual(set(conteo.values()), {18})
+
+    def test_intercambiar_series_solo_cambia_el_orden(self):
+        from programa_genetico.motor_series import Calendario, Instancia, intercambiar_series
+
+        pos = {"A": 0, "B": 1, "C": 5, "D": 6}
+        inst = Instancia(list(pos), lambda a, b: abs(pos[a] - pos[b]), num_series=3, dias_por_serie=1)
+        cal = Calendario([(("A", "B"), ("C", "D")), (("C", "A"), ("D", "B")), (("A", "D"), ("B", "C"))])
+        otro = intercambiar_series(cal, 0, 1)
+        self.assertEqual(otro, Calendario([cal[1], cal[0], cal[2]]))
+        self.assertEqual(inst.penalizacion(otro), inst.penalizacion(cal))
+        self.assertEqual((inst.viaje_total(cal), inst.viaje_total(otro)), (44, 42))
+
+    def test_reglas_por_division_liga_e_interliga(self):
+        from programa_genetico.motor_series import Calendario, Instancia, ReglaNivel
+
+        # 2 ligas x 1 división x 2 equipos: A-B y C-D son división, A-C liga no existe,
+        # así que A-C, A-D, B-C, B-D son interliga.
+        divisiones = {"X Div": ["A", "B"], "Y Div": ["C", "D"]}
+        reglas = {
+            "division": ReglaNivel(juegos=2, tolerancia=0, min_series=2, max_series=2),
+            "liga": ReglaNivel(juegos=0, tolerancia=0, min_series=0, max_series=0),
+            "interliga": ReglaNivel(juegos=2, tolerancia=0, min_series=1, max_series=1),
+        }
+        inst = Instancia(["A", "B", "C", "D"], lambda a, b: 1.0, num_series=4, dias_por_serie=1,
+                         tolerancia_casa=None, divisiones=divisiones, reglas_nivel=reglas)
+        bueno = Calendario([(("A", "B"), ("C", "D")), (("A", "C"), ("B", "D")),
+                            (("A", "D"), ("B", "C")), (("B", "A"), ("D", "C"))])
+        self.assertEqual(inst.penalizacion(bueno), 0)
+        malo = Calendario([(("A", "B"), ("C", "D"))] * 4)
+        self.assertGreater(inst.penalizacion(malo), 0)
+
+
+class MotorBloquesTests(SimpleTestCase):
+    """Cada ADF es un calendario: las reglas por nivel se cumplen por construcción."""
+
+    def _instancia(self, **kw):
+        from programa_genetico.motor_bloques import REGLAS_BLOQUES
+        from programa_genetico.motor_series import MLB_DIVISIONES, Instancia
+
+        equipos = [e for lista in MLB_DIVISIONES.values() for e in lista]
+        pos = {e: (i % 6, i // 6) for i, e in enumerate(equipos)}
+        return Instancia(equipos, lambda a, b: abs(pos[a][0] - pos[b][0]) + abs(pos[a][1] - pos[b][1]),
+                         divisiones=MLB_DIVISIONES, reglas_nivel=REGLAS_BLOQUES, **kw)
+
+    def test_bloques_aleatorios_cumplen_las_reglas_por_nivel(self):
+        import random
+
+        from programa_genetico.motor_bloques import Bloques, Jerarquia
+        from programa_genetico.motor_series import MLB_DIVISIONES
+
+        inst = self._instancia(tolerancia_casa=None)
+        jer = Jerarquia(MLB_DIVISIONES)
+        for semilla in range(5):
+            cal = Bloques.aleatorios(jer, random.Random(semilla)).ensamblar_simple()
+            self.assertEqual(len(cal), 54)
+            self.assertEqual(inst.evaluar(cal)[0], 0)
+
+    def test_evolucion_conserva_las_reglas(self):
+        import random
+
+        from programa_genetico.motor_bloques import Bloques, Jerarquia, evolucionar
+        from programa_genetico.motor_series import MLB_DIVISIONES
+
+        inst = self._instancia(tolerancia_casa=None)
+        bloques = Bloques.aleatorios(Jerarquia(MLB_DIVISIONES), random.Random(0))
+        r = evolucionar(inst, bloques, generaciones=3, tam_poblacion=10, semilla=0)
+        self.assertEqual(r.fitness[0], 0)
+        self.assertEqual(len(r.mejor_individuo), 5)  # ADF_liga, ADF_division, ADF_interliga, ADF_serie, AJUSTE
+
+
 class CruceTests(SimpleTestCase):
     """deap.gp.cxOnePointLeafBiased falla en Python 3.11+ (random.sample con un set)."""
 
