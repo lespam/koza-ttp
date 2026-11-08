@@ -212,3 +212,16 @@ class GuiaDeCincoPasos(TestCase):
 
     def test_paso_desconocido_vuelve_al_inicio(self):
         self.assertRedirects(self.client.get("/guia/otro/"), "/guia/")
+
+
+class CorreccionCoorsField(TestCase):
+    def test_migracion_corrige_solo_el_valor_erroneo(self):
+        from importlib import import_module
+        from django.apps import apps
+        migracion = import_module("tesis.migrations.0003_corregir_longitud_coors_field")
+        mal = Equipo.objects.create(team_abbreviation="COL", lat=39.75588, lon=-39.75588)
+        otro = Equipo.objects.create(team_abbreviation="DEN", lat=39.75588, lon=-39.75588)
+        migracion.corregir(apps, None)
+        mal.refresh_from_db(); otro.refresh_from_db()
+        self.assertAlmostEqual(mal.lon, -104.99420)
+        self.assertAlmostEqual(otro.lon, -39.75588)  # solo se corrige COL
