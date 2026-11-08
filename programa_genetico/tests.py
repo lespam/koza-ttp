@@ -135,3 +135,41 @@ class MotorSeriesTests(SimpleTestCase):
         self.assertEqual(inst.penalizacion(bueno), 0)
         malo = Calendario([(("A", "B"), ("C", "D"))] * 4)
         self.assertGreater(inst.penalizacion(malo), 0)
+
+
+class MotorBloquesTests(SimpleTestCase):
+    """Cada ADF es un calendario: las reglas por nivel se cumplen por construcción."""
+
+    def _instancia(self, **kw):
+        from programa_genetico.motor_bloques import REGLAS_BLOQUES
+        from programa_genetico.motor_series import MLB_DIVISIONES, Instancia
+
+        equipos = [e for lista in MLB_DIVISIONES.values() for e in lista]
+        pos = {e: (i % 6, i // 6) for i, e in enumerate(equipos)}
+        return Instancia(equipos, lambda a, b: abs(pos[a][0] - pos[b][0]) + abs(pos[a][1] - pos[b][1]),
+                         divisiones=MLB_DIVISIONES, reglas_nivel=REGLAS_BLOQUES, **kw)
+
+    def test_bloques_aleatorios_cumplen_las_reglas_por_nivel(self):
+        import random
+
+        from programa_genetico.motor_bloques import Bloques, Jerarquia
+        from programa_genetico.motor_series import MLB_DIVISIONES
+
+        inst = self._instancia(tolerancia_casa=None)
+        jer = Jerarquia(MLB_DIVISIONES)
+        for semilla in range(5):
+            cal = Bloques.aleatorios(jer, random.Random(semilla)).ensamblar_simple()
+            self.assertEqual(len(cal), 54)
+            self.assertEqual(inst.evaluar(cal)[0], 0)
+
+    def test_evolucion_conserva_las_reglas(self):
+        import random
+
+        from programa_genetico.motor_bloques import Bloques, Jerarquia, evolucionar
+        from programa_genetico.motor_series import MLB_DIVISIONES
+
+        inst = self._instancia(tolerancia_casa=None)
+        bloques = Bloques.aleatorios(Jerarquia(MLB_DIVISIONES), random.Random(0))
+        r = evolucionar(inst, bloques, generaciones=3, tam_poblacion=10, semilla=0)
+        self.assertEqual(r.fitness[0], 0)
+        self.assertEqual(len(r.mejor_individuo), 5)  # ADF_liga, ADF_division, ADF_interliga, ADF_serie, AJUSTE
