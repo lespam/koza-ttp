@@ -83,6 +83,15 @@ class PaginaDeDemo(TestCase):
         self.assertContains(r, "esta demo usa el motor de la tesis")
         self.assertContains(r, str(MOTOR["mejorado"]["frente_al_azar"]))
 
+    def test_aviso_de_espera_con_animacion(self):
+        # H-1: al ejecutar se muestra un aviso con el árbol animado (Lottie)
+        crear_datos_de_ejemplo()
+        r = self.client.get("/demo/")
+        self.assertContains(r, 'id="espera" role="status" hidden')
+        self.assertContains(r, "lottie/arbol_evoluciona.json")
+        self.assertContains(r, "js/espera.js")
+        self.assertNotContains(r, "Tarda unos segundos.")
+
     def test_configuracion_inexistente_da_404(self):
         self.assertEqual(self.client.get("/demo/?configuracion=999").status_code, 404)
 

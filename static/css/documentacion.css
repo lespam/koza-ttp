@@ -363,3 +363,19 @@ thead th { font-size: 0.92rem; }
 /* Tamaño real: el texto del árbol se lee a 16 puntos; si no cabe, se desplaza. */
 .modal-content svg { display: block; width: auto; max-width: none; height: auto; }
 .close-btn { position: fixed; top: 1rem; right: 1rem; min-width: 44px; min-height: 44px; font-size: 1.75rem; line-height: 1; color: #17181c; background: #ffffff; border: 0; border-radius: 50%; cursor: pointer; }
+
+/* Espera de la optimización (árbol animado con Lottie) */
+.espera { display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-start; margin: 1rem 0; padding: 0.75rem 1rem; border: 1px solid var(--borde-fuerte); border-radius: 8px; background: var(--superficie); }
+.espera[hidden] { display: none; }
+.espera p { margin: 0.25rem 0; }
+.espera-titulo { font-weight: 600; }
+.espera-animacion { flex: 0 0 auto; width: 150px; height: 125px; }
+.espera-animacion .rama path { stroke: var(--borde-fuerte); }
+.espera-animacion .nodo path, .espera-animacion .nodo-raiz path, .espera-animacion .hoja path,
+.espera-animacion .hoja-a path, .espera-animacion .hoja-b path { fill: var(--superficie); }
+.espera-animacion .nodo path { stroke: var(--texto); }
+.espera-animacion .nodo-raiz path { stroke: var(--enlace); }
+.espera-animacion .hoja path { stroke: var(--acento); }
+.espera-animacion .hoja-a path, .espera-animacion .hoja-b path { stroke: var(--enlace); fill: var(--destacado); }
+.espera-animacion .mutacion path { stroke: var(--acento); fill: none; }
+.boton-ocupado { opacity: 0.7; cursor: progress; }

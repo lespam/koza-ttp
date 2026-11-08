@@ -1,5 +1,5 @@
 {% extends "documentacion/base.html" %}
-{% load i18n %}
+{% load i18n static %}
 
 {% block titulo %}{% translate "Demo: calendario y viaje por equipo" %}{% endblock %}
 {% block descripcion %}{% translate "Genera un calendario de béisbol con programación genética y mide cuánto viaja cada equipo." %}{% endblock %}
@@ -32,8 +32,15 @@
             {% else %}
                 <p>{% translate "Presiona el botón para ejecutar el motor y ver el árbol del mejor calendario." %}</p>
             {% endif %}
-            <p class="acciones"><a href="?configuracion={{ configuracion.pk }}&amp;ejecutar=true" class="boton">{% translate "Ejecutar optimización" %}</a></p>
-            <p class="nota">{% translate "Tarda unos segundos." %}</p>
+            <p class="acciones"><a href="?configuracion={{ configuracion.pk }}&amp;ejecutar=true" class="boton" id="boton-ejecutar">{% translate "Ejecutar optimización" %}</a></p>
+            <p class="nota">{% translate "Puede tardar de unos segundos a varios minutos. Depende del número de equipos." %}</p>
+            <div class="espera" id="espera" role="status" hidden>
+                <div class="espera-animacion" id="espera-animacion" aria-hidden="true" data-animacion="{% static 'lottie/arbol_evoluciona.json' %}"></div>
+                <div>
+                    <p class="espera-titulo">{% translate "El motor está trabajando." %}</p>
+                    <p>{% translate "Crea calendarios, los combina y se queda con los mejores. No cierres esta página." %}</p>
+                </div>
+            </div>
             <div class="aviso-honesto">
                 {% if motor.en_la_demo == "tesis" %}
                 <p>{% blocktranslate trimmed %}<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue mejor que elegir calendarios al azar.{% endblocktranslate %}</p>
@@ -132,4 +139,9 @@ python manage.py runserver</code></pre>
         {% autoescape off %}{{ svg_content }}{% endautoescape %}
     </div>
 </div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/lottie_light.min.js' %}"></script>
+<script src="{% static 'js/espera.js' %}"></script>
 {% endblock %}
