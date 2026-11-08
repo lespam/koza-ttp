@@ -8,78 +8,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Programación genética - Planificación de béisbol"
-msgstr "Pemrograman Genetik - Perencanaan Bisbol"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
 msgstr "Bahasa"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
 msgstr "Perubahan"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr "Program Genetik dalam Perencanaan Musim Bisbol"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "¡Bienvenido a la aplicación!"
-msgstr "Selamat datang di aplikasi ini!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Este sistema interactivo busca resolver de manera óptima la organización y "
-"logística de un calendario para una temporada completa de béisbol. Para "
-"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
-"inspirada directamente en la evolución natural de las especies."
-msgstr ""
-"Sistem interaktif ini bertujuan untuk secara optimal menyelesaikan "
-"organisasi dan logistik kalender untuk musim bisbol penuh. Untuk mencapai "
-"hal ini, kami menerapkan teknik kecerdasan buatan canggih yang langsung "
-"terinspirasi oleh evolusi alami spesies."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"La <strong>programación genética</strong> consiste en crear, evaluar y "
-"modificar soluciones de forma automática a partir de una población inicial "
-"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
-"selección natural, el cruzamiento y la mutación. En este entorno, cada "
-"programa generado se estructura internamente como un árbol de expresión que "
-"representa una solución potencial para nuestro calendario."
-msgstr ""
-"<strong>Pemrograman genetik</strong> melibatkan penciptaan, evaluasi, dan "
-"modifikasi solusi secara otomatis dari populasi awal program. Hal ini "
-"dicapai dengan melaksanakan operasi bioinspired seperti seleksi alam, "
-"persilangan, dan mutasi. Dalam lingkungan ini, setiap program yang "
-"dihasilkan secara internal disusun sebagai pohon ekspresi yang mewakili "
-"solusi potensial untuk kalender kita."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
-"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
-"características clave y generar nuevos árboles cada vez más prometedores."
-msgstr ""
-"Algoritma ini secara terus-menerus mengevaluasi setiap pohon menggunakan "
-"kriteria kualitas ketat (fungsi kebugaran <em>) dengan</em> tujuan mewarisi "
-"karakteristik utama dan menghasilkan pohon baru yang semakin menjanjikan."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
-"óptima y más eficiente!"
-msgstr ""
-"Proses ini diulang dalam lingkaran evolusi sampai solusi yang optimal dan "
-"paling efisien ditemukan!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr "Panel Kontrol: Pengaturan Aktif (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración del algoritmo"
-msgstr "Pengaturan Algoritma"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
@@ -102,10 +36,6 @@ msgid "Sin torneo"
 msgstr "Tidak ada turnamen"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr "Kalender Aktif: %(torneo)s (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
 msgstr "Tanggal"
 
@@ -120,10 +50,6 @@ msgstr "Pergi"
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
 msgstr "Tidak ada game yang dihasilkan untuk konfigurasi ini."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr "Menampilkan pertandingan turnamen yang terdaftar di database."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
@@ -142,224 +68,8 @@ msgid "Violaciones de reglas:"
 msgstr "Pelanggaran Aturan:"
 
 #: tesis/templates/tesis/dashboard.html
-msgid ""
-"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
-" árbol de soluciones sintácticas."
-msgstr ""
-"Tekan tombol di bawah ini untuk mengaktifkan algoritma genetik dan "
-"menampilkan pohon solusi sintaksis."
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Optimasi jalankan"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Guía operativa del sistema"
-msgstr "Panduan Operasional Sistem"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Instrucciones de inicio rápido"
-msgstr "Instruksi Mulai Cepat"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
-" secuenciales:"
-msgstr ""
-"Untuk mulai berinteraksi dengan demo dengan sukses, ikuti langkah-langkah "
-"berurutan berikut:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Crea un equipo, una liga y un torneo respectivo en tus paneles "
-"administrativos. <strong>Nota importante:</strong> el número total de "
-"equipos participantes debe ser par."
-msgstr ""
-"Buat tim, liga, dan turnamen di panel administrasi Anda. <strong>Catatan "
-"penting:</strong> Jumlah total tim yang berpartisipasi harus genap."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
-" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
-" optimización\"</strong> para estructurar el calendario automatizado."
-msgstr ""
-"Setelah Anda menentukan peserta, buka panel di atas, pilih turnamen aktif "
-"Anda dan klik tombol hijau <strong>\"Run Optimization\"</strong> untuk "
-"menyusun jadwal otomatis."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr "Logika internal dan alur algoritmik AI"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
-"mostramos paso a paso el ciclo de vida evasivo basado en programación "
-"genética:"
-msgstr ""
-"Apa yang terjadi secara internal saat perangkat lunak ini diluncurkan? "
-"Berikut adalah tinjauan langkah demi langkah tentang siklus hidup evasif "
-"berdasarkan pemrograman genetik:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "1. Configuración e hiperparámetros base"
-msgstr "1. Konfigurasi dasar dan hiperparameter"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se cargan las variables del panel que definirán las generaciones, el tamaño "
-"inicial de la población, así como las tasas de probabilidad asociadas al "
-"cruce y la mutación genómica."
-msgstr ""
-"Variabel panel yang akan menentukan generasi, ukuran populasi awal, serta "
-"tingkat probabilitas yang terkait dengan crossover dan mutasi genomik akan "
-"dimuat."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr "2. Definisi operator dan blok struktural (tata bahasa)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las primitivas:"
-msgstr "Para primitif:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr ""
-"adalah operasi logis yang dijalankan program untuk membangun pohon tersebut."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las terminales:"
-msgstr "Terminal-terminalnya:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"representan los datos constantes o variables básicas estructuradas del "
-"torneo."
-msgstr "mewakili data konstan atau variabel dasar terstruktur dari turnamen."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "listas maestros de días hábiles"
-msgstr "Daftar Induk Hari Kerja"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "tanto en condición de casa como de visita"
-msgstr "baik di rumah maupun di jalan"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "inicializador vacío"
-msgstr "Inisializer Kosong"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las efímeras:"
-msgstr "Yang sementara:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son valores aleatorios puros que se introducen en nodos específicos para "
-"inyectar variabilidad matemática al sistema."
-msgstr ""
-"Nilai-nilai tersebut adalah nilai acak murni yang dimasukkan ke node "
-"tertentu untuk menyuntikkan variabilitas matematis ke dalam sistem."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fecha aleatoria y equipo aleatorio."
-msgstr "Kencan acak dan tim acak."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr "3. Inisialisasi, siklus evolusi, dan konvergensi"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fase de ejecución en vivo:"
-msgstr "Fase Eksekusi Langsung:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El sistema genera una población inicial aleatoria y convierte cada propuesta"
-" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
-"donde ocurre la magia computacional!"
-msgstr ""
-"Sistem ini menghasilkan populasi awal secara acak dan mengubah setiap "
-"proposal menjadi struktur pohon hierarkis (<em>pohon sintaksis</em>). Di "
-"sinilah keajaiban komputasi terjadi!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Visualización y muestreo:"
-msgstr "Visualisasi dan pengambilan sampel:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se procesa la población inicial y se genera el renderizado de los árboles "
-"mediante el generador de sintaxis."
-msgstr ""
-"Populasi awal diproses dan pohon dirender menggunakan generator sintaks."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Evaluación de aptitud:"
-msgstr "Penilaian Kemampuan:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
-"distancia acumulada en kilómetros y el cumplimiento normativo."
-msgstr ""
-"Nilai <em>kebugaran</em> setiap individu dihitung berdasarkan jarak "
-"kumulatif dalam kilometer dan kepatuhan regulasi."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Selección natural:"
-msgstr "Seleksi alam:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se escogen los mejores individuos de la ronda anterior para actuar como "
-"padres biológicos de la nueva generación."
-msgstr ""
-"Individu terbaik dari putaran sebelumnya dipilih untuk bertindak sebagai "
-"orang tua biologis generasi baru."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Cruzamiento, mutación y herencia:"
-msgstr "Perkawinan silang, mutasi dan pewarisan:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
-" mutaciones en nodos aleatorios."
-msgstr ""
-"Individu baru tercipta dengan mencampur cabang pohon yang menonjol dan "
-"menerapkan mutasi pada node acak."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Bucle iterativo:"
-msgstr "Loop iteratif:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
-" hasta completar el total de generaciones configuradas en la interfaz."
-msgstr ""
-"Langkah-langkah evaluasi, pemilihan, dan pemutaran diulang secara berurutan "
-"hingga total jumlah generasi yang dikonfigurasi di antarmuka selesai."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Resultados oficiales:"
-msgstr "Hasil Resmi:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El mejor individuo obtenido en la última iteración se valida y su estructura"
-" interna se almacena como el calendario definitivo del torneo de béisbol."
-msgstr ""
-"Individu terbaik yang diperoleh pada iterasi terakhir divalidasi dan "
-"struktur internalnya disimpan sebagai jadwal turnamen bisbol definitif."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Tesis de Ingeniería en Computación"
-msgstr "Tesis Teknik Komputer"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Avances después de la tesis"
@@ -567,10 +277,6 @@ msgstr "Lewati ke konten"
 #: documentacion/templates/documentacion/base.html
 msgid "Histórico"
 msgstr "Sejarah"
-
-#: documentacion/templates/documentacion/base.html
-msgid "Herramienta"
-msgstr "Alat"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
@@ -916,3 +622,539 @@ msgstr ""
 "Situs ini ditawarkan dalam %(total)s bahasa. Versi aslinya adalah bahasa "
 "Meksiko Spanyol. Versi lainnya adalah terjemahan otomatis dengan Azure AI "
 "Translator dan mungkin memiliki kesalahan."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Principal"
+msgstr "Utama"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Guía"
+msgstr "Panduan"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Demo"
+msgstr "Demo"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Modo oscuro"
+msgstr "Mode Gelap"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo: calendario y viaje por equipo"
+msgstr "Demo: Jadwal dan Perjalanan Tim"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Genera un calendario de béisbol con programación genética y mide cuánto "
+"viaja cada equipo."
+msgstr ""
+"Ia menghasilkan kalender baseball dengan pemrograman genetik dan mengukur "
+"seberapa jauh setiap tim bepergian."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo · Viaje justo entre equipos"
+msgstr "Demo · Perjalanan yang adil antar tim"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Genera un calendario y"
+msgstr "Buat kalender dan"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "mide cuánto viaja cada equipo."
+msgstr "Ukur seberapa jauh setiap tim bepergian."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La IA (programación genética) busca calendarios donde el viaje sea corto y "
+"parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
+"pasos</a>."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Todavía no hay ninguna configuración"
+msgstr "Belum ada konfigurasi"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para optimizar un calendario, primero registra los equipos, la liga y el "
+"torneo, y después crea una configuración."
+msgstr ""
+"Untuk mengoptimalkan jadwal, pertama-tama rekam tim, liga, dan turnamen, "
+"lalu buat konfigurasi."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Abrir la guía"
+msgstr "Buka panduan"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver el árbol en grande"
+msgstr "Lihat pohon itu dalam ukuran besar"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón para ejecutar el motor y ver el árbol del mejor "
+"calendario."
+msgstr ""
+"Tekan tombol untuk menjalankan mesin dan lihat pohon kalender terbaik."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tarda unos segundos."
+msgstr "Butuh beberapa detik."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al "
+"azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, "
+"eso es una ventaja: tienes una línea base y una mejora que puedes medir."
+msgstr ""
+"<strong>Catatan:</strong> versi tesis tidak mengalahkan kalender acak. Mesin"
+" baru melakukannya, dalam tes awal. Untuk proyek sekolah, itu keuntungannya:"
+" Anda memiliki baseline dan peningkatan yang bisa diukur."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario: %(torneo)s"
+msgstr "Jadwal: %(torneo)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración %(id)s"
+msgstr "Konfigurasi %(id)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Para presentarlo a tu equipo"
+msgstr "Untuk memperkenalkannya kepada tim Anda"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las respuestas que te van a pedir en clase."
+msgstr "Jawaban-jawaban yang akan ditanyakan di kelas."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Dónde está la IA?"
+msgstr "Di mana AI-nya?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Un calendario es un árbol que evoluciona. El código está en "
+"<code>programa_genetico/</code> y usa la biblioteca DEAP."
+msgstr ""
+"Kalender adalah pohon yang berkembang. Kode ada dan "
+"<code>programa_genetico/</code> menggunakan pustaka DEAP."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Qué patrones usa?"
+msgstr "Pola apa yang kamu gunakan?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Django separa modelo, vista y plantilla. <code>ProgramaFacadeView</code> "
+"esconde el motor detrás de una sola entrada."
+msgstr ""
+"Django memisahkan model, view, dan template. <code>ProgramaFacadeView</code>"
+" Ia menyembunyikan engine di balik satu input."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Cómo lo adapto?"
+msgstr "Bagaimana cara saya mengadaptasinya?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambia equipos y reglas"
+msgstr "Ganti tim dan aturan"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
+" el patrón Strategy para la medida de “viaje justo”."
+msgstr ""
+"Tim dan koordinat dicatat dalam panduan. Ide untuk tim Anda: gunakan pola "
+"Strategi untuk ukuran \"perjalanan adil\"."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Puedo usarlo?"
+msgstr "Bolehkah saya menggunakannya?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sí, con GPL-3.0"
+msgstr "Ya, dengan GPL-3.0"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Puedes modificarlo. Conserva el crédito y cita la tesis."
+msgstr "Anda bisa memodifikasinya. Simpan kredit dan kutip tesisnya."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cómo citar"
+msgstr "Cara mengutip"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo y pide ayuda"
+msgstr "Jalankan dan minta bantuan"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo en tu computadora"
+msgstr "Jalankan di komputer Anda"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Pídele ayuda a tu asistente de IA"
+msgstr "Mintalah bantuan asisten AI Anda"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
+"programa_genetico/programagenetico.py."
+msgstr ""
+"Salin pertanyaan ini dan tempelkan ke wizard yang Anda gunakan, bersama "
+"dengan file programa_genetico/programagenetico.py."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Explícame paso a paso cómo este programa genético crea y evalúa un "
+"calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
+" la diferencia entre el equipo que más viaja y el que menos."
+msgstr ""
+"Jelaskan kepada saya langkah demi langkah bagaimana program genetik ini "
+"membuat dan mengevaluasi jadwal. Lalu katakan apa yang akan Anda ubah "
+"sehingga ukuran \"perjalanan yang adil\" adalah perbedaan antara tim yang "
+"paling banyak bepergian dan yang paling sedikit."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
+msgstr "Periksa apa yang diberitahukan terhadap kode. AI bisa salah."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cerrar"
+msgstr "Tutup"
+
+#: tesis/templates/tesis/guia/_base.html
+msgid "Paso %(n)s de %(t)s"
+msgstr "Langkah %(n)s dari %(t)s"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "Revisa los campos marcados."
+msgstr "Periksa kolom yang ditandai."
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "obligatorio"
+msgstr "wajib"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "Pasos de la guía"
+msgstr "Langkah Panduan"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "hecho"
+msgstr "Fakta"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "pendiente"
+msgstr "Sedang Menunggu"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Paso 5: calendario"
+msgstr "Langkah 5: Kalender"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid ""
+"Genera los juegos del torneo «%(torneo)s». El primer calendario se arma al "
+"azar; después puedes optimizarlo con el algoritmo genético."
+msgstr ""
+"Buat permainan turnamen \"%(torneo)s\". Jadwal pertama disusun secara acak; "
+"kemudian Anda bisa mengoptimalkannya dengan algoritma genetik."
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Volver a generar los juegos"
+msgstr "Bangun kembali permainan"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Generar los juegos"
+msgstr "Hasilkan permainan"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "se muestran los primeros 50"
+msgstr "50 besar ditampilkan"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "¿Y ahora?"
+msgstr "Dan sekarang?"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Abrir este calendario en el panel y optimizarlo"
+msgstr "Buka kalender ini di dashboard dan optimalkan"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "(tarda unos 20 segundos)"
+msgstr "(butuh sekitar 20 detik)"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Ver el detalle del calendario"
+msgstr "Lihat detail kalender"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Leer por qué la versión de la tesis no superó a la búsqueda aleatoria"
+msgstr "Baca mengapa versi tesis tidak mengungguli pencarian acak"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Paso 4: configuración"
+msgstr "Langkah 4: Pengaturan"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Estos son los parámetros del algoritmo genético para el torneo."
+msgstr "Ini adalah parameter dari algoritma genetik untuk turnamen."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Importante:"
+msgstr "Penting:"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid ""
+"la versión del motor de la tesis guarda estos valores, pero al optimizar usa"
+" siempre población 100, 20 generaciones, cruce 0.8 y mutación 0.2. La "
+"versión mejorada del motor sí los usará."
+msgstr ""
+"Versi engine dari tesis menyimpan nilai-nilai ini, tetapi saat "
+"mengoptimalkan selalu menggunakan populasi 100, 20 generasi, crossover 0.8, "
+"dan mutasi 0.2. Versi engine yang ditingkatkan akan menggunakan nilai-nilai "
+"tersebut."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Guardar y seguir al paso 5"
+msgstr "Simpan dan lanjutkan ke langkah 5"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Paso 1: equipos"
+msgstr "Langkah 1: Tim"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Puedes usar los que ya existen o agregar uno nuevo."
+msgstr "Anda bisa menggunakan yang sudah ada atau menambahkan yang baru."
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Ver los últimos equipos registrados"
+msgstr "Lihat Tim Terdaftar Terbaru"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar un equipo"
+msgstr "Tambahkan tim"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar equipo"
+msgstr "Tambah Peralatan"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Seguir al paso 2: liga"
+msgstr "Lanjutkan ke Langkah 2: Liga"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Necesitas al menos 2 equipos para seguir."
+msgstr "Kamu butuh setidaknya 2 tim untuk mengikuti."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Guía: del registro al calendario"
+msgstr "Panduan: Dari Pendaftaran hingga Kalender"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
+" el algoritmo y generas un calendario de juegos."
+msgstr ""
+"Dalam 5 langkah, Anda mendaftarkan tim, mengatur liga dan turnamen, memilih "
+"cara menjalankan algoritma, dan menghasilkan jadwal pertandingan."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
+msgstr "Tim: daftar minimal 2 tim, dengan lokasi stadion mereka."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Liga: elige qué equipos juegan juntos."
+msgstr "Liga: Pilih tim mana yang bermain bersama."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Torneo: define las fechas, las series y los juegos."
+msgstr "Turnamen: Tentukan tanggal, seri, dan permainan."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Configuración: elige los parámetros del algoritmo genético."
+msgstr "Pengaturan: Pilih parameter algoritma genetik."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Calendario: genera los juegos y revísalos."
+msgstr "Kalender: Buat dan tinjau permainan."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"Lo que crees aquí lo ve cualquier visitante del sitio. No escribas datos "
+"personales."
+msgstr ""
+"Apa yang Anda buat di sini dapat dilihat oleh setiap pengunjung situs. "
+"Jangan menulis data pribadi."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Empezar"
+msgstr "Mulai"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Paso 2: liga"
+msgstr "Langkah 2: Ikatan"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid ""
+"Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
+"equipos: con un número impar, uno se queda sin rival en cada serie."
+msgstr ""
+"Liga adalah kelompok tim yang saling bertanding. Gunakan jumlah tim genap: "
+"dengan nomor ganjil, satu tim tidak memiliki lawan di setiap seri."
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Guardar y seguir al paso 3"
+msgstr "Simpan dan lanjutkan ke langkah 3"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Paso 3: torneo"
+msgstr "Langkah 3: Turnamen"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid ""
+"El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
+"lunes a jueves y los sábados, entre el primer y el último día."
+msgstr ""
+"Turnamen ini menggunakan tim-tim dari liga \"%(liga)s\". Pertandingan "
+"dijadwalkan dari Senin hingga Kamis dan pada hari Sabtu, antara hari pertama"
+" dan terakhir."
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Guardar y seguir al paso 4"
+msgstr "Simpan dan lanjutkan ke langkah 4"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Programación genética para calendarios de béisbol"
+msgstr "Pemrograman Genetik untuk Kalender Bisbol"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
+"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
+msgstr ""
+"Koza-TTP: Tesis Leslie Dickinson (ITAM) tentang pemrograman genetik untuk "
+"kalender bisbol, dengan hasil jujur dan mesin yang ditingkatkan."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Tesis ITAM · Programación genética · Béisbol"
+msgstr "Tesis ITAM · Pemrograman Genetik · Bisbol"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Mi tesis dijo la verdad:"
+msgstr "Tesis saya mengatakan yang sebenarnya:"
+
+#: tesis/templates/tesis/inicio.html
+msgid "el algoritmo no le ganó al azar."
+msgstr "Algoritma tidak mengalahkannya secara acak."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
+"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
+"corrigiendo en público."
+msgstr ""
+"Koza-TTP mengambil tesis itu untuk membuat kalender musim bisbol dengan "
+"pemrograman genetik. Di sini Anda akan melihat apa yang salah, mengapa, dan "
+"bagaimana saya memperbaikinya di depan umum."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ingeniería en Computación, ITAM"
+msgstr "Teknik Komputer, ITAM"
+
+#: tesis/templates/tesis/inicio.html
+msgid "¿Cuánto tiempo tienes?"
+msgstr "Berapa banyak waktu yang kamu punya?"
+
+#: tesis/templates/tesis/inicio.html
+msgid "2 minutos"
+msgstr "2 menit"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Entender la idea"
+msgstr "Memahami Ide"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Qué es la programación genética y por qué un calendario de béisbol es un "
+"problema difícil."
+msgstr ""
+"Apa itu pemrograman genetik dan mengapa kalender bisbol adalah masalah yang "
+"sulit."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Empezar aquí"
+msgstr "Mulai dari sini"
+
+#: tesis/templates/tesis/inicio.html
+msgid "5 minutos · 5 pasos"
+msgstr "5 menit · 5 langkah"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Probar la herramienta"
+msgstr "Coba alatnya"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
+msgstr ""
+"Daftarkan tim, bangun liga, dan buat kalender sendiri. Tidak ada akun."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Sin prisa"
+msgstr "Tidak perlu terburu-buru"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Leer la tesis y el código"
+msgstr "Baca tesis dan kode"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"El documento original, la bitácora de avances y el repositorio abierto."
+msgstr "Dokumen asli, log kemajuan, dan repositori yang terbuka."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ir a la tesis"
+msgstr "Lihat tesis"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Qué tan confiable es cada parte"
+msgstr "Seberapa andal setiap bagian"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Para que sepas qué puedes citar y qué todavía cambia."
+msgstr "Jadi Anda tahu apa yang bisa Anda kutip dan apa yang masih berubah."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Final"
+msgstr "Final"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Resultados de la tesis"
+msgstr "Hasil tesis"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Publicados en 2026. No se modifican."
+msgstr "Diterbitkan pada tahun 2026. Mereka tidak dimodifikasi."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Preliminar"
+msgstr "Pendahuluan"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Motor mejorado"
+msgstr "Mesin yang ditingkatkan"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En pruebas: 31 %% menos distancia en 3 corridas."
+msgstr "Dalam tes: jarak 31%% lebih singkat dalam 3 lari."
+
+#: tesis/templates/tesis/inicio.html
+msgid "En revisión"
+msgstr "Dalam Ulasan"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Traducciones"
+msgstr "Terjemahan"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Automáticas, incluidas maya y otomí. Puedes corregirlas."
+msgstr "Otomatis, termasuk Maya dan Otomí. Kamu bisa memperbaikinya."

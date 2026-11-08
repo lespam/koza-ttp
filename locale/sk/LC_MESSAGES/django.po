@@ -8,78 +8,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Programación genética - Planificación de béisbol"
-msgstr "Genetické programovanie - Plánovanie baseballu"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
 msgstr "Jazyk"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
 msgstr "Zmena"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr "Genetické programovanie pri plánovaní baseballovej sezóny"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "¡Bienvenido a la aplicación!"
-msgstr "Vitajte v aplikácii!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Este sistema interactivo busca resolver de manera óptima la organización y "
-"logística de un calendario para una temporada completa de béisbol. Para "
-"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
-"inspirada directamente en la evolución natural de las especies."
-msgstr ""
-"Tento interaktívny systém sa snaží optimálne vyriešiť organizáciu a "
-"logistiku kalendára pre celú baseballovú sezónu. Aby sme to dosiahli, "
-"implementovali sme pokročilú techniku umelej inteligencie priamo inšpirovanú"
-" prirodzenou evolúciou druhov."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"La <strong>programación genética</strong> consiste en crear, evaluar y "
-"modificar soluciones de forma automática a partir de una población inicial "
-"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
-"selección natural, el cruzamiento y la mutación. En este entorno, cada "
-"programa generado se estructura internamente como un árbol de expresión que "
-"representa una solución potencial para nuestro calendario."
-msgstr ""
-"<strong>Genetické programovanie</strong> zahŕňa automatické vytváranie, "
-"hodnotenie a úpravu riešení z počiatočnej populácie programov. To sa "
-"dosahuje vykonávaním bioinšpirovaných operácií, ako je prirodzený výber, "
-"kríženie a mutácia. V tomto prostredí je každý generovaný program interne "
-"štruktúrovaný ako strom výrazov, ktorý predstavuje potenciálne riešenie "
-"nášho kalendára."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
-"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
-"características clave y generar nuevos árboles cada vez más prometedores."
-msgstr ""
-"Algoritmus neustále vyhodnocuje každý strom pomocou prísneho kritéria "
-"kvality ( <em>funkcia fitness) s</em> cieľom zdediť kľúčové charakteristiky "
-"a generovať nové stromy, ktoré sú čoraz sľubnejšie."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
-"óptima y más eficiente!"
-msgstr ""
-"Tento proces sa opakuje v evolučnej slučke, kým sa nenájde optimálne a "
-"najefektívnejšie riešenie!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr "Ovládací panel: Aktívne nastavenia (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración del algoritmo"
-msgstr "Nastavenia algoritmu"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
@@ -102,10 +36,6 @@ msgid "Sin torneo"
 msgstr "Žiadny turnaj"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr "Aktívny kalendár: %(torneo)s (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
 msgstr "Dátum"
 
@@ -120,10 +50,6 @@ msgstr "Preč"
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
 msgstr "Pre túto konfiguráciu nie sú generované žiadne hry."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr "Zobrazuje zápasy turnaja registrované v databáze."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
@@ -142,226 +68,8 @@ msgid "Violaciones de reglas:"
 msgstr "Porušenia pravidiel:"
 
 #: tesis/templates/tesis/dashboard.html
-msgid ""
-"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
-" árbol de soluciones sintácticas."
-msgstr ""
-"Stlačte tlačidlo nižšie na aktiváciu genetického algoritmu a zobrazenie "
-"syntaktického stromu riešení."
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Optimalizácia behu"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Guía operativa del sistema"
-msgstr "Prevádzkový sprievodca systémom"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Instrucciones de inicio rápido"
-msgstr "Rýchle pokyny na začiatok"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
-" secuenciales:"
-msgstr ""
-"Ak chcete úspešne začať interagovať s demom, postupujte podľa týchto "
-"postupných krokov:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Crea un equipo, una liga y un torneo respectivo en tus paneles "
-"administrativos. <strong>Nota importante:</strong> el número total de "
-"equipos participantes debe ser par."
-msgstr ""
-"Vytvorte tím, ligu a turnaj vo svojich administratívnych paneloch. "
-"<strong>Dôležitá poznámka:</strong> Celkový počet zúčastnených tímov musí "
-"byť párny."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
-" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
-" optimización\"</strong> para estructurar el calendario automatizado."
-msgstr ""
-"Keď máte účastníkov definovaných, prejdite do panelu vyššie, vyberte aktívny"
-" turnaj a kliknite na zelené tlačidlo <strong>\"Optimalizácia "
-"behu\",</strong> aby ste si usporiadali automatizovaný rozvrh."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr "Interná logika a algoritmický tok AI"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
-"mostramos paso a paso el ciclo de vida evasivo basado en programación "
-"genética:"
-msgstr ""
-"Čo sa deje interne, keď softvér začne fungovať? Tu je krok za krokom pohľad "
-"na vyhýbavý životný cyklus založený na genetickom programovaní:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "1. Configuración e hiperparámetros base"
-msgstr "1. Základná konfigurácia a hyperparametre"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se cargan las variables del panel que definirán las generaciones, el tamaño "
-"inicial de la población, así como las tasas de probabilidad asociadas al "
-"cruce y la mutación genómica."
-msgstr ""
-"Načítavajú sa panelové premenné, ktoré budú určovať generácie, počiatočnú "
-"veľkosť populácie, ako aj pravdepodobnostné miery spojené s prechodom a "
-"genómovou mutáciou."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr "2. Definícia operátorov a štrukturálnych blokov (gramatika)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las primitivas:"
-msgstr "Primitívi:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr "sú logické operácie, ktoré program vykoná na vytvorenie stromu."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las terminales:"
-msgstr "Terminály:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"representan los datos constantes o variables básicas estructuradas del "
-"torneo."
-msgstr ""
-"predstavujú konštantné dáta alebo štruktúrované základné premenné turnaja."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "listas maestros de días hábiles"
-msgstr "Hlavné zoznamy pracovných dní"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "tanto en condición de casa como de visita"
-msgstr "doma aj na ihrisku súpera"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "inicializador vacío"
-msgstr "Prázdny inicializátor"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las efímeras:"
-msgstr "Efemérne:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son valores aleatorios puros que se introducen en nodos específicos para "
-"inyectar variabilidad matemática al sistema."
-msgstr ""
-"Sú to čisto náhodné hodnoty, ktoré sa vkladajú do konkrétnych uzlov, aby do "
-"systému vniesli matematickú variabilitu."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fecha aleatoria y equipo aleatorio."
-msgstr "Náhodný dátum a náhodný tím."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr "3. Inicializácia, evolučný cyklus a konvergencia"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fase de ejecución en vivo:"
-msgstr "Fáza živého vykonávania:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El sistema genera una población inicial aleatoria y convierte cada propuesta"
-" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
-"donde ocurre la magia computacional!"
-msgstr ""
-"Systém generuje náhodnú počiatočnú populáciu a každý návrh premení na "
-"hierarchickú stromovú štruktúru (<em>syntaktický strom</em>). Tu sa odohráva"
-" výpočtová mágia!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Visualización y muestreo:"
-msgstr "Vizualizácia a vzorkovanie:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se procesa la población inicial y se genera el renderizado de los árboles "
-"mediante el generador de sintaxis."
-msgstr ""
-"Počiatočná populácia sa spracuje a stromy sa vykreslia pomocou generátora "
-"syntaxe."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Evaluación de aptitud:"
-msgstr "Hodnotenie schopností:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
-"distancia acumulada en kilómetros y el cumplimiento normativo."
-msgstr ""
-"Hodnota <em>zdatnosti</em> každého jednotlivca sa vypočítava na základe "
-"kumulatívnej vzdialenosti v kilometroch a dodržiavania regulačných "
-"predpisov."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Selección natural:"
-msgstr "Prírodný výber:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se escogen los mejores individuos de la ronda anterior para actuar como "
-"padres biológicos de la nueva generación."
-msgstr ""
-"Najlepší jedinci z predchádzajúceho kola sú vybraní, aby pôsobili ako "
-"biologickí rodičia novej generácie."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Cruzamiento, mutación y herencia:"
-msgstr "Kríženie, mutácie a dedičstvo:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
-" mutaciones en nodos aleatorios."
-msgstr ""
-"Nové jedince vznikajú miešaním vetiev výrazných stromov a aplikáciou mutácií"
-" do náhodných uzlov."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Bucle iterativo:"
-msgstr "Iteratívna slučka:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
-" hasta completar el total de generaciones configuradas en la interfaz."
-msgstr ""
-"Kroky hodnotenia, výberu a prehrávania sa opakujú postupne, kým nie je "
-"dokončený celkový počet generácií nakonfigurovaných v rozhraní."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Resultados oficiales:"
-msgstr "Oficiálne výsledky:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El mejor individuo obtenido en la última iteración se valida y su estructura"
-" interna se almacena como el calendario definitivo del torneo de béisbol."
-msgstr ""
-"Najlepší jednotlivec získaný v poslednej iterácii je overený a jeho vnútorná"
-" štruktúra sa ukladá ako definitívny rozpis baseballových turnajov."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Tesis de Ingeniería en Computación"
-msgstr "Dizertačná práca z počítačového inžinierstva"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Avances después de la tesis"
@@ -569,10 +277,6 @@ msgstr "Preskočiť na obsah"
 #: documentacion/templates/documentacion/base.html
 msgid "Histórico"
 msgstr "História"
-
-#: documentacion/templates/documentacion/base.html
-msgid "Herramienta"
-msgstr "Nástroj"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
@@ -912,3 +616,541 @@ msgstr ""
 "Stránka je dostupná v %(total)s jazykoch. Originál je mexická španielčina. "
 "Ostatné verzie sú automatické preklady s Azure AI Translator a môžu "
 "obsahovať chyby."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Principal"
+msgstr "Hlavné"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Guía"
+msgstr "Sprievodca"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Demo"
+msgstr "Demo"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Modo oscuro"
+msgstr "Tmavý režim"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo: calendario y viaje por equipo"
+msgstr "Demo: Rozpis a cestovanie tímu"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Genera un calendario de béisbol con programación genética y mide cuánto "
+"viaja cada equipo."
+msgstr ""
+"Generuje baseballový kalendár s genetickým programovaním a meria, koľko "
+"každý tím cestuje."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo · Viaje justo entre equipos"
+msgstr "Demo · Spravodlivé cestovanie medzi tímami"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Genera un calendario y"
+msgstr "Vygenerujte kalendár a"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "mide cuánto viaja cada equipo."
+msgstr "Merajte, koľko každý tím cestuje."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La IA (programación genética) busca calendarios donde el viaje sea corto y "
+"parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
+"pasos</a>."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Todavía no hay ninguna configuración"
+msgstr "Zatiaľ žiadna konfigurácia"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para optimizar un calendario, primero registra los equipos, la liga y el "
+"torneo, y después crea una configuración."
+msgstr ""
+"Na optimalizáciu rozpisu najprv zaznamenajte tímy, ligu a turnaj a potom "
+"vytvorte konfiguráciu."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Abrir la guía"
+msgstr "Otvorte sprievodcu"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver el árbol en grande"
+msgstr "Pozrite sa na strom vo veľkom"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón para ejecutar el motor y ver el árbol del mejor "
+"calendario."
+msgstr ""
+"Stlačte tlačidlo na spustenie motora a pozrite si najlepší kalendárový "
+"strom."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tarda unos segundos."
+msgstr "Trvá to pár sekúnd."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al "
+"azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, "
+"eso es una ventaja: tienes una línea base y una mejora que puedes medir."
+msgstr ""
+"<strong>Poznámka:</strong> verzia diplomovej práce neprekonala náhodný "
+"kalendár. Nový engine áno, v predbežných testoch. Pre školský projekt je to "
+"výhoda: máte základ a zlepšenie, ktoré môžete merať."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario: %(torneo)s"
+msgstr "Harmonogram: %(torneo)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración %(id)s"
+msgstr "Konfiguračný %(id)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Para presentarlo a tu equipo"
+msgstr "Predstaviť to svojmu tímu"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las respuestas que te van a pedir en clase."
+msgstr "Odpovede, ktoré sa vás budú pýtať v triede."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Dónde está la IA?"
+msgstr "Kde je AI?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Un calendario es un árbol que evoluciona. El código está en "
+"<code>programa_genetico/</code> y usa la biblioteca DEAP."
+msgstr ""
+"Kalendár je strom, ktorý sa vyvíja. Kód je v <code>programa_genetico/</code>"
+" knižnici DEAP a používa ju."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Qué patrones usa?"
+msgstr "Aké vzory používate?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Django separa modelo, vista y plantilla. <code>ProgramaFacadeView</code> "
+"esconde el motor detrás de una sola entrada."
+msgstr ""
+"Django oddeľuje model, pohľad a šablónu. <code>ProgramaFacadeView</code> "
+"Skrýva engine za jediným vstupom."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Cómo lo adapto?"
+msgstr "Ako ho mám prispôsobiť?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambia equipos y reglas"
+msgstr "Zmena tímov a pravidiel"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
+" el patrón Strategy para la medida de “viaje justo”."
+msgstr ""
+"Tímy a súradnice sú zaznamenané v sprievodcovi. Nápad pre váš tím: použite "
+"strategický vzor pre meranie \"fair trip\"."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Puedo usarlo?"
+msgstr "Môžem ho použiť?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sí, con GPL-3.0"
+msgstr "Áno, s GPL-3.0"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Puedes modificarlo. Conserva el crédito y cita la tesis."
+msgstr "Môžete to upraviť. Nechajte si kredit a citujte dizertáciu."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cómo citar"
+msgstr "Ako citovať"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo y pide ayuda"
+msgstr "Spusti to a požiadaj o pomoc"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo en tu computadora"
+msgstr "Spusti to na svojom počítači"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Pídele ayuda a tu asistente de IA"
+msgstr "Požiadajte svojho AI asistenta o pomoc"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
+"programa_genetico/programagenetico.py."
+msgstr ""
+"Skopírujte túto otázku a vložte ju do sprievodcu, ktorý používate, spolu so "
+"súborom programa_genetico/programagenetico.py."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Explícame paso a paso cómo este programa genético crea y evalúa un "
+"calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
+" la diferencia entre el equipo que más viaja y el que menos."
+msgstr ""
+"Vysvetlite mi krok za krokom, ako tento genetický program vytvára a hodnotí "
+"rozvrh. Potom mi povedzte, čo by ste zmenili, aby miera \"spravodlivého "
+"cestovania\" bola rozdielom medzi tímom, ktorý cestuje najviac, a tým, ktorý"
+" cestuje najmenej."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
+msgstr "Skontrolujte, čo vám hovorí v kóde. AI to môže pokaziť."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cerrar"
+msgstr "Koniec"
+
+#: tesis/templates/tesis/guia/_base.html
+msgid "Paso %(n)s de %(t)s"
+msgstr "Krok %(n)s %(t)s"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "Revisa los campos marcados."
+msgstr "Skontrolujte označené polia."
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "obligatorio"
+msgstr "Povinné"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "Pasos de la guía"
+msgstr "Návodné kroky"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "hecho"
+msgstr "Fakt"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "pendiente"
+msgstr "Čaká sa"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Paso 5: calendario"
+msgstr "Krok 5: Kalendár"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid ""
+"Genera los juegos del torneo «%(torneo)s». El primer calendario se arma al "
+"azar; después puedes optimizarlo con el algoritmo genético."
+msgstr ""
+"Generujte turnajové hry \"%(torneo)s\". Prvý rozpis sa zostaví náhodne; "
+"potom ho môžete optimalizovať pomocou genetického algoritmu."
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Volver a generar los juegos"
+msgstr "Obnova hier"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Generar los juegos"
+msgstr "Generujte hry"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "se muestran los primeros 50"
+msgstr "Top 50 zobrazených"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "¿Y ahora?"
+msgstr "A teraz?"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Abrir este calendario en el panel y optimizarlo"
+msgstr "Otvorte tento kalendár v dashboarde a optimalizujte ho"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "(tarda unos 20 segundos)"
+msgstr "(trvá to asi 20 sekúnd)"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Ver el detalle del calendario"
+msgstr "Pozrite si podrobnosti kalendára"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Leer por qué la versión de la tesis no superó a la búsqueda aleatoria"
+msgstr ""
+"Prečítajte si, prečo verzia diplomovej práce neprekonala náhodné "
+"vyhľadávanie"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Paso 4: configuración"
+msgstr "Krok 4: Nastavenie"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Estos son los parámetros del algoritmo genético para el torneo."
+msgstr "Toto sú parametre genetického algoritmu pre turnaj."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Importante:"
+msgstr "Dôležité:"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid ""
+"la versión del motor de la tesis guarda estos valores, pero al optimizar usa"
+" siempre población 100, 20 generaciones, cruce 0.8 y mutación 0.2. La "
+"versión mejorada del motor sí los usará."
+msgstr ""
+"Verzia dizertačnej práce v engine tieto hodnoty ukladá, ale pri "
+"optimalizácii vždy používa populáciu 100, 20 generácií, crossover 0,8 a "
+"mutáciu 0,2. Vylepšená verzia enginu ich bude používať."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Guardar y seguir al paso 5"
+msgstr "Uložiť a pokračovať v kroku 5"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Paso 1: equipos"
+msgstr "Krok 1: Tímy"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Puedes usar los que ya existen o agregar uno nuevo."
+msgstr "Môžete použiť existujúce alebo pridať nové."
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Ver los últimos equipos registrados"
+msgstr "Zobraziť najnovšie registrované tímy"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar un equipo"
+msgstr "Pridajte tím"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar equipo"
+msgstr "Pridať vybavenie"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Seguir al paso 2: liga"
+msgstr "Pokračovať na Krok 2: Liga"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Necesitas al menos 2 equipos para seguir."
+msgstr "Na sledovanie potrebuješ aspoň 2 tímy."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Guía: del registro al calendario"
+msgstr "Sprievodca: Od registrácie po kalendár"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
+" el algoritmo y generas un calendario de juegos."
+msgstr ""
+"V 5 krokoch zaregistrujete tímy, nastavíte ligu a turnaj, vyberiete, ako "
+"spustíte algoritmus a vygenerujete rozpis zápasov."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
+msgstr "Tímy: zaregistrujte aspoň 2 s umiestnením ich štadióna."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Liga: elige qué equipos juegan juntos."
+msgstr "Liga: Vyber, ktoré tímy hrajú spolu."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Torneo: define las fechas, las series y los juegos."
+msgstr "Turnaj: Definujte dátumy, série a zápasy."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Configuración: elige los parámetros del algoritmo genético."
+msgstr "Nastavenia: Vyberte parametre genetického algoritmu."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Calendario: genera los juegos y revísalos."
+msgstr "Kalendár: Generujte a recenzujte hry."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"Lo que crees aquí lo ve cualquier visitante del sitio. No escribas datos "
+"personales."
+msgstr ""
+"To, čo tu vytvoríte, vidí každý návštevník stránky. Nepíšte osobné údaje."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Empezar"
+msgstr "Začnite"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Paso 2: liga"
+msgstr "Krok 2: Väzba"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid ""
+"Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
+"equipos: con un número impar, uno se queda sin rival en cada serie."
+msgstr ""
+"Liga je skupina tímov, ktoré hrajú proti sebe. Použite párny počet tímov: "
+"pri nepárnom čísle zostáva jeden bez súpera v každej sérii."
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Guardar y seguir al paso 3"
+msgstr "Uložiť a pokračovať na krok 3"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Paso 3: torneo"
+msgstr "Krok 3: Turnaj"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid ""
+"El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
+"lunes a jueves y los sábados, entre el primer y el último día."
+msgstr ""
+"Turnaj využíva tímy z ligy \"%(liga)s\". Zápasy sú naplánované od pondelka "
+"do štvrtka a v sobotu, medzi prvým a posledným dňom."
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Guardar y seguir al paso 4"
+msgstr "Uložiť a pokračovať na krok 4"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Programación genética para calendarios de béisbol"
+msgstr "Genetické programovanie pre baseballové kalendáre"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
+"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
+msgstr ""
+"Koza-TTP: Dizertačná práca Leslieho Dickinsona (ITAM) o genetickom "
+"programovaní baseballových kalendárov, s jej poctivým výsledkom a vylepšeným"
+" motorom."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Tesis ITAM · Programación genética · Béisbol"
+msgstr "ITAM diplomová práca · Genetické programovanie · Baseball"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Mi tesis dijo la verdad:"
+msgstr "Moja téza hovorila pravdu:"
+
+#: tesis/templates/tesis/inicio.html
+msgid "el algoritmo no le ganó al azar."
+msgstr "Algoritmus ho neporazil náhodne."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
+"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
+"corrigiendo en público."
+msgstr ""
+"Koza-TTP sa tejto tézy zaoberá vytvorením kalendárov baseballovej sezóny s "
+"genetickým programovaním. Tu uvidíte, čo sa pokazilo, prečo a ako to verejne"
+" opravujem."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ingeniería en Computación, ITAM"
+msgstr "Počítačové inžinierstvo, ITAM"
+
+#: tesis/templates/tesis/inicio.html
+msgid "¿Cuánto tiempo tienes?"
+msgstr "Koľko času máte?"
+
+#: tesis/templates/tesis/inicio.html
+msgid "2 minutos"
+msgstr "2 minúty"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Entender la idea"
+msgstr "Pochopenie myšlienky"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Qué es la programación genética y por qué un calendario de béisbol es un "
+"problema difícil."
+msgstr ""
+"Čo je genetické programovanie a prečo je baseballový kalendár náročný "
+"problém."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Empezar aquí"
+msgstr "Začni tu"
+
+#: tesis/templates/tesis/inicio.html
+msgid "5 minutos · 5 pasos"
+msgstr "5 minút · 5 krokov"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Probar la herramienta"
+msgstr "Vyskúšajte nástroj"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
+msgstr ""
+"Zaregistrujte tímy, vytvorte ligu a vytvorte si vlastný kalendár. Žiadny "
+"účet."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Sin prisa"
+msgstr "Nemusíš sa ponáhľať"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Leer la tesis y el código"
+msgstr "Prečítaj si diplomovú prácu a kód"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"El documento original, la bitácora de avances y el repositorio abierto."
+msgstr "Pôvodný dokument, záznam pokroku a otvorený repozitár."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ir a la tesis"
+msgstr "Prejdite na diplomovú prácu"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Qué tan confiable es cada parte"
+msgstr "Ako spoľahlivá je každá súčiastka"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Para que sepas qué puedes citar y qué todavía cambia."
+msgstr "Takže viete, čo môžete citovať a čo sa ešte mení."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Final"
+msgstr "Finále"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Resultados de la tesis"
+msgstr "Výsledky dizertačnej práce"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Publicados en 2026. No se modifican."
+msgstr "Publikované v roku 2026. Nie sú upravené."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Preliminar"
+msgstr "Predbežné obdobie"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Motor mejorado"
+msgstr "Vylepšený motor"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En pruebas: 31 %% menos distancia en 3 corridas."
+msgstr "V testoch: o 31 %% kratšia vzdialenosť za 3 behy."
+
+#: tesis/templates/tesis/inicio.html
+msgid "En revisión"
+msgstr "V recenzii"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Traducciones"
+msgstr "Preklady"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Automáticas, incluidas maya y otomí. Puedes corregirlas."
+msgstr "Automatické, vrátane Mayi a Otomího. Môžeš ich opraviť."

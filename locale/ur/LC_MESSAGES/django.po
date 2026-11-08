@@ -8,76 +8,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Programación genética - Planificación de béisbol"
-msgstr "جینیاتی پروگرامنگ - بیس بال کی منصوبہ بندی"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
 msgstr "زبان"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
 msgstr "تبدیلی"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr "بیس بال سیزن کی منصوبہ بندی میں جینیاتی پروگرامنگ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "¡Bienvenido a la aplicación!"
-msgstr "ایپ میں خوش آمدید!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Este sistema interactivo busca resolver de manera óptima la organización y "
-"logística de un calendario para una temporada completa de béisbol. Para "
-"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
-"inspirada directamente en la evolución natural de las especies."
-msgstr ""
-"یہ انٹرایکٹو سسٹم پورے بیس بال سیزن کے کیلنڈر کی تنظیم اور لاجسٹکس کو بہترین"
-" طریقے سے حل کرنے کی کوشش کرتا ہے۔ اس مقصد کے لیے، ہم نے ایک جدید مصنوعی "
-"ذہانت کی تکنیک نافذ کی جو براہ راست انواع کی قدرتی ارتقاء سے متاثر ہے۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"La <strong>programación genética</strong> consiste en crear, evaluar y "
-"modificar soluciones de forma automática a partir de una población inicial "
-"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
-"selección natural, el cruzamiento y la mutación. En este entorno, cada "
-"programa generado se estructura internamente como un árbol de expresión que "
-"representa una solución potencial para nuestro calendario."
-msgstr ""
-"<strong>جینیاتی پروگرامنگ</strong> میں ابتدائی پروگراموں کی آبادی سے خودکار "
-"طور پر حل تخلیق، جائزہ لینا اور ترمیم کرنا شامل ہے۔ یہ قدرتی انتخاب، کراسنگ،"
-" اور میوٹیشن جیسے بایو انسپائرڈ آپریشنز کو انجام دے کر حاصل کیا جاتا ہے۔ اس "
-"ماحول میں، ہر تیار شدہ پروگرام اندرونی طور پر ایک اظہار درخت کی طرح منظم "
-"ہوتا ہے جو ہمارے کیلنڈر کے ممکنہ حل کی نمائندگی کرتا ہے۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
-"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
-"características clave y generar nuevos árboles cada vez más prometedores."
-msgstr ""
-"الگورتھم ہر درخت کا مسلسل جائزہ ایک سخت معیار (فٹنس <em>فنکشن)</em> کے تحت "
-"لیتا ہے، جس کا مقصد کلیدی خصوصیات کو وراثت میں لینا اور نئے درخت پیدا کرنا "
-"ہے جو بڑھتے ہوئے امید افزا ہوتے جا رہے ہیں۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
-"óptima y más eficiente!"
-msgstr ""
-"یہ عمل ارتقائی چکر میں دہرایا جاتا ہے جب تک کہ بہترین اور مؤثر حل نہ مل "
-"جائے!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr "کنٹرول پینل: ایکٹو سیٹنگز (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración del algoritmo"
-msgstr "الگورتھم سیٹنگز"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
@@ -100,10 +36,6 @@ msgid "Sin torneo"
 msgstr "کوئی ٹورنامنٹ نہیں"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr "فعال کیلنڈر: %(torneo)s (شناخت: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
 msgstr "تاریخ"
 
@@ -118,10 +50,6 @@ msgstr "دور"
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
 msgstr "اس کنفیگریشن کے لیے کوئی گیمز تیار نہیں کی جاتیں۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr "ڈیٹا بیس میں رجسٹرڈ ٹورنامنٹ میچز دکھانا۔"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
@@ -140,224 +68,8 @@ msgid "Violaciones de reglas:"
 msgstr "قواعد کی خلاف ورزیاں:"
 
 #: tesis/templates/tesis/dashboard.html
-msgid ""
-"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
-" árbol de soluciones sintácticas."
-msgstr ""
-"نیچے دیے گئے بٹن کو دبائیں تاکہ جینیاتی الگورتھم فعال ہو جائے اور نحوی حل کا"
-" درخت دکھایا جا سکے۔"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "آپٹیمائزیشن چلائیں"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Guía operativa del sistema"
-msgstr "سسٹم آپریشنل گائیڈ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Instrucciones de inicio rápido"
-msgstr "فوری آغاز کی ہدایات"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
-" secuenciales:"
-msgstr ""
-"ڈیمو کے ساتھ کامیابی سے تعامل شروع کرنے کے لیے، یہ ترتیب وار مراحل پر عمل "
-"کریں:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Crea un equipo, una liga y un torneo respectivo en tus paneles "
-"administrativos. <strong>Nota importante:</strong> el número total de "
-"equipos participantes debe ser par."
-msgstr ""
-"اپنے انتظامی پینلز میں ایک ٹیم، لیگ، اور ٹورنامنٹ بنائیں۔ <strong>اہم "
-"نوٹ:</strong> کل حصہ لینے والی ٹیموں کی تعداد برابر ہونی چاہیے۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
-" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
-" optimización\"</strong> para estructurar el calendario automatizado."
-msgstr ""
-"جب آپ شرکاء کی شناخت کر لیں، تو اوپر دیے گئے پینل پر جائیں، اپنا فعال "
-"ٹورنامنٹ منتخب کریں اور سبز <strong>\"Run Optimization\"</strong> بٹن پر کلک"
-" کریں تاکہ خودکار شیڈول کو ترتیب دیا جا سکے۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr "مصنوعی ذہانت کی اندرونی منطق اور الگورتھمک بہاؤ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
-"mostramos paso a paso el ciclo de vida evasivo basado en programación "
-"genética:"
-msgstr ""
-"جب سافٹ ویئر لائیو ہوتا ہے تو اندرونی طور پر کیا ہوتا ہے؟ یہاں جینیاتی "
-"پروگرامنگ کی بنیاد پر بچاؤ کے لائف سائیکل کا مرحلہ وار جائزہ پیش کیا جا رہا "
-"ہے:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "1. Configuración e hiperparámetros base"
-msgstr "1. بنیادی ترتیب اور ہائپر پیرامیٹرز"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se cargan las variables del panel que definirán las generaciones, el tamaño "
-"inicial de la población, así como las tasas de probabilidad asociadas al "
-"cruce y la mutación genómica."
-msgstr ""
-"وہ پینل متغیرات جو نسلوں، ابتدائی آبادی کے حجم، اور کراس اوور اور جینومک "
-"میوٹیشن سے منسلک امکانات کی شرحوں کو متعین کریں گے، لوڈ کیے گئے ہیں۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr "2. آپریٹرز اور ساختی بلاکس کی تعریف (گرامر)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las primitivas:"
-msgstr "ابتدائی مخلوقات:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr "وہ منطقی عملیات ہیں جو پروگرام درخت بنانے کے لیے انجام دیتا ہے۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las terminales:"
-msgstr "ٹرمینلز:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"representan los datos constantes o variables básicas estructuradas del "
-"torneo."
-msgstr ""
-"یہ ٹورنامنٹ کے مستقل ڈیٹا یا ساختہ بنیادی متغیرات کی نمائندگی کرتا ہے۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "listas maestros de días hábiles"
-msgstr "کام کے دنوں کی ماسٹر فہرستیں"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "tanto en condición de casa como de visita"
-msgstr "گھر پر اور سفر دونوں میں"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "inicializador vacío"
-msgstr "خالی انیشیلائزر"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las efímeras:"
-msgstr "عارضی:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son valores aleatorios puros que se introducen en nodos específicos para "
-"inyectar variabilidad matemática al sistema."
-msgstr ""
-"یہ خالص تصادفی اقدار ہیں جو مخصوص نوڈز میں ڈالی جاتی ہیں تاکہ نظام میں "
-"ریاضیاتی تغیر شامل کیا جا سکے۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fecha aleatoria y equipo aleatorio."
-msgstr "رینڈم ڈیٹ اور رینڈم ٹیم۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr "3. ابتدائیہ، ارتقائی چکر اور کنورجنس"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fase de ejecución en vivo:"
-msgstr "لائیو ایگزیکیوشن فیز:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El sistema genera una población inicial aleatoria y convierte cada propuesta"
-" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
-"donde ocurre la magia computacional!"
-msgstr ""
-"یہ نظام ایک تصادفی ابتدائی آبادی پیدا کرتا ہے اور ہر تجویز کو ایک درجہ بندی "
-"والے درخت کے ڈھانچے (<em>نحو درخت</em>) میں تبدیل کرتا ہے۔ یہی وہ جگہ ہے "
-"جہاں کمپیوٹیشنل جادو ہوتا ہے!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Visualización y muestreo:"
-msgstr "ویژولائزیشن اور سیمپلنگ:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se procesa la población inicial y se genera el renderizado de los árboles "
-"mediante el generador de sintaxis."
-msgstr ""
-"ابتدائی آبادی کو پروسیس کیا جاتا ہے اور درخت نحو جنریٹر کے ذریعے رینڈر کیے "
-"جاتے ہیں۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Evaluación de aptitud:"
-msgstr "صلاحیت کا جائزہ:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
-"distancia acumulada en kilómetros y el cumplimiento normativo."
-msgstr ""
-"ہر فرد کی <em>فٹنس</em> ویلیو کلومیٹر کے مجموعی فاصلے اور ضابطہ جاتی تعمیل "
-"کی بنیاد پر حساب کی جاتی ہے۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Selección natural:"
-msgstr "قدرتی انتخاب:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se escogen los mejores individuos de la ronda anterior para actuar como "
-"padres biológicos de la nueva generación."
-msgstr ""
-"پچھلے دور کے بہترین افراد کو نئی نسل کے حیاتیاتی والدین کے طور پر منتخب کیا "
-"جاتا ہے۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Cruzamiento, mutación y herencia:"
-msgstr "کراس بریڈنگ، میوٹیشن اور وراثت:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
-" mutaciones en nodos aleatorios."
-msgstr ""
-"نئے افراد نمایاں درختوں کی شاخوں کو ملا کر اور بے ترتیب نوڈز میں تبدیلیاں "
-"لگا کر بنائے جاتے ہیں۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Bucle iterativo:"
-msgstr "تکراری چکر:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
-" hasta completar el total de generaciones configuradas en la interfaz."
-msgstr ""
-"تشخیص، انتخاب، اور پلے بیک کے مراحل ترتیب وار دہرائے جاتے ہیں جب تک کہ "
-"انٹرفیس میں ترتیب دی گئی کل نسلوں کی تعداد مکمل نہ ہو جائے۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Resultados oficiales:"
-msgstr "سرکاری نتائج:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El mejor individuo obtenido en la última iteración se valida y su estructura"
-" interna se almacena como el calendario definitivo del torneo de béisbol."
-msgstr ""
-"آخری مرحلے میں حاصل کردہ بہترین فرد کی تصدیق کی جاتی ہے اور اس کی اندرونی "
-"ساخت کو حتمی بیس بال ٹورنامنٹ شیڈول کے طور پر محفوظ کیا جاتا ہے۔"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Tesis de Ingeniería en Computación"
-msgstr "کمپیوٹر انجینئرنگ تھیسس"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Avances después de la tesis"
@@ -566,10 +278,6 @@ msgstr "مواد پر جائیں"
 #: documentacion/templates/documentacion/base.html
 msgid "Histórico"
 msgstr "تاریخ"
-
-#: documentacion/templates/documentacion/base.html
-msgid "Herramienta"
-msgstr "آلہ"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
@@ -911,3 +619,537 @@ msgid ""
 msgstr ""
 "یہ سائٹ %(total)s زبانوں میں دستیاب ہے۔ اصل میکسیکن ہسپانوی ہے۔ دیگر ورژنز "
 "Azure AI Translator کے ساتھ خودکار ترجمے ہیں اور ان میں غلطیاں ہو سکتی ہیں۔"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Principal"
+msgstr "مرکزی"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Guía"
+msgstr "گائیڈ"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Demo"
+msgstr "ڈیمو"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Modo oscuro"
+msgstr "ڈارک موڈ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo: calendario y viaje por equipo"
+msgstr "ڈیمو: شیڈول اور ٹیم ٹریول"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Genera un calendario de béisbol con programación genética y mide cuánto "
+"viaja cada equipo."
+msgstr ""
+"یہ ایک بیس بال کیلنڈر تیار کرتا ہے جس میں جینیاتی پروگرامنگ ہوتی ہے اور یہ "
+"ماپتا ہے کہ ہر ٹیم کتنی سفر کرتی ہے۔"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo · Viaje justo entre equipos"
+msgstr "ڈیمو · ٹیموں کے درمیان منصفانہ سفر"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Genera un calendario y"
+msgstr "کیلنڈر تیار کریں اور"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "mide cuánto viaja cada equipo."
+msgstr "ہر ٹیم کا سفر کتنا ہوتا ہے اس کی پیمائش۔"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La IA (programación genética) busca calendarios donde el viaje sea corto y "
+"parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
+"pasos</a>."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Todavía no hay ninguna configuración"
+msgstr "ابھی تک کوئی ترتیب نہیں دی گئی"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para optimizar un calendario, primero registra los equipos, la liga y el "
+"torneo, y después crea una configuración."
+msgstr ""
+"شیڈول کو بہتر بنانے کے لیے، پہلے ٹیموں، لیگ، اور ٹورنامنٹ کو ریکارڈ کریں، "
+"اور پھر ایک کنفیگریشن بنائیں۔"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Abrir la guía"
+msgstr "گائیڈ کھولو۔"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver el árbol en grande"
+msgstr "درخت کو بڑے میں دیکھیں"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón para ejecutar el motor y ver el árbol del mejor "
+"calendario."
+msgstr "انجن چلانے کے لیے بٹن دبائیں اور بہترین کیلنڈر ٹری دیکھیں۔"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tarda unos segundos."
+msgstr "اس میں چند سیکنڈ لگتے ہیں۔"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al "
+"azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, "
+"eso es una ventaja: tienes una línea base y una mejora que puedes medir."
+msgstr ""
+"<strong>نوٹ:</strong> تھیسس ورژن نے رینڈم کیلنڈر کو شکست نہیں دی۔ نئے انجن "
+"نے ابتدائی ٹیسٹوں میں ہرا دیا۔ اسکول پروجیکٹ کے لیے یہ فائدہ ہے: آپ کے پاس "
+"ایک بنیادی لائن اور بہتری ہے جسے آپ ناپ سکتے ہیں۔"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario: %(torneo)s"
+msgstr "شیڈول: %(torneo)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración %(id)s"
+msgstr "کنفیگریشن %(id)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Para presentarlo a tu equipo"
+msgstr "اسے اپنی ٹیم سے متعارف کروانے کے لیے"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las respuestas que te van a pedir en clase."
+msgstr "وہ جوابات جو آپ سے کلاس میں پوچھے جائیں گے۔"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Dónde está la IA?"
+msgstr "اے آئی کہاں ہے؟"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Un calendario es un árbol que evoluciona. El código está en "
+"<code>programa_genetico/</code> y usa la biblioteca DEAP."
+msgstr ""
+"کیلنڈر ایک درخت ہے جو ارتقاء پذیر ہوتا ہے۔ کوڈ DEAP لائبریری میں "
+"<code>programa_genetico/</code> ہوتا ہے اور اسے استعمال کرتا ہے۔"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Qué patrones usa?"
+msgstr "آپ کون سے پیٹرن استعمال کرتے ہیں؟"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Django separa modelo, vista y plantilla. <code>ProgramaFacadeView</code> "
+"esconde el motor detrás de una sola entrada."
+msgstr ""
+"Django ماڈل، ویو، اور ٹیمپلیٹ کو الگ کرتا ہے۔ "
+"<code>ProgramaFacadeView</code> یہ انجن کو ایک واحد ان پٹ کے پیچھے چھپا دیتا"
+" ہے۔"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Cómo lo adapto?"
+msgstr "میں اسے کیسے ڈھالوں؟"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambia equipos y reglas"
+msgstr "ٹیمیں اور قواعد تبدیل کریں"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
+" el patrón Strategy para la medida de “viaje justo”."
+msgstr ""
+"ٹیمیں اور کوآرڈینیٹس گائیڈ میں درج ہیں۔ آپ کی ٹیم کے لیے ایک خیال: \"منصفانہ"
+" سفر\" کے پیمانے کے لیے اسٹریٹیجی پیٹرن استعمال کریں۔"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Puedo usarlo?"
+msgstr "کیا میں اسے استعمال کر سکتا ہوں؟"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sí, con GPL-3.0"
+msgstr "جی ہاں، GPL-3.0 کے ساتھ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Puedes modificarlo. Conserva el crédito y cita la tesis."
+msgstr "آپ اسے تبدیل کر سکتے ہیں۔ کریڈٹ رکھیں اور تھیسس کا حوالہ دیں۔"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cómo citar"
+msgstr "حوالہ دینے کا طریقہ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo y pide ayuda"
+msgstr "اسے چلائیں اور مدد مانگیں"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo en tu computadora"
+msgstr "اسے اپنے کمپیوٹر پر چلائیں"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Pídele ayuda a tu asistente de IA"
+msgstr "اپنے AI اسسٹنٹ سے مدد مانگیں"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
+"programa_genetico/programagenetico.py."
+msgstr ""
+"اس سوال کو کاپی کریں اور اسے اس وزرڈ میں پیسٹ کریں جو آپ استعمال کرتے ہیں، "
+"ساتھ ہی programa_genetico/programagenetico.py فائل کے ساتھ۔"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Explícame paso a paso cómo este programa genético crea y evalúa un "
+"calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
+" la diferencia entre el equipo que más viaja y el que menos."
+msgstr ""
+"مجھے قدم بہ قدم سمجھائیں کہ یہ جینیاتی پروگرام شیڈول کیسے بناتا اور جانچتا "
+"ہے۔ پھر مجھے بتائیں کہ آپ کیا بدلنا چاہیں گے تاکہ \"منصفانہ سفر\" کا پیمانہ "
+"سب سے زیادہ سفر کرنے والی اور سب سے کم سفر کرنے والی ٹیم کے درمیان فرق ہو۔"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
+msgstr ""
+"کوڈ کے مقابلے میں چیک کریں کہ یہ آپ کو کیا بتاتا ہے۔ AI غلطی کر سکتا ہے۔"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cerrar"
+msgstr "بند"
+
+#: tesis/templates/tesis/guia/_base.html
+msgid "Paso %(n)s de %(t)s"
+msgstr "قدم %(n)s %(t)s"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "Revisa los campos marcados."
+msgstr "نشان زدہ فیلڈز چیک کریں۔"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "obligatorio"
+msgstr "لازمی"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "Pasos de la guía"
+msgstr "رہنمائی کے مراحل"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "hecho"
+msgstr "حقیقت"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "pendiente"
+msgstr "زیر التواء"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Paso 5: calendario"
+msgstr "مرحلہ 5: کیلنڈر"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid ""
+"Genera los juegos del torneo «%(torneo)s». El primer calendario se arma al "
+"azar; después puedes optimizarlo con el algoritmo genético."
+msgstr ""
+"\"%(torneo)s\" ٹورنامنٹ گیمز تیار کریں۔ پہلا شیڈول تصادفی طور پر بنایا جاتا "
+"ہے؛ پھر آپ اسے جینیاتی الگورتھم کے ذریعے بہتر بنا سکتے ہیں۔"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Volver a generar los juegos"
+msgstr "گیمز کی تعمیر نو"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Generar los juegos"
+msgstr "گیمز تیار کریں"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "se muestran los primeros 50"
+msgstr "ٹاپ 50 دکھائے گئے"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "¿Y ahora?"
+msgstr "اور اب؟"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Abrir este calendario en el panel y optimizarlo"
+msgstr "اس کیلنڈر کو ڈیش بورڈ میں کھولیں اور اسے بہتر بنائیں"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "(tarda unos 20 segundos)"
+msgstr "(تقریبا 20 سیکنڈ لگتے ہیں)"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Ver el detalle del calendario"
+msgstr "کیلنڈر کی تفصیل دیکھیں"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Leer por qué la versión de la tesis no superó a la búsqueda aleatoria"
+msgstr "پڑھیں کہ تھیسس ورژن نے رینڈم سرچ سے بہتر کارکردگی کیوں نہیں دکھائی۔"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Paso 4: configuración"
+msgstr "مرحلہ 4: سیٹ اپ"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Estos son los parámetros del algoritmo genético para el torneo."
+msgstr "یہ ٹورنامنٹ کے جینیاتی الگورتھم کے پیرامیٹرز ہیں۔"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Importante:"
+msgstr "اہم:"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid ""
+"la versión del motor de la tesis guarda estos valores, pero al optimizar usa"
+" siempre población 100, 20 generaciones, cruce 0.8 y mutación 0.2. La "
+"versión mejorada del motor sí los usará."
+msgstr ""
+"تھیسس کے انجن ورژن میں یہ قدریں محفوظ رہتی ہیں، لیکن جب آپٹیمائز کی جاتی ہیں"
+" تو یہ ہمیشہ آبادی 100، 20 نسلیں، کراس اوور 0.8، اور میوٹیشن 0.2 استعمال "
+"کرتا ہے۔ انجن کا بہتر ورژن انہیں استعمال کرے گا۔"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Guardar y seguir al paso 5"
+msgstr "محفوظ کریں اور مرحلہ 5 پر جاری رکھیں"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Paso 1: equipos"
+msgstr "مرحلہ 1: ٹیمیں"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Puedes usar los que ya existen o agregar uno nuevo."
+msgstr "آپ موجودہ استعمال کر سکتے ہیں یا نیا شامل کر سکتے ہیں۔"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Ver los últimos equipos registrados"
+msgstr "تازہ ترین رجسٹرڈ ٹیمیں دیکھیں"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar un equipo"
+msgstr "ٹیم شامل کریں"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar equipo"
+msgstr "آلات کا اضافہ"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Seguir al paso 2: liga"
+msgstr "مرحلہ 2: لیگ تک جاری رکھیں"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Necesitas al menos 2 equipos para seguir."
+msgstr "آپ کو کم از کم 2 ٹیمیں فالو کرنے کی ضرورت ہوتی ہے۔"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Guía: del registro al calendario"
+msgstr "گائیڈ: رجسٹریشن سے کیلنڈر تک"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
+" el algoritmo y generas un calendario de juegos."
+msgstr ""
+"پانچ مراحل میں آپ ٹیمیں رجسٹر کرتے ہیں، لیگ اور ٹورنامنٹ سیٹ اپ کرتے ہیں، "
+"الگورتھم چلانے کا طریقہ منتخب کرتے ہیں اور میچ شیڈول تیار کرتے ہیں۔"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
+msgstr "ٹیمیں: کم از کم 2 ٹیمیں رجسٹر کریں، اپنے اسٹیڈیم کی جگہ کے ساتھ۔"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Liga: elige qué equipos juegan juntos."
+msgstr "لیگ: منتخب کریں کہ کون سی ٹیمیں ایک ساتھ کھیلتی ہیں۔"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Torneo: define las fechas, las series y los juegos."
+msgstr "ٹورنامنٹ: تاریخیں، سیریز، اور میچز کی تعریف کریں۔"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Configuración: elige los parámetros del algoritmo genético."
+msgstr "سیٹنگز: جینیاتی الگورتھم کے پیرامیٹرز منتخب کریں۔"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Calendario: genera los juegos y revísalos."
+msgstr "کیلنڈر: گیمز تیار کریں اور ان کا جائزہ لیں۔"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"Lo que crees aquí lo ve cualquier visitante del sitio. No escribas datos "
+"personales."
+msgstr ""
+"جو کچھ آپ یہاں بناتے ہیں وہ سائٹ کے کسی بھی وزیٹر کو نظر آتا ہے۔ ذاتی ڈیٹا "
+"نہ لکھیں۔"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Empezar"
+msgstr "شروع کریں"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Paso 2: liga"
+msgstr "مرحلہ 2: بندھن"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid ""
+"Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
+"equipos: con un número impar, uno se queda sin rival en cada serie."
+msgstr ""
+"لیگ وہ ٹیموں کا گروپ ہے جو ایک دوسرے کے خلاف کھیلتی ہیں۔ ٹیموں کی تعداد جفت "
+"استعمال کریں: اگر تعداد طاق ہو تو ہر سیریز میں ایک ٹیم بغیر حریف کے رہ جاتی "
+"ہے۔"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Guardar y seguir al paso 3"
+msgstr "سیو کریں اور تیسرے مرحلے پر جاری رکھیں"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Paso 3: torneo"
+msgstr "مرحلہ 3: ٹورنامنٹ"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid ""
+"El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
+"lunes a jueves y los sábados, entre el primer y el último día."
+msgstr ""
+"ٹورنامنٹ میں \"%(liga)s\" لیگ کی ٹیمیں شامل ہوتی ہیں۔ میچز پیر سے جمعرات اور"
+" ہفتہ کو، پہلے اور آخری دن کے درمیان، شیڈول کیے جاتے ہیں۔"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Guardar y seguir al paso 4"
+msgstr "محفوظ کریں اور مرحلہ 4 پر جاری رکھیں"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Programación genética para calendarios de béisbol"
+msgstr "بیس بال کیلنڈرز کے لیے جینیاتی پروگرامنگ"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
+"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
+msgstr ""
+"کوزا-ٹی ٹی پی: لیسلی ڈکنسن (آئی ٹی اے ایم) کا بیس بال کیلنڈرز کے لیے جینیاتی"
+" پروگرامنگ پر تھیسس ہے، جس کا ایماندار نتیجہ اور بہتر انجن ہے۔"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Tesis ITAM · Programación genética · Béisbol"
+msgstr "آئی ٹی اے ایم تھیسس · جینیاتی پروگرامنگ · بیس بال"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Mi tesis dijo la verdad:"
+msgstr "میری تھیسس نے سچ کہا:"
+
+#: tesis/templates/tesis/inicio.html
+msgid "el algoritmo no le ganó al azar."
+msgstr "الگورتھم نے اسے بے ترتیب شکست نہیں دی۔"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
+"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
+"corrigiendo en público."
+msgstr ""
+"کوزا-ٹی ٹی پی اس تھیسس کو آگے بڑھاتا ہے تاکہ بیس بال سیزن کے کیلنڈر جینیاتی "
+"پروگرامنگ کے ساتھ بنایا جا سکے۔ یہاں آپ دیکھیں گے کہ کیا غلط ہوا، کیوں، اور "
+"میں اسے عوام میں کیسے درست کر رہا ہوں۔"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ingeniería en Computación, ITAM"
+msgstr "کمپیوٹر انجینئرنگ، آئی ٹی اے ایم"
+
+#: tesis/templates/tesis/inicio.html
+msgid "¿Cuánto tiempo tienes?"
+msgstr "تمہارے پاس کتنا وقت ہے؟"
+
+#: tesis/templates/tesis/inicio.html
+msgid "2 minutos"
+msgstr "2 منٹ"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Entender la idea"
+msgstr "خیال کو سمجھنا"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Qué es la programación genética y por qué un calendario de béisbol es un "
+"problema difícil."
+msgstr "جینیاتی پروگرامنگ کیا ہے اور بیس بال کیلنڈر کیوں ایک مشکل مسئلہ ہے۔"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Empezar aquí"
+msgstr "یہاں سے شروع کرو"
+
+#: tesis/templates/tesis/inicio.html
+msgid "5 minutos · 5 pasos"
+msgstr "5 منٹ · 5 قدم"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Probar la herramienta"
+msgstr "آلے کو آزمائیں"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
+msgstr ""
+"ٹیمیں رجسٹر کریں، لیگ بنائیں، اور اپنا کیلنڈر بنائیں۔ کوئی اکاؤنٹ نہیں۔"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Sin prisa"
+msgstr "جلدی نہیں ہے"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Leer la tesis y el código"
+msgstr "تھیسس اور کوڈ پڑھیں"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"El documento original, la bitácora de avances y el repositorio abierto."
+msgstr "اصل دستاویز، پروگریس لاگ اور اوپن ریپوزٹری۔"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ir a la tesis"
+msgstr "تھیسس پر جائیں"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Qué tan confiable es cada parte"
+msgstr "ہر پرزہ کتنا قابل اعتماد ہے"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Para que sepas qué puedes citar y qué todavía cambia."
+msgstr "تو آپ جانتے ہیں کہ آپ کیا حوالہ دے سکتے ہیں اور کیا بدلتا رہتا ہے۔"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Final"
+msgstr "فائنل"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Resultados de la tesis"
+msgstr "تھیسس کے نتائج"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Publicados en 2026. No se modifican."
+msgstr "2026 میں شائع ہوا۔ ان میں کوئی ترمیم نہیں کی گئی۔"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Preliminar"
+msgstr "ابتدائی مرحلہ"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Motor mejorado"
+msgstr "بہتر انجن"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En pruebas: 31 %% menos distancia en 3 corridas."
+msgstr "ٹیسٹ میں: 3 رنز میں 31٪ کم فاصلہ۔"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En revisión"
+msgstr "جائزہ میں"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Traducciones"
+msgstr "تراجم"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Automáticas, incluidas maya y otomí. Puedes corregirlas."
+msgstr ""
+"آٹومیٹک، جس میں مایا اور اوٹومی بھی شامل ہیں۔ تم انہیں ٹھیک کر سکتے ہو۔"

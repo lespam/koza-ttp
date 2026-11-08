@@ -1,0 +1,12 @@
+{% extends "tesis/guia/_base.html" %}
+{% load i18n %}
+{% block titulo %}{% translate "Paso 2: liga" %}{% endblock %}
+{% block paso %}
+<h1>{% translate "Paso 2: liga" %}</h1>
+<p class="entrada">{% translate "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de equipos: con un número impar, uno se queda sin rival en cada serie." %}</p>
+<form method="post" novalidate>
+    {% csrf_token %}
+    {% include "tesis/guia/_formulario.html" %}
+    <button type="submit" class="boton">{% translate "Guardar y seguir al paso 3" %}</button>
+</form>
+{% endblock %}

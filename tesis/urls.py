@@ -1,11 +1,17 @@
 from django.urls import path
-from . import views
+from . import guia, views
 
 app_name = "tesis"
 
 urlpatterns = [
-    # Vista Principal del Dashboard (Unificada)
-    path('', views.DashboardView.as_view(), name='dashboard'),
+    # Portada: quién es Leslie, qué es el proyecto y tres rutas
+    path('', views.InicioView.as_view(), name='inicio'),
+    # Demo: configuración, calendario y ejecución del motor
+    path('demo/', views.DashboardView.as_view(), name='dashboard'),
+
+    # Flujo guiado de 5 pasos: del registro al calendario
+    path('guia/', guia.GuiaInicioView.as_view(), name='guia'),
+    path('guia/<slug:paso>/', guia.GuiaPasoView.as_view(), name='guia_paso'),
 
     # Equipos - CRUD
     path("equipo/", views.EquipoIndexView.as_view(), name="equipo_list"),

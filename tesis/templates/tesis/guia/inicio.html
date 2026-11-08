@@ -1,0 +1,16 @@
+{% extends "tesis/guia/_base.html" %}
+{% load i18n %}
+{% block titulo %}{% translate "Guía: del registro al calendario" %}{% endblock %}
+{% block paso %}
+<h1>{% translate "Guía: del registro al calendario" %}</h1>
+<p class="entrada">{% blocktranslate trimmed %}En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr el algoritmo y generas un calendario de juegos.{% endblocktranslate %}</p>
+<ol>
+    <li>{% translate "Equipos: registra al menos 2, con la ubicación de su estadio." %}</li>
+    <li>{% translate "Liga: elige qué equipos juegan juntos." %}</li>
+    <li>{% translate "Torneo: define las fechas, las series y los juegos." %}</li>
+    <li>{% translate "Configuración: elige los parámetros del algoritmo genético." %}</li>
+    <li>{% translate "Calendario: genera los juegos y revísalos." %}</li>
+</ol>
+<p>{% translate "Lo que crees aquí lo ve cualquier visitante del sitio. No escribas datos personales." %}</p>
+<p><a class="boton" href="{{ siguiente }}">{% translate "Empezar" %}</a></p>
+{% endblock %}

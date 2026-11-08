@@ -61,7 +61,8 @@ SECURE_HSTS_SECONDS = 0 if DEBUG else 2_592_000  # 30 days
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 SECURE_REFERRER_POLICY = "strict-origin-when-cross-origin"
-CSP_STYLE_SRC = ["'self'", "cdn.jsdelivr.net"]
+CSP_STYLE_SRC = ["'self'", "cdn.jsdelivr.net", "fonts.googleapis.com"]
+CSP_FONT_SRC = ["'self'", "fonts.gstatic.com"]
 
 # Application definition
 
@@ -81,6 +82,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'project.middleware.IdiomaAutomaticoMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

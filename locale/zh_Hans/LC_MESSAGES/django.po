@@ -8,64 +8,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Programación genética - Planificación de béisbol"
-msgstr "遗传编程——棒球规划"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
 msgstr "语言"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
 msgstr "变化"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr "棒球赛季规划中的基因编程"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "¡Bienvenido a la aplicación!"
-msgstr "欢迎使用这个应用！"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Este sistema interactivo busca resolver de manera óptima la organización y "
-"logística de un calendario para una temporada completa de béisbol. Para "
-"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
-"inspirada directamente en la evolución natural de las especies."
-msgstr "该交互系统旨在优化解决完整棒球赛季日程的组织和物流问题。为此，我们采用了一种直接受物种自然进化启发的先进人工智能技术。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"La <strong>programación genética</strong> consiste en crear, evaluar y "
-"modificar soluciones de forma automática a partir de una población inicial "
-"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
-"selección natural, el cruzamiento y la mutación. En este entorno, cada "
-"programa generado se estructura internamente como un árbol de expresión que "
-"representa una solución potencial para nuestro calendario."
-msgstr ""
-"<strong>基因编程</strong>涉及从初始程序群体中自动创建、评估和修改解决方案。这通过执行仿生操作实现，如自然选择、杂交和突变。在这种环境中，每个生成的程序内部结构化为表达树，代表我们日历中的潜在解决方案。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
-"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
-"características clave y generar nuevos árboles cada vez más prometedores."
-msgstr "该算法通过严格的质量标准（适应 <em>度函数</em>）持续评估每棵树，目标是继承关键特征并生成越来越有前景的新树。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
-"óptima y más eficiente!"
-msgstr "这个过程会在进化循环中反复进行，直到找到最优且最高效的解决方案！"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr "控制面板：活动设置（ID： %(id)s）"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración del algoritmo"
-msgstr "算法设置"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
@@ -88,10 +36,6 @@ msgid "Sin torneo"
 msgstr "没有比赛"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr "活跃日历： %(torneo)s （编号： %(id)s）"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
 msgstr "日期"
 
@@ -106,10 +50,6 @@ msgstr "走"
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
 msgstr "此配置不生成任何游戏。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr "显示数据库中登记的锦标赛比赛。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
@@ -128,192 +68,8 @@ msgid "Violaciones de reglas:"
 msgstr "规则违规："
 
 #: tesis/templates/tesis/dashboard.html
-msgid ""
-"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
-" árbol de soluciones sintácticas."
-msgstr "点击下方按钮即可激活遗传算法并显示语法解树。"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "运行优化"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Guía operativa del sistema"
-msgstr "系统操作指南"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Instrucciones de inicio rápido"
-msgstr "快速入门说明"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
-" secuenciales:"
-msgstr "要开始成功与演示互动，请按照以下顺序操作："
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Crea un equipo, una liga y un torneo respectivo en tus paneles "
-"administrativos. <strong>Nota importante:</strong> el número total de "
-"equipos participantes debe ser par."
-msgstr "在你的管理面板中创建球队、联赛和锦标赛。 <strong>重要提示：</strong> 参赛队伍总数必须为偶数。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
-" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
-" optimización\"</strong> para estructurar el calendario automatizado."
-msgstr "确定参赛者后，前往上方面板，选择你当前的比赛，点击绿色 <strong>的“运行优化”</strong> 按钮来构建自动赛程。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr "人工智能的内部逻辑与算法流"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
-"mostramos paso a paso el ciclo de vida evasivo basado en programación "
-"genética:"
-msgstr "软件上线后内部会发生什么？以下是基于基因编程的规避生命周期的逐步解析："
-
-#: tesis/templates/tesis/dashboard.html
-msgid "1. Configuración e hiperparámetros base"
-msgstr "1. 基位配置与超参数"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se cargan las variables del panel que definirán las generaciones, el tamaño "
-"inicial de la población, así como las tasas de probabilidad asociadas al "
-"cruce y la mutación genómica."
-msgstr "加载了定义世代、初始种群规模以及与交叉和基因组突变相关的概率的面板变量。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr "2. 运算符和结构块的定义（语法）"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las primitivas:"
-msgstr "原始人："
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr "是程序执行的逻辑操作以构建树。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las terminales:"
-msgstr "航站楼："
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"representan los datos constantes o variables básicas estructuradas del "
-"torneo."
-msgstr "表示锦标赛的常数数据或结构化基本变量。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "listas maestros de días hábiles"
-msgstr "工作日主名单"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "tanto en condición de casa como de visita"
-msgstr "无论是在主场还是客场"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "inicializador vacío"
-msgstr "空初始化器"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las efímeras:"
-msgstr "短暂的："
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son valores aleatorios puros que se introducen en nodos específicos para "
-"inyectar variabilidad matemática al sistema."
-msgstr "它们是纯随机的数值，输入到特定节点以注入数学变异性。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fecha aleatoria y equipo aleatorio."
-msgstr "随机日期和随机团队。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr "3. 初始化、进化周期与趋同"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fase de ejecución en vivo:"
-msgstr "现场执行阶段："
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El sistema genera una población inicial aleatoria y convierte cada propuesta"
-" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
-"donde ocurre la magia computacional!"
-msgstr "系统生成一个随机初始人口，并将每个提案转化为层级树结构（<em>语法树</em>）。这就是计算魔法发生的地方！"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Visualización y muestreo:"
-msgstr "可视化与采样："
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se procesa la población inicial y se genera el renderizado de los árboles "
-"mediante el generador de sintaxis."
-msgstr "初始人口被处理，树则使用语法生成器渲染。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Evaluación de aptitud:"
-msgstr "能力倾向评估："
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
-"distancia acumulada en kilómetros y el cumplimiento normativo."
-msgstr "每个人的 <em>适应度</em> 值是基于累计距离（公里）和合规情况计算的。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Selección natural:"
-msgstr "自然选择："
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se escogen los mejores individuos de la ronda anterior para actuar como "
-"padres biológicos de la nueva generación."
-msgstr "上一轮中表现最好的个体将被选为新一代的生物学父母。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Cruzamiento, mutación y herencia:"
-msgstr "杂交、突变与遗传："
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
-" mutaciones en nodos aleatorios."
-msgstr "通过混合显著树的分支并在随机节点中应用突变来创建新的个体。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Bucle iterativo:"
-msgstr "迭代循环："
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
-" hasta completar el total de generaciones configuradas en la interfaz."
-msgstr "评估、选择和回放步骤会依次重复，直到接口中配置的总代数完成。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Resultados oficiales:"
-msgstr "官方结果："
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El mejor individuo obtenido en la última iteración se valida y su estructura"
-" interna se almacena como el calendario definitivo del torneo de béisbol."
-msgstr "上一轮获得的最佳球员会被验证，其内部结构被存储为最终的棒球锦标赛赛程。"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Tesis de Ingeniería en Computación"
-msgstr "计算机工程论文"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Avances después de la tesis"
@@ -505,10 +261,6 @@ msgstr "跳转到内容"
 #: documentacion/templates/documentacion/base.html
 msgid "Histórico"
 msgstr "历史"
-
-#: documentacion/templates/documentacion/base.html
-msgid "Herramienta"
-msgstr "工具"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
@@ -804,3 +556,498 @@ msgid ""
 "México. Las demás versiones son traducciones automáticas con Azure AI "
 "Translator y pueden tener errores."
 msgstr "该网站提供 %(total)s 种语言。原文为墨西哥西班牙语。其他版本是使用 Azure AI 翻译器的自动翻译，可能存在错误。"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Principal"
+msgstr "主要角色"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Guía"
+msgstr "指南"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Demo"
+msgstr "演示"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Modo oscuro"
+msgstr "暗影模式"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo: calendario y viaje por equipo"
+msgstr "演示：日程安排与团队旅行"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Genera un calendario de béisbol con programación genética y mide cuánto "
+"viaja cada equipo."
+msgstr "它生成带有基因编程的棒球赛历，并测量每支球队的旅行次数。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo · Viaje justo entre equipos"
+msgstr "演示 ·队伍间公平出差"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Genera un calendario y"
+msgstr "生成一个日历，并且"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "mide cuánto viaja cada equipo."
+msgstr "测量每支球队的出差次数。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La IA (programación genética) busca calendarios donde el viaje sea corto y "
+"parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
+"pasos</a>."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Todavía no hay ninguna configuración"
+msgstr "还没有配置"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para optimizar un calendario, primero registra los equipos, la liga y el "
+"torneo, y después crea una configuración."
+msgstr "为了优化赛程，首先记录球队、联赛和锦标赛，然后创建配置。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Abrir la guía"
+msgstr "打开指南"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver el árbol en grande"
+msgstr "大面积看看这棵树"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón para ejecutar el motor y ver el árbol del mejor "
+"calendario."
+msgstr "按下按钮启动引擎，查看最佳日历树。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tarda unos segundos."
+msgstr "这需要几秒钟。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al "
+"azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, "
+"eso es una ventaja: tienes una línea base y una mejora que puedes medir."
+msgstr ""
+"<strong>注意：</strong> "
+"论文版本并没有击败随机日历。新引擎在初步测试中做到了。对于学校项目来说，这是一个优势：你有一个基线和可以衡量的进步。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario: %(torneo)s"
+msgstr "时间表： %(torneo)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración %(id)s"
+msgstr "配置 %(id)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Para presentarlo a tu equipo"
+msgstr "把它介绍给你的团队"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las respuestas que te van a pedir en clase."
+msgstr "你在课堂上会被问到的答案。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Dónde está la IA?"
+msgstr "AI在哪里？"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Un calendario es un árbol que evoluciona. El código está en "
+"<code>programa_genetico/</code> y usa la biblioteca DEAP."
+msgstr "日历是一棵不断演变的树。代码已录入 <code>programa_genetico/</code> 并使用DEAP库。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Qué patrones usa?"
+msgstr "你用什么图案？"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Django separa modelo, vista y plantilla. <code>ProgramaFacadeView</code> "
+"esconde el motor detrás de una sola entrada."
+msgstr "Django 将模型、视图和模板分开。 <code>ProgramaFacadeView</code> 它将引擎隐藏在单一输入后面。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Cómo lo adapto?"
+msgstr "我该如何调整它？"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambia equipos y reglas"
+msgstr "更换队伍和规则"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
+" el patrón Strategy para la medida de “viaje justo”."
+msgstr "队伍和坐标会记录在指南中。给你的团队一个建议：使用策略模式作为“公平行程”衡量标准。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Puedo usarlo?"
+msgstr "我能用吗？"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sí, con GPL-3.0"
+msgstr "是的，采用GPL-3.0"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Puedes modificarlo. Conserva el crédito y cita la tesis."
+msgstr "你可以修改它。保留署名并引用论文。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cómo citar"
+msgstr "引用方式"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo y pide ayuda"
+msgstr "运行它并寻求帮助"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo en tu computadora"
+msgstr "在你的电脑上运行它"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Pídele ayuda a tu asistente de IA"
+msgstr "请你的AI助手帮忙"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
+"programa_genetico/programagenetico.py."
+msgstr "把这个问题复制出来，粘贴到你用的向导里，连同programa_genetico/programagenetico.py 文件一起。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Explícame paso a paso cómo este programa genético crea y evalúa un "
+"calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
+" la diferencia entre el equipo que más viaja y el que menos."
+msgstr "请一步步向我解释这个基因项目如何制定和评估赛程表。然后告诉我你会改变什么，使“公平旅行”的衡量标准成为出差最多和出差最少的队伍之间的差值。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
+msgstr "核对它告诉你的内容和代码。AI可能会搞错。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cerrar"
+msgstr "结束"
+
+#: tesis/templates/tesis/guia/_base.html
+msgid "Paso %(n)s de %(t)s"
+msgstr "%(n)s%(t)s"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "Revisa los campos marcados."
+msgstr "检查标记字段。"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "obligatorio"
+msgstr "强制性"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "Pasos de la guía"
+msgstr "指导步骤"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "hecho"
+msgstr "事实"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "pendiente"
+msgstr "待处理"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Paso 5: calendario"
+msgstr "步骤5：日历"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid ""
+"Genera los juegos del torneo «%(torneo)s». El primer calendario se arma al "
+"azar; después puedes optimizarlo con el algoritmo genético."
+msgstr "生成“%(torneo)s”比赛。第一个赛程是随机组合的;然后你可以用遗传算法进行优化。"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Volver a generar los juegos"
+msgstr "重建游戏"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Generar los juegos"
+msgstr "生成游戏"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "se muestran los primeros 50"
+msgstr "前50名"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "¿Y ahora?"
+msgstr "那现在呢？"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Abrir este calendario en el panel y optimizarlo"
+msgstr "在仪表盘中打开这个日历并进行优化"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "(tarda unos 20 segundos)"
+msgstr "（大约需要20秒）"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Ver el detalle del calendario"
+msgstr "查看日历详情"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Leer por qué la versión de la tesis no superó a la búsqueda aleatoria"
+msgstr "阅读为什么论文版本未能超过随机搜索"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Paso 4: configuración"
+msgstr "第四步：设置"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Estos son los parámetros del algoritmo genético para el torneo."
+msgstr "这些是比赛遗传算法的参数。"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Importante:"
+msgstr "重要提示："
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid ""
+"la versión del motor de la tesis guarda estos valores, pero al optimizar usa"
+" siempre población 100, 20 generaciones, cruce 0.8 y mutación 0.2. La "
+"versión mejorada del motor sí los usará."
+msgstr "论文的引擎版本保存了这些值，但在优化时总是使用人口100、20代、交叉值0.8和突变值0.2。改进版引擎将使用这些值。"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Guardar y seguir al paso 5"
+msgstr "保存并继续到第5步"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Paso 1: equipos"
+msgstr "第一步：团队"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Puedes usar los que ya existen o agregar uno nuevo."
+msgstr "你可以使用现有的，也可以添加新的。"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Ver los últimos equipos registrados"
+msgstr "查看最新注册球队"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar un equipo"
+msgstr "添加团队"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar equipo"
+msgstr "添加设备"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Seguir al paso 2: liga"
+msgstr "继续进入第二步：联赛"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Necesitas al menos 2 equipos para seguir."
+msgstr "你需要至少有两支队伍跟随。"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Guía: del registro al calendario"
+msgstr "指南：从注册到日历"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
+" el algoritmo y generas un calendario de juegos."
+msgstr "只需5个步骤，你注册球队、设置联赛和锦标赛、选择如何运行算法并生成比赛日程。"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
+msgstr "队伍：至少注册2人，并标明他们的体育场所在位置。"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Liga: elige qué equipos juegan juntos."
+msgstr "联赛：选择哪些球队一起作战。"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Torneo: define las fechas, las series y los juegos."
+msgstr "锦标赛：定义日期、系列赛和比赛。"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Configuración: elige los parámetros del algoritmo genético."
+msgstr "设置：选择遗传算法的参数。"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Calendario: genera los juegos y revísalos."
+msgstr "日历：生成并评测游戏。"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"Lo que crees aquí lo ve cualquier visitante del sitio. No escribas datos "
+"personales."
+msgstr "你在这里创建的内容会被任何访问网站的访客看到。不要写个人数据。"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Empezar"
+msgstr "开始"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Paso 2: liga"
+msgstr "第二步：建立联系"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid ""
+"Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
+"equipos: con un número impar, uno se queda sin rival en cada serie."
+msgstr "联赛是指相互对战的球队组成的组合。使用偶数支球队：奇数支球队则每个系列赛中没有对手。"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Guardar y seguir al paso 3"
+msgstr "保存并继续到第三步"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Paso 3: torneo"
+msgstr "第三步：锦标赛"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid ""
+"El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
+"lunes a jueves y los sábados, entre el primer y el último día."
+msgstr "该锦标赛使用“%(liga)s”联赛的球队参赛。比赛安排在周一至周四以及周六，即第一天到最后一天之间。"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Guardar y seguir al paso 4"
+msgstr "保存并继续到第4步"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Programación genética para calendarios de béisbol"
+msgstr "棒球日历的遗传编程"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
+"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
+msgstr "Koza-TTP：Leslie Dickinson（ITAM）关于棒球日历遗传编程的论文，其真实结果和改进的引擎。"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Tesis ITAM · Programación genética · Béisbol"
+msgstr "ITAM论文 ·遗传编程 ·棒球"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Mi tesis dijo la verdad:"
+msgstr "我的论点说的是实话："
+
+#: tesis/templates/tesis/inicio.html
+msgid "el algoritmo no le ganó al azar."
+msgstr "算法不是随机击败他的。"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
+"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
+"corrigiendo en público."
+msgstr "Koza-TTP采用了这个论点，用基因编程制作棒球赛季日历。在这里你将看到哪里出了问题，为什么，以及我如何在公开场合纠正它。"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ingeniería en Computación, ITAM"
+msgstr "计算机工程，ITAM"
+
+#: tesis/templates/tesis/inicio.html
+msgid "¿Cuánto tiempo tienes?"
+msgstr "你还有多少时间？"
+
+#: tesis/templates/tesis/inicio.html
+msgid "2 minutos"
+msgstr "2分钟"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Entender la idea"
+msgstr "理解这个理念"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Qué es la programación genética y por qué un calendario de béisbol es un "
+"problema difícil."
+msgstr "什么是基因编程，为什么棒球赛历是个难题。"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Empezar aquí"
+msgstr "从这里开始"
+
+#: tesis/templates/tesis/inicio.html
+msgid "5 minutos · 5 pasos"
+msgstr "5分钟 ·5步"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Probar la herramienta"
+msgstr "试试这个工具"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
+msgstr "注册球队，组建联赛，生成自己的日历。没有账号。"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Sin prisa"
+msgstr "不着急"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Leer la tesis y el código"
+msgstr "阅读论文和代码"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"El documento original, la bitácora de avances y el repositorio abierto."
+msgstr "原始文档、进度日志和开放仓库。"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ir a la tesis"
+msgstr "去论文"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Qué tan confiable es cada parte"
+msgstr "每个部件的可靠性"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Para que sepas qué puedes citar y qué todavía cambia."
+msgstr "这样你就知道哪些可以报价，哪些内容还会变。"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Final"
+msgstr "决赛"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Resultados de la tesis"
+msgstr "论文结果"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Publicados en 2026. No se modifican."
+msgstr "2026年出版。未被修改。"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Preliminar"
+msgstr "预赛"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Motor mejorado"
+msgstr "改进型发动机"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En pruebas: 31 %% menos distancia en 3 corridas."
+msgstr "测试中：3次跑步距离缩短31%%。"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En revisión"
+msgstr "回顾"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Traducciones"
+msgstr "译本"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Automáticas, incluidas maya y otomí. Puedes corregirlas."
+msgstr "自动的，包括玛雅和乙美。你可以修好它们。"

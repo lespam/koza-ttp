@@ -10,6 +10,10 @@
     {% for lang in site_languages %}
     <link rel="alternate" hreflang="{{ lang.code }}" href="{{ request.scheme }}://{{ request.get_host }}{{ lang.url }}">
     {% endfor %}
+    <script src="{% static 'js/tema.js' %}"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500..700&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Work+Sans:wght@400;500;600&amp;display=swap">
     <link rel="stylesheet" href="{% static 'css/documentacion.css' %}">
     <link rel="stylesheet" href="{% static 'css/aviso.css' %}">
 </head>
@@ -18,16 +22,22 @@
 
     <header class="cabecera">
         <div class="cabecera-interior">
-            <a class="marca" href="{% url 'tesis:dashboard' %}">Koza-TTP</a>
+            <a class="marca" href="{% url 'tesis:inicio' %}">Koza-TTP</a>
 
-            <nav aria-label="{% translate "Documentación" %}">
+            <nav aria-label="{% translate "Principal" %}">
                 <ul class="menu">
                     <li><a href="{% url 'documentacion:index' %}"{% if seccion == "inicio" %} aria-current="page"{% endif %}>{% translate "Documentación" %}</a></li>
                     <li><a href="{% url 'documentacion:historico' %}"{% if seccion == "historico" %} aria-current="page"{% endif %}>{% translate "Histórico" %}</a></li>
                     <li><a href="{% url 'documentacion:avances' %}"{% if seccion == "avances" %} aria-current="page"{% endif %}>{% translate "Avances" %}</a></li>
-                    <li><a href="{% url 'tesis:dashboard' %}">{% translate "Herramienta" %}</a></li>
+                    <li><a href="{% url 'tesis:guia' %}"{% if seccion == "guia" %} aria-current="page"{% endif %}>{% translate "Guía" %}</a></li>
+                    <li><a href="{% url 'tesis:dashboard' %}"{% if seccion == "demo" %} aria-current="page"{% endif %}>{% translate "Demo" %}</a></li>
                 </ul>
             </nav>
+
+            <button type="button" class="boton-tema" id="boton-tema" aria-pressed="false" hidden>
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"></path></svg>
+                {% translate "Modo oscuro" %}
+            </button>
 
             <form class="idioma" action="{% url 'set_language' %}" method="post">
                 {% csrf_token %}

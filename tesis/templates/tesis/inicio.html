@@ -1,0 +1,91 @@
+{% extends "documentacion/base.html" %}
+{% load i18n %}
+
+{% block titulo %}{% translate "Programación genética para calendarios de béisbol" %}{% endblock %}
+{% block descripcion %}{% translate "Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética para calendarios de béisbol, con su resultado honesto y el motor mejorado." %}{% endblock %}
+
+{% block contenido %}
+<div class="portada">
+    <section class="portada-hero" aria-labelledby="titulo">
+        <div class="portada-texto">
+            <p class="antetitulo">{% translate "Tesis ITAM · Programación genética · Béisbol" %}</p>
+            <h1 id="titulo">{% translate "Mi tesis dijo la verdad:" %} <span class="clave">{% translate "el algoritmo no le ganó al azar." %}</span></h1>
+            <p class="entrada">{% blocktranslate trimmed %}Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy corrigiendo en público.{% endblocktranslate %}</p>
+            <p class="firma">Leslie Dickinson · {% translate "Ingeniería en Computación, ITAM" %}</p>
+        </div>
+        <figure class="portada-figura" aria-hidden="true">
+            <svg viewBox="0 0 340 300" fill="none">
+                <path d="M170 40 L90 130 M170 40 L250 130 M90 130 L50 220 M90 130 L130 220 M250 130 L210 220 M250 130 L290 220" stroke="currentColor" stroke-opacity=".35" stroke-width="1.5"></path>
+                <circle cx="170" cy="40" r="22" fill="var(--fondo)" stroke="var(--enlace)" stroke-width="1.8"></circle>
+                <circle cx="90" cy="130" r="18" fill="var(--fondo)" stroke="currentColor" stroke-width="1.2"></circle>
+                <circle cx="250" cy="130" r="18" fill="var(--fondo)" stroke="currentColor" stroke-width="1.2"></circle>
+                <circle cx="50" cy="220" r="14" fill="var(--superficie)" stroke="var(--acento)" stroke-width="1.4"></circle>
+                <circle cx="130" cy="220" r="14" fill="var(--superficie)" stroke="var(--acento)" stroke-width="1.4"></circle>
+                <circle cx="210" cy="220" r="14" fill="var(--superficie)" stroke="var(--acento)" stroke-width="1.4"></circle>
+                <circle cx="290" cy="220" r="14" fill="var(--superficie)" stroke="var(--acento)" stroke-width="1.4"></circle>
+                <text x="170" y="45" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--enlace)">ADF0</text>
+                <text x="90" y="134" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="currentColor">cruzar</text>
+                <text x="250" y="134" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="currentColor">invertir</text>
+                <text x="50" y="224" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--acento)">SEA</text>
+                <text x="130" y="224" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--acento)">NYY</text>
+                <text x="210" y="224" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--acento)">LAD</text>
+                <text x="290" y="224" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--acento)">CHC</text>
+            </svg>
+        </figure>
+    </section>
+
+    <section aria-labelledby="rutas">
+        <h2 id="rutas">{% translate "¿Cuánto tiempo tienes?" %}</h2>
+        <ul class="rutas">
+            <li>
+                <a class="ruta" href="{% url 'documentacion:index' %}">
+                    <span class="ruta-tiempo">{% translate "2 minutos" %}</span>
+                    <span class="ruta-titulo">{% translate "Entender la idea" %}</span>
+                    <span class="ruta-texto">{% translate "Qué es la programación genética y por qué un calendario de béisbol es un problema difícil." %}</span>
+                    <span class="ruta-accion">{% translate "Empezar aquí" %} →</span>
+                </a>
+            </li>
+            <li>
+                <a class="ruta" href="{% url 'tesis:guia' %}">
+                    <span class="ruta-tiempo">{% translate "5 minutos · 5 pasos" %}</span>
+                    <span class="ruta-titulo">{% translate "Probar la herramienta" %}</span>
+                    <span class="ruta-texto">{% translate "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta." %}</span>
+                    <span class="ruta-accion">{% translate "Abrir la guía" %} →</span>
+                </a>
+            </li>
+            <li>
+                <a class="ruta" href="{% url 'documentacion:historico' %}">
+                    <span class="ruta-tiempo">{% translate "Sin prisa" %}</span>
+                    <span class="ruta-titulo">{% translate "Leer la tesis y el código" %}</span>
+                    <span class="ruta-texto">{% translate "El documento original, la bitácora de avances y el repositorio abierto." %}</span>
+                    <span class="ruta-accion">{% translate "Ir a la tesis" %} →</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="confianza" aria-labelledby="estado">
+        <div class="confianza-intro">
+            <h2 id="estado">{% translate "Qué tan confiable es cada parte" %}</h2>
+            <p class="nota">{% translate "Para que sepas qué puedes citar y qué todavía cambia." %}</p>
+        </div>
+        <ul>
+            <li>
+                <span class="estado estado-hecho">{% translate "Final" %}</span>
+                <strong>{% translate "Resultados de la tesis" %}</strong>
+                <p>{% translate "Publicados en 2026. No se modifican." %}</p>
+            </li>
+            <li>
+                <span class="estado estado-curso">{% translate "Preliminar" %}</span>
+                <strong>{% translate "Motor mejorado" %}</strong>
+                <p>{% translate "En pruebas: 31 % menos distancia en 3 corridas." %}</p>
+            </li>
+            <li>
+                <span class="estado estado-planeado">{% translate "En revisión" %}</span>
+                <strong>{% translate "Traducciones" %}</strong>
+                <p>{% translate "Automáticas, incluidas maya y otomí. Puedes corregirlas." %}</p>
+            </li>
+        </ul>
+    </section>
+</div>
+{% endblock %}

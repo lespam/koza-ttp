@@ -1,216 +1,127 @@
-{% load static i18n %}
-{% get_current_language as LANGUAGE_CODE %}{% get_current_language_bidi as LANGUAGE_BIDI %}
-<!DOCTYPE html>
-<html lang="{{ LANGUAGE_CODE }}" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% translate "Programación genética - Planificación de béisbol" %}</title>
-    {% for lang in site_languages %}
-    <link rel="alternate" hreflang="{{ lang.code }}" href="{{ request.scheme }}://{{ request.get_host }}{{ lang.url }}">
-    {% endfor %}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <link rel="stylesheet" href="{% static 'css/aviso.css' %}">
-</head>
-<body>
-    <header>
-        <form class="language-picker" action="{% url 'set_language' %}" method="post">
-            {% csrf_token %}
-            <input name="next" type="hidden" value="{{ request.get_full_path }}">
-            <label for="language-select">🌐 <span class="visually-hidden">{% translate "Idioma" %}</span></label>
-            <select name="language" id="language-select">
-                {% for lang in site_languages %}
-                <option value="{{ lang.code }}" lang="{{ lang.code }}"{% if lang.code == LANGUAGE_CODE %} selected{% endif %}>{{ lang.native }}</option>
-                {% endfor %}
-            </select>
-            <noscript><button type="submit">{% translate "Cambiar" %}</button></noscript>
-        </form>
-        <h1>⚾ {% translate "Programación genética en la planificación de temporadas de béisbol" %}</h1>
-    </header>
-    {% include "compartido/aviso_traduccion.html" %}
+{% extends "documentacion/base.html" %}
+{% load i18n %}
 
-    <div class="container">
+{% block titulo %}{% translate "Demo: calendario y viaje por equipo" %}{% endblock %}
+{% block descripcion %}{% translate "Genera un calendario de béisbol con programación genética y mide cuánto viaja cada equipo." %}{% endblock %}
 
-        <section class="section-content">
-            <h2>👋 {% translate "¡Bienvenido a la aplicación!" %}</h2>
-            <p>{% blocktranslate trimmed %}Este sistema interactivo busca resolver de manera óptima la organización y logística de un calendario para una temporada completa de béisbol. Para lograrlo, implementamos una técnica de inteligencia artificial avanzada inspirada directamente en la evolución natural de las especies.{% endblocktranslate %} 🌿</p>
+{% block contenido %}
+<div class="demo">
+    {% url 'tesis:guia' as guia %}
+    <p class="antetitulo">{% translate "Demo · Viaje justo entre equipos" %}</p>
+    <h1>{% translate "Genera un calendario y" %} <span class="clave">{% translate "mide cuánto viaja cada equipo." %}</span></h1>
+    <p class="entrada">{% blocktranslate trimmed %}La IA (programación genética) busca calendarios donde el viaje sea corto y parejo. ¿Quieres tus propios equipos? Usa la <a href="{{ guia }}">guía de 5 pasos</a>.{% endblocktranslate %}</p>
 
-            <p>{% blocktranslate trimmed %}La <strong>programación genética</strong> consiste en crear, evaluar y modificar soluciones de forma automática a partir de una población inicial de programas. Esto se logra ejecutando operaciones bioinspiradas como la selección natural, el cruzamiento y la mutación. En este entorno, cada programa generado se estructura internamente como un árbol de expresión que representa una solución potencial para nuestro calendario.{% endblocktranslate %}</p>
-
-            <p>{% blocktranslate trimmed %}El algoritmo evalúa continuamente cada árbol mediante un criterio estricto de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar características clave y generar nuevos árboles cada vez más prometedores.{% endblocktranslate %} 📈 {% translate "¡Este proceso se repite en un bucle evolutivo hasta hallar la solución óptima y más eficiente!" %}</p>
+    {% if not configuracion %}
+    <section class="panel" aria-labelledby="sin-config">
+        <h2 id="sin-config">{% translate "Todavía no hay ninguna configuración" %}</h2>
+        <p>{% translate "Para optimizar un calendario, primero registra los equipos, la liga y el torneo, y después crea una configuración." %}</p>
+        <p><a class="boton" href="{% url 'tesis:guia' %}">{% translate "Abrir la guía" %}</a></p>
+    </section>
+    {% else %}
+    <div class="paneles">
+        <section class="panel" aria-labelledby="t-resultado">
+            <h2 id="t-resultado">{% translate "Resultados de optimización" %}</h2>
+            {% if svg_content %}
+                <button type="button" class="miniatura" id="open-modal-trigger" aria-label="{% translate "Ver el árbol en grande" %}">
+                    {% autoescape off %}{{ svg_content }}{% endautoescape %}
+                </button>
+                <p class="nota">{% translate "Haz clic en el árbol para expandir" %}</p>
+                <div class="dato"><span>{% translate "Costo de viaje total:" %}</span><strong>{{ distancia|floatformat:2 }} {{ calendario.torneo.unidad|default:"km" }}</strong></div>
+                <div class="dato"><span>{% translate "Violaciones de reglas:" %}</span><strong>{{ diferencia|floatformat:0 }}</strong></div>
+            {% else %}
+                <p>{% translate "Presiona el botón para ejecutar el motor y ver el árbol del mejor calendario." %}</p>
+            {% endif %}
+            <p class="acciones"><a href="?configuracion={{ configuracion.pk }}&amp;ejecutar=true" class="boton">{% translate "Ejecutar optimización" %}</a></p>
+            <p class="nota">{% translate "Tarda unos segundos." %}</p>
+            <p class="aviso-honesto">{% blocktranslate trimmed %}<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, eso es una ventaja: tienes una línea base y una mejora que puedes medir.{% endblocktranslate %}</p>
         </section>
 
-        {% if not configuracion %}
-        <section class="dashboard-demo">
-            <h2 class="dashboard-title">{% translate "Todavía no hay ninguna configuración" %}</h2>
-            <p>{% translate "Para optimizar un calendario, primero registra los equipos, la liga y el torneo, y después crea una configuración." %}</p>
-            <p><a class="btn-primary-active" href="{% url 'tesis:configuracion_create' %}">{% translate "Crear una configuración" %}</a></p>
-        </section>
-        {% else %}
-        <section class="dashboard-demo">
-            <h2 class="dashboard-title">🛠️ {% blocktranslate trimmed with id=configuracion.id|default:"N/A" %}Panel de control: configuración activa (ID: {{ id }}){% endblocktranslate %}</h2>
-
-            <div class="grid-layout">
-                <div class="panel">
-                    <h3>⚙️ {% translate "Configuración del algoritmo" %}</h3>
-                    <div class="form-group">
-                        <label for="pop-slider">{% translate "Tamaño de la población:" %}</label>
-                        <div class="slider-container">
-                            <input type="range" id="pop-slider" disabled value="{{ configuracion.poblacion|default:0 }}">
-                            <span class="value-box">{{ configuracion.poblacion|default:"0" }}</span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="ngen-slider">{% translate "Número de generaciones:" %}</label>
-                        <div class="slider-container">
-                            <input type="range" id="ngen-slider" disabled value="{{ configuracion.generaciones|default:0 }}">
-                            <span class="value-box">{{ configuracion.generaciones|default:"0" }}</span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="cxpb-slider">{% translate "Probabilidad de cruce:" %}</label>
-                        <div class="slider-container">
-                            <input type="range" id="cxpb-slider" disabled step="0.01" min="0" max="1" value="{{ configuracion.probabilidad_de_cruce|default:0 }}">
-                            <span class="value-box">{{ configuracion.probabilidad_de_cruce|default:"0" }}</span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="mutpb-slider">{% translate "Probabilidad de mutación:" %}</label>
-                        <div class="slider-container">
-                            <input type="range" id="mutpb-slider" disabled step="0.01" min="0" max="1" value="{{ configuracion.probabilidad_de_reproduccion|default:0 }}">
-                            <span class="value-box">{{ configuracion.probabilidad_de_reproduccion|default:"0" }}</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel">
-                    {% translate "Sin torneo" as sin_torneo %}
-                    <h3>📅 {% blocktranslate trimmed with torneo=calendario.torneo.nombre|default:sin_torneo id=calendario.id|default:"N/A" %}Calendario activo: {{ torneo }} (ID: {{ id }}){% endblocktranslate %}</h3>
-                    <div class="table-container">
-                        <table class="mock-table">
-                            <thead>
-                                <tr>
-                                    <th>{% translate "Fecha" %}</th>
-                                    <th>{% translate "Local" %}</th>
-                                    <th>{% translate "Visitante" %}</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for juego in juegos %}
-                                <tr>
-                                    <td>{{ juego.fecha_de_inicio|date:"d/m/Y"|default:juego.fecha_de_inicio }}</td>
-                                    <td>{{ juego.equipo_en_casa.team_abbreviation|default:"EQA" }}</td>
-                                    <td>{{ juego.equipo_visita.team_abbreviation|default:"EQB" }}</td>
-                                </tr>
-                                {% empty %}
-                                <tr>
-                                    <td colspan="3" class="no-data">{% translate "No hay juegos generados para esta configuración." %}</td>
-                                </tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
-                    </div>
-                    <p class="footer-note">📍 {% translate "Mostrando los encuentros del torneo registrados en la base de datos." %}</p>
-                </div>
-
-                <div class="panel">
-                    <h3>🏆 {% translate "Resultados de optimización" %}</h3>
-                    {% if svg_content %}
-                        <div class="svg-miniature" id="open-modal-trigger">
-                            {% autoescape off %}{{ svg_content }}{% endautoescape %}
-                        </div>
-                        <p class="zoom-helper-text">🔍 {% translate "Haz clic en el árbol para expandir" %}</p>
-
-                        <div class="stats-row top-margin">
-                            <span>{% translate "Costo de viaje total:" %}</span>
-                            <strong>{{ distancia|floatformat:2 }} {{ calendario.torneo.unidad|default:"km" }}</strong>
-                        </div>
-                        <div class="stats-row">
-                            <span>{% translate "Violaciones de reglas:" %}</span>
-                            <strong>{{ diferencia|floatformat:0 }}</strong>
-                        </div>
-                    {% else %}
-                        <div class="empty-state-box">
-                            <p>{% translate "Presiona el botón de abajo para activar el algoritmo genético y desplegar el árbol de soluciones sintácticas." %} 🚀</p>
-                        </div>
-                    {% endif %}
-
-                    <a href="?configuracion={{ configuracion.pk }}&amp;ejecutar=true" class="btn-primary-active top-margin">🚀 {% translate "Ejecutar optimización" %}</a>
-                </div>
+        <section class="panel" aria-labelledby="t-calendario">
+            {% translate "Sin torneo" as sin_torneo %}
+            <h2 id="t-calendario">{% blocktranslate trimmed with torneo=calendario.torneo.nombre|default:sin_torneo %}Calendario: {{ torneo }}{% endblocktranslate %}</h2>
+            <div class="tabla-envoltura">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">{% translate "Fecha" %}</th>
+                            <th scope="col">{% translate "Local" %}</th>
+                            <th scope="col">{% translate "Visitante" %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for juego in juegos %}
+                        <tr>
+                            <td>{{ juego.fecha_de_inicio|date:"d/m/Y"|default:juego.fecha_de_inicio }}</td>
+                            <td>{{ juego.equipo_en_casa.team_abbreviation|default:"EQA" }}</td>
+                            <td>{{ juego.equipo_visita.team_abbreviation|default:"EQB" }}</td>
+                        </tr>
+                        {% empty %}
+                        <tr><td colspan="3">{% translate "No hay juegos generados para esta configuración." %}</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
             </div>
         </section>
-        {% endif %}
 
-        <section class="section-content">
-            <h2>📖 {% translate "Guía operativa del sistema" %}</h2>
-
-            <h3>🔹 {% translate "Instrucciones de inicio rápido" %}</h3>
-            <p>{% translate "Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos secuenciales:" %}</p>
-            <ol>
-                <li>{% blocktranslate trimmed %}Crea un equipo, una liga y un torneo respectivo en tus paneles administrativos. <strong>Nota importante:</strong> el número total de equipos participantes debe ser par.{% endblocktranslate %} 👥</li>
-                <li>{% blocktranslate trimmed %}Una vez que tengas definidos los participantes, dirígete al panel de arriba, selecciona tu torneo activo y haz clic en el botón verde <strong>"Ejecutar optimización"</strong> para estructurar el calendario automatizado.{% endblocktranslate %}</li>
-            </ol>
-
-            <h3>⚙️ {% translate "Lógica interna y flujo algorítmico de la IA" %}</h3>
-            <p>{% translate "¿Qué sucede internamente cuando el software se pone en marcha? Aquí te mostramos paso a paso el ciclo de vida evasivo basado en programación genética:" %}</p>
-
-            <h4>{% translate "1. Configuración e hiperparámetros base" %}</h4>
-            <p>{% translate "Se cargan las variables del panel que definirán las generaciones, el tamaño inicial de la población, así como las tasas de probabilidad asociadas al cruce y la mutación genómica." %}</p>
-
-            <h4>{% translate "2. Definición de operadores y bloques estructurales (gramática)" %}</h4>
-            <ul>
-                <li><strong>{% translate "Las primitivas:" %}</strong> {% translate "son las operaciones lógicas que un programa ejecuta para construir el árbol." %}
-                    <ul>
-                        <li><code>crear_juego(fecha, equipo_en_casa, equipo_de_visita, lista) -> lista</code></li>
-                        <li><code>agregar_lista(lista, lista) -> lista</code></li>
-                    </ul>
-                </li>
-                <li><strong>{% translate "Las terminales:" %}</strong> {% translate "representan los datos constantes o variables básicas estructuradas del torneo." %}
-                    <ul>
-                        <li><code>Fecha</code> ({% translate "listas maestros de días hábiles" %})</li>
-                        <li><code>Equipo</code> ({% translate "tanto en condición de casa como de visita" %})</li>
-                        <li><code>Lista</code> ({% translate "inicializador vacío" %})</li>
-                    </ul>
-                </li>
-                <li><strong>{% translate "Las efímeras:" %}</strong> {% translate "son valores aleatorios puros que se introducen en nodos específicos para inyectar variabilidad matemática al sistema." %}
-                    <ul>
-                        <li>{% translate "Fecha aleatoria y equipo aleatorio." %}</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h4>{% translate "3. Inicialización, ciclo evolutivo y convergencia" %}</h4>
-
-            <div class="execution-callout">
-                <strong>📍 {% translate "Fase de ejecución en vivo:" %}</strong> {% blocktranslate trimmed %}El sistema genera una población inicial aleatoria y convierte cada propuesta en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es donde ocurre la magia computacional!{% endblocktranslate %} ✨
-            </div>
-
-            <ol start="3">
-                <li><strong>{% translate "Visualización y muestreo:" %}</strong> {% translate "Se procesa la población inicial y se genera el renderizado de los árboles mediante el generador de sintaxis." %}</li>
-                <li><strong>{% translate "Evaluación de aptitud:" %}</strong> {% blocktranslate trimmed %}Se calcula el valor de <em>fitness</em> de cada individuo en base a la distancia acumulada en kilómetros y el cumplimiento normativo.{% endblocktranslate %}</li>
-                <li><strong>{% translate "Selección natural:" %}</strong> {% translate "Se escogen los mejores individuos de la ronda anterior para actuar como padres biológicos de la nueva generación." %}</li>
-                <li><strong>{% translate "Cruzamiento, mutación y herencia:" %}</strong> {% translate "Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando mutaciones en nodos aleatorios." %}</li>
-                <li><strong>{% translate "Bucle iterativo:" %}</strong> {% translate "Se repiten secuencialmente los pasos de evaluación, selección y reproducción hasta completar el total de generaciones configuradas en la interfaz." %}</li>
-                <li><strong>{% translate "Resultados oficiales:" %}</strong> {% translate "El mejor individuo obtenido en la última iteración se valida y su estructura interna se almacena como el calendario definitivo del torneo de béisbol." %} 🏆🎉</li>
-            </ol>
+        <section class="panel" aria-labelledby="t-config">
+            <h2 id="t-config">{% blocktranslate trimmed with id=configuracion.id %}Configuración {{ id }}{% endblocktranslate %}</h2>
+            <div class="dato"><span>{% translate "Tamaño de la población:" %}</span><strong>{{ configuracion.poblacion|default:"0" }}</strong></div>
+            <div class="dato"><span>{% translate "Número de generaciones:" %}</span><strong>{{ configuracion.generaciones|default:"0" }}</strong></div>
+            <div class="dato"><span>{% translate "Probabilidad de cruce:" %}</span><strong>{{ configuracion.probabilidad_de_cruce|default:"0" }}</strong></div>
+            <div class="dato"><span>{% translate "Probabilidad de mutación:" %}</span><strong>{{ configuracion.probabilidad_de_reproduccion|default:"0" }}</strong></div>
         </section>
-
     </div>
+    {% endif %}
 
-    <div id="svgModal" class="modal">
-        <span class="close-btn" id="close-modal-trigger">&times;</span>
-        <div class="modal-content" id="modal-content-wrapper">
-            <div class="svg-container-full">
-                {% autoescape off %}{{ svg_content }}{% endautoescape %}
-            </div>
+    <section aria-labelledby="t-equipo">
+        <h2 id="t-equipo">{% translate "Para presentarlo a tu equipo" %}</h2>
+        <p class="nota">{% translate "Las respuestas que te van a pedir en clase." %}</p>
+        <ul class="tarjetas-equipo">
+            <li><article>
+                <p class="pregunta">{% translate "¿Dónde está la IA?" %}</p>
+                <h3>{% translate "Programación genética" %}</h3>
+                <p>{% blocktranslate trimmed %}Un calendario es un árbol que evoluciona. El código está en <code>programa_genetico/</code> y usa la biblioteca DEAP.{% endblocktranslate %}</p>
+            </article></li>
+            <li><article>
+                <p class="pregunta">{% translate "¿Qué patrones usa?" %}</p>
+                <h3>MVT, Facade, Template Method</h3>
+                <p>{% blocktranslate trimmed %}Django separa modelo, vista y plantilla. <code>ProgramaFacadeView</code> esconde el motor detrás de una sola entrada.{% endblocktranslate %}</p>
+            </article></li>
+            <li><article>
+                <p class="pregunta">{% translate "¿Cómo lo adapto?" %}</p>
+                <h3>{% translate "Cambia equipos y reglas" %}</h3>
+                <p>{% translate "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar el patrón Strategy para la medida de “viaje justo”." %}</p>
+            </article></li>
+            <li><article>
+                <p class="pregunta">{% translate "¿Puedo usarlo?" %}</p>
+                <h3>{% translate "Sí, con GPL-3.0" %}</h3>
+                <p>{% translate "Puedes modificarlo. Conserva el crédito y cita la tesis." %} <a href="https://github.com/lespam/koza-ttp/blob/main/LICENSE.md">{% translate "Cómo citar" %}</a></p>
+            </article></li>
+        </ul>
+    </section>
+
+    <section class="columnas" aria-label="{% translate "Córrelo y pide ayuda" %}">
+        <div>
+            <h2>{% translate "Córrelo en tu computadora" %}</h2>
+            <pre class="bloque-codigo"><code>git clone https://github.com/lespam/koza-ttp
+cd koza-ttp
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver</code></pre>
         </div>
-    </div>
+        <div>
+            <h2>{% translate "Pídele ayuda a tu asistente de IA" %}</h2>
+            <p>{% translate "Copia esta pregunta y pégala en el asistente que uses, junto con el archivo programa_genetico/programagenetico.py." %}</p>
+            <p class="bloque-codigo">{% translate "Explícame paso a paso cómo este programa genético crea y evalúa un calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea la diferencia entre el equipo que más viaja y el que menos." %}</p>
+            <p class="nota">{% translate "Revisa lo que te responda contra el código. La IA puede equivocarse." %}</p>
+        </div>
+    </section>
+</div>
 
-    <script src="{% static 'js/app.js' %}"></script>
-    <footer>
-        <p> © 2026 Leslie Dickinson | {% translate "Tesis de Ingeniería en Computación" %} | ITAM</p>
-        <p><a href="{% url 'documentacion:index' %}">{% translate "Documentación del proyecto" %}</a></p>
-    </footer>
-</body>
-</html>
+<div id="svgModal" class="modal">
+    <button type="button" class="close-btn" id="close-modal-trigger" aria-label="{% translate "Cerrar" %}">&times;</button>
+    <div class="modal-content" id="modal-content-wrapper">
+        {% autoescape off %}{{ svg_content }}{% endautoescape %}
+    </div>
+</div>
+{% endblock %}

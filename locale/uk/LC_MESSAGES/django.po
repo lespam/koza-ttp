@@ -8,78 +8,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Programación genética - Planificación de béisbol"
-msgstr "Генетичне програмування — планування бейсболу"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
 msgstr "Мова"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
 msgstr "Зміни"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr "Генетичне програмування у плануванні бейсбольного сезону"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "¡Bienvenido a la aplicación!"
-msgstr "Ласкаво просимо до додатку!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Este sistema interactivo busca resolver de manera óptima la organización y "
-"logística de un calendario para una temporada completa de béisbol. Para "
-"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
-"inspirada directamente en la evolución natural de las especies."
-msgstr ""
-"Ця інтерактивна система прагне оптимально вирішити організацію та логістику "
-"календаря для повного бейсбольного сезону. Для цього ми впровадили передову "
-"техніку штучного інтелекту, безпосередньо натхненну природною еволюцією "
-"видів."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"La <strong>programación genética</strong> consiste en crear, evaluar y "
-"modificar soluciones de forma automática a partir de una población inicial "
-"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
-"selección natural, el cruzamiento y la mutación. En este entorno, cada "
-"programa generado se estructura internamente como un árbol de expresión que "
-"representa una solución potencial para nuestro calendario."
-msgstr ""
-"<strong>Генетичне програмування</strong> передбачає автоматичне створення, "
-"оцінку та модифікацію рішень із початкової популяції програм. Це "
-"здійснюється шляхом виконання біоінспірованих операцій, таких як природний "
-"добір, схрещування та мутація. У цьому середовищі кожна згенерована програма"
-" внутрішньо структурована як дерево експресії, яке є потенційним рішенням "
-"для нашого календаря."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
-"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
-"características clave y generar nuevos árboles cada vez más prometedores."
-msgstr ""
-"Алгоритм безперервно оцінює кожне дерево за суворим критерієм якості "
-"(функцією пристосованості <em>) з</em> метою успадкування ключових "
-"характеристик і генерації нових, які стають дедалі перспективнішими."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
-"óptima y más eficiente!"
-msgstr ""
-"Цей процес повторюється в еволюційному циклі, доки не буде знайдено "
-"оптимальне та найефективніше рішення!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr "Панель керування: активні налаштування (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración del algoritmo"
-msgstr "Налаштування алгоритмів"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
@@ -102,10 +36,6 @@ msgid "Sin torneo"
 msgstr "Турнір не проходить"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr "Активний календар: %(torneo)s (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
 msgstr "Дата"
 
@@ -120,10 +50,6 @@ msgstr "У гості"
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
 msgstr "Для цієї конфігурації не генеруються ігри."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr "Показ турнірних матчів, зареєстрованих у базі даних."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
@@ -142,224 +68,8 @@ msgid "Violaciones de reglas:"
 msgstr "Порушення правил:"
 
 #: tesis/templates/tesis/dashboard.html
-msgid ""
-"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
-" árbol de soluciones sintácticas."
-msgstr ""
-"Натисніть кнопку нижче, щоб активувати генетичний алгоритм і відобразити "
-"синтаксичне дерево рішень."
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Оптимізація запуску"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Guía operativa del sistema"
-msgstr "Посібник з експлуатації системи"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Instrucciones de inicio rápido"
-msgstr "Інструкції з швидкого початку"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
-" secuenciales:"
-msgstr ""
-"Щоб почати успішну взаємодію з демо, дотримуйтесь цих послідовних кроків:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Crea un equipo, una liga y un torneo respectivo en tus paneles "
-"administrativos. <strong>Nota importante:</strong> el número total de "
-"equipos participantes debe ser par."
-msgstr ""
-"Створіть команду, лігу та турнір у своїх адміністративних панелях. "
-"<strong>Важлива примітка:</strong> загальна кількість команд-учасників має "
-"бути парною."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
-" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
-" optimización\"</strong> para estructurar el calendario automatizado."
-msgstr ""
-"Після визначення учасників перейдіть до панелі вище, виберіть активний "
-"турнір і натисніть зелену <strong>кнопку «Run Optimization</strong> », щоб "
-"структурувати автоматизований розклад."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr "Внутрішня логіка та алгоритмічний потік ШІ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
-"mostramos paso a paso el ciclo de vida evasivo basado en programación "
-"genética:"
-msgstr ""
-"Що відбувається всередині, коли програмне забезпечення запускається? Ось "
-"покроковий огляд життєвого циклу ухилення на основі генетичного "
-"програмування:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "1. Configuración e hiperparámetros base"
-msgstr "1. Базова конфігурація та гіперпараметри"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se cargan las variables del panel que definirán las generaciones, el tamaño "
-"inicial de la población, así como las tasas de probabilidad asociadas al "
-"cruce y la mutación genómica."
-msgstr ""
-"Панельні змінні, які визначають покоління, початковий розмір популяції, а "
-"також ймовірнісні показники, пов'язані з кросовером і геномною мутацією, "
-"завантажуються."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr "2. Визначення операторів і структурних блоків (граматика)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las primitivas:"
-msgstr "Примітиви:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr "— це логічні операції, які програма виконує для побудови дерева."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las terminales:"
-msgstr "Термінали:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"representan los datos constantes o variables básicas estructuradas del "
-"torneo."
-msgstr "представляють сталі дані або структуровані базові змінні турніру."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "listas maestros de días hábiles"
-msgstr "Основні списки робочих днів"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "tanto en condición de casa como de visita"
-msgstr "І вдома, і на виїзді"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "inicializador vacío"
-msgstr "Порожній ініціалізатор"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las efímeras:"
-msgstr "Ефемерне:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son valores aleatorios puros que se introducen en nodos específicos para "
-"inyectar variabilidad matemática al sistema."
-msgstr ""
-"Це чисті випадкові значення, які подаються в певні вузли, щоб додати "
-"математичної варіативності в систему."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fecha aleatoria y equipo aleatorio."
-msgstr "Випадкове побачення та випадкова команда."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr "3. Ініціалізація, еволюційний цикл і збіжність"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fase de ejecución en vivo:"
-msgstr "Фаза живого виконання:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El sistema genera una población inicial aleatoria y convierte cada propuesta"
-" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
-"donde ocurre la magia computacional!"
-msgstr ""
-"Система генерує випадкову початкову популяцію і перетворює кожну пропозицію "
-"на ієрархічну деревну структуру (<em>синтаксичне дерево</em>). Ось тут і "
-"відбувається обчислювальна магія!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Visualización y muestreo:"
-msgstr "Візуалізація та вибірка:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se procesa la población inicial y se genera el renderizado de los árboles "
-"mediante el generador de sintaxis."
-msgstr ""
-"Початкова популяція обробляється, а дерева рендеряться за допомогою "
-"генератора синтаксису."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Evaluación de aptitud:"
-msgstr "Оцінка здібностей:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
-"distancia acumulada en kilómetros y el cumplimiento normativo."
-msgstr ""
-"<em>Значення придатності</em> кожної особи розраховується на основі сумарної"
-" відстані в кілометрах та відповідності нормативним вимогам."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Selección natural:"
-msgstr "Природний відбір:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se escogen los mejores individuos de la ronda anterior para actuar como "
-"padres biológicos de la nueva generación."
-msgstr ""
-"Найкращі особини з попереднього раунду обираються як біологічні батьки "
-"нового покоління."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Cruzamiento, mutación y herencia:"
-msgstr "Схрещування, мутації та спадковість:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
-" mutaciones en nodos aleatorios."
-msgstr ""
-"Нові особини створюються шляхом змішування гілок помітних дерев і внесення "
-"мутацій у випадкові вузли."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Bucle iterativo:"
-msgstr "Ітеративний цикл:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
-" hasta completar el total de generaciones configuradas en la interfaz."
-msgstr ""
-"Етапи оцінки, вибору та відтворення повторюються послідовно, доки не буде "
-"завершено загальну кількість налаштованих поколінь в інтерфейсі."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Resultados oficiales:"
-msgstr "Офіційні результати:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El mejor individuo obtenido en la última iteración se valida y su estructura"
-" interna se almacena como el calendario definitivo del torneo de béisbol."
-msgstr ""
-"Найкраща особа, отримана в останній ітерації, перевіряється, а її внутрішня "
-"структура зберігається як остаточний розклад бейсбольного турніру."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Tesis de Ingeniería en Computación"
-msgstr "Дипломна робота з комп'ютерної інженерії"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Avances después de la tesis"
@@ -569,10 +279,6 @@ msgstr "Перейти до змісту"
 #: documentacion/templates/documentacion/base.html
 msgid "Histórico"
 msgstr "Історія"
-
-#: documentacion/templates/documentacion/base.html
-msgid "Herramienta"
-msgstr "Інструмент"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
@@ -917,3 +623,544 @@ msgstr ""
 "Сайт доступний %(total)s мовами. Оригінал — мексиканська іспанська. Інші "
 "версії — це автоматичний переклад за допомогою Azure AI Translator, які "
 "можуть містити помилки."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Principal"
+msgstr "Головна"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Guía"
+msgstr "Гід"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Demo"
+msgstr "Демо"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Modo oscuro"
+msgstr "Темний режим"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo: calendario y viaje por equipo"
+msgstr "Демо: Розклад і командні поїздки"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Genera un calendario de béisbol con programación genética y mide cuánto "
+"viaja cada equipo."
+msgstr ""
+"Вона генерує бейсбольний календар із генетичним програмуванням і вимірює, "
+"скільки подорожує кожна команда."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo · Viaje justo entre equipos"
+msgstr "Демо · Чесні переїзди між командами"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Genera un calendario y"
+msgstr "Згенеруйте календар і"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "mide cuánto viaja cada equipo."
+msgstr "Виміряйте, скільки подорожує кожна команда."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La IA (programación genética) busca calendarios donde el viaje sea corto y "
+"parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
+"pasos</a>."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Todavía no hay ninguna configuración"
+msgstr "Налаштування поки що немає."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para optimizar un calendario, primero registra los equipos, la liga y el "
+"torneo, y después crea una configuración."
+msgstr ""
+"Щоб оптимізувати розклад, спочатку запишіть команди, лігу та турнір, а потім"
+" створіть конфігурацію."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Abrir la guía"
+msgstr "Відкрийте гайд"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver el árbol en grande"
+msgstr "Подивись на велике дерево"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón para ejecutar el motor y ver el árbol del mejor "
+"calendario."
+msgstr ""
+"Натисніть кнопку, щоб запустити двигун, і побачити найкраще календарне "
+"дерево."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tarda unos segundos."
+msgstr "Це займає кілька секунд."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al "
+"azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, "
+"eso es una ventaja: tienes una línea base y una mejora que puedes medir."
+msgstr ""
+"<strong>Примітка:</strong> версія дипломної роботи не перевершила випадковий"
+" календар. Новий рушій перевершив це на попередніх тестах. Для шкільного "
+"проєкту це перевага: у вас є базовий рівень і покращення, які можна "
+"виміряти."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario: %(torneo)s"
+msgstr "Розклад: %(torneo)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración %(id)s"
+msgstr "Конфігурація %(id)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Para presentarlo a tu equipo"
+msgstr "Щоб познайомити його з вашою командою"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las respuestas que te van a pedir en clase."
+msgstr "Відповіді, які вас запитуватимуть на заняттях."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Dónde está la IA?"
+msgstr "Де ШІ?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Un calendario es un árbol que evoluciona. El código está en "
+"<code>programa_genetico/</code> y usa la biblioteca DEAP."
+msgstr ""
+"Календар — це дерево, яке еволюціонує. Код знаходиться в "
+"<code>programa_genetico/</code> бібліотеці DEAP і використовує її."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Qué patrones usa?"
+msgstr "Які викрійки ви використовуєте?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Django separa modelo, vista y plantilla. <code>ProgramaFacadeView</code> "
+"esconde el motor detrás de una sola entrada."
+msgstr ""
+"Django розділяє модель, вигляд і шаблон. <code>ProgramaFacadeView</code> Він"
+" приховує рушій за одним входом."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Cómo lo adapto?"
+msgstr "Як мені це адаптувати?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambia equipos y reglas"
+msgstr "Зміна команд і правил"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
+" el patrón Strategy para la medida de “viaje justo”."
+msgstr ""
+"Команди та координати записуються у гіді. Ідея для вашої команди: "
+"використовуйте стратегічний шаблон для показника «справедливої подорожі»."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Puedo usarlo?"
+msgstr "Чи можу я ним скористатися?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sí, con GPL-3.0"
+msgstr "Так, з GPL-3.0"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Puedes modificarlo. Conserva el crédito y cita la tesis."
+msgstr "Ви можете її змінити. Залиште собі кредит і процитуйте тезу."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cómo citar"
+msgstr "Як цитувати"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo y pide ayuda"
+msgstr "Запусти і попроси допомоги"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo en tu computadora"
+msgstr "Запустіть його на комп'ютері"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Pídele ayuda a tu asistente de IA"
+msgstr "Попросіть допомоги у свого AI-асистента"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
+"programa_genetico/programagenetico.py."
+msgstr ""
+"Скопіюйте це питання і вставте його у майстра, який використовуєте, разом із"
+" файлом programa_genetico/programagenetico.py."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Explícame paso a paso cómo este programa genético crea y evalúa un "
+"calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
+" la diferencia entre el equipo que más viaja y el que menos."
+msgstr ""
+"Поясніть мені крок за кроком, як ця генетична програма створює і оцінює "
+"розклад. Потім скажіть, що б ви змінили, щоб міра «справедливої подорожі» "
+"була різницею між командою, яка подорожує найбільше, і тією, що подорожує "
+"найменше."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
+msgstr "Перевірте, що він показує, за кодом. ШІ може помилитися."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cerrar"
+msgstr "Закриття"
+
+#: tesis/templates/tesis/guia/_base.html
+msgid "Paso %(n)s de %(t)s"
+msgstr "Крок %(n)s %(t)s"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "Revisa los campos marcados."
+msgstr "Перевірте позначені поля."
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "obligatorio"
+msgstr "Обов'язковий"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "Pasos de la guía"
+msgstr "Кроки з посібником"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "hecho"
+msgstr "Факт"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "pendiente"
+msgstr "Очікується"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Paso 5: calendario"
+msgstr "Крок 5: Календар"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid ""
+"Genera los juegos del torneo «%(torneo)s». El primer calendario se arma al "
+"azar; después puedes optimizarlo con el algoritmo genético."
+msgstr ""
+"Згенеруйте турнірні ігри «%(torneo)s». Перший розклад складається випадковим"
+" чином; потім ви можете оптимізувати його за допомогою генетичного "
+"алгоритму."
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Volver a generar los juegos"
+msgstr "Перебудова ігор"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Generar los juegos"
+msgstr "Генеруйте ігри"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "se muestran los primeros 50"
+msgstr "Топ-50 показаних"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "¿Y ahora?"
+msgstr "А тепер?"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Abrir este calendario en el panel y optimizarlo"
+msgstr "Відкрийте цей календар у панелі керування та оптимізуйте його"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "(tarda unos 20 segundos)"
+msgstr "(займає близько 20 секунд)"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Ver el detalle del calendario"
+msgstr "Переглянути деталі календаря"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Leer por qué la versión de la tesis no superó a la búsqueda aleatoria"
+msgstr ""
+"Дізнайтеся, чому версія з дипломною роботою не перевершила випадковий пошук"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Paso 4: configuración"
+msgstr "Крок 4: Налаштування"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Estos son los parámetros del algoritmo genético para el torneo."
+msgstr "Це параметри генетичного алгоритму для турніру."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Importante:"
+msgstr "Важливо:"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid ""
+"la versión del motor de la tesis guarda estos valores, pero al optimizar usa"
+" siempre población 100, 20 generaciones, cruce 0.8 y mutación 0.2. La "
+"versión mejorada del motor sí los usará."
+msgstr ""
+"Версія дисертації в движку зберігає ці значення, але при оптимізації завжди "
+"використовує популяції 100, 20 поколінь, кросовер 0.8 і мутацію 0.2. "
+"Покращена версія рушія їх використовуватиме."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Guardar y seguir al paso 5"
+msgstr "Збережіть і продовжуйте крок 5"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Paso 1: equipos"
+msgstr "Крок 1: Команди"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Puedes usar los que ya existen o agregar uno nuevo."
+msgstr "Можна використовувати існуючі або додати новий."
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Ver los últimos equipos registrados"
+msgstr "Перегляньте останні зареєстровані команди"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar un equipo"
+msgstr "Додайте команду"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar equipo"
+msgstr "Додати обладнання"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Seguir al paso 2: liga"
+msgstr "Продовжуйте до Кроку 2: Ліга"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Necesitas al menos 2 equipos para seguir."
+msgstr "Потрібно щонайменше 2 команди, щоб слідувати за ними."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Guía: del registro al calendario"
+msgstr "Посібник: Від реєстрації до календаря"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
+" el algoritmo y generas un calendario de juegos."
+msgstr ""
+"За 5 кроків ви реєструєте команди, створюєте лігу та турнір, обираєте, як "
+"запускати алгоритм, і генеруєте розклад ігор."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
+msgstr ""
+"Команди: зареєструйте щонайменше 2 з місцем розташування їхнього стадіону."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Liga: elige qué equipos juegan juntos."
+msgstr "Ліга: Обирайте, які команди гратимуть разом."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Torneo: define las fechas, las series y los juegos."
+msgstr "Турнір: Визначте дати, серії та ігри."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Configuración: elige los parámetros del algoritmo genético."
+msgstr "Налаштування: Виберіть параметри генетичного алгоритму."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Calendario: genera los juegos y revísalos."
+msgstr "Календар: Генеруйте та переглядайте ігри."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"Lo que crees aquí lo ve cualquier visitante del sitio. No escribas datos "
+"personales."
+msgstr ""
+"Те, що ви створюєте тут, бачить будь-який відвідувач сайту. Не пишіть "
+"особисті дані."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Empezar"
+msgstr "Починайте"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Paso 2: liga"
+msgstr "Крок 2: Зв'язок"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid ""
+"Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
+"equipos: con un número impar, uno se queda sin rival en cada serie."
+msgstr ""
+"Ліга — це група команд, які грають між собою. Використовуйте парну кількість"
+" команд: при непарному числі одна команда залишається без суперника в кожній"
+" серії."
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Guardar y seguir al paso 3"
+msgstr "Збережіть і продовжуйте крок 3"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Paso 3: torneo"
+msgstr "Крок 3: Турнір"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid ""
+"El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
+"lunes a jueves y los sábados, entre el primer y el último día."
+msgstr ""
+"У турнірі беруть участь команди ліги «%(liga)s». Ігри заплановані з "
+"понеділка по четвер і по суботах, між першим і останнім днем."
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Guardar y seguir al paso 4"
+msgstr "Збережіть і продовжуйте крок 4"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Programación genética para calendarios de béisbol"
+msgstr "Генетичне програмування для бейсбольних календарів"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
+"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
+msgstr ""
+"Koza-TTP: Дисертація Леслі Дікінсона (ITAM) про генетичне програмування для "
+"бейсбольних календарів, з чесним результатом і покращеним двигуном."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Tesis ITAM · Programación genética · Béisbol"
+msgstr "Теза ITAM · Генетичне програмування · Бейсбол"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Mi tesis dijo la verdad:"
+msgstr "Моя дисертація говорила правду:"
+
+#: tesis/templates/tesis/inicio.html
+msgid "el algoritmo no le ganó al azar."
+msgstr "Алгоритм не переміг його випадково."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
+"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
+"corrigiendo en público."
+msgstr ""
+"Koza-TTP підхоплює цю тезу, створюючи календарі бейсбольних сезонів із "
+"використанням генетичного програмування. Тут ви побачите, що пішло не так, "
+"чому і як я це виправляю публічно."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ingeniería en Computación, ITAM"
+msgstr "Комп'ютерна інженерія, ITAM"
+
+#: tesis/templates/tesis/inicio.html
+msgid "¿Cuánto tiempo tienes?"
+msgstr "Скільки у тебе часу?"
+
+#: tesis/templates/tesis/inicio.html
+msgid "2 minutos"
+msgstr "2 хвилини"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Entender la idea"
+msgstr "Розуміння ідеї"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Qué es la programación genética y por qué un calendario de béisbol es un "
+"problema difícil."
+msgstr ""
+"Що таке генетичне програмування і чому бейсбольний календар є складною "
+"проблемою."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Empezar aquí"
+msgstr "Почніть тут"
+
+#: tesis/templates/tesis/inicio.html
+msgid "5 minutos · 5 pasos"
+msgstr "5 хвилин · 5 кроків"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Probar la herramienta"
+msgstr "Спробуйте інструмент"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
+msgstr ""
+"Реєструйте команди, створюйте лігу та створюйте власний календар. Без "
+"акаунта."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Sin prisa"
+msgstr "Не поспішай"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Leer la tesis y el código"
+msgstr "Прочитайте дисертацію та код"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"El documento original, la bitácora de avances y el repositorio abierto."
+msgstr "Оригінальний документ, журнал прогресу та відкритий репозиторій."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ir a la tesis"
+msgstr "Перейдіть до дипломної роботи"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Qué tan confiable es cada parte"
+msgstr "Наскільки надійна кожна деталь"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Para que sepas qué puedes citar y qué todavía cambia."
+msgstr "Щоб ви знали, що можна процитувати, а що ще змінюється."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Final"
+msgstr "Фінал"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Resultados de la tesis"
+msgstr "Результати дисертації"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Publicados en 2026. No se modifican."
+msgstr "Опубліковано у 2026 році. Вони не змінюються."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Preliminar"
+msgstr "Попередній огляд"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Motor mejorado"
+msgstr "Покращений двигун"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En pruebas: 31 %% menos distancia en 3 corridas."
+msgstr "У тестах: на 31%% менше дистанції за 3 пробіжки."
+
+#: tesis/templates/tesis/inicio.html
+msgid "En revisión"
+msgstr "Огляд"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Traducciones"
+msgstr "Переклади"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Automáticas, incluidas maya y otomí. Puedes corregirlas."
+msgstr "Автоматично, включаючи Майю та Отомі. Ти можеш їх полагодити."

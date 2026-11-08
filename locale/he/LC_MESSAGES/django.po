@@ -8,75 +8,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Programación genética - Planificación de béisbol"
-msgstr "תכנות גנטי - תכנון בייסבול"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
 msgstr "שפה"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
 msgstr "שינוי"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr "תכנות גנטי בתכנון עונת הבייסבול"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "¡Bienvenido a la aplicación!"
-msgstr "ברוכים הבאים לאפליקציה!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Este sistema interactivo busca resolver de manera óptima la organización y "
-"logística de un calendario para una temporada completa de béisbol. Para "
-"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
-"inspirada directamente en la evolución natural de las especies."
-msgstr ""
-"מערכת אינטראקטיבית זו שואפת לפתור בצורה מיטבית את הארגון והלוגיסטיקה של לוח "
-"שנה לעונת בייסבול מלאה. כדי להשיג זאת, יישמנו טכניקת בינה מלאכותית מתקדמת "
-"בהשראת האבולוציה הטבעית של מינים."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"La <strong>programación genética</strong> consiste en crear, evaluar y "
-"modificar soluciones de forma automática a partir de una población inicial "
-"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
-"selección natural, el cruzamiento y la mutación. En este entorno, cada "
-"programa generado se estructura internamente como un árbol de expresión que "
-"representa una solución potencial para nuestro calendario."
-msgstr ""
-"<strong>תכנות גנטי</strong> כולל יצירה, הערכה ושינוי אוטומטי של פתרונות מתוך"
-" אוכלוסיית תוכניות ראשונית. זה מושג על ידי ביצוע פעולות בהשראת ביולוגיה כגון"
-" ברירה טבעית, הכלאה ומוטציה. בסביבה זו, כל תוכנית שנוצרת בנויה פנימית כעץ "
-"ביטוי שמייצג פתרון פוטנציאלי ללוח השנה שלנו."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
-"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
-"características clave y generar nuevos árboles cada vez más prometedores."
-msgstr ""
-"האלגוריתם מעריך כל עץ באופן רציף באמצעות קריטריון איכות מחמיר ( <em>פונקציית"
-" התאמה) במטרה</em> לרשת מאפיינים מרכזיים וליצור עצים חדשים שמבטיחים יותר "
-"ויותר."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
-"óptima y más eficiente!"
-msgstr ""
-"תהליך זה חוזר על עצמו בלולאה אבולוציונית עד שנמצא הפתרון האופטימלי והיעיל "
-"ביותר!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr "לוח בקרה: הגדרות פעילות (מזהה: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración del algoritmo"
-msgstr "הגדרות אלגוריתם"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
@@ -99,10 +36,6 @@ msgid "Sin torneo"
 msgstr "אין טורניר"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr "לוח שנה פעיל: %(torneo)s (מזהה: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
 msgstr "תאריך"
 
@@ -117,10 +50,6 @@ msgstr "הרחק"
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
 msgstr "אין משחקים שנוצרים עבור ההגדרה הזו."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr "הצגת משחקי הטורניר הרשומים במסד הנתונים."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
@@ -139,216 +68,8 @@ msgid "Violaciones de reglas:"
 msgstr "הפרות כללים:"
 
 #: tesis/templates/tesis/dashboard.html
-msgid ""
-"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
-" árbol de soluciones sintácticas."
-msgstr ""
-"לחץ על הכפתור למטה כדי להפעיל את האלגוריתם הגנטי ולהציג את עץ הפתרונות "
-"התחביריים."
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "אופטימיזציה של הרצות"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Guía operativa del sistema"
-msgstr "מדריך תפעול המערכת"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Instrucciones de inicio rápido"
-msgstr "הוראות התחלה מהירה"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
-" secuenciales:"
-msgstr "כדי להתחיל אינטראקציה מוצלחת עם הדמו, עקבו אחרי השלבים הרציפים הבאים:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Crea un equipo, una liga y un torneo respectivo en tus paneles "
-"administrativos. <strong>Nota importante:</strong> el número total de "
-"equipos participantes debe ser par."
-msgstr ""
-"צרו קבוצה, ליגה וטורניר בפאנלים המנהליים שלכם. <strong>הערה חשובה:</strong> "
-"מספר הקבוצות המשתתפות הכולל חייב להיות זוגי."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
-" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
-" optimización\"</strong> para estructurar el calendario automatizado."
-msgstr ""
-"לאחר שהגדרת את המשתתפים, גש ללוח למעלה, בחר את הטורניר הפעיל שלך ולחץ על "
-"כפתור <strong>הירוק \"הרצת אופטימיזציה\"</strong> כדי לבנות את לוח הזמנים "
-"האוטומטי."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr "לוגיקה פנימית וזרימה אלגוריתמית של בינה מלאכותית"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
-"mostramos paso a paso el ciclo de vida evasivo basado en programación "
-"genética:"
-msgstr ""
-"מה קורה פנימית כאשר התוכנה עולה לאוויר? הנה מבט שלב אחר שלב על מחזור החיים "
-"התחמק המבוסס על תכנות גנטי:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "1. Configuración e hiperparámetros base"
-msgstr "1. תצורת בסיס והיפרפרמטרים"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se cargan las variables del panel que definirán las generaciones, el tamaño "
-"inicial de la población, así como las tasas de probabilidad asociadas al "
-"cruce y la mutación genómica."
-msgstr ""
-"משתני פאנל שיגדרו דורות, גודל האוכלוסייה ההתחלתי, וכן שיעורי הסתברות הקשורים"
-" לקרוסאובר ומוטציה גנומית טעונים."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr "2. הגדרת אופרטורים ובלוקים מבניים (דקדוק)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las primitivas:"
-msgstr "הפרימיטיבים:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr "הן הפעולות הלוגיות שתוכנית מבצעת כדי לבנות את העץ."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las terminales:"
-msgstr "המסופים:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"representan los datos constantes o variables básicas estructuradas del "
-"torneo."
-msgstr "מייצגים נתונים קבועים או משתנים בסיסיים מובנים של הטורניר."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "listas maestros de días hábiles"
-msgstr "רשימות ראשי של ימי עבודה"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "tanto en condición de casa como de visita"
-msgstr "גם בבית וגם בחוץ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "inicializador vacío"
-msgstr "מאתחל ריק"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las efímeras:"
-msgstr "החולף:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son valores aleatorios puros que se introducen en nodos específicos para "
-"inyectar variabilidad matemática al sistema."
-msgstr ""
-"אלה ערכים אקראיים טהורים שמוזנים לצמתים ספציפיים כדי להכניס שונות מתמטית "
-"למערכת."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fecha aleatoria y equipo aleatorio."
-msgstr "תאריך אקראי וקבוצה אקראית."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr "3. אתחול, מחזור אבולוציוני והתכנסות"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fase de ejecución en vivo:"
-msgstr "שלב ביצוע חי:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El sistema genera una población inicial aleatoria y convierte cada propuesta"
-" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
-"donde ocurre la magia computacional!"
-msgstr ""
-"המערכת יוצרת אוכלוסייה התחלתית אקראית וממירה כל הצעה למבנה עץ היררכי (<em>עץ"
-" תחביר</em>). כאן מתרחש הקסם החישובי!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Visualización y muestreo:"
-msgstr "ויזואליזציה ודגימה:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se procesa la población inicial y se genera el renderizado de los árboles "
-"mediante el generador de sintaxis."
-msgstr "האוכלוסייה הראשונית מעובדת והעצים מוצגים באמצעות מחולל התחביר."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Evaluación de aptitud:"
-msgstr "הערכת כישורים:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
-"distancia acumulada en kilómetros y el cumplimiento normativo."
-msgstr ""
-"ערך <em>הכושר</em> של כל אדם מחושב על בסיס מרחק מצטבר בקילומטרים ועמידה "
-"ברגולציה."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Selección natural:"
-msgstr "ברירה טבעית:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se escogen los mejores individuos de la ronda anterior para actuar como "
-"padres biológicos de la nueva generación."
-msgstr ""
-"הפרטים הטובים ביותר מהסבב הקודם נבחרים לשמש כהורים ביולוגיים לדור החדש."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Cruzamiento, mutación y herencia:"
-msgstr "הכלאה, מוטציה וירושה:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
-" mutaciones en nodos aleatorios."
-msgstr ""
-"פרטים חדשים נוצרים על ידי ערבוב ענפים של עצים בולטים ויישום מוטציות בצמתים "
-"אקראיים."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Bucle iterativo:"
-msgstr "לולאה איטרטיבית:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
-" hasta completar el total de generaciones configuradas en la interfaz."
-msgstr ""
-"שלבי ההערכה, הבחירה וההשמעה חוזרים ברצף עד להשלמת מספר הדורות הכולל שהוגדרו "
-"בממשק."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Resultados oficiales:"
-msgstr "תוצאות רשמיות:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El mejor individuo obtenido en la última iteración se valida y su estructura"
-" interna se almacena como el calendario definitivo del torneo de béisbol."
-msgstr ""
-"האדם הטוב ביותר שהושג בגרסה האחרונה מאומת והמבנה הפנימי שלו נשמר כלוח הזמנים"
-" הסופי של טורניר הבייסבול."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Tesis de Ingeniería en Computación"
-msgstr "עבודת גמר בהנדסת מחשבים"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Avances después de la tesis"
@@ -550,10 +271,6 @@ msgstr "דלג לתוכן"
 #: documentacion/templates/documentacion/base.html
 msgid "Histórico"
 msgstr "היסטוריה"
-
-#: documentacion/templates/documentacion/base.html
-msgid "Herramienta"
-msgstr "כלי"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
@@ -883,3 +600,527 @@ msgid ""
 msgstr ""
 "האתר מוצע בשפות %(total)s . המקור הוא ספרדית מקסיקנית. הגרסאות האחרות הן "
 "תרגומים אוטומטיים עם Azure AI Translator ועלולות להכיל שגיאות."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Principal"
+msgstr "ראשי"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Guía"
+msgstr "מדריך"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Demo"
+msgstr "הדגמה"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Modo oscuro"
+msgstr "מצב אפל"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo: calendario y viaje por equipo"
+msgstr "דמו: לוח זמנים ונסיעות קבוצתיות"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Genera un calendario de béisbol con programación genética y mide cuánto "
+"viaja cada equipo."
+msgstr "הוא יוצר לוח שנה של בייסבול עם תכנות גנטי ומודד כמה כל קבוצה נוסעת."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo · Viaje justo entre equipos"
+msgstr "הדגמה · נסיעה הוגנת בין קבוצות"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Genera un calendario y"
+msgstr "יצירת לוח שנה ו"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "mide cuánto viaja cada equipo."
+msgstr "מדוד כמה כל קבוצה נוסעת."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La IA (programación genética) busca calendarios donde el viaje sea corto y "
+"parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
+"pasos</a>."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Todavía no hay ninguna configuración"
+msgstr "עדיין אין קונפיגורציה"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para optimizar un calendario, primero registra los equipos, la liga y el "
+"torneo, y después crea una configuración."
+msgstr ""
+"כדי לייעל לוח זמנים, תחילה להקליט את הקבוצות, הליגה והטורניר, ואז ליצור "
+"תצורה."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Abrir la guía"
+msgstr "פתח את המדריך"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver el árbol en grande"
+msgstr "ראו את העץ בגדול"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón para ejecutar el motor y ver el árbol del mejor "
+"calendario."
+msgstr "לחץ על הכפתור כדי להפעיל את המנוע וראה את עץ לוח השנה הטוב ביותר."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tarda unos segundos."
+msgstr "זה לוקח כמה שניות."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al "
+"azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, "
+"eso es una ventaja: tienes una línea base y una mejora que puedes medir."
+msgstr ""
+"<strong>הערה:</strong> גרסת התזה לא ניצחה לוח שנה אקראי. המנוע החדש כן, "
+"במבחנים ראשוניים. עבור פרויקט בית ספר, זה יתרון: יש לך קו בסיס ושיפור שאתה "
+"יכול למדוד."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario: %(torneo)s"
+msgstr "לוח זמנים: %(torneo)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración %(id)s"
+msgstr "%(id)s תצורה"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Para presentarlo a tu equipo"
+msgstr "כדי להציג את זה לצוות שלך"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las respuestas que te van a pedir en clase."
+msgstr "התשובות שיבקשו ממך בכיתה."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Dónde está la IA?"
+msgstr "איפה הבינה המלאכותית?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Un calendario es un árbol que evoluciona. El código está en "
+"<code>programa_genetico/</code> y usa la biblioteca DEAP."
+msgstr ""
+"לוח שנה הוא עץ שמתפתח. הקוד נמצא ומשתמש <code>programa_genetico/</code> "
+"בספריית DEAP."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Qué patrones usa?"
+msgstr "באילו דגמים אתה משתמש?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Django separa modelo, vista y plantilla. <code>ProgramaFacadeView</code> "
+"esconde el motor detrás de una sola entrada."
+msgstr ""
+"Django מפריד בין המודל, התצוגה והתבנית. <code>ProgramaFacadeView</code> הוא "
+"מסתיר את המנוע מאחורי קלט יחיד."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Cómo lo adapto?"
+msgstr "איך אני מתאים את זה?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambia equipos y reglas"
+msgstr "החלפת קבוצות וחוקים"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
+" el patrón Strategy para la medida de “viaje justo”."
+msgstr ""
+"הקבוצות והקואורדינטות נרשמות במדריך. רעיון לקבוצה שלך: השתמש בדפוס האסטרטגיה"
+" למדד \"טיול הוגן\"."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Puedo usarlo?"
+msgstr "אפשר להשתמש בו?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sí, con GPL-3.0"
+msgstr "כן, עם GPL-3.0"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Puedes modificarlo. Conserva el crédito y cita la tesis."
+msgstr "אתה יכול לשנות אותו. שמור את הקרדיט וצטט את התזה."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cómo citar"
+msgstr "איך לצטט"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo y pide ayuda"
+msgstr "תריץ את זה ותבקש עזרה"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo en tu computadora"
+msgstr "הרץ את זה על המחשב שלך"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Pídele ayuda a tu asistente de IA"
+msgstr "בקש עזרה מהעוזר ה-AI שלך"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
+"programa_genetico/programagenetico.py."
+msgstr ""
+"העתק את השאלה הזו והדביק אותה לאשף שאתה משתמש בו, יחד עם קובץ "
+"programa_genetico/programagenetico.py."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Explícame paso a paso cómo este programa genético crea y evalúa un "
+"calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
+" la diferencia entre el equipo que más viaja y el que menos."
+msgstr ""
+"הסבר לי שלב אחר שלב איך התוכנית הגנטית הזו יוצרת ומעריכה לוח זמנים. ואז תגיד"
+" לי מה היית משנה כדי שמדד ה\"נסיעה הוגנת\" יהיה ההבדל בין הצוות שנוסע הכי "
+"הרבה לבין זה שנוסע הכי פחות."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
+msgstr "בדוק מה הוא אומר לך מול הקוד. בינה מלאכותית יכולה לטעות."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cerrar"
+msgstr "סגור"
+
+#: tesis/templates/tesis/guia/_base.html
+msgid "Paso %(n)s de %(t)s"
+msgstr "שלב %(n)s %(t)s"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "Revisa los campos marcados."
+msgstr "בדוק את השדות המסומנים."
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "obligatorio"
+msgstr "חובה"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "Pasos de la guía"
+msgstr "שלבי הדרכה"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "hecho"
+msgstr "עובדה"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "pendiente"
+msgstr "ממתין"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Paso 5: calendario"
+msgstr "שלב 5: לוח שנה"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid ""
+"Genera los juegos del torneo «%(torneo)s». El primer calendario se arma al "
+"azar; después puedes optimizarlo con el algoritmo genético."
+msgstr ""
+"יצר את משחקי הטורניר \"%(torneo)s\". לוח הזמנים הראשון מורכב באקראי; ואז "
+"אפשר לאופטם אותו עם האלגוריתם הגנטי."
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Volver a generar los juegos"
+msgstr "בנה מחדש את המשחקים"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Generar los juegos"
+msgstr "ליצור את המשחקים"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "se muestran los primeros 50"
+msgstr "טופ 50 שהוצגו"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "¿Y ahora?"
+msgstr "ועכשיו?"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Abrir este calendario en el panel y optimizarlo"
+msgstr "פתח את לוח השנה הזה בלוח הבקרה ואופטימיזציה"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "(tarda unos 20 segundos)"
+msgstr "(לוקח בערך 20 שניות)"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Ver el detalle del calendario"
+msgstr "הצג פרטי לוח שנה"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Leer por qué la versión de la tesis no superó a la búsqueda aleatoria"
+msgstr "קראו מדוע גרסת התזה לא הצליחה על החיפוש האקראי"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Paso 4: configuración"
+msgstr "שלב 4: הגדרה"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Estos son los parámetros del algoritmo genético para el torneo."
+msgstr "אלו הם הפרמטרים של האלגוריתם הגנטי של הטורניר."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Importante:"
+msgstr "חשוב:"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid ""
+"la versión del motor de la tesis guarda estos valores, pero al optimizar usa"
+" siempre población 100, 20 generaciones, cruce 0.8 y mutación 0.2. La "
+"versión mejorada del motor sí los usará."
+msgstr ""
+"גרסת המנוע של התזה שומרת את הערכים הללו, אך כאשר היא אופטימיזציה היא תמיד "
+"משתמשת באוכלוסייה 100, 20 דורות, קרוסאובר 0.8, ומוטציה 0.2. הגרסה המשופרת של"
+" המנוע תשתמש בהם."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Guardar y seguir al paso 5"
+msgstr "שמור והמשך לשלב 5"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Paso 1: equipos"
+msgstr "שלב 1: קבוצות"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Puedes usar los que ya existen o agregar uno nuevo."
+msgstr "אתה יכול להשתמש בקיימים או להוסיף חדש."
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Ver los últimos equipos registrados"
+msgstr "צפו בקבוצות הרשומות האחרונות"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar un equipo"
+msgstr "הוסף צוות"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar equipo"
+msgstr "הוספת ציוד"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Seguir al paso 2: liga"
+msgstr "המשך לשלב 2: ליגה"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Necesitas al menos 2 equipos para seguir."
+msgstr "אתה צריך לפחות שתי קבוצות לעקוב."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Guía: del registro al calendario"
+msgstr "מדריך: מהרישום ללוח שנה"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
+" el algoritmo y generas un calendario de juegos."
+msgstr ""
+"ב-5 שלבים אתה רושם קבוצות, מקים ליגה וטורניר, בוחר איך להריץ את האלגוריתם "
+"ויוצר לוח משחקים."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
+msgstr "קבוצות: רשמו לפחות 2, עם מיקום האצטדיון שלהם."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Liga: elige qué equipos juegan juntos."
+msgstr "ליגה: בחרו אילו קבוצות משחקות יחד."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Torneo: define las fechas, las series y los juegos."
+msgstr "טורניר: הגדר תאריכים, סדרות ומשחקים."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Configuración: elige los parámetros del algoritmo genético."
+msgstr "הגדרות: בחר את הפרמטרים של האלגוריתם הגנטי."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Calendario: genera los juegos y revísalos."
+msgstr "לוח שנה: ליצור ולבדוק את המשחקים."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"Lo que crees aquí lo ve cualquier visitante del sitio. No escribas datos "
+"personales."
+msgstr "מה שאתה יוצר כאן נראה על ידי כל מבקר באתר. אל תכתוב נתונים אישיים."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Empezar"
+msgstr "תתחילו"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Paso 2: liga"
+msgstr "שלב 2: קשר"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid ""
+"Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
+"equipos: con un número impar, uno se queda sin rival en cada serie."
+msgstr ""
+"ליגה היא קבוצת הקבוצות שמשחקות זו נגד זו. השתמש במספר זוגי של קבוצות: עם "
+"מספר אי-זוגי, אחת נשארת ללא יריבה בכל סדרה."
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Guardar y seguir al paso 3"
+msgstr "שמור והמשך לשלב 3"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Paso 3: torneo"
+msgstr "שלב 3: טורניר"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid ""
+"El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
+"lunes a jueves y los sábados, entre el primer y el último día."
+msgstr ""
+"הטורניר משתמש בקבוצות ליגת \"%(liga)s\". המשחקים מתוכננים מיום שני עד חמישי "
+"ובימי שבת, בין היום הראשון לאחרון."
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Guardar y seguir al paso 4"
+msgstr "שמור והמשך לשלב 4"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Programación genética para calendarios de béisbol"
+msgstr "תכנות גנטי ללוחות שנה של בייסבול"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
+"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
+msgstr ""
+"Koza-TTP: התזה של לסלי דיקינסון (ITAM) על תכנות גנטי ללוחות שנה של בייסבול, "
+"עם תוצאה כנה ומנוע משופר."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Tesis ITAM · Programación genética · Béisbol"
+msgstr "תזת ITAM · תכנות גנטי · בייסבול"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Mi tesis dijo la verdad:"
+msgstr "התזה שלי אמרה את האמת:"
+
+#: tesis/templates/tesis/inicio.html
+msgid "el algoritmo no le ganó al azar."
+msgstr "האלגוריתם לא ניצח אותו באקראי."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
+"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
+"corrigiendo en público."
+msgstr ""
+"Koza-TTP מאמצת את התזה הזו כדי ליצור לוחות שנה לעונת הבייסבול עם תכנות גנטי."
+" כאן תראו מה השתבש, למה, ואיך אני מתקן זאת בפומבי."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ingeniería en Computación, ITAM"
+msgstr "הנדסת מחשבים, ITAM"
+
+#: tesis/templates/tesis/inicio.html
+msgid "¿Cuánto tiempo tienes?"
+msgstr "כמה זמן יש לך?"
+
+#: tesis/templates/tesis/inicio.html
+msgid "2 minutos"
+msgstr "2 דקות"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Entender la idea"
+msgstr "הבנת הרעיון"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Qué es la programación genética y por qué un calendario de béisbol es un "
+"problema difícil."
+msgstr "מהי תכנות גנטי ולמה לוח שנה של בייסבול הוא בעיה קשה."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Empezar aquí"
+msgstr "תתחיל כאן"
+
+#: tesis/templates/tesis/inicio.html
+msgid "5 minutos · 5 pasos"
+msgstr "5 דקות · 5 צעדים"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Probar la herramienta"
+msgstr "נסה את הכלי"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
+msgstr "רשמו קבוצות, בנו ליגה, וצרו לוח שנה משלכם. אין חשבון."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Sin prisa"
+msgstr "אין לחץ"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Leer la tesis y el código"
+msgstr "קרא את התזה והקוד"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"El documento original, la bitácora de avances y el repositorio abierto."
+msgstr "המסמך המקורי, יומן ההתקדמות והמאגר הפתוח."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ir a la tesis"
+msgstr "לך לתזה"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Qué tan confiable es cada parte"
+msgstr "כמה אמין כל חלק"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Para que sepas qué puedes citar y qué todavía cambia."
+msgstr "אז אתה יודע מה אתה יכול לצטט ומה עדיין משתנה."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Final"
+msgstr "גמר"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Resultados de la tesis"
+msgstr "תוצאות התזה"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Publicados en 2026. No se modifican."
+msgstr "פורסם ב-2026. הם לא שונו."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Preliminar"
+msgstr "מקדים"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Motor mejorado"
+msgstr "מנוע משופר"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En pruebas: 31 %% menos distancia en 3 corridas."
+msgstr "במבחנים: 31%% פחות מרחק ב-3 ריצות."
+
+#: tesis/templates/tesis/inicio.html
+msgid "En revisión"
+msgstr "בסקירה"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Traducciones"
+msgstr "תרגומים"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Automáticas, incluidas maya y otomí. Puedes corregirlas."
+msgstr "אוטומטית, כולל מאיה ואוטומי. אתה יכול לתקן אותן."

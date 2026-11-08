@@ -8,78 +8,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Programación genética - Planificación de béisbol"
-msgstr "Geneettinen ohjelmointi – Baseballin suunnittelu"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Idioma"
 msgstr "Kieli"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambiar"
 msgstr "Muutos"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Programación genética en la planificación de temporadas de béisbol"
-msgstr "Geneettinen ohjelmointi baseball-kausisuunnittelussa"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "¡Bienvenido a la aplicación!"
-msgstr "Tervetuloa sovellukseen!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Este sistema interactivo busca resolver de manera óptima la organización y "
-"logística de un calendario para una temporada completa de béisbol. Para "
-"lograrlo, implementamos una técnica de inteligencia artificial avanzada "
-"inspirada directamente en la evolución natural de las especies."
-msgstr ""
-"Tämä interaktiivinen järjestelmä pyrkii optimaalisesti ratkaisemaan "
-"kalenterin järjestelyn ja logistiikan koko baseball-kaudelle. Tämän "
-"saavuttamiseksi otimme käyttöön edistyneen tekoälytekniikan, joka on suoraan"
-" saanut vaikutteita lajien luonnollisesta evoluutiosta."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"La <strong>programación genética</strong> consiste en crear, evaluar y "
-"modificar soluciones de forma automática a partir de una población inicial "
-"de programas. Esto se logra ejecutando operaciones bioinspiradas como la "
-"selección natural, el cruzamiento y la mutación. En este entorno, cada "
-"programa generado se estructura internamente como un árbol de expresión que "
-"representa una solución potencial para nuestro calendario."
-msgstr ""
-"<strong>Geneettinen ohjelmointi</strong> sisältää ratkaisujen automaattisen "
-"luomisen, arvioinnin ja muokkaamisen alkuperäisestä ohjelmapopulaatiosta. "
-"Tämä toteutetaan suorittamalla bioinspiroituja operaatioita, kuten "
-"luonnonvalintaa, risteytystä ja mutaatiota. Tässä ympäristössä jokainen "
-"generoitu ohjelma on sisäisesti rakennettu ilmentymispuuksi, joka edustaa "
-"potentiaalista ratkaisua kalenteriimme."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El algoritmo evalúa continuamente cada árbol mediante un criterio estricto "
-"de calidad (función de aptitud o <em>fitness</em>) con la meta de heredar "
-"características clave y generar nuevos árboles cada vez más prometedores."
-msgstr ""
-"Algoritmi arvioi jatkuvasti jokaista puuta tiukalla laatukriteerillä ( "
-"<em>soveltuvuusfunktio) tavoitteenaan</em> periä keskeiset ominaisuudet ja "
-"tuottaa uusia, lupaavampia puita."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¡Este proceso se repite en un bucle evolutivo hasta hallar la solución "
-"óptima y más eficiente!"
-msgstr ""
-"Tätä prosessia toistetaan evolutiivisessa silmukassa, kunnes löydetään "
-"optimaalinen ja tehokkain ratkaisu!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Panel de control: configuración activa (ID: %(id)s)"
-msgstr "Ohjauspaneeli: Aktiiviset asetukset (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración del algoritmo"
-msgstr "Algoritmiasetukset"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Tamaño de la población:"
@@ -102,10 +36,6 @@ msgid "Sin torneo"
 msgstr "Ei turnausta"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Calendario activo: %(torneo)s (ID: %(id)s)"
-msgstr "Aktiivinen kalenteri: %(torneo)s (ID: %(id)s)"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Fecha"
 msgstr "Päivämäärä"
 
@@ -120,10 +50,6 @@ msgstr "Pois"
 #: tesis/templates/tesis/dashboard.html
 msgid "No hay juegos generados para esta configuración."
 msgstr "Tälle kokoonpanolle ei ole generoitu pelejä."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Mostrando los encuentros del torneo registrados en la base de datos."
-msgstr "Näytetään tietokantaan rekisteröidyt turnausottelut."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Resultados de optimización"
@@ -142,225 +68,8 @@ msgid "Violaciones de reglas:"
 msgstr "Sääntörikkomukset:"
 
 #: tesis/templates/tesis/dashboard.html
-msgid ""
-"Presiona el botón de abajo para activar el algoritmo genético y desplegar el"
-" árbol de soluciones sintácticas."
-msgstr ""
-"Paina alla olevaa painiketta aktivoidaksesi geneettisen algoritmin ja "
-"näyttääksesi syntaktisen ratkaisupuun."
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Suoritusoptimointi"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Guía operativa del sistema"
-msgstr "Järjestelmän käyttöopas"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Instrucciones de inicio rápido"
-msgstr "Pikakäynnistysohjeet"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Para comenzar a interactuar de forma correcta con la demo, sigue estos pasos"
-" secuenciales:"
-msgstr ""
-"Aloittaaksesi onnistuneen vuorovaikutuksen demon kanssa, noudata näitä "
-"peräkkäisiä vaiheita:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Crea un equipo, una liga y un torneo respectivo en tus paneles "
-"administrativos. <strong>Nota importante:</strong> el número total de "
-"equipos participantes debe ser par."
-msgstr ""
-"Luo joukkue, liiga ja turnaus hallintopaneeleihisi. <strong>Tärkeä "
-"huomio:</strong> Osallistuvien joukkueiden kokonaismäärän on oltava tasanda."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Una vez que tengas definidos los participantes, dirígete al panel de arriba,"
-" selecciona tu torneo activo y haz clic en el botón verde <strong>\"Ejecutar"
-" optimización\"</strong> para estructurar el calendario automatizado."
-msgstr ""
-"Kun olet määritellyt osallistujat, mene yllä olevaan paneeliin, valitse "
-"aktiivinen turnaus ja klikkaa vihreää <strong>\"Run Optimization\"</strong> "
-"-painiketta rakentaaksesi automaattisen aikataulun."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Lógica interna y flujo algorítmico de la IA"
-msgstr "Tekoälyn sisäinen logiikka ja algoritminen virtaus"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"¿Qué sucede internamente cuando el software se pone en marcha? Aquí te "
-"mostramos paso a paso el ciclo de vida evasivo basado en programación "
-"genética:"
-msgstr ""
-"Mitä tapahtuu sisäisesti, kun ohjelmisto tulee käyttöön? Tässä on "
-"vaiheittainen katsaus geneettiseen ohjelmointiin perustuvaan "
-"väistöelinkaareen:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "1. Configuración e hiperparámetros base"
-msgstr "1. Peruskonfiguraatio ja hyperparametrit"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se cargan las variables del panel que definirán las generaciones, el tamaño "
-"inicial de la población, así como las tasas de probabilidad asociadas al "
-"cruce y la mutación genómica."
-msgstr ""
-"Paneelimuuttujat, jotka määrittävät sukupolvet, alkuperäisen populaation "
-"koon sekä crossover- ja genomimutaatioiden todennäköisyysprosentit, "
-"ladataan."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "2. Definición de operadores y bloques estructurales (gramática)"
-msgstr "2. Operaattoreiden ja rakenteellisten lohkojen määrittely (kielioppi)"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las primitivas:"
-msgstr "Alkeelliset:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son las operaciones lógicas que un programa ejecuta para construir el árbol."
-msgstr ""
-"ovat loogisia operaatioita, joita ohjelma suorittaa rakentaakseen puun."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las terminales:"
-msgstr "Päätelaitteet:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"representan los datos constantes o variables básicas estructuradas del "
-"torneo."
-msgstr "edustaa turnauksen vakiodataa tai rakenteellisia perusmuuttujia."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "listas maestros de días hábiles"
-msgstr "Työpäivien päälistat"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "tanto en condición de casa como de visita"
-msgstr "Sekä kotona että vieraissa"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "inicializador vacío"
-msgstr "Tyhjä aloitin"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Las efímeras:"
-msgstr "Ohimenevä:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"son valores aleatorios puros que se introducen en nodos específicos para "
-"inyectar variabilidad matemática al sistema."
-msgstr ""
-"Ne ovat puhtaita satunnaisia arvoja, jotka syötetään tiettyihin solmuihin "
-"tuomaan järjestelmään matemaattista vaihtelua."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fecha aleatoria y equipo aleatorio."
-msgstr "Satunnainen treffit ja satunnainen tiimi."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "3. Inicialización, ciclo evolutivo y convergencia"
-msgstr "3. Alustus, evoluutiokierto ja konvergenssi"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Fase de ejecución en vivo:"
-msgstr "Live-toteutusvaihe:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El sistema genera una población inicial aleatoria y convierte cada propuesta"
-" en una estructura jerárquica de árbol (<em>syntax tree</em>). ¡Aquí es "
-"donde ocurre la magia computacional!"
-msgstr ""
-"Järjestelmä generoi satunnaisen alkupopulaation ja muuntaa jokaisen "
-"ehdotuksen hierarkkiseksi puurakenteeksi (<em>syntaksipuu</em>). Tässä "
-"tapahtuu laskennallinen taika!"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Visualización y muestreo:"
-msgstr "Visualisointi ja otanta:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se procesa la población inicial y se genera el renderizado de los árboles "
-"mediante el generador de sintaxis."
-msgstr ""
-"Alkuperäinen populaatio käsitellään ja puut renderöidään "
-"syntaksigeneraattorin avulla."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Evaluación de aptitud:"
-msgstr "Soveltuvuuden arviointi:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se calcula el valor de <em>fitness</em> de cada individuo en base a la "
-"distancia acumulada en kilómetros y el cumplimiento normativo."
-msgstr ""
-"Jokaisen <em>yksilön kunto-arvo</em> lasketaan kumulatiivisen etäisyyden "
-"perusteella kilometreinä ja säädösten noudattamisen perusteella."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Selección natural:"
-msgstr "Luonnonvalinta:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se escogen los mejores individuos de la ronda anterior para actuar como "
-"padres biológicos de la nueva generación."
-msgstr ""
-"Edellisen kierroksen parhaat yksilöt valitaan toimimaan uuden sukupolven "
-"biologisina vanhempina."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Cruzamiento, mutación y herencia:"
-msgstr "Risteytys, mutaatio ja periytyminen:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se crean nuevos individuos mezclando ramas de árboles destacados y aplicando"
-" mutaciones en nodos aleatorios."
-msgstr ""
-"Uusia yksilöitä syntyy sekoittamalla merkittävien puiden oksia ja "
-"soveltamalla mutaatioita satunnaisiin solmuihin."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Bucle iterativo:"
-msgstr "Iteratiivinen silmukka:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Se repiten secuencialmente los pasos de evaluación, selección y reproducción"
-" hasta completar el total de generaciones configuradas en la interfaz."
-msgstr ""
-"Arviointi-, valinta- ja toistovaiheet toistetaan peräkkäin, kunnes "
-"rajapinnassa konfiguroitujen sukupolvien kokonaismäärä on valmis."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Resultados oficiales:"
-msgstr "Viralliset tulokset:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El mejor individuo obtenido en la última iteración se valida y su estructura"
-" interna se almacena como el calendario definitivo del torneo de béisbol."
-msgstr ""
-"Viimeisessä versiossa saatu paras yksilö validoidaan ja sen sisäinen rakenne"
-" tallennetaan lopulliseksi baseball-turnauksen aikatauluksi."
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Tesis de Ingeniería en Computación"
-msgstr "Tietotekniikan opinnäytetyö"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Avances después de la tesis"
@@ -573,10 +282,6 @@ msgstr "Siirry sisältöön"
 #: documentacion/templates/documentacion/base.html
 msgid "Histórico"
 msgstr "Historia"
-
-#: documentacion/templates/documentacion/base.html
-msgid "Herramienta"
-msgstr "Työkalu"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Tesis publicada como Leslie Pamela Brenes Valencia"
@@ -922,3 +627,542 @@ msgstr ""
 "Sivusto on saatavilla %(total)s kielillä. Alkuperäinen on meksikolainen "
 "espanja. Muut versiot ovat automaattisia käännöksiä Azure AI Translatorilla "
 "ja niissä voi olla virheitä."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Principal"
+msgstr "Pääasialliset"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Guía"
+msgstr "Opas"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Demo"
+msgstr "Demo"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Modo oscuro"
+msgstr "Pimeä tila"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo: calendario y viaje por equipo"
+msgstr "Demo: Aikataulu ja joukkueen matkustaminen"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Genera un calendario de béisbol con programación genética y mide cuánto "
+"viaja cada equipo."
+msgstr ""
+"Se luo baseball-kalenterin geneettisellä ohjelmoinnilla ja mittaa, kuinka "
+"paljon kukin joukkue matkustaa."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Demo · Viaje justo entre equipos"
+msgstr "Demo · Reilu matkustaminen joukkueiden välillä"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Genera un calendario y"
+msgstr "Luo kalenteri ja"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "mide cuánto viaja cada equipo."
+msgstr "Mittaa, kuinka paljon kukin joukkue matkustaa."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"La IA (programación genética) busca calendarios donde el viaje sea corto y "
+"parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
+"pasos</a>."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Todavía no hay ninguna configuración"
+msgstr "Ei vielä konfiguraatiota"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para optimizar un calendario, primero registra los equipos, la liga y el "
+"torneo, y después crea una configuración."
+msgstr ""
+"Aikataulun optimoimiseksi tallenna ensin joukkueet, liiga ja turnaus, ja luo"
+" sitten kokoonpano."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Abrir la guía"
+msgstr "Avaa opas"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver el árbol en grande"
+msgstr "Katso puu suuressa muodossa"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Presiona el botón para ejecutar el motor y ver el árbol del mejor "
+"calendario."
+msgstr ""
+"Paina nappia käynnistääksesi moottorin ja nähdäksesi parhaan kalenteripuun."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Tarda unos segundos."
+msgstr "Se vie muutaman sekunnin."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al "
+"azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, "
+"eso es una ventaja: tienes una línea base y una mejora que puedes medir."
+msgstr ""
+"<strong>Huomautus:</strong> opinnäytetyöversio ei voittanut satunnaista "
+"kalenteria. Uusi moottori voitti alustavissa testeissä. Kouluprojektissa se "
+"on etu: sinulla on lähtötaso ja parannus, jonka voit mitata."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Calendario: %(torneo)s"
+msgstr "Aikataulu: %(torneo)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración %(id)s"
+msgstr "Konfiguraatio %(id)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Para presentarlo a tu equipo"
+msgstr "Jotta voit esitellä sen tiimillesi"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Las respuestas que te van a pedir en clase."
+msgstr "Vastaukset, joita sinulta kysytään luokassa."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Dónde está la IA?"
+msgstr "Missä tekoäly on?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Un calendario es un árbol que evoluciona. El código está en "
+"<code>programa_genetico/</code> y usa la biblioteca DEAP."
+msgstr ""
+"Kalenteri on puu, joka kehittyy. Koodi on ja <code>programa_genetico/</code>"
+" käyttää DEAP-kirjastoa."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Qué patrones usa?"
+msgstr "Mitä kaavoja käytät?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Django separa modelo, vista y plantilla. <code>ProgramaFacadeView</code> "
+"esconde el motor detrás de una sola entrada."
+msgstr ""
+"Django erottaa mallin, näkymän ja mallipohjan. "
+"<code>ProgramaFacadeView</code> Se piilottaa moottorin yhden syötteen "
+"taakse."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Cómo lo adapto?"
+msgstr "Miten sopeutan sen?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cambia equipos y reglas"
+msgstr "Vaihda joukkueita ja sääntöjä"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
+" el patrón Strategy para la medida de “viaje justo”."
+msgstr ""
+"Joukkueet ja koordinaatit on kirjattu oppaaseen. Idea tiimillesi: käytä "
+"strategiamallia \"reilun matkan\" mittarina."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "¿Puedo usarlo?"
+msgstr "Voinko käyttää sitä?"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Sí, con GPL-3.0"
+msgstr "Kyllä, GPL-3.0:n kanssa"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Puedes modificarlo. Conserva el crédito y cita la tesis."
+msgstr "Voit muokata sitä. Pidä kunnia ja viittaa väitöskirjaan."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cómo citar"
+msgstr "Miten viitataan"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo y pide ayuda"
+msgstr "Käynnistä se ja pyydä apua"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Córrelo en tu computadora"
+msgstr "Aja se tietokoneellasi"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Pídele ayuda a tu asistente de IA"
+msgstr "Pyydä apua tekoälyavustajaltasi"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
+"programa_genetico/programagenetico.py."
+msgstr ""
+"Kopioi tämä kysymys ja liitä se käyttämääsi velhoon yhdessä "
+"programa_genetico/programagenetico.py-tiedoston kanssa."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Explícame paso a paso cómo este programa genético crea y evalúa un "
+"calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
+" la diferencia entre el equipo que más viaja y el que menos."
+msgstr ""
+"Selitä minulle vaihe vaiheelta, miten tämä geneettinen ohjelma luo ja arvioi"
+" aikataulun. Kerro sitten, mitä muuttaisit niin, että \"reilun "
+"matkustamisen\" mittarina olisi ero sen välillä, mikä tiimi matkustaa eniten"
+" ja se, joka matkustaa vähiten."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
+msgstr "Tarkista, mitä se kertoo koodia vastaan. Tekoäly voi tehdä virheen."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Cerrar"
+msgstr "Sulje"
+
+#: tesis/templates/tesis/guia/_base.html
+msgid "Paso %(n)s de %(t)s"
+msgstr "Vaihe %(n)s %(t)s"
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "Revisa los campos marcados."
+msgstr "Tarkista merkityt kentät."
+
+#: tesis/templates/tesis/guia/_formulario.html
+msgid "obligatorio"
+msgstr "Pakollinen"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "Pasos de la guía"
+msgstr "Opasvaiheet"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "hecho"
+msgstr "Fakta"
+
+#: tesis/templates/tesis/guia/_pasos.html
+msgid "pendiente"
+msgstr "Vireillä"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Paso 5: calendario"
+msgstr "Vaihe 5: Kalenteri"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid ""
+"Genera los juegos del torneo «%(torneo)s». El primer calendario se arma al "
+"azar; después puedes optimizarlo con el algoritmo genético."
+msgstr ""
+"Luo \"%(torneo)s\"-turnauspelit. Ensimmäinen aikataulu laaditaan "
+"satunnaisesti; sitten voit optimoida sen geneettisen algoritmin avulla."
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Volver a generar los juegos"
+msgstr "Rakenna pelit uudelleen"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Generar los juegos"
+msgstr "Luo pelit"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "se muestran los primeros 50"
+msgstr "Top 50 näytetään"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "¿Y ahora?"
+msgstr "Entä nyt?"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Abrir este calendario en el panel y optimizarlo"
+msgstr "Avaa tämä kalenteri kojelaudassa ja optimoi se"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "(tarda unos 20 segundos)"
+msgstr "(kestää noin 20 sekuntia)"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Ver el detalle del calendario"
+msgstr "Katso kalenterin yksityiskohdat"
+
+#: tesis/templates/tesis/guia/calendario.html
+msgid "Leer por qué la versión de la tesis no superó a la búsqueda aleatoria"
+msgstr "Lue, miksi opinnäytetyön versio ei ylittänyt satunnaista hakua"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Paso 4: configuración"
+msgstr "Vaihe 4: Valmistelu"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Estos son los parámetros del algoritmo genético para el torneo."
+msgstr "Nämä ovat turnauksen geneettisen algoritmin parametrit."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Importante:"
+msgstr "Tärkeää:"
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid ""
+"la versión del motor de la tesis guarda estos valores, pero al optimizar usa"
+" siempre población 100, 20 generaciones, cruce 0.8 y mutación 0.2. La "
+"versión mejorada del motor sí los usará."
+msgstr ""
+"Moottoriversio opinnäytetyöstä tallentaa nämä arvot, mutta optimoidessa "
+"käytetään aina populaatioita 100, 20 sukupolvea, crossover 0.8 ja mutaatio "
+"0.2. Moottorin parannettu versio käyttää niitä."
+
+#: tesis/templates/tesis/guia/configuracion.html
+msgid "Guardar y seguir al paso 5"
+msgstr "Tallenna ja jatka vaiheeseen 5"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Paso 1: equipos"
+msgstr "Vaihe 1: Joukkueet"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Puedes usar los que ya existen o agregar uno nuevo."
+msgstr "Voit käyttää olemassa olevia tai lisätä uuden."
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Ver los últimos equipos registrados"
+msgstr "Katso uusimmat rekisteröidyt joukkueet"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar un equipo"
+msgstr "Lisää tiimi"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Agregar equipo"
+msgstr "Lisää laitteita"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Seguir al paso 2: liga"
+msgstr "Jatka vaiheeseen 2: Liiga"
+
+#: tesis/templates/tesis/guia/equipos.html
+msgid "Necesitas al menos 2 equipos para seguir."
+msgstr "Tarvitset vähintään kaksi joukkuetta seuraamaan."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Guía: del registro al calendario"
+msgstr "Opas: Rekisteröitymisestä kalenteriin"
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
+" el algoritmo y generas un calendario de juegos."
+msgstr ""
+"Viiden vaiheen aikana rekisteröit joukkueet, asetat liigan ja turnauksen, "
+"valitset, miten algoritmi ajetaan ja luot peliaikataulun."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
+msgstr ""
+"Joukkueet: rekisteröi vähintään 2 joukkuetta stadionin sijainnin mukaan."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Liga: elige qué equipos juegan juntos."
+msgstr "Liiga: Valitse, mitkä joukkueet pelaavat yhdessä."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Torneo: define las fechas, las series y los juegos."
+msgstr "Turnaus: Määritä päivämäärät, sarjat ja pelit."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Configuración: elige los parámetros del algoritmo genético."
+msgstr "Asetukset: Valitse geneettisen algoritmin parametrit."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Calendario: genera los juegos y revísalos."
+msgstr "Kalenteri: Luo ja tarkista pelit."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid ""
+"Lo que crees aquí lo ve cualquier visitante del sitio. No escribas datos "
+"personales."
+msgstr ""
+"Se, mitä luot täällä, näkee kaikki sivuston kävijät. Älä kirjoita "
+"henkilökohtaisia tietoja."
+
+#: tesis/templates/tesis/guia/inicio.html
+msgid "Empezar"
+msgstr "Aloita"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Paso 2: liga"
+msgstr "Vaihe 2: Sidos"
+
+#: tesis/templates/tesis/guia/liga.html
+msgid ""
+"Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
+"equipos: con un número impar, uno se queda sin rival en cada serie."
+msgstr ""
+"Liiga on joukkueiden ryhmä, joka pelaa toisiaan vastaan. Käytä parillista "
+"määrää joukkueita: parittomalla luvulla jokaisessa sarjassa ei ole "
+"vastustajaa."
+
+#: tesis/templates/tesis/guia/liga.html
+msgid "Guardar y seguir al paso 3"
+msgstr "Tallenna ja jatka vaiheeseen 3"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Paso 3: torneo"
+msgstr "Vaihe 3: Turnaus"
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid ""
+"El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
+"lunes a jueves y los sábados, entre el primer y el último día."
+msgstr ""
+"Turnauksessa pelaavat \"%(liga)s\"-liigan joukkueet. Ottelut ovat "
+"aikataulutettu maanantaista torstaihin ja lauantaisin ensimmäisen ja "
+"viimeisen päivän välille."
+
+#: tesis/templates/tesis/guia/torneo.html
+msgid "Guardar y seguir al paso 4"
+msgstr "Tallenna ja jatka vaiheeseen 4"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Programación genética para calendarios de béisbol"
+msgstr "Geneettinen ohjelmointi baseball-kalentereihin"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
+"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
+msgstr ""
+"Koza-TTP: Leslie Dickinsonin (ITAM) väitöskirja geneettisestä ohjelmoinnista"
+" baseball-kalentereille, rehellisen tuloksen ja parannettu moottorin "
+"ansiosta."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Tesis ITAM · Programación genética · Béisbol"
+msgstr "ITAM-opinnäytetyö · Geneettinen ohjelmointi · Baseball"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Mi tesis dijo la verdad:"
+msgstr "Väitöskirjani kertoi totta:"
+
+#: tesis/templates/tesis/inicio.html
+msgid "el algoritmo no le ganó al azar."
+msgstr "Algoritmi ei voittanut häntä sattumanvaraisesti."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
+"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
+"corrigiendo en público."
+msgstr ""
+"Koza-TTP jatkaa tätä teesiä tehdäkseen baseball-kausikalenterit geneettisen "
+"ohjelmoinnin avulla. Täällä näet, mikä meni pieleen, miksi ja miten korjaan "
+"sitä julkisesti."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ingeniería en Computación, ITAM"
+msgstr "Tietotekniikka, ITAM"
+
+#: tesis/templates/tesis/inicio.html
+msgid "¿Cuánto tiempo tienes?"
+msgstr "Kuinka paljon aikaa sinulla on?"
+
+#: tesis/templates/tesis/inicio.html
+msgid "2 minutos"
+msgstr "2 minuuttia"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Entender la idea"
+msgstr "Idean ymmärtäminen"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Qué es la programación genética y por qué un calendario de béisbol es un "
+"problema difícil."
+msgstr ""
+"Mitä on geneettinen ohjelmointi ja miksi baseball-kalenteri on vaikea "
+"ongelma."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Empezar aquí"
+msgstr "Aloita tästä"
+
+#: tesis/templates/tesis/inicio.html
+msgid "5 minutos · 5 pasos"
+msgstr "5 minuuttia · 5 askelta"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Probar la herramienta"
+msgstr "Kokeile työkalua"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
+msgstr ""
+"Rekisteröi joukkueita, rakenna liiga ja luo oma kalenterisi. Ei tiliä."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Sin prisa"
+msgstr "Ei kiirettä."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Leer la tesis y el código"
+msgstr "Lue väitöskirja ja koodi"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"El documento original, la bitácora de avances y el repositorio abierto."
+msgstr "Alkuperäinen dokumentti, edistymisloki ja avoin tietovarasto."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Ir a la tesis"
+msgstr "Mene opinnäytetyöhön"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Qué tan confiable es cada parte"
+msgstr "Kuinka luotettavia kukin osa on"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Para que sepas qué puedes citar y qué todavía cambia."
+msgstr "Joten tiedät, mitä voit lainata ja mikä silti muuttuu."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Final"
+msgstr "Finaali"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Resultados de la tesis"
+msgstr "Väitöskirjan tulokset"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Publicados en 2026. No se modifican."
+msgstr "Julkaistu vuonna 2026. Niitä ei ole muokattu."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Preliminar"
+msgstr "Esikarsinta"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Motor mejorado"
+msgstr "Parannettu moottori"
+
+#: tesis/templates/tesis/inicio.html
+msgid "En pruebas: 31 %% menos distancia en 3 corridas."
+msgstr "Testeissä: 31 %% vähemmän matkaa kolmella juoksulla."
+
+#: tesis/templates/tesis/inicio.html
+msgid "En revisión"
+msgstr "Arvostelussa"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Traducciones"
+msgstr "Käännökset"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Automáticas, incluidas maya y otomí. Puedes corregirlas."
+msgstr "Automaattinen, mukaan lukien Maya ja Otomí. Voit korjata heidät."
