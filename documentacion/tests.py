@@ -51,17 +51,17 @@ class EscaparPorcentaje(SimpleTestCase):
 class LenguasIndigenas(SimpleTestCase):
     """Maya y otomí: traducción automática con aviso de revisión."""
 
-    def test_aviso_solo_en_lenguas_indigenas(self):
-        for code in ("yua", "otq"):
+    def test_aviso_en_todo_idioma_que_no_es_el_original(self):
+        # T-2: todas las traducciones son automáticas, no solo maya y otomí
+        for code in ("yua", "otq", "en", "pt", "ar"):
             with self.subTest(idioma=code):
                 r = self.client.get(f"/{code}/documentacion/")
                 self.assertEqual(r.status_code, 200)
                 self.assertContains(r, f'lang="{code}"')
                 self.assertContains(r, 'class="aviso-traduccion"')
                 self.assertContains(r, "Enviar una corrección")
-        for url in ("/documentacion/", "/en/documentacion/"):
-            with self.subTest(url=url):
-                self.assertNotContains(self.client.get(url), 'class="aviso-traduccion"')
+        self.assertNotContains(self.client.get("/documentacion/", HTTP_ACCEPT_LANGUAGE="es-MX"),
+                               'class="aviso-traduccion"')
 
     def test_google_acepta_lenguas_que_no_conoce(self):
         # deep-translator no conoce el maya; el comando debe aceptarlo igual
@@ -164,3 +164,42 @@ class UnaSolaCifraDelMotor(TestCase):
     def test_avances_ya_no_dice_sin_resultados(self):
         html = self.client.get("/documentacion/avances/", HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
         self.assertNotIn("Sin resultados todavía", html)
+
+
+class FraseLiteral(TestCase):
+    """T-1: la frase principal es literal y está bien traducida a mano en inglés y portugués."""
+
+    def test_portada_en_cada_idioma(self):
+        casos = {
+            "/": "el algoritmo no fue mejor que elegir calendarios al azar.",
+            "/en/": "the algorithm was not better than choosing schedules at random.",
+            "/pt/": "o algoritmo não foi melhor do que escolher calendários ao acaso.",
+        }
+        for url, frase in casos.items():
+            with self.subTest(url=url):
+                html = self.client.get(url, HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
+                self.assertIn(frase, html)
+                self.assertNotIn("le ganó al azar", html)
+
+
+class TextosDePython(SimpleTestCase):
+    """translate_site también encuentra los textos de formularios y datos en Python."""
+
+    def test_extrae_gettext_de_python(self):
+        from tesis.management.commands.translate_site import Command
+        fuente = 'from django.utils.translation import gettext_lazy as _\nA = _("Nombre del equipo")\nB = len("x")\n'
+        self.assertEqual(Command.python_msgids(fuente), ["Nombre del equipo"])
+
+    def test_incluye_la_guia_y_el_estado_del_motor(self):
+        from tesis.management.commands.translate_site import Command
+        msgids = Command().extract_msgids()
+        self.assertIn("Nombre del equipo", msgids)
+        self.assertIn("Versión de la tesis (2026)", msgids)
+
+
+class BotonDeModo(SimpleTestCase):
+    def test_tiene_los_dos_textos(self):
+        html = self.client.get("/documentacion/", HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
+        self.assertIn('class="tema-a-oscuro"', html)
+        self.assertIn('class="tema-a-claro" hidden', html)
+        self.assertNotIn("aria-pressed", html)

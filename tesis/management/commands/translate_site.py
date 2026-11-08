@@ -130,7 +130,39 @@ class Command(BaseCommand):
                 msgid = ast.literal_eval(match.group(1))
                 location = str(path.relative_to(settings.BASE_DIR)).replace(os.sep, "/")
                 msgids.setdefault(msgid, location)
+        # Textos de Python: _("..."), gettext(...) y gettext_lazy(...) en formularios y datos
+        for path in self.python_paths(Path(settings.BASE_DIR)):
+            location = str(path.relative_to(settings.BASE_DIR)).replace(os.sep, "/")
+            for msgid in self.python_msgids(path.read_text(encoding="utf-8")):
+                msgids.setdefault(msgid, location)
         return msgids
+
+    @staticmethod
+    def python_msgids(source):
+        """Las cadenas literales dentro de _(), gettext() o gettext_lazy()."""
+        nombres = {"_", "gettext", "gettext_lazy", "gettext_noop"}
+        try:
+            arbol = ast.parse(source)
+        except SyntaxError:
+            return []
+        encontrados = []
+        for nodo in ast.walk(arbol):
+            if (isinstance(nodo, ast.Call) and nodo.args
+                    and getattr(nodo.func, "id", getattr(nodo.func, "attr", None)) in nombres
+                    and isinstance(nodo.args[0], ast.Constant) and isinstance(nodo.args[0].value, str)):
+                encontrados.append((nodo.lineno, nodo.args[0].value))
+        return [texto for _linea, texto in sorted(encontrados)]
+
+    @staticmethod
+    def python_paths(base):
+        """Los .py de las apps del sitio (no pruebas, migraciones ni órdenes de consola)."""
+        paths = []
+        for app in ("project", "tesis", "documentacion"):
+            for root, dirs, files in os.walk(base / app):
+                dirs[:] = sorted(d for d in dirs if d not in SKIP_DIRS | {"migrations", "management"})
+                paths.extend(Path(root) / f for f in sorted(files)
+                             if f.endswith(".py") and not f.startswith("test"))
+        return sorted(paths)
 
     @staticmethod
     def template_paths(base):

@@ -10,12 +10,12 @@ MOTOR = {
     "tesis": {
         "nombre": _("Versión de la tesis (2026)"),
         # 19.5 % más distancia que la búsqueda aleatoria (tabla del Histórico)
-        "frente_al_azar": _("19.5\u00a0% más distancia que el azar"),
+        "frente_al_azar": _("19.5\u00a0% más distancia que elegir calendarios al azar"),
         "supera_al_azar": False,
     },
     "mejorado": {
         "nombre": _("Motor por bloques (versión mejorada)"),
-        "frente_al_azar": _("13\u00a0% menos viaje que el azar"),
+        "frente_al_azar": _("13\u00a0% menos viaje que elegir calendarios al azar"),
         "corridas": 3,
         "equipos": 30,
         "supera_al_azar": True,

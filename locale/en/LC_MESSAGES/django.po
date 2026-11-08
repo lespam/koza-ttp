@@ -116,40 +116,12 @@ msgid "Estado"
 msgstr "Status"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Distancia total (30 equipos)"
-msgstr "Total distance (30 teams)"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "¿Supera al azar?"
-msgstr "Does it beat randomly?"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "Tesis (2026)"
-msgstr "Thesis (2026)"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Congelada"
 msgstr "Frozen"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "No"
 msgstr "No"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "Versión mejorada"
-msgstr "Improved version"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En desarrollo"
-msgstr "In development"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "Sin resultados todavía"
-msgstr "No results yet"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "Por medir"
-msgstr "To be measured"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Registro de avances"
@@ -202,19 +174,8 @@ msgid "Diagnóstico del motor"
 msgstr "Engine Diagnostics"
 
 #: documentacion/templates/documentacion/avances.html
-msgid ""
-"Revisión del código para confirmar por qué la PG no supera al azar. El cruce"
-" y la mutación rompen la viabilidad de los calendarios, y los pesos de la "
-"aptitud hacen que los hijos pierdan contra los padres de la generación "
-"inicial."
-msgstr ""
-"Code review to confirm why PG doesn't outperform chance. Crossover and "
-"mutation break the viability of calendars, and the weights of fitness cause "
-"offspring to lose to parents of the initial generation."
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Hecho"
-msgstr "Fact"
+msgstr "Done"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Auditoría de la experiencia"
@@ -631,7 +592,7 @@ msgstr "Demo"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo oscuro"
-msgstr "Dark Mode"
+msgstr "Dark mode"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
@@ -663,6 +624,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"The AI (genetic programming) looks for schedules where travel is short and "
+"even. Do you want your own teams? Use the <a href=\"%(guia)s\">5-step "
+"guide</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -693,16 +657,6 @@ msgstr "Press the button to run the engine and see the best calendar tree."
 #: tesis/templates/tesis/dashboard.html
 msgid "Tarda unos segundos."
 msgstr "It takes a few seconds."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al "
-"azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, "
-"eso es una ventaja: tienes una línea base y una mejora que puedes medir."
-msgstr ""
-"<strong>Note:</strong> the thesis version didn't beat a random calendar. The"
-" new engine did, in preliminary tests. For a school project, that's an "
-"advantage: you have a baseline and an improvement that you can measure."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
@@ -1035,10 +989,6 @@ msgid "Mi tesis dijo la verdad:"
 msgstr "My thesis told the truth:"
 
 #: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no le ganó al azar."
-msgstr "The algorithm did not beat him randomly."
-
-#: tesis/templates/tesis/inicio.html
 msgid ""
 "Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
 "con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
@@ -1136,10 +1086,6 @@ msgid "Motor mejorado"
 msgstr "Improved engine"
 
 #: tesis/templates/tesis/inicio.html
-msgid "En pruebas: 31 %% menos distancia en 3 corridas."
-msgstr "In tests: 31%% less distance in 3 runs."
-
-#: tesis/templates/tesis/inicio.html
 msgid "En revisión"
 msgstr "In Review"
 
@@ -1150,3 +1096,255 @@ msgstr "Translations"
 #: tesis/templates/tesis/inicio.html
 msgid "Automáticas, incluidas maya y otomí. Puedes corregirlas."
 msgstr "Automatic, including Maya and Otomí. You can fix them."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Frente a la búsqueda aleatoria"
+msgstr "Compared with random search"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "¿Es mejor que elegir al azar?"
+msgstr "Is it better than choosing at random?"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En pruebas"
+msgstr "In testing"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
+msgstr "%(resultado)s, in %(corridas)s runs with %(equipos)s teams"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sí, en pruebas preliminares"
+msgstr "Yes, in early tests"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
+" una búsqueda aleatoria que revisa el mismo número de calendarios."
+msgstr ""
+"The demo still uses the thesis version. The improved engine was compared "
+"with a random search that checks the same number of schedules."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "8 de noviembre de 2026"
+msgstr "November 8, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Motor por bloques"
+msgstr "Block engine"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Cada parte del calendario (división, liga e interliga) se arma con bloques "
+"en los que todos juegan contra todos. Así las reglas de MLB se cumplen "
+"siempre. La programación genética elige y ordena los bloques para reducir el"
+" viaje."
+msgstr ""
+"Each part of the schedule (division, league and interleague) is built from "
+"blocks where every team plays every other team. This way the MLB rules are "
+"always met. Genetic programming chooses and orders the blocks to reduce "
+"travel."
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
+"%(equipos)s equipos."
+msgstr ""
+"Early result: %(resultado)s, in %(corridas)s runs with %(equipos)s teams."
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión del código para confirmar por qué la PG no fue mejor que elegir "
+"calendarios al azar. El cruce y la mutación rompen la viabilidad de los "
+"calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
+"los padres de la generación inicial."
+msgstr ""
+"Code review to confirm why GP was not better than choosing schedules at "
+"random. Crossover and mutation make schedules invalid, and the fitness "
+"weights make offspring lose to the parents of the first generation."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Modo claro"
+msgstr "Light mode"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Motor: %(motor_demo)s"
+msgstr "Engine: %(motor_demo)s"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
+"mejor que elegir calendarios al azar."
+msgstr ""
+"<strong>Note:</strong> this demo uses the thesis engine. That engine was not"
+" better than choosing schedules at random."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
+"%(corridas)s corridas. Todavía no está en esta demo."
+msgstr ""
+"The improved engine was better in early tests: %(resultado)s, in "
+"%(corridas)s runs. It is not in this demo yet."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
+"mejora que puedes medir."
+msgstr ""
+"For a school project, this helps: you have a baseline and an improvement you"
+" can measure."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver los resultados de cada versión"
+msgstr "See the results of each version"
+
+#: tesis/templates/tesis/inicio.html
+msgid "el algoritmo no fue mejor que elegir calendarios al azar."
+msgstr "the algorithm was not better than choosing schedules at random."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
+msgstr ""
+"In testing: %(resultado)s, in %(corridas)s runs with %(equipos)s teams."
+
+#: project/estado_motor.py
+msgid "Versión de la tesis (2026)"
+msgstr "Thesis version (2026)"
+
+#: project/estado_motor.py
+msgid "19.5 % más distancia que elegir calendarios al azar"
+msgstr "19.5 % more distance than choosing schedules at random"
+
+#: project/estado_motor.py
+msgid "Motor por bloques (versión mejorada)"
+msgstr "Block engine (improved version)"
+
+#: project/estado_motor.py
+msgid "13 % menos viaje que elegir calendarios al azar"
+msgstr "13 % less travel than choosing schedules at random"
+
+#: tesis/guia.py
+msgid "Abreviatura (por ejemplo, SEA)"
+msgstr "Abbreviation (for example, SEA)"
+
+#: tesis/guia.py
+msgid "Nombre del equipo"
+msgstr "Team name"
+
+#: tesis/guia.py
+msgid "Ciudad"
+msgstr "City"
+
+#: tesis/guia.py
+msgid "Latitud del estadio"
+msgstr "Stadium latitude"
+
+#: tesis/guia.py
+msgid "Longitud del estadio"
+msgstr "Stadium longitude"
+
+#: tesis/guia.py
+msgid "En grados decimales. Ejemplo: 47.59"
+msgstr "In decimal degrees. Example: 47.59"
+
+#: tesis/guia.py
+msgid "En grados decimales. Ejemplo: -122.33"
+msgstr "In decimal degrees. Example: -122.33"
+
+#: tesis/guia.py
+msgid "Equipos de la liga"
+msgstr "League teams"
+
+#: tesis/guia.py
+msgid "Nombre de la liga"
+msgstr "League name"
+
+#: tesis/guia.py
+msgid "Elige al menos 2 equipos."
+msgstr "Choose at least 2 teams."
+
+#: tesis/guia.py
+msgid "Nombre del torneo"
+msgstr "Tournament name"
+
+#: tesis/guia.py
+msgid "Primer día"
+msgstr "First day"
+
+#: tesis/guia.py
+msgid "Último día"
+msgstr "Last day"
+
+#: tesis/guia.py
+msgid "Juegos por serie"
+msgstr "Games per series"
+
+#: tesis/guia.py
+msgid "Series por equipo"
+msgstr "Series per team"
+
+#: tesis/guia.py
+msgid "El último día debe ser igual o posterior al primero."
+msgstr "The last day must be the same as or after the first day."
+
+#: tesis/guia.py
+msgid "Debe ser 1 o más."
+msgstr "Must be 1 or more."
+
+#: tesis/guia.py
+msgid "Nombre de la configuración"
+msgstr "Configuration name"
+
+#: tesis/guia.py
+msgid "Tamaño de la población"
+msgstr "Population size"
+
+#: tesis/guia.py
+msgid "Número de generaciones"
+msgstr "Number of generations"
+
+#: tesis/guia.py
+msgid "Probabilidad de cruce (0 a 1)"
+msgstr "Crossover probability (0 to 1)"
+
+#: tesis/guia.py
+msgid "Probabilidad de mutación (0 a 1)"
+msgstr "Mutation probability (0 to 1)"
+
+#: tesis/guia.py
+msgid "Debe estar entre 0 y 1."
+msgstr "Must be between 0 and 1."
+
+#: tesis/guia.py
+msgid "Equipos"
+msgstr "Teams"
+
+#: tesis/guia.py
+msgid "Liga"
+msgstr "League"
+
+#: tesis/guia.py
+msgid "Torneo"
+msgstr "Tournament"
+
+#: tesis/guia.py
+msgid "Configuración"
+msgstr "Configuration"
+
+#: tesis/guia.py
+msgid "Calendario"
+msgstr "Schedule"
+
+#: tesis/guia.py
+msgid "Primero completa este paso."
+msgstr "First complete this step."
+
+#: tesis/guia.py
+msgid "Equipo agregado."
+msgstr "Team added."
+
+#: tesis/guia.py
+msgid "Juegos generados."
+msgstr "Games generated."
