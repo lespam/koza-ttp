@@ -1,4 +1,4 @@
-from django.test import SimpleTestCase
+from django.test import SimpleTestCase, TestCase
 from django.urls import reverse
 
 
@@ -146,3 +146,21 @@ class IdiomaAutomatico(SimpleTestCase):
                              HTTP_ACCEPT_LANGUAGE="en-US")
         self.assertEqual(r.status_code, 302)
         self.assertEqual(r["Location"], "/en/")
+
+
+class UnaSolaCifraDelMotor(TestCase):
+    """La portada, la demo y los avances dicen lo mismo sobre el motor mejorado."""
+
+    def test_las_tres_paginas_usan_la_misma_cifra(self):
+        from project.estado_motor import MOTOR
+        cifra = str(MOTOR["mejorado"]["frente_al_azar"])
+        for url in ("/", "/demo/", "/documentacion/avances/"):
+            with self.subTest(url=url):
+                html = self.client.get(url, HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
+                self.assertNotIn("31 %", html)
+                if url != "/demo/":  # sin configuración, la demo invita a la guía
+                    self.assertIn(cifra, html)
+
+    def test_avances_ya_no_dice_sin_resultados(self):
+        html = self.client.get("/documentacion/avances/", HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
+        self.assertNotIn("Sin resultados todavía", html)

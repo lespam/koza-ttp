@@ -21,6 +21,7 @@
     <div class="paneles">
         <section class="panel" aria-labelledby="t-resultado">
             <h2 id="t-resultado">{% translate "Resultados de optimización" %}</h2>
+            <p class="etiqueta-motor">{% blocktranslate trimmed with motor_demo=motor.demo.nombre %}Motor: {{ motor_demo }}{% endblocktranslate %}</p>
             {% if svg_content %}
                 <button type="button" class="miniatura" id="open-modal-trigger" aria-label="{% translate "Ver el árbol en grande" %}">
                     {% autoescape off %}{{ svg_content }}{% endautoescape %}
@@ -33,7 +34,14 @@
             {% endif %}
             <p class="acciones"><a href="?configuracion={{ configuracion.pk }}&amp;ejecutar=true" class="boton">{% translate "Ejecutar optimización" %}</a></p>
             <p class="nota">{% translate "Tarda unos segundos." %}</p>
-            <p class="aviso-honesto">{% blocktranslate trimmed %}<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, eso es una ventaja: tienes una línea base y una mejora que puedes medir.{% endblocktranslate %}</p>
+            <div class="aviso-honesto">
+                {% if motor.en_la_demo == "tesis" %}
+                <p>{% blocktranslate trimmed %}<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no le ganó a un calendario al azar.{% endblocktranslate %}</p>
+                <p>{% blocktranslate trimmed with resultado=motor.mejorado.frente_al_azar corridas=motor.mejorado.corridas %}El motor mejorado sí le ganó, en pruebas preliminares: {{ resultado }}, en {{ corridas }} corridas. Todavía no está en esta demo.{% endblocktranslate %}</p>
+                <p>{% translate "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una mejora que puedes medir." %}</p>
+                {% endif %}
+                <p><a href="{% url 'documentacion:avances' %}">{% translate "Ver los resultados de cada versión" %}</a></p>
+            </div>
         </section>
 
         <section class="panel" aria-labelledby="t-calendario">
