@@ -40,7 +40,7 @@ class PaginaDeInicio(TestCase):
     def test_portada(self):
         r = self.client.get("/")
         self.assertEqual(r.status_code, 200)
-        self.assertContains(r, "el algoritmo no le ganó al azar")
+        self.assertContains(r, "el algoritmo no fue mejor que elegir calendarios al azar")
         self.assertContains(r, 'id="boton-tema"')
         for nombre in ("documentacion:index", "tesis:guia", "documentacion:historico"):
             self.assertContains(r, f'href="{reverse(nombre)}"')

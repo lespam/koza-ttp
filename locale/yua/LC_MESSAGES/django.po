@@ -63,40 +63,12 @@ msgid "Estado"
 msgstr "Noj"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Distancia total (30 equipos)"
-msgstr "Distancia total (30 nu'ukulil)"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "¿Supera al azar?"
-msgstr "Ba'ax ku pa'atik u béeytal in k'a'atik."
-
-#: documentacion/templates/documentacion/avances.html
-msgid "Tesis (2026)"
-msgstr "Tesis (2026)"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Congelada"
 msgstr "Congelado"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "No"
 msgstr "Ma'"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "Versión mejorada"
-msgstr "Versión mejorada"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En desarrollo"
-msgstr "Ti' le ma'alo'ob"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "Sin resultados todavía"
-msgstr "Mina'an ya'ala'al máaxo'ob máano'"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "Por medir"
-msgstr "Utia'al u p'iis"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Registro de avances"
@@ -147,17 +119,6 @@ msgstr "Tu xooko'obo'"
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
 msgstr "Diagnóstico u kisbuuts'o'"
-
-#: documentacion/templates/documentacion/avances.html
-msgid ""
-"Revisión del código para confirmar por qué la PG no supera al azar. El cruce"
-" y la mutación rompen la viabilidad de los calendarios, y los pesos de la "
-"aptitud hacen que los hijos pierdan contra los padres de la generación "
-"inicial."
-msgstr ""
-"Revisión código utia'al u confirmar Ba'axten PG ma' supera le azar. Le cruce"
-" yéetel le mutación jaaten viabilidad calendarios, yéetel le pesos fitness "
-"provocan u descendencia K'astal u yúumo'ob le generación inicial."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Hecho"
@@ -713,17 +674,6 @@ msgid "Tarda unos segundos."
 msgstr "Ku xáantal jump'éel segundos."
 
 #: tesis/templates/tesis/dashboard.html
-msgid ""
-"<strong>Ojo:</strong> la versión de la tesis no le ganó a un calendario al "
-"azar. El motor nuevo sí, en pruebas preliminares. Para un proyecto escolar, "
-"eso es una ventaja: tienes una línea base y una mejora que puedes medir."
-msgstr ""
-"<strong>Not:</strong> Le versión tesis ma' úuch ti' jump'éel calendario u "
-"béeytal in k'a'atik. Le túumben kisbuuts'o' tu betaj ti' pruebas "
-"preliminares. Utia'al jump'éel úuchik xooko', lelo' jump'éel ventaja: yaan "
-"ti' jump'éel internet ichil base yéetel jump'éel mejora je'el P'iis."
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "Calendario: %(torneo)s"
 
@@ -1062,10 +1012,6 @@ msgid "Mi tesis dijo la verdad:"
 msgstr "In ts'íibo', tu ya'alaj u jaajil:"
 
 #: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no le ganó al azar."
-msgstr "Le algoritmo ma' ti' le k'a'atik ti' le azar."
-
-#: tesis/templates/tesis/inicio.html
 msgid ""
 "Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
 "con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
@@ -1167,10 +1113,6 @@ msgid "Motor mejorado"
 msgstr "Kisbuuts'o' mejorado"
 
 #: tesis/templates/tesis/inicio.html
-msgid "En pruebas: 31 %% menos distancia en 3 corridas."
-msgstr "Ti' pruebas: 31 ti chúumuk menos distancia ti' 3 corridas."
-
-#: tesis/templates/tesis/inicio.html
 msgid "En revisión"
 msgstr "Tu revisión"
 
@@ -1183,3 +1125,238 @@ msgid "Automáticas, incluidas maya y otomí. Puedes corregirlas."
 msgstr ""
 "Ku ts'o'oksiko'ob, ku páajtal u maaya yéetel otome'. Je'el u páajtal a "
 "wuts'uyinsik."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Frente a la búsqueda aleatoria"
+msgstr ""
+
+#: documentacion/templates/documentacion/avances.html
+msgid "¿Es mejor que elegir al azar?"
+msgstr ""
+
+#: documentacion/templates/documentacion/avances.html
+msgid "En pruebas"
+msgstr ""
+
+#: documentacion/templates/documentacion/avances.html
+msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
+msgstr ""
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Sí, en pruebas preliminares"
+msgstr ""
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
+" una búsqueda aleatoria que revisa el mismo número de calendarios."
+msgstr ""
+
+#: documentacion/templates/documentacion/avances.html
+msgid "8 de noviembre de 2026"
+msgstr ""
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Motor por bloques"
+msgstr ""
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Cada parte del calendario (división, liga e interliga) se arma con bloques "
+"en los que todos juegan contra todos. Así las reglas de MLB se cumplen "
+"siempre. La programación genética elige y ordena los bloques para reducir el"
+" viaje."
+msgstr ""
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
+"%(equipos)s equipos."
+msgstr ""
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Revisión del código para confirmar por qué la PG no fue mejor que elegir "
+"calendarios al azar. El cruce y la mutación rompen la viabilidad de los "
+"calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
+"los padres de la generación inicial."
+msgstr ""
+
+#: documentacion/templates/documentacion/base.html
+msgid "Modo claro"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Motor: %(motor_demo)s"
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
+"mejor que elegir calendarios al azar."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
+"%(corridas)s corridas. Todavía no está en esta demo."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
+"mejora que puedes medir."
+msgstr ""
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver los resultados de cada versión"
+msgstr ""
+
+#: tesis/templates/tesis/inicio.html
+msgid "el algoritmo no fue mejor que elegir calendarios al azar."
+msgstr ""
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
+msgstr ""
+
+#: project/estado_motor.py
+msgid "Versión de la tesis (2026)"
+msgstr ""
+
+#: project/estado_motor.py
+msgid "19.5 % más distancia que elegir calendarios al azar"
+msgstr ""
+
+#: project/estado_motor.py
+msgid "Motor por bloques (versión mejorada)"
+msgstr ""
+
+#: project/estado_motor.py
+msgid "13 % menos viaje que elegir calendarios al azar"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Abreviatura (por ejemplo, SEA)"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Nombre del equipo"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Ciudad"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Latitud del estadio"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Longitud del estadio"
+msgstr ""
+
+#: tesis/guia.py
+msgid "En grados decimales. Ejemplo: 47.59"
+msgstr ""
+
+#: tesis/guia.py
+msgid "En grados decimales. Ejemplo: -122.33"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Equipos de la liga"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Nombre de la liga"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Elige al menos 2 equipos."
+msgstr ""
+
+#: tesis/guia.py
+msgid "Nombre del torneo"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Primer día"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Último día"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Juegos por serie"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Series por equipo"
+msgstr ""
+
+#: tesis/guia.py
+msgid "El último día debe ser igual o posterior al primero."
+msgstr ""
+
+#: tesis/guia.py
+msgid "Debe ser 1 o más."
+msgstr ""
+
+#: tesis/guia.py
+msgid "Nombre de la configuración"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Tamaño de la población"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Número de generaciones"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Probabilidad de cruce (0 a 1)"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Probabilidad de mutación (0 a 1)"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Debe estar entre 0 y 1."
+msgstr ""
+
+#: tesis/guia.py
+msgid "Equipos"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Liga"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Torneo"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Configuración"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Calendario"
+msgstr ""
+
+#: tesis/guia.py
+msgid "Primero completa este paso."
+msgstr ""
+
+#: tesis/guia.py
+msgid "Equipo agregado."
+msgstr ""
+
+#: tesis/guia.py
+msgid "Juegos generados."
+msgstr ""

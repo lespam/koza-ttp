@@ -36,8 +36,8 @@
             <p class="nota">{% translate "Tarda unos segundos." %}</p>
             <div class="aviso-honesto">
                 {% if motor.en_la_demo == "tesis" %}
-                <p>{% blocktranslate trimmed %}<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no le ganó a un calendario al azar.{% endblocktranslate %}</p>
-                <p>{% blocktranslate trimmed with resultado=motor.mejorado.frente_al_azar corridas=motor.mejorado.corridas %}El motor mejorado sí le ganó, en pruebas preliminares: {{ resultado }}, en {{ corridas }} corridas. Todavía no está en esta demo.{% endblocktranslate %}</p>
+                <p>{% blocktranslate trimmed %}<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue mejor que elegir calendarios al azar.{% endblocktranslate %}</p>
+                <p>{% blocktranslate trimmed with resultado=motor.mejorado.frente_al_azar corridas=motor.mejorado.corridas %}El motor mejorado sí fue mejor, en pruebas preliminares: {{ resultado }}, en {{ corridas }} corridas. Todavía no está en esta demo.{% endblocktranslate %}</p>
                 <p>{% translate "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una mejora que puedes medir." %}</p>
                 {% endif %}
                 <p><a href="{% url 'documentacion:avances' %}">{% translate "Ver los resultados de cada versión" %}</a></p>
