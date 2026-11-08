@@ -78,7 +78,7 @@
             <li>
                 <span class="estado estado-curso">{% translate "Preliminar" %}</span>
                 <strong>{% translate "Motor mejorado" %}</strong>
-                <p>{% translate "En pruebas: 31 % menos distancia en 3 corridas." %}</p>
+                <p>{% blocktranslate trimmed with resultado=motor.mejorado.frente_al_azar corridas=motor.mejorado.corridas equipos=motor.mejorado.equipos %}En pruebas: {{ resultado }}, en {{ corridas }} corridas con {{ equipos }} equipos.{% endblocktranslate %}</p>
             </li>
             <li>
                 <span class="estado estado-planeado">{% translate "En revisión" %}</span>

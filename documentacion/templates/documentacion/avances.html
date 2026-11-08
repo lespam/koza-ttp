@@ -19,26 +19,27 @@
                     <tr>
                         <th scope="col">{% translate "Versión" %}</th>
                         <th scope="col">{% translate "Estado" %}</th>
-                        <th scope="col">{% translate "Distancia total (30 equipos)" %}</th>
+                        <th scope="col">{% translate "Frente a la búsqueda aleatoria" %}</th>
                         <th scope="col">{% translate "¿Supera al azar?" %}</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">{% translate "Tesis (2026)" %}</th>
+                        <th scope="row">{{ motor.tesis.nombre }}</th>
                         <td><span class="estado estado-hecho">{% translate "Congelada" %}</span></td>
-                        <td>3,182,738.33 km</td>
+                        <td>{{ motor.tesis.frente_al_azar }}</td>
                         <td>{% translate "No" %}</td>
                     </tr>
                     <tr>
-                        <th scope="row">{% translate "Versión mejorada" %}</th>
-                        <td><span class="estado estado-curso">{% translate "En desarrollo" %}</span></td>
-                        <td>{% translate "Sin resultados todavía" %}</td>
-                        <td>{% translate "Por medir" %}</td>
+                        <th scope="row">{{ motor.mejorado.nombre }}</th>
+                        <td><span class="estado estado-curso">{% translate "En pruebas" %}</span></td>
+                        <td>{% blocktranslate trimmed with resultado=motor.mejorado.frente_al_azar corridas=motor.mejorado.corridas equipos=motor.mejorado.equipos %}{{ resultado }}, en {{ corridas }} corridas con {{ equipos }} equipos{% endblocktranslate %}</td>
+                        <td>{% translate "Sí, en pruebas preliminares" %}</td>
                     </tr>
                 </tbody>
             </table>
         </div>
+        <p class="nota">{% blocktranslate trimmed %}La demo todavía usa la versión de la tesis. El motor mejorado se comparó con una búsqueda aleatoria que revisa el mismo número de calendarios.{% endblocktranslate %}</p>
     </section>
 
     <section aria-labelledby="registro">
@@ -46,6 +47,14 @@
         <p>{% translate "Del más reciente al más antiguo." %}</p>
 
         <ol class="registro">
+            <li>
+                <article aria-labelledby="av-motor-bloques">
+                    <p class="meta"><time datetime="2026-11-08">{% translate "8 de noviembre de 2026" %}</time> · <span class="estado estado-curso">{% translate "En pruebas" %}</span></p>
+                    <h3 id="av-motor-bloques">{% translate "Motor por bloques" %}</h3>
+                    <p>{% blocktranslate trimmed %}Cada parte del calendario (división, liga e interliga) se arma con bloques en los que todos juegan contra todos. Así las reglas de MLB se cumplen siempre. La programación genética elige y ordena los bloques para reducir el viaje.{% endblocktranslate %}</p>
+                    <p>{% blocktranslate trimmed with resultado=motor.mejorado.frente_al_azar corridas=motor.mejorado.corridas equipos=motor.mejorado.equipos %}Resultado preliminar: {{ resultado }}, en {{ corridas }} corridas con {{ equipos }} equipos.{% endblocktranslate %}</p>
+                </article>
+            </li>
             <li>
                 <article aria-labelledby="av-planeado-motor">
                     <p class="meta"><span class="estado estado-planeado">{% translate "Planeado" %}</span></p>

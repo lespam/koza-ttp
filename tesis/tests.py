@@ -74,6 +74,15 @@ class PaginaDeDemo(TestCase):
             r = self.client.get(f"/demo/?configuracion={configuracion.pk}&ejecutar=true")
         self.assertEqual(r.status_code, 200)
 
+    def test_dice_que_motor_usa_y_la_cifra_del_mejorado(self):
+        # IA-8: la demo dice qué motor produjo el resultado y usa la misma cifra que la portada.
+        from project.estado_motor import MOTOR
+        crear_datos_de_ejemplo()
+        r = self.client.get("/demo/")
+        self.assertContains(r, "Motor: Versión de la tesis (2026)")
+        self.assertContains(r, "esta demo usa el motor de la tesis")
+        self.assertContains(r, str(MOTOR["mejorado"]["frente_al_azar"]))
+
     def test_configuracion_inexistente_da_404(self):
         self.assertEqual(self.client.get("/demo/?configuracion=999").status_code, 404)
 
