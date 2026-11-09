@@ -74,7 +74,7 @@
                 <h2 id="t-paso-7">{% translate "La tesis dijo la verdad" %}</h2>
                 <p>{% blocktranslate trimmed with resultado=motor.tesis.frente_al_azar %}El motor de la tesis <strong>no fue mejor</strong> que elegir calendarios al azar: {{ resultado }}.{% endblocktranslate %}</p>
                 <p>{% blocktranslate trimmed with resultado=motor.mejorado.frente_al_azar corridas=motor.mejorado.corridas equipos=motor.mejorado.equipos %}El motor mejorado, por bloques, sí le gana al azar: {{ resultado }}, en pruebas preliminares ({{ corridas }} corridas, {{ equipos }} equipos).{% endblocktranslate %}</p>
-                <p class="acciones"><a class="boton" href="{% url 'tesis:guia' %}">{% translate "Probar la herramienta en 5 pasos" %} →</a></p>
+                <p class="acciones historia-sin-js"><a class="boton" href="{% url 'tesis:guia' %}">{% translate "Probar la herramienta en 5 pasos" %} →</a></p>
             </section>
         </div>
 
@@ -104,6 +104,8 @@
         <button class="boton-secundario" type="button" id="historia-anterior">← {% translate "Anterior" %}</button>
         <span class="nota" id="historia-pista"></span>
         <button class="boton" type="button" id="historia-siguiente">{% translate "Siguiente" %} →</button>
+        {# En el último paso, "Siguiente" se cambia por la invitación a probar la herramienta #}
+        <a class="boton" id="historia-final" href="{% url 'tesis:guia' %}" hidden>{% translate "Probar la herramienta" %} →</a>
     </div>
 </div>
 {{ historia_datos|json_script:"historia-datos" }}

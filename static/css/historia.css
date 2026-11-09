@@ -43,7 +43,8 @@
 .con-js .historia-paso { display: none; margin: 0; }
 .con-js .historia-paso.actual { display: block; }
 .con-js .historia-solo-js { display: block; }
-.historia-navegacion[hidden], .historia-escena[hidden] { display: none; }
+.con-js .historia-sin-js { display: none; }
+.historia-navegacion[hidden], .historia-escena[hidden], .historia-navegacion [hidden] { display: none; }
 
 /* Dibujos */
 .h-reticula { stroke: var(--borde); stroke-width: 1; fill: none; }
@@ -57,6 +58,13 @@
 .h-ruta { fill: none; stroke: var(--acento); stroke-width: 1.8; stroke-opacity: 0.8; }
 .h-aparece { opacity: 0; transform: scale(0.6); transform-box: fill-box; transform-origin: center; transition: opacity 0.35s, transform 0.35s; }
 .h-aparece.visible { opacity: 1; transform: none; }
+.h-estadio.h-aparece { transform: scale(0); transition: opacity 0.3s, transform 0.45s cubic-bezier(0.34, 1.7, 0.64, 1); }
+.h-estadio.h-aparece.visible { transform: none; }
+.h-estadio:hover { stroke-width: 3; }
+.h-pulso { fill: none; stroke: var(--acento); stroke-width: 2; opacity: 0; transform-box: fill-box; transform-origin: center; pointer-events: none; }
+.h-pulso.late { animation: h-pulso 0.9s ease-out 1; }
+@keyframes h-pulso { from { opacity: 0.9; transform: scale(1); } to { opacity: 0; transform: scale(3.2); } }
+.h-etiqueta-fondo { font-family: "Work Sans", system-ui, sans-serif; font-size: 16px; font-weight: 600; paint-order: stroke; stroke: var(--superficie); stroke-width: 5px; stroke-linejoin: round; }
 .h-rama { stroke: var(--borde-fuerte); stroke-width: 2; fill: none; transition: opacity 0.35s; }
 .h-rama.oculta { opacity: 0; }
 .h-nodo rect { fill: var(--superficie); stroke: var(--texto); stroke-width: 1.4; }
