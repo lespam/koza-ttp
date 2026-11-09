@@ -265,3 +265,18 @@ class VistaPreviaAlCompartir(SimpleTestCase):
         self.assertContains(r, 'property="og:image"')
         self.assertContains(r, "img/koza-ttp-compartir.png")
         self.assertContains(r, 'name="twitter:card" content="summary_large_image"')
+
+
+class IconoDeLaPestana(SimpleTestCase):
+    """El ícono que se ve en la pestaña del navegador."""
+
+    def test_paginas_enlazan_el_icono(self):
+        r = self.client.get(reverse("tesis:historia"))
+        self.assertContains(r, 'rel="icon"')
+        self.assertContains(r, "img/icono.svg")
+        self.assertContains(r, 'rel="apple-touch-icon"')
+
+    def test_favicon_ico_lleva_al_icono(self):
+        r = self.client.get("/favicon.ico")
+        self.assertEqual(r.status_code, 301)
+        self.assertTrue(r["Location"].endswith("img/icono-32.png"))
