@@ -233,6 +233,7 @@ class HistoriaPasoAPaso(SimpleTestCase):
         self.assertContains(r, 'id="historia-datos"')
         self.assertEqual(len(r.context["historia_datos"]["estadios"]), 30)
         self.assertContains(r, "historia.js")
+        self.assertContains(r, "historia_mapa.js")
 
     def test_cifras_salen_de_estado_motor(self):
         from project.estado_motor import MOTOR

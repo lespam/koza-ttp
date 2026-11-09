@@ -47,6 +47,8 @@
 
 /* Dibujos */
 .h-reticula { stroke: var(--borde); stroke-width: 1; fill: none; }
+.h-tierra { fill: none; stroke: var(--texto-suave); stroke-width: 1.2; stroke-linejoin: round; }
+.h-estados { fill: none; stroke: var(--borde-fuerte); stroke-width: 0.8; stroke-linejoin: round; }
 .h-estadio { fill: var(--superficie); stroke: var(--texto); stroke-width: 1.5; cursor: pointer; }
 .h-estadio.activo { fill: var(--acento); stroke: var(--acento); }
 .h-estadio:focus { outline: none; }
