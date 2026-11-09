@@ -2,7 +2,7 @@ import datetime
 from unittest import mock
 
 from django.urls import reverse
-from django.test import TestCase
+from django.test import SimpleTestCase, TestCase
 from django.urls import URLPattern
 
 from programa_genetico.programagenetico import ProgramaGenetico
@@ -221,3 +221,26 @@ class GuiaDeCincoPasos(TestCase):
 
     def test_paso_desconocido_vuelve_al_inicio(self):
         self.assertRedirects(self.client.get("/guia/otro/"), "/guia/")
+
+
+class HistoriaPasoAPaso(SimpleTestCase):
+    """La historia "Entender la idea en 2 minutos" (/historia/)."""
+
+    def test_carga_con_los_siete_pasos_y_los_30_estadios(self):
+        r = self.client.get(reverse("tesis:historia"))
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual(r.content.decode().count('class="historia-paso"'), 7)
+        self.assertContains(r, 'id="historia-datos"')
+        self.assertEqual(len(r.context["historia_datos"]["estadios"]), 30)
+        self.assertContains(r, "historia.js")
+
+    def test_cifras_salen_de_estado_motor(self):
+        from project.estado_motor import MOTOR
+        r = self.client.get(reverse("tesis:historia"))
+        self.assertEqual(r.context["historia_datos"]["indice"],
+                         {"tesis": MOTOR["tesis"]["distancia_vs_azar"],
+                          "bloques": MOTOR["mejorado"]["distancia_vs_azar"]})
+
+    def test_portada_enlaza_a_la_historia(self):
+        r = self.client.get(reverse("tesis:inicio"))
+        self.assertContains(r, f'href="{reverse("tesis:historia")}"')
