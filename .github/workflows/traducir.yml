@@ -1,0 +1,51 @@
+name: Traducir
+
+# Traduce los textos nuevos del sitio a todos los idiomas con Azure AI Translator.
+# Se corre a mano (Actions → Traducir → Run workflow). No publica el sitio.
+# Sube el resultado a la rama "traducciones" para revisarlo en un PR antes de unirlo.
+# Necesita los secretos del repositorio AZURE_TRANSLATOR_KEY y AZURE_TRANSLATOR_REGION.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  traducir:
+    runs-on: ubuntu-24.04
+    env:
+      SECRET_KEY: solo-para-traducir
+      DEBUG: "True"
+      AZURE_TRANSLATOR_KEY: ${{ secrets.AZURE_TRANSLATOR_KEY }}
+      AZURE_TRANSLATOR_REGION: ${{ secrets.AZURE_TRANSLATOR_REGION }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Instalar Graphviz (lo necesita pygraphviz)
+        run: sudo apt-get update && sudo apt-get install -y graphviz libgraphviz-dev
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+      - name: Revisar que exista la clave
+        run: |
+          if [ -z "$AZURE_TRANSLATOR_KEY" ]; then
+            echo "::error::Falta el secreto AZURE_TRANSLATOR_KEY (Settings → Secrets and variables → Actions)."
+            exit 1
+          fi
+      - name: Traducir y compilar
+        run: python manage.py translate_site --backend azure
+      - name: Subir a la rama "traducciones"
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898729+github-actions[bot]@users.noreply.github.com"
+          git checkout -B traducciones
+          git add locale
+          if git diff --cached --quiet; then
+            echo "No hay textos nuevos para traducir."
+            exit 0
+          fi
+          git commit -m "Traducciones automáticas de los textos nuevos"
+          git push --force origin traducciones
+          echo "Listo: abre un PR desde la rama traducciones."
