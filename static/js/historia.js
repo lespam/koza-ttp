@@ -116,8 +116,19 @@
         const svg = nuevoSvg(W, H, T.mapa);
         if (window.KOZA_MAPA) {
             // Contorno de los países y fronteras de los estados (historia_mapa.js)
-            el("path", { class: "h-estados", d: window.KOZA_MAPA.estados }, svg);
-            el("path", { class: "h-tierra", d: window.KOZA_MAPA.tierra }, svg);
+            const trazos = [
+                el("path", { class: "h-estados", d: window.KOZA_MAPA.estados, pathLength: 1 }, svg),
+                el("path", { class: "h-tierra", d: window.KOZA_MAPA.tierra, pathLength: 1 }, svg),
+            ];
+            if (aparecer && !quieto) {
+                // El contorno se dibuja primero; después aparecen los estadios.
+                trazos.forEach((t) => {
+                    t.style.strokeDasharray = 1;
+                    t.style.strokeDashoffset = 1;
+                    t.style.transition = "stroke-dashoffset 1.4s ease-in-out";
+                });
+                requestAnimationFrame(() => requestAnimationFrame(() => trazos.forEach((t) => { t.style.strokeDashoffset = 0; })));
+            }
         } else {
             for (let lon = -120; lon <= -70; lon += 10) el("line", { class: "h-reticula", x1: px(lon), x2: px(lon), y1: 10, y2: H - 20 }, svg);
             for (let lat = 25; lat <= 45; lat += 5) el("line", { class: "h-reticula", x1: 20, x2: W - 20, y1: py(lat), y2: py(lat) }, svg);
@@ -138,7 +149,10 @@
                 requestAnimationFrame(() => requestAnimationFrame(() => { ruta.style.strokeDashoffset = 0; }));
             }
         }
-        ESTADIOS.forEach((e, i) => {
+        // Orden de aparición: de oeste a este, como si el mapa se llenara.
+        const orden = ESTADIOS.map((e) => e.lon).sort((a, b) => a - b);
+        let etiquetaElegido = null;
+        ESTADIOS.forEach((e) => {
             const activo = conGira && e.codigo === equipoElegido;
             const c = el("circle", {
                 class: "h-estadio" + (activo ? " activo" : "") + (aparecer ? " h-aparece" : ""),
@@ -146,8 +160,25 @@
                 tabindex: 0, role: "button", "aria-label": `${e.equipo} (${e.codigo})`,
             }, capaPuntos);
             texto("title", {}, `${e.equipo} · ${e.estadio}`, c);
-            if (aparecer) luego(60 + i * 45, () => c.classList.add("visible"));
-            const elegir = () => alElegir(e.codigo);
+            if (aparecer) {
+                const pulso = el("circle", { class: "h-pulso", cx: px(e.lon), cy: py(e.lat), r: 7 }, capaPuntos);
+                capaPuntos.insertBefore(pulso, c);
+                luego(900 + orden.indexOf(e.lon) * 70, () => { c.classList.add("visible"); pulso.classList.add("late"); });
+            }
+            const elegir = () => {
+                if (!conGira) {
+                    // Paso 1: marca el estadio y escribe su nombre junto a él.
+                    capaPuntos.querySelectorAll(".h-estadio.activo").forEach((x) => x.classList.remove("activo"));
+                    c.classList.add("activo");
+                    if (!etiquetaElegido) etiquetaElegido = el("text", { class: "h-etiqueta h-etiqueta-fondo" }, capaPuntos);
+                    const derecha = px(e.lon) < W - 200;
+                    etiquetaElegido.setAttribute("x", px(e.lon) + (derecha ? 14 : -14));
+                    etiquetaElegido.setAttribute("y", py(e.lat) - 12);
+                    etiquetaElegido.setAttribute("text-anchor", derecha ? "start" : "end");
+                    etiquetaElegido.textContent = `${e.equipo} (${e.codigo})`;
+                }
+                alElegir(e.codigo);
+            };
             c.addEventListener("click", elegir);
             c.addEventListener("keydown", (ev) => {
                 if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); elegir(); }
@@ -329,13 +360,13 @@
             correr("tesis");
         },
         resultado() {
-            const svg = nuevoSvg(640, 260, poner(T.barras, { tesis: DATOS.indice.tesis, bloques: DATOS.indice.bloques }));
+            const svg = nuevoSvg(440, 260, poner(T.barras, { tesis: DATOS.indice.tesis, bloques: DATOS.indice.bloques }));
             const filas = [
                 [T.barra_tesis, DATOS.indice.tesis, "h-barra-tesis"],
                 [T.barra_azar, 100, "h-barra-azar"],
                 [T.barra_bloques, DATOS.indice.bloques, "h-barra-bloques"],
             ];
-            const esc = 380 / 125;
+            const esc = 330 / 125;  // viewBox angosto: el texto se lee bien en teléfono
             filas.forEach(([etiqueta, v, clase], i) => {
                 const y = 30 + i * 74;
                 texto("text", { class: "h-rotulo", x: 0, y }, etiqueta, svg);
@@ -362,7 +393,10 @@
         estadoNodo.textContent = "";
         ESCENAS[paso.dataset.escena](paso);
         anterior.disabled = actual === 0;
-        siguiente.disabled = actual === pasos.length - 1;
+        // En el último paso no hay "Siguiente": se ofrece probar la herramienta.
+        const ultimo = actual === pasos.length - 1;
+        siguiente.hidden = ultimo;
+        document.getElementById("historia-final").hidden = !ultimo;
         pista(actual === 0 ? T.teclado : "");
         try { history.replaceState(null, "", "#" + paso.id); } catch (e) { /* sin historial */ }
         if (enfocar) {

@@ -242,6 +242,16 @@ class HistoriaPasoAPaso(SimpleTestCase):
                          {"tesis": MOTOR["tesis"]["distancia_vs_azar"],
                           "bloques": MOTOR["mejorado"]["distancia_vs_azar"]})
 
+    def test_barra_superior_enlaza_a_la_historia(self):
+        r = self.client.get(reverse("documentacion:index"))
+        self.assertContains(r, f'href="{reverse("tesis:historia")}"')
+        r = self.client.get(reverse("tesis:historia"))
+        self.assertContains(r, 'aria-current="page">Cómo funciona')
+
+    def test_ultimo_paso_ofrece_probar_la_herramienta(self):
+        r = self.client.get(reverse("tesis:historia"))
+        self.assertContains(r, 'id="historia-final"')
+
     def test_portada_enlaza_a_la_historia(self):
         r = self.client.get(reverse("tesis:inicio"))
         self.assertContains(r, f'href="{reverse("tesis:historia")}"')
