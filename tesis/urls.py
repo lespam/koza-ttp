@@ -1,5 +1,5 @@
 from django.urls import path
-from . import guia, views
+from . import guia, historia, views
 
 app_name = "tesis"
 
@@ -8,6 +8,9 @@ urlpatterns = [
     path('', views.InicioView.as_view(), name='inicio'),
     # Demo: configuración, calendario y ejecución del motor
     path('demo/', views.DashboardView.as_view(), name='dashboard'),
+
+    # Historia paso a paso: entender la idea en 2 minutos
+    path('historia/', historia.HistoriaView.as_view(), name='historia'),
 
     # Flujo guiado de 5 pasos: del registro al calendario
     path('guia/', guia.GuiaInicioView.as_view(), name='guia'),

@@ -1,0 +1,88 @@
+/* Historia paso a paso (/historia/). Usa los colores de documentacion.css.
+   Sin JavaScript se ve como artículo; con JavaScript (.con-js) se ve un paso a la vez. */
+
+.envoltura.historia { max-width: 76rem; }
+.historia h1 { margin-bottom: 1rem; }
+.historia-indice { list-style: none; display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0; margin: 0 0 1.5rem; }
+.historia-indice li + li { margin-top: 0; }
+.historia-indice a {
+    display: inline-flex; align-items: center; gap: 0.3rem; min-height: 44px; padding: 0.3rem 0.9rem;
+    border: 1px solid var(--borde-fuerte); border-radius: 999px; background: var(--superficie);
+    color: var(--texto); text-decoration: none;
+}
+.historia-indice a:visited { color: var(--texto); }
+.historia-indice a[aria-current="step"] { background: var(--enlace); border-color: var(--enlace); color: var(--superficie); font-weight: 600; }
+.historia-num { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+
+.historia-cuerpo { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 2rem; align-items: start; }
+.historia-pasos { min-width: 0; }
+.historia-paso { margin-bottom: 2.5rem; }
+.historia-paso h2 { margin-top: 0; text-wrap: balance; }
+.historia-paso p { max-width: 60ch; }
+.historia-parte { margin: 0 0 0.4rem; font-weight: 600; color: var(--acento); font-size: 0.95rem; }
+.historia-cifra { font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 600; line-height: 1.1; color: var(--enlace); font-variant-numeric: tabular-nums; margin: 0.5rem 0 0.25rem; }
+.historia-solo-js { display: none; }
+
+.historia-escena { margin: 0; min-width: 0; background: var(--superficie); border: 1px solid var(--borde); border-radius: 10px; padding: 1rem; }
+.historia-escena svg { width: 100%; height: auto; display: block; }
+.historia-lienzo { overflow-x: auto; }
+.historia-controles { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+.historia-controles .boton-secundario[aria-pressed="true"] { background: var(--enlace); color: var(--superficie); }
+.historia-escena .nota { margin: 0.5rem 0 0; }
+
+.historia-tabla { margin: 1.5rem 0; }
+.historia-tabla summary { cursor: pointer; color: var(--enlace); min-height: 44px; display: flex; align-items: center; }
+.historia-desliza { overflow-x: auto; }
+.historia-tabla table { border-collapse: collapse; width: 100%; font-size: 1rem; }
+.historia-tabla th, .historia-tabla td { text-align: start; padding: 0.3rem 0.6rem; border-bottom: 1px solid var(--borde); }
+.historia-tabla caption { text-align: start; }
+
+.historia-navegacion { display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; border-top: 1px solid var(--borde); padding-top: 1rem; }
+
+/* Un paso a la vez */
+.con-js .historia-paso { display: none; margin: 0; }
+.con-js .historia-paso.actual { display: block; }
+.con-js .historia-solo-js { display: block; }
+.historia-navegacion[hidden], .historia-escena[hidden] { display: none; }
+
+/* Dibujos */
+.h-reticula { stroke: var(--borde); stroke-width: 1; fill: none; }
+.h-estadio { fill: var(--superficie); stroke: var(--texto); stroke-width: 1.5; cursor: pointer; }
+.h-estadio.activo { fill: var(--acento); stroke: var(--acento); }
+.h-estadio:focus { outline: none; }
+.h-estadio:focus-visible { stroke: var(--foco); stroke-width: 4; }
+.h-etiqueta { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 14px; fill: var(--texto); pointer-events: none; }
+.h-ruta { fill: none; stroke: var(--acento); stroke-width: 1.8; stroke-opacity: 0.8; }
+.h-aparece { opacity: 0; transform: scale(0.6); transform-box: fill-box; transform-origin: center; transition: opacity 0.35s, transform 0.35s; }
+.h-aparece.visible { opacity: 1; transform: none; }
+.h-rama { stroke: var(--borde-fuerte); stroke-width: 2; fill: none; transition: opacity 0.35s; }
+.h-rama.oculta { opacity: 0; }
+.h-nodo rect { fill: var(--superficie); stroke: var(--texto); stroke-width: 1.4; }
+.h-nodo.hoja rect { fill: var(--destacado); stroke: var(--borde-fuerte); }
+.h-nodo text { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 14px; fill: var(--texto); }
+.h-nodo.marca-a rect { stroke: var(--acento); stroke-width: 3; }
+.h-nodo.marca-b rect { stroke: var(--enlace); stroke-width: 3; }
+.h-nodo.cambio rect { fill: var(--acento); stroke: var(--acento); }
+.h-nodo.cambio text { fill: var(--superficie); }
+.h-rotulo { font-size: 15px; font-weight: 600; fill: var(--texto); }
+.h-rotulo-suave { font-size: 14px; fill: var(--texto-suave); }
+.h-eje { stroke: var(--borde); stroke-width: 1; }
+.h-eje-texto { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 13px; fill: var(--texto-suave); }
+.h-curva { fill: none; stroke: var(--enlace); stroke-width: 3; }
+.h-azar { stroke: var(--acento); stroke-width: 2; stroke-dasharray: 6 5; }
+.h-celda { fill: var(--enlace); transition: fill-opacity 0.4s; }
+.h-barra { transition: width 0.9s ease-out; }
+.h-barra-tesis { fill: var(--acento); }
+.h-barra-azar { fill: var(--borde-fuerte); }
+.h-barra-bloques { fill: var(--hecho-texto); }
+
+@media (max-width: 820px) {
+    .historia-cuerpo { grid-template-columns: 1fr; }
+    .historia-escena { order: -1; }
+}
+@media (max-width: 600px) {
+    .historia-lienzo svg.ancho { min-width: 560px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .historia *, .historia *::before, .historia *::after { transition: none !important; animation: none !important; }
+}

@@ -1,0 +1,111 @@
+{% extends "documentacion/base.html" %}
+{% load i18n static %}
+{% block titulo %}{% translate "Entender la idea en 2 minutos" %}{% endblock %}
+{% block descripcion %}{% translate "Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles de la programación genética y el resultado honesto de la tesis." %}{% endblock %}
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'css/historia.css' %}">
+{# Sin JavaScript se lee como un artículo con todos los pasos. Con JavaScript se ve un paso a la vez. #}
+<div class="envoltura historia" id="historia">
+    <p class="antetitulo">{% translate "2 minutos · 7 pasos" %}</p>
+    <h1>{% translate "Entender la idea en 2 minutos" %}</h1>
+
+    <nav aria-label="{% translate "Pasos de la historia" %}">
+        <ol class="historia-indice">
+            <li><a href="#paso-1"><span class="historia-num">1</span>{% translate "Estadios" %}</a></li>
+            <li><a href="#paso-2"><span class="historia-num">2</span>{% translate "Viajes" %}</a></li>
+            <li><a href="#paso-3"><span class="historia-num">3</span>{% translate "Árbol" %}</a></li>
+            <li><a href="#paso-4"><span class="historia-num">4</span>{% translate "Cruce" %}</a></li>
+            <li><a href="#paso-5"><span class="historia-num">5</span>{% translate "Mutación" %}</a></li>
+            <li><a href="#paso-6"><span class="historia-num">6</span>{% translate "Generaciones" %}</a></li>
+            <li><a href="#paso-7"><span class="historia-num">7</span>{% translate "Resultado" %}</a></li>
+        </ol>
+    </nav>
+
+    <div class="historia-cuerpo">
+        <div class="historia-pasos" aria-live="polite">
+            <section class="historia-paso" id="paso-1" data-escena="estadios" aria-labelledby="t-paso-1">
+                <p class="historia-parte">{% translate "Parte 1 · El problema" %}</p>
+                <h2 id="t-paso-1">{% translate "30 equipos tienen que jugar entre sí" %}</h2>
+                <p>{% translate "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 partidos en una temporada." %}</p>
+                <p>{% translate "Un calendario dice quién juega contra quién, en qué fecha y en qué estadio." %}</p>
+                <p class="historia-solo-js">{% translate "Toca un estadio del mapa para ver su nombre." %}</p>
+            </section>
+
+            <section class="historia-paso" id="paso-2" data-escena="viajes" aria-labelledby="t-paso-2">
+                <p class="historia-parte">{% translate "Parte 1 · El problema" %}</p>
+                <h2 id="t-paso-2">{% translate "Cada viaje cuesta tiempo y dinero" %}</h2>
+                <p>{% translate "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace cruzar el país muchas veces." %}</p>
+                <p class="historia-cifra historia-solo-js" data-cifra-km>0</p>
+                <p class="nota historia-solo-js">{% translate "Viaje de una gira de ejemplo, con las fechas en orden al azar." %}</p>
+                <p class="historia-solo-js">{% translate "Toca otro estadio para ver la gira de ese equipo." %}</p>
+            </section>
+
+            <section class="historia-paso" id="paso-3" data-escena="arbol" aria-labelledby="t-paso-3">
+                <p class="historia-parte">{% translate "Parte 2 · La idea de la tesis" %}</p>
+                <h2 id="t-paso-3">{% translate "Un calendario se puede escribir como un árbol" %}</h2>
+                <p>{% blocktranslate trimmed %}La programación genética no escribe el calendario a mano. Escribe <strong>instrucciones</strong> para mejorarlo.{% endblocktranslate %}</p>
+                <p>{% blocktranslate trimmed %}Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de juegos, por ejemplo "SEA–NYA". Las <strong>ramas</strong> son acciones, por ejemplo "intercambiar" dos series de fecha o "invertir localía" (cambiar quién juega en casa).{% endblocktranslate %}</p>
+            </section>
+
+            <section class="historia-paso" id="paso-4" data-escena="cruce" aria-labelledby="t-paso-4">
+                <p class="historia-parte">{% translate "Parte 2 · La idea de la tesis" %}</p>
+                <h2 id="t-paso-4">{% translate "Cruce: dos árboles se mezclan" %}</h2>
+                <p>{% translate "Se toman dos árboles que funcionan bien. Cada uno da una rama." %}</p>
+                <p>{% translate "El árbol nuevo, el \"hijo\", tiene una parte de cada padre. Así se combinan buenas ideas." %}</p>
+            </section>
+
+            <section class="historia-paso" id="paso-5" data-escena="mutacion" aria-labelledby="t-paso-5">
+                <p class="historia-parte">{% translate "Parte 2 · La idea de la tesis" %}</p>
+                <h2 id="t-paso-5">{% translate "Mutación: un cambio pequeño al azar" %}</h2>
+                <p>{% translate "A veces una pieza del árbol cambia sola. Aquí, la serie \"SEA–NYA\" cambia por \"SEA–OAK\"." %}</p>
+                <p>{% translate "La mutación sirve para probar ideas nuevas que ningún padre tenía." %}</p>
+            </section>
+
+            <section class="historia-paso" id="paso-6" data-escena="generaciones" aria-labelledby="t-paso-6">
+                <p class="historia-parte">{% translate "Parte 3 · El resultado" %}</p>
+                <h2 id="t-paso-6">{% translate "Generación tras generación" %}</h2>
+                <p>{% translate "Cada generación tiene muchos árboles. Los que producen calendarios con menos viaje tienen más hijos." %}</p>
+                <p>{% blocktranslate trimmed %}La línea punteada es la meta mínima: el mejor calendario que se encuentra <strong>eligiendo al azar</strong> con el mismo esfuerzo.{% endblocktranslate %}</p>
+                <p class="historia-solo-js">{% translate "Elige un motor para ver cómo le fue." %}</p>
+            </section>
+
+            <section class="historia-paso" id="paso-7" data-escena="resultado" aria-labelledby="t-paso-7">
+                <p class="historia-parte">{% translate "Parte 3 · El resultado" %}</p>
+                <h2 id="t-paso-7">{% translate "La tesis dijo la verdad" %}</h2>
+                <p>{% blocktranslate trimmed with resultado=motor.tesis.frente_al_azar %}El motor de la tesis <strong>no fue mejor</strong> que elegir calendarios al azar: {{ resultado }}.{% endblocktranslate %}</p>
+                <p>{% blocktranslate trimmed with resultado=motor.mejorado.frente_al_azar corridas=motor.mejorado.corridas equipos=motor.mejorado.equipos %}El motor mejorado, por bloques, sí le gana al azar: {{ resultado }}, en pruebas preliminares ({{ corridas }} corridas, {{ equipos }} equipos).{% endblocktranslate %}</p>
+                <p class="acciones"><a class="boton" href="{% url 'tesis:guia' %}">{% translate "Probar la herramienta en 5 pasos" %} →</a></p>
+            </section>
+        </div>
+
+        <figure class="historia-escena" id="historia-escena" hidden>
+            <div class="historia-lienzo" id="historia-lienzo"></div>
+            <figcaption class="nota" id="historia-leyenda"></figcaption>
+            <p class="nota" id="historia-estado" aria-live="polite"></p>
+            <div class="historia-controles" id="historia-controles"></div>
+        </figure>
+    </div>
+
+    <details class="historia-tabla">
+        <summary>{% translate "Ver los 30 estadios como tabla" %}</summary>
+        <div class="historia-desliza">
+            <table>
+                <caption class="nota">{% translate "Datos del archivo teams.csv del proyecto." %}</caption>
+                <thead><tr><th scope="col">{% translate "Código" %}</th><th scope="col">{% translate "Equipo" %}</th><th scope="col">{% translate "Estadio" %}</th><th scope="col">{% translate "Lugar" %}</th></tr></thead>
+                <tbody>
+                {% for e in estadios %}<tr><td>{{ e.codigo }}</td><td>{{ e.equipo }}</td><td>{{ e.estadio }}</td><td>{{ e.ciudad }}</td></tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </details>
+
+    <div class="historia-navegacion" id="historia-navegacion" hidden>
+        <button class="boton-secundario" type="button" id="historia-anterior">← {% translate "Anterior" %}</button>
+        <span class="nota" id="historia-pista"></span>
+        <button class="boton" type="button" id="historia-siguiente">{% translate "Siguiente" %} →</button>
+    </div>
+</div>
+{{ historia_datos|json_script:"historia-datos" }}
+{% endblock %}
+{% block scripts %}<script src="{% static 'js/historia.js' %}"></script>{% endblock %}
