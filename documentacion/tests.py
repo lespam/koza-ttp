@@ -48,6 +48,31 @@ class EscaparPorcentaje(SimpleTestCase):
         self.assertFalse(Command.same_markup(fuente, "A 19.5% greater, %(n)s times."))
 
 
+class VariableEnEnlace(SimpleTestCase):
+    """Una variable dentro de un atributo, como <a href="%(guia)s">, no se envuelve en <span>."""
+
+    def test_azure_no_rompe_el_enlace(self):
+        import os
+        from unittest import mock
+        from tesis.management.commands.translate_site import Command
+        fuente = 'Usa la <a href="%(guia)s">guía</a> en %(n)s pasos.'
+        enviado = {}
+
+        def eco(url, params, headers, json, timeout):
+            enviado["texto"] = json[0]["text"]
+            respuesta = mock.Mock(status_code=200)
+            respuesta.json.return_value = [{"translations": [{"text": json[0]["text"]}]}]
+            return respuesta
+
+        with mock.patch.dict(os.environ, {"AZURE_TRANSLATOR_KEY": "x"}), \
+                mock.patch("tesis.management.commands.translate_site.requests.post", eco):
+            resultado = Command().azure_translate([fuente], "en")[0]
+        self.assertIn('<a href="%(guia)s">', enviado["texto"])
+        self.assertIn('<span class="notranslate">%(n)s</span>', enviado["texto"])
+        self.assertEqual(resultado, fuente)
+        self.assertTrue(Command.same_markup(fuente, resultado))
+
+
 class LenguasIndigenas(SimpleTestCase):
     """Maya y otomí: traducción automática con aviso de revisión."""
 
