@@ -233,6 +233,7 @@ class HistoriaPasoAPaso(SimpleTestCase):
         self.assertContains(r, 'id="historia-datos"')
         self.assertEqual(len(r.context["historia_datos"]["estadios"]), 30)
         self.assertContains(r, "historia.js")
+        self.assertContains(r, "historia_mapa.js")
 
     def test_cifras_salen_de_estado_motor(self):
         from project.estado_motor import MOTOR
@@ -244,3 +245,13 @@ class HistoriaPasoAPaso(SimpleTestCase):
     def test_portada_enlaza_a_la_historia(self):
         r = self.client.get(reverse("tesis:inicio"))
         self.assertContains(r, f'href="{reverse("tesis:historia")}"')
+
+
+class VistaPreviaAlCompartir(SimpleTestCase):
+    """La imagen y el texto que aparecen al compartir el enlace en redes."""
+
+    def test_portada_tiene_imagen_para_compartir(self):
+        r = self.client.get(reverse("tesis:inicio"))
+        self.assertContains(r, 'property="og:image"')
+        self.assertContains(r, "img/koza-ttp-compartir.png")
+        self.assertContains(r, 'name="twitter:card" content="summary_large_image"')

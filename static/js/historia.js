@@ -114,8 +114,14 @@
 
     function mapa({ conGira = false, aparecer = false, alElegir } = {}) {
         const svg = nuevoSvg(W, H, T.mapa);
-        for (let lon = -120; lon <= -70; lon += 10) el("line", { class: "h-reticula", x1: px(lon), x2: px(lon), y1: 10, y2: H - 20 }, svg);
-        for (let lat = 25; lat <= 45; lat += 5) el("line", { class: "h-reticula", x1: 20, x2: W - 20, y1: py(lat), y2: py(lat) }, svg);
+        if (window.KOZA_MAPA) {
+            // Contorno de los países y fronteras de los estados (historia_mapa.js)
+            el("path", { class: "h-estados", d: window.KOZA_MAPA.estados }, svg);
+            el("path", { class: "h-tierra", d: window.KOZA_MAPA.tierra }, svg);
+        } else {
+            for (let lon = -120; lon <= -70; lon += 10) el("line", { class: "h-reticula", x1: px(lon), x2: px(lon), y1: 10, y2: H - 20 }, svg);
+            for (let lat = 25; lat <= 45; lat += 5) el("line", { class: "h-reticula", x1: 20, x2: W - 20, y1: py(lat), y2: py(lat) }, svg);
+        }
         const capaRuta = el("g", {}, svg);
         const capaPuntos = el("g", {}, svg);
         let total = 0;
