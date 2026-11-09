@@ -235,8 +235,14 @@ class Command(BaseCommand):
         if region:
             headers["Ocp-Apim-Subscription-Region"] = region
 
-        # Las variables %(x)s viajan dentro de <span class="notranslate"> para que no se toquen
-        protect = lambda text: PLACEHOLDER.sub(lambda m: f'<span class="notranslate">{m.group(0)}</span>', text)
+        # Las variables %(x)s viajan dentro de <span class="notranslate"> para que no se toquen.
+        # Las que están dentro de una etiqueta, como <a href="%(guia)s">, se dejan igual: un
+        # <span> dentro de un atributo rompe el HTML y Azure ya no traduce los atributos.
+        span = lambda m: f'<span class="notranslate">{m.group(0)}</span>'
+        protect = lambda text: "".join(
+            part if TAG.fullmatch(part) else PLACEHOLDER.sub(span, part)
+            for part in re.split(f"({TAG.pattern})", text)
+        )
         unprotect = lambda text: re.sub(r'<span class="notranslate">\s*(.*?)\s*</span>', r"\1", text)
 
         results = []
