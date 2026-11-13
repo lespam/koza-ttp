@@ -1,0 +1,93 @@
+{% extends "documentacion/base.html" %}
+{% load i18n static l10n %}
+{% block titulo %}{% translate "Temporada 2023: el motor contra el calendario real" %}{% endblock %}
+{% block descripcion %}{% translate "Repetición de una corrida del motor de programación genética con los 30 equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y con el azar." %}{% endblock %}
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'css/repeticion.css' %}">
+<div class="envoltura repeticion" id="repeticion">
+    <p class="antetitulo">{% translate "Demo con datos reales · Grandes Ligas 2023" %}</p>
+    <h1>{% translate "Temporada 2023: el motor contra el calendario real" %}</h1>
+    <p class="entrada">{% blocktranslate trimmed %}Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El calendario oficial de 2023 es la referencia. El motor por bloques intenta armar una temporada con menos viaje.{% endblocktranslate %}</p>
+
+    <section class="repeticion-escena" aria-labelledby="t-evolucion">
+        <h2 id="t-evolucion">{% translate "Cómo bajan los kilómetros, generación por generación" %}</h2>
+        <p>{% blocktranslate trimmed with generaciones=generaciones %}Esta es una corrida real del motor, guardada para que la veas sin esperar. Tiene {{ generaciones }} generaciones de 100 calendarios cada una.{% endblocktranslate %}</p>
+        <figure class="repeticion-figura" id="repeticion-figura" hidden>
+            <div class="repeticion-lienzo" id="repeticion-grafica"></div>
+            <ul class="repeticion-leyenda" id="repeticion-leyenda"></ul>
+            <figcaption class="nota" id="repeticion-estado" aria-live="polite"></figcaption>
+            <div class="repeticion-controles">
+                <button class="boton" type="button" id="repeticion-reproducir">{% translate "Reproducir" %}</button>
+                <label for="repeticion-generacion">{% translate "Generación" %}
+                    <input type="range" id="repeticion-generacion" min="0" max="{{ generaciones|add:"-1" }}" value="0">
+                </label>
+            </div>
+        </figure>
+    </section>
+
+    <section aria-labelledby="t-resultado">
+        <h2 id="t-resultado">{% translate "Resultado" %}</h2>
+        <div class="repeticion-desliza">
+            <table class="repeticion-tabla">
+                <caption class="nota">{% translate "Viaje de los 30 equipos en toda la temporada regular." %}</caption>
+                <thead><tr>
+                    <th scope="col">{% translate "Calendario" %}</th>
+                    <th scope="col">{% translate "Viaje total" %}</th>
+                    <th scope="col">{% translate "Gira más larga (juegos seguidos de visita)" %}</th>
+                    <th scope="col">{% translate "Más juegos seguidos en casa" %}</th>
+                </tr></thead>
+                <tbody>{% localize on %}
+                    <tr><th scope="row">{% translate "Oficial de las Grandes Ligas" %}</th><td>{{ millones.oficial }} {% translate "millones de km" %}</td><td>{{ gira_oficial }}</td><td>{{ casa_oficial }}</td></tr>
+                    <tr><th scope="row">{% translate "Motor por bloques" %}</th><td>{{ millones.motor }} {% translate "millones de km" %}</td><td>{{ gira_motor }}</td><td>{{ casa_motor }}</td></tr>
+                    <tr><th scope="row">{% translate "Mejor al azar, con el mismo esfuerzo" %}{% if not datos.azar.cumple_reglas %}<br><span class="nota">{% translate "No cumple el número de juegos de cada equipo." %}</span>{% endif %}</th><td>{{ millones.azar }} {% translate "millones de km" %}</td><td>—</td><td>—</td></tr>
+                {% endlocalize %}</tbody>
+            </table>
+        </div>
+        <ul class="repeticion-lecturas">
+            <li>{% blocktranslate trimmed with pct=motor_vs_azar %}El motor viaja <strong>{{ pct }} % menos</strong> que el mejor calendario al azar. El motor sí aprende.{% endblocktranslate %}</li>
+            <li>{% blocktranslate trimmed with pct=oficial_vs_motor %}El calendario oficial viaja <strong>{{ pct }} % menos</strong> que el motor. Todavía no le ganamos.{% endblocktranslate %}</li>
+            <li>{% blocktranslate trimmed with gira=gira_motor oficial=gira_oficial %}Ojo: el calendario del motor tiene giras de hasta <strong>{{ gira }} juegos seguidos</strong> de visita. El oficial tiene máximo {{ oficial }}. Un equipo real no aceptaría giras tan largas.{% endblocktranslate %}</li>
+        </ul>
+    </section>
+
+    <section class="repeticion-escena" aria-labelledby="t-equipos">
+        <h2 id="t-equipos">{% translate "Viaje de cada equipo" %}</h2>
+        <p>{% translate "Cambia entre los dos calendarios para ver qué equipos viajan más." %}</p>
+        <figure class="repeticion-figura" id="repeticion-mapa-figura" hidden>
+            <div class="repeticion-controles" role="group" aria-label="{% translate "Calendario del mapa" %}">
+                <button class="boton-secundario" type="button" data-calendario="oficial" aria-pressed="true">{% translate "Oficial" %}</button>
+                <button class="boton-secundario" type="button" data-calendario="motor" aria-pressed="false">{% translate "Motor" %}</button>
+            </div>
+            <div class="repeticion-lienzo" id="repeticion-mapa"></div>
+            <figcaption class="nota" id="repeticion-mapa-estado" aria-live="polite"></figcaption>
+        </figure>
+        <details class="repeticion-detalle">
+            <summary>{% translate "Ver los 30 equipos como tabla" %}</summary>
+            <div class="repeticion-desliza">
+                <table class="repeticion-tabla">
+                    <thead><tr><th scope="col">{% translate "Equipo" %}</th><th scope="col">{% translate "Oficial (km)" %}</th><th scope="col">{% translate "Motor (km)" %}</th></tr></thead>
+                    <tbody>{% localize on %}{% for f in por_equipo %}<tr><td>{{ f.equipo }}</td><td>{{ f.oficial }}</td><td>{{ f.motor }}</td></tr>
+                    {% endfor %}{% endlocalize %}</tbody>
+                </table>
+            </div>
+        </details>
+    </section>
+
+    <section aria-labelledby="t-fuente">
+        <h2 id="t-fuente">{% translate "De dónde salen los datos" %}</h2>
+        <ul>
+            <li>{% translate "Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats API). Aquí solo guardamos las cifras calculadas, no el calendario." %}</li>
+            <li>{% translate "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada equipo sale de su casa, viaja de estadio en estadio y regresa al final." %}</li>
+            <li>{% blocktranslate trimmed with evaluaciones=datos.motor.evaluaciones %}Motor por bloques: 100 calendarios por generación, {{ evaluaciones }} calendarios evaluados en total. El azar evaluó la misma cantidad.{% endblocktranslate %}</li>
+        </ul>
+    </section>
+
+    <p class="acciones">
+        <a class="boton" href="{% url 'tesis:guia' %}">{% translate "Haz tu propio torneo" %} →</a>
+        <a class="boton-secundario" href="{% url 'tesis:historia' %}">{% translate "Cómo funciona el motor" %}</a>
+    </p>
+</div>
+{{ repeticion_datos|json_script:"repeticion-datos" }}
+{% endblock %}
+{% block scripts %}<script src="{% static 'js/historia_mapa.js' %}"></script>
+<script src="{% static 'js/repeticion.js' %}"></script>{% endblock %}

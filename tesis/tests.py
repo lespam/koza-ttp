@@ -280,3 +280,34 @@ class IconoDeLaPestana(SimpleTestCase):
         r = self.client.get("/favicon.ico")
         self.assertEqual(r.status_code, 301)
         self.assertTrue(r["Location"].endswith("img/icono-32.png"))
+
+
+class RepeticionTemporada2023(TestCase):
+    """Demo con datos reales: corrida guardada del motor contra el calendario oficial 2023."""
+
+    def test_pagina_con_cifras_y_tablas(self):
+        r = self.client.get(reverse("tesis:repeticion"))
+        self.assertEqual(r.status_code, 200)
+        self.assertContains(r, 'id="repeticion-datos"')
+        self.assertContains(r, "js/repeticion.js")
+        self.assertContains(r, "Oficial de las Grandes Ligas")
+        # 30 equipos en la tabla por equipo
+        self.assertEqual(r.content.decode().count("</td></tr>"), 30 + 3)
+
+    def test_datos_reales_y_honestos(self):
+        from tesis.repeticion import cargar_datos
+        d = cargar_datos()
+        self.assertEqual(len(d["oficial"]["equipos"]), 30)
+        self.assertEqual(len(d["motor"]["equipos"]), 30)
+        self.assertEqual(d["oficial"]["km"], sum(v["km"] for v in d["oficial"]["equipos"].values()))
+        # El oficial todavía le gana al motor, y el motor al azar
+        self.assertLess(d["oficial"]["km"], d["motor"]["km"])
+        self.assertLess(d["motor"]["km"], d["azar"]["km"])
+        # Desde que el motor cumple las reglas de juegos, la curva nunca sube
+        g = [km for km, ok in zip(d["motor"]["generaciones"], d["motor"]["cumple"]) if ok]
+        self.assertTrue(d["motor"]["cumple"][-1])
+        self.assertTrue(all(b <= a for a, b in zip(g, g[1:])))
+
+    def test_la_demo_enlaza_la_repeticion(self):
+        r = self.client.get(reverse("tesis:dashboard"))
+        self.assertContains(r, reverse("tesis:repeticion"))

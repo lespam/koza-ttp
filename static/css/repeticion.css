@@ -1,0 +1,48 @@
+/* Repetición de la temporada 2023 (/demo/2023/). Usa los colores de documentacion.css. */
+.envoltura.repeticion { max-width: 60rem; }
+.repeticion h2 { text-wrap: balance; }
+.repeticion section { margin-top: 2.5rem; }
+.repeticion section > p { max-width: 65ch; }
+.repeticion-figura { margin: 1rem 0 0; background: var(--superficie); border: 1px solid var(--borde); border-radius: 10px; padding: 1rem; min-width: 0; }
+.repeticion-lienzo { overflow-x: auto; }
+.repeticion-lienzo svg { display: block; width: 100%; height: auto; }
+.repeticion-controles { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin-top: 0.75rem; }
+.repeticion-figura > .repeticion-controles:first-child { margin: 0 0 0.75rem; }
+.repeticion-controles label { display: flex; flex: 1; gap: 0.6rem; align-items: center; min-width: 14rem; }
+.repeticion-controles input[type="range"] { flex: 1; accent-color: var(--enlace); min-height: 44px; }
+.repeticion-controles .boton-secundario[aria-pressed="true"] { background: var(--enlace); color: var(--superficie); }
+.repeticion-figura .nota { margin: 0.5rem 0 0; font-variant-numeric: tabular-nums; }
+
+.repeticion-desliza { overflow-x: auto; }
+.repeticion-tabla { border-collapse: collapse; width: 100%; font-size: 1rem; font-variant-numeric: tabular-nums; }
+.repeticion-tabla th, .repeticion-tabla td { text-align: start; padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--borde); vertical-align: top; }
+.repeticion-tabla caption { text-align: start; }
+.repeticion-lecturas { max-width: 65ch; }
+.repeticion-detalle { margin-top: 1rem; }
+.repeticion-detalle summary { cursor: pointer; color: var(--enlace); min-height: 44px; display: flex; align-items: center; }
+.repeticion .acciones { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* Dibujos */
+.r-eje { stroke: var(--borde-fuerte); stroke-width: 2; }
+.r-etiqueta { fill: var(--texto-suave); font: 14px "IBM Plex Mono", ui-monospace, monospace; }
+.r-fuerte { font-weight: 600; font-family: "Work Sans", system-ui, sans-serif; font-size: 15px; }
+.r-oficial { stroke: var(--acento); stroke-width: 3; }
+.r-oficial-texto { fill: var(--acento); }
+.r-azar { stroke: var(--texto-suave); stroke-width: 2; stroke-dasharray: 7 6; }
+.r-azar-texto { fill: var(--texto-suave); }
+.r-motor { fill: none; stroke: var(--enlace); stroke-width: 3; stroke-linejoin: round; }
+.r-motor-texto { fill: var(--enlace); }
+.r-punto { fill: var(--enlace); }
+.r-tierra { fill: none; stroke: var(--borde-fuerte); stroke-width: 1.2; }
+.r-estados { fill: none; stroke: var(--borde); stroke-width: 0.7; }
+.r-equipo { fill: var(--enlace); fill-opacity: 0.55; stroke: var(--enlace); stroke-width: 1.5; transition: r 0.6s ease; cursor: pointer; }
+.r-equipo:focus { outline: none; stroke: var(--foco); stroke-width: 4; }
+@media (prefers-reduced-motion: reduce) { .r-equipo { transition: none; } }
+.r-punto.r-incumple { fill: var(--superficie); stroke: var(--enlace); stroke-width: 3; }
+.repeticion-leyenda { list-style: none; padding: 0; margin: 0.75rem 0 0; display: grid; gap: 0.35rem; }
+.repeticion-leyenda li { display: flex; gap: 0.6rem; align-items: center; margin: 0; }
+.repeticion-leyenda .muestra { flex: none; width: 28px; height: 0; border-top: 3px solid; }
+.repeticion-leyenda .m-motor { border-color: var(--enlace); }
+.repeticion-leyenda .m-oficial { border-color: var(--acento); }
+.repeticion-leyenda .m-azar { border-top-style: dashed; border-color: var(--texto-suave); }
+.repeticion-leyenda .m-eje { border-color: transparent; }
