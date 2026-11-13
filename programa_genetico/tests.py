@@ -175,6 +175,78 @@ class MotorBloquesTests(SimpleTestCase):
         self.assertEqual(len(r.mejor_individuo), 5)  # ADF_liga, ADF_division, ADF_interliga, ADF_serie, AJUSTE
 
 
+class MotorTurnosTests(SimpleTestCase):
+    """Series de 2, 3 y 4 juegos con descansos: no todos juegan al mismo tiempo."""
+
+    def _calendario(self, semilla=0):
+        import random
+
+        from programa_genetico.motor_series import MLB_DIVISIONES
+        from programa_genetico.motor_turnos import CalendarioTurnos, series_mlb_2023
+
+        equipos = [e for lista in MLB_DIVISIONES.values() for e in lista]
+        pos = {e: (i % 6, i // 6) for i, e in enumerate(equipos)}
+        rng = random.Random(semilla)
+        cal = CalendarioTurnos(series_mlb_2023(rng), equipos,
+                               lambda a, b: abs(pos[a][0] - pos[b][0]) + abs(pos[a][1] - pos[b][1]))
+        self.assertTrue(cal.construir(rng))
+        return cal, rng
+
+    def _sin_choques(self, cal):
+        for e in range(len(cal.equipos)):
+            for t in range(cal.T):
+                k = cal.en[e][t]
+                if k >= 0:
+                    self.assertEqual(cal.turno[k], t)
+                    self.assertIn(e, (cal.local[k], cal.visita[k]))
+        for k, t in enumerate(cal.turno):
+            self.assertEqual(cal.en[cal.local[k]][t], k)
+            self.assertEqual(cal.en[cal.visita[k]][t], k)
+
+    def test_estructura_mlb_2023(self):
+        import random
+        from collections import Counter
+
+        from programa_genetico.motor_turnos import series_mlb_2023
+
+        series = series_mlb_2023(random.Random(3))
+        juegos, casa, num = Counter(), Counter(), Counter()
+        for h, a, n in series:
+            juegos[h] += n
+            juegos[a] += n
+            casa[h] += n
+            num[h] += 1
+            num[a] += 1
+        self.assertEqual(set(juegos.values()), {162})
+        self.assertEqual(set(casa.values()), {81})
+        self.assertEqual(set(num.values()), {52})
+        self.assertEqual({n for _, _, n in series}, {2, 3, 4})
+
+    def test_construccion_y_recocido_sin_choques(self):
+        from programa_genetico.motor_turnos import recocido
+
+        cal, rng = self._calendario()
+        self._sin_choques(cal)
+        antes = cal.evaluar()
+        despues = recocido(cal, rng, pasos=3000)
+        self._sin_choques(cal)
+        self.assertEqual(despues, cal.evaluar())
+        self.assertLessEqual(despues[0], antes[0])
+
+    def test_medicion_de_juegos_por_fecha(self):
+        from programa_genetico.motor_turnos import haversine_km, medir_juegos
+
+        cal, _ = self._calendario(1)
+        coords = {e: (30 + i % 6, -100 + i // 6) for i, e in enumerate(cal.equipos)}
+        juegos = cal.juegos_por_fecha()
+        self.assertEqual(len(juegos), 2430)
+        m = medir_juegos(juegos, coords)
+        self.assertEqual(m["juegos"], (162, 162))
+        # La medición independiente coincide con el costo del modelo.
+        cal.D = [[haversine_km(coords[a], coords[b]) for b in cal.equipos] for a in cal.equipos]
+        self.assertAlmostEqual(m["km"], cal.evaluar()[1], delta=1)
+
+
 class CruceTests(SimpleTestCase):
     """deap.gp.cxOnePointLeafBiased falla en Python 3.11+ (random.sample con un set)."""
 
