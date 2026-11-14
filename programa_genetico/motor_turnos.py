@@ -12,9 +12,11 @@ Modelo (como la temporada 2023 de MLB)
   - rival natural de interliga: 4 juegos (2 + 2);
   - los otros 14 de interliga: una serie de 3.
 - La temporada se divide en ``turnos``. En cada turno, un equipo juega una
-  serie o **descansa**. Todas las series de un turno empiezan el mismo día, y
-  el turno dura lo que su serie más larga. Quien juega una serie más corta
-  tiene días libres.
+  serie o **descansa**. Todas las series de un turno empiezan el mismo día.
+  Con ``semana=True`` (por defecto) los turnos alternan entre semana (4 días)
+  y fin de semana (3 días), como MLB; las series de 4 juegos solo van entre
+  semana. Quien juega una serie más corta que su turno tiene días libres.
+  Con ``semana=False`` el turno dura lo que su serie más larga.
 - Con 53 turnos y 52 series, cada equipo descansa un turno.
 
 Reglas de realismo (las cumple el calendario oficial 2023)
@@ -128,12 +130,16 @@ class CalendarioTurnos:
     def __init__(self, series: Sequence[tuple], equipos: Sequence[str],
                  distancia: Callable[[str, str], float], turnos: int = 53, dias: int = 186,
                  max_seguidos: int = 12, max_dias_seguidos: int = 20, casa: int = 81,
-                 tolerancia_casa: int = 3):
+                 tolerancia_casa: int = 3, semana: bool = True):
         self.equipos = list(equipos)
         self.idx = {e: i for i, e in enumerate(self.equipos)}
         self.series = list(series)
         self.T = turnos
         self.dias = dias
+        # Semana como MLB: turnos largos (entre semana, 4 días) y cortos (fin de
+        # semana, 3 días), alternados. Las series de 4 juegos solo van en turnos
+        # largos. Así la temporada dura siempre lo mismo (53 turnos = 186 días).
+        self.largo = [t % 2 == 0 for t in range(turnos)] if semana else None
         self.max_seguidos = max_seguidos
         self.max_dias_seguidos = max_dias_seguidos
         self.casa = casa
@@ -157,7 +163,8 @@ class CalendarioTurnos:
         """Turno inicial sin choques (min-conflictos). Devuelve False si no lo logra."""
         n, T = len(self.equipos), self.T
         ocupado = [[0] * T for _ in range(n)]
-        turno = [rng.randrange(T) for _ in self.series]
+        validos = [[t for t in range(T) if self.permitido(k, t)] for k in range(len(self.series))]
+        turno = [rng.choice(validos[k]) for k in range(len(self.series))]
         for k, t in enumerate(turno):
             ocupado[self.local[k]][t] += 1
             ocupado[self.visita[k]][t] += 1
@@ -175,10 +182,10 @@ class CalendarioTurnos:
             ocupado[u][t0] -= 1
             ocupado[v][t0] -= 1
             if rng.random() < 0.1:
-                t = rng.randrange(T)
+                t = rng.choice(validos[k])
             else:
-                mejor = min(ocupado[u][x] + ocupado[v][x] for x in range(T))
-                opciones = [x for x in range(T) if ocupado[u][x] + ocupado[v][x] == mejor and x != t0]
+                mejor = min(ocupado[u][x] + ocupado[v][x] for x in validos[k])
+                opciones = [x for x in validos[k] if ocupado[u][x] + ocupado[v][x] == mejor and x != t0]
                 t = rng.choice(opciones) if opciones else t0
             ocupado[u][t] += 1
             ocupado[v][t] += 1
@@ -215,6 +222,13 @@ class CalendarioTurnos:
                 t = b if t == a else a
         return cad
 
+    def permitido(self, k: int, t: int) -> bool:
+        """Una serie de 4 juegos solo cabe en un turno largo."""
+        return self.largo is None or self.juegos[k] < 4 or self.largo[t]
+
+    def se_puede_cambiar(self, series: list, a: int, b: int) -> bool:
+        return all(self.permitido(k, b if self.turno[k] == a else a) for k in series)
+
     def cambiar_turnos(self, series: list, a: int, b: int) -> None:
         """Pasa cada serie de la lista del turno a al b y viceversa."""
         for k in series:
@@ -231,6 +245,8 @@ class CalendarioTurnos:
 
     # ---------- costo ----------
     def duraciones(self) -> list:
+        if self.largo is not None:
+            return [4 if largo else 3 for largo in self.largo]
         dur = [0] * self.T
         for k, t in enumerate(self.turno):
             dur[t] = max(dur[t], self.juegos[k])
@@ -335,11 +351,13 @@ def recocido(cal: CalendarioTurnos, rng: random.Random, pasos: int = 400_000,
                 continue
             if r < 0.6:  # cadena de Kempe
                 series = cal.cadena(rng.randrange(n), a, b)
-                if not series:
+                if not series or not cal.se_puede_cambiar(series, a, b):
                     continue
                 afectados = {e for k in series for e in (cal.local[k], cal.visita[k])}
             else:  # dos turnos completos
                 series = [k for k, t in enumerate(cal.turno) if t in (a, b)]
+                if not cal.se_puede_cambiar(series, a, b):
+                    continue
                 afectados = set(range(n))
             cal.cambiar_turnos(series, a, b)
             deshacer = lambda s=series, a=a, b=b: cal.cambiar_turnos(s, a, b)

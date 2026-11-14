@@ -233,6 +233,20 @@ class MotorTurnosTests(SimpleTestCase):
         self.assertEqual(despues, cal.evaluar())
         self.assertLessEqual(despues[0], antes[0])
 
+    def test_pg_no_rompe_el_calendario(self):
+        from programa_genetico.motor_turnos_pg import busqueda_aleatoria, evolucionar
+
+        cal, _ = self._calendario(2)
+        antes = cal.evaluar()
+        r = evolucionar(cal, generaciones=2, tam_poblacion=4, repeticiones=1, semilla=0)
+        self._sin_choques(r.mejor_calendario)
+        self.assertEqual(r.fitness, r.mejor_calendario.evaluar())
+        self.assertLessEqual((r.fitness[0], r.fitness[1]), (antes[0], antes[1] + 1e-6))
+        self.assertEqual(len(r.mejor_individuo), 2)  # ADF_turno, AJUSTE
+        otro, _ = self._calendario(2)
+        c, fit = busqueda_aleatoria(otro, 500, __import__("random").Random(1))
+        self._sin_choques(c)
+
     def test_medicion_de_juegos_por_fecha(self):
         from programa_genetico.motor_turnos import haversine_km, medir_juegos
 
