@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "Awọn abajade ti o dara julọ"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "Tẹ igi naa lati faagun"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "Lapapọ Iye owo Irin-ajo:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "Awọn irufin ofin:"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Ṣiṣe iṣapeye"
 
@@ -133,10 +121,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "Lati awọn ti o kẹhin si awọn agbalagba julọ."
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "Ti ngbero"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "Awọn oniṣẹ Contextual fun Engine"
 
@@ -165,10 +149,6 @@ msgstr ""
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "Kọkànlá Oṣù 3, 2026"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "Ti nlọ lọwọ"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -605,10 +585,6 @@ msgstr ""
 "kọọkan rin irin-ajo."
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "Demo · Irin-ajo ti o dara laarin awọn ẹgbẹ"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "Ṣẹda kalẹnda kan ati"
 
@@ -622,6 +598,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"AI (siseto jiini) n wa awọn kalẹnda nibiti irin-ajo naa jẹ kukuru ati "
+"paapaa. Ṣe o fẹ awọn ẹgbẹ tirẹ? Lo <a href=\"%(guia)s\">itọsọna igbesẹ "
+"5</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -656,10 +635,6 @@ msgstr "O gba to iṣẹju diẹ."
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "Iṣeto: %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "Iṣeto ni %(id)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -736,14 +711,6 @@ msgstr "Ṣiṣe lori kọnputa rẹ"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "Beere lọwọ oluranlọwọ AI rẹ fun iranlọwọ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr ""
-"Ṣe ẹ̀dà ìbéèrè yìí kí o sì lẹ̀ mọ́ sínú oṣó tí o lò, pẹ̀lú fáìlì "
-"programa_genetico/programagenetico.py."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -967,30 +934,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "Genetic siseto fun Baseball Kalẹnda"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr ""
-"Koza-TTP: Leslie Dickinson's (ITAM) thesis on genetic programming for "
-"baseball calendars, with its honest result and improved engine."
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "ITAM Thesis · Jiini siseto · Baseball"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "Ọrọ mi sọ otitọ:"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr ""
-"Koza-TTP gba iwe-akọọlẹ yẹn lati ṣe awọn kalẹnda akoko baseball pẹlu siseto "
-"jiini. Nibi iwọ yoo rii ohun ti o ṣẹlẹ, idi, ati bii Mo ṣe n ṣe atunṣe rẹ ni"
-" gbangba."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -1007,12 +952,6 @@ msgstr "Awọn iṣẹju 2"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "Loye ero naa"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr "Kini siseto jiini ati idi ti kalẹnda baseball jẹ iṣoro ti o nira."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1092,37 +1031,39 @@ msgstr "Laifọwọyi, pẹlu Maya ati Otomí. O le ṣatunṣe wọn."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "Dipo wiwa laileto"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "Ṣe o dara ju yiyan laileto?"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "Ni idanwo"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, ni %(corridas)s ṣiṣe pẹlu awọn ẹgbẹ %(equipos)s"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "Bẹẹni, ninu awọn idanwo akọkọ"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
 msgstr ""
+"Demo naa tun nlo ẹya thesis naa. A ṣe afiwe ẹrọ ti o dara julọ si wiwa "
+"laileto ti o ṣe atunyẹwo nọmba kanna ti awọn kalẹnda."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "Kọkànlá Oṣù 8, 2026"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "Àkọsílẹ motor"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1131,12 +1072,18 @@ msgid ""
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
 msgstr ""
+"Apakan kọọkan ti iṣeto (pipin, Ajumọṣe ati interleague) jẹ ti awọn bulọọki "
+"ninu eyiti gbogbo eniyan nṣere lodi si gbogbo eniyan. Nitorinaa, awọn ofin "
+"MLB nigbagbogbo tẹle. Siseto jiini yan ati paṣẹ fun awọn bulọọki lati dinku "
+"irin-ajo."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"Abajade: %(resultado)s, ni awọn %(corridas)s ṣiṣe pẹlu awọn ẹgbẹ %(equipos)s"
+" ."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1145,182 +1092,1862 @@ msgid ""
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
 msgstr ""
+"Atunyẹwo koodu lati jẹrisi idi ti PG ko dara julọ ju yiyan awọn kalẹnda "
+"laileto. Agbelebu ati iyipada fọ iṣeeṣe ti awọn kalẹnda, ati awọn iwuwo ti "
+"amọdaju jẹ ki awọn ọmọde padanu awọn obi ti iran akọkọ."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "Ipo Ko"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "Engine: %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
 msgstr ""
+"<strong>Akiyesi:</strong> Demo yii nlo ẹrọ iṣelọpọ. Ẹrọ yẹn ko dara julọ ju "
+"yiyan awọn kalẹnda laileto."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
 msgstr ""
+"Ẹrọ ti o dara julọ dara julọ, ni awọn idanwo akọkọ: %(resultado)s, ni awọn "
+"%(corridas)s ṣiṣe. Ko tii wa ninu demo yii."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
 msgstr ""
+"Fun iṣẹ akanṣe ile-iwe kan, iyẹn jẹ afikun: o ni ipilẹ ati ilọsiwaju ti o le"
+" wiwọn."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "Wo awọn abajade ti imudojuiwọn kọọkan."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
+"Ni awọn idanwo: %(resultado)s, ni %(corridas)s gbalaye pẹlu awọn ẹgbẹ "
+"%(equipos)s ."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "Ẹya Thesis (2026)"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "19.5% diẹ sii ijinna ju yiyan awọn kalẹnda ID"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "Àkọsílẹ engine (igbegasoke version)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "13% kere si irin-ajo ju yiyan awọn kalẹnda laileto"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "Abbreviation (fun apẹẹrẹ, okun)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "Orukọ ẹgbẹ"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "Ilu"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "Stadium Latitude"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "Ipari Stadium"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "Ni awọn iwọn eleemewa. Apeere: 47.59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "Ni awọn iwọn eleemewa. Apẹrẹ: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "Awọn ẹgbẹ Ajumọṣe"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "Orukọ Ajumọṣe"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "Yan o kere ju awọn ẹgbẹ meji."
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "Orukọ idije"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "Ọjọ akọkọ"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "Ọjọ ikẹhin"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "Awọn ere nipasẹ jara"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "Ẹgbẹ Series"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "Ọjọ ikẹhin gbọdọ jẹ kanna bi tabi lẹhin akọkọ."
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "O yẹ ki o jẹ 1 tabi diẹ ẹ sii."
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "Orúkọ Ìṣètò"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "Iwọn olugbe"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "Nọmba ti awọn iran"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "Àëëà Àäàìà (0-1)"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "Àâòîðåôåðàò ðàçîñëàí (0-1)"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "O yẹ ki o wa laarin 0 ati 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "Awọn ohun elo"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "Ajumọṣe"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "Idije"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "Awọn eto"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "Kalẹnda"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "Pari igbesẹ yii ni akọkọ."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "Awọn ohun elo ti a fi kun."
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "Awọn ere ti a ṣẹda."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "Kọkànlá Oṣù 14, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
+msgstr "Alugoridimu ti o da lori titan: lu iṣeto MLB 2023 osise"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
 msgstr ""
+"A yọ ofin pe gbogbo awọn ẹgbẹ 30 ṣe jara ọjọ 3 ni akoko kanna. Pẹlu jara ti "
+"awọn ere 2, 3 ati 4 ati awọn isinmi, algorithm ti o dara julọ rin irin-ajo "
+"1.57 milionu km. Kalẹnda osise rin irin-ajo 1.74 milionu. Awọn mejeeji pade "
+"awọn ofin kanna ti realism."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr "Wo iwadi lọwọlọwọ, pẹlu awọn aworan ti ere idaraya"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "Kọkànlá Oṣù 12, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "Demo fihan akoko gidi 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr ""
+"O le wo iṣeto gangan 2023 Major League Baseball laisi nduro fun ẹrọ lati "
+"ṣiṣẹ."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "Wo akoko 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "Kọkànlá Oṣù 9, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "Igbesẹ-nipasẹ-igbesẹ itan"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr ""
+"Alaye pẹlu maapu ti awọn ipele 30, awọn igi ati itankalẹ, igbesẹ nipasẹ "
+"igbesẹ."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "Ka itan naa"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "Ayewo keji ti iriri naa"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr ""
+"Atunyẹwo ti wiwọle, lilo ati ibaraenisepo eniyan-AI ni a tun ṣe. Ninu awọn "
+"aaye 28 ni akọkọ, 13 ni a yanju. Pupọ ninu awọn aaye tuntun ti a ti ṣe "
+"atunṣe tẹlẹ."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr "O gba awọn engine ni jara ati ki o si pẹlu awọn engine bulọọki."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "Kọkànlá Oṣù 5, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "Îá ýòîì ñîîáùàåò ÑÑÑÐ ñî ññûëêî"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr ""
+"Awọn eto jiini lati ṣe awọn kalẹnda baseball. Iwe-akọọlẹ ti Leslie Dickinson"
+" (ITAM), pẹlu awọn abajade otitọ."
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr ""
+"Koza-TTP: maapu ti awọn papa baseball pẹlu ọna ẹgbẹ kan ati igi siseto jiini"
+" kan."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "Lọ si oju-iwe akọkọ"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "Akojọ aṣayan"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "Bawo ni o ṣe n ṣiṣẹ"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "Leslie Dickinson"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "Main ojula"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "Kan si"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "Ọrọ mi sọ otitọ"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"Awakọ naa ko dara julọ ju yiyan awọn kalẹnda laileto: %(resultado)s. Gbigbe "
+"bi eleyi, laisi fipamọ, jẹ ipinnu ti o tọ. Eyi fihan ohun ti o nilo lati ṣe "
+"atunṣe lati jẹ ki ẹrọ naa dara si."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "Iwadi lọwọlọwọ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr ""
+"Ohun gbogbo ti a gbiyanju lati lu iṣeto MLB 2023 osise, pẹlu awọn aworan ere"
+" idaraya."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "Iwadi lọwọlọwọ: Lu kalẹnda osise"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr ""
+"Ibi-afẹde: Iṣeto fun akoko 2023 Major League Baseball ti o rin irin-ajo kere"
+" ju osise lọ ati ni ibamu pẹlu awọn ofin kanna. Ọkan osise rin irin-ajo 1.74"
+" milionu km."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr ""
+"Imudojuiwọn Oṣu kọkanla 14, 2026 (ọsan). Awọn alugoridimu wọnyi wa ni "
+"idanwo: aaye ati demo ko lo wọn sibẹsibẹ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "1. Awọn abajade ti gbogbo awọn idanwo"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"Igi kọọkan jẹ irin-ajo lapapọ ti awọn ẹgbẹ 30 ni akoko kan, ni awọn miliọnu "
+"km. Kere si dara julọ. Gbogbo awọn nọmba ni a ṣe iwọn kanna: ẹgbẹ kọọkan lọ "
+"kuro ni ile rẹ, lọ lati papa si papa ati pada ni ipari."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "Lapapọ irin ajo nipa alugoridimu version"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "Awọn alugoridimu Koza-TTP"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "Kalẹnda Osise 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr ""
+"Awọn alugoridimu annealing meji ti o da lori titan lu oṣiṣẹ nipasẹ nipa 9%%."
+" Tabili ti o wa ni isalẹ ni data kanna."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "Gbogbo awọn idanwo, lati agbalagba si julọ to kẹhin"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "Lapapọ Irin ajo"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "Ṣe o n ṣiṣẹ ni ibamu si awọn ofin?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "Ohun tí a kọ́"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "Àkọsílẹ alugoridimu, ko si realism ofin"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "1.85 milionu km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "Rara: Awọn ere idaraya 36 ni ọna kan"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr "O dabi ẹni pe o sunmọ ọlọpa naa, ṣugbọn o n ṣe iyanjẹ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "Àkọsílẹ alugoridimu, pẹlu awọn ofin"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "2.19 milionu km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "O ti wa ni ti o dara ju ti o ti wa ni ti o ti wa ni ti o ti wa"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr ""
+"Awọn ohun amorindun ti o wa titi ko gba ọ laaye lati ṣeto awọn irin-ajo "
+"daradara."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "Awọn bulọọki adalu, pẹlu awọn alakoso"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "2.00 milionu km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "Bẹẹni"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr "O dara julọ, ṣugbọn gbogbo awọn ẹgbẹ 30 ṣi n ṣere ni akoko kanna."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr ""
+"Awọn iyipada pẹlu awọn ipilẹ ti 2, 3 ati 4 tosaaju + simulated annealing"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "1.52 si 1.60 milionu km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "3 ninu 4 gbalaye (ọkan duro ni ọjọ afikun)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr "Yiyọ ofin \"gbogbo ni ẹẹkan\" ni ohun ti o ṣẹgun oṣiṣẹ naa."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr "Awọn iyipada + ọsẹ bi MLB + PG ti o gba awọn iṣagbega nikan"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "1.70 milionu km (apapọ)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "Bẹẹni, 4 ninu 4"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr ""
+"O fẹrẹ lu oṣiṣẹ naa, ṣugbọn o fẹrẹ dọgbadọgba pẹlu awọn gbigbe laileto."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "Awọn agbeka laileto, igbiyanju kanna bi PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "Fair baseline to measure PG."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "Awọn iyipada + ọsẹ + annealing ti a fi ọwọ ṣe"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "1.567 milionu km (apapọ awọn kalẹnda 8)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "Gbigba awọn ayipada ti o buru julọ ni ibẹrẹ ṣe iranlọwọ pupọ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "Awọn iyipada + ọsẹ + iwọn otutu ẹkọ PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "1.571 milionu km (apapọ awọn kalẹnda 8)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr ""
+"PG ṣe apẹrẹ oludari tirẹ ati pe o fẹrẹ sopọ mọ ọkan ti a fi ọwọ ṣe (0.3%% "
+"diẹ sii)."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "Ti o ba ti o ba"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "1.583 milionu km (apapọ awọn kalẹnda 8)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "Bẹẹni, 8 ninu 8"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr ""
+"Ṣiṣe pẹlu awọn ṣiṣan kukuru ko kọ ofin ti o dara julọ fun awọn gigun gigun."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "Iṣeto MLB 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "1.74 milionu km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr ""
+"Ibi-afẹde naa. O tun ni ibamu pẹlu awọn ofin ti a ko ṣe apẹrẹ, gẹgẹbi awọn "
+"ọjọ papa ati tẹlifisiọnu."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"Awọn ofin ti realism: o pọju awọn ere itẹlera 12 ni ile tabi kuro, ko si "
+"alatako tun ṣe ni jara itẹlera, o pọju awọn ọjọ itẹlera 20 pẹlu ere ati "
+"akoko ti awọn ọjọ 186. Lati kalẹnda osise a tọju awọn nọmba iṣiro nikan, ni "
+"ibamu si awọn ofin lilo MLB."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "2. Awọn ńlá ayipada: wa pẹlu tosaaju ti 2, 3 ati 4 awọn ere"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"Ni iṣaaju, gbogbo awọn ẹgbẹ 30 dun jara ọjọ 3 ni akoko kanna, laisi isinmi. "
+"Bayi akoko naa pin si awọn iyipada ọsẹ (ọjọ 4) ati ipari ose (ọjọ 3), gẹgẹ "
+"bi MLB ṣe. Ẹgbẹ kọọkan n ṣe awọn ere 2, 3 tabi 4, tabi isinmi."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "Awoṣe ti tẹlẹ vs. awoṣe ti o da lori titan"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "Dúró"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "Nọmba naa sọ iye awọn ere idaraya (nọmba awọn ere idaraya)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "Bireki"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"Awọn ẹgbẹ mẹfa ni awọn iyipada mẹjọ. Ninu awoṣe iṣaaju, gbogbo eniyan n ṣiṣẹ"
+" ni ọjọ 3 ni iyipada kọọkan. Ninu awoṣe iṣipopada jara kẹhin awọn ọjọ 2, 3 "
+"tabi 4 ati pe awọn isinmi wa, nitorinaa a le fi awọn irin-ajo papọ pẹlu "
+"ominira diẹ sii."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "3. Iṣipopada akọkọ: pq Kempe"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr ""
+"Lati yi iṣeto pada laisi ẹgbẹ kan ti o nṣire jara meji ni ẹẹkan, awọn iyipo "
+"meji ati pq ti jara yiyan laarin wọn ni a mu. Gbogbo awọn jara ninu pq "
+"yipada ni akoko kanna. Iṣeto naa tun wulo."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "Kempe pq laarin Tan A ati Tan B"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "Series in Shift A (Solid Line)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "Series on Tan B (dotted line)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr ""
+"Awọn ẹgbẹ mẹjọ. Nẹtiwọọki naa bẹrẹ ni NYA ati lọ nipasẹ BOS, TOR ati BAL. "
+"Awọn jara mẹrin rẹ yipada awọn iyipada. Awọn jara miiran ko gbe."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "4. Kini idi ti annealing lu PG?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr ""
+"PG akọkọ lo awọn agbeka kanna bi annealing, ṣugbọn o jẹ 1.70 milionu km ati "
+"annealing ni 1.58. Awọn idi mẹta lo wa."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>O gba awọn ilọsiwaju nikan.</strong> Nitorinaa o di ni \"afonifoji\""
+" akọkọ ti o rii. Annealing gba lati buru diẹ ni akọkọ, ati pe iyẹn gba ọ "
+"laaye lati kọja \"oke\" naa ki o de afonifoji ti o jinlẹ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr ""
+"<strong>O lo igbiyanju.</strong> Ni iran kọọkan o gbiyanju awọn ilana 16 ati"
+" pe o tọju kalẹnda ti o dara julọ nikan. Annealing tọju gbogbo igbesẹ ti o "
+"ṣe."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr ""
+"<strong>O tun ṣe awọn aaye kanna.</strong> Awọn nọmba ti o wa titi ninu igi "
+"nigbagbogbo tọka si awọn iyipo kanna ati awọn ẹgbẹ. Awọn iṣipopada laileto n"
+" ṣiṣẹ nipasẹ gbogbo kalẹnda."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "Awọn ilọsiwaju nikan lodi si gbigba awọn ayipada ti o buru julọ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "Gba awọn igbesoke nikan (Circle)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "Annealing: gba awọn ayipada ti o buru julọ (rhombus)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr ""
+"Laini naa jẹ iye owo ti kalẹnda: kekere jẹ dara julọ. Circle lọ si afonifoji"
+" akọkọ o si duro nibẹ. Rhombus lọ si oke naa, nitori pe o gba lati buru diẹ,"
+" o si de afonifoji ti o jinlẹ julọ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr "5. PG ti o kọ ẹkọ nigbati lati gba awọn ayipada ti o buru julọ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr ""
+"Lati ṣe atunṣe idi 1, PG bayi ṣe apẹrẹ ofin annealing. Igi kan pinnu iye "
+"awọn km ti o buru julọ ti a gba ni igbesẹ kọọkan. Wo awọn ege data meji: "
+"bawo ni o ṣe jinna si ṣiṣe ati iye awọn ayipada ti a gba laipẹ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr ""
+"PG ṣe adaṣe pẹlu awọn kalẹnda kukuru lori awọn kalẹnda 2. Lẹhinna a gbiyanju"
+" igi ti o bori lori awọn kalẹnda 4 ti ko rii. Eyi ni igi ti o bori:"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr ""
+"Ni kukuru: ifarada jẹ kekere, nipa 60 si 1,200 km, ati pe o lọ soke nigbati "
+"awọn ayipada ko ba gba. Oludari ti a fi ọwọ ṣe ni idakeji: o bẹrẹ ni 20,000 "
+"km ati maa lọ si isalẹ si 50."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "Ifarada ni km jakejado ṣiṣe (iwọn logarithmic)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "Oludari ti a fi ọwọ ṣe"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "Ti o ba ti"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "Ti o ba ti o ba ti"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr ""
+"Ofin ti a fi ọwọ ṣe lọ si isalẹ lati 20,000 si 50 km. Ofin PG duro laarin 60"
+" ati 1,200 km ati da lori iye awọn ayipada ti a gba. Awọn mejeeji de awọn "
+"kalẹnda ti o to 1.57 milionu km."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "6. Ohun ti o tẹle"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr ""
+"PG fẹrẹ sopọ pẹlu annealing, ṣugbọn ko tun lu u. Ni awọn kalẹnda tuntun 8, "
+"oludari ti a fi ọwọ ṣe irin-ajo 1.567 milionu km ati ti PG 1.571."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"A gbiyanju lati fun ni orisirisi diẹ sii (laisi awọn ilana atunṣe) ati adaṣe"
+" diẹ sii (awọn kalẹnda 3, awọn ilana 32, awọn iran 16). O buru julọ: 1.583 "
+"milionu km. PG ṣe adaṣe pẹlu awọn igbesẹ kukuru ti awọn igbesẹ 40,000, "
+"ṣugbọn idanwo nlo 400,000. Ofin ti o dara fun ṣiṣe kekere kii ṣe ti o dara "
+"julọ fun ṣiṣe pupọ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr ""
+"Igbesẹ ti o tẹle ni fun PG lati ṣe adaṣe pẹlu awọn ṣiṣan ti o dabi idanwo "
+"ati bẹrẹ lati ọdọ oludari ti a fi ọwọ ṣe, ki o le ṣe ilọsiwaju rẹ nikan."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "Wo koodu fun awọn idanwo wọnyi lori GitHub"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "Alugoridimu iwe-akọọlẹ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "Alugoridimu Iwe-akọọlẹ Atilẹba (2026)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "Wo akoko gidi 2023, laisi idaduro"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "Tẹ lori igi naa lati rii pe o tobi julọ."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr ""
+"Igi jẹ eto ti o ṣeto kalẹnda ti o dara julọ. Ẹka kọọkan darapọ mọ awọn ere; "
+"awọn leaves jẹ awọn ere (ọjọ, ẹgbẹ ile, ati ẹgbẹ kuro)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "Lapapọ irin-ajo ti gbogbo awọn ẹgbẹ:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "Awọn ere ti o fọ awọn ofin:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr ""
+"Ofin kan ni pe ẹgbẹ kọọkan n ṣe nọmba awọn ere ti idije naa pe. <strong>Awọn"
+" ere 0 ti o fọ awọn ofin</strong> tumọ si pe iṣeto naa wulo."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr "O le gba iṣẹju diẹ si iṣẹju diẹ. O da lori nọmba awọn kọnputa."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "Ẹrọ naa n ṣiṣẹ."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr ""
+"O ṣẹda awọn kalẹnda, dapọ wọn, ati tọju awọn ti o dara julọ. Maṣe pa oju-iwe"
+" yii."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "Awọn paramita ti a fipamọ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "\"%(nombre)siṣeto ni"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr ""
+"<strong>Pataki:</strong> ẹrọ naa fipamọ awọn iye wọnyi, ṣugbọn ko lo wọn. "
+"Nigbagbogbo o nṣiṣẹ pẹlu olugbe ti awọn iran 100, awọn iran 20, agbelebu 0.8"
+" ati iyipada 0.2."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "Aṣẹ lati ṣe atunyẹwo rẹ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"Daakọ ibeere yii ki o lẹẹmọ sinu faili ti o lo. So faili "
+"programa_genetico/programagenetico.py (ẹrọ imudarasi) tabi "
+"programa_genetico/motor_bloques.py (ẹrọ ti o ni ilọsiwaju)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "Ti o dara ju Kalẹnda Igi"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "Lati %(a)s si %(b)s."
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "Awọn igbesẹ Demo"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "Demo: Setup"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "Igbesẹ 2: Ṣeto"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr "Gbogbo awọn iye ti wa ni ti a ti yan tẹlẹ. O le yi wọn pada tabi fun \\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "Yi ẹrọ pada"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "Idije naa"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "Alugoridimu naa"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "Next: Wo kalẹnda naa"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "成语语读音:yàn yàn"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr ""
+"Koza-TTP Demo: Kọ kalẹnda baseball kan pẹlu algorithm tuntun ni awọn igbesẹ "
+"3."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "Igbesẹ 1: Yan ẹrọ naa"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr ""
+"Alugoridimu naa ṣeto iṣeto fun awọn ẹgbẹ ti o yan ati ki o wa ọkan ti o ni "
+"irin-ajo ti o kere julọ. A ti samisi tẹlẹ awọn ẹgbẹ 10 Major League. Ti o ba"
+" fẹ, tẹ \"Itele\" laisi iyipada ohunkohun."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "Next: Setup"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "Ṣe o fẹ lati wo akoko ọba ni kikun?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "Wo akoko 2023: Awọn ẹgbẹ 30 lodi si kalẹnda osise"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "Ṣe o fẹ lati forukọsilẹ awọn ẹgbẹ tirẹ ati awọn papa iṣere rẹ?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "Ṣe ara rẹ ni itọsọna awọn igbesẹ 5"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "Ti tẹlẹ: Kalẹnda naa"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "Igbesẹ 3: Kalẹnda naa"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "Alugoridimu tuntun: Awoṣe ti o da lori titan"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>: %(n)s egbe."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "Ohun ti algorithm naa ṣe aṣeyọri"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr ""
+"Gbogbo awọn ẹgbẹ ti o wa ni ayika agbaye ti o ni ibamu pẹlu algorithm ti o "
+"wa ni isalẹ."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr "Rin irin-ajo pẹlu kalẹnda ti a ṣe laileto, ṣaaju ki o to ṣe iṣapeye."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr ""
+"Ti o dara ju Kalẹnda Ti o dara ju Kalẹnda Ti o dara ju Ti o dara ju Ti o"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "Tẹle gbogbo awọn ofin"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "Kàlẹ́ńdà náà ṣàdédé fọ́ %(a)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "Awọn ofin wo ni o ṣe atunyẹwo?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr ""
+"O pọju awọn ere 12 ile tabi kuro ni ọna kan. Nibi: %(n)s ni ile ati %(m)s "
+"kuro."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "O pọju awọn ọjọ 20 ni ọna kan pẹlu ere. Nibi: %(n)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr "Ko ṣere lodi si alatako kanna ni awọn jara meji ni ọna kan."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr "Awọn ere ile nipa idaji. Nibi: %(a)s si %(b)s fun ẹgbẹ kan."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "Bawo ni irin-ajo naa ṣe lọ silẹ"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr ""
+"Lapapọ irin-ajo lọ silẹ lati %(a)s km si %(b)s km ni awọn igbesẹ wiwa %(p)s "
+"."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "Awọn %(n)s akọkọ ti awọn ere %(t)s"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "Ní ilé"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "Ṣabẹwo si"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "Wo gbogbo awọn ere"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "Gbogbo awọn ere"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "Kini atẹle?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "Pààrọ̀ ètò kí o sì tún ṣiṣẹ́ lẹ́ẹ̀kan sí i"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "Yan awọn ohun elo miiran"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr "Wo akoko 2023 ni kikun: Awọn ẹgbẹ 30 lodi si kalẹnda osise"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "Jẹ ki a mọ bi o ṣe n ṣiṣẹ ni iṣẹju 2."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr "Ṣe o funrararẹ: Forukọsilẹ ẹrọ rẹ ni itọsọna igbesẹ 5"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "Wo awọn atilẹba algorithm ti awọn ẹya ara ẹrọ ti o wa ni isalẹ."
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "Loye ero naa ni iṣẹju 2"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr ""
+"Koza-TTP ere idaraya itan: awọn map ti baseball irin ajo, awọn igi ti jiini "
+"siseto ati awọn ọna ti awọn awaoko lati thesis to dara engine."
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "2 iṣẹju · 7 igbesẹ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "Awọn igbesẹ ti itan"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "Awọn papa iṣere"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "Irin-ajo"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "Igi"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "Agbelebu"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "Iyipada"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "Awọn iran"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "Abajade"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "Apá 1 · Iṣoro naa"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "Awọn ẹgbẹ 30 yẹ ki o ṣere fun ara wọn."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr ""
+"Major League Baseball ni awọn ẹgbẹ 30. Ẹgbẹ kọọkan n ṣe awọn ere 162 ni "
+"akoko kan."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr ""
+"Kalẹnda kan sọ ẹniti o ṣere lodi si tani, ni ọjọ wo ati ni papa iṣere wo."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "Tẹ bọtini kan lori maapu lati wo orukọ rẹ."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "Gbogbo irin ajo n gba akoko ati owo"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr ""
+"Nigbati ẹgbẹ kan ba ṣere ni opopona, wọn rin irin-ajo nipasẹ ọkọ ofurufu. "
+"Iṣeto buburu jẹ ki wọn kọja orilẹ-ede ni ọpọlọpọ igba."
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr "Apẹẹrẹ irin-ajo irin-ajo, pẹlu awọn ọjọ ni aṣẹ laileto."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr "Tẹ pápá ìṣeré mìíràn láti wo ìrìn-àjò ikọ̀ náà."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "Apá 2 · Ero ti thesis"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "A le kọ kalẹnda kan bi igi kan."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr ""
+"Genetic siseto ko kọ kalẹnda pẹlu ọwọ. O <strong>kọ awọn itọnisọna</strong> "
+"lati mu u dara si."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"Awọn itọnisọna wọnyi jẹ igi kan. <strong>Awọn leaves</strong> jẹ lẹsẹsẹ ti "
+"awọn ere, bii \"SEA–NYA.\" <strong>Awọn ẹka</strong> jẹ awọn iṣe, bii "
+"\"swapping\" jara ọjọ meji tabi \"inverting agbegbe\" (iyipada ẹniti o nṣere"
+" ni ile)."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "Agbelebu: Awọn igi meji dapọ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr "Awọn igi meji ti o ṣiṣẹ daradara ni a mu. Olukuluku wọn fun ẹka kan."
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "Igi titun, awọn \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "Iyipada kekere, iyipada laileto"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr "Nigba miran igi kan yipada funrararẹ. Nibi, awọn jara \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr "Iyipada ṣe idanwo awọn imọran tuntun ti ko si obi ti o ni."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "Apá 3 · Awọn esi"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "Ìran lẹhin iran"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr ""
+"Iran kọọkan ni ọpọlọpọ awọn igi. Awọn ti o ṣe awọn kalẹnda pẹlu irin-ajo "
+"kekere ni awọn ọmọde diẹ sii."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr ""
+"Laini aami jẹ ibi-afẹde ti o kere julọ: kalẹnda ti o dara julọ ti <strong>a "
+"yan laileto</strong> pẹlu igbiyanju kanna."
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "Yan ẹrọ kan lati wo bi o ṣe n ṣiṣẹ."
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "Lati ọkọ ayọkẹlẹ"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"Awọn dara engine, nipa awọn bulọọki, ko lu o ni laileto: %(resultado)s, ni "
+"alakoko igbeyewo (%(corridas)s runs, %(equipos)s egbe)."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr ""
+"Awakọ ti iwe-akọọlẹ naa (2026) <strong>ko dara</strong> julọ ju yiyan awọn "
+"kalẹnda laileto: %(resultado)s."
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "Ṣe idanwo ọpa naa ni awọn igbesẹ 5"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "Wo gbogbo awọn aaye 30 bi tabili kan"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "Awọn data lati inu faili teams.csv ise agbese."
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "Koodu"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "Ẹgbẹ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "Pápá ìṣeré"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "Ibi tí wọ́n ń gbé"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "Ti tẹlẹ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "Ti o tẹle"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr ""
+"Koza-TTP: siseto jiini fun awọn kalẹnda baseball. O bẹrẹ bi iwe-akọọlẹ "
+"nipasẹ Leslie Dickinson (ITAM) ati loni o ni ẹrọ ti o bori anfani."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "Iṣeto MLB ti o dara julọ pẹlu siseto jiini."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"Koza-TTP ni a bi bi iwe-ẹkọ mi ni ITAM. Awakọ akọkọ yẹn ko kọja laileto. Ẹya"
+" bulọọki naa ṣe: %(resultado)s, ni awọn idanwo akọkọ. Nibi Mo fihan ọ bi o "
+"ṣe n ṣiṣẹ."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr ""
+"Itan ti ere idaraya: maapu ti awọn irin-ajo, awọn igi ti siseto jiini ati "
+"abajade."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "Akoko 2023: Ẹrọ lodi si kalẹnda gidi"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr ""
+"Atunwi ti ṣiṣe ti ẹrọ siseto jiini pẹlu gbogbo awọn ẹgbẹ 30 Major League "
+"Baseball ni 2023, ni akawe si iṣeto osise ati si anfani."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "Akoko 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "Demo pẹlu data gidi · Major League Baseball 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr ""
+"A lo awọn ẹgbẹ 30 Major League Baseball ati awọn papa wọn gangan. Iṣeto 2023"
+" jẹ itọkasi. Ẹrọ ti o da lori bulọọki n gbiyanju lati ṣeto akoko kan pẹlu "
+"irin-ajo diẹ."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "Bawo ni awọn ibuso ṣe lọ silẹ, iran nipasẹ iran"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr ""
+"Eyi jẹ ṣiṣe gidi ti ẹrọ naa, ti o fipamọ fun ọ lati wo laisi idaduro. O ni "
+"awọn iran %(generaciones)s ti awọn kalẹnda 100 kọọkan."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "Ṣere"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "Iran"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "Sideways sisun ọkọ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "Irin-ajo ti awọn ẹgbẹ 30 jakejado akoko deede."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "Irin-ajo ti o gunjulo julọ (awọn ere idaraya ni ọna kan)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "Awọn ere idaraya diẹ sii ni ọna kan"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "Oṣiṣẹ Major League Baseball"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "milionu km"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "Ti o dara ju ti o dara"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "Ko ni ibamu pẹlu nọmba awọn ere ti ẹgbẹ kọọkan."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr ""
+"Ẹrọ <strong> naa rin irin-ajo%(pct)s%% kere ju</strong> iṣeto ti o dara julọ"
+" lọ. Ẹrọ naa kọ ẹkọ."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr ""
+"Kalẹnda <strong> osise rin irin-ajo%(pct)s%% kere ju ẹrọ lọ</strong>. A ko "
+"tii lu u."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"Akiyesi: kalẹnda engine ni awọn irin-ajo ti o to <strong> awọn ere%(gira)s "
+"kuro ni ọna kan.</strong> Ọkan osise ni o ni %(oficial)sti o pọju. Ẹgbẹ gidi"
+" kii yoo gba iru awọn irin-ajo gigun bẹ."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "Irin-ajo ti ẹgbẹ kọọkan"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr ""
+"Yipada laarin awọn iṣeto meji lati wo iru awọn ẹgbẹ wo ni o rin irin-ajo "
+"julọ."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "Kalẹnda Maapu"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "Oṣiṣẹ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "Engine"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "Wo gbogbo awọn ẹgbẹ 30 bi tabili kan"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "Oṣiṣẹ (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "Engine (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "Nibo ni data naa ti wa lati."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr ""
+"Iṣeto osise: Major League Baseball 2023 akoko deede (MLB Stats API). A tọju "
+"awọn nọmba iṣiro nikan nibi, kii ṣe iṣeto."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr ""
+"Awọn ijinna: laini ti o tọ laarin awọn papa iṣere (agbekalẹ semiverse). Ẹgbẹ"
+" kọọkan lọ kuro ni ile rẹ, rin irin-ajo lati papa si papa ati pada ni ipari."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr ""
+"Àkọsílẹ engine: 100 kalẹnda fun iran, %(evaluaciones)s kalẹnda akojopo ni "
+"lapapọ. Chance akojopo kanna iye."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "Ṣe idije ti ara rẹ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "Bawo ni ẹrọ naa ṣe n ṣiṣẹ"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "Awọn bulọọki, pẹlu awọn ofin"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "Tan + ID Moves"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "Tan + PG (awọn iṣagbega nikan)"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "Awọn iyipada + PG eko otutu"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "Awọn iyipada + ọwọ annealing"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "Atijọ: Gbogbo eniyan n ṣere ni ọjọ 3 ni akoko kọọkan"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "Bayi: 2, 3 ati 4 ere jara, pẹlu awọn isinmi"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "Tan"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "awọn ọjọ ọsẹ"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "Ìparí"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "Tan A"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "Tan B"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "1. A yan ẹgbẹ kan ati awọn iyipada meji"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "2. A tẹle pq naa: A, B, A, B ..."
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "3. Pq jara yipada awọn iyipada"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "Iye owo kalẹnda"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "Ti o dara ju"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "Afonifoji akọkọ"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "Àfonífojì tí ó jìnlẹ̀"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "Ilọsiwaju ti Bullfight"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "Ile"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "Opin"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "Nipa ọwọ"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "PG, 5%"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "PG, 50%"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "Idije Idanwo mi"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr "Iṣayan. Ti o ba fi silẹ ni iyẹn, orukọ yii ni a lo."
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "Awọn ẹgbẹ idije"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr "A ti gba 10 tẹlẹ. O le yi wọn pada: lati awọn ẹgbẹ 3 si 10."
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "30 ìàðòà â Ìîñêâå â Ìîñêâå"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr "{Team} apẹẹrẹ irin-ajo: 12 abẹwo ni aṣẹ laileto."
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr "O yan {ẹgbẹ}. Tẹle igbesẹ 2 lati wo awọn irin-ajo wọn."
+
+#: tesis/historia.py
+msgid "km"
+msgstr "km"
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "Darapọ"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "Paṣipaarọ"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "Idoko-owo Agbegbe"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "Ile"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "Ṣabẹwo si"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "Obi A"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "Obi B"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "Ọmọ"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr ""
+"Igi apẹẹrẹ: darapọ, pẹlu awọn ẹka meji: ṣe paṣipaarọ SEA-NYA pẹlu BOS-TEX, "
+"ki o ṣe idoko-owo agbegbe LAN-CHN ni ile."
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr ""
+"Crossover: baba A fun ẹka osi rẹ ati baba B fun ẹka osi rẹ; ọmọ naa dapọ "
+"awọn mejeeji."
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "Iyipada: Lori igi, bunkun SEA–NYA yipada si SEA–OAK."
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "Wo lẹẹkansi"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "Irin-ajo (ID = 100)"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "Anfani"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "Awọn olugbe (awọn igi 48)"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "Awọ diẹ sii = irin-ajo ti o kere si"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "Thesis Engine"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{engine} · {g} iran ti {lapapọ}"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{engine} · pari: {abajade}."
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr ""
+"{engine}: bẹrẹ ni {ibẹrẹ} ati pari ni {opin} (anfani = 100). Abajade: "
+"{abajade}."
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr ""
+"Ijinna dipo anfani: thesis engine {thesis}, laileto yan 100, bulọọki engine "
+"{awọn bulọọki}."
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "Ẹrọ Thesis (2026)"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "Yan awọn kalẹnda ni ID"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "Àkọsílẹ Engine (Preliminary)"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr "Pẹlupẹlu, o le lo awọn bọtini itẹwe lori bọtini itẹwe rẹ."
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr ""
+"Awọn ibuso ti akoko nipasẹ iran engine, ni akawe si kalẹnda osise ati anfani"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "Kalẹnda osise"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "Ti o dara ju ti o dara"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}: {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr "Sibẹsibẹ, ko ni ibamu si nọmba awọn ere ti ẹgbẹ kọọkan."
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr ""
+"Ipo inaro: lati {min} si {max} milionu km. Ipo petele: awọn iran 0 si "
+"{kẹhin}."
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr ""
+"Maapu: Circle kọọkan jẹ ẹgbẹ kan; ti o tobi tumọ si awọn maili diẹ sii ni "
+"akoko"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{ẹgbẹ}: {km} km"

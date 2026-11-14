@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "Mga resulta ng optimisasyon"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "I-click ang puno upang palawakin"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "Kabuuang Gastos sa Paglalakbay:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "Paglabag sa Patakaran:"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Pag-optimize ng pagpapatakbo"
 
@@ -135,10 +123,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "Mula sa pinakabago hanggang sa pinakamatanda."
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "Planado"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "Mga operator ng konteksto para sa makina"
 
@@ -167,10 +151,6 @@ msgstr ""
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "Nobyembre 3, 2026"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "Patuloy"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -627,10 +607,6 @@ msgstr ""
 "kung gaano kalayo ang biyahe ng bawat koponan."
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "Demo · Patas na paglalakbay sa pagitan ng mga koponan"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "Gumawa ng kalendaryo at"
 
@@ -644,6 +620,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"Ang AI (genetic programming) ay naghahanap ng mga kalendaryo kung saan "
+"maikli at pantay ang biyahe. Gusto mo ba ng sarili mong mga koponan? Gamitin"
+" ang <a href=\"%(guia)s\">5-hakbang na gabay</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -680,10 +659,6 @@ msgstr "Ilang segundo lang ang kailangan."
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "Iskedyul: %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "Configuration %(id)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -762,14 +737,6 @@ msgstr "Patakbuhin ito sa iyong computer"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "Humingi ng tulong sa iyong AI assistant"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr ""
-"Kopyahin ang tanong na ito at i-paste sa wizard na ginagamit mo, kasama ang "
-"programa_genetico/programagenetico.py file."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -1001,31 +968,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "Genetic Programming para sa Mga Kalendaryo ng Baseball"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr ""
-"Koza-TTP: Ang tesis ni Leslie Dickinson (ITAM) tungkol sa genetic "
-"programming para sa mga kalendaryo ng baseball, na may tapat na resulta at "
-"pinahusay na makina."
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "ITAM Thesis · Genetic Programming · Baseball"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "Ang aking tesis ay nagsabi ng totoo:"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr ""
-"Ginagamit ng Koza-TTP ang tesis na iyon upang gumawa ng mga kalendaryo ng "
-"baseball season gamit ang genetic programming. Dito makikita mo kung ano ang"
-" nagkamali, bakit, at paano ko ito inaayos sa publiko."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -1042,12 +986,6 @@ msgstr "2 minuto"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "Pag-unawa sa Ideya"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr "Ano ang genetic programming at bakit mahirap ang baseball calendar."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1128,37 +1066,41 @@ msgstr "Automatic, kasama sina Maya at Otomí. Pwede mo silang ayusin."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "Kumpara sa random na paghahanap"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "Mas mabuti ba ito kaysa pumili nang random?"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "Sa Pagsubok"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
 msgstr ""
+"%(resultado)s, sa %(corridas)s ay tumatakbo kasama ang %(equipos)s koponan"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "Oo, sa mga paunang pagsusulit"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
 msgstr ""
+"Ginagamit pa rin ng demo ang thesis version. Ang pinahusay na engine ay "
+"ikinumpara sa random search na nire-review ang parehong bilang ng mga "
+"kalendaryo."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "Nobyembre 8, 2026"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "Block motor"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1167,12 +1109,18 @@ msgid ""
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
 msgstr ""
+"Bawat bahagi ng iskedyul (dibisyon, liga at interleague) ay binubuo ng mga "
+"bloke kung saan lahat ay naglalaro laban sa isa't isa. Kaya, palaging "
+"sinusunod ang mga patakaran ng MLB. Ang genetic programming ang pumipili at "
+"nag-uutos sa mga bloke upang mabawasan ang paglalakbay."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"Paunang resulta: %(resultado)s, sa %(corridas)s na tumakbo kasama ang "
+"%(equipos)s koponan."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1181,182 +1129,1914 @@ msgid ""
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
 msgstr ""
+"Code review upang kumpirmahin kung bakit hindi mas maganda ang PG kaysa sa "
+"pagpili ng kalendaryo nang random. Ang crossover at mutation ay sumisira sa "
+"kakayahan ng mga kalendaryo, at ang bigat ng fitness ay nagdudulot ng "
+"pagkatalo sa mga bata kumpara sa mga magulang ng unang henerasyon."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "Clear Mode"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "Makina: %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
 msgstr ""
+"<strong>Tandaan:</strong> ang demo na ito ay gumagamit ng thesis engine. Ang"
+" engine na iyon ay hindi mas maganda kaysa sa pagpili ng mga kalendaryo nang"
+" random."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
 msgstr ""
+"Mas maganda ang pinahusay na makina, sa paunang pagsubok: %(resultado)s, sa "
+"%(corridas)s runs. Hindi pa ito kasama sa demo na ito."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
 msgstr ""
+"Para sa isang proyekto sa paaralan, ito ay isang plus: mayroon kang baseline"
+" at isang pag-unlad na maaari mong sukatin."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "Tingnan ang mga resulta ng bawat release"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
+"Sa mga pagsubok: %(resultado)s, sa %(corridas)s tumatakbo kasama ang "
+"%(equipos)s koponan."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "Bersyon ng tesis (2026)"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "19.5% mas malayo kaysa sa pagpili ng random na kalendaryo"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "Block engine (upgraded na bersyon)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "13% mas kaunting paglalakbay kaysa sa pagpili ng random na kalendaryo"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "Daglat (hal., SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "Pangalan ng Koponan"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "Lungsod"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "latitud ng istadyum"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "Haba ng Istadyum"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "Sa decimal degrees. Halimbawa: 47.59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "Sa decimal degrees. Halimbawa: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "Mga Koponan sa Liga"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "Pangalan ng Liga"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "Pumili ng hindi bababa sa 2 koponan."
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "Pangalan ng paligsahan"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "Unang araw"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "Huling araw"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "Mga laro ayon sa serye"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "Team Series"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "Ang huling araw ay dapat kapareho o pagkatapos ng una."
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "Dapat 1 o higit pa."
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "Pangalan ng Konfigurasyon"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "Laki ng populasyon"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "Bilang ng mga henerasyon"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "Posibilidad ng pagtawid (0 hanggang 1)"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "Posibilidad ng Mutasyon (0 sa 1)"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "Dapat nasa pagitan ito ng 0 at 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "Kagamitan"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "Liga"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "Torneo"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "Mga Setting"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "Kalendaryo"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "Tapusin muna ang hakbang na ito."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "Nagdagdag ng kagamitan."
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "Mga larong ginawa."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "Nobyembre 14, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
+msgstr "Turn-based algorithm: tinalo ang opisyal na iskedyul ng MLB 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
 msgstr ""
+"Tinanggal namin ang patakaran na lahat ng 30 koponan ay maglaro ng 3-araw na"
+" serye nang sabay-sabay. Sa serye ng 2, 3, at 4 na laro at mga pahinga, ang "
+"pinakamahusay na algorithm ay naglalakbay ng 1.57 milyong km. Ang opisyal na"
+" kalendaryo ay naglalakbay ng 1.74 milyon. Pareho silang sumusunod sa "
+"parehong mga patakaran ng realismo."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr ""
+"Tingnan ang kasalukuyang pananaliksik, gamit ang animated na mga diagram"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "Nobyembre 12, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "Ipinapakita ng demo ang tunay na season ng 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr ""
+"Makikita mo ang aktwal na iskedyul ng Major League Baseball para sa 2023 "
+"nang hindi na kailangang hintayin ang takbo ng makina."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "Tingnan ang season ng 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "Nobyembre 9, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "Hakbang-hakbang na kwento"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr ""
+"Isang paliwanag gamit ang mapa ng 30 yugto, ang mga puno at ebolusyon, "
+"hakbang-hakbang."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "Basahin ang kwento"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "Ikalawang audit ng karanasan"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr ""
+"Inulit ang pagsusuri ng accessibility, usability, at interaksyon ng tao at "
+"AI. Sa 28 puntos sa una, 13 ang naresolba. Karamihan sa mga bagong punto ay "
+"naitama na."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr ""
+"Nakuha niya ang makina nang sunod-sunod at pagkatapos ay kasama ang mga "
+"engine block."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "Nobyembre 5, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "Buksan ang 5-hakbang na gabay"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr ""
+"Genetic programming para gumawa ng mga kalendaryo ng baseball. Ang tesis ni "
+"Leslie Dickinson (ITAM), na may tapat na resulta."
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr ""
+"Koza-TTP: mapa ng mga istadyum ng baseball na may ruta ng koponan at isang "
+"genetic programming tree."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "Pumunta sa pangunahing site"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "Menu"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "Paano ito gumagana"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "Leslie Dickinson"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "Pangunahing Site"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "Makipag-ugnayan"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "Totoo ang sinabi ng thesis ko"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"Ang thesis pilot ay hindi mas maganda kaysa sa pagpili ng mga kalendaryo "
+"nang random: %(resultado)s. Ang pag-uulat nito nang ganito, nang hindi "
+"itinatago, ay ang tamang desisyon. Ipinakita ng resulta kung ano ang "
+"kailangang itama upang mapabuti ang makina."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "Kasalukuyang Pananaliksik"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr ""
+"Lahat ng sinubukan naming talunin ang opisyal na iskedyul ng MLB 2023, gamit"
+" ang mga animated na diagram."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "Kasalukuyang pananaliksik: nalampasan ang opisyal na kalendaryo"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr ""
+"Layunin: Isang iskedyul para sa 2023 Major League Baseball season na mas "
+"kaunti ang biyahe kaysa sa opisyal at sumusunod sa parehong mga patakaran. "
+"Ang opisyal na iskedyul ay naglalakbay ng 1.74 milyong km."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr ""
+"Na-update noong Nobyembre 14, 2026 (hapon). Ang mga algorithm na ito ay "
+"kasalukuyang sinusubukan: hindi pa ginagamit ng site at demo."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "1. Mga resulta ng lahat ng pagsusuri"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"Bawat bar ay ang kabuuang paglalakbay ng 30 koponan sa isang season, sa "
+"milyun-milyong km. Mas kaunti, mas mabuti. Lahat ng numero ay sinukat nang "
+"pareho: bawat koponan ay umaalis sa kanilang tahanan, pumupunta mula stadium"
+" papunta sa istadyum at bumabalik sa dulo."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "Kabuuang biyahe ayon sa bersyon ng algorithm"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "Mga algoritmo ng Koza-TTP"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "Opisyal na Kalendaryo 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr ""
+"Tinalo ng dalawang turn-based annealing algorithm ang opisyal ng halos 9%%. "
+"Ang talahanayan sa ibaba ay may parehong datos."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "Lahat ng pagsusuri, mula sa pinakamatanda hanggang sa pinakabago"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "Kabuuang Biyahe"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "Sumusunod ba ito sa mga patakaran?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "Ang aming natutunan"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "Block algorithm, walang realism rules"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "1.85 milyong km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "Hindi: mga tour na may hanggang 36 na sunod-sunod na laro"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr "Mukhang malapit siya sa pulis, pero nandadaya siya."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "Block algorithm, na may mga patakaran"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "2.19 milyong km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "Hindi natupad ang mga ito"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr ""
+"Ang mga fixed block ay hindi nagpapahintulot na maayos mong ayusin ang mga "
+"tour."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "Halo-halong mga bloke, na may mga ruler"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "2.00 milyong km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "Oo"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr ""
+"Mas maganda, pero lahat ng 30 koponan ay sabay-sabay pa ring naglalaro."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr "Mga shift gamit ang mga set ng 2, 3 at 4 na set + simulated annealing"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "1.52 hanggang 1.60 milyong km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "3 sa 4 na takbo (isa ay tumagal ng dagdag na araw)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr ""
+"Ang pagtanggal ng patakaran na \"lahat sabay-sabay\" ang siyang nananalo sa "
+"opisyal."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr ""
+"Mga shift + linggo bilang MLB + PG na tumatanggap lamang ng mga upgrade"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "1.70 milyong km (karaniwan)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "Oo, 4 sa 4"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr ""
+"Halos natalo niya ang pulis, ngunit muntik nang makapantay sa mga random na "
+"galaw."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "Random na galaw, parehong effort tulad ng PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "Makatarungang baseline para sukatin ang PG."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "Shift + linggo + handmade annealing"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "1.567 milyong km (karaniwang 8 kalendaryo)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "Malaking tulong ang pagtanggap sa mas masamang pagbabago sa simula."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "Shift + linggo + PG learning temperature"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "1.571 milyong km (karaniwan ng 8 kalendaryo)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr ""
+"Ang PG ay nagdidisenyo ng sarili nitong ruler at halos kapareho ng handmade "
+"na ruler (0.3%% na mas malaki)."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "Parehong PG, mas maraming variety at mas maraming practice"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "1.583 milyong km (karaniwang 8 kalendaryo)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "Oo, 8 sa 8"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr ""
+"Ang pagpraktis gamit ang maiikling takbo ay hindi nagtuturo ng pinakamahusay"
+" na patakaran para sa mahahabang takbo."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "Opisyal na Iskedyul ng MLB 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "1.74 milyong km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr ""
+"Ang layunin. Sumusunod din ito sa mga patakarang hindi namin ginagamit, "
+"tulad ng stadium dates at telebisyon."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"Mga tuntunin ng realismo: maximum na 12 sunod-sunod na laro sa home o away, "
+"walang ulit na kalaban sa sunod-sunod na serye, maximum na 20 magkakasunod "
+"na araw na may laro at isang season na 186 araw. Mula sa opisyal na "
+"kalendaryo, tinatago lamang namin ang mga kalkuladong bilang, ayon sa MLB "
+"terms of use."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "2. Ang malaking pagbabago: mga turn na may set ng 2, 3, at 4 na laro"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"Dati, lahat ng 30 koponan ay naglalaro ng 3-araw na serye nang sabay-sabay, "
+"walang pahinga. Ngayon, ang season ay hinahati sa weekday (4 na araw) at "
+"weekend (3 araw) na shift, tulad ng ginagawa ng MLB. Bawat koponan ay "
+"naglalaro ng serye ng 2, 3 o 4 na laro, o pahinga."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "Dating modelo kumpara sa turn-based na modelo"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "Pause"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "Series (ang numero ay nagsasabi kung ilang laro)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "Break"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"Anim na koponan sa walong shift. Sa naunang modelo, lahat ay naglalaro ng 3 "
+"araw sa bawat shift. Sa shift model, tumatagal ang serye ng 2, 3 o 4 na araw"
+" at may mga pahinga, kaya mas malaya ang pagsasama-sama ng mga tour."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "3. Ang pangunahing galaw: ang Kempe chain"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr ""
+"Upang baguhin ang iskedyul nang walang koponan na naglalaro ng dalawang "
+"serye nang sabay, dalawang turn at isang sunod-sunod na serye ang ginagawa "
+"sa pagitan nila. Lahat ng serye sa chain ay nagbabago nang sabay-sabay. Ang "
+"iskedyul ay nananatiling balido."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "Kempe chain sa pagitan ng turn A at turn B"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "Serye sa Shift A (Solid Line)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "Serye sa Turn B (tuldok-tuldok na linya)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr ""
+"Walong koponan. Nagsisimula ang network sa NYA at dumadaan sa BOS, TOR, at "
+"BAL. Nagbabago ang apat na serye nito. Hindi gumagalaw ang ibang serye."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "4. Bakit tinalo ng annealing ang PG?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr ""
+"Ang unang PG ay gumamit ng parehong galaw tulad ng annealing, ngunit ito ay "
+"1.70 milyong km at ang annealing ay 1.58. May tatlong dahilan."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>Tinanggap lang niya ang mga pagpapabuti.</strong> Kaya naipit siya "
+"sa unang \"lambak\" na nakita niya. Pumayag ang annealing na lumala pa sa "
+"simula, kaya nakatawid siya sa \"burol\" at nakarating sa mas malalim na "
+"lambak."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr ""
+"<strong>Naglaan siya ng pagsisikap.</strong> Sa bawat henerasyon, "
+"sinusubukan niya ang 16 na mga recipe at sinusunod lamang ang kalendaryo ng "
+"pinakamagagaling. Pinananatili ng annealing ang bawat hakbang na kanyang "
+"ginagawa."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr ""
+"<strong>Inulit niya ang parehong mga lugar.</strong> Ang mga nakapirming "
+"numero sa puno ay palaging tumutukoy sa parehong mga turn at koponan. May "
+"mga random na galaw na tumatakbo sa buong kalendaryo."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "Tanging mga pagpapabuti laban sa pagtanggap ng mas masamang pagbabago"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "Tumatanggap lamang ng mga upgrade (bilog)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "Annealing: tumatanggap ng mas masamang pagbabago (rhombus)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr ""
+"Ang linya ay ang halaga ng kalendaryo: mas mababa, mas mabuti. Ang bilog ay "
+"bumababa sa unang lambak at nananatili doon. Ang rhombus ay umaakyat sa "
+"burol, dahil pumayag itong lumala ng kaunti, at umaabot sa pinakamalalim na "
+"lambak."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr ""
+"5. Ang PG na Natututo Kung Kailan Dapat Tanggapin ang Mas Masamang Pagbabago"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr ""
+"Upang itama ang dahilan 1, ang PG na ngayon ang nagdidisenyo ng patakaran sa"
+" annealing. Isang puno ang nagdedesisyon kung ilang kilometro ng paglala ang"
+" tinatanggap sa bawat hakbang. Tingnan ang dalawang datos: gaano kalayo ang "
+"takbo at ilang pagbabago ang kamakailan lang tinanggap."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr ""
+"Nagpraktis ang PG gamit ang short runs sa 2 kalendaryo. Pagkatapos ay "
+"sinubukan namin ang panalong puno sa 4 na kalendaryo na hindi niya nakita. "
+"Ito ang panalong puno:"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr ""
+"Sa madaling salita: maliit ang tolerance, mga 60 hanggang 1,200 km, at "
+"tumataas ito kapag halos hindi tinatanggap ang mga pagbabago. Ang hand-made "
+"ruler ay kabaligtaran: nagsisimula ito sa 20,000 km at unti-unting bumababa "
+"hanggang 50."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "Tolerance sa km sa buong takbo (logarithmic scale)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "Gawang-kamay na tagapamahala"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "PG, kung kakaunti ang mga pagbabago na tinatanggap (5%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "PG, kung maraming pagbabago ang tinatanggap (50%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr ""
+"Ang hand-made rule ay bumababa mula 20,000 hanggang 50 km. Ang PG rule ay "
+"nananatili sa pagitan ng 60 at 1,200 km at nakadepende sa dami ng mga "
+"pagbabago na tinatanggap. Pareho silang umaabot sa kalendaryo na humigit-"
+"kumulang 1.57 milyong km."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "6. Ano ang Susunod"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr ""
+"Halos tabla ang PG sa annealing, ngunit hindi pa rin ito natatalo. Sa 8 "
+"bagong kalendaryo, ang handmade ruler ay naglalakbay ng 1.567 milyong km at "
+"ang sa PG ay 1.571."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"Sinubukan naming bigyan ng mas maraming variety (walang paulit-ulit na "
+"recipe) at mas maraming practice (3 kalendaryo, 32 recipe, 16 na "
+"henerasyon). Mas malala pa: 1.583 milyong km. Ang PG ay nagsasanay ng "
+"maiikling takbo na 40,000 steps, pero ang test ay gumagamit ng 400,000. Ang "
+"magandang tuntunin para sa pagtakbo ng kaunti ay hindi pinakamainam para sa "
+"madalas na pagtakbo."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr ""
+"Ang susunod na hakbang ay magpraktis ang PG gamit ang mga run na mas kahawig"
+" ng test at magsimula sa handmade ruler, para mas mapabuti pa niya ito."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "Tingnan ang code para sa mga test na ito sa GitHub"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "Algoritmo ng tesis"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "Orihinal na Thesis Algorithm (2026)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "Panoorin ang tunay na 2023 season, nang hindi naghihintay"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "I-click ang puno para makita itong mas malaki."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr ""
+"Ang puno ang programa na bumubuo ng pinakamahusay na kalendaryo. Bawat sanga"
+" ay sumasali sa mga laro; ang mga dahon ay ang mga laro (petsa, home team, "
+"at away team)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "Kabuuang biyahe ng lahat ng koponan:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "Mga laro na lumalabag sa mga patakaran:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr ""
+"Isang patakaran ay ang bawat koponan ay maglalaro ng bilang ng mga laro na "
+"hinihingi ng torneo. Ang <strong>0 na laro na lumalabag sa mga "
+"patakaran</strong> ay nangangahulugang valid ang iskedyul."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr ""
+"Maaaring tumagal ito ng ilang segundo hanggang ilang minuto. Depende ito sa "
+"bilang ng mga computer."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "Gumagana ang makina."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr ""
+"Gumagawa siya ng mga kalendaryo, pinagsasama-sama ang mga ito, at itinatago "
+"ang pinakamagagaling. Huwag isara ang pahinang ito."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "Mga na-save na parameter"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "\"%(nombre)s\" na konfigurasyon"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr ""
+"<strong>Mahalaga:</strong> ang thesis engine ay nagse-save ng mga value na "
+"ito, pero hindi ito ginagamit. Palaging tumatakbo ito sa populasyon na 100, "
+"20 generations, 0.8 crossover at 0.2 mutation."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "Mga utos para patakbuhin ito"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"Kopyahin ang tanong na ito at i-paste sa wizard na ginagamit mo. I-attach "
+"ang programa_genetico/programagenetico.py (thesis engine) o "
+"programa_genetico/motor_bloques.py (enhanced engine) file."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "Pinakamahusay na Puno ng Kalendaryo"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "Mula %(a)s hanggang %(b)s."
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "Mga Hakbang sa Demo"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "Demo: Setup"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "Hakbang 2: Setup"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr "Lahat ng halaga ay napili na. Maaari mo silang baguhin o ibigay \\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "Palitan ang kagamitan"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "Ang torneo"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "Ang algorithm"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "Susunod: Tingnan ang kalendaryo"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "Demo: Piliin ang mga koponan"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr ""
+"Koza-TTP Demo: Bumuo ng baseball calendar gamit ang pinakabagong algorithm "
+"sa 3 hakbang."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "Hakbang 1: Piliin ang kagamitan"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr ""
+"Binubuo ng algorithm ang iskedyul para sa mga koponang pipiliin mo at "
+"hinahanap ang may pinakakaunting paglalakbay. Na-mark na namin ang 10 Major "
+"League teams. Kung gusto mo, i-click ang \"Next\" nang walang binabago."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "Susunod: Setup"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "Mas gusto mo bang manood ng buong royal season?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "Panoorin ang 2023 season: 30 koponan laban sa opisyal na kalendaryo"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "Gusto mo bang magparehistro ng sarili mong mga koponan at stadium?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "Gawin mo ito mismo sa 5-Step Guide"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "Demo: ang kalendaryo"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "Hakbang 3: Ang Kalendaryo"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "Mas bagong algorithm: Turn-based na modelo"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>: %(n)s mga koponan."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "Ano ang naabot ng algorithm"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr "Kabuuang biyahe ng lahat ng koponan ayon sa iskedyul ng algorithm."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr "Maglakbay gamit ang random na kalendaryo bago i-optimize."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr "Mas kaunti ang biyahe kaysa sa random na kalendaryo."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "Sundin ang lahat ng patakaran"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "Bigla na lang nasira ang kalendaryo %(a)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "Anong mga patakaran ang nire-review mo?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr ""
+"Maximum na 12 sunod-sunod na home o away games. Dito: %(n)s sa home at %(m)s"
+" away."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "Maximum na 20 araw sunod-sunod na may laro. Dito: %(n)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr ""
+"Hindi maglaro laban sa parehong kalaban sa dalawang sunod-sunod na serye."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr "Mga kalahati ng home games. Dito: %(a)s hanggang %(b)s kada koponan."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "Paano nangyari ang biyahe"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr ""
+"Ang kabuuang biyahe ay bumaba mula %(a)s km hanggang %(b)s km sa %(p)s mga "
+"hakbang ng paghahanap."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "Ang unang %(n)s ng mga laro %(t)s"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "Sa bahay"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "Bisitahin"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "Tingnan ang lahat ng laro"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "Lahat ng Laro"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "Ano ang susunod?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "Baguhin ang mga setting at patakbuhin muli"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "Pagpili ng Iba pang Kagamitan"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr ""
+"Panoorin ang buong 2023 season: 30 koponan laban sa opisyal na kalendaryo"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "Maintindihan kung paano ito gumagana sa loob ng 2 minuto"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr "Gawin mo mismo: irehistro ang iyong kagamitan sa 5-hakbang na gabay"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "Tingnan ang orihinal na algorithm ng tesis"
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "Unawain ang ideya sa loob ng 2 minuto"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr ""
+"Koza-TTP animated na kwento: ang mapa ng mga paglalakbay sa baseball, ang "
+"mga puno ng genetic programming at ang landas ng pilot mula sa tesis "
+"hanggang sa pinahusay na makina."
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "2 minuto · 7 hakbang"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "Mga hakbang ng kasaysayan"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "Mga Istadyum"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "Paglalakbay"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "Puno"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "Crossover"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "Mutasyon"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "Mga Henerasyon"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "Resulta"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "Bahagi 1 · Ang Problema"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "30 koponan ang kailangang maglaban sa isa't isa"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr ""
+"Ang Major League Baseball ay may 30 koponan. Bawat koponan ay naglalaro ng "
+"162 laro sa isang season."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr ""
+"Isang kalendaryo ang nagsasabi kung sino ang naglalaro laban kanino, sa "
+"anong petsa, at sa anong stadium."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "I-tap ang isang stadium sa mapa para makita ang pangalan nito."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "Bawat biyahe ay may oras at pera"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr ""
+"Kapag naglalaro ang isang koponan sa kalsada, naglalakbay sila sa eroplano. "
+"Dahil sa masamang iskedyul, madalas silang tumawid sa bansa."
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr ""
+"Isang halimbawa ng tour trip, na may mga petsa sa random na pagkakasunod-"
+"sunod."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr "I-tap ang ibang stadium para panoorin ang tour ng team na iyon."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "Bahagi 2 · Ang ideya ng tesis"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "Maaaring isulat ang kalendaryo bilang puno"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr ""
+"Hindi mano-manong sinusulat ng genetic programming ang kalendaryo. "
+"<strong>Nagsusulat ito ng mga tagubilin</strong> para mapabuti ito."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"Ang mga tagubiling ito ay bumubuo ng isang puno. <strong>Ang mga "
+"dahon</strong> ay serye ng mga laro, tulad ng \"SEA–NYA.\" <strong>Ang mga "
+"sanga</strong> ay mga aksyon, tulad ng \"pagpapalit\" ng dalawang serye ng "
+"petsa o \"pagbaliktad ng lokalidad\" (pagpapalit kung sino ang naglalaro sa "
+"bahay)."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "Pagtawid: Dalawang puno ang halo"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr ""
+"Dalawang puno na mahusay ang nakuha. Bawat isa ay nagbibigay ng sanga."
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "Ang bagong puno, ang \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "Mutation: Isang maliit, random na pagbabago"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr ""
+"Minsan, isang bahagi ng puno ang nagbabago nang kusa. Dito, ang serye \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr ""
+"Ang mutation ay nagsisilbing pagsubok ng mga bagong ideya na walang "
+"magulang."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "Bahagi 3 · Ang Resulta"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "Henerasyon pagkatapos ng henerasyon"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr ""
+"Bawat henerasyon ay may maraming puno. Ang mga gumagawa ng kalendaryo na may"
+" mas kaunting paglalakbay ay may mas maraming anak."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr ""
+"Ang tuldok-tuldok na linya ang minimum na layunin: ang pinakamahusay na "
+"kalendaryo na <strong>pinipili nang random</strong> gamit ang parehong "
+"pagsisikap."
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "Pumili ng engine para makita kung paano ito nagtagumpay."
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "Mula sa piloto hanggang sa gumaganang makina"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"Ang pinahusay na engine, ayon sa blocks, ay natalo ito nang random: "
+"%(resultado)s, sa preliminary tests (%(corridas)s runs, %(equipos)s teams)."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr ""
+"Ang pilot ng tesis (2026) <strong>ay hindi mas maganda</strong> kaysa sa "
+"pagpili ng mga kalendaryo nang random: %(resultado)s."
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "Subukan ang tool sa 5 hakbang"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "Tingnan ang lahat ng 30 stadium bilang isang mesa"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "Data mula sa teams.csv project file."
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "Kodigo"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "Koponan"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "Istadyum"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "Lokasyon"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "Nakaraan"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "Susunod"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr ""
+"Koza-TTP: genetic programming para sa mga kalendaryo ng baseball. Nagsimula "
+"ito bilang isang tesis ni Leslie Dickinson (ITAM) at ngayon ay may makina na"
+" nangunguna sa pagkakataon."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "Mas maganda ang MLB schedule na may genetic programming."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"Ipinanganak ang Koza-TTP bilang thesis ko sa ITAM. Hindi basta-basta pumasa "
+"ang unang pilot. Ang block version ay: %(resultado)s, sa preliminary tests. "
+"Ipinapakita ko sa iyo kung paano ito gumagana."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr ""
+"Isang animated na kwento: ang mapa ng mga paglalakbay, ang mga puno ng "
+"genetic programming at ang resulta."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "2023 season: ang makina laban sa totoong kalendaryo"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr ""
+"Isang pag-uulit ng serye ng genetic programming engine sa lahat ng 30 Major "
+"League Baseball teams noong 2023, kumpara sa opisyal na iskedyul at sa "
+"pagkakataon."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "Season 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "Demo na may totoong datos · Major League Baseball 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr ""
+"Ginagamit namin ang 30 Major League Baseball teams at ang kanilang mga "
+"aktwal na stadium. Ang opisyal na iskedyul para sa 2023 ang reference. "
+"Sinusubukan ng block-based engine na bumuo ng season na mas kaunti ang "
+"biyahe."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "Paano bumababa ang kilometro, henerasyon sa henerasyon"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr ""
+"Ito ay isang tunay na run ng engine, naka-save para mapanood mo nang hindi "
+"na naghihintay. Mayroon itong %(generaciones)s henerasyon na may tig-100 "
+"kalendaryo bawat isa."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "Laro"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "Henerasyon"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "Sideways sliding board"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "Paglalakbay ng 30 koponan sa buong regular season."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "Pinakamahabang tour (sunod-sunod na away games)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "Mas maraming home games sunod-sunod"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "Opisyal ng Major League Baseball"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "milyong km"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "Mas magaling sa random, pero pareho lang ang effort"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "Hindi nito natutugunan ang bilang ng mga laro ng bawat koponan."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr ""
+"Ang makina <strong> ay bumibiyahe ng%(pct)s%% na mas mababa kaysa</strong> "
+"sa random na pinakamagandang iskedyul. Natututo ang makina."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr ""
+"Ang opisyal na <strong> kalendaryo ay%(pct)s%% mas mabilis maglakbay "
+"kaysa</strong> sa makina. Hindi pa natin siya natatalo."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"Tandaan: ang engine calendar ay may mga tour na hanggang <strong>%(gira)s "
+"sunod-sunod na away games</strong>. Ang opisyal na kalendaryo ay may maximum"
+" na %(oficial)s. Hindi tatanggapin ng totoong koponan ang ganitong haba ng "
+"tours."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "Paglalakbay ng bawat koponan"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr ""
+"Lumipat sa pagitan ng dalawang iskedyul upang makita kung aling mga koponan "
+"ang madalas maglakbay."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "Kalendaryo ng Mapa"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "Opisyal"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "Makina"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "Tingnan ang lahat ng 30 koponan bilang isang talahanayan"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "Opisyal (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "Makina (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "Saan nagmumula ang datos"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr ""
+"Opisyal na iskedyul: Major League Baseball 2023 regular season (MLB Stats "
+"API). Dito lang namin itinatago ang mga kalkuladong numero, hindi ang "
+"iskedyul."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr ""
+"Distansya: tuwid na linya sa pagitan ng mga istadyum (semiverse formula). "
+"Bawat koponan ay umaalis sa kanilang tahanan, naglalakbay mula istadyum "
+"papunta sa istadyum at bumabalik sa dulo."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr ""
+"Block engine: 100 kalendaryo bawat henerasyon, %(evaluaciones)s kalendaryo "
+"ang tinasa sa kabuuan. Pareho ang dami ng suriin ng Chance."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "Gumawa ng Sarili mong Torneo"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "Paano gumagana ang makina"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "Mga bloke, na may mga patakaran"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "Mga Turn + Random na Galaw"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "Turns + PG (upgrades lang)"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "Pagbabago + PG temperatura ng pagkatuto"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "Shifts + hand annealing"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "Old: Lahat ay naglalaro ng 3 araw bawat turn"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "Ngayon: 2, 3 at 4 na serye ng laro, na may mga pahinga"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "Lumiko"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "mga araw ng trabaho"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "Weekend"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "Turn A"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "Liko B"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "1. Pipili kami ng isang koponan at dalawang shift"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "2. Sinusundan namin ang kadena: A, B, A, B..."
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "3. Chain series switch shifts"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "Gastos sa Kalendaryo"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "pinakamahusay"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "Unang Lambak"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "Mas malalim na lambak"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "Pag-usad ng bullfight"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "Bahay"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "Wakas"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "sa kamay"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "PG, 5%"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "PG, 50%"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "Ang Aking Test Tournament"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr "Opsyonal. Kung iiwan mo na lang doon, gagamitin ang pangalang ito."
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "Mga koponan sa torneo"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr ""
+"Nakapuntos na tayo ng 10. Pwede mo silang baguhin: mula 3 hanggang 10 "
+"koponan."
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "Mapa ng 30 stadium ng Major Leagues"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr ""
+"{Team} halimbawa ng tour: 12 pagbisita sa random na pagkakasunod-sunod."
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr ""
+"Pinili mo ang {team}. Sundin ang hakbang 2 para makita ang kanilang mga "
+"paglalakbay."
+
+#: tesis/historia.py
+msgid "km"
+msgstr "km"
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "pagsamahin"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "Palitan"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "Mamuhunan sa Lokalidad"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "Bahay"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "Bisitahin"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "Magulang A"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "Magulang B"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "Anak na lalake"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr ""
+"Halimbawa ng puno: pagsamahin gamit ang dalawang sangay: palitan ang SEA-NYA"
+" sa BOS-TEX, at i-invest ang LAN-CHN locality sa bahay."
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr ""
+"Crossover: ibinibigay ni ama A ang kanyang kaliwang sanga at si ama B ang "
+"kanyang kaliwang sanga; pinagsama ng anak ang dalawa."
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "Mutasyon: Sa puno, ang dahon ng SEA–NYA ay nagiging SEA–OAK."
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "Panoorin muli"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "Paglalakbay (random = 100)"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "tsansa"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "Populasyon (48 puno)"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "Mas maraming kulay = mas kaunting paglalakbay"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "makina ng tesis"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{engine} · {g} pagbuo ng {total}"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{engine} · nawakas: {result}."
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr ""
+"{engine}: nagsisimula sa {start} at nagtatapos sa {end} (tsansa = 100). "
+"Resulta: {result}."
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr ""
+"Distansya laban sa tsansa: thesis engine {thesis}, random na pumili ng 100, "
+"block engine {blocks}."
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "Thesis Engine (2026)"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "Pagpili ng mga kalendaryo nang random"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "Block Engine (Paunang Proseso)"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr "Maaari mo ring gamitin ang mga arrow key sa iyong keyboard."
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr ""
+"Kilometro ng season ayon sa paggawa ng makina, kumpara sa opisyal na "
+"kalendaryo at pagkakataon"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "Opisyal na kalendaryo"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "Mas maganda kung random"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}: {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr ""
+"Hindi pa rin nito natutugunan ang bilang ng mga laro ng bawat koponan."
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr ""
+"Patayong axis: mula {min} hanggang {max} milyong km. Pahalang na axis: "
+"henerasyon 0 hanggang {huli}."
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr ""
+"Mapa: Bawat bilog ay isang koponan; mas malaki ay nangangahulugang mas "
+"maraming milya sa season"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{team}: {km} km"
