@@ -6,7 +6,7 @@
 
 {% block contenido %}
 <div class="envoltura">
-    <p class="miga"><a href="{% url 'documentacion:index' %}">{% translate "Documentación" %}</a> / {% translate "Histórico" %}</p>
+    <p class="miga"><a href="{% url 'documentacion:index' %}">{% translate "Documentación" %}</a> / <span aria-current="page">{% translate "Histórico" %}</span></p>
     <h1>{% translate "Histórico: la tesis (2026)" %}</h1>
     <p class="entrada">{% blocktranslate trimmed %}<cite>Programación genética en la planificación de temporadas de béisbol. Problema de viabilidad y optimización.</cite> Tesis de Ingeniería en Computación, ITAM. Asesor: Dr. Andrés Gómez de Silva Garza. Aprobada el 23 de julio de 2026.{% endblocktranslate %}</p>
 
