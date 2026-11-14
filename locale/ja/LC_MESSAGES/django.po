@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "最適化結果"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "ツリーをクリックすると展開します"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "総交通費用:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "ルール違反:"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "ラン最適化"
 
@@ -130,10 +118,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "最新のものから古いものまで。"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "計画"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "エンジンのコンテキストオペレーター"
 
@@ -157,10 +141,6 @@ msgstr "チーム登録からカレンダーをエラーなく確認でき、ガ
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "2026年11月3日"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "進行中"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -563,10 +543,6 @@ msgid ""
 msgstr "遺伝子プログラムで野球カレンダーを作成し、各チームがどれだけ遠征するかを測定します。"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "デモ ·チーム間のフェアトラベル"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "カレンダーを作成し、"
 
@@ -580,6 +556,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"AI(遺伝子プログラミング)は、旅が短くて均等なカレンダーを探します。自分のチームが欲しいですか? <a "
+"href=\"%(guia)s\">5ステップガイド</a>を使いましょう。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -612,10 +590,6 @@ msgstr "数秒かかる。"
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "スケジュール: %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "構成 %(id)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -689,14 +663,6 @@ msgstr "パソコンで実行してください"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "AIアシスタントに助けを求めてください"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr ""
-"この質問をコピーして、使っているウィザードに貼り付け、programa_genetico/programagenetico.py "
-"ファイルと一緒に貼り付けてください。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -908,28 +874,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "野球カレンダーのための遺伝子プログラミング"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr ""
-"Koza-TTP:レスリー・ディキンソン(ITAM)による野球カレンダーの遺伝子プログラミングに関する論文、その誠実な結果と改良されたエンジン。"
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "ITAM論文 ·遺伝的プログラミング ·野球"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "私の論文は真実を語っています:"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr ""
-"Koza-"
-"TTPはその仮説を受け継ぎ、遺伝子プログラムで野球シーズンカレンダーを作り上げています。ここでは何が間違っていたのか、なぜそうなったのか、そして私が公の場でどのようにそれを修正しているのかをご覧いただけます。"
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -946,12 +892,6 @@ msgstr "2分"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "アイデアの理解"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr "遺伝プログラミングとは何か、そしてなぜ野球カレンダーが難しい問題なのか。"
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1029,37 +969,37 @@ msgstr "自動、マヤやオトミも含めて。直せるよ。"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "ランダムサーチとランダムサーチの比較"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "ランダムに選ぶよりは良いのでしょうか?"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "テストにおいて"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s、%(equipos)sチームでの%(corridas)sランで"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "はい、予備試験では"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
-msgstr ""
+msgstr "デモでは依然として論文版が使われています。改良されたエンジンは、同じ数のカレンダーをレビューするランダム検索と比較されました。"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "2026年11月8日"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "ブロックモーター"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1068,12 +1008,13 @@ msgid ""
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
 msgstr ""
+"スケジュールの各部分(地区、リーグ、インターリーグ)は、全員が対戦するブロックで構成されています。したがって、MLBのルールは常に守られます。遺伝子プログラムがブロックを選び、移動を減らすように指示します。"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
-msgstr ""
+msgstr "予備結果:%(resultado)s、%(equipos)sチームでの%(corridas)s回のラン。"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1082,182 +1023,1724 @@ msgid ""
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
 msgstr ""
+"なぜPGがランダムにカレンダーを選ぶのと変わらないのかを確認するためのコードレビュー。クロスオーバーや突然変異はカレンダーの存続可能性を壊し、フィットネスの重みは子どもたちが初期世代の親に劣勢を取る原因となります。"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "クリアモード"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "エンジン: %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
 msgstr ""
+"<strong>注:</strong> このデモは論文エンジンを使用しています。そのエンジンはカレンダーをランダムに選ぶのと変わらなかった。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
 msgstr ""
+"改良されたエンジンは予備テストで %(resultado)s、 %(corridas)s 走行で優れていました。まだこのデモには登場していません。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
-msgstr ""
+msgstr "学校のプロジェクトとしては、基準値と改善を測定できるという利点があります。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "各リリースの結果を見る"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr ""
+msgstr "テストでは%(resultado)s、%(equipos)sチームでの%(corridas)sランで。"
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "論文版(2026年)"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "ランダムなカレンダーを選ぶより19.5%長い距離です"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "ブロックエンジン(アップグレード版)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "ランダムなカレンダーを選ぶより13%の移動量が少ない"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "略称(例:SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "チーム名"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "都市"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "スタジアムの緯度"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "スタジアムの長さ"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "小数点数で。例:47.59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "小数点数で。例:-122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "リーグチーム"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "リーグ名"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "最低でも2チームを選んでください。"
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "大会名"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "初日"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "最終日"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "シリーズ別ゲーム"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "チームシリーズ"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "最終日は初日と同じかそれ以降でなければなりません。"
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "1つ以上でなければなりません。"
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "構成名"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "人口規模"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "世代数"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "交差確率(0から1)"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "突然変異の確率(0から1)"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "0から1の間にあるべきです。"
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "装備"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "リーグ"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "トーナメント"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "舞台設定"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "カレンダー"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "まずはこのステップをクリアしてください。"
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "装備も追加されました。"
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "ゲームが生成される。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "2026年11月14日"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
+msgstr "ターン制アルゴリズム:公式MLB 2023日程を上回る"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
 msgstr ""
+"30チームすべてが同時に3日間シリーズを戦うルールは削除しました。2、3、4試合のシリーズと休憩で、最良のアルゴリズムは157万kmを移動します。公式カレンダーは174万kmを移動します。両者とも同じリアリズムのルールを満たしています。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr "最新の研究をアニメーション図でご覧ください"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "2026年11月12日"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "デモは2023年の本当のシーズンを示しています"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr "エンジンが動くのを待たずに実際の2023年メジャーリーグベースボールのスケジュールを見ることができます。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "2023年シーズンを見る"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "2026年11月9日"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "ステップバイステップのストーリー"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr "30段階の地図、樹木、進化のステップを一歩ずつ説明します。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "記事を読む"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "体験の二度目の監査"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr ""
+"アクセシビリティ、使いやすさ、人間とAIの相互作用に関するレビューが繰り返し行われました。最初の28点のうち13点は解決されました。新たに提出された点のほとんどはすでに修正されています。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr "エンジンを直列にしてからエンジンブロックも取り付けました。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "2026年11月5日"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "5ステップガイドを開く"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr "野球カレンダーを作るための遺伝子プログラミング。レスリー・ディキンソン(ITAM)の論文、正直な結果。"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr "Koza-TTP:野球場の地図で、チームのルートと遺伝的プログラミングツリーが示されています。"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "メインサイトへ"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "メニュー"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "仕組み"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "レスリー・ディキンソン"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "メインサイト"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "連絡先"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "私の論文は真実を語っていました"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"論文パイロットはカレンダーをランダムに選んだのと同じくらい変わらない "
+"%(resultado)s。このように報告し、隠さずに行ったのは正しい判断だった。その結果は、エンジンを改善するために何を修正すべきかを示した。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "現在の研究"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr "公式MLB 2023のスケジュールを上回るために、アニメーション図を使ってあらゆることを試みました。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "現在の研究:公式カレンダーを破る方法"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr ""
+"目標:2023年のメジャーリーグベースボールシーズンのスケジュールで、公式シーズンより移動距離が少なく、同じルールに準拠したスケジュール。公式スケジュールは174万kmを移動します。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr "2026年11月14日(午後)更新。これらのアルゴリズムはテスト中で、サイトやデモではまだ使われていません。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "1. すべての検査結果"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"各バーは、30チームのシーズン全体の移動距離、数百万km単位の合計です。少ないほど良いのです。すべての数値は同じように測定されました。各チームはホームを離れ、スタジアムからスタジアムへ移動し、最後に戻ってきます。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "アルゴリズム版による総移動"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "Koza-TTPアルゴリズム"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "公式カレンダー 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr "2つのターン制アニーリングアルゴリズムは、士官を約9%%上回りました。下の表も同じデータを示しています。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "すべての検査を、最も古いものから最新のものまで"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "トータルトリップ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "ルール通りに動いているのか?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "私たちが学んだこと"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "ブロックアルゴリズム、リアリズムなしルール"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "185万km。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "いいえ:最大36試合連続のツアー"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr "彼は警官と親しそうだったが、ズルをしていた。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "ブロックアルゴリズム(ルール付き)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "219万kmです"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "それに応じられなかった"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr "固定ブロックではツアーの計画がうまくできません。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "定規付きの混合ブロック"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "200万km。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "はい"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr "より良いですが、30チームすべてが同時に試合を続けています。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr "2、3、4セットのシフト+シミュレートされたアニーリング"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "152万kmから160万kmです"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "4回中3回のラン(1回は1日延長)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr "「一度に全部」ルールを取り除くことで、士官が勝ちます。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr "シフト+MLBとしての週数+アップグレードのみを受け入れるPG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "平均170万km(平均)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "はい、4つ中4つです"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr "彼は警官を辛うじて倒すが、ランダムな動きでほぼ同点に追いつく。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "ランダムな動き、PGと同じ努力です"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "PGを測定するための公平な基準値です。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "シフト+週+手作りアニーリング"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "156.7万km(8暦の平均)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "最初は悪い変化を受け入れることがとても助けになります。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "シフト+週+PG学習温度"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "157万1千km(8暦の平均)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr "PGは独自の定規をデザインしており、手作りの定規とほぼ並んでいます(0.3%%高い)。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "同じPGで、よりバリエーションがあり、練習も増えました"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "158.3万km(8暦の平均)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "はい、8点満点中8点です"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr "短距離走の練習だけでは長距離走の最適なルールは教えられません。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "公式MLB 2023日程"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "174万km。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr "ゴール。また、スタジアムの日程やテレビ放送など、私たちがモデル化していないルールにも適合しています。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"リアリズムのルール:ホームまたはアウェイで最大12試合連続、連続シリーズでの対戦相手なし、連続試合で最大20日連続、シーズン期間は186日。公式カレンダーからはMLB利用規約に従い計算された数字のみを保持しています。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "2. 大きな変化:2、3、4のゲームセットでターンを選んだ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"以前は30チームすべてが休憩なしで3日間シリーズを同時に行っていました。現在はMLBと同様に平日(4日間)と週末(3日間)のシフトに分かれています。各チームは2試合、3試合、または休憩のシリーズを行います。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "以前のモデルとターン制モデルの比較"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "間"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "シリーズ(数字で試合数を示します)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "休憩"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"6チームが8シフトに分かれます。以前のモデルでは全員が各シフトで3日間プレーしていました。シフトモデルではシリーズが2日、3日、4日間続き、休憩もあるため、ツアーをより自由に組み立てられます。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "3. 主な動き:ケンペチェーン"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr ""
+"チームが同時に2つのシリーズをプレイせずにスケジュールを変更するには、2ターンとその間のシリーズの連鎖が交互に行われます。チェーン内のすべてのシリーズが同時にシフトされます。スケジュールは依然として有効です。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "ターンAとターンBの間のケンプチェーン"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "シフトA(ソリッドライン)のシリーズ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "ターンBのシリーズ(点線)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr ""
+"8チーム。ネットワークはNYAから始まり、BOS、TOR、BALを経て進みます。4つのシリーズはシフトを変えます。他のシリーズは移動しません。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "4. なぜアニーリングはPGに勝ったのか?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr "最初のPGはアニーリングと同じ動きを使いましたが、170万km、アニーリングは1.58kmでした。理由は3つあります。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>彼は改良を受け入れただけだった。</strong> "
+"そのため、最初に見つけた「谷」で立ち往生してしまう。焼きなましは最初は少し悪化し、それによって彼は「丘」を越えてより深い谷に到達する。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr ""
+"<strong>彼は努力を注いだ。</strong> "
+"世代ごとに16のレシピを試し、最高のものだけをカレンダーに残している。焼きなましは彼の一歩一歩を保存している。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr ""
+"<strong>同じ場所を繰り返した。</strong> "
+"木の固定された数字はいつも同じターンとチームを指している。カレンダー全体にランダムな動きが走っている。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "悪い変化を受け入れることに対する改善だけです"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "アップグレードのみ受け付けています(サークル)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "アニーリング:より悪い変化を受け入れる(菱形)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr ""
+"線はカレンダーの代償であり、低いほど良い。円は最初の谷まで下り、そこに留まる。菱形は丘を登り、少し悪くなることを約束し、最も深い谷に到達する。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr "5. より悪い変化を受け入れるべき時を学ぶPG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr ""
+"理由1を修正するために、PGは現在アニーリング規則を設計します。木構造が各ステップで受け入れられる悪化のkm数を決定します。2つのデータを見てみます:走行の進捗と最近受け入れられた変化の数です。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr "PGは2つのカレンダーで短いランを練習しました。次に、彼女が見たことのない4つのカレンダーで勝利ツリーを試しました。これが勝利ツリーです:"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr ""
+"要するに、許容範囲は小さく、約60〜1,200 km程度で、変更がほとんど受け入れられないと上がります。手作り定規は逆で、20,000 "
+"kmから始まり徐々に50 kmまで下がります。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "ラン全体の許容範囲(km単位)(対数スケール)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "手作りの定規"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "PG、わずかな変更が受け入れられる場合(5%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "PG、多くの変更が受け入れられた場合(50%%)。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr ""
+"手作りルールは20,000kmから50kmに短縮されます。PGルールは60kmから1,200kmの間を維持し、変更の回数に応じて変わります。どちらもカレンダー上約157万kmに達します。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "6. 次は何をするのか"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr ""
+"PGはアニーリングとほぼ並びましたが、それでも上回ることはできません。8つの新しい暦では、手作り定規は156.7万km、PGは1.571kmを移動しています。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"レシピを繰り返し使わずに、より多様性を持たせ、練習も多めにしました(3つのカレンダー、32のレシピ、16世代)。結果はさらに悪化しました:158.3万km。PGは4万歩の短距離走行で練習しますが、テストでは40万歩が使われています。少ないペースで走る良いルールは、たくさん走るには最適とは言えません。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr "次のステップは、PGがテストに近いランで練習し、手作りの定規から始めて、さらに上達できるようにすることです。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "これらのテストのコードをGitHubでご覧ください"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "論文アルゴリズム"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "オリジナル論文アルゴリズム(2026年)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "待たずに本当の2023年シーズンをご覧ください"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "ツリーをクリックすると大きく表示されます。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr "ツリーは最適なカレンダーを作成するプログラムです。各枝は試合に繋がります。葉は試合(日付、ホームチーム、アウェイチーム)を示します。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "全チームの総移動数:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "ルールを破るゲーム:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr ""
+"ルールの一つは、各チームが大会で求められる試合数を戦うことです。 <strong>ルール違反の試合</strong> "
+"数が0試合であれば、そのスケジュールは有効です。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr "数秒から数分かかることもあります。コンピューターの数によります。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "エンジンは動いている。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr "彼はカレンダーを作成し、それらを組み合わせ、最高のものを保管しています。このページを閉じないでください。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "保存されたパラメータ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "「%(nombre)s」構成"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr ""
+"<strong>重要:</strong> "
+"論文エンジンはこれらの値を保存しますが、使用しません。常に100の集団、20世代、0.8のクロスオーバー、0.2の突然変異で動作します。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "実行命令"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"この質問をコピーして、使っているウィザードに貼り付けてください。programa_genetico/programagenetico.py(論文エンジン)またはprograma_genetico/motor_bloques.py(強化エンジン)ファイルを添付してください。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "ベストカレンダーツリー"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "%(a)s年から%(b)sまで。"
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "デモステップ"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "デモ:セットアップ"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "ステップ2:セットアップ"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr "すべての値はすでに選ばれています。変更したり、\\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "装備変更"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "大会"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "アルゴリズム"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "次回:カレンダーを見る"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "デモ:チームを選ぶ"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr "Koza-TTPデモ:最新のアルゴリズムで3ステップで野球カレンダーを作成します。"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "ステップ1:機器の選択"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr ""
+"アルゴリズムは選択したチームのスケジュールを作成し、最も移動の少ないチームを探します。すでに10のメジャーリーグチームをマークしました。もしよければ、何も変更せずに「次へ」をクリックしてください。"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "次:セットアップ"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "ロイヤルシーズンを丸ごと観たいですか?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "2023年シーズンを視聴:公式カレンダーで30チーム"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "自分のチームやスタジアムを登録したいですか?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "5ステップガイドで自分でやる"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "デモ:カレンダー"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "ステップ3:カレンダー"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "新しいアルゴリズム:ターン制モデル"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>:%(n)sチーム。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "アルゴリズムが達成したこと"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr "アルゴリズムのスケジュールに従った全チームの総移動量。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr "最適化する前にランダムに作成したカレンダーで旅行しましょう。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr "ランダムカレンダーよりも移動が少ないです。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "すべてのルールを守ってください"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "カレンダーは突然壊れて %(a)s。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "どんなルールを見直しますか?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr "ホームまたはアウェイで最大12試合連続。こちら:ホーム %(n)s 、アウェイ %(m)s 。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "最大20日間連続プレイが可能です。こちら: %(n)s。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr "同じ相手と2シリーズ連続で対戦しないこと。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr "ホームゲームは半分くらいです。こちら:チームあたり %(a)s から %(b)s 。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "旅の経緯"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr "総移動距離は %(a)s kmから %(b)s kmに %(p)s ステップで減少しました。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "%(t)sゲームの最初の1%(n)s"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "ホームで"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "訪問"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "すべてのゲームを見る"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "全試合"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "次は何でしょうか?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "設定を変更して再度実行します"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "その他の機材選び"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr "2023年シーズン全編を見る:公式カレンダーで30チームが登場"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "2分で仕組みを理解する"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr "自分でやる:5ステップガイドに機器を登録してください"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "論文の元のアルゴリズムを参照"
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "2分でアイデアを理解しましょう"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr ""
+"Koza-TTPアニメーションストーリー:野球の旅路の地図、遺伝子プログラミングの系統図、そして論文から改良されたエンジンまでのパイロットの軌跡。"
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "2分・7ステップ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "歴史の歩み"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "スタジアム"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "移動"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "ツリー"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "クロスオーバー"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "突然変異"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "世代"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "結果"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "パート1 ·問題"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "30チームが対戦しなければなりません"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr "メジャーリーグベースボールには30チームがあります。各チームは1シーズンに162試合を行います。"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr "カレンダーには、誰がどの試合と対戦するか、どの日、どのスタジアムで対戦するかが記されています。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "地図上のスタジアムをタップすると、その名前が表示されます。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "どの旅にも時間とお金がかかります"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr "チームがアウェイで試合を行うときは、飛行機で移動します。悪いスケジュールのせいで何度も国を横断します。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr "例のツアー旅行で、日付はランダムな順番です。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr "別のスタジアムをタップしてそのチームのツアーを観戦しましょう。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "パート2 ·論文のアイデア"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "カレンダーは木状に書くことができます"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr ""
+"遺伝子プログラミングはカレンダーを手書きで書くわけではありません。それはカレンダーを改善する <strong>ための指示を書きます</strong> 。"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"これらの指示は木樹を形成します。 <strong>葉は</strong> 「SEA–NYA」のような一連のゲームです。 "
+"<strong>枝は</strong> 「2つの日付系列を交換する」や「局所性を逆転させる」(家で誰がプレイするかを変える)などのアクションです。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "交差:二本の木が混ざり合う"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr "うまく機能する2本の木が取られます。それぞれに枝が入ります。"
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "新しい木、\\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "突然変異:小さくランダムな変化"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr "時には木の一部が勝手に変わることもあります。ここで、シリーズ \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr "突然変異は、親が持ったことのない新しい考えを試す役割を果たす。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "パート3 ·結果"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "世代を超えて"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr "世代ごとに多くの木があります。移動が少ないカレンダーを作る人はより多くの子どもを産みます。"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr "点線は最低限の目標、つまり同じ努力で <strong>ランダムに選</strong> ばれた最良のカレンダーです。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "エンジンを選んで、その性能を確認してください。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "パイロットから稼働するエンジンへ"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"改良されたエンジンは、ブロック単位でランダムにそれを上回っています:予備テスト(%(corridas)s回、チーム%(equipos)s回)で%(resultado)s。"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr ""
+"論文のパイロット版(2026年)は、カレンダーをランダムに選ぶのと <strong>変わらなかった</strong> : %(resultado)s。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "ツールのテストは5ステップで行われます"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "全30スタジアムをテーブルでご覧ください"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "teams.csvプロジェクトファイルからのデータ。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "コード"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "チーム"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "スタジアム"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "所在地"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "過去"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "次"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr ""
+"Koza-"
+"TTP:野球カレンダーのための遺伝子プログラミング。これはレスリー・ディキンソン(ITAM)による論文として始まり、現在では偶然を乗り越えるエンジンを持っています。"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "遺伝子プログラムによるより良いMLBスケジュール。"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"Koza-TTPは私のITAMでの論文として生まれました。最初のパイロットはランダムに合格したわけではありません。ブロック版は、予備テストで "
+"%(resultado)s、 、 とされています。ここでその仕組みをお見せします。"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr "アニメーションの物語:旅の地図、遺伝子プログラムの系統図、そしてその結果。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "2023年シーズン:エンジン対本暦"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr "2023年のメジャーリーグベースボールの30チームすべてで、公式スケジュールや偶然と比べて遺伝子プログラミングエンジンの繰り返しです。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "2023年シーズン"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "実データ付きデモ ·メジャーリーグベースボール 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr ""
+"私たちは30のメジャーリーグベースボールチームとその実際の球場を使用しています。公式の2023年スケジュールが参考になります。ブロックベースのエンジンは、移動の少ないシーズンを組み立てようとしています。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "世代ごとにキロメートルが減っていく方法"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr ""
+"これはエンジンの本当の運行で、待たずに見るために保存されています。各世代に100個のカレンダー %(generaciones)s あります。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "プレイ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "生成"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "横滑り滑板"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "レギュラーシーズン中の30チームの遠征。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "最長ツアー(連続アウェイゲーム)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "ホームゲームが連続で続く"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "メジャーリーグベースボールの審判"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "ミリオン km"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "同じ努力でランダムに行う方が良い"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "各チームの試合数には合いません。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr "エンジンはランダムなベストスケジュール<strong>より%(pct)s%%少ない移動量です</strong>。エンジンは学習します。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr "公式カレンダーはエンジン<strong>より%(pct)s%%短い</strong>。まだ彼に勝てていない。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"注:エンジンカレンダーには最大<strong>で%(gira)s</strong>試合連続のツアーがあります。公式カレンダーは最大で最長のツアー%(oficial)sです。実際のチームはこれほど長いツアーを受け入れません。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "各チームの歩み"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr "どちらのチームが一番多く移動するか、2つのスケジュールを切り替えてみてください。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "地図カレンダー"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "公式"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "エンジン"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "全30チームを表で表示"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "公式(km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "エンジン(km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "データの出所"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr ""
+"公式スケジュール:メジャーリーグベースボール2023年レギュラーシーズン(MLB Stats "
+"API)。ここでは計算された数字のみを保持し、スケジュールは記載していません。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr "距離:スタジアム間の直線(セミバース方式)。各チームはホームを離れ、スタジアムからスタジアムへ移動し、最後に戻ってきます。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr ""
+"ブロックエンジン:1世代あたり100個のカレンダー、合計 %(evaluaciones)s 個のカレンダーを評価。チャンスも同じ数を評価しました。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "自分だけのトーナメントを作ろう"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "エンジンの仕組み"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "ブロックとルール"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "ターン+ランダムムーブ"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "ターン+PG(アップグレードのみ)"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "シフト+PG学習温度"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "シフト+手焼き"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "古参:全員が1ターン3日間プレイします"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "現在は2、3、4ゲームシリーズ、休止あり"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "ターン"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "平日"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "週末"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "ターンA"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "ターンB"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "1. チームと2つのシフトを選びます"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "2. 連鎖に従います:A、B、A、B..."
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "3. チェーンシリーズスイッチシフト"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "カレンダー費用"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "よろしく"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "ファースト・バレー"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "より深い谷"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "闘牛の進展"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "ホーム"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "終わり"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "手作業で"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "PG、5%"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "PG、50%"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "マイ・テスト・トーナメント"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr "任意です。それで終わるなら、この名前が使われます。"
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "トーナメントチーム"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr "もう10チーム取ったよ。3チームから10チームに変えられる。"
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "メジャーリーグの30スタジアムの地図"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr "{Team} 例のツアー:ランダムな順番で12回の訪問。"
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr "あなたは{team}を選びました。ステップ2を進んで彼らの移動を見てください。"
+
+#: tesis/historia.py
+msgid "km"
+msgstr "km"
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "コンバイン"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "交換"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "投資地域"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "ホーム"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "訪問"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "親A"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "親B"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "息子よ"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr "例ツリー:2つの枝を持つ組み合わせ:SEA-NYAをBOS-TEXと交換し、自宅でLAN-CHN地域を投資します。"
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr "クロスオーバー:父Aは左枝を、父Bは左枝を渡します。息子は両者を組み合わせます。"
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "突然変異:樹上でSEA–NYAの葉がSEA–OAKに変化します。"
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "もう一度見てください"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "移動(ランダム = 100)"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "チャンス"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "人口(48本)"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "色が多い=移動が少ない"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "論文エンジン"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{engine} ·{g} {total} の生成"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{エンジン} ·終了:{結果}。"
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr "{engine}:{start}で始まり{end}で終わります(確率=100)。結果:{result}。"
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr "距離対偶然:論文エンジン(thesis)で、ランダムに100を選び、ブロックエンジン(ブロック)。"
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "論文エンジン(2026年)"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "カレンダーをランダムに選ぶ"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "ブロックエンジン(予備)"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr "キーボードの矢印キーも使えます。"
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr "公式カレンダーや運算と比較したエンジン生成数のシーズンキロメートル"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "公式カレンダー"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "ランダムな方がいい"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}: {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr "それでも各チームの試合数には達していません。"
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr "垂直軸:{min}から{max}百万kmまで。水平軸:世代0から{last}まで。"
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr "地図:各サークルはチームを表しています。大きいほどシーズン中の距離が増えます"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{team}: {km} km"

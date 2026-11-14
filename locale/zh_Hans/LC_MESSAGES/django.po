@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "优化结果"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "点击树图展开"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "总旅行费用："
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "规则违规："
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "运行优化"
 
@@ -130,10 +118,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "从最新的到最早的。"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "计划中"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "发动机的上下文操作员"
 
@@ -157,10 +141,6 @@ msgstr "你可以从团队注册处查看日历，没有错误，并有逐步导
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "2026年11月3日"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "正在进行中"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -548,10 +528,6 @@ msgid ""
 msgstr "它生成带有基因编程的棒球赛历，并测量每支球队的旅行次数。"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "演示 ·队伍间公平出差"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "生成一个日历，并且"
 
@@ -564,7 +540,7 @@ msgid ""
 "La IA (programación genética) busca calendarios donde el viaje sea corto y "
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
-msgstr ""
+msgstr "AI（基因编程）会寻找行程短且均匀的日历。想要自己的团队吗？使用 <a href=\"%(guia)s\">五步指南</a>。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -597,10 +573,6 @@ msgstr "这需要几秒钟。"
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "时间表： %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "配置 %(id)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -671,12 +643,6 @@ msgstr "在你的电脑上运行它"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "请你的AI助手帮忙"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr "把这个问题复制出来，粘贴到你用的向导里，连同programa_genetico/programagenetico.py 文件一起。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -883,25 +849,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "棒球日历的遗传编程"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr "Koza-TTP：Leslie Dickinson（ITAM）关于棒球日历遗传编程的论文，其真实结果和改进的引擎。"
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "ITAM论文 ·遗传编程 ·棒球"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "我的论点说的是实话："
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr "Koza-TTP采用了这个论点，用基因编程制作棒球赛季日历。在这里你将看到哪里出了问题，为什么，以及我如何在公开场合纠正它。"
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -918,12 +867,6 @@ msgstr "2分钟"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "理解这个理念"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr "什么是基因编程，为什么棒球赛历是个难题。"
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1001,37 +944,37 @@ msgstr "自动的，包括玛雅和乙美。你可以修好它们。"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "与随机搜索的区别"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "这比随机选好吗？"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "在测试中"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s， %(corridas)s 与 %(equipos)s 队的运行"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "是的，在初步测试中"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
-msgstr ""
+msgstr "演示版仍然使用论文版本。改进后的引擎被比作随机搜索，后者会审查相同数量的日历。"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "2026年11月8日"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "块体电机"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1039,13 +982,13 @@ msgid ""
 "en los que todos juegan contra todos. Así las reglas de MLB se cumplen "
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
-msgstr ""
+msgstr "赛程的每个部分（分区、联盟和跨联盟）都由多个时段组成，所有人都对阵所有人。因此，MLB规则始终被遵守。基因编程选择并命令这些时段减少旅行。"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
-msgstr ""
+msgstr "初步结果： %(resultado)s， %(corridas)s 场 %(equipos)s 队。"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1053,183 +996,1691 @@ msgid ""
 "calendarios al azar. El cruce y la mutación rompen la viabilidad de los "
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
-msgstr ""
+msgstr "代码审查以确认为什么PG并不比随机选择日历更好。交叉和突变破坏了日历的可行性，而适应度的权重使儿童输给了第一代父母。"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "清除模式"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "发动机： %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "<strong>注意：</strong> 本演示使用论文引擎。该引擎并不比随机选日历好多少。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
-msgstr ""
+msgstr "改进后的发动机在初步测试中表现更好： %(resultado)s、 %(corridas)s 次运行。该发动机尚未出现在本次演示中。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
-msgstr ""
+msgstr "对于学校项目来说，这是个优势：你有一个基线和可以衡量的进步。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "查看每次发布的结果"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr ""
+msgstr "测试赛：%(resultado)s，%(corridas)s%(equipos)s队。"
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "论文版本（2026年）"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "比随机选日历多19.5%的距离"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "发动机组（升级版）"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "比随机日历少13%的旅行"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "缩写（例如，SEA）"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "队名"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "城市"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "体育场纬度"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "球场长度"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "以小数点数表示。示例：47.59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "以十进制度表示。示例：-122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "联赛球队"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "联赛名称"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "至少选两支队伍。"
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "赛事名称"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "第一天"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "最后一天"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "按系列赛分的比赛"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "车队系列赛"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "最后一天必须与第一天相同或之后。"
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "必须是1个或多个。"
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "配置名称"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "人口规模"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "世代数"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "穿越概率（0到1）"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "变异概率（0到1）"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "应该在0到1之间。"
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "装备"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "联赛"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "锦标赛"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "背景设定"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "赛程"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "先完成这一步。"
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "新增设备。"
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "游戏生成。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "2026年11月14日"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
+msgstr "回合制算法：超越官方MLB 2023赛程"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
 msgstr ""
+"我们取消了所有30支球队同时进行3天系列赛的规则。采用2、3和4场系列赛及休息，最佳算法可行驶157万公里。官方日历可行驶174万公里。两者都符合相同的现实规则。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr "查看当前研究，附带动画图表"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "2026年11月12日"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "演示展示了真实的2023赛季"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr "你可以在不等发动机启动的情况下查看2023年美国职业棒球大联盟的实际赛程。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "查看2023赛季"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "2026年11月9日"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "逐步故事"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr "附有30个阶段的地图、树状结构和进化过程，逐步说明。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "阅读报道"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "第二次体验审计"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr "对可访问性、可用性和人机交互的审查被重复进行。第一项的28个问题中，有13个已解决。大多数新问题已经被纠正。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr "他先把发动机串联起来，然后再和发动机缸体一起。"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "2026年11月5日"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "打开五步指南"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr "制作棒球日历的基因编程。莱斯利·迪金森（ITAM）的论文，结果诚实。"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr "Koza-TTP：棒球场地图，包含球队路线和基因编程树。"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "前往主网站"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "菜单"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "工作原理"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "莱斯利·迪金森"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "主站"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "联系方式"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "我的论文说的是真的"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"论文试点和随机选日历没什么两样： %(resultado)s。以这种方式报道，不加掩饰，是正确的决定。这个结果显示了需要纠正的问题，以使发动机得到改进。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "当前研究"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr "我们尝试了所有能超越官方MLB 2023赛程的动画图表。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "当前研究：击败官方日历"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr "目标：2023年美国职业棒球大联盟赛季的赛程，行程比官方赛程少，且遵守相同规则。官方赛程为174万公里。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr "更新于2026年11月14日（下午）。这些算法正在测试中：网站和演示还没有使用它们。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "1. 所有测试结果"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"每条条代表30支球队在一个赛季中的总行程，单位是数百万公里。越少越好。所有数据的测量方式相同：每支球队离开主场，从一个球场到另一个球场，最后返回。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "按算法版本计算的总行程"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "Koza-TTP 算法"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "2023年官方日历"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr "两种回合制退火算法比军官多约9%%。下表包含相同的数据。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "所有检测，从最早到最近的"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "全行程"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "它按规矩行事吗？"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "我们学到了什么"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "块算法，无现实主义规则"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "185万公里"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "不：连续巡回赛最多36场"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr "他看起来和警官关系很近，但实际上是在作弊。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "带规则的分组算法"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "219万公里"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "未能满足他们"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr "固定区块无法很好地组织导览。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "混合方块，配有尺子"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "200万公里"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "是的"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr "更好了，但30支球队仍然同时比赛。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr "2、3、4组的移位+模拟退火"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "152万至160万公里"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "4次运行中3场（其中一次多坚持了一天）"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr "取消“一次性全部”规则才是赢得警官的关键。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr "轮班+作为MLB+只接受升级的PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "平均170万公里"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "是的，4分满分"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr "他险些击败了那名警官，但几乎用随机动作扳平了比分。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "随机移动，和PG一样努力"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "这是一个公平的基准来衡量PG。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "班次+周数+手工退火"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "156.7万公里（8个历法的平均值）"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "一开始接受更差的变化会有很大帮助。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "班次+周+PG学习温度"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "157.1万公里（8个历法的平均值）"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr "PG设计了自己的尺子，几乎与手工尺持平（多0.3%%）。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "同样的PG，但变化更多，练习更多"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "158.3万公里（8个历法的平均值）"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "是的，8分满分"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr "练习短跑并不能教出长跑的最佳规则。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "官方MLB 2023赛程"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "174万公里"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr "目标。它还遵守我们没有建模的规则，比如球场日期和电视转播。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"现实主义规则：主客场连续比赛最多12场，连续系列赛不得有重复对手，连续比赛最多20天，赛季186天。官方日历中，我们仅保留根据MLB使用条款计算出的数字。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "2. 重大变化：每回合有2、3和4局的游戏"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"此前，所有30支球队同时进行3天系列赛，没有休息。现在赛季分为工作日（4天）和周末（3天）轮班，就像MLB一样。每支球队进行2、3或4场比赛，或休息。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "旧模型与回合制模型"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "停顿"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "系列赛（数字表示比赛场数）"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "休息"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"六支队伍，分八个班次。在之前的模式中，每个班次每个人打3天。在轮班模式下，系列赛持续2、3或4天，并且有休息时间，因此巡回赛可以更自由地组织。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "3. 主要运动：Kempe链"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr "如果要改变赛程，而没有队伍同时进行两个系列赛，则需要轮流进行两轮和一系列系列赛。所有系列赛同时变更。赛程仍然有效。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "A回合与B回合之间的Kempe链"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "A班系列（实线）"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "B弯系列赛（虚线）"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr "八支球队。网络从NYA开始，经历BOS、TOR和BAL。其四个系列会变换。其他系列则不变。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "4. 为什么退火能击败PG？"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr "第一个PG使用了与退火相同的运动，但距离为170万公里，退火速度为1.58。原因有三。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>他只接受改进。</strong> 因此他卡在了第一个“谷地”里。退火一开始会变得更糟，这让他得以越过“山丘”，进入更深的谷地。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr "<strong>他付出了努力。</strong> 每一代他尝试16种食谱，只保留最好的日历。退火保存了他每一步。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr "<strong>他重复了同样的位置。</strong> 树中固定的数字总是指向相同的回合和队伍。随机的动作贯穿整个日历。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "只有改进，而不是接受更差的变化"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "只接受升级（圆圈）"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "退火：接受更差的变更（菱形）"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr "线路是历法的代价：越低越好。圆圈下到第一个山谷并停留在那里。菱形向山上走，因为它同意变坏，最终到达最深的山谷。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr "5. 学会接受更糟糕变化的PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr "为了纠正原因1，PG现在设计退火规则。树决定每一步可接受多少公里的恶化。看两条数据：运行进展和最近接受了多少变化。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr "PG在两个日历上练习短跑。然后我们尝试了她从未看到的4个日历上的获胜树。这是获胜树："
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr "简而言之：容差很小，大约在60到1200公里之间，当几乎不接受变更时，公差会上升。手工尺则相反：从2万公里开始，逐渐降低到50公里。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "整个跑步过程中的公里公差（对数刻度）"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "手工尺"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "PG，如果接受的变更很少（5%%）"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "PG，如果接受多项变动（50%%）。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr "手工规则从2万公里降至50公里。PG规则保持在60至1200公里之间，具体取决于接受的变更次数。两者均达到约157万公里的日历。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "6. 接下来是什么"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr "PG几乎与退火并列，但仍未能超越。在8个新历法中，手工尺行156.7万公里，PG为1.571公里。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"我们尝试让它更多样化（不重复配方）和更多练习（3个历法，32个配方，16代）。结果更糟：158.3万公里。PG练习时短跑4万步，但测试用的是40万步。少跑的好规则并不适合跑很多步。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr "下一步是让PG练习更接近测试的跑法，从手工尺开始，这样她才能不断提升。"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "在GitHub上查看这些测试的代码"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "论点算法"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "原始论文算法（2026年）"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "观看真正的2023赛季，无需等待"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "点击树查看更大。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr "树是整理最佳日历的程序。每个分支连接比赛;叶子代表比赛（日期、主场队和客队）。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "所有队伍的总旅行量："
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "违反规则的游戏："
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr "其中一条规则是每支队伍按比赛要求进行比赛场次。 <strong>0场违反规则的比赛</strong> 意味着赛程有效。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr "这可能需要几秒钟到几分钟。这取决于计算机的数量。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "引擎在工作。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr "他制作日历，合并并保存最好的日历。不要关闭此页。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "保存参数"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "“%(nombre)s”配置"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr "<strong>重要提示：</strong> 论文引擎保存这些值，但不使用它们。它始终以100个总体运行，20代，0.8交叉，0.2突变。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "运行命令"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"复制这个问题并粘贴到你使用的向导中。附加programa_genetico/programagenetico.py（论文引擎）或programa_genetico/motor_bloques.py（增强引擎）文件。"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "最佳日历树"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "从 %(a)s 到 %(b)s。"
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "演示步骤"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "演示：设置"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "步骤2：设置"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr "所有值都已经选定了。你可以更改它们，或者给出 \\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "更换设备"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "锦标赛"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "算法"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "下一页：查看日历"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "演示：选择队伍"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr "Koza-TTP 演示：用最新算法在三步内构建棒球日历。"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "第一步：选择设备"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr "算法会为你选择的球队整理赛程，并寻找出场最少的球队。我们已经标记了10支大联盟球队。如果你愿意，可以点击“下一步”，不更改任何内容。"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "接下来：设置"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "更喜欢看完整的皇家季吗？"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "观看2023赛季：官方赛历对比30支球队"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "想注册自己的球队和球场吗？"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "在五步指南中自己动手"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "演示：日历"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "第三步：日历"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "更新算法：回合制模型"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>：%(n)s队。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "算法的成果"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr "算法安排下所有团队的总行程。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr "在优化之前，先用随机制作的日历旅行。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr "比随机日历少出差。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "遵守所有规则"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "日历突然中断 %(a)s。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "你会复习哪些规则？"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr "最多连续12场主客场比赛。这里：主场 %(n)s ，客场 %(m)s 。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "最多连续20天有游戏时间。这里： %(n)s。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr "连续两个系列赛对阵同一对手。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr "主场比赛大约一半。这里：每队 %(a)s 到 %(b)s 。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "旅行经过"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr "总行程在%(p)s搜索步骤内从%(a)s公里降至%(b)s公里。"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "%(t)s游戏的首%(n)s"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "在家"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "参观"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "查看所有比赛"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "所有比赛"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "接下来是什么？"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "更改设置，重新运行"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "选择其他设备"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr "观看2023赛季完整赛程：官方赛历对比30支球队"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "两分钟内理解它的运作方式"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr "自己动手：在五步指南中注册你的设备"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "参见论文的原始算法"
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "两分钟内理解这个想法"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr "Koza-TTP动画故事：棒球旅程地图、基因编程树以及从论文到改进引擎的飞行员路径。"
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "2分钟 ·7步"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "历史进程"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "体育场"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "交通"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "树状结构"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "跨界"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "突变"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "世代"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "结果"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "第一部分 ·问题"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "30支队伍必须相互对阵"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr "美国职业棒球大联盟共有30支球队。每支球队一个赛季进行162场比赛。"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr "日历会显示谁对阵谁，在哪一天，在哪个球场比赛。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "在地图上点击体育场即可查看其名称。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "每次旅行都需要时间和金钱"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr "当一支球队在客场作战时，他们会乘坐飞机。糟糕的赛程让他们多次穿越全国。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr "一个旅游旅行的例子，日期顺序随机。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr "点击另一个体育场观看该队的巡回赛。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "第二部分 ·论点的思想"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "日历可以写成树状结构"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr "基因编程不是手写日历的。它是 <strong>写指令</strong> 来改进日历。"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"这些指令形成了一棵树。 <strong>叶子</strong> 是一系列游戏，比如“SEA–NYA”。 <strong>分支</strong> "
+"是动作，比如“交换”两个日期系列或“反转局域性”（改变家里的玩家）。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "交叉：两棵树混合"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr "会选用两棵效果良好的树。每棵树都长出一根枝。"
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "新树，\\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "突变：一个小而随机的变化"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr "有时树的一部分会自行变化。这里，系列 \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr "变异旨在测试父母未曾拥有的新观念。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "第三部分 ·结果"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "一代又一代"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr "每一代都有许多树。那些制作出较少旅行的历法的人，孩子也更多。"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr "虚线是最低目标：用同样的努力随机 <strong>选出</strong> 的最佳日历。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "选择一款发动机看看表现如何。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "从飞行员到一台正常工作的发动机"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr "改进后的引擎在初试测试中（%(corridas)s运行，%(equipos)s车队）中随机击败了它：%(resultado)s。"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr "论文的试点（2026年） <strong>不过</strong> 是随机选日历： %(resultado)s。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "工具测试分为5步"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "以表格形式查看全部30个体育场"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "来自teams.csv项目文件的数据。"
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "代码"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "团队"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "球场"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "位置"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "之前"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "下一个"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr "Koza-TTP：棒球日历的基因编程。它最初是莱斯利·迪金森（ITAM）的一篇论文，如今拥有一个能够克服偶然性的引擎。"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "一个更好的MLB赛程，配合基因编程。"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"Koza-TTP就是我在ITAM的毕业论文中诞生的。那个第一个试点并不是随机通过的。区块版本可以： "
+"%(resultado)s，在初步测试中。这里我会给你演示它是如何工作的。"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr "一个动画故事：旅程的地图、基因编程的树以及结果。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "2023赛季：引擎对抗真实赛历"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr "这是2023年对所有30支美国职业棒球大联盟球队进行基因编程引擎的重复，与官方赛程和机率相比。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "2023赛季"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "带有真实数据的演示·2023年美国职业棒球大联盟"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr "我们使用了30支美国职业棒球大联盟球队及其实际球场。官方2023年赛程是参考。基于区块的引擎试图安排一个出差更少的赛季。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "公里数如何下降，代代相传"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr "这是引擎的真实运行，保存下来让你无需等待即可观看。它有 %(generaciones)s 代，每代100个日历。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "游戏"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "生成"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "侧滑板"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "30支球队在常规赛期间的出差。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "最长巡回赛（连续客场比赛）"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "连续主场比赛"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "美国职业棒球大联盟官员"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "百万公里"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "随机更好，付出同样的努力"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "它不符合每支球队的比赛场次。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr "发动机的行驶速度比随机最佳排程<strong>少%(pct)s%%。</strong>发动机会学习。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr "官方日历<strong>的行程比发动机少%(pct)s%%。</strong>我们还没打败他。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"注：引擎赛历有最多连续 <strong>%(gira)s 场客</strong> 场比赛的巡回赛。官方赛历有最大 "
+"%(oficial)s。真实球队不会接受如此长时间的巡回赛。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "各队旅程"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr "在两种赛程间切换，看看哪些队伍出差最多。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "地图日历"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "官方"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "发动机"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "以表格形式查看全部30支球队"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "官方（公里）"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "发动机（公里）"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "数据来源"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr "官方赛程：2023年美国职业棒球大联盟常规赛（MLB统计API）。我们这里只保留计算出来的数据，不包含赛程。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr "距离：体育场之间的直线（半宇宙公式）。每支球队离开主场，从一个体育场到另一个体育场，结束时返回。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr "块引擎：每代100个日历，总共评估 %(evaluaciones)s 个日历。Chance评估了同样数量。"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "自制锦标赛"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "发动机的工作原理"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "方块，带规则"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "回合 + 随机移动"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "回合数 + 职业护卫（仅限升级）"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "Shifts + PG 学习温度"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "移位+手工退火"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "老模式：每个人每回合玩3天"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "现在：2、3和4场比赛系列赛，中间有休息"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "转弯"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "工作日"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "周末"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "A弯"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "B弯"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "1. 我们选择一个团队和两个班次"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "2. 我们按照链条前进：A、B、A、B......"
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "3. 链串交换机换挡"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "日历费用"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "祝你好"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "第一谷"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "更深的山谷"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "斗牛的发展"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "首页"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "结束"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "手工"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "PG，5%"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "PG，50%"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "我的测试赛"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr "可选。如果就此停止，这个名字就被使用了。"
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "比赛队伍"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr "我们已经进了10支。你可以换队伍：从3支到10支。"
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "大联盟30座球场地图"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr "{Team} 示例参观：12次访问，顺序随机。"
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr "你选择了{team}。按照步骤2查看他们的行程。"
+
+#: tesis/historia.py
+msgid "km"
+msgstr "公里"
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "联合体"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "交换"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "投资本地性"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "首页"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "参观"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "父A组"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "父B组"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "儿子"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr "示例树：合并，有两个分支：用BOS-TX交换SEA-NYA，并在本地投资LAN-CHN区域。"
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr "交叉：父亲A给左支，B给左支;儿子把两者结合起来。"
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "突变：在树上，SEA–NYA叶片变为SEA–OAK。"
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "再看一遍"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "旅行（随机 = 100）"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "机缘"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "种群（48棵）"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "颜色更多=行程更少"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "论文引擎"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{引擎} ·{g} {total} 的生成"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{引擎} ·结束：{结果}。"
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr "{engine}：从{start}开始，到{end}结束（概率=100）。结果：{result}。"
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr "距离与偶然：论文引擎 {thesis}，随机选100，块引擎{块}。"
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "论文引擎（2026）"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "随机选择日历"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "发动机组（初步）"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr "你也可以用键盘上的方向键。"
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr "赛季公里数按发动机代数划分，与官方日历和运气相比"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "官方赛程"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "随机更好"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}： {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr "但这仍然无法达到每支球队的比赛场次。"
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr "纵轴：从{min}到{max}百万公里。水平轴：从0代到{last}。"
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr "地图：每个圆圈代表一个团队;越大意味着赛季中跑的里程越多"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{team}： {km} 公里"

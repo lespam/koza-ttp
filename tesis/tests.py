@@ -1,6 +1,8 @@
 import datetime
 from unittest import mock
 
+from django.conf import settings
+from django.utils import translation
 from django.urls import reverse
 from django.test import SimpleTestCase, TestCase
 from django.urls import URLPattern
@@ -266,10 +268,13 @@ class HistoriaPasoAPaso(SimpleTestCase):
                           "bloques": MOTOR["mejorado"]["distancia_vs_azar"]})
 
     def test_barra_superior_enlaza_a_la_historia(self):
-        r = self.client.get(reverse("documentacion:index"))
-        self.assertContains(r, f'href="{reverse("tesis:historia")}"')
-        r = self.client.get(reverse("tesis:historia"))
-        self.assertContains(r, 'aria-current="page">Cómo funciona')
+        # reverse() usa el idioma que dejó activo la prueba anterior (por ejemplo /pt/).
+        # Se fija el español para revisar el texto en español.
+        with translation.override(settings.LANGUAGE_CODE):
+            r = self.client.get(reverse("documentacion:index"))
+            self.assertContains(r, f'href="{reverse("tesis:historia")}"')
+            r = self.client.get(reverse("tesis:historia"))
+            self.assertContains(r, 'aria-current="page">Cómo funciona')
 
     def test_ultimo_paso_ofrece_probar_la_herramienta(self):
         r = self.client.get(reverse("tesis:historia"))

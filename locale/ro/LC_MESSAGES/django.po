@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "Rezultate de optimizare"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "Apasă pe arbore pentru a extinde"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "Costul total al călătoriei:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "Încălcări ale regulilor:"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Optimizarea alergării"
 
@@ -132,10 +120,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "De la cel mai recent până la cel mai vechi."
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "Planificat"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "Operatori contextuali pentru motor"
 
@@ -164,10 +148,6 @@ msgstr ""
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "3 noiembrie 2026"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "În desfășurare"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -616,10 +596,6 @@ msgstr ""
 "mult călătorește fiecare echipă."
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "Demo · Călătorie corectă între echipe"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "Generează un calendar și"
 
@@ -633,6 +609,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"AI (programare genetică) caută calendare unde călătoria este scurtă și "
+"uniformă. Vrei propriile echipe? Folosește <a href=\"%(guia)s\">ghidul în 5 "
+"pași</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -669,10 +648,6 @@ msgstr "Durează câteva secunde."
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "Program: %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "Configurația %(id)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -750,14 +725,6 @@ msgstr "Rulează-l pe calculatorul tău"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "Cere ajutorul asistentului tău AI"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr ""
-"Copiază această întrebare și lipește-o în vrăjitorul pe care îl folosești, "
-"împreună cu fișierul programa_genetico/programagenetico.py."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -981,31 +948,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "Programarea genetică pentru calendarele de baseball"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr ""
-"Koza-TTP: Teza lui Leslie Dickinson (ITAM) despre programarea genetică "
-"pentru calendarele de baseball, cu rezultatul său sincer și motorul "
-"îmbunătățit."
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "Teză ITAM · Programare genetică · Baseball"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "Teza mea spunea adevărul:"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr ""
-"Koza-TTP preia această teză pentru a crea calendare pentru sezonul de "
-"baseball folosind programare genetică. Aici veți vedea ce a mers prost, de "
-"ce și cum corectez acest lucru în public."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -1022,14 +966,6 @@ msgstr "2 minute"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "Înțelegerea ideii"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr ""
-"Ce este programarea genetică și de ce un calendar de baseball este o "
-"problemă dificilă."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1109,37 +1045,39 @@ msgstr "Automat, inclusiv Maya și Otomí. Poți să-i repari."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "Versus căutarea aleatorie"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "Este mai bine decât să alegi la întâmplare?"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "În testare"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, în %(corridas)s reprize cu %(equipos)s echipe"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "Da, în testele preliminare"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
 msgstr ""
+"Demo-ul folosește încă versiunea cu teză. Motorul îmbunătățit a fost "
+"comparat cu o căutare aleatorie care revizuiește același număr de calendare."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "8 noiembrie 2026"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "Motor de bloc"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1148,12 +1086,18 @@ msgid ""
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
 msgstr ""
+"Fiecare parte a programului (divizie, ligă și interliga) este formată din "
+"blocuri în care toți joacă împotriva tuturor. Astfel, regulile MLB sunt "
+"întotdeauna respectate. Programarea genetică alege și ordonă blocurile "
+"pentru a reduce deplasările."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"Rezultat preliminar: %(resultado)s, în %(corridas)s serii cu %(equipos)s "
+"echipe."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1162,182 +1106,1875 @@ msgid ""
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
 msgstr ""
+"Revizuirea codului pentru a confirma de ce PG nu era mai bun decât alegerea "
+"aleatorie a calendarelor. Suprapunerea și mutațiile strică viabilitatea "
+"calendarelor, iar greutățile de fitness fac ca copiii să piardă în fața "
+"părinților generației inițiale."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "Mod Clear"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "Motor: %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
 msgstr ""
+"<strong>Notă:</strong> această demonstrație folosește motorul de teză. Acest"
+" motor nu era mai bun decât alegerea aleatorie a calendarelor."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
 msgstr ""
+"Motorul îmbunătățit a fost mai bun, în testele preliminare: %(resultado)s, "
+"în %(corridas)s runde. Nu este încă prezent în această demonstrație."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
 msgstr ""
+"Pentru un proiect școlar, asta e un avantaj: ai un punct de referință și o "
+"îmbunătățire pe care o poți măsura."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "Vezi rezultatele fiecărei versiuni"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
+"În teste: %(resultado)s, în %(corridas)s run-uri cu %(equipos)s echipe."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "Versiunea teză (2026)"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "Cu 19,5% mai multă distanță decât alegerea unor calendare aleatorii"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "Motor bloc (versiune îmbunătățită)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "Cu 13% mai puțină călătorie decât alegerea unor calendare aleatorii"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "Abreviere (de exemplu, SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "Nume echipă"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "Oraș"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "Latitudine stadionului"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "Lungimea stadionului"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "În grade zecimale. Exemplu: 47,59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "În grade zecimale. Exemplu: -122,33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "Echipe din ligă"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "Nume ligii"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "Alege cel puțin 2 echipe."
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "Numele turneului"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "Prima zi"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "Ultima zi"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "Meciuri pe serii"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "Seria pe echipe"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "Ultima zi trebuie să fie aceeași cu sau după prima."
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "Trebuie să fie unul sau mai multe."
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "Numele configurației"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "Dimensiunea populației"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "Număr de generații"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "Probabilitatea de a traversa (0 la 1)"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "Șansa de mutație (0 la 1)"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "Ar trebui să fie între 0 și 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "Echipament"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "Ligă"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "Turneu"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "Decoruri"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "Calendar"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "Parcurge acest pas mai întâi."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "Echipament suplimentar."
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "Jocuri generate."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "14 noiembrie 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
+msgstr "Algoritm pe ture: depășește programul oficial MLB 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
 msgstr ""
+"Am eliminat regula conform căreia toate cele 30 de echipe joacă serii de 3 "
+"zile în același timp. Cu serii de 2, 3 și 4 meciuri și pauze, cel mai bun "
+"algoritm parcurge 1,57 milioane km. Calendarul oficial parcurge 1,74 "
+"milioane. Ambele respectă aceleași reguli de realism."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr "Vizualizați cercetările actuale, cu diagrame animate"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "12 noiembrie 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "Demonstrația arată adevăratul sezon 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr ""
+"Poți vedea programul real al Major League Baseball 2023 fără să aștepți să "
+"pornească motorul."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "Vezi sezonul 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "9 noiembrie 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "Poveste pas cu pas"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr ""
+"O explicație cu harta celor 30 de etape, copacii și evoluția, pas cu pas."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "Citește povestea"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "Al doilea audit al experienței"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr ""
+"Revizuirea accesibilității, utilizabilității și interacțiunii om-AI a fost "
+"repetată. Dintre cele 28 de puncte din prima, 13 au fost rezolvate. "
+"Majoritatea noilor puncte au fost deja corectate."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr "A pus motorul în serie și apoi blocurile motorului."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "5 noiembrie 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "Deschide ghidul în 5 pași"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr ""
+"Programare genetică pentru realizarea calendarelor de baseball. Teza lui "
+"Leslie Dickinson (ITAM), cu rezultate sincere."
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr ""
+"Koza-TTP: hartă a stadioanelor de baseball cu traseul echipei și un arbore "
+"genetic de programare."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "Mergi la site-ul principal"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "Meniu"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "Cum funcționează"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "Leslie Dickinson"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "Situl principal"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "Contact"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "Teza mea spunea adevărul"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"Pilotul tezei nu era mai bun decât alegerea aleatorie a calendarelor: "
+"%(resultado)s. Raportarea astfel, fără a ascunde, a fost decizia corectă. "
+"Acest rezultat a arătat ce trebuia corectat pentru a îmbunătăți motorul."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "Cercetări actuale"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr ""
+"Tot ce am încercat am încercat pentru a depăși programul oficial MLB 2023, "
+"cu diagrame animate."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "Cercetări actuale: depășirea calendarului oficial"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr ""
+"Obiectiv: Un program pentru sezonul 2023 al Major League Baseball care se "
+"deplasează mai puțin decât cel oficial și respectă aceleași reguli. Cel "
+"oficial parcurge 1,74 milioane de km."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr ""
+"Actualizat la 14 noiembrie 2026 (după-amiaza). Acești algoritmi sunt în "
+"testare: site-ul și demo-ul nu îi folosesc încă."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "1. Rezultatele tuturor testelor"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"Fiecare bară reprezintă parcursul total al celor 30 de echipe într-un sezon,"
+" în milioane de km. Cu mai puțin înseamnă mai bine. Toate cifrele au fost "
+"măsurate la fel: fiecare echipă își părăsește casa, merge de la stadion în "
+"stadion și se întoarce la final."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "Călătorie totală după versiunea algoritmului"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "Algoritmi Koza-TTP"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "Calendar oficial 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr ""
+"Cele două algoritmi de recoacere pe ture îl depășesc pe ofițer cu "
+"aproximativ 9%%. Tabelul de mai jos are aceleași date."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "Toate testele, de la cele mai vechi la cele mai recente"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "Călătoria totală"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "Se joacă după reguli?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "Ce am învățat"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "Algoritmul de bloc, fără reguli de realism"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "1,85 milioane km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "Nu: turnee de până la 36 de meciuri la rând"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr "Părea apropiat de ofițer, dar înșela."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "Algoritmul de bloc, cu reguli"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "2,19 milioane km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "Nu reușește să le îndeplinească"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr "Blocuri fixe nu îți permit să organizezi bine tururile."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "Blocuri mixte, cu rigle"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "2,00 milioane km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "Da"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr "Mai bine, dar toate cele 30 de echipe joacă în același timp."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr "Schimbări cu seturi de 2, 3 și 4 seturi + recoacere simulată"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "1,52 până la 1,60 milioane km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "3 din 4 puncte (una a rezistat o zi în plus)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr "Eliminarea regulii \"toți deodată\" este ceea ce câștigă ofițerul."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr "Schimburi + săptămână ca MLB + PG care acceptă doar upgrade-uri"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "1,70 milioane km (medie)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "Da, 4 din 4"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr ""
+"Îl învinge la limită pe ofițer, dar aproape egalizează cu mișcări aleatorii."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "Mișcări aleatorii, același efort ca PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "O bază de bază corectă pentru a măsura PG."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "Schimbări + săptămână + recoacere manuală"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "1,567 milioane km (media a 8 calendare)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "Acceptarea schimbărilor mai rele la început ajută mult."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "Schimbări + săptămână + temperatura de învățare PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "1,571 milioane km (media a 8 calendare)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr ""
+"PG-ul își proiectează propria riglă și aproape că se egalează cu cea făcută "
+"manual (cu 0,3%% mai mult)."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "Același PG, dar cu mai multă varietate și mai multă practică"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "1,583 milioane km (media a 8 calendare)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "Da, 8 din 8"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr ""
+"Exersarea cu alergări scurte nu învață cea mai bună regulă pentru alergările"
+" lungi."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "Programul oficial MLB 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "1,74 milioane km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr ""
+"Scopul. De asemenea, respectă reguli pe care nu le modelăm, cum ar fi datele"
+" pe stadioane și televiziunea."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"Reguli de realism: maximum 12 meciuri consecutive acasă sau în deplasare, "
+"fără adversari repetați în serii consecutive, maximum 20 de zile consecutive"
+" de joc și un sezon de 186 de zile. Din calendarul oficial păstrăm doar "
+"cifrele calculate, conform termenilor de utilizare MLB."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "2. Marea schimbare: ture cu seturi de 2, 3 și 4 jocuri"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"Anterior, toate cele 30 de echipe jucau serii de 3 zile în același timp, "
+"fără pauze. Acum sezonul este împărțit în ture de zi lucrătoare (4 zile) și "
+"de weekend (3 zile), la fel ca în MLB. Fiecare echipă joacă o serie de 2, 3 "
+"sau 4 meciuri sau pauze."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "Modelul anterior vs. modelul pe ture"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "Pauză"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "Seria (numărul indică câte meciuri)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "Pauză"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"Șase echipe în opt ture. În modelul anterior, toată lumea joacă 3 zile în "
+"fiecare tură. În modelul de ture, seria durează 2, 3 sau 4 zile și există "
+"pauze, astfel încât tururile pot fi organizate cu mai multă libertate."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "3. Mișcarea principală: lanțul Kempe"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr ""
+"Pentru a schimba programul fără ca o echipă să joace două serii simultan, se"
+" fac două ture și un lanț de serii alternează între ele. Toate seriile din "
+"lanț schimbă schimbările simultan. Programul rămâne valabil."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "Lanțul Kempe între turul A și virajul B"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "Seria în Schimbul A (Linie Solidă)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "Seria pe virajul B (linie punctată)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr ""
+"Opt echipe. Rețeaua începe în NYA și trece prin BOS, TOR și BAL. Cele patru "
+"schimbări de serie. Celelalte serii nu se mișcă."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "4. De ce a învins recoacerea PG?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr ""
+"Primul PG a folosit aceleași mișcări ca recoacerea, dar era de 1,70 milioane"
+" km și recocerea de 1,58. Există trei motive."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>A acceptat doar îmbunătățiri.</strong> Astfel, rămâne blocat în "
+"prima \"vale\" pe care o găsește. Recoacerea este de acord să se "
+"înrăutățească puțin la început, iar asta îi permite să traverseze \"dealul\""
+" și să ajungă într-o vale mai adâncă."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr ""
+"<strong>A depus efort.</strong> În fiecare generație încearcă 16 rețete și "
+"păstrează doar calendarul celor mai bune. Recoacerea păstrează fiecare pas "
+"pe care îl face."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr ""
+"<strong>A repetat aceleași locuri.</strong> Numerele fixe din arbore indică "
+"întotdeauna aceleași ture și echipe. Mișcări aleatorii se desfășoară pe tot "
+"calendarul."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "Doar îmbunătățiri față de acceptarea unor schimbări mai grave"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "Acceptă doar upgrade-uri (cerc)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "Recoacere: acceptă modificări mai proaste (rombu)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr ""
+"Linia este prețul calendarului: cu cât mai jos, cu atât mai bine. Cercul "
+"coboară spre prima vale și rămâne acolo. Ronubul urcă dealul, pentru că "
+"acceptă să fie puțin mai rău, și ajunge în cea mai adâncă vale."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr "5. PG-ul care învață când să accepte schimbările mai rele"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr ""
+"Pentru a corecta rațiunea 1, PG proiectează acum regula de recoacere. Un "
+"arbore decide câți km de înrăutățire sunt acceptați în fiecare pas. Uită-te "
+"la două date: cât de departe este cursa și câte modificări au fost acceptate"
+" recent."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr ""
+"PG a exersat cu alergări scurte pe 2 calendare. Apoi am încercat copacul "
+"câștigător pe 4 calendare pe care nu le-a văzut niciodată. Acesta este "
+"copacul câștigător:"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr ""
+"Pe scurt: toleranța este mică, aproximativ 60 până la 1.200 km, și crește "
+"când modificările aproape nu sunt acceptate. Rigla făcută manual face "
+"opusul: începe de la 20.000 km și scade treptat până la 50."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "Toleranță în km pe tot parcursul traseului (scară logaritmică)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "Riglă făcută manual"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "PG, dacă sunt acceptate puține modificări (5%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "PG, dacă sunt acceptate multe modificări (50%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr ""
+"Regula manuală scade de la 20.000 la 50 km. Regula PG rămâne între 60 și "
+"1.200 km și depinde de câte modificări sunt acceptate. Ambele ating "
+"calendare de aproximativ 1,57 milioane km."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "6. Ce urmează"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr ""
+"PG aproape că a egalat cu annealing, dar tot nu o depășește. În 8 calendare "
+"noi, rigla făcută manual parcurge 1,567 milioane km, iar cea a PG-ului "
+"1,571."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"Am încercat să oferim mai multă varietate (fără rețete repetate) și mai "
+"multă practică (3 calendare, 32 de rețete, 16 generații). A fost mai rău: "
+"1,583 milioane km. PG-ul exersează cu alergări scurte de 40.000 de pași, dar"
+" testul folosește 400.000. O regulă bună pentru alergat puțin nu este cea "
+"mai bună pentru a alerga mult."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr ""
+"Următorul pas este ca PG-ul să exerseze cu serii care seamănă mai mult cu "
+"testul și să înceapă de la rigla făcută manual, ca să poată doar să o "
+"îmbunătățească."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "Vizualizați codul acestor teste pe GitHub"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "Algoritmul tezei"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "Algoritmul tezei originale (2026)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "Urmărește sezonul real 2023, fără să aștepți"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "Apasă pe copac ca să-l vezi mai mare."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr ""
+"Arborele este programul care alcătuiește cel mai bun calendar. Fiecare "
+"ramură participă la meciuri; frunzele reprezintă meciurile (data, echipa "
+"gazdă și echipa oaspete)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "Călătoria totală a tuturor echipelor:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "Jocuri care încalcă regulile:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr ""
+"O regulă este ca fiecare echipă să joace numărul de meciuri cerut de turneu."
+" <strong>0 meciuri care încalcă regulile</strong> înseamnă că programul este"
+" valabil."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr ""
+"Poate dura câteva secunde până la câteva minute. Depinde de numărul de "
+"calculatoare."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "Motorul funcționează."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr ""
+"Creează calendare, le combină și păstrează cele mai bune. Nu închide această"
+" pagină."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "Parametri salvați"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "Configurația \"%(nombre)s\""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr ""
+"<strong>Important:</strong> motorul de teză salvează aceste valori, dar nu "
+"le folosește. Rulează întotdeauna cu o populație de 100, 20 de generații, "
+"0,8 crossover și 0,2 mutație."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "Comenzi pentru a-l rula"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"Copiază această întrebare și lipește-o în wizard-ul pe care îl folosești. "
+"Atașează fișierul programa_genetico/programagenetico.py (motor de teză) sau "
+"programa_genetico/motor_bloques.py (motor îmbunătățit)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "Cel mai bun arbore calendaristic"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "De la %(a)s la %(b)s."
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "Pași demo"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "Demo: Configurare"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "Pasul 2: Configurarea"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr "Toate valorile sunt deja alese. Le poți schimba sau le poți da \\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "Schimbă echipamentul"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "Turneul"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "Algoritmul"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "Următorul: Vezi calendarul"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "Demonstrație: Alegeți echipele"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr ""
+"Demonstrație Koza-TTP: Construiește un calendar de baseball cu cel mai nou "
+"algoritm în 3 pași."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "Pasul 1: Alege echipamentul"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr ""
+"Algoritmul alcătuiește un program pentru echipele pe care le alegi și caută "
+"pe cea cu cele mai puține deplasări. Am marcat deja 10 echipe din Major "
+"League. Dacă vrei, apasă pe \"Next\" fără să schimbi nimic."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "Următorul: Configurarea"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "Preferi să urmărești un sezon regal complet?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "Urmărește sezonul 2023: 30 de echipe împotriva calendarului oficial"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "Vrei să-ți înregistrezi propriile echipe și stadioane?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "Fă-o singur în ghidul în 5 pași"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "Demonstrație: calendarul"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "Pasul 3: Calendarul"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "Algoritm mai nou: Model pe ture"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>: %(n)s echipe."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "Ce a realizat algoritmul"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr "Călătoria totală a tuturor echipelor cu programul algoritmului."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr "Călătorește cu un calendar făcut aleatoriu, înainte de a optimiza."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr "Mai puține călătorii decât calendarul aleatoriu."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "Respectă toate regulile"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "Calendarul s-a stricat aleatoriu %(a)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "Ce reguli revizuiți?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr ""
+"Maximum 12 meciuri acasă sau în deplasare la rând. Aici: %(n)s acasă și "
+"%(m)s în deplasare."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "Maximum 20 de zile consecutive cu joacă. Aici: %(n)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr "Să nu joace împotriva aceluiași adversar în două serii la rând."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr "Meciurile de acasă cam jumătate. Aici: %(a)s la %(b)s pe echipă."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "Cum a decurs excursia"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr ""
+"Călătoria totală a scăzut de la %(a)s la %(b)s km în %(p)s pași de căutare."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "Prima %(n)s a %(t)s jocuri"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "Acasă"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "Vizită"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "Vezi toate jocurile"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "Toate jocurile"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "Ce urmează?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "Schimbă setările și rulează din nou"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "Alegerea altor echipamente"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr ""
+"Urmărește sezonul complet 2023: 30 de echipe împotriva calendarului oficial"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "Înțelege cum funcționează în 2 minute"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr "Fă-o singur: înregistrează-ți echipamentul în ghidul în 5 pași"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "Vezi algoritmul original al tezei"
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "Înțeleg ideea în 2 minute"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr ""
+"Poveste animată Koza-TTP: harta călătoriilor în baseball, arborii "
+"programării genetice și traseul pilotului de la teză la motorul îmbunătățit."
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "2 minute · 7 pași"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "Etape ale istoriei"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "Stadioane"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "Călătorii"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "Copacul"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "Crossover"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "Mutație"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "Generații"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "Rezultat"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "Partea 1 · Problema"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "30 de echipe trebuie să joace între ele"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr ""
+"Major League Baseball are 30 de echipe. Fiecare echipă joacă 162 de meciuri "
+"într-un sezon."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr ""
+"Un calendar arată cine joacă împotriva cui, în ce dată și în ce stadion."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "Atinge un stadion pe hartă pentru a-i vedea numele."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "Fiecare călătorie costă timp și bani"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr ""
+"Când o echipă joacă în deplasare, călătorește cu avionul. Un program prost "
+"îi face să traverseze țara de multe ori."
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr "Un exemplu de excursie turistică, cu datele în ordine aleatorie."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr "Atinge un alt stadion ca să urmărești turneul acelei echipe."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "Partea 2 · Ideea tezei"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "Un calendar poate fi scris ca un copac"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr ""
+"Programarea genetică nu scrie calendarul de mână. <strong>Scrie "
+"instrucțiuni</strong> pentru a-l îmbunătăți."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"Aceste instrucțiuni formează un arbore. <strong>Frunzele</strong> sunt serii"
+" de jocuri, cum ar fi \"SEA–NYA.\" <strong>Ramurile</strong> sunt acțiuni, "
+"cum ar fi \"schimbarea\" a două serii de date sau \"inversarea localității\""
+" (schimbarea jocului de acasă)."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "Traversare: Doi copaci se amestecă"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr ""
+"Sunt luați doi copaci care funcționează bine. Fiecare oferă o creangă."
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "Noul copac, \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "Mutație: O schimbare mică, aleatorie"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr "Uneori o parte a arborelui se schimbă de la sine. Aici, seria \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr ""
+"Mutația servește la testarea unor idei noi pe care niciun părinte nu le-a "
+"avut."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "Partea 3 · Rezultatul"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "Generație după generație"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr ""
+"Fiecare generație are mulți copaci. Cei care produc calendare cu mai puține "
+"călătorii au mai mulți copii."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr ""
+"Linia punctată este obiectivul minim: cel mai bun calendar ales la "
+"întâmplare cu același efort.<strong></strong>"
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "Alege un motor ca să vezi cum s-a descurcat."
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "De la pilot la un motor funcțional"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"Motorul îmbunătățit, prin blocuri, îl depășește la întâmplare: "
+"%(resultado)s, în teste preliminare (%(corridas)s runde, %(equipos)s "
+"echipe)."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr ""
+"Pilotul tezei (2026) <strong>nu a fost mai bun</strong> decât alegerea "
+"aleatorie a calendarelor: %(resultado)s."
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "Testează unealta în 5 pași"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "Vezi toate cele 30 de stadioane ca un tabel"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "Date din fișierul proiectului teams.csv."
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "Cod"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "Echipa"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "Stadion"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "Localizare"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "Anterior"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "Următorul"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr ""
+"Koza-TTP: programare genetică pentru calendare de baseball. A început ca o "
+"teză a lui Leslie Dickinson (ITAM) și astăzi are un motor care depășește "
+"șansele."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "Un program MLB mai bun cu programare genetică."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"Koza-TTP s-a născut ca teză la ITAM. Primul pilot nu a trecut la întâmplare."
+" Versiunea blocată da: %(resultado)s, în teste preliminare. Aici îți arăt "
+"cum funcționează."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr ""
+"O poveste animată: harta călătoriilor, arborii programării genetice și "
+"rezultatul."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "Sezonul 2023: motorul împotriva calendarului real"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr ""
+"O repetare a unui proces al motorului de programare genetică cu toate cele "
+"30 de echipe din Major League Baseball în 2023, comparativ cu programul "
+"oficial și cu întâmplarea."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "Sezonul 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "Demonstrație cu date reale · Major League Baseball 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr ""
+"Folosim cele 30 de echipe din Major League Baseball și stadioanele lor "
+"reale. Programul oficial pentru 2023 este referința. Motorul bazat pe "
+"blocuri încearcă să creeze un sezon cu mai puține deplasări."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "Cum se descurcă kilometrii, generație după generație"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr ""
+"Aceasta este o rulare reală a motorului, păstrată pentru tine să o urmărești"
+" fără să aștepți. Are %(generaciones)s generații de 100 de calendare "
+"fiecare."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "Joc"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "Generație"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "Placă glisantă laterală"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "Călătoria celor 30 de echipe pe parcursul sezonului regulat."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "Cel mai lung turneu (meciuri consecutive în deplasare)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "Mai multe meciuri de acasă la rând"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "Oficial în Major League Baseball"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "milioane km"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "Mai bun la întâmplare, cu același efort"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "Nu corespunde numărului de meciuri ale fiecărei echipe."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr ""
+"<strong> Motorul călătorește%(pct)s%% mai puțin decât</strong> cel mai bun "
+"program aleatoriu. Motorul învață."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr ""
+"Calendarul oficial <strong> călătorește%(pct)s%% mai puțin decât</strong> "
+"motorul. Încă nu l-am învins."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"Notă: calendarul motorului conține tururi cu până <strong> la%(gira)s "
+"meciuri consecutive în deplasare</strong>. Cel oficial are %(oficial)smaxim."
+" O echipă reală nu ar accepta turnee atât de lungi."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "Călătoria fiecărei echipe"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr ""
+"Schimbă între cele două programe pentru a vedea care echipe călătoresc cel "
+"mai mult."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "Calendar de hărți"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "Oficial"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "Motor"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "Vezi toate cele 30 de echipe ca tabel"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "Oficial (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "Motor (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "De unde provin datele"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr ""
+"Program oficial: Sezonul regulat Major League Baseball 2023 (MLB Stats API)."
+" Păstrăm aici doar cifrele calculate, nu și programul."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr ""
+"Distanțe: linie dreaptă între stadioane (formula semiversului). Fiecare "
+"echipă își părăsește casa, călătorește de la stadion la stadion și se "
+"întoarce la final."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr ""
+"Motor de bloc: 100 de calendare pe generație, %(evaluaciones)s calendare "
+"evaluate în total. Chance a evaluat același număr."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "Fă-ți propriul turneu"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "Cum funcționează motorul"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "Blocuri cu reguli"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "Ture + Mișcări aleatorii"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "Ture + PG (doar upgrade-uri)"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "Deplasări + temperatura de învățare PG"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "Schimbări + recoacere manuală"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "Bătrân: Toată lumea joacă 3 zile pe tură"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "Acum: serii de 2, 3 și 4 meciuri, cu pauze"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "Întoarce-te"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "în zilele lucrătoare"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "Weekend"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "Virajul A"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "Virajul B"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "1. Alegem o echipă și două ture"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "2. Urmăm lanțul: A, B, A, B..."
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "3. Schimbări de schimbare în serie de lanțuri"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "Costul calendarului"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "Cele mai bune"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "Prima Vale"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "Vale mai adâncă"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "Progresul coridei"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "Acasă"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "Sfârșit"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "de mână"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "PG, 5%"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "PG, 50%"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "Turneul meu de Test"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr "Opțional. Dacă lași așa, se folosește acest nume."
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "Echipele turneului"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr "Am marcat deja 10. Poți să-i schimbi: de la 3 la 10 echipe."
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "Hartă a celor 30 de stadioane din Major Leagues"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr "Exemplu de tur {Team}: 12 vizite în ordine aleatorie."
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr "Ai ales {echipa}. Urmează pasul 2 pentru a vedea călătoriile lor."
+
+#: tesis/historia.py
+msgid "km"
+msgstr "km"
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "Combine"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "Schimb"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "Investește în localitate"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "Acasă"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "Vizită"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "Părintele A"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "Părintele B"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "Fiul"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr ""
+"Exemplu de arbore: combină, cu două ramuri: schimbă SEA-NYA cu BOS-TEX și "
+"investește localitatea LAN-CHN acasă."
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr ""
+"Crossover: tatăl A dă ramura stângă, iar tatăl B ramura stângă; fiul le "
+"combină pe cele două."
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "Mutație: Pe copac, frunza SEA–NYA se transformă în SEA–STEJAR."
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "Uită-te din nou"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "Călătorie (aleatoriu = 100)"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "Șansă"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "Populație (48 de arbori)"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "Mai multă culoare = mai puțină cursă"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "Motorul tezei"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{engine} · {g} generarea {total}"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{motor} · S-a terminat: {rezultat}."
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr ""
+"{engine}: începe la {start} și se termină la {end} (șansă = 100). Rezultat: "
+"{rezultat}."
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr ""
+"Distanță versus șansă: motor de teză {teză}, alege aleatoriu 100, motor de "
+"blocuri {blocuri}."
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "Motorul de teză (2026)"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "Alegerea aleatorie a calendarelor"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "Locomotiva de bloc (Preliminar)"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr "Poți folosi și tastele săgeată de pe tastatură."
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr ""
+"Kilometri ai sezonului după generarea motorului, comparativ cu calendarul "
+"oficial și șansa"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "Calendar oficial"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "Mai bun la întâmplare"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}: {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr "Încă nu atinge numărul de meciuri ale fiecărei echipe."
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr ""
+"Axă verticală: de la {min} la {max} milioane km. Axă orizontală: generații 0"
+" până la {ultimul}."
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr ""
+"Hartă: Fiecare cerc este o echipă; mai mare înseamnă mai mulți kilometri în "
+"sezon"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{echipă}: {km} km"

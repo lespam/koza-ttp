@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "תוצאות אופטימיזציה"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "לחץ על העץ להרחבה"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "עלות הנסיעה הכוללת:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "הפרות כללים:"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "אופטימיזציה של הרצות"
 
@@ -132,10 +120,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "מהאחרון ועד הישן ביותר."
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "מתוכנן"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "מפעילים קונטקסטואליים למנוע"
 
@@ -163,10 +147,6 @@ msgstr ""
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "3 בנובמבר 2026"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "מתמשך"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -590,10 +570,6 @@ msgid ""
 msgstr "הוא יוצר לוח שנה של בייסבול עם תכנות גנטי ומודד כמה כל קבוצה נוסעת."
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "הדגמה · נסיעה הוגנת בין קבוצות"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "יצירת לוח שנה ו"
 
@@ -607,6 +583,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"בינה מלאכותית (תכנות גנטי) מחפשת לוחות שנה שבהם הטיול קצר ואחיד. רוצים "
+"צוותים משלכם? השתמשו <a href=\"%(guia)s\">במדריך בן 5 שלבים</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -641,10 +619,6 @@ msgstr "זה לוקח כמה שניות."
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "לוח זמנים: %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "%(id)s תצורה"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -721,14 +695,6 @@ msgstr "הרץ את זה על המחשב שלך"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "בקש עזרה מהעוזר ה-AI שלך"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr ""
-"העתק את השאלה הזו והדביק אותה לאשף שאתה משתמש בו, יחד עם קובץ "
-"programa_genetico/programagenetico.py."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -949,29 +915,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "תכנות גנטי ללוחות שנה של בייסבול"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr ""
-"Koza-TTP: התזה של לסלי דיקינסון (ITAM) על תכנות גנטי ללוחות שנה של בייסבול, "
-"עם תוצאה כנה ומנוע משופר."
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "תזת ITAM · תכנות גנטי · בייסבול"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "התזה שלי אמרה את האמת:"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr ""
-"Koza-TTP מאמצת את התזה הזו כדי ליצור לוחות שנה לעונת הבייסבול עם תכנות גנטי."
-" כאן תראו מה השתבש, למה, ואיך אני מתקן זאת בפומבי."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -988,12 +933,6 @@ msgstr "2 דקות"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "הבנת הרעיון"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr "מהי תכנות גנטי ולמה לוח שנה של בייסבול הוא בעיה קשה."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1071,37 +1010,39 @@ msgstr "אוטומטית, כולל מאיה ואוטומי. אתה יכול לת
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "לעומת חיפוש אקראי"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "האם זה עדיף על בחירה אקראית?"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "בבדיקות"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, ב- %(corridas)s ריצות עם %(equipos)s קבוצות"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "כן, במבחנים ראשוניים"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
 msgstr ""
+"הדמו עדיין משתמש בגרסת התזה. המנוע המשופר הושווה לחיפוש אקראי שבודק את אותו "
+"מספר לוחות שנה."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "8 בנובמבר 2026"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "מנוע בלוק"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1110,12 +1051,16 @@ msgid ""
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
 msgstr ""
+"כל חלק בלוח הזמנים (מחלקה, ליגה ואינטרליג) מורכב מבלוקים שבהם כולם משחקים "
+"נגד כולם. לכן, תמיד נשמרים חוקי ה-MLB. התכנות הגנטי בוחר ומסדר את הבלוקים "
+"כדי להפחית את הנסיעות."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"תוצאה מוקדמת: %(resultado)s, ב- %(corridas)s ריצות עם %(equipos)s קבוצות."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1124,182 +1069,1808 @@ msgid ""
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
 msgstr ""
+"סקירת קוד כדי לאשר מדוע PG לא היה טוב יותר מבחירת לוחות שנה באקראי. חפיפה "
+"ומוטציות שוברים את היכולת של לוחות שנה, ומשקל הכושר גורם לילדים להפסיד "
+"להורים מהדור הראשון."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "מצב ניקוי"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "מנוע: %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
 msgstr ""
+"<strong>הערה:</strong> ההדגמה הזו משתמשת במנוע התזה. המנוע הזה לא היה טוב "
+"יותר מבחירת לוחות שנה באקראי."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
 msgstr ""
+"המנוע המשופר היה טוב יותר, במבחנים ראשוניים: %(resultado)s, %(corridas)s "
+"ריצות. הוא עדיין לא מופיע בהדגמה הזו."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
-msgstr ""
+msgstr "לפרויקט בית ספר, זה יתרון: יש לך בסיס ושיפור שאתה יכול למדוד."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "צפה בתוצאות כל שחרור"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr ""
+msgstr "במבחנים: %(resultado)s, בריצות %(corridas)s עם קבוצות %(equipos)s ."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "גרסת התזה (2026)"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "מרחק של 19.5% יותר מאשר לבחור לוחות שנה אקראיים"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "מנוע בלוק (גרסה משודרגת)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "13% פחות נסיעות מאשר לבחור לוחות שנה אקראיים"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "קיצור (למשל, SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "שם הקבוצה"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "עיר"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "Stadium Latitude"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "אורך האצטדיון"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "במעלות עשרוניות. דוגמה: 47.59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "במעלות עשרוניות. דוגמה: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "קבוצות ליגה"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "שם הליגה"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "בחר לפחות שתי קבוצות."
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "שם הטורניר"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "יום ראשון"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "היום האחרון"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "משחקים לפי סדרה"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "סדרת קבוצות"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "היום האחרון חייב להיות זהה או אחרי הראשון."
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "זה חייב להיות אחד או יותר."
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "שם קונפיגורציה"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "גודל האוכלוסייה"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "מספר הדורות"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "הסתברות למעבר (0 ל-1)"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "סיכוי למוטציה (0 ל-1)"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "זה אמור להיות בין 0 ל-1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "ציוד"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "הליגה"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "טורניר"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "הגדרות"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "לוח שנה"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "השלים את השלב הזה קודם."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "הוספת ציוד."
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "משחקים שנוצרו."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "14 בנובמבר 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
+msgstr "אלגוריתם מבוסס תורות: גובר על לוח הזמנים הרשמי של MLB 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
 msgstr ""
+"הסרנו את הכלל שכל 30 הקבוצות משחקות סדרות של 3 ימים בו זמנית. עם סדרות של 2,"
+" 3 ו-4 משחקים והפסקות, האלגוריתם הטוב ביותר נוסע 1.57 מיליון ק\"מ. הלוח "
+"הרשמי נוסע 1.74 מיליון. שניהם עומדים באותם כללי ריאליזם."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr "צפה במחקר עדכני, עם דיאגרמות מונפשות"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "12 בנובמבר 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "הדמו מציג את עונת 2023 האמיתית"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr ""
+"אתם יכולים לראות את לוח המשחקים האמיתי של ליגת הבייסבול הראשית לשנת 2023 "
+"מבלי להמתין למנוע לפעול."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "צפו בעונת 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "9 בנובמבר 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "סיפור שלב אחר שלב"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr "הסבר עם המפה של 30 השלבים, העצים והאבולוציה, שלב אחר שלב."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "קראו את הסיפור"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "ביקורת שנייה של החוויה"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr ""
+"הסקירה של נגישות, שימושיות ואינטראקציה בין אדם לבינה מלאכותית חזרה על עצמה. "
+"מתוך 28 הנקודות בראשונה, 13 נפתרו. רוב הנקודות החדשות כבר תוקנו."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr "הוא קיבל את המנוע בטור ואז עם בלוקי המנוע."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "5 בנובמבר 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "פתח את מדריך 5 השלבים"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr ""
+"תכנות גנטי ליצירת לוחות שנה של בייסבול. התזה של לסלי דיקינסון (ITAM), עם "
+"תוצאות כנות."
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr "Koza-TTP: מפה של אצטדיוני בייסבול עם מסלול קבוצה ועץ תכנות גנטי."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "עבור לאתר הראשי"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "תפריט"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "איך זה עובד"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "לסלי דיקינסון"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "האתר הראשי"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "מגע"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "התזה שלי אמרה את האמת"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"פיילוט התזה לא היה טוב יותר מבחירת לוחות שנה באקראי: %(resultado)s. לדווח "
+"כך, בלי להסתיר זאת, היה ההחלטה הנכונה. התוצאה הזו הראתה מה צריך לתקן כדי "
+"לשפר את המנוע."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "מחקר עכשווי"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr ""
+"כל מה שניסינו כדי לנצח את לוח הזמנים הרשמי של MLB 2023, עם דיאגרמות מונפשות."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "מחקר עדכני: עקיפה של לוח השנה הרשמי"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr ""
+"מטרה: לוח זמנים לעונת 2023 של ליגת הבייסבול הבכירה שנוסע פחות מהעונה הרשמית "
+"ועומד באותם כללים. הלוח הרשמי נוסע 1.74 מיליון ק\"מ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr ""
+"עודכן ב-14 בנובמבר 2026 (אחר הצהריים). האלגוריתמים האלה נמצאים בבדיקה: האתר "
+"והדמו עדיין לא משתמשים בהם."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "1. תוצאות כל המבחנים"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"כל בר הוא סך המסע של 30 הקבוצות בעונה, במיליוני קילומטרים. פחות זה טוב יותר."
+" כל המספרים נמדדו באותו אופן: כל קבוצה עוזבת את ביתה, עוברת מאצטדיון "
+"לאצטדיון וחזרה בסוף."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "טיול כולל לפי גרסת אלגוריתם"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "אלגוריתמים של Koza-TTP"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "לוח שנה רשמי 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr ""
+"שני אלגוריתמי האנילה מבוססי תורות מנצחים את השוטר בכ-9%%. הטבלה למטה כוללת "
+"את אותם נתונים."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "כל הבדיקות, מהישן ביותר ועד העדכני ביותר"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "טיול טוטאלי"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "האם הוא משחק לפי הכללים?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "מה שלמדנו"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "אלגוריתם בלוקים, חוקים ללא ריאליזם"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "1.85 מיליון ק\"מ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "לא: סיורים של עד 36 משחקים ברצף"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr "הוא נראה קרוב לשוטר, אבל הוא רימה."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "אלגוריתם בלוקים, עם כללים"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "2.19 מיליון ק\"מ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "לא מצליח לעמוד בהם"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr "בלוקים קבועים לא מאפשרים לארגן את הסיורים היטב."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "בלוקים מעורבים, עם שליטים"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "2.00 מיליון ק\"מ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "כן"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr "טוב יותר, אבל כל 30 הקבוצות עדיין משחקות בו זמנית."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr "הזזות עם קבוצות של 2, 3 ו-4 קבוצות + חישול מדומה"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "1.52 עד 1.60 מיליון ק\"מ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "3 מתוך 4 ריצות (אחת נמשכה יום נוסף)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr "הסרת כלל \"הכל בבת אחת\" היא מה שמנצח את הקצין."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr "משמרות + שבוע כ-MLB + PG שמקבל רק שדרוגים"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "1.70 מיליון ק\"מ (ממוצע)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "כן, 4 מתוך 4"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr "הוא מנצח את השוטר בקושי, אך כמעט משווה בתנועות אקראיות."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "תנועות אקראיות, אותו מאמץ כמו PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "בסיס הוגן למדידת PG."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "משמרות + שבוע + חישוש בעבודת יד"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "1.567 מיליון ק\"מ (ממוצע של 8 לוחות שנה)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "לקבל שינויים גרועים יותר בהתחלה עוזר מאוד."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "משמרות + שבוע + טמפרטורת למידה PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "1.571 מיליון ק\"מ (ממוצע של 8 לוחות שנה)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr "ה-PG מעצב סרגל משלו וכמעט משתווה לסרגל הידני (0.3%% יותר)."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "אותו PG, עם יותר גיוון ויותר תרגול"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "1.583 מיליון ק\"מ (ממוצע של 8 לוחות שנה)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "כן, 8 מתוך 8"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr "תרגול בריצות קצרות לא מלמד את הכלל הטוב ביותר לריצות ארוכות."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "לוח משחקים רשמי של MLB 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "1.74 מיליון ק\"מ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr ""
+"המטרה. היא גם עומדת בכללים שאנחנו לא מדגימים, כמו תאריכי אצטדיון וטלוויזיה."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"כללי ריאליזם: מקסימום 12 משחקים רצופים בבית או חוץ, ללא יריבה חוזרת בסדרות "
+"רצופות, מקסימום 20 ימים רצופים עם משחק ועונה של 186 ימים. מהלוח הרשמי אנחנו "
+"שומרים רק את המספרים המחושבים, לפי תנאי השימוש של MLB."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "2. השינוי הגדול: תורות עם קבוצות של 2, 3 ו-4 משחקים"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"בעבר, כל 30 הקבוצות שיחקו סדרות של 3 ימים במקביל, ללא הפסקות. כעת העונה "
+"מחולקת למשמרות בימי חול (4 ימים) ובסופי שבוע (3 ימים), בדיוק כמו ב-MLB. כל "
+"קבוצה משחקת סדרה של 2, 3 או 4 משחקים, או מנוחה."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "מודל קודם לעומת מודל מבוסס תורות"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "הפסקה"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "סדרות (המספר מציין כמה משחקים)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "הפסקה"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"שישה צוותים בשמונה משמרות. בדגם הקודם כולם משחקים 3 ימים בכל משמרת. במודל "
+"המשמרת הסדרה נמשכת 2, 3 או 4 ימים ויש הפסקות, כך שניתן להרכיב את הסיבובים "
+"בחופשיות רבה יותר."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "3. הפרק המרכזי: שרשרת קמפה"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr ""
+"כדי לשנות את לוח הזמנים ללא קבוצה שמשחקת שתי סדרות בו זמנית, מתבצעות שתי "
+"תורות ושרשרת סדרות מתחלפות ביניהן. כל הסדרות בשרשרת משתנות באותו זמן. לוח "
+"הזמנים עדיין תקף."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "שרשרת קמפה בין פנייה A לפנייה B"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "סדרה במשמרת A (קו מוצק)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "סדרה בפנייה B (קו מקווקו)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr ""
+"שמונה קבוצות. הרשת מתחילה ב-NYA ועוברת דרך BOS, TOR ו-BAL. ארבע הסדרות שלה "
+"משתנות. העונות האחרות אינן זזות."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "4. למה אנילינג ניצח את PG?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr ""
+"ה-PG הראשון השתמש באותם תנועות כמו אנילינג, אך הוא היה 1.70 מיליון ק\"מ "
+"ואנילינג ב-1.58. יש שלוש סיבות."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>הוא קיבל רק שיפורים.</strong> כך הוא נתקע בעמק הראשון שהוא מוצא. "
+"האנילינג מסכים להחמיר קצת בהתחלה, וזה מאפשר לו לחצות את ה\"גבעה\" ולהגיע "
+"לעמק עמוק יותר."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr ""
+"<strong>הוא השקיע מאמץ.</strong> בכל דור הוא מנסה 16 מתכונים ושומר רק את לוח"
+" השנה של הטובים ביותר. האנילינג שומר על כל צעד שהוא עושה."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr ""
+"<strong>הוא חזר על אותם מקומות.</strong> המספרים הקבועים בעץ תמיד מצביעים על"
+" אותם תורות וקבוצות. מהלכים אקראיים עוברים לאורך כל לוח השנה."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "רק שיפורים מול קבלת שינויים גרועים יותר"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "מקבל רק שדרוגים (מעגל)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "אנילינג: מקבל שינויים גרועים יותר (רומבוס)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr ""
+"הקו הוא עלות הלוח שנה: נמוך יותר זה עדיף. המעגל יורד לעמק הראשון ונשאר שם. "
+"המעוין עולה במעלה הגבעה, כי הוא מסכים להחמיר, ומגיע לעמק העמוק ביותר."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr "5. ה-PG שלומד מתי לקבל שינויים גרועים יותר"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr ""
+"כדי לתקן את הסיבה הראשונה, ה-PG מעצב כעת את כלל האנילינג. עץ מחליט כמה "
+"קילומטרים של החמרה יתקבלו בכל שלב. תסתכלו על שני נתונים: כמה רחוק במסלול "
+"וכמה שינויים התקבלו לאחרונה."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr ""
+"ה-PG התאמנה בריצות קצרות בשני לוחות שנה. אחר כך ניסינו את עץ הניצחון ב-4 "
+"לוחות שנה שהיא מעולם לא ראתה. זהו עץ הניצחון:"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr ""
+"בקיצור: הסבילות קטנה, כ-60 עד 1,200 ק\"מ, והיא עולה כאשר כמעט ולא מתקבלים על"
+" שינויים. הסרגל הידני עושה את ההפך: הוא מתחיל ב-20,000 ק\"מ ויורד בהדרגה "
+"ל-50."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "סבילות בקילומטרים לאורך כל הריצה (סולם לוגריתמי)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "סרגל בעבודת יד"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "PG, אם מתקבלים מעט שינויים (5%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "PG, אם יתקבלו שינויים רבים (50%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr ""
+"הכלל בעבודת יד יורד מ-20,000 ל-50 ק\"מ. כלל ה-PG נשאר בין 60 ל-1,200 ק\"מ "
+"ותלוי במספר השינויים שמתקבלים. שניהם מגיעים ללוחות שנה של כ-1.57 מיליון "
+"ק\"מ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "6. מה הלאה"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr ""
+"ה-PG כמעט השווה עם חישוף, אך עדיין לא עובר אותו. ב-8 לוחות שנה חדשים, הסרגל "
+"בעבודת יד נוסע 1.567 מיליון ק\"מ ושל ה-PG 1.571."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"ניסינו לתת לזה יותר גיוון (בלי מתכונים חוזרים) ויותר תרגול (3 לוחות שנה, 32 "
+"מתכונים, 16 דורות). זה היה גרוע יותר: 1.583 מיליון ק\"מ. ה-PG מתרגל בריצות "
+"קצרות של 40,000 צעדים, אבל המבחן משתמש ב-400,000. כלל טוב לריצה מועטה הוא לא"
+" הכי טוב לריצה הרבה."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr ""
+"השלב הבא הוא שה-PG תתאמן עם ריצות שדומות יותר למבחן ותתחיל מהסרגל הידני, כדי"
+" שתוכל רק לשפר אותו."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "הצג את הקוד של הבדיקות הללו ב-GitHub"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "אלגוריתם התזה"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "אלגוריתם התזה המקורי (2026)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "צפו בעונת 2023 האמיתית, בלי לחכות"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "לחצו על העץ כדי לראות אותו גדול יותר."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr ""
+"העץ הוא התוכנית שמרכיבה את לוח השנה הטוב ביותר. כל ענף מצטרף למשחקים; העלים "
+"הם המשחקים (תאריך, קבוצה ביתית וקבוצת חוץ)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "סך כל הנסיעות של כל הקבוצות:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "משחקים ששוברים חוקים:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr ""
+"חוק אחד הוא שכל קבוצה משחקת את מספר המשחקים שהטורניר דורש. <strong>0 משחקים "
+"שמפרים את הכללים</strong> אומרים שהלו\"ז תקף."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr "זה יכול לקחת כמה שניות עד כמה דקות. זה תלוי במספר המחשבים."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "המנוע עובד."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr ""
+"הוא יוצר לוחות שנה, משלב אותם, ושומר את הטובים ביותר. אל תסגור את הדף הזה."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "פרמטרים שנשמרו"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "תצורת \"%(nombre)s\""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr ""
+"<strong>חשוב:</strong> מנוע התזה שומר את הערכים האלה, אך אינו משתמש בהם. הוא"
+" תמיד פועל עם אוכלוסייה של 100, 20 דורות, 0.8 חצייה ו-0.2 מוטציה."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "פקודות להרצה"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"העתק את השאלה הזו והדביק אותה לאשף שאתה משתמש בו. צרף את קובץ "
+"programa_genetico/programagenetico.py (מנוע תזה) או "
+"programa_genetico/motor_bloques.py (מנוע משופר)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "עץ הלוח הטוב ביותר"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "מ- %(a)s %(b)s."
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "שלבי הדגמה"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "הדגמה: הכנה"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "שלב 2: הגדרה"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr "כל הערכים כבר נבחרו. אתה יכול לשנות אותם או לתת \\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "החלפת ציוד"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "הטורניר"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "האלגוריתם"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "הבא: צפה בלוח השנה"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "הדגמה: בחרו את הקבוצות"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr ""
+"הדגמת Koza-TTP: בנה לוח שנה לבייסבול עם האלגוריתם החדש ביותר בשלושה שלבים."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "שלב 1: בחר את הציוד"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr ""
+"האלגוריתם מרכיב לוח זמנים לקבוצות שתבחרו ומחפש את זו עם הכי מעט נסיעות. כבר "
+"סימנו 10 קבוצות בליגת העל. אם תרצה, לחץ על \"הבא\" בלי לשנות דבר."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "הבא: הכנה"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "מעדיפים לצפות בעונה מלאה של רויאל?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "צפו בעונת 2023: 30 קבוצות מול לוח השנה הרשמי"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "רוצים לרשום קבוצות ואצטדיונים משלכם?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "עשה זאת בעצמך במדריך חמשת השלבים"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "הדגמה: הלוח שנה"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "שלב 3: הלוח שנה"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "אלגוריתם חדש יותר: מודל מבוסס תורות"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>: %(n)s קבוצות."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "מה האלגוריתם השיג"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr "סך כל הנסיעות של כל הקבוצות לפי לוח הזמנים של האלגוריתם."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr "נסע עם לוח שנה אקראי, לפני שמבצעים אופטימיזציה."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr "פחות נסיעות מאשר לוח שנה אקראי."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "לעקוב אחרי כל הכללים"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "הלוח שנה נשבר פתאום %(a)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "אילו חוקים אתה בודק?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr "מקסימום 12 משחקי בית או חוץ ברצף. כאן: %(n)s בבית ו- %(m)s חוץ."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "מקסימום 20 ימים ברצף עם משחק. כאן: %(n)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr "לא לשחק מול אותו יריב בשתי סדרות ברצף."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr "משחקי בית בערך חצי. כאן: %(a)s %(b)s לכל קבוצה."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "איך הטיול התנהל"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr "הנסיעה הכוללת ירדה מ- %(a)s ק\"מ ל- %(b)s ק\"מ בשלבים %(p)s החיפוש."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "%(n)s הראשון של %(t)s המשחקים"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "בבית"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "ביקור"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "ראו את כל המשחקים"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "כל המשחקים"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "מה הלאה?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "שנה הגדרות ורץ שוב"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "בחירת ציוד נוסף"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr "צפו בעונת 2023 המלאה: 30 קבוצות מול לוח השנה הרשמי"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "תבין איך זה עובד בשתי דקות"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr "עשה זאת בעצמך: רשום את הציוד שלך במדריך בן 5 שלבים"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "ראו את האלגוריתם המקורי של התזה"
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "תבין את הרעיון בשתי דקות"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr ""
+"סיפור האנימציה של Koza-TTP: מפת מסעות הבייסבול, עצי התכנות הגנטי ומסלול "
+"הפיילוט מהתזה ועד למנוע משופר."
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "2 דקות · 7 צעדים"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "שלבי ההיסטוריה"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "אצטדיונים"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "נסיעות"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "עץ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "קרוסאובר"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "מוטציה"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "דורות"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "תוצאה"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "חלק 1 · הבעיה"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "30 קבוצות צריכות לשחק אחת נגד השנייה"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr "בליגת הבייסבול הבכירה יש 30 קבוצות. כל קבוצה משחקת 162 משחקים בעונה."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr "לוח שנה מציין מי משחק נגד מי, באיזה תאריך ובאיזה אצטדיון."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "הקש על אצטדיון במפה כדי לראות את שמו."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "כל טיול עולה זמן וכסף"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr ""
+"כשקבוצה משחקת בחוץ, היא נוסעת במטוס. לוח זמנים גרוע גורם להם לעבור את המדינה"
+" פעמים רבות."
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr "דוגמה לטיול סיבוב, עם התאריכים בסדר אקראי."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr "לחצו על אצטדיון אחר כדי לצפות בסיור של אותה קבוצה."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "חלק 2 · רעיון התזה"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "לוח שנה יכול להיכתב כעץ"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr ""
+"תכנות גנטי לא כותב את לוח השנה ביד. הוא <strong>כותב הוראות</strong> לשיפור "
+"שלו."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"הוראות אלו יוצרות עץ. <strong>העלים</strong> הם סדרות משחקים, כמו "
+"\"SEA–NYA\". <strong>ענפים</strong> הם פעולות, כמו \"החלפה\" סדרות של שתי "
+"תאריכים או \"הפיכת המקום\" (שינוי מי משחק בבית)."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "חצייה: שני עצים מתערבבים"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr "שני עצים שעובדים היטב נלקחים. כל אחד מהם נותן ענף."
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "העץ החדש, ה\\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "מוטציה: שינוי קטן ואקראי"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr "לפעמים חלק אחד מהעץ משתנה מעצמו. כאן, הסדרה \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr "מוטציה משמשת לבחון רעיונות חדשים שאף הורה לא החזיק."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "חלק 3 · התוצאה"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "דור אחרי דור"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr ""
+"לכל דור יש הרבה עצים. אלה שמייצרים לוחות שנה עם פחות נסיעות מביאים יותר "
+"ילדים."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr ""
+"הקו המקווקוק הוא המטרה המינימלית: לוח השנה הטוב ביותר <strong>שנבחר "
+"באקראי</strong> ובאותו מאמץ."
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "בחר מנוע כדי לראות איך הוא התמודד."
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "מהטייס למנוע שעובד"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"המנוע המשופר, לפי בלוקים, אכן מנצח אותו באקראי: %(resultado)s, במבחנים "
+"ראשוניים (%(corridas)s ריצות, %(equipos)s צוותים)."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr ""
+"הפיילוט של התזה (2026) <strong>לא היה טוב</strong> יותר מבחירת לוחות שנה "
+"באקראי: %(resultado)s."
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "בדוק את הכלי ב-5 שלבים"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "צפה בכל 30 האצטדיונים כשולחן"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "נתונים מקובץ הפרויקט teams.csv."
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "קוד"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "הקבוצה"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "אצטדיון"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "מיקום"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "קודם"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "הבא"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr ""
+"Koza-TTP: תכנות גנטי ללוחות שנה של בייסבול. הוא התחיל כתזה של לסלי דיקינסון "
+"(ITAM) והיום יש לו מנוע שמתגבר על מזל."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "לוח זמנים טוב יותר ב-MLB עם תכנות גנטי."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"Koza-TTP נולדה כעבודת התזה שלי ב-ITAM. הפיילוט הראשון לא עבר באקראי. גרסת "
+"הבלוק עושה: %(resultado)s, במבחנים ראשוניים. כאן אני מראה לכם איך זה עובד."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr "סיפור מונפש: מפת המסעות, עצי התכנות הגנטי והתוצאה."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "עונת 2023: המנוע מול הלוח השנה האמיתי"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr ""
+"חזרה על מנוע התכנות הגנטי עם כל 30 קבוצות ליגת הבייסבול הראשית ב-2023, "
+"בהשוואה ללוח הזמנים הרשמי ולמזל."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "עונת 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "הדגמה עם נתונים אמיתיים · ליגת הבייסבול הבכירה 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr ""
+"אנחנו משתמשים ב-30 קבוצות ליגת הבייסבול הראשית ובאצטדיונים האמיתיים שלהן. "
+"לוח הזמנים הרשמי של 2023 הוא ההתייחסות. מנוע הבלוקים מנסה להרכיב עונה עם "
+"פחות נסיעות."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "איך הקילומטרים יורדים, דור אחרי דור"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr ""
+"זו ריצה אמיתית של המנוע, שמורים בשבילכם לצפות בלי לחכות. יש לו "
+"%(generaciones)s דורות של 100 לוחות שנה כל אחד."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "משחק"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "דור"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "לוח החלקה הצידי"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "נסיעות של 30 הקבוצות לאורך העונה הסדירה."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "הסיור הארוך ביותר (משחקי חוץ ברצף)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "עוד משחקי בית ברצף"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "פקיד ליגת הבייסבול הבכירה"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "מיליון ק\"מ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "טוב יותר באקראי, עם אותו מאמץ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "הוא אינו עומד במספר המשחקים של כל קבוצה."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr ""
+"המנוע <strong> נוסע%(pct)s%% פחות מהלוח</strong> הזמנים האקראי הטוב ביותר. "
+"המנוע לומד."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr ""
+"הלוח הרשמי <strong> נוסע%(pct)s%% פחות מהמנוע</strong>. עדיין לא ניצחנו "
+"אותו."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"הערה: לוח השנה של המנוע כולל סיורים של עד <strong>%(gira)s משחקי חוץ "
+"ברצף</strong>. הלוח הרשמי כולל %(oficial)sמקסימלי. קבוצה אמיתית לא תקבל "
+"סיורים כה ארוכים."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "המסע של כל קבוצה"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr "החליפו בין שני לוחות הזמנים כדי לראות אילו קבוצות נוסעות הכי הרבה."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "לוח השנה של המפה"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "רשמי"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "מנוע"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "הצג את כל 30 הקבוצות כטבלה"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "רשמי (ק\"מ)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "מנוע (ק\"מ)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "מאיפה הנתונים מגיעים"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr ""
+"לוח זמנים רשמי: עונת הבייסבול הרגילה של ליגת הבייסבול הראשית 2023 (API "
+"סטטיסטיקות MLB). אנחנו שומרים כאן רק את המספרים המחושבים, לא את לוח הזמנים."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr ""
+"מרחקים: קו ישר בין האצטדיונים (נוסחת חצי-יקום). כל קבוצה עוזבת את ביתה, "
+"נוסעת מאצטדיון לאצטדיון וחוזרת בסוף."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr ""
+"מנוע בלוקים: 100 לוחות שנה בכל דור, %(evaluaciones)s לוחות שנה שהוערכו בסך "
+"הכל. Chance הוערך באותו סכום."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "צרו את הטורניר שלכם"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "איך המנוע עובד"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "בלוקים, עם חוקים"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "תורות + מהלכים אקראיים"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "תורות + PG (רק שדרוגים)"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "הזזות + טמפרטורת למידה ב-PG"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "הזזות + חימוש יד"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "ישן: כולם משחקים 3 ימים בכל תור"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "עכשיו: סדרות של 2, 3 ו-4 משחקים, עם הפסקות"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "פנייה"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "בימי חול"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "סוף שבוע"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "פנייה A"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "פנייה ב'"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "1. אנחנו בוחרים צוות ושתי משמרות"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "2. אנחנו עוקבים אחרי השרשרת: A, B, A, B..."
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "3. החלפות מתגים בסדרת שרשרת"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "עלות לוח שנה"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "הטוב ביותר"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "העמק הראשון"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "עמק עמוק יותר"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "התקדמות קרב השוורים"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "בית"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "סוף"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "ביד"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "PG, 5%"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "PG, 50%"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "טורניר המבחן שלי"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr "אופציונלי. אם תשאיר את זה כך, השם הזה משמש בשימוש."
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "קבוצות טורניר"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr "כבר קיבלנו 10. אפשר לשנות אותם: מ-3 ל-10 קבוצות."
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "מפת 30 האצטדיונים של הליגות הבכירות"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr "סיור {צוות} לדוגמה: 12 ביקורים בסדר אקראי."
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr "בחרת ב{צוות}. עקבו אחרי שלב 2 כדי לראות את המסעות שלהם."
+
+#: tesis/historia.py
+msgid "km"
+msgstr "ק\"מ"
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "קומביין"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "החלפה"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "Invest Locality"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "בית"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "ביקור"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "הורה א'"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "הורה ב'"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "בן"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr ""
+"עץ דוגמה: שילב, עם שני ענפים: החלפת SEA-NYA עם BOS-TEX, והשקיעה במיקום LAN-"
+"CHN בבית."
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr ""
+"קרוסאובר: אב א' נותן את הענף השמאלי שלו ואב ב' נותן את הענף השמאלי; הבן משלב"
+" את השניים."
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "מוטציה: על העץ, עלה SEA–NYA משתנה ל-SEA–OAK."
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "צפו שוב"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "נסיעה (אקראי = 100)"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "צ'אנס"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "אוכלוסייה (48 עצים)"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "יותר צבע = פחות תנועה"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "מנוע התזה"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{מנוע} · {g} יצירה של {סך הכל}"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{מנוע} · הסתיים: {תוצאה}."
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr ""
+"{engine}: מתחיל ב-{start} ומסתיים ב-{end} (סיכוי = 100). תוצאה: {result}."
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr "מרחק מול מזל: מנוע תזה {תזה}, בחר באקראי 100, מנוע בלוק {בלוקים}."
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "מנוע התזה (2026)"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "בחירת לוחות שנה באקראי"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "מנוע בלוק (מקדימה)"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr "אתה גם יכול להשתמש במקשי החצים במקלדת."
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr "קילומטרים בעונה לפי ייצור מנועים, בהשוואה ללוח השנה הרשמי והסיכוי"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "לוח שנה רשמי"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "טוב יותר באקראי"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}: {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr "הוא עדיין לא עומד במספר המשחקים של כל קבוצה."
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr "ציר אנכי: מ-{min} עד {max} מיליון ק\"מ. ציר אופקי: דורות 0 עד {אחרון}."
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr "מפה: כל מעגל הוא קבוצה; גדול יותר אומר יותר קילומטרים בעונה"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{צוות}: {ק\"מ} ק\"מ"

@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "Αποτελέσματα βελτιστοποίησης"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "Κάντε κλικ στο δέντρο για ανάπτυξη"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "Συνολικό κόστος ταξιδιού:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "Παραβιάσεις κανόνων:"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Βελτιστοποίηση εκτέλεσης"
 
@@ -133,10 +121,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "Από το πιο πρόσφατο έως το παλαιότερο."
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "Προγραμματισμένο"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "Συμφραζόμενοι χειριστές για τον κινητήρα"
 
@@ -165,10 +149,6 @@ msgstr ""
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "Νοέμβριος 3, 2026"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "Σε εξέλιξη"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -620,10 +600,6 @@ msgstr ""
 "πόσο ταξιδεύει κάθε ομάδα."
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "Επίδειξη · Δίκαια ταξίδια μεταξύ ομάδων"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "Δημιουργήστε ένα ημερολόγιο και"
 
@@ -637,6 +613,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"Η τεχνητή νοημοσύνη (γενετικός προγραμματισμός) αναζητά ημερολόγια όπου το "
+"ταξίδι είναι σύντομο και ομοιόμορφο. Θέλετε τις δικές σας ομάδες; "
+"Χρησιμοποιήστε τον <a href=\"%(guia)s\">οδηγό 5 βημάτων</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -674,10 +653,6 @@ msgstr "Χρειάζονται λίγα δευτερόλεπτα."
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "Πρόγραμμα: %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "Διαμόρφωση %(id)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -756,14 +731,6 @@ msgstr "Εκτελέστε το στον υπολογιστή σας"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "Ζητήστε βοήθεια από τον βοηθό AI"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr ""
-"Αντιγράψτε αυτήν την ερώτηση και επικολλήστε την στον οδηγό που "
-"χρησιμοποιείτε, μαζί με το αρχείο programa_genetico/programagenetico.py."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -994,31 +961,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "Γενετικός Προγραμματισμός για Ημερολόγια Μπέιζμπολ"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr ""
-"Koza-TTP: Η διατριβή της Leslie Dickinson (ITAM) σχετικά με τον γενετικό "
-"προγραμματισμό για ημερολόγια μπέιζμπολ, με το ειλικρινές αποτέλεσμα και τη "
-"βελτιωμένη μηχανή της."
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "Διατριβή ITAM · Γενετικός προγραμματισμός · Μπέιζμπολ"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "Η διατριβή μου έλεγε την αλήθεια:"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr ""
-"Το Koza-TTP αναλαμβάνει αυτή τη διατριβή για να φτιάξει ημερολόγια σεζόν "
-"μπέιζμπολ με γενετικό προγραμματισμό. Εδώ θα δείτε τι πήγε στραβά, γιατί και"
-" πώς το διορθώνω δημόσια."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -1035,14 +979,6 @@ msgstr "2 λεπτά"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "Κατανόηση της Ιδέας"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr ""
-"Τι είναι ο γενετικός προγραμματισμός και γιατί ένα ημερολόγιο μπέιζμπολ "
-"είναι ένα δύσκολο πρόβλημα."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1124,37 +1060,40 @@ msgstr ""
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "Έναντι τυχαίας αναζήτησης"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "Είναι καλύτερο από το να επιλέγεις τυχαία;"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "Σε δοκιμές"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, σε %(corridas)s τρεξίματα με %(equipos)s ομάδες"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "Ναι, σε προκαταρκτικές δοκιμές"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
 msgstr ""
+"Η επίδειξη εξακολουθεί να χρησιμοποιεί την έκδοση διατριβής. Η βελτιωμένη "
+"μηχανή συγκρίθηκε με μια τυχαία αναζήτηση που εξετάζει τον ίδιο αριθμό "
+"ημερολογίων."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "8 Νοεμβρίου, 2026"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "Μπλοκ μοτέρ"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1163,12 +1102,18 @@ msgid ""
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
 msgstr ""
+"Κάθε μέρος του προγράμματος (κατηγορία, πρωτάθλημα και interleague) "
+"αποτελείται από μπλοκ στα οποία όλοι παίζουν εναντίον όλων. Έτσι, τηρούνται "
+"πάντα οι κανόνες MLB. Ο γενετικός προγραμματισμός επιλέγει και διατάζει τα "
+"μπλοκ να μειώσουν τα ταξίδια."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"Προκαταρκτικό αποτέλεσμα: %(resultado)s, σε %(corridas)s τρεξίματα με "
+"%(equipos)s ομάδες."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1177,182 +1122,1900 @@ msgid ""
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
 msgstr ""
+"Ανασκόπηση κώδικα για να επιβεβαιωθεί γιατί το PG δεν ήταν καλύτερο από την "
+"τυχαία επιλογή ημερολογίων. Η διασταύρωση και η μετάλλαξη σπάνε τη "
+"βιωσιμότητα των ημερολογίων και τα βάρη της φυσικής κατάστασης κάνουν τα "
+"παιδιά να χάνουν από τους γονείς της αρχικής γενιάς."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "Λειτουργία εκκαθάρισης"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "Κινητήρας: %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
 msgstr ""
+"<strong>Σημείωση:</strong> αυτή η επίδειξη χρησιμοποιεί τη μηχανή διατριβής."
+" Αυτή η μηχανή δεν ήταν καλύτερη από την τυχαία επιλογή ημερολογίων."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
 msgstr ""
+"Ο βελτιωμένος κινητήρας ήταν καλύτερος, σε προκαταρκτικές δοκιμές: "
+"%(resultado)s, σε %(corridas)s διαδρομές. Δεν είναι ακόμα σε αυτό το demo."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
 msgstr ""
+"Για ένα σχολικό έργο, αυτό είναι ένα πλεονέκτημα: έχετε μια βασική γραμμή "
+"και μια βελτίωση που μπορείτε να μετρήσετε."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "Δείτε τα αποτελέσματα κάθε έκδοσης"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
+"Σε δοκιμές: %(resultado)s, σε %(corridas)s τρεξίματα με %(equipos)s ομάδες."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "Έκδοση διατριβής (2026)"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "19,5% μεγαλύτερη απόσταση από την επιλογή τυχαίων ημερολογίων"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "Block engine (αναβαθμισμένη έκδοση)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "13% λιγότερα ταξίδια από την επιλογή τυχαίων ημερολογίων"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "Συντομογραφία (π.χ. SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "Όνομα ομάδας"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "Πόλη"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "Γεωγραφικό πλάτος σταδίου"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "Μήκος γηπέδου"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "Σε δεκαδικές μοίρες. Παράδειγμα: 47.59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "Σε δεκαδικές μοίρες. Παράδειγμα: -122,33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "Ομάδες Πρωταθλήματος"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "Όνομα Πρωταθλήματος"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "Επιλέξτε τουλάχιστον 2 ομάδες."
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "Όνομα τουρνουά"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "Πρώτη μέρα"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "Τελευταία μέρα"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "Παιχνίδια ανά σειρά"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "Ομαδικό Πρωτάθλημα"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "Η τελευταία ημέρα πρέπει να είναι ίδια ή μετά την πρώτη."
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "Πρέπει να είναι 1 ή περισσότερα."
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "Όνομα διαμόρφωσης"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "Μέγεθος πληθυσμού"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "Αριθμός γενεών"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "Πιθανότητα διέλευσης (0 έως 1)"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "Πιθανότητα μετάλλαξης (0 έως 1)"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "Θα πρέπει να είναι μεταξύ 0 και 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "Εξοπλισμός"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "Πρωτάθλημα"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "Τουρνουά"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "Ρυθμίσεις"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "Ημερολόγιο"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "Ολοκληρώστε πρώτα αυτό το βήμα."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "Προστέθηκε εξοπλισμός."
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "Δημιουργήθηκαν παιχνίδια."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "Νοέμβριος 14, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
+msgstr "Αλγόριθμος turn-based: ξεπερνά το επίσημο πρόγραμμα του MLB 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
 msgstr ""
+"Καταργήσαμε τον κανόνα ότι και οι 30 ομάδες παίζουν σειρές 3 ημερών "
+"ταυτόχρονα. Με σειρές 2, 3 και 4 παιχνιδιών και διαλειμμάτων, ο καλύτερος "
+"αλγόριθμος διανύει 1,57 εκατομμύρια χιλιόμετρα. Το επίσημο ημερολόγιο "
+"ταξιδεύει 1,74 εκατομμύρια. Και οι δύο πληρούν τους ίδιους κανόνες "
+"ρεαλισμού."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr "Δείτε την τρέχουσα έρευνα, με κινούμενα διαγράμματα"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "Νοέμβριος 12, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "Το demo δείχνει την πραγματική σεζόν του 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr ""
+"Μπορείτε να δείτε το πραγματικό πρόγραμμα του Major League Baseball 2023 "
+"χωρίς να περιμένετε να λειτουργήσει ο κινητήρας."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "Δείτε τη σεζόν 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "9 Νοεμβρίου, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "Ιστορία βήμα προς βήμα"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr ""
+"Μια εξήγηση με τον χάρτη των 30 σταδίων, τα δέντρα και την εξέλιξη, βήμα "
+"προς βήμα."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "Διαβάστε την ιστορία"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "Δεύτερος έλεγχος της εμπειρίας"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr ""
+"Επαναλήφθηκε η ανασκόπηση της προσβασιμότητας, της χρηστικότητας και της "
+"αλληλεπίδρασης ανθρώπου-τεχνητής νοημοσύνης. Από τα 28 σημεία του πρώτου, "
+"επιλύθηκαν τα 13. Τα περισσότερα από τα νέα σημεία έχουν ήδη διορθωθεί."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr "Πήρε τον κινητήρα σε σειρά και μετά με τα μπλοκ κινητήρα."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "5 Νοεμβρίου, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "Ανοίξτε τον οδηγό 5 βημάτων"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr ""
+"Γενετικός προγραμματισμός για τη δημιουργία ημερολογίων μπέιζμπολ. Η "
+"διατριβή της Leslie Dickinson (ITAM), με ειλικρινή αποτελέσματα."
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr ""
+"Koza-TTP: χάρτης γηπέδων μπέιζμπολ με τη διαδρομή μιας ομάδας και ένα δέντρο"
+" γενετικού προγραμματισμού."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "Μετάβαση στον κύριο ιστότοπο"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "Μενού"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "Πώς λειτουργεί"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "Λέσλι Ντίκινσον"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "Κύριος ιστότοπος"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "Επικοινωνία"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "Η διατριβή μου έλεγε την αλήθεια"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"Ο πιλότος της διατριβής δεν ήταν καλύτερος από την τυχαία επιλογή "
+"ημερολογίων: %(resultado)s. Το να το αναφέρω έτσι, χωρίς να το κρύβω, ήταν η"
+" σωστή απόφαση. Αυτό το αποτέλεσμα έδειξε τι έπρεπε να διορθωθεί για να "
+"βελτιωθεί ο κινητήρας."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "Τρέχουσα Έρευνα"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr ""
+"Όλα όσα προσπαθήσαμε να ξεπεράσουμε το επίσημο πρόγραμμα του MLB 2023, με "
+"κινούμενα διαγράμματα."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "Τρέχουσα έρευνα: ξεπερνώντας το επίσημο ημερολόγιο"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr ""
+"Στόχος: Ένα πρόγραμμα για τη σεζόν του Major League Baseball 2023 που "
+"ταξιδεύει λιγότερο από το επίσημο και συμμορφώνεται με τους ίδιους κανόνες. "
+"Το επίσημο διανύει 1.74 εκατομμύρια χιλιόμετρα."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr ""
+"Ενημερώθηκε στις 14 Νοεμβρίου 2026 (απόγευμα). Αυτοί οι αλγόριθμοι "
+"βρίσκονται σε δοκιμή: ο ιστότοπος και η επίδειξη δεν τους χρησιμοποιούν "
+"ακόμα."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "1. Αποτελέσματα όλων των δοκιμών"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"Κάθε μπάρα είναι το συνολικό ταξίδι των 30 ομάδων σε μια σεζόν, σε "
+"εκατομμύρια χιλιόμετρα. Λιγότερο είναι καλύτερο. Όλα τα νούμερα μετρήθηκαν "
+"το ίδιο: κάθε ομάδα φεύγει από το σπίτι της, πηγαίνει από γήπεδο σε γήπεδο "
+"και επιστρέφει στο τέλος."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "Συνολική διαδρομή ανά έκδοση αλγορίθμου"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "Αλγόριθμοι Koza-TTP"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "Επίσημο Ημερολόγιο 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr ""
+"Οι δύο αλγόριθμοι ανόπτησης με βάση τη σειρά κέρδισαν τον αξιωματικό κατά "
+"περίπου 9%%. Ο παρακάτω πίνακας έχει τα ίδια δεδομένα."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "Όλα τα τεστ, από το παλαιότερο έως το πιο πρόσφατο"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "Συνολικό ταξίδι"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "Παίζει με τους κανόνες;"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "Τι μάθαμε"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "Αλγόριθμος μπλοκ, χωρίς κανόνες ρεαλισμού"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "1,85 εκατομμύρια χιλιόμετρα"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "Όχι: περιοδείες έως και 36 συνεχόμενων αγώνων"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr "Φαινόταν κοντά στον αστυνομικό, αλλά απατούσε."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "Αποκλεισμός αλγορίθμου, με κανόνες"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "2,19 εκατομμύρια χλμ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "Αποτυγχάνει να τους εκπληρώσει"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr ""
+"Τα σταθερά μπλοκ δεν σας επιτρέπουν να οργανώσετε καλά τις περιηγήσεις."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "Μικτά μπλοκ, με χάρακες"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "2,00 εκατομμύρια χλμ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "Ναι"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr "Καλύτερα, αλλά και οι 30 ομάδες εξακολουθούν να παίζουν ταυτόχρονα."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr "Μετατοπίσεις με σετ 2, 3 και 4 σετ + προσομοίωση ανόπτησης"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "1,52 έως 1,60 εκατομμύρια χλμ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "3 στα 4 τρεξίματα (το ένα κράτησε μια επιπλέον μέρα)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr ""
+"Η κατάργηση του κανόνα «όλα ταυτόχρονα» είναι αυτό που κερδίζει τον "
+"αξιωματικό."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr "Βάρδιες + εβδομάδα ως MLB + PG που δέχεται μόνο αναβαθμίσεις"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "1,70 εκατομμύρια km (μέσος όρος)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "Ναι, 4 στα 4"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr ""
+"Κερδίζει οριακά τον αστυνομικό, αλλά σχεδόν ισοφαρίζει με τυχαίες κινήσεις."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "Τυχαίες κινήσεις, ίδια προσπάθεια με το PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "Δίκαιη γραμμή βάσης για τη μέτρηση PG."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "Βάρδιες + εβδομάδα + χειροποίητη ανόπτηση"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "1,567 εκατομμύρια km (μέσος όρος 8 ημερολογίων)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "Η αποδοχή χειρότερων αλλαγών στην αρχή βοηθάει πολύ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "Βάρδιες + εβδομάδα + θερμοκρασία εκμάθησης PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "1,571 εκατομμύρια km (μέσος όρος 8 ημερολογίων)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr ""
+"Το PG σχεδιάζει τον δικό του χάρακα και σχεδόν δένει με τον χειροποίητο "
+"(0,3%% περισσότερο)."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "Το ίδιο PG, με μεγαλύτερη ποικιλία και περισσότερη εξάσκηση"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "1,583 εκατομμύρια km (μέσος όρος 8 ημερολογίων)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "Ναι, 8 στα 8"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr ""
+"Η εξάσκηση με μικρές διαδρομές δεν διδάσκει τον καλύτερο κανόνα για μεγάλες "
+"διαδρομές."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "Επίσημο πρόγραμμα MLB 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "1,74 εκατομμύρια χλμ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr ""
+"Ο στόχος. Συμμορφώνεται επίσης με κανόνες που δεν διαμορφώνουμε, όπως "
+"ημερομηνίες γηπέδων και τηλεόραση."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"Κανόνες ρεαλισμού: το πολύ 12 συνεχόμενα παιχνίδια εντός ή εκτός έδρας, "
+"κανένας επαναλαμβανόμενος αντίπαλος σε διαδοχικές σειρές, το πολύ 20 "
+"συνεχόμενες ημέρες με παιχνίδι και μια σεζόν 186 ημερών. Από το επίσημο "
+"ημερολόγιο κρατάμε μόνο τα υπολογισμένα νούμερα, σύμφωνα με τους όρους "
+"χρήσης του MLB."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "2. Η μεγάλη αλλαγή: στροφές με σετ των 2, 3 και 4 παιχνιδιών"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"Πριν, και οι 30 ομάδες έπαιζαν σειρές 3 ημερών ταυτόχρονα, χωρίς "
+"διαλείμματα. Τώρα η σεζόν χωρίζεται σε βάρδιες τις καθημερινές (4 ημέρες) "
+"και το Σαββατοκύριακο (3 ημέρες), όπως ακριβώς κάνει το MLB. Κάθε ομάδα "
+"παίζει μια σειρά από 2, 3 ή 4 παιχνίδια ή ξεκουράζεται."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "Προηγούμενο μοντέλο έναντι μοντέλου turn-based"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "Παύση"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "Σειρά (ο αριθμός λέει πόσα παιχνίδια)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "Διάλειμμα"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"Έξι ομάδες σε οκτώ βάρδιες. Στο προηγούμενο μοντέλο όλοι παίζουν 3 ημέρες σε"
+" κάθε βάρδια. Στο μοντέλο βάρδιας η σειρά διαρκεί 2, 3 ή 4 ημέρες και "
+"υπάρχουν διαλείμματα, οπότε οι εκδρομές μπορούν να οργανωθούν με περισσότερη"
+" ελευθερία."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "3. Η κύρια κίνηση: η αλυσίδα Kempe"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr ""
+"Για να αλλάξει το πρόγραμμα χωρίς μια ομάδα να παίζει δύο σειρές ταυτόχρονα,"
+" λαμβάνονται δύο γύροι και μια αλυσίδα σειρών που εναλλάσσονται μεταξύ τους."
+" Όλες οι σειρές στην αλυσίδα αλλάζουν ταυτόχρονα. Το πρόγραμμα εξακολουθεί "
+"να ισχύει."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "Αλυσίδα Kempe μεταξύ της στροφής Α και της στροφής Β"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "Σειρά σε μετατόπιση Α (συμπαγής γραμμή)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "Σειρά στη στροφή Β (διακεκομμένη γραμμή)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr ""
+"Οκτώ ομάδες. Το δίκτυο ξεκινά από τη Νέα Υόρκη και περνά από BOS, TOR και "
+"BAL. Οι τέσσερις σειρές του αλλάζουν βάρδιες. Οι άλλες σειρές δεν κινούνται."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "4. Γιατί η ανόπτηση νίκησε το PG;"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr ""
+"Το πρώτο PG χρησιμοποιούσε τις ίδιες κινήσεις με την ανόπτηση, αλλά ήταν "
+"1,70 εκατομμύρια km και ανόπτηση στο 1,58. Υπάρχουν τρεις λόγοι."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>Δεχόταν μόνο βελτιώσεις.</strong> Έτσι κολλάει στην πρώτη «κοιλάδα» "
+"που βρίσκει. Η ανόπτηση συμφωνεί να χειροτερέψει λίγο στην αρχή, και αυτό "
+"του επιτρέπει να διασχίσει τον «λόφο» και να φτάσει σε μια βαθύτερη κοιλάδα."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr ""
+"<strong>Ξόδεψε προσπάθεια.</strong> Σε κάθε γενιά δοκιμάζει 16 συνταγές και "
+"κρατά μόνο το ημερολόγιο των καλύτερων. Η ανόπτηση διατηρεί κάθε βήμα που "
+"κάνει."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr ""
+"<strong>Επανέλαβε τα ίδια μέρη.</strong> Οι σταθεροί αριθμοί στο δέντρο "
+"δείχνουν πάντα τις ίδιες στροφές και ομάδες. Τυχαίες κινήσεις διατρέχουν "
+"ολόκληρο το ημερολόγιο."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "Μόνο βελτιώσεις έναντι της αποδοχής χειρότερων αλλαγών"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "Δέχεται μόνο αναβαθμίσεις (κύκλος)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "Ανόπτηση: δέχεται χειρότερες αλλαγές (ρόμβος)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr ""
+"Η γραμμή είναι το κόστος του ημερολογίου: χαμηλότερο τόσο καλύτερο. Ο κύκλος"
+" κατεβαίνει στην πρώτη κοιλάδα και μένει εκεί. Ο ρόμβος ανεβαίνει στο λόφο, "
+"γιατί συμφωνεί να γίνει λίγο χειρότερος, και φτάνει στη βαθύτερη κοιλάδα."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr "5. Ο PG που μαθαίνει πότε να δέχεται χειρότερες αλλαγές"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr ""
+"Για να διορθώσει τον λόγο 1, ο PG σχεδιάζει τώρα τον κανόνα ανόπτησης. Ένα "
+"δέντρο αποφασίζει πόσα χιλιόμετρα επιδείνωσης γίνονται δεκτά σε κάθε βήμα. "
+"Κοιτάξτε δύο δεδομένα: πόσο μακριά είναι η διαδρομή και πόσες αλλαγές έγιναν"
+" πρόσφατα αποδεκτές."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr ""
+"Η PG εξασκήθηκε με μικρές διαδρομές σε 2 ημερολόγια. Στη συνέχεια δοκιμάσαμε"
+" το νικητήριο δέντρο σε 4 ημερολόγια που δεν είδε ποτέ. Αυτό είναι το "
+"νικητήριο δέντρο:"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr ""
+"Εν ολίγοις: η ανοχή είναι μικρή, περίπου 60 έως 1.200 km, και ανεβαίνει όταν"
+" οι αλλαγές σχεδόν δεν γίνονται αποδεκτές. Ο χειροποίητος χάρακας κάνει το "
+"αντίθετο: ξεκινά από τα 20.000 km και σταδιακά κατεβαίνει στα 50."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "Ανοχή σε km καθ' όλη τη διάρκεια του τρεξίματος (λογαριθμική κλίμακα)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "Χειροποίητος χάρακας"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "PG, εάν γίνουν δεκτές λίγες αλλαγές (5%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "PG, εάν γίνουν δεκτές πολλές αλλαγές (50%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr ""
+"Ο κανόνας του χειροποίητου μειώνεται από 20.000 σε 50 χιλιόμετρα. Ο κανόνας "
+"PG παραμένει μεταξύ 60 και 1.200 χιλιομέτρων και εξαρτάται από το πόσες "
+"αλλαγές γίνονται δεκτές. Και οι δύο φτάνουν σε ημερολόγια περίπου 1,57 "
+"εκατομμυρίων χιλιομέτρων."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "6. Τι ακολουθεί"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr ""
+"Το PG σχεδόν έδεσε με την ανόπτηση, αλλά και πάλι δεν το νικά. Σε 8 νέα "
+"ημερολόγια, ο χειροποίητος χάρακας διανύει 1,567 εκατομμύρια χιλιόμετρα και "
+"αυτό του PG 1,571."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"Προσπαθήσαμε να του δώσουμε μεγαλύτερη ποικιλία (χωρίς επαναλαμβανόμενες "
+"συνταγές) και περισσότερη εξάσκηση (3 ημερολόγια, 32 συνταγές, 16 γενιές). "
+"Ήταν χειρότερα: 1.583 εκατομμύρια χλμ. Το PG εξασκείται με μικρές διαδρομές "
+"40.000 βημάτων, αλλά το τεστ χρησιμοποιεί 400.000. Ένας καλός κανόνας για να"
+" τρέχεις λίγο δεν είναι ο καλύτερος για να τρέχεις πολύ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr ""
+"Το επόμενο βήμα είναι η PG να εξασκηθεί με τρεξίματα που μοιάζουν "
+"περισσότερο με το τεστ και να ξεκινήσει από τον χειροποίητο χάρακα, ώστε να "
+"μπορεί μόνο να το βελτιώσει."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "Δείτε τον κώδικα για αυτές τις δοκιμές στο GitHub"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "Αλγόριθμος διατριβής"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "Αλγόριθμος Πρωτότυπης Διατριβής (2026)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "Δείτε την πραγματική σεζόν του 2023, χωρίς να περιμένετε"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "Κάντε κλικ στο δέντρο για να το δείτε μεγαλύτερο."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr ""
+"Το δέντρο είναι το πρόγραμμα που συντάσσει το καλύτερο ημερολόγιο. Κάθε "
+"κλάδος συμμετέχει σε παιχνίδια. τα φύλλα είναι τα παιχνίδια (ημερομηνία, "
+"γηπεδούχος και φιλοξενούμενη ομάδα)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "Συνολικά ταξίδια όλων των ομάδων:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "Παιχνίδια που παραβιάζουν τους κανόνες:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr ""
+"Ένας κανόνας είναι ότι κάθε ομάδα παίζει τον αριθμό των παιχνιδιών που "
+"απαιτεί το τουρνουά. <strong>0 παιχνίδια που παραβιάζουν τους "
+"κανόνες</strong> σημαίνει ότι το πρόγραμμα είναι έγκυρο."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr ""
+"Μπορεί να διαρκέσει από μερικά δευτερόλεπτα έως αρκετά λεπτά. Εξαρτάται από "
+"τον αριθμό των υπολογιστών."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "Ο κινητήρας λειτουργεί."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr ""
+"Δημιουργεί ημερολόγια, τα συνδυάζει και κρατά τα καλύτερα. Μην κλείσετε αυτή"
+" τη σελίδα."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "Αποθηκευμένες παράμετροι"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "Διαμόρφωση \"%(nombre)s\""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr ""
+"<strong>Σημαντικό:</strong> η μηχανή διατριβής αποθηκεύει αυτές τις τιμές, "
+"αλλά δεν τις χρησιμοποιεί. Λειτουργεί πάντα με πληθυσμό 100, 20 γενιές, 0,8 "
+"crossover και 0,2 μετάλλαξη."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "Εντολές για την εκτέλεσή του"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"Αντιγράψτε αυτήν την ερώτηση και επικολλήστε την στον οδηγό που "
+"χρησιμοποιείτε. Επισυνάψτε το αρχείο programa_genetico/programagenetico.py "
+"(μηχανισμός διατριβής) ή programa_genetico/motor_bloques.py (βελτιωμένος "
+"μηχανισμός)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "Καλύτερο δέντρο ημερολογίου"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "Από %(a)s έως %(b)s."
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "Βήματα επίδειξης"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "Επίδειξη: Ρύθμιση"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "Βήμα 2: Ρύθμιση"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr ""
+"Όλες οι τιμές έχουν ήδη επιλεγεί. Μπορείτε να τις αλλάξετε ή να δώσετε \\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "Αλλαγή εξοπλισμού"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "Το τουρνουά"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "Ο αλγόριθμος"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "Επόμενο: Προβολή του ημερολογίου"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "Επίδειξη: Επιλέξτε τις ομάδες"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr ""
+"Koza-TTP Demo: Δημιουργήστε ένα ημερολόγιο μπέιζμπολ με τον πιο πρόσφατο "
+"αλγόριθμο σε 3 βήματα."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "Βήμα 1: Επιλέξτε τον εξοπλισμό"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr ""
+"Ο αλγόριθμος συντάσσει ένα πρόγραμμα για τις ομάδες που επιλέγετε και "
+"αναζητά αυτή με τα λιγότερα ταξίδια. Έχουμε ήδη επισημάνει 10 ομάδες της "
+"Major League. Αν θέλετε, κάντε κλικ στο «Επόμενο» χωρίς να αλλάξετε τίποτα."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "Επόμενο: Ρύθμιση"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "Προτιμάτε να παρακολουθήσετε μια πλήρη βασιλική σεζόν;"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "Δείτε τη σεζόν 2023: 30 ομάδες ενάντια στο επίσημο ημερολόγιο"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "Θέλετε να εγγράψετε τις δικές σας ομάδες και γήπεδα;"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "Κάντε το μόνοι σας στον Οδηγό 5 βημάτων"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "Επίδειξη: το ημερολόγιο"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "Βήμα 3: Το Ημερολόγιο"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "Νεότερος αλγόριθμος: Turn-based μοντέλο"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>: %(n)s ομάδες."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "Τι πέτυχε ο αλγόριθμος"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr ""
+"Συνολικές μετακινήσεις όλων των ομάδων με το πρόγραμμα του αλγορίθμου."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr ""
+"Ταξιδέψτε με ένα τυχαία κατασκευασμένο ημερολόγιο, πριν από τη "
+"βελτιστοποίηση."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr "Λιγότερα ταξίδια από το τυχαίο ημερολόγιο."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "Ακολουθήστε όλους τους κανόνες"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "Το ημερολόγιο έσπασε τυχαία %(a)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "Ποιους κανόνες εξετάζετε;"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr ""
+"Το πολύ 12 συνεχόμενα παιχνίδια εντός ή εκτός έδρας. Εδώ: %(n)s εντός και "
+"%(m)s εκτός έδρας."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "Το πολύ 20 συνεχόμενες ημέρες με παιχνίδι. Εδώ: %(n)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr "Δεν παίζει εναντίον του ίδιου αντιπάλου σε δύο σειρές στη σειρά."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr ""
+"Εντός έδρας παιχνίδια περίπου τα μισά. Εδώ: %(a)s έως %(b)s ανά ομάδα."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "Πώς πήγε το ταξίδι"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr ""
+"Το συνολικό ταξίδι μειώθηκε από %(a)s km σε %(b)s km στα %(p)s βήματα "
+"αναζήτησης."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "Η πρώτη %(n)s των παιχνιδιών %(t)s"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "Στο σπίτι"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "Επίσκεψη"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "Δείτε όλα τα παιχνίδια"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "Όλα τα παιχνίδια"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "Τι έπεται?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "Αλλάξτε τις ρυθμίσεις και εκτελέστε ξανά"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "Επιλογή άλλου εξοπλισμού"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr ""
+"Παρακολουθήστε ολόκληρη τη σεζόν 2023: 30 ομάδες στο επίσημο ημερολόγιο"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "Κατανοήστε πώς λειτουργεί σε 2 λεπτά"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr ""
+"Κάντε το μόνοι σας: καταχωρήστε τον εξοπλισμό σας στον οδηγό 5 βημάτων"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "Δείτε τον αρχικό αλγόριθμο της διατριβής"
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "Κατανοήστε την ιδέα σε 2 λεπτά"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr ""
+"Ιστορία κινουμένων σχεδίων Koza-TTP: ο χάρτης των ταξιδιών του μπέιζμπολ, τα"
+" δέντρα του γενετικού προγραμματισμού και η διαδρομή του πιλότου από τη "
+"διατριβή στη βελτιωμένη μηχανή."
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "2 λεπτά · 7 βήματα"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "Βήματα της ιστορίας"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "Στάδια"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "Ταξίδι"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "Δέντρο"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "Διασταύρωση"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "Μετάλλαξη"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "Γενιές"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "Αποτέλεσμα"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "Μέρος 1 · Το πρόβλημα"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "30 ομάδες πρέπει να παίξουν μεταξύ τους"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr ""
+"Η Major League Baseball έχει 30 ομάδες. Κάθε ομάδα παίζει 162 παιχνίδια σε "
+"μια σεζόν."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr ""
+"Ένα ημερολόγιο λέει ποιος παίζει εναντίον ποιου, σε ποια ημερομηνία και σε "
+"ποιο γήπεδο."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "Αγγίξτε ένα στάδιο στον χάρτη για να δείτε το όνομά του."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "Κάθε ταξίδι κοστίζει χρόνο και χρήμα"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr ""
+"Όταν μια ομάδα παίζει εκτός έδρας, ταξιδεύει με αεροπλάνο. Ένα κακό "
+"πρόγραμμα τους κάνει να διασχίζουν τη χώρα πολλές φορές."
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr "Ένα παράδειγμα εκδρομής, με τις ημερομηνίες σε τυχαία σειρά."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr ""
+"Αγγίξτε ένα άλλο στάδιο για να παρακολουθήσετε την περιοδεία αυτής της "
+"ομάδας."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "Μέρος 2 · Η ιδέα της διατριβής"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "Ένα ημερολόγιο μπορεί να γραφτεί ως δέντρο"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr ""
+"Ο γενετικός προγραμματισμός δεν γράφει το ημερολόγιο με το χέρι. "
+"<strong>Γράφει οδηγίες</strong> για τη βελτίωσή του."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"Αυτές οι οδηγίες σχηματίζουν ένα δέντρο. <strong>Τα φύλλα</strong> είναι "
+"σειρές παιχνιδιών, όπως το \"SEA–NYA\". <strong>Τα κλαδιά</strong> είναι "
+"ενέργειες, όπως η \"ανταλλαγή\" δύο σειρών ημερομηνιών ή η \"αντιστροφή "
+"τοποθεσίας\" (αλλαγή του ποιος παίζει στο σπίτι)."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "Διάσχιση: Δύο δέντρα αναμειγνύονται"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr ""
+"Λαμβάνονται δύο δέντρα που λειτουργούν καλά. Το καθένα δίνει ένα κλαδί."
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "Το νέο δέντρο, το \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "Μετάλλαξη: Μια μικρή, τυχαία αλλαγή"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr ""
+"Μερικές φορές ένα κομμάτι του δέντρου αλλάζει από μόνο του. Εδώ, η σειρά \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr ""
+"Η μετάλλαξη χρησιμεύει για να δοκιμάσει νέες ιδέες που κανένας γονέας δεν "
+"είχε."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "Μέρος 3 · Το αποτέλεσμα"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "Από γενιά σε γενιά"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr ""
+"Κάθε γενιά έχει πολλά δέντρα. Όσοι παράγουν ημερολόγια με λιγότερα ταξίδια "
+"έχουν περισσότερα παιδιά."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr ""
+"Η διακεκομμένη γραμμή είναι ο ελάχιστος στόχος: το καλύτερο ημερολόγιο που "
+"<strong>επιλέγεται τυχαία</strong> με την ίδια προσπάθεια."
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "Επιλέξτε έναν κινητήρα για να δείτε πώς τα πήγε."
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "Από τον πιλότο σε έναν κινητήρα που λειτουργεί"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"Ο βελτιωμένος κινητήρας, κατά μπλοκ, το κερδίζει τυχαία: %(resultado)s, σε "
+"προκαταρκτικές δοκιμές (%(corridas)s τρεξίματα, %(equipos)s ομάδες)."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr ""
+"Ο πιλότος της διατριβής (2026) <strong>δεν ήταν καλύτερος</strong> από την "
+"τυχαία επιλογή ημερολογίων: %(resultado)s."
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "Δοκιμάστε το εργαλείο σε 5 βήματα"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "Δείτε και τα 30 στάδια ως πίνακα"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "Δεδομένα από το αρχείο έργου teams.csv."
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "Κωδικός"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "Ομάδα"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "Στάδιο"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "Τοποθεσία"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "Προηγούμενος"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "Επόμενο"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr ""
+"Koza-TTP: γενετικός προγραμματισμός για ημερολόγια μπέιζμπολ. Ξεκίνησε ως "
+"διατριβή του Leslie Dickinson (ITAM) και σήμερα έχει μια μηχανή που ξεπερνά "
+"την τύχη."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "Ένα καλύτερο πρόγραμμα MLB με γενετικό προγραμματισμό."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"Το Koza-TTP γεννήθηκε ως η διατριβή μου στο ITAM. Αυτός ο πρώτος πιλότος δεν"
+" πέρασε τυχαία. Η έκδοση μπλοκ κάνει: %(resultado)s, σε προκαταρκτικές "
+"δοκιμές. Εδώ σας δείχνω πώς λειτουργεί."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr ""
+"Μια ιστορία κινουμένων σχεδίων: ο χάρτης των ταξιδιών, τα δέντρα του "
+"γενετικού προγραμματισμού και το αποτέλεσμα."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "Σεζόν 2023: Ο κινητήρας ενάντια στο πραγματικό ημερολόγιο"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr ""
+"Μια επανάληψη μιας σειράς της μηχανής γενετικού προγραμματισμού και με τις "
+"30 ομάδες του Major League Baseball το 2023, σε σύγκριση με το επίσημο "
+"πρόγραμμα και την τύχη."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "Σεζόν 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "Επίδειξη με πραγματικά δεδομένα · Major League Μπέιζμπολ 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr ""
+"Χρησιμοποιούμε τις 30 ομάδες μπέιζμπολ της Major League και τα πραγματικά "
+"τους γήπεδα. Το επίσημο πρόγραμμα του 2023 είναι η αναφορά. Ο κινητήρας που "
+"βασίζεται σε μπλοκ προσπαθεί να δημιουργήσει μια σεζόν με λιγότερα ταξίδια."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "Πώς κατεβαίνουν τα χιλιόμετρα, από γενιά σε γενιά"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr ""
+"Αυτή είναι μια πραγματική λειτουργία του κινητήρα, αποθηκευμένη για να την "
+"παρακολουθήσετε χωρίς να περιμένετε. Έχει %(generaciones)s γενιές των 100 "
+"ημερολογίων η καθεμία."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "Αναπαραγωγή"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "Γενιά"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "Πλάγια συρόμενη σανίδα"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "Ταξίδια των 30 ομάδων σε όλη την κανονική περίοδο."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "Μεγαλύτερη περιοδεία (εκτός έδρας αγώνες στη σειρά)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "Περισσότερα εντός έδρας παιχνίδια στη σειρά"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "Αξιωματούχος του μπέιζμπολ της Major League"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "εκατομμύρια χιλιόμετρα"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "Καλύτερα τυχαία, με την ίδια προσπάθεια"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "Δεν ανταποκρίνεται στον αριθμό των αγώνων κάθε ομάδας."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr ""
+"Ο κινητήρας <strong> ταξιδεύει%(pct)s%% λιγότερο από</strong> το τυχαίο "
+"καλύτερο πρόγραμμα. Ο κινητήρας μαθαίνει."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr ""
+"Το επίσημο ημερολόγιο <strong> ταξιδεύει%(pct)s%% λιγότερο από</strong> τον "
+"κινητήρα. Ακόμα δεν τον έχουμε νικήσει."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"Σημείωση: το ημερολόγιο του κινητήρα έχει περιοδείες έως και "
+"<strong>%(gira)s εκτός έδρας αγώνων στη σειρά</strong>. Το επίσημο έχει "
+"μέγιστο %(oficial)s. Μια πραγματική ομάδα δεν θα δεχόταν τόσο μεγάλες "
+"περιοδείες."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "Ταξίδι κάθε ομάδας"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr ""
+"Κάντε εναλλαγή μεταξύ των δύο προγραμμάτων για να δείτε ποιες ομάδες "
+"ταξιδεύουν περισσότερο."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "Χάρτης Ημερολόγιο"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "Επίσημος"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "Κινητήρας"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "Δείτε και τις 30 ομάδες ως πίνακα"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "Επίσημο (χλμ.)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "Κινητήρας (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "Από πού προέρχονται τα δεδομένα"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr ""
+"Επίσημο πρόγραμμα: Κανονική περίοδος Major League Baseball 2023 (MLB Stats "
+"API). Εδώ κρατάμε μόνο τους υπολογισμένους αριθμούς, όχι το πρόγραμμα."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr ""
+"Αποστάσεις: ευθεία γραμμή μεταξύ γηπέδων (τύπος ημισύμπαντος). Κάθε ομάδα "
+"φεύγει από το σπίτι της, ταξιδεύει από γήπεδο σε γήπεδο και επιστρέφει στο "
+"τέλος."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr ""
+"Μηχανή μπλοκ: 100 ημερολόγια ανά γενιά, %(evaluaciones)s ημερολόγια "
+"αξιολογήθηκαν συνολικά. Η τύχη αξιολόγησε το ίδιο ποσό."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "Φτιάξε το δικό σου τουρνουά"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "Πώς λειτουργεί ο κινητήρας"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "Μπλοκ, με κανόνες"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "Στροφές + Τυχαίες κινήσεις"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "Στροφές + PG (μόνο αναβαθμίσεις)"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "Βάρδιες + θερμοκρασία εκμάθησης PG"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "Βάρδιες + ανόπτηση με το χέρι"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "Παλιά: Όλοι παίζουν 3 ημέρες σε κάθε γύρο"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "Τώρα: Σειρές παιχνιδιών 2, 3 και 4, με διαλείμματα"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "Στροφή"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "καθημερινές"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "Σαββατοκύριακο"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "Γυρίστε Α"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "Στροφή Β"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "1. Επιλέγουμε ομάδα και δύο βάρδιες"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "2. Ακολουθούμε την αλυσίδα: Α, Β, Α, Β..."
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "3. Αλλαγές διακόπτη σειράς αλυσίδας"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "Κόστος ημερολογίου"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "καλύτερο"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "Πρώτη Κοιλάδα"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "Βαθύτερη κοιλάδα"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "Πρόοδος της ταυρομαχίας"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "Σπίτι"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "Τέλος"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "Με το χέρι"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "PG, 5%"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "PG, 50%"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "Το δοκιμαστικό μου τουρνουά"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr "Προαιρετικός. Αν το αφήσετε έτσι, χρησιμοποιείται αυτό το όνομα."
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "Ομάδες τουρνουά"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr "Έχουμε ήδη σκοράρει 10. Μπορείτε να τα αλλάξετε: από 3 σε 10 ομάδες."
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "Χάρτης των 30 γηπέδων των Major Leagues"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr "Παράδειγμα περιήγησης {Team}: 12 επισκέψεις με τυχαία σειρά."
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr ""
+"Επιλέξατε {ομάδα}. Ακολουθήστε το βήμα 2 για να δείτε τα ταξίδια τους."
+
+#: tesis/historia.py
+msgid "km"
+msgstr "χλμ"
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "Συνδυασμός"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "Ανταλλαγή"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "Επενδύστε στην τοποθεσία"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "Σπίτι"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "Επίσκεψη"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "Γονέας Α"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "Γονέας Β"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "Γιος"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr ""
+"Παράδειγμα δέντρου: συνδυάστε, με δύο κλάδους: ανταλλάξτε το SEA-NYA με το "
+"BOS-TEX και επενδύστε την τοποθεσία LAN-CHN στο σπίτι."
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr ""
+"Crossover: ο πατέρας Α δίνει το αριστερό του κλαδί και ο πατέρας Β δίνει το "
+"αριστερό του κλαδί. ο γιος συνδυάζει τα δύο."
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "Μετάλλαξη: Στο δέντρο, το φύλλο SEA–NYA αλλάζει σε SEA–OAK."
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "Παρακολουθήστε ξανά"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "Ταξίδι (τυχαίο = 100)"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "Ευκαιρία"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "Πληθυσμός (48 δέντρα)"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "Περισσότερο χρώμα = λιγότερα ταξίδια"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "Μηχανή Διατριβής"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{engine} · {g} δημιουργία του {total}"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{μηχανή} · έληξε: {αποτέλεσμα}."
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr ""
+"{engine}: ξεκινά από {start} και τελειώνει στο {end} (πιθανότητα = 100). "
+"Αποτέλεσμα: {result}."
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr ""
+"Απόσταση έναντι τύχης: μηχανή διατριβής {thesis}, τυχαία επιλογή 100, μηχανή"
+" μπλοκ {blocks}."
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "Μηχανή διατριβής (2026)"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "Τυχαία επιλογή ημερολογίων"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "Block Engine (Προκαταρκτικό)"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr ""
+"Μπορείτε επίσης να χρησιμοποιήσετε τα πλήκτρα βέλους στο πληκτρολόγιό σας."
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr ""
+"Χιλιόμετρα της σεζόν ανά γενιά κινητήρα, σε σύγκριση με το επίσημο "
+"ημερολόγιο και την ευκαιρία"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "Επίσημο ημερολόγιο"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "Καλύτερα στην τύχη"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}: {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr "Ακόμα δεν ανταποκρίνεται στον αριθμό των αγώνων κάθε ομάδας."
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr ""
+"Κατακόρυφος άξονας: από {min} έως {max} εκατομμύρια km. Οριζόντιος άξονας: "
+"γενιές 0 έως {last}."
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr ""
+"Χάρτης: Κάθε κύκλος είναι μια ομάδα. μεγαλύτερο σημαίνει περισσότερα μίλια "
+"στη σεζόν"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{ομάδα}: {km} χλμ"

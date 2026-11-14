@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "Optimizasyon sonuçları"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "Genişletmek için ağaca tıklayın"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "Toplam Seyahat Masrafı:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "Kural İhlalleri:"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Çalışma optimizasyonu"
 
@@ -133,10 +121,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "En yenisinden en eskisine kadar."
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "Planlanıyor"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "Motor için bağlamsal operatörler"
 
@@ -165,10 +149,6 @@ msgstr ""
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "3 Kasım 2026"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "Devam Ediyor"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -605,10 +585,6 @@ msgstr ""
 " seyahat ettiğini ölçür."
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "Demo · Takımlar arasında adil seyahat"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "Bir takvim oluşturun ve"
 
@@ -622,6 +598,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"Yapay zeka (genetik programlama), seyahatin kısa ve eşit olduğu takvimleri "
+"arıyor. Kendi takımlarınızı mı istiyorsun? <a href=\"%(guia)s\">5 adımlı "
+"rehberi</a> kullanın."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -656,10 +635,6 @@ msgstr "Birkaç saniye sürüyor."
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "Takvim: %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "Yapılandırma %(id)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -736,14 +711,6 @@ msgstr "Bilgisayarınızda çalıştırın"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "Yapay zeka asistanınızdan yardım isteyin"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr ""
-"Bu soruyu kopyalayın ve kullandığınız sihirba, "
-"programa_genetico/programagenetico.py dosyasıyla birlikte yapıştırın."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -968,30 +935,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "Beyzbol Takvimleri için Genetik Programlama"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr ""
-"Koza-TTP: Leslie Dickinson'ın (ITAM) beyzbol takvimleri için genetik "
-"programlama üzerine tezi, dürüst sonucu ve geliştirilmiş motoru."
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "ITAM Tezi · Genetik Programlama · Beyzbol"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "Tezim gerçeği anlattı:"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr ""
-"Koza-TTP, genetik programlama ile beyzbol sezonu takvimleri hazırlamak için "
-"bu tezi sürdürüyor. Burada neyin yanlış gittiğini, neden ve bunu kamuoyunda "
-"nasıl düzelttiğimi göreceksiniz."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -1008,12 +953,6 @@ msgstr "2 dakika"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "Fikri Anlamak"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr "Genetik programlama nedir ve beyzbol takvimi neden zor bir problem."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1091,37 +1030,39 @@ msgstr "Maya ve Otomí dahil otomatik. Onları tamir edebilirsin."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "Rastgele arama ile karşılaştırma"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "Rastgele seçmekten daha mı iyi?"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "Testlerde"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, %(corridas)s %(equipos)s takımla yapılan koşularda"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "Evet, ön testlerde"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
 msgstr ""
+"Demo hâlâ tez versiyonunu kullanıyor. Geliştirilmiş motor, aynı sayıda "
+"takvimi inceleyen rastgele bir aramaya benzedilmişti."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "8 Kasım 2026"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "Blok motor"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1130,12 +1071,15 @@ msgid ""
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
 msgstr ""
+"Programın her bölümü (lig, lig ve ligler arası) herkesin birbirine karşı "
+"oynadığı bloklardan oluşur. Bu nedenle, MLB kuralları her zaman uygulanır. "
+"Genetik programlama, seyahati azaltmak için blokları seçer ve emreder."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
-msgstr ""
+msgstr "Ön sonuç: %(resultado)s, %(equipos)s takımla %(corridas)s koşuda."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1144,182 +1088,1856 @@ msgid ""
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
 msgstr ""
+"PG'nin rastgele takvim seçmekten daha iyi olmadığını doğrulamak için kod "
+"incelemesi. Kesişme ve mutasyon, takvimlerin geçerliliğini bozur ve fitness "
+"ağırlıkları çocukların ilk nesil ebeveynlerine karşı kaybetmesine neden "
+"olur."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "Temizlik Modu"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "Motor: %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
 msgstr ""
+"<strong>Not:</strong> Bu demo tez motorunu kullanıyor. Bu motor, takvimleri "
+"rastgele seçmekten daha iyi değildi."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
 msgstr ""
+"Geliştirilmiş motor ön testlerde daha iyiydi: %(resultado)s, %(corridas)s "
+"denemede. Henüz bu demoda değil."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
 msgstr ""
+"Bir okul projesi için bu artı: bir temel ve ölçebileceğiniz bir gelişme var."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "Her yayının sonuçlarını görüntüleyin"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr ""
+msgstr "Testlerde: %(resultado)s, %(corridas)s %(equipos)s takımla koşu."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "Tez versiyonu (2026)"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "Rastgele takvim seçmekten %19,5 daha fazla mesafe"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "Blok motoru (yükseltilmiş versiyon)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "Rastgele takvim seçmekten %13 daha az seyahat"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "Kısaltma (örneğin, SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "Takım Adı"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "Şehir"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "Stadyum Enlemi"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "Stadyum Uzunluğu"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "Ondalık derecelerde. Örnek: 47.59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "Ondalık derecelerde. Örnek: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "Lig Takımları"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "Lig Adı"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "En az 2 takım seçin."
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "Turnuva adı"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "İlk gün"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "Son gün"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "Seriler bazında oyunlar"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "Takım Serisi"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "Son gün ilk günle aynı ya da sonrasında olmalı."
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "1 veya daha fazla olmalı."
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "Yapılandırma Adı"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "Nüfus büyüklüğü"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "Nesil sayısı"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "Geçme olasılığı (0'dan 1'e)"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "Mutasyon Şansı (0'a 1)"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "0 ile 1 arasında olmalı."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "Ekipman"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "Lig"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "Turnuva"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "Ortamlar"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "Takvim"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "Önce bu adımı tamamla."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "Eklenmiş ekipman."
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "Oyunlar üretildi."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "14 Kasım 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
+msgstr "Sıra tabanlı algoritma: resmi MLB 2023 takvimini geride bırakıyor"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
 msgstr ""
+"Tüm 30 takımın aynı anda 3 günlük seriler oynaması kuralı kaldırıldı. 2, 3 "
+"ve 4 maçlık seriler ve aralarla en iyi algoritma 1,57 milyon km yol kat "
+"eder. Resmi takvim ise 1,74 milyon km yol kat eder. Her ikisi de aynı "
+"gerçekçilik kurallarına sahiptir."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr "Güncel araştırmaları animasyonlu diyagramlarla görüntüleyin"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "12 Kasım 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "Demo gerçek 2023 sezonunu gösteriyor"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr ""
+"Motorun çalışmasını beklemeden gerçek 2023 Major League Baseball takvimini "
+"görebilirsiniz."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "2023 sezonunu görüntüleyin"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "9 Kasım 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "Adım adım hikaye"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr "30 aşamanın haritasıyla birlikte, ağaçlar ve evrim, adım adım."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "Hikayeyi okuyun"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "Deneyimin ikinci denetimi"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr ""
+"Erişilebilirlik, kullanılabilirlik ve insan-yapay zeka etkileşiminin gözden "
+"geçirilmesi tekrarlandı. İlkteki 28 noktadan 13'ü çözüldü. Yeni noktaların "
+"çoğu zaten düzeltildi."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr "Motoru seri olarak aldı ve ardından motor bloklarıyla birlikte aldı."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "5 Kasım 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "5 adımlı rehberi aç"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr ""
+"Beyzbol takvimleri yapmak için genetik programlama. Leslie Dickinson'ın "
+"(ITAM) tezi, dürüst sonuçlarla."
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr ""
+"Koza-TTP: takımın rotası ve genetik programlama ağacı içeren beyzbol "
+"stadyumlarının haritası."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "Ana siteye git"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "Menü"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "Nasıl çalışır"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "Leslie Dickinson"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "Ana Alan"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "İletişim"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "Tezim gerçeği anlattı"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"Tez pilotu, rastgele takvim seçmekten farklı değildi: %(resultado)s. Bunu "
+"böyle ve gizlemeden raporlamak doğru karardı. Bu sonuç, motorun "
+"iyileştirilmesi için neyin düzeltilmesi gerektiğini gösterdi."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "Güncel Araştırmalar"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr "Resmi MLB 2023 takvimini geçmeye çalıştık, animasyonlu diyagramlarla."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "Güncel araştırmalar: resmi takvimi aşmak"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr ""
+"Hedef: 2023 Major League Baseball sezonu için resmi programdan daha kısa bir"
+" mesafe kat eden ve aynı kurallara uyan bir takvim. Resmi program ise 1,74 "
+"milyon km yol kat eder."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr ""
+"14 Kasım 2026 (öğleden sonra) güncellendi. Bu algoritmalar test aşamasında: "
+"site ve demo henüz onları kullanmıyor."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "1. Tüm testlerin sonuçları"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"Her çubuk, 30 takımın bir sezonda milyonlarca kilometre içinde toplam "
+"yolculuğunu. Daha az daha iyidir. Tüm rakamlar aynı şekilde ölçüldü: her "
+"takım evinden ayrılır, stadyumdan stadyuma gider ve sonunda geri döner."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "Algoritma ile toplam yolculuk versiyonu"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "Koza-TTP algoritmaları"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "Resmi Takvim 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr ""
+"İki sıra tabanlı tavlama algoritması memurun yaklaşık %%9 oranında önde "
+"kaldı. Aşağıdaki tabloda da aynı veriler var."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "Tüm testler, en eskiden en yenisine"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "Total Trip"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "Kurallara göre mi oynuyor?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "Öğrendiklerimiz"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "Blok algoritması, gerçekçilik kuralları yok"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "1,85 milyon km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "Hayır: üst üste 36 maça kadar turlar"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr "Memura yakın görünüyordu ama aldatıyordu."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "Kurallarla blok algoritması"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "2,19 milyon km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "Onlarla görüşemez"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr "Sabit bloklar turları iyi organize etmenize izin vermez."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "Karışık bloklar, cetvellerle"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "2,00 milyon km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "Evet"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr "Daha iyi, ama tüm 30 takım aynı anda oynuyor."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr "2, 3 ve 4 kümeleriyle kaydırmalar + simüle edilmiş tavlama"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "1,52 ila 1,60 milyon km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "4 koşudan 3'ü (biri ekstra bir gün sürdü)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr "\"Hepsi bir anda\" kuralını kaldırmak memurun kazanılmasıdır."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr "Vardiyalar + hafta MLB olarak + sadece yükseltmeleri kabul eden PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "1,70 milyon km (ortalama)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "Evet, 4 üzerinden 4"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr ""
+"Polisin kıl payı yener, ancak rastgele hareketlerle neredeyse eşitliği "
+"sağlar."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "Rastgele hareketler, PG ile aynı çaba"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "PG ölçmek için adil bir temel."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "Vardiyalar + hafta + el yapımı tavlama"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "1,567 milyon km (ortalama 8 takvim)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "Başta daha kötü değişiklikleri kabul etmek çok yardımcı oluyor."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "Vardiyalar + hafta + lisansüstü öğrenme sıcaklığı"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "1.571 milyon km (ortalama 8 takvim)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr ""
+"PG kendi cetvelini tasarlar ve neredeyse el yapımı olanla (%%0,3 daha fazla)"
+" bağlı."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "Aynı PG, daha fazla çeşitlilik ve daha fazla pratikle"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "1.583 milyon km (ortalama 8 takvim)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "Evet, 8 üzerinden 8"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr ""
+"Kısa koşularla pratik yapmak uzun koşular için en iyi kuralı öğretmez."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "Resmi MLB 2023 Takvimi"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "1,74 milyon km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr ""
+"Hedef. Ayrıca, stadyum tarihleri ve televizyon gibi modellemediğimiz "
+"kurallara da uyuyor."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"Realizm kuralları: en fazla 12 maç üst üste evde veya deplasmanda, ardışık "
+"serilerde tekrar rakip yok, maksimum 20 gün ardışık oyun ve 186 günlük "
+"sezon. Resmi takvimden sadece hesaplanan rakamlar saklanır, MLB kullanım "
+"şartlarına göre."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "2. Büyük değişiklik: 2, 3 ve 4 oyunluk setlerle turlar"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"Eskiden tüm 30 takım aynı anda 3 günlük seriler oynardı ve ara vermeden. "
+"Şimdi sezon, MLB'de olduğu gibi hafta içi (4 gün) ve hafta sonu (3 gün) "
+"vardiyalarına ayrılmıştır. Her takım 2, 3 veya 4 maçlık bir seri oynar veya "
+"mola verir."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "Önceki model vs. sıra tabanlı model"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "Duraklama"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "Seri (sayı kaç maç olduğunu gösteriyor)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "Ara"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"Sekiz vardiyada altı takım. Önceki modelde herkes her vardiyada 3 gün "
+"oynuyordu. Vardiya modelinde seriler 2, 3 veya 4 gün sürüyor ve molalar "
+"oluyor, böylece turlar daha özgürce düzenlenebiliyor."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "3. Ana hareket: Kempe zinciri"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr ""
+"Takvimi değiştirmek için bir takım aynı anda iki seri oynamadan iki tur ve "
+"seriler zinciri dönüşümlü olarak yapılır. Zincirdeki tüm seriler aynı anda "
+"değişir. Program hâlâ geçerlidir."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "A ve B turları arasında kempe zinciri"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "Shift A'daki seriler (Solid Line)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "B Turunda seri (noktalı çizgi)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr ""
+"Sekiz takım. Ağ NYA'da başlıyor ve BOS, TOR ve BAL üzerinden geçiyor. Dört "
+"sezonu vardiyalar değiştiriyor. Diğer seriler ise hareket etmiyor."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "4. Tavlama neden PG'yi geçti?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr ""
+"İlk PG, tavlama ile aynı hareketleri kullandı, ancak 1,70 milyon km ve "
+"tavlama 1,58 km'de. Bunun üç nedeni vardır."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>Sadece iyileştirmeleri kabul etti.</strong> Böylece bulduğu ilk "
+"\"vadi\"de sıkışıp kalır. Tavlama başlangıçta biraz daha kötüleşmeyi kabul "
+"eder ve bu da onun \"tepeyi\" geçip daha derin bir vadiye ulaşmasını sağlar."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr ""
+"<strong>Çaba harcadı.</strong> Her nesilde 16 tarif deniyor ve sadece en "
+"iyilerin takvimini tutuyor. Tavlama her adımını koruyor."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr ""
+"<strong>Aynı yerleri tekrar etti.</strong> Ağaçtaki sabit sayılar her zaman "
+"aynı turları ve takımları gösteriyordu. Rastgele hamleler tüm takvim boyunca"
+" geçer."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "Sadece daha kötü değişiklikleri kabul etmeye karşı iyileştirmeler"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "Sadece yükseltmeleri kabul eder (daire)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "Tavlama: daha kötü değişiklikleri kabul eder (romb)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr ""
+"Çizgi, takvimin maliyetidir: daha düşük daha iyidir. Daire ilk vadiye iner "
+"ve orada kalır. Romb tepeye çıkar, çünkü biraz daha kötüleşmeyi kabul eder "
+"ve en derin vadiye ulaşır."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr "5. Kötü Değişiklikleri Ne Zaman Kabul Edeceğini Öğrenen PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr ""
+"Birinci sebep düzeltmek için, PG şimdi tavlama kuralını tasarlar. Bir ağaç, "
+"her adımda kaç km kötüleşmenin kabul edileceğine karar verir. İki veriye "
+"bakın: koşu ne kadar ilerledi ve kaç değişiklik yakın zamanda kabul edildi."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr ""
+"PG 2 takvimde kısa sürelerle çalıştı. Sonra kazanan ağacı 4 takvimde "
+"denedik, ama o hiç görmedi. İşte kazanan ağac:"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr ""
+"Kısaca: tolerans küçüktür, yaklaşık 60 ila 1.200 km arasında ve "
+"değişiklikler neredeyse kabul edilmediğinde yükselir. El yapımı cetvel tam "
+"tersini yapar: 20.000 km'den başlar ve yavaş yavaş 50'ye iner."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "Koşu boyunca km cinsinden tolerans (logaritmik ölçek)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "El yapımı cetvel"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "PG, birkaç değişiklik kabul edilirse (%%5)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "PG, birçok değişiklik kabul edilirse (%%50%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr ""
+"El yapımı kural 20.000'den 50 km'ye düşürülür. PG kuralı ise 60 ile 1.200 km"
+" arasında kalır ve kabul edilen değişikliklere bağlıdır. Her ikisi de "
+"yaklaşık 1,57 milyon km takvimlere ulaşır."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "6. Sırada Ne Var"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr ""
+"PG neredeyse tavlama ile eşit olsa da, yine de onu geçemiyor. 8 yeni "
+"takvimde, el yapımı cetvel 1.567 milyon km yol kat ederken, PG cetvel 1.571 "
+"milyon km yol kat eder."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"Daha fazla çeşitlilik (tekrar edilen tarifler olmadan) ve daha fazla pratik "
+"(3 takvim, 32 tarif, 16 nesil) sağlamaya çalıştık. Daha kötüydü: 1.583 "
+"milyon km. PG kısa koşularla 40.000 adımla çalışıyor, ama test 400.000 "
+"basamak kullanıyor. Az koşmak için iyi bir kural, çok koşmak için en iyisi "
+"değildir."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr ""
+"Bir sonraki adım, PG'nin teste daha çok benzeyen koşularla pratik yapması ve"
+" el yapımı cetvelden başlamasıdır, böylece sadece onu geliştirebilir."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "Bu testlerin kodunu GitHub'da görüntüleyin"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "Tez algoritması"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "Orijinal Tez Algoritması (2026)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "Gerçek 2023 sezonunu beklemeden izleyin"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "Daha büyük görmek için ağaca tıklayın."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr ""
+"Ağaç, en iyi takvimi hazırlayan programdır. Her dal oyunlara katılır; "
+"yapraklar ise oyunları (tarih, ev sahibi takım ve deplasman takımı) temsil "
+"eder."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "Tüm takımların toplam seyahat sayısı:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "Kuralları çiğneyen oyunlar:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr ""
+"Bir kural, her takımın turnuvanın gerektirdiği maç sayısını oynamasıdır. "
+"<strong>Kuralları çiğneen 0 maç</strong> takviminin geçerli olduğu anlamına "
+"gelir."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr ""
+"Birkaç saniyeden birkaç dakikaya kadar sürebilir. Bilgisayar sayısına bağlı."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "Motor çalışıyor."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr ""
+"Takvimler oluşturuyor, birleştiriyor ve en iyilerini tutuyor. Bu sayfayı "
+"kapatma."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "Kaydedilen parametreler"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "\"%(nombre)s\" konfigürasyonu"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr ""
+"<strong>Önemli:</strong> tez motoru bu değerleri kaydeder ama kullanmaz. Her"
+" zaman 100, 20 nesil, 0.8 çapraz ve 0.2 mutasyon ile çalışır."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "Çalıştırmak için komutlar"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"Bu soruyu kopyalayın ve kullandığınız sihirbaza yapıştırın. "
+"programa_genetico/programagenetico.py (tez motoru) veya "
+"programa_genetico/motor_bloques.py (geliştirilmiş motor) dosyasını ekleyin."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "En İyi Takvim Ağacı"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "%(a)s'ten %(b)s'e."
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "Demo Adımları"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "Demo: Kurulum"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "Adım 2: Kurulum"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr "Tüm değerler zaten seçilmiştir. Onları değiştirebilir veya \\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "Ekipman değiştirme"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "Turnuva"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "Algoritma"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "Sonraki: Takvimi görüntüleyin"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "Demo: Takımları seçin"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr ""
+"Koza-TTP Demo: En yeni algoritmayı 3 adımda kullanarak bir beyzbol takvimi "
+"oluşturun."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "Adım 1: Ekipmanı seçin"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr ""
+"Algoritma, seçtiğiniz takımlar için bir takvim hazırlar ve en az seyahat "
+"eden takımı arar. Zaten 10 Major League takımını işaretledik. İsterseniz, "
+"hiçbir şeyi değiştirmeden \"Sonraki\"ye tıklayın."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "Sonraki: Kurulum"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "Tam bir kraliyet sezonunu izlemeyi mi tercih ediyorsunuz?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "2023 sezonunu izleyin: Resmi takvime karşı 30 takım"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "Kendi takımlarınızı ve stadyumlarınızı kaydettirmek ister misiniz?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "5 Adımlı Rehberde Kendin Yap"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "Demo: takvim"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "Adım 3: Takvim"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "Yeni algoritma: Sıra tabanlı model"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>: %(n)s takımlar."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "Algoritmanın başardığı"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr "Tüm takımların algoritmanın programına göre toplam seyahati."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr ""
+"Rastgele hazırlanmış bir takvimle seyahat edin, sonra optimizasyon yapın."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr "Rastgele takvimden daha az seyahat var."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "Tüm kurallara uy"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "Takvim rastgele %(a)sbozuldu."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "Hangi kuralları gözden geçiriyorsunuz?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr ""
+"En fazla 12 iç saha veya deplasman maçı üst üste. Burada: %(n)s evde ve "
+"%(m)s deplasmanda."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "En fazla 20 gün üst üste oyun oynamak. Burada: %(n)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr "Aynı rakibe karşı üst üste iki seri oynamamak."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr ""
+"Ev maçlarının yaklaşık yarısı kadar. Burada: %(a)s takım başına %(b)s kişi."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "Yolculuk nasıl geçti"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr "Toplam yolculuk, %(p)s arama adımında %(a)s km'den %(b)s km'ye düştü."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "%(t)s oyunlarının ilk %(n)s"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "Evde"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "Ziyaret"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "Tüm maçları gör"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "Tüm Oyunlar"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "Sırada ne var?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "Ayarları değiştir ve tekrar çalıştır"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "Diğer Ekipman Seçimi"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr "2023 sezonunun tamamını izleyin: Resmi takvime karşı 30 takım"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "Nasıl çalıştığını 2 dakikada anlayın"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr "Kendin yap: ekipmanınızı 5 adımlı rehbere kaydedin"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "Tezin orijinal algoritmasına bakınız"
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "Fikri 2 dakikada anlayın"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr ""
+"Koza-TTP animasyon hikayesi: beyzbol yolculuklarının haritası, genetik "
+"programlama ağaçları ve pilotun tezden geliştirilmiş motora giden yolu."
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "2 dakika · 7 adım"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "Tarihin adımları"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "Stadyumlar"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "Seyahat"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "Ağaç"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "Çapraz Bağlantı"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "Mutasyon"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "Nesiller"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "Sonuç"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "Bölüm 1 · Sorun"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "30 takım birbirleriyle oynamak zorunda"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr ""
+"Major League Baseball'da 30 takım bulunmaktadır. Her takım bir sezonda 162 "
+"maç oynar."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr ""
+"Bir takvim, kimin kime karşı oynayacağını, hangi tarihte ve hangi stadyumda "
+"oynayacağını gösterir."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "Adını görmek için haritada bir stadyuma dokunun."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "Her yolculuk zaman ve para gerektirir"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr ""
+"Bir takım deplasmanda oynadığında uçakla seyahat ederler. Kötü bir program "
+"nedeniyle ülkeyi birçok kez dolaşırlar."
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr "Tarihler rastgele sırayla örnek bir tur gezisi."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr "O takımın turunu izlemek için başka bir stadyuma dokunun."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "Bölüm 2 · Tez fikri"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "Bir takvim ağaç olarak yazılabilir"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr ""
+"Genetik programlama takvimi elle yazmaz. Takvimi geliştirmek <strong>için "
+"talimatlar yazar</strong> ."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"Bu talimatlar bir ağaç oluşturur. <strong>Yapraklar</strong> , \"SEA–NYA\" "
+"gibi oyunlar serisidir. <strong>Dallar</strong> , iki tarih serisini "
+"\"değiştirmek\" veya \"yerliliği tersine çevirmek\" (evde kimin oynayacağını"
+" değiştirmek) gibi eylemlerdir."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "Geçiş: İki ağaç karışır"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr "İyi çalışan iki ağaç alınır. Her biri bir dal verir."
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "Yeni ağaç, \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "Mutasyon: Küçük, rastgele bir değişiklik"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr "Bazen ağacın bir parçası kendi kendine değişir. Burada, seri \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr ""
+"Mutasyon, hiçbir ebeveynin sahip olmadığı yeni fikirleri test etmek için "
+"hizmet eder."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "Bölüm 3 · Sonuç"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "Nesil nesil"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr ""
+"Her nesil birçok ağaca sahiptir. Daha az seyahat eden takvim üretenlerin "
+"daha fazla çocuğu vardır."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr ""
+"Noktalı çizgi minimum hedeftir: aynı <strong>çabayla rastgele "
+"seçilen</strong> en iyi takvim."
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "Nasıl performans gösterdiğini görmek için bir motor seçin."
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "Pilottan çalışan bir motora"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"Geliştirilmiş motor, bloklarla rastgele yeniliyor: %(resultado)s, ön "
+"testlerde (%(corridas)s koşu, %(equipos)s takım)."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr ""
+"Tezin pilot bölümü (2026 <strong>),</strong> rastgele takvim seçmekten daha "
+"iyi değildi: %(resultado)s."
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "Aracı 5 adımda test edin"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "Tüm 30 stadyumu bir masa olarak görüntüleyin"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "teams.csv proje dosyasından veri."
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "Kod"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "Takım"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "Stadyum"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "Konum"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "Önceki"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "Sıradaki"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr ""
+"Koza-TTP: beyzbol takvimleri için genetik programlama. Leslie Dickinson'ın "
+"(ITAM) teziyle başladı ve bugün şansı alt eden bir motora sahip."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "Genetik programlama ile daha iyi bir MLB takvimi."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"Koza-TTP, ITAM'daki tezim olarak doğdu. O ilk pilot rastgele geçmedi. Blok "
+"versiyonu ise ön testlerde %(resultado)syapıyor. Burada nasıl çalıştığını "
+"gösteriyorum."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr ""
+"Animasyonlu bir hikaye: yolculukların haritası, genetik programlama ağaçları"
+" ve sonuç."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "2023 sezonu: Gerçek takvime karşı motor"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr ""
+"2023'te tüm 30 Major League Baseball takımıyla genetik programlama motorunun"
+" tekrarı, resmi takvime ve şansa kıyasla tekrar."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "2023 Sezonu"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "Gerçek verilerle demo · Major League Baseball 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr ""
+"30 Major League Baseball takımını ve onların gerçek stadyumlarını "
+"kullanıyoruz. Resmi 2023 takvimi referans olarak kullanılıyor. Blok tabanlı "
+"motor, daha az seyahat ile sezon düzenlemeye çalışıyor."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "Kilometreler nesilden nesle nasıl geçiyor"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr ""
+"Bu, beklemeden izlemeniz için saklanan gerçek bir motor çalışması. Her biri "
+"100 takvimden oluşan %(generaciones)s nesil var."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "Oyun"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "Üretim"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "Yan kayma tahtası"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "Normal sezon boyunca 30 takımın seyahati."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "En uzun tur (üst üste deplasman maçları)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "Üst üste daha fazla iç saha maçı"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "Major League Baseball Hakemi"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "milyon km"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "Aynı çabayla rastgele daha iyi."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "Her takımın maç sayısına uymaz."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr ""
+"Motor, rastgele en iyi <strong> programdan %%(pct)s daha az hareket "
+"eder</strong>. Motor gerçekten öğrenir."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr ""
+"Resmi takvim <strong> motordan %%(pct)s daha az seyahat ediyor</strong>. "
+"Hâlâ onu yenemedik."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"Not: Motor takviminde <strong> art arda%(gira)s deplasman maçı</strong> "
+"turları vardır. Resmi takvimde maksimum %(oficial)svardır. Gerçek bir takım "
+"böyle uzun turları kabul etmez."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "Her takımın yolculuğu"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr ""
+"Hangi takımların en çok seyahat ettiğini görmek için iki takvim arasında "
+"geçiş yapın."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "Harita Takvimi"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "Resmi"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "Motor"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "Tüm 30 takımı bir tablo olarak görün"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "Resmi (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "Motor (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "Verilerin nereden geldiği"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr ""
+"Resmi takvim: Major League Baseball 2023 normal sezonu (MLB Stats API). "
+"Burada sadece hesaplanan sayıları saklayacağız, takvimi değil."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr ""
+"Mesafeler: stadyumlar arasında düz çizgi (yarıvers formülü). Her takım "
+"evinden ayrılır, stadyumdan stadyuma seyahat eder ve maçın sonunda geri "
+"döner."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr ""
+"Blok motoru: Nesil başına 100 takvim, toplamda %(evaluaciones)s takvim "
+"değerlendiriliyor. Chance da aynı miktarı değerlendirdi."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "Kendi Turnuvanı Yarat"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "Motor nasıl çalışır"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "Kurallı bloklar"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "Turlar + Rastgele Hamleler"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "Turlar + PG (sadece yükseltmeler)"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "Vardiyalar + PG öğrenme sıcaklığı"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "Kaymalar + elle tavlama"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "Eski: Herkes her turda 3 gün oynuyor"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "Şimdi: 2, 3 ve 4 maçlık seriler, molalarla"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "Dönüş"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "Hafta içi günler"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "Hafta sonu"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "Turn A"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "B Virajı"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "1. Bir takım ve iki vardiya seçiyoruz"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "2. Zinciri takip ederiz: A, B, A, B..."
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "3. Zincir serisi anahtar vites"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "Takvim Maliyeti"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "en iyisi"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "Birinci Vadi"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "Daha derin vadi"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "Boğa güreşinin ilerleyişi"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "Ana Sayfa"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "Son"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "El ile"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "PG, %5"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "PG, %50"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "Test Turnuvam"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr "İsteğe bağlı. Eğer bu konuda bırakırsanız, bu isim kullanılıyor."
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "Turnuva Takımları"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr "Zaten 10 puan aldık. Değiştirebilirsiniz: 3'ten 10'a takım."
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "Major Ligler'in 30 stadyumunun haritası"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr "{Takım} örnek turu: rastgele sırayla 12 ziyaret."
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr "{takım} seçtin. Seyahatlerini görmek için 2. adımı takip et."
+
+#: tesis/historia.py
+msgid "km"
+msgstr "km"
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "Kombine"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "Değişim"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "Yatırım Bölgesi"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "Ana Sayfa"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "Ziyaret"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "Ebeveyn A"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "Ebeveyn B"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "Oğul"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr ""
+"Örnek ağaç: iki dalla birleştirin: SEA-NYA ile BOS-TEX değişimi yapın ve "
+"LAN-CHN yerliliğini evde yatırım yapın."
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr ""
+"Çapraz Durum: Baba A sol dalını, baba B sol dalını verir; oğul ikisini "
+"birleştirir."
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "Mutasyon: Ağaçta SEA–NYA yaprağı SEA–OAK'a dönüşür."
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "Tekrar izleyin"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "Seyahat (rastgele = 100)"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "Şans"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "Nüfus (48 ağaç)"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "Daha fazla renk = daha az seyahat"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "Tez Motoru"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{engine} · {g} {total} üretimi"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{engine} · bitiş: {result}."
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr ""
+"{engine}: {start}'da başlar ve {end}'de sona erer (chance = 100). Sonuç: "
+"{result}."
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr ""
+"Mesafe ve şans: tez motoru {tez}, rastgele 100 seç, blok motoru {bloklar}."
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "Tez Motoru (2026)"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "Takvimleri rastgele seçmek"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "Blok Motoru (Ön Hazırlık)"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr "Klavyenizdeki ok tuşlarını da kullanabilirsiniz."
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr ""
+"Motor üretimine göre sezonun kilometreleri, resmi takvime ve şansa kıyasla"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "Resmi takvim"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "Rastgele daha iyi"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}: {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr "Yine de her takımın maç sayısını karşılayamıyor."
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr ""
+"Dikey eksen: {min}'den {max} milyon km'ye kadar. Yatay eksen: 0'dan "
+"{sonuncu'ya kadar olan nesiller."
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr ""
+"Harita: Her daire bir takımdır; daha büyük olmak, sezon boyunca daha fazla "
+"mil demektir"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{team}: {km} km"

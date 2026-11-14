@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "Результати оптимізації"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "Натисніть на дерево, щоб розгорнути"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "Загальна вартість подорожі:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "Порушення правил:"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Оптимізація запуску"
 
@@ -132,10 +120,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "Від найновіших до найстаріших."
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "Заплановано"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "Контекстуальні оператори для двигуна"
 
@@ -164,10 +148,6 @@ msgstr ""
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "3 листопада 2026 року"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "Триває"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -613,10 +593,6 @@ msgstr ""
 "скільки подорожує кожна команда."
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "Демо · Чесні переїзди між командами"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "Згенеруйте календар і"
 
@@ -630,6 +606,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"ШІ (генетичне програмування) шукає календарі, де поїздка коротка і рівна. "
+"Хочете власні команди? Використовуйте <a href=\"%(guia)s\">п'ятикроковий "
+"гайд</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -666,10 +645,6 @@ msgstr "Це займає кілька секунд."
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "Розклад: %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "Конфігурація %(id)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -746,14 +721,6 @@ msgstr "Запустіть його на комп'ютері"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "Попросіть допомоги у свого AI-асистента"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr ""
-"Скопіюйте це питання і вставте його у майстра, який використовуєте, разом із"
-" файлом programa_genetico/programagenetico.py."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -981,30 +948,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "Генетичне програмування для бейсбольних календарів"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr ""
-"Koza-TTP: Дисертація Леслі Дікінсона (ITAM) про генетичне програмування для "
-"бейсбольних календарів, з чесним результатом і покращеним двигуном."
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "Теза ITAM · Генетичне програмування · Бейсбол"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "Моя дисертація говорила правду:"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr ""
-"Koza-TTP підхоплює цю тезу, створюючи календарі бейсбольних сезонів із "
-"використанням генетичного програмування. Тут ви побачите, що пішло не так, "
-"чому і як я це виправляю публічно."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -1021,14 +966,6 @@ msgstr "2 хвилини"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "Розуміння ідеї"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr ""
-"Що таке генетичне програмування і чому бейсбольний календар є складною "
-"проблемою."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1108,37 +1045,40 @@ msgstr "Автоматично, включаючи Майю та Отомі. Т�
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "У порівнянні з випадковим пошуком"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "Чи це краще, ніж обирати випадково?"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "Під час тестування"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, у %(corridas)s ранах з %(equipos)s командами"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "Так, у попередніх тестах"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
 msgstr ""
+"Демо-версія все ще використовує версію з дипломною роботою. Покращений рушій"
+" порівнювали з випадковим пошуком, який переглядає ту ж кількість "
+"календарів."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "8 листопада 2026 року"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "Блок-мотор"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1147,12 +1087,17 @@ msgid ""
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
 msgstr ""
+"Кожна частина розкладу (дивізіон, ліга та міжліга) складається з блоків, у "
+"яких усі грають проти інших. Тому правила MLB завжди дотримуються. Генетичне"
+" програмування обирає та наказує блокам зменшити подорожі."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"Попередній результат: %(resultado)s, у %(corridas)s заїздів з %(equipos)s "
+"командами."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1161,182 +1106,1862 @@ msgid ""
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
 msgstr ""
+"Перегляд коду, щоб підтвердити, чому PG не кращий за випадковий вибір "
+"календарів. Кросовер і мутації руйнують життєздатність календарів, а вага "
+"фізичної форми призводить до того, що діти втрачають перевагу батькам "
+"початкового покоління."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "Clear Mode"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "Двигун: %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
 msgstr ""
+"<strong>Примітка:</strong> ця демонстрація використовує тезовий рушій. Цей "
+"рушій не кращий, ніж випадковий вибір календарів."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
 msgstr ""
+"Покращений двигун був кращим у попередніх тестах: %(resultado)s, за "
+"%(corridas)s заїздах. У цій демонстрації його ще немає."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
 msgstr ""
+"Для шкільного проєкту це плюс: у вас є базовий рівень і покращення, які "
+"можна виміряти."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "Перегляньте результати кожного релізу"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
+"У тестах: %(resultado)s, у %(corridas)s пробігах з %(equipos)s командами."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "Версія дипломної роботи (2026)"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "На 19,5% більше відстані, ніж вибір випадкових календарів"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "Блоковий двигун (оновлена версія)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "На 13% менше подорожей, ніж вибір випадкових календарів"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "Скорочення (наприклад, SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "Назва команди"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "Місто"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "Широта стадіону"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "Довжина стадіону"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "У десяткових градусах. Приклад: 47,59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "У десяткових градусах. Приклад: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "Команди ліги"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "Назва ліги"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "Виберіть щонайменше 2 команди."
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "Назва турніру"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "Перший день"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "Останній день"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "Ігри за серіями"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "Командна серія"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "Останній день має бути таким самим, як і перший, або після нього."
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "Це має бути 1 або більше."
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "Назва конфігурації"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "Розмір популяції"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "Кількість поколінь"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "Ймовірність перетину (0 до 1)"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "Ймовірність мутації (0 до 1)"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "Він має бути між 0 і 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "Обладнання"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "Ліга"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "Турнір"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "Місця дії"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "Календар"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "Спочатку виконайте цей крок."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "Додано обладнання."
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "Згенеровані ігри."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "14 листопада 2026 року"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
+msgstr "Покроковий алгоритм: перевершив офіційний розклад MLB 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
 msgstr ""
+"Ми прибрали правило, що всі 30 команд грають триденні серії одночасно. З "
+"серіями з 2, 3 і 4 ігор і перервами найкращий алгоритм долає 1,57 мільйона "
+"км. Офіційний календар охоплює 1,74 мільйона. Обидва відповідають однаковим "
+"правилам реалізму."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr "Перегляньте актуальні дослідження з анімованими діаграмами"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "12 листопада 2026 року"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "Демо показує справжній сезон 2023 року"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr ""
+"Ви можете побачити фактичний розклад Головної ліги бейсболу 2023 року, не "
+"чекаючи, поки двигун запрацює."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "Переглянути сезон 2023 року"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "9 листопада 2026 року"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "Покрокова історія"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr "Пояснення з картою 30 етапів, дерев і еволюції, крок за кроком."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "Прочитайте історію"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "Другий аудит досвіду"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr ""
+"Перегляд доступності, зручності використання та взаємодії людини з ШІ було "
+"повторено. З 28 пунктів першого питання 13 були вирішені. Більшість нових "
+"моментів вже виправлені."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr "Він запустив двигун у серію, а потім з блоками двигуна."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "5 листопада 2026 року"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "Відкрийте 5-кроковий посібник"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr ""
+"Генетичне програмування для створення бейсбольних календарів. Дисертація "
+"Леслі Дікінсона (ITAM) з чесними результатами."
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr ""
+"Koza-TTP: карта бейсбольних стадіонів з маршрутом команди та деревом "
+"генетичного програмування."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "Перейти на головний сайт"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "Меню"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "Як це працює"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "Леслі Дікінсон"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "Головний сайт"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "Контакт"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "Моя дисертація сказала правду"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"Пілотний проєкт дипломної роботи був не кращим, ніж випадковий вибір "
+"календарів: %(resultado)s. Повідомляти про це так, не приховуючи цього, було"
+" правильним рішенням. Цей результат показав, що потрібно виправити, щоб "
+"покращити двигун."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "Поточні дослідження"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr ""
+"Все, що ми намагалися, щоб обігнати офіційний розклад MLB 2023 з анімованими"
+" діаграмами."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "Поточні дослідження: перевершення офіційного календаря"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr ""
+"Мета: Розклад сезону Головної ліги бейсболу 2023 року, який подорожує менше,"
+" ніж офіційний, і відповідає тим самим правилам. Офіційний розклад проходить"
+" 1,74 мільйона км."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr ""
+"Оновлено 14 листопада 2026 року (вдень). Ці алгоритми тестуються: сайт і "
+"демонстрація їх ще не використовують."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "1. Результати всіх тестів"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"Кожен бар — це загальна подорож 30 команд за сезон, у мільйонах км. Менше — "
+"краще. Всі показники вимірювалися однаково: кожна команда залишає свій дім, "
+"переїжджає зі стадіону на стадіон і повертається наприкінці."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "Загальна поїздка за версією алгоритму"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "Алгоритми Koza-TTP"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "Офіційний календар 2023 року"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr ""
+"Два алгоритми покрокового відпалу випередили офіцера приблизно на 9%%. "
+"Таблиця нижче містить ті ж дані."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "Усі тести — від найстаріших до найновіших"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "Total Trip"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "Чи грає вона за правилами?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "Що ми дізналися"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "Блочний алгоритм, без правил реалізму"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "1,85 мільйона км"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "Ні: тури до 36 ігор поспіль"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr "Він здавався близьким до офіцера, але зраджував."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "Блочний алгоритм з правилами"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "2,19 мільйона км"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "Не виконує їх"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr "Фіксовані блоки не дозволяють добре організувати екскурсії."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "Змішані блоки з лінійками"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "2,00 мільйона км"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "Так"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr "Краще, але всі 30 команд все ще грають одночасно."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr "Зсуви з наборами з 2, 3 і 4 наборів + імітація відпалу"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "1,52–1,60 мільйона км"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "3 з 4 очок (один тривав додатковий день)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr ""
+"Скасування правила «все одразу» — це те, що приносить офіцеру перемогу."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr "Зміни + тиждень як MLB + PG, який приймає лише покращення"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "1,70 мільйона км (середнє)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "Так, 4 з 4"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr ""
+"Він ледь перемагає офіцера, але майже зрівнює рахунок випадковими ходами."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "Випадкові рухи, така ж зусилля, як у PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "Справедливий базовий рівень для вимірювання PG."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "Зміни + тиждень + ручне відпал"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "1,567 мільйона км (у середньому 8 календарів)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "Прийняття гірших змін на початку дуже допомагає."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "Зміни + тиждень + температура навчання PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "1,571 мільйона км (у середньому 8 календарів)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr ""
+"PG розробляє власну лінійку і майже відповідає ручній лінійці (на 0,3%% "
+"більше)."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "Той самий PG, але з більшою різноманітністю та більшою практикою"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "1,583 мільйона км (у середньому 8 календарів)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "Так, 8 з 8"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr ""
+"Практика коротких пробіжок не навчає найкращому правилу для довгих пробіжок."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "Офіційний розклад MLB 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "1,74 мільйона км"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr ""
+"Мета. Вона також відповідає правилам, які ми не моделюємо, наприклад, дати "
+"на стадіонах і телебачення."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"Правила реалізму: максимум 12 поспіль ігор вдома або на виїзді, відсутність "
+"повторних суперників у серіях поспіль, максимум 20 днів поспіль з грою та "
+"сезон тривалістю 186 днів. З офіційного календаря ми зберігаємо лише "
+"розрахункові цифри, відповідно до умов використання MLB."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "2. Велика зміна: ходи з сетами по 2, 3 і 4 партії"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"Раніше всі 30 команд грали 3-денні серії одночасно без перерв. Тепер сезон "
+"поділений на будні (4 дні) та вихідні (3 дні) зміни, як і в MLB. Кожна "
+"команда грає серію з 2, 3 або 4 ігор, або робить відпочинок."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "Попередня модель проти покрокової моделі"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "Пауза"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "Серія (число показує, скільки ігор)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "Перерва"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"Шість команд у вісім змін. У попередній моделі всі грають по 3 дні в кожній "
+"зміні. У змінній моделі серія триває 2, 3 або 4 дні, і є перерви, тож тури "
+"можна організовувати з більшою свободою."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "3. Основний рух: ланцюг Кемпе"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr ""
+"Щоб змінити розклад без того, щоб команда грала дві серії одночасно, беруть "
+"два ходи і чергується ланцюг серій. Усі серії в ланцюжку змінюються "
+"одночасно. Розклад залишається дійсним."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "Ланцюг Кемпе між ходами A і B"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "Серія в Shift A (Solid Line)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "Серія на повороті B (пунктирна лінія)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr ""
+"Вісім команд. Мережа починається в NYA і проходить через BOS, TOR і BAL. "
+"Чотири сезони змінюють зміни. Інші сезони не змінюються."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "4. Чому відпал переміг PG?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr ""
+"Перший PG використовував ті ж рухи, що й відпал, але це було 1,70 мільйона "
+"км, а відпал — 1,58. Є три причини."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>Він погоджувався лише на покращення.</strong> Тож він застрягає в "
+"першій «долині», яку знаходить. Відпал погоджується спочатку трохи "
+"погіршитися, і це дозволяє йому перейти «пагорб» і дістатися глибшої долини."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr ""
+"<strong>Він доклав зусиль.</strong> У кожному поколінні він пробує 16 "
+"рецептів і веде календар лише найкращих. Відпал зберігає кожен його крок."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr ""
+"<strong>Він повторював ті самі місця.</strong> Фіксовані числа в дереві "
+"завжди вказують на ті ж ходи і команди. Випадкові ходи проходять крізь весь "
+"календар."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "Лише покращення проти прийняття гірших змін"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "Приймає лише покращення (коло)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "Відпал: приймає гірші зміни (ромб)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr ""
+"Лінія — це вартість календаря: нижче — краще. Коло спускається до першої "
+"долини і залишається там. Ромб піднімається на пагорб, бо погоджується трохи"
+" гірше, і досягає найглибшої долини."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr "5. PG, який вчиться, коли приймати гірші зміни"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr ""
+"Щоб виправити першу причину, PG тепер розробляє правило відпалу. Дерево "
+"визначає, скільки км погіршення приймається на кожному кроці. Подивіться на "
+"два дані: на якій стадії проходить процес і скільки змін було нещодавно "
+"прийнято."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr ""
+"PG тренувалася з короткими пробіжками на 2 календарях. Потім ми спробували "
+"переможне дерево на 4 календарях, які вона ніколи не бачила. Ось дерево "
+"перемоги:"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr ""
+"Коротко кажучи: допуск невеликий — близько 60–1 200 км, і він зростає, коли "
+"зміни майже не приймаються. Ручна лінійка робить навпаки: починається з 20 "
+"000 км і поступово знижується до 50."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "Допуск у км протягом усього забігу (логарифмічна шкала)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "Ручна лінійка"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "PG, якщо прийнято мало змін (5%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "PG, якщо приймати багато змін (50%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr ""
+"Ручне правило зменшується з 20 000 до 50 км. Правило PG залишається між 60 і"
+" 1 200 км і залежить від кількості прийнятих змін. Обидві програми сягають "
+"приблизно 1,57 мільйона км."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "6. Що далі"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr ""
+"PG майже зрівнявся з відпалом, але все одно не перевершив його. У 8 нових "
+"календарях ручна лінійка долає 1,567 мільйона км, а лінійка PG — 1,571."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"Ми намагалися надати їй більше різноманіття (без повторюваних рецептів) і "
+"більше практики (3 календарі, 32 рецепти, 16 поколінь). Було гірше: 1,583 "
+"мільйона км. PG тренується з короткими пробіжками по 40 000 кроків, а тест "
+"використовує 400 000. Хороше правило для малого бігу — не найкраще для "
+"багатого бігу."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr ""
+"Наступний крок — щоб PG потренувалася з пробіжками, які більше схожі на "
+"тест, і починаючи з ручної лінійки, щоб вона могла лише покращити її."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "Перегляньте код цих тестів на GitHub"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "Алгоритм дисертації"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "Оригінальний алгоритм дисертації (2026)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "Дивіться справжній сезон 2023 року, не чекаючи"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "Натисніть на дерево, щоб побачити його більшим."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr ""
+"Дерево — це програма, яка складає найкращий календар. Кожна гілка "
+"приєднується до ігор; листя — це ігри (дата, домашня команда та виїзна "
+"команда)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "Загальна кількість поїздок усіх команд:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "Ігри, що порушують правила:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr ""
+"Одне з правил полягає в тому, що кожна команда грає ту кількість ігор, яку "
+"вимагає турнір. <strong>0 ігор, які порушують правила</strong> , означає, що"
+" розклад дійсний."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr ""
+"Це може тривати від кількох секунд до кількох хвилин. Це залежить від "
+"кількості комп'ютерів."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "Двигун працює."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr ""
+"Він створює календарі, поєднує їх і зберігає найкращі. Не закривай цю "
+"сторінку."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "Збережені параметри"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "Конфігурація «%(nombre)s»"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr ""
+"<strong>Важливо:</strong> тезовий рушій зберігає ці значення, але не "
+"використовує їх. Він завжди працює з популяцією 100, 20 поколінь, кросовером"
+" 0,8 і мутацією 0,2."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "Команди для запуску"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"Скопіюйте це питання і вставте його у майстер, яким користуєтеся. Додайте "
+"файл programa_genetico/programagenetico.py (дисертаційний двигун) або "
+"programa_genetico/motor_bloques.py (покращений рушій)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "Найкраще календарне дерево"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "Від %(a)s до %(b)s."
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "Етапи демонстрації"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "Демо: Налаштування"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "Крок 2: Підготовка"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr "Всі значення вже обрані. Ви можете змінити їх або надати \\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "Змініть спорядження"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "Турнір"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "Алгоритм"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "Далі: Перегляньте календар"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "Демо: Обирайте команди"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr ""
+"Демо Koza-TTP: Створіть бейсбольний календар із найновішим алгоритмом у 3 "
+"кроки."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "Крок 1: Оберіть обладнання"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr ""
+"Алгоритм складає розклад для обраних вами команд і шукає ту, з найменшою "
+"кількістю подорожей. Ми вже позначили 10 команд Головної ліги. Якщо хочете, "
+"натисніть «Далі», нічого не змінюючи."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "Далі: Підготовка"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "Віддаєте перевагу повному королівському сезону?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "Дивіться сезон 2023: 30 команд за офіційним календарем"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "Хочете реєструвати власні команди та стадіони?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "Зроби сам у п'ятикроковому посібнику"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "Демо: календар"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "Крок 3: Календар"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "Новіший алгоритм: покрокова модель"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>: %(n)s команд."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "Чого досяг алгоритм"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr "Загальна кількість поїздок усіх команд за розкладом алгоритму."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr "Подорожуйте за випадковим календарем, перш ніж оптимізувати."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr "Менше подорожей, ніж випадковий календар."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "Дотримуйтесь усіх правил"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "Календар раптово зламався %(a)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "Які правила ви переглядаєте?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr ""
+"Максимум 12 домашніх або виїзних ігор поспіль. Тут: %(n)s вдома і %(m)s на "
+"виїзді."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "Максимум 20 днів поспіль з грою. Тут: %(n)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr "Не грати проти одного й того ж суперника у двох серіях поспіль."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr "Домашні матчі приблизно наполовину. Тут: %(a)s до %(b)s на команду."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "Як пройшла поїздка"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr ""
+"Загальна поїздка зменшилася з %(a)s км до %(b)s км за %(p)s пошукових "
+"кроків."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "Перший %(n)s %(t)s ігор"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "Вдома"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "Відвідайте"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "Переглянути всі ігри"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "Всі ігри"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "Що далі?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "Змініть налаштування і запустіть знову"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "Вибір іншого обладнання"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr "Дивіться повний сезон 2023: 30 команд за офіційним календарем"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "Зрозумійте, як це працює, за 2 хвилини"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr "Зроби сам: зареєструй своє обладнання у п'ятикроковому посібнику"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "Див. оригінальний алгоритм дисертації"
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "Зрозуміти ідею за 2 хвилини"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr ""
+"Анімаційна історія Koza-TTP: карта бейсбольних подорожей, дерева генетичного"
+" програмування та шлях пілота від дипломної роботи до покращеного рушія."
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "2 хвилини · 7 кроків"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "Етапи історії"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "Стадіони"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "Подорожі"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "Дерево"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "Кросовер"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "Мутація"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "Покоління"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "Результат"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "Частина 1 · Проблема"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "30 команд мають зіграти одна з одною"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr ""
+"Головна ліга бейсболу має 30 команд. Кожна команда грає 162 ігри за сезон."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr ""
+"Календар показує, хто грає проти кого, у яку дату і на якому стадіоні."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "Торкніться стадіону на карті, щоб побачити його назву."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "Кожна поїздка коштує часу і грошей"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr ""
+"Коли команда грає на виїзді, вони подорожують літаком. Поганий розклад "
+"змушує їх багато разів перетинати країну."
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr "Приклад туристичної поїздки з датами у випадковому порядку."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr "Зайдіть на інший стадіон, щоб подивитися тур цієї команди."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "Частина 2 · Ідея дисертації"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "Календар можна записати у вигляді дерева"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr ""
+"Генетичне програмування не пише календар вручну. Воно <strong>пише "
+"інструкції</strong> для його покращення."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"Ці інструкції утворюють дерево. <strong>Листя</strong> — це серії ігор, "
+"таких як «SEA–NYA». <strong>Гілки</strong> — це дії, такі як «обмін місцями»"
+" двох серій дат або «інвертування локальності» (зміна, хто грає вдома)."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "Перехрестя: Два дерева змішалися"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr "Два дерева, які добре працюють, беруться. Кожне дає гілку."
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "Нове дерево, \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "Мутація: Невелика, випадкова зміна"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr "Іноді одна частина дерева змінюється сама по собі. Тут серія \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr ""
+"Мутація слугує для перевірки нових ідей, яких не мав жоден із батьків."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "Частина 3 · Результат"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "Покоління за поколінням"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr ""
+"Кожне покоління має багато дерев. Ті, хто створює календарі з меншими "
+"подорожами, мають більше дітей."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr ""
+"Пунктирна лінія — це мінімальна мета: найкращий календар, <strong>обраний "
+"випадково</strong> з однаковими зусиллями."
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "Виберіть двигун, щоб побачити, як він себе покаже."
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "Від пілота до робочого двигуна"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"Покращений рушій, за блоками, справді перевершує його випадково: "
+"%(resultado)sу попередніх тестах (%(corridas)s проходження, %(equipos)s "
+"командах)."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr ""
+"Пілотний етап дисертації (2026) <strong>був не кращим</strong> , ніж "
+"випадковий вибір календарів: %(resultado)s."
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "Протестуйте інструмент у 5 кроків"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "Перегляньте всі 30 стадіонів у вигляді таблиці"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "Дані з файлу проєкту teams.csv."
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "Код"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "Команда"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "Стадіон"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "Розташування"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "Раніше"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "Далі"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr ""
+"Koza-TTP: генетичне програмування для бейсбольних календарів. Вона "
+"починалася як дипломна робота Леслі Дікінсона (ITAM) і сьогодні має двигун, "
+"який долає випадковість."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "Кращий розклад MLB з генетичним програмуванням."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"Koza-TTP народилася як моя дипломна робота в ITAM. Той перший пілот не "
+"пройшов випадково. Блочна версія так: %(resultado)s, у попередніх тестах. "
+"Тут я покажу, як це працює."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr ""
+"Анімаційна історія: карта подорожей, дерева генетичного програмування та "
+"результат."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "Сезон 2023: двигун проти справжнього календаря"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr ""
+"Повторення циклу роботи генетичного програмного двигуна з усіма 30 командами"
+" Головної ліги бейсболу у 2023 році, порівняно з офіційним розкладом і "
+"випадковістю."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "Сезон 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "Демо з реальними даними · Головна ліга бейсболу 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr ""
+"Ми використовуємо 30 команд Головної ліги бейсболу та їхні реальні стадіони."
+" Офіційний розклад 2023 року — це референс. Блочний двигун намагається "
+"зібрати сезон з меншими поїздками."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "Як зменшуються кілометри, покоління за поколінням"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr ""
+"Це справжній запуск двигуна, збережений для перегляду без очікування. У "
+"ньому %(generaciones)s поколінь по 100 календарів кожне."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "Гра"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "Генерація"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "Бокова ковзна дошка"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "Подорожі 30 команд протягом регулярного сезону."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "Найдовший тур (виїзні матчі поспіль)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "Більше домашніх матчів поспіль"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "Офіційний представник Головної ліги бейсболу"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "мільйон км"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "Краще випадково, з такими ж зусиллями"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "Вона не відповідає кількості ігор кожної команди."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr ""
+"Двигун <strong> їздить на%(pct)s%% менше, ніж</strong> випадковий найкращий "
+"розклад. Двигун навчається."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr ""
+"Офіційний календар <strong> подорожує на%(pct)s%% менше, ніж</strong> "
+"двигун. Ми досі не перемогли його."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"Примітка: у календарі двигунів є тури до <strong>%(gira)s виїзних матчів "
+"поспіль</strong>. Офіційний календар має максимальний %(oficial)s. Справжня "
+"команда не прийме такі довгі тури."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "Шлях кожної команди"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr ""
+"Перемикайтеся між двома розкладами, щоб побачити, які команди подорожують "
+"найчастіше."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "Календар карти"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "Офіційна діяльність"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "Двигун"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "Перегляньте всі 30 команд у вигляді таблиці"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "Офіційна (км)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "Двигун (км)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "Звідки походять дані"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr ""
+"Офіційний розклад: регулярний сезон Major League Baseball 2023 (MLB Stats "
+"API). Тут ми зберігаємо лише розраховані цифри, а не розклад."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr ""
+"Відстані: пряма лінія між стадіонами (формула напіввсесвіту). Кожна команда "
+"залишає свій дім, подорожує від стадіону до стадіону і повертається "
+"наприкінці."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr ""
+"Блочний двигун: 100 календарів на покоління, %(evaluaciones)s календарів "
+"загалом оцінено. Chance оцінив однакову кількість."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "Організуй власний турнір"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "Як працює двигун"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "Блоки з правилами"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "Ходи + Випадкові ходи"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "Ходи + PG (тільки покращення)"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "Зсуви + температура навчання PG"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "Зміщення + ручне відпал"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "Старий: Усі грають по 3 дні за хід"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "Зараз: серії з 2, 3 і 4 ігор з перервами"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "Поворот"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "У будні дні"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "Вихідні"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "Turn A"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "Поворот B"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "1. Ми обираємо команду і дві зміни"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "2. Ми слідуємо ланцюгу: А, Б, А, Б..."
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "3. Перемикачі ланцюгової послідовності"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "Вартість календаря"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "Найкраще"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "Перша долина"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "Глибша долина"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "Хід кориди"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "Дім"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "Кінець"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "від руки"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "PG, 5%"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "PG, 50%"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "Мій тестовий турнір"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr "Необов'язково. Якщо на цьому зупинитися, це ім'я використовується."
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "Турнірні команди"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr "Ми вже набрали 10. Можна змінити їх: з 3 до 10 команд."
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "Карта 30 стадіонів Вищої ліги"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr "Приклад туру {Team}: 12 візитів у випадковому порядку."
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr "Ви обрали {team}. Виконайте крок 2, щоб побачити їхні подорожі."
+
+#: tesis/historia.py
+msgid "km"
+msgstr "км"
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "Комбайн"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "Обмін"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "Інвест Локалітет"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "Дім"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "Відвідайте"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "Батько А"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "Батько B"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "Сину"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr ""
+"Приклад дерева: об'єднати з двома гілками: обміняти SEA-NYA на BOS-TEX і "
+"інвестувати локальність LAN-CHN вдома."
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr ""
+"Кросовер: батько А дає ліву гілку, а батько Б — ліву; син поєднує обидві "
+"гілки."
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "Мутація: На дереві листок SEA–NYA змінюється на SEA–OAK."
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "Подивись ще раз"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "Подорожі (випадкові = 100)"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "Шанс"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "Населення (48 дерев)"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "Більше кольору = менше подорожей"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "Дисертаційний двигун"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{двигун} · {g} генерація {total}"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{двигун} · завершено: {результат}."
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr ""
+"{двигун}: починається з {старту} і закінчується на {кінець} (шанс = 100). "
+"Результат: {результат}."
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr ""
+"Відстань проти випадку: тезовий двигун {теза}, випадково обирайте 100, "
+"блокуйте двигун {блоки}."
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "Дисертаційний двигун (2026)"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "Вибір календарів випадковим чином"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "Блоковий двигун (попередній варіант)"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr "Ви також можете використовувати стрілки на клавіатурі."
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr ""
+"Кілометри сезону за генерацією двигуна, порівняно з офіційним календарем і "
+"випадковістю"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "Офіційний календар"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "Краще випадково"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}: {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr "Вона досі не відповідає кількості ігор кожної команди."
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr ""
+"Вертикальна вісь: від {min} до {max} мільйона км. Горизонтальна вісь: від "
+"поколінь 0 до {останнього}."
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr "Карта: Кожне коло — це команда; більше — більше миль у сезоні"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{team}: {km} km"

@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "Optimalizálási eredmények"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "Kattints a fára a bővítéshez"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "Teljes utazási költség:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "Szabálysértések:"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Futtatás optimalizálása"
 
@@ -133,10 +121,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "A legfrissebbtől a legrégebbig."
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "Tervezett"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "A motor kontextuális operátorai"
 
@@ -165,10 +149,6 @@ msgstr ""
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "2026. november 3."
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "Folyamatban"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -616,10 +596,6 @@ msgstr ""
 "utazik az egyes csapatok."
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "Demó · Tisztességes utazás csapatok között"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "Generálj egy naptárt és"
 
@@ -633,6 +609,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"Az MI (genetikai programozás) olyan naptárakat keres, ahol az utazás rövid "
+"és egyenletes. Saját csapatokat akarsz? Használd az <a href=\"%(guia)s\">5 "
+"lépéses útmutatót</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -668,10 +647,6 @@ msgstr "Néhány másodpercig tart."
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "Menetrend: %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "Konfiguráció %(id)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -748,14 +723,6 @@ msgstr "Futtasd a számítógépedön"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "Kérj segítséget az MI asszisztensedtől"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr ""
-"Másold le ezt a kérdést, és beilleszted a használt varázslóba, valamint a "
-"programa_genetico/programagenetico.py fájlba."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -982,31 +949,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "Genetikai programozás baseball naptárak számára"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr ""
-"Koza-TTP: Leslie Dickinson (ITAM) szakdolgozata a baseball naptárak "
-"genetikai programozásáról, őszinte eredménnyel és továbbfejlesztett "
-"motorral."
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "ITAM szakdolgozat · Genetikai programozás · Baseball"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "A szakdolgozatom igazat mondott:"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr ""
-"A Koza-TTP ezt a tézist a genetikai programozással baseball szezonnaptárak "
-"készítésével folytatja. Itt látni fogja, mi ment félre, miért, és hogyan "
-"javítom nyilvánosan."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -1023,13 +967,6 @@ msgstr "2 perc"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "Az ötlet megértése"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr ""
-"Mi az a genetikai programozás, és miért nehéz probléma a baseball naptár?"
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1109,37 +1046,40 @@ msgstr "Automatikus, beleértve Mayat és Otomít is. Meg tudod javítani őket.
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "A véletlenszerű keresés ellen"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "Jobb, mint véletlenszerűen választani?"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "Tesztelés során"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, %(corridas)s futamokban %(equipos)s csapatokkal"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "Igen, az előzetes teszteken"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
 msgstr ""
+"A demó még mindig a szakdolgozati verziót használja. A továbbfejlesztett "
+"motort egy véletlenszerű kereséssel hasonlították össze, amely ugyanannyi "
+"naptárt néz át."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "2026. november 8."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "Blokkmotor"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1148,12 +1088,18 @@ msgid ""
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
 msgstr ""
+"A menetrend minden része (osztály, liga és interliga) blokkokból áll, "
+"amelyekben mindenki mindenki ellen játszik. Ezért mindig betartják az MLB "
+"szabályait. A genetikai programozás választja és rendeli a blokkokat, hogy "
+"csökkentse az utazást."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"Előzetes eredmény: %(resultado)s, %(corridas)s futamban %(equipos)s "
+"csapattal."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1162,182 +1108,1875 @@ msgid ""
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
 msgstr ""
+"Kódáttekintés annak megerősítésére, hogy miért nem jobb a PG a véletlenszerű"
+" naptárak kiválasztásánál. Az átfedés és a mutáció megtöri a naptárak "
+"életképességét, és a fitnesz súlya miatt a gyerekek elveszítik az első "
+"generációs szülőktől."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "Tiszta mód"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "Motor: %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
 msgstr ""
+"<strong>Megjegyzés:</strong> ez a demó a szakdolgozati motort használja. Ez "
+"a motor nem volt jobb, mint véletlenszerűen választani a naptárokat."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
 msgstr ""
+"A továbbfejlesztett motor jobb volt az előzetes tesztekben: %(resultado)s, "
+"%(corridas)s futamban. Még nincs benne ebben a demóban."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
 msgstr ""
+"Egy iskolai projektnél ez előny: van egy alapérték és egy javulás, amit "
+"mérhető lehet."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "Minden kiadás eredményei megtekintése"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
+"Tesztekben: %(resultado)s, %(corridas)s futamokban %(equipos)s csapattal."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "Szakdolgozat változata (2026)"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "19,5%-kal nagyobb távolság, mint véletlenszerű naptárak kiválasztása"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "Blokk motor (továbbfejlesztett változat)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "13%-kal kevesebb utazás, mint véletlenszerű naptárak kiválasztása"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "Rövidítés (pl. SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "Csapat neve"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "Város"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "Stadion szélességi köre"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "Stadion hossza"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "Tizedes fokozatban. Példa: 47,59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "Tizedes fokozatban. Példa: -122,33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "Liga csapatok"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "Liga neve"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "Válassz legalább két csapatot."
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "A torna neve"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "Első nap"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "Utolsó nap"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "Játékok sorozatonként"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "Csapatsorozat"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "Az utolsó napnak ugyanaznak kell lennie, mint az első, vagy utána."
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "Legalább 1 vagy több lehet."
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "Konfiguráció neve"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "Népesség mérete"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "Generációk száma"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "A keresztezés valószínűsége (0-tól 1-hez)"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "Mutáció esélye (0–1)"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "0 és 1 között kellene lennie."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "Felszerelés"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "Liga"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "Verseny"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "Helyszínek"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "Naptár"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "Először ezt a lépést teljesítsd."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "Hozzáadott felszerelés."
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "Játékok generáltak."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "2026. november 14."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
 msgstr ""
+"Körökre osztott algoritmus: felülmúlja az MLB hivatalos 2023-as menetrendjét"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
+msgstr ""
+"Eltávolítottuk azt a szabályt, hogy mind a 30 csapat egyszerre játsszon 3 "
+"napos sorozatokat. A 2, 3 és 4 meccsből és szünetekből álló sorozatokkal a "
+"legjobb algoritmus 1,57 millió km-t tesz meg. A hivatalos naptár 1,74 "
+"milliót tesz meg. Mindkettő ugyanazokat a realizmus szabályait követi."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr "Tekintse meg a jelenlegi kutatásokat animált diagramokkal"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "2026. november 12."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "A demó a valódi 2023-as évadot mutatja"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr ""
+"A 2023-as Major League Baseball tényleges menetrendjét anélkül is "
+"megtekintheted, hogy a motor beindulna."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "Tekintse meg a 2023-as szezont"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "2026. november 9."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "Lépésről lépésre szóló történet"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr ""
+"Magyarázat a 30 szakasz, a fák és az evolúció térképével, lépésről lépésre."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "Olvassa el a történetet"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "Az élmény második audita"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr ""
+"Az akadálymentesség, használhatóság és az ember-mesterséges intelligencia "
+"közötti interakció felülvizsgálata ismételt megismételődött. Az első 28 "
+"pontból 13 megoldódott. Az új pontok többségét már kijavították."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr "Sorba kapcsolta a motort, majd a motorblokkokkal."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "2026. november 5."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "Nyisd ki az 5 lépéses útmutatót"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr ""
+"Genetikai programozás baseball naptárak készítéséhez. Leslie Dickinson "
+"(ITAM) tézise, őszinte eredményekkel."
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr ""
+"Koza-TTP: baseball stadionok térképe csapat útvonalával és genetikai "
+"programozási fával."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "Menj a fő oldalra"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "Menü"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "Hogyan működik"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "Leslie Dickinson"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "Fő helyszín"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "Kapcsolat"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "A szakdolgozatom igazat mondott"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"A szakdolgozat pilóta sem volt jobb, mint véletlenszerűen választani a "
+"naptárt: %(resultado)s. Így jelenteni, anélkül, hogy elrejtenéd, helyes "
+"döntés volt. Ez az eredmény megmutatta, mit kell javítani a motor javítása "
+"érdekében."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "Jelenlegi kutatások"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr ""
+"Minden, amit megpróbáltunk felülmúlni az MLB hivatalos 2023-as menetrendjét,"
+" animált diagramokkal."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "Jelenlegi kutatások: a hivatalos naptár meggyőzése"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr ""
+"Cél: A 2023-as Major League Baseball szezon menetrendje, amely kevesebbet "
+"tesz a hivatalosnál, és ugyanazokat a szabályokat követi. A hivatalos "
+"menetrend 1,74 millió km-t tesz meg."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr ""
+"Frissítve: 2026. november 14. (délután). Ezek az algoritmusok tesztelés "
+"alatt vannak: az oldal és a demó még nem használja őket."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "1. Minden teszt eredményei"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"Minden sáv a 30 csapat egy szezonban összesen megtett útja, milliós "
+"kilométerben. Kevesebb jobb. Minden számot ugyanúgy mértek: minden csapat "
+"elhagyja otthonát, stadionról stadionra jár, és a végén visszatér."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "Teljes utazás algoritmus verzió szerint"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "Koza-TTP algoritmusok"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "Hivatalos naptár 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr ""
+"A két körökre osztott lövöldítési algoritmus körülbelül 9%%-kal előzi meg a "
+"tisztet. Az alábbi táblázat ugyanazokat az adatokat tartalmazza."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "Minden teszt, a legrégebbitől a legfrissebbig"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "Teljes utazás"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "A szabályok szerint játszik?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "Amit tanultunk"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "Blokk algoritmus, realizmus szabályok nélkül"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "1,85 millió km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "Nem: akár 36 meccs is egymás után"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr "Úgy tűnt, közel áll a rendőrhöz, de csalott."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "Blokk algoritmus, szabályokkal"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "2,19 millió km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "Nem találkozik velük"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr "A fix blokkok nem teszik lehetővé, hogy jól megszervezd a túrákat."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "Vegyes blokkok, vonalzókkal"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "2,00 millió km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "Igen"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr "Jobb, de mind a 30 csapat még mindig egyszerre játszik."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr "Eltolások 2, 3 és 4 halmazokkal + szimulált lövöldítés"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "1,52–1,60 millió km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "3 a 4-ből (egy még egy nappal tovább tartott)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr "A \"mind egyszerre\" szabály eltávolítása az, ami megnyeri a tisztet."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr "Műszakok + hét MLB + PG, ami csak fejlesztéseket fogad el"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "1,70 millió km (átlag)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "Igen, 4/4"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr ""
+"Épphogy legyőzi a tisztet, de szinte kiegyenlít véletlenszerű mozdulatokkal."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "Véletlenszerű mozdulatok, ugyanaz az erőfeszítés, mint a PG-ben"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "Jó alap a PG mérésére."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "Műszakok + hét + kézzel készített gesztálás"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "1,567 millió km (átlagosan 8 naptár)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "A rossz változások elfogadása az elején nagyon sokat segít."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "Műszakok + hét + PG tanulási hőmérséklet"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "1,571 millió km (átlagosan 8 naptár)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr ""
+"A PG saját vonalzót tervez, és szinte kapcsolódik a kézzel készített "
+"vonalzóhoz (0,3%%-kal több)."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "Ugyanaz a PG, több változatossággal és gyakorlással"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "1,583 millió km (átlagosan 8 naptár)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "Igen, 8 a 8-ból"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr ""
+"A rövid futásokkal való gyakorlás nem tanítja meg a legjobb szabályt a "
+"hosszú futásokhoz."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "Hivatalos MLB 2023-as menetrend"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "1,74 millió km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr ""
+"A cél. Emellett megfelel azoknak a szabályoknak, amelyeket nem modellezünk, "
+"például stadion dátumokat és televíziót."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"A realizmus szabályai: maximum 12 egymást követő hazai vagy idegenbeli "
+"mérkőzés, nem ismétlődő ellenfél egymást követő sorozatban, maximum 20 "
+"egymást követő nap játék és 186 napos szezon. A hivatalos naptárból csak a "
+"számított adatokat tartjuk meg, az MLB felhasználási feltételei szerint."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "2. A nagy változás: a 2-es, 3-as és 4-es szettek körökben"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"Korábban mind a 30 csapat egyszerre játszott 3 napos sorozatokat, szünet "
+"nélkül. Most a szezon hétköznapi (4 napos) és hétvégi (3 napos) műszakokra "
+"oszlik, akárcsak az MLB. Minden csapat 2, 3 vagy 4 meccset vagy pihenőt "
+"játszik."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "Korábbi modell vs. körökre osztott modell"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "Szünet"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "Sorozat (a szám megmutatja, hány meccs)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "Szünet"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"Hat csapat nyolc műszakban. Az előző modellben mindenki 3 napot játszik "
+"minden műszakban. A műszakmodellben a sorozat 2, 3 vagy 4 napig tart, és "
+"vannak szünetek, így a túrák nagyobb szabadsággal összeállíthatódnak."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "3. A fő mozgalom: a Kempe lánc"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr ""
+"Ha nem játszanak egyszerre két sorozatot, két kört és sorozatláncot "
+"váltanak. A láncban lévő összes sorozat egyszerre vált. A menetrend továbbra"
+" is érvényes."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "Kempe lánc az A és B kör között"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "Sorozat Shift A (Solid Line)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "Sorozat a B kantáron (pontozott vonal)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr ""
+"Nyolc csapat. A hálózat NYA-ban indul, és áthalad a BOS-on, TOR-on és BAL-"
+"on. Négy évadváltás vált. A többi sorozat nem mozdul."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "4. Miért győzte le a párosítás a PG-t?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr ""
+"Az első PG ugyanazokat a mozgásokat használta, mint a gesztálás, de 1,70 "
+"millió km-es volt, és a gesztálás 1,58-as sebességgel. Ennek három oka van."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>Csak a fejlesztéseket fogadta el.</strong> Így beragad az első "
+"\"völgyben\", amit talál. A lövöldítés beleegyezik, hogy először egy kicsit "
+"rosszabb legyen, és ez lehetővé teszi számára, hogy átkeljen a \"dombon\" és"
+" elérjen egy mélyebb völgyet."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr ""
+"<strong>Energiát fektetett.</strong> Minden generációban 16 receptet próbál "
+"ki, és csak a legjobbak naptárát tartja fenn. A gesztálás minden lépését "
+"megőrzi."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr ""
+"<strong>Ugyanazokat a helyeket ismételte.</strong> A fa rögzített számai "
+"mindig ugyanazokat a köröket és csapatokat mutatják. Véletlenszerű "
+"mozdulatok futnak végig az egész naptáron."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "Csak a jobb megoldások a rosszabb változások elfogadása ellen"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "Csak fejlesztéseket fogad el (kör)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "Lágyítás: elfogadja a rosszabb változásokat (rombus)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr ""
+"A vonal a naptár költsége: alacsonyabb az jobb. A kör lemegy az első "
+"völgybe, és ott marad. A rombus felmegy a dombra, mert beleegyezik, hogy egy"
+" kicsit rosszabb legyen, és eléri a legmélyebb völgyet."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr "5. A PG, aki megtanulja, mikor kell elfogadni a rosszabb változásokat"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr ""
+"Az 1-es ok kijavításához a PG most megtervezi a gesztálási szabályt. Egy fa "
+"dönti el, hogy hány km-es romlást fogadnak el minden lépésben. Nézz meg két "
+"adatdarabot: milyen messze van a futás, és hány változtatást fogadtak el "
+"nemrég."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr ""
+"A PG két naptáron gyakorolt rövid futásokkal. Ezután kipróbáltuk a nyerő fát"
+" négy naptáron, amit ő sosem látott. Ez a nyerő fa:"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr ""
+"Röviden: a tűrés kicsi, körülbelül 60–1200 km, és akkor nő, amikor a "
+"változtatásokat szinte nem fogadják el. A kézzel készített vonalzó éppen az "
+"ellenkezőjét teszi: 20 000 km-nél kezdődik, majd fokozatosan 50-re csökken."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "Tűrés km-ben a futás során (logaritmikus skála)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "Kézzel készített vonalzó"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "PG, ha néhány változtatást elfogadnak (5%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "PG, ha sok változtatást elfogadnak (50%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr ""
+"A kézzel készített szabály 20 000-ről 50 km-re csökken. A PG szabály 60 és 1"
+" 200 km között marad, és attól függ, hány változtatást fogadnak el. "
+"Mindkettő körülbelül 1,57 millió km-es naptárt követ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "6. Mi a következő lépés"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr ""
+"A PG majdnem egyenlő volt a lövöldítéssel, de mégsem győzte meg. 8 új "
+"naptárban a kézzel készített vonalzó 1,567 millió km-t tesz meg, míg a PG "
+"1,571-et."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"Próbáltunk több változatosságot adni (ismételt receptek nélkül) és több "
+"gyakorlást (3 naptár, 32 recept, 16 generáció). Még rosszabb volt: 1,583 "
+"millió km. A PG rövid, 40 000 lépéses futásokat gyakorol, de a teszt 400 000"
+" lépést használ. Egy jó szabály kevéssé futásra nem a legjobb, ha sokat "
+"futunk."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr ""
+"A következő lépés, hogy a PG olyan futamokat gyakorol, amelyek inkább a "
+"teszthez hasonlítanak, és a kézzel készített vonalzóból kezd, hogy csak "
+"javíthassa."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "Tekintse meg ezeknek a teszteknek a kódját a GitHubon"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "Szakdolgozati algoritmus"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "Eredeti szakdolgozat algoritmus (2026)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "Nézd meg az igazi 2023-as szezont, várakozás nélkül"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "Kattints a fára, hogy nagyobbat láss."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr ""
+"A fa az a program, amely összeállítja a legjobb naptárt. Minden ág "
+"csatlakozik a játékokhoz; a levelek a játékokat jelentik (dátum, hazai "
+"csapat és vendégcsapat)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "Az összes csapat összes utazása:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "Szabályokat megszegő játékok:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr ""
+"Az egyik szabály, hogy minden csapat annyi meccset játssz, amennyit a torna "
+"előír. <strong>0 olyan meccs, amely megszegi a szabályokat</strong> , azt "
+"jelenti, hogy a menetrend érvényes."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr ""
+"Néhány másodperctől több percig is eltarthat. Ez a számítógépek számától "
+"függ."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "A motor működik."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr ""
+"Naptárakat készít, összevonja őket, és a legjobbakat tartja meg. Ne zárd be "
+"ezt az oldalt."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "Mentett paraméterek"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "\"%(nombre)s\" konfiguráció"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr ""
+"<strong>Fontos:</strong> a szakdolgozatmotor ezeket az értékeket menti, de "
+"nem használja őket. Mindig 100 fős populációval, 20 generációval, 0,8 "
+"keresztezéssel és 0,2 mutációval fut."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "Parancsok a futtatásához"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"Másold le ezt a kérdést, és beilleszted a használt varázslóba. Csatold hozzá"
+" a programa_genetico/programagenetico.py (tézismotor) vagy a "
+"programa_genetico/motor_bloques.py (enhanced engine) fájlt."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "Legjobb naptárfa"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "%(a)s-től %(b)s-ig."
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "Demo lépések"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "Demó: Beállítás"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "2. lépés: Beállítás"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr ""
+"Minden érték már ki van választva. Megváltoztathatod őket, vagy adhatsz \\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "Cserélőfelszerelés"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "A torna"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "Az algoritmus"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "Következő: Tekintse meg a naptárt"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "Demó: Válaszd ki a csapatokat"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr ""
+"Koza-TTP Demo: Építs egy baseball naptárt a legújabb algoritmussal három "
+"lépésben."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "1. lépés: Válaszd ki a felszerelést"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr ""
+"Az algoritmus összeállít egy menetrendet a kiválasztott csapatokról, és azt "
+"keresi, amelyen a legkevesebb utazás van. Már 10 Major League csapatot "
+"jelöltünk meg. Ha szeretnéd, kattints a \"Következő\" gombra anélkül, hogy "
+"bármit változtatnál."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "Következő: Beállítás"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "Szereted nézni egy teljes királyi évadot?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "Nézd meg a 2023-as szezont: 30 csapat a hivatalos naptár ellen"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "Szeretnéd regisztrálni saját csapataidat és stadionokat?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "Csináld magad az 5 lépéses útmutatóban"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "Bemutató: a naptár"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "3. lépés: A naptár"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "Újabb algoritmus: Körökre osztott modell"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>: %(n)s csapat."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "Mit ért el az algoritmus"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr "Az algoritmus menetrendje szerint minden csapat teljes utazása."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr ""
+"Utazás egy véletlenszerűen készített naptárral, mielőtt optimalizálnád."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr "Kevesebb utazás, mint a véletlenszerű naptár."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "Kövesd az összes szabályt"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "A naptár véletlenszerűen megtörte %(a)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "Milyen szabályokat vizsgálsz?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr ""
+"Maximum 12 hazai vagy idegenbeli mérkőzés egymás után. Itt: %(n)s hazai és "
+"%(m)s idegen."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "Maximum 20 nap egymás után játékkal. Itt: %(n)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr "Nem ugyanazzal az ellenféllel játszom két sorozatban egymás után."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr "A hazai mérkőzések körülbelül fele. Itt: %(a)s %(b)s csapatonként."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "Hogyan zajlott az utazás"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr ""
+"Az összesített út %(a)s km-ről %(b)s km-re csökkent %(p)s keresési lépésben."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "Az első %(n)s %(t)s játék"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "Otthon"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "Látogatás"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "Minden mérkőzés megtekintése"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "Minden mérkőzés"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "Mi következik?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "Változtasd meg a beállításokat, és futtasd újra"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "Egyéb felszerelések kiválasztása"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr ""
+"Nézze meg a teljes 2023-as szezont: 30 csapat a hivatalos naptár ellen"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "Megértsd meg, hogyan működik 2 perc alatt"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr "Csináld magad: regisztráld a felszerelésedet az 5 lépéses útmutatóban"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "Lásd a szakdolgozat eredeti algoritmusát"
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "Értsd meg az ötletet 2 perc alatt"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr ""
+"Koza-TTP animációs történet: a baseball utazások térképe, a genetikai "
+"programozás fái és a pilot útja a szakdolgozattól a továbbfejlesztett "
+"motorig."
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "2 perc · 7 lépés"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "Történelem lépései"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "Stadionok"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "Utazás"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "Fa"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "Átfedés"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "Mutáció"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "Generációk"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "Eredmény"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "1. rész · A probléma"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "30 csapatnak kell egymással játszania"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr ""
+"A Major League Baseballnak 30 csapata van. Minden csapat 162 mérkőzést "
+"játszik egy szezonban."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr ""
+"Egy naptár megmutatja, ki játszik kivel szemben, milyen napon és melyik "
+"stadionban."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "Koppints meg egy stadiont a térképen, hogy meglásd a nevét."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "Minden utazás időt és pénzt igényel"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr ""
+"Amikor egy csapat idegenben játszik, repülővel utazik. A rossz menetrend "
+"miatt sokszor átszelik az országot."
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr "Egy példa túra, a dátumok véletlenszerű sorrendben."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr "Érints egy másik stadiont, hogy megnézd annak a csapatnak a túráját."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "2. rész · A tézis ötlete"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "A naptár faként is írható"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr ""
+"A genetikai programozás nem kézzel írja a naptárt. <strong>Utasításokat "
+"ír</strong> annak fejlesztésére."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"Ezek az utasítások fát alkotnak. <strong>A levelek</strong> játékok "
+"sorozata, például \"SEA–NYA\". <strong>Az ágak</strong> olyan akciók, mint "
+"például két dátumsorozat \"cseréje\" vagy \"hely megfordítása\" (azaz otthon"
+" játszó kik cserélik)."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "Átkelés: Két fa keveredik"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr "Két jól működő fát vesznek el. Mindegyik ad egy ágat."
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "Az új fa, a \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "Mutáció: Egy apró, véletlenszerű változás"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr "Néha a fa egyik darabja magától változik. Itt a sorozat \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr ""
+"A mutáció új ötleteket tesztel, amiket egyetlen szülőnek sem tudtak megélni."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "3. rész · Az eredmény"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "Generációról generációra"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr ""
+"Minden generációnak sok fája van. Azok, akik kevesebb utazással naptárt "
+"készítenek, több gyermeket hoznak."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr ""
+"A szaggatott vonal a minimális cél: a legjobb naptár, amelyet "
+"<strong>véletlenszerűen</strong> választanak ki ugyanezzel az "
+"erőfeszítéssel."
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "Válassz egy motort, hogy lásd, hogyan teljesít."
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "A pilóttól a működő motorig"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"A továbbfejlesztett motor blokkokkal véletlenszerűen megelőzi: "
+"%(resultado)saz előzetes teszteken (%(corridas)s futás, %(equipos)s csapat)."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr ""
+"A szakdolgozat pilot (2026) <strong>nem volt jobb</strong> , mint "
+"véletlenszerűen választani a naptárakat: %(resultado)s."
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "Teszteld az eszközt 5 lépésben"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "Tekintse meg mind a 30 stadiont táblázatként"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "Adatok a teams.csv projektfájlból."
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "Kód"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "Csapat"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "Stadion"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "Elhelyezkedés"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "Korábbi"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "Következő"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr ""
+"Koza-TTP: genetikai programozás baseball naptárokhoz. Leslie Dickinson "
+"(ITAM) szakdolgozatával kezdődött, és ma már van egy motorja, amely legyőzi "
+"a véletlent."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "Jobb MLB menetrend genetikai programozással."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"A Koza-TTP az ITAM-en született a szakdolgozatom. Az első pilot nem "
+"véletlenszerűen ment át. A blokk verzió a következőket teljesíti: "
+"%(resultado)s, az előzetes tesztekben. Itt mutatom meg, hogyan működik."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr ""
+"Egy animált történet: az utazások térképe, a genetikai programozás fái és az"
+" eredmény."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "2023-as szezon: a motor a valódi naptárral szemben"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr ""
+"Ez egy genetikai programozási motor ismétlése mind a 30 Major League "
+"Baseball csapatnál 2023-ban, összehasonlítva a hivatalos menetrenddel és a "
+"véletlennel."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "2023-as szezon"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "Demó valós adatokkal · Major League Baseball 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr ""
+"A 30 Major League Baseball csapatot és azok tényleges stadionait használjuk."
+" A hivatalos 2023-as menetrend a referencia. A blokkalapú motor arra "
+"törekszik, hogy kevesebb utazással összeállítson egy szezont."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "Hogyan tesznek a kilométerek, generációról generációra"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr ""
+"Ez egy igazi motorjáték, amit várakozás nélkül nézhetsz meg. Van "
+"%(generaciones)s generációja, mindegyik 100 naptárból."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "Játék"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "Generáció"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "Oldalirányú csúszódeszka"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "A 30 csapat utazása a rendes szezonban."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "Leghosszabb túra (egymás után idegenbeli meccsek)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "Több hazai mérkőzés egymás után"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "Major League Baseball hivatalos tagja"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "millió km"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "Véletlenszerűen jobb, ugyanezzel az erőfeszítéssel"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "Nem felel meg az egyes csapatok mérkőzéseinek számának."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr ""
+"A motor <strong>%(pct)s%%-kal rövidebb úton halad, mint</strong> a "
+"véletlenszerű legjobb menetrend. A motor tanul."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr ""
+"A hivatalos naptár <strong>%(pct)s%%-kal kevesebbet utazik, mint</strong> a "
+"motor. Még mindig nem győztük le."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"Megjegyzés: a motornaptárban akár <strong>%(gira)s idegenbeli meccset is "
+"tartalmaz egymás után</strong>. A hivatalos naptár maximális %(oficial)s. "
+"Egy igazi csapat nem fogadná el ilyen hosszú túrákat."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "Minden csapat útja"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr ""
+"Válts a két menetrend között, hogy megnézd, mely csapatok utaznak a "
+"legtöbbet."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "Térképnaptár"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "Hivatalos"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "Motor"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "Tekintse meg mind a 30 csapatot táblázatként"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "Hivatalos (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "Motor (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "Honnan származnak az adatok"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr ""
+"Hivatalos menetrend: Major League Baseball 2023 alapszakasz (MLB Stats API)."
+" Itt csak a számított számokat tartjuk meg, nem a menetrendet."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr ""
+"Távolságok: egyenes vonal a stadionok között (félverzs képlet). Minden "
+"csapat elhagyja otthonát, stadionról stadionra utazik, és a végén visszatér."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr ""
+"Blokk motor: 100 naptár generációnként, %(evaluaciones)s naptár összesen "
+"értékelve. A Chance ugyanannyit értékelt."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "Készíts saját tornát"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "Hogyan működik a motor"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "Blokkok, szabályokkal"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "Körök + Véletlenszerű mozdulatok"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "Körök + PG (csak fejlesztések)"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "Váltások + PG tanulási hőmérséklet"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "Váltások + kézi gesztálás"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "Öreg: Mindenki 3 napot játszik minden körben"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "Most: 2, 3 és 4 meccses sorozat, szünetekkel"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "Fordulat"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "hétköznapokon"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "Hétvége"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "Turn A"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "B fordulat"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "1. Kiválasztunk egy csapatot és két műszakot"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "2. Követjük a láncot: A, B, A, B..."
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "3. Láncsoros kapcsolóváltások"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "Naptári költség"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "legjobb"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "Első völgy"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "Mélyebb völgy"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "A bikaviada előrehaladása"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "Otthon"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "Vége"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "kézzel"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "PG, 5%"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "PG, 50%"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "A teszttornám"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr "Opcionális. Ha ennyiben hagyod, ezt a nevet használják."
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "Versenycsapatok"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr "Már 10 pontot szereztünk. Megváltoztathatod őket: 3-ról 10-re."
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "A Major League 30 stadionjának térképe"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr "{Team} példa túra: 12 látogatás véletlenszerű sorrendben."
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr ""
+"Te választottad a {csapat}. Kövesd a 2. lépést, hogy lásd az utazásaikat."
+
+#: tesis/historia.py
+msgid "km"
+msgstr "KM"
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "Kombájt"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "Csere"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "Befektetés Helyi Terület"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "Otthon"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "Látogatás"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "A szülő"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "B szülő"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "Fiú"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr ""
+"Példafa: kombináld két ággal: cseréld a SEA-NYA BOS-TEX-re, és befektetd a "
+"LAN-CHN helyi területet otthon."
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr ""
+"Átfedés: A apa adja a bal ágát, B apja a bal ágát; a fiú egyesíti a kettőt."
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "Mutáció: A fán a SEA–NYA levél SEA–tölgyre változik."
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "Nézd meg újra"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "Utazás (véletlenszerű = 100)"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "Chance"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "Népesség (48 fa)"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "Több szín = kevesebb utazás"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "Szakdolgozati motor"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{engine} · {g} {total} generálása"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{motor} · vége: {eredmény}."
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr ""
+"{engine}: {start} állomáson kezdődik és {end} (chance = 100). Eredmény: "
+"{eredmény}."
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr ""
+"Távolság és véletlen: tézismotor {tézis}, véletlenszerűen válassz 100-at, "
+"blokkol motor {blokkok}."
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "Szakdolgozatgép (2026)"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "Véletlenszerű naptárválasztás"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "Blokkmotor (előkészítő)"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr "Használhatod a billentyűzeten lévő nyílbillentyűket is."
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr ""
+"A szezon kilométerei motorgeneráció szerint, összehasonlítva a hivatalos "
+"naptárral és a véletlennel"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "Hivatalos naptár"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "Jobb véletlenszerűen"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}: {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr "Még mindig nem felel meg mindkét csapat mérkőzéseinek számát."
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr ""
+"Függőleges tengely: {min} és {max} millió km-ig. Vízszintes tengely: "
+"generációk 0-tól {last}-ig."
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr ""
+"Térkép: Minden kör egy csapat; a nagyobb több mérföldet jelent a szezonban"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{team}: {km} km"
