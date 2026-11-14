@@ -1,0 +1,22 @@
+{% extends "tesis/demo/_base.html" %}
+{% load i18n %}
+{% block titulo %}{% translate "Demo: configuración" %}{% endblock %}
+{% block paso %}
+<h1>{% translate "Paso 2: configuración" %}</h1>
+<p class="entrada">{% translate "Todos los valores ya están elegidos. Puedes cambiarlos o dar \"Siguiente\" para ver el calendario." %}</p>
+<p>{% blocktranslate trimmed count n=equipos|length %}{{ n }} equipo:{% plural %}{{ n }} equipos:{% endblocktranslate %} {{ equipos|join:", " }}. <a href="{% url 'tesis:dashboard' %}">{% translate "Cambiar equipos" %}</a></p>
+<form method="post" novalidate>
+    {% csrf_token %}
+    {% if form.errors %}<div class="error-resumen" role="alert"><p>{% translate "Revisa los campos marcados." %}</p></div>{% endif %}
+    <fieldset class="grupo-campos">
+        <legend>{% translate "El torneo" %}</legend>
+        {% for campo in form.campos_del_torneo %}{% include "tesis/demo/_campo.html" %}{% endfor %}
+    </fieldset>
+    <fieldset class="grupo-campos">
+        <legend>{% translate "El algoritmo" %}</legend>
+        {% for campo in form.campos_del_algoritmo %}{% include "tesis/demo/_campo.html" %}{% endfor %}
+    </fieldset>
+    <p class="acciones"><button type="submit" class="boton">{% translate "Siguiente: ver el calendario" %} →</button></p>
+    <p class="nota">{% translate "Tarda unos segundos." %}</p>
+</form>
+{% endblock %}

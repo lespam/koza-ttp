@@ -1,0 +1,16 @@
+{% extends "tesis/demo/_base.html" %}
+{% load i18n %}
+{% block titulo %}{% translate "Demo: elige los equipos" %}{% endblock %}
+{% block descripcion %}{% translate "Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo en 3 pasos." %}{% endblock %}
+{% block paso %}
+<h1>{% translate "Paso 1: elige los equipos" %}</h1>
+<p class="entrada">{% blocktranslate trimmed with maximo=maximo %}El algoritmo arma un calendario para los equipos que elijas y busca el que tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, da "Siguiente" sin cambiar nada.{% endblocktranslate %}</p>
+<form method="post" novalidate>
+    {% csrf_token %}
+    <p class="acciones"><button type="submit" class="boton">{% translate "Siguiente: configuración" %} →</button></p>
+    {% include "tesis/guia/_formulario.html" %}
+    <p class="acciones"><button type="submit" class="boton">{% translate "Siguiente: configuración" %} →</button></p>
+</form>
+<p class="nota">{% translate "¿Prefieres ver una temporada real completa?" %} <a href="{% url 'tesis:repeticion' %}">{% translate "Ver la temporada 2023: 30 equipos contra el calendario oficial" %}</a>.</p>
+<p class="nota">{% translate "¿Quieres registrar tus propios equipos y estadios?" %} <a href="{% url 'tesis:guia' %}">{% translate "Hazlo tú mismo en la guía de 5 pasos" %}</a>.</p>
+{% endblock %}

@@ -48,12 +48,12 @@ class PaginaDeInicio(TestCase):
 
     def test_enlaces_viejos_a_la_demo_siguen_funcionando(self):
         r = self.client.get("/?configuracion=4&ejecutar=true")
-        self.assertRedirects(r, "/demo/?configuracion=4&ejecutar=true", fetch_redirect_response=False)
+        self.assertRedirects(r, "/demo/tesis/?configuracion=4&ejecutar=true", fetch_redirect_response=False)
 
 
 class PaginaDeDemo(TestCase):
     def test_base_vacia_muestra_como_empezar(self):
-        r = self.client.get("/demo/")
+        r = self.client.get("/demo/tesis/")
         self.assertEqual(r.status_code, 200)
         self.assertContains(r, "Todavía no hay ninguna configuración")
         self.assertContains(r, "Para presentarlo a tu equipo")
@@ -62,7 +62,7 @@ class PaginaDeDemo(TestCase):
         Configuracion.objects.create(nombre="Sin calendario", poblacion=1, generaciones=1,
                                      probabilidad_de_cruce=0, probabilidad_de_reproduccion=0)
         configuracion = crear_datos_de_ejemplo()
-        r = self.client.get("/demo/")
+        r = self.client.get("/demo/tesis/")
         self.assertEqual(r.context["configuracion"], configuracion)
         self.assertEqual(len(r.context["juegos"]), 2)
         self.assertContains(r, f"?configuracion={configuracion.pk}&amp;ejecutar=true")
@@ -72,14 +72,14 @@ class PaginaDeDemo(TestCase):
         configuracion = crear_datos_de_ejemplo()
         # La gráfica del árbol necesita pygraphviz y escribe en media/; no es parte de esta prueba.
         with mock.patch.object(ProgramaGenetico, "genera_grafica"):
-            r = self.client.get(f"/demo/?configuracion={configuracion.pk}&ejecutar=true")
+            r = self.client.get(f"/demo/tesis/?configuracion={configuracion.pk}&ejecutar=true")
         self.assertEqual(r.status_code, 200)
 
     def test_dice_que_motor_usa_y_la_cifra_del_mejorado(self):
         # IA-8: la demo dice qué motor produjo el resultado y usa la misma cifra que la portada.
         from project.estado_motor import MOTOR
         crear_datos_de_ejemplo()
-        r = self.client.get("/demo/")
+        r = self.client.get("/demo/tesis/")
         self.assertContains(r, "Motor: Versión de la tesis (2026)")
         self.assertContains(r, "esta demo usa el motor de la tesis")
         self.assertContains(r, str(MOTOR["mejorado"]["frente_al_azar"]))
@@ -87,14 +87,14 @@ class PaginaDeDemo(TestCase):
     def test_aviso_de_espera_con_animacion(self):
         # H-1: al ejecutar se muestra un aviso con el árbol animado (Lottie)
         crear_datos_de_ejemplo()
-        r = self.client.get("/demo/")
+        r = self.client.get("/demo/tesis/")
         self.assertContains(r, 'id="espera" role="status" hidden')
         self.assertContains(r, "lottie/arbol_evoluciona.json")
         self.assertContains(r, "js/espera.js")
         self.assertNotContains(r, "Tarda unos segundos.")
 
     def test_configuracion_inexistente_da_404(self):
-        self.assertEqual(self.client.get("/demo/?configuracion=999").status_code, 404)
+        self.assertEqual(self.client.get("/demo/tesis/?configuracion=999").status_code, 404)
 
 
 class TodasLasPaginas(TestCase):
@@ -112,6 +112,9 @@ class TodasLasPaginas(TestCase):
             "calendario": calendario.pk, "serie": calendario.series.first().pk,
             "juego": Juego.objects.first().pk,
         }
+        # La demo corta guarda los equipos en la sesión: se elige con los valores ya puestos
+        from tesis.demo import PRESELECCION
+        self.client.post(reverse("tesis:dashboard"), {"nombre": "", "equipos": PRESELECCION})
         for patron in urlpatterns:
             ruta = str(patron.pattern)
             if not isinstance(patron, URLPattern) or any(o in ruta for o in self.omitidas):
@@ -164,7 +167,7 @@ class FlujoCompleto(TestCase):
 
         r = self.client.get(f"/calendario/{calendario.pk}/")
         self.assertEqual(r.status_code, 200)
-        r = self.client.get(f"/demo/?configuracion={configuracion.pk}")
+        r = self.client.get(f"/demo/tesis/?configuracion={configuracion.pk}")
         self.assertEqual(r.status_code, 200)
         self.assertEqual(len(r.context["juegos"]), min(juegos, 50))
 
@@ -338,7 +341,7 @@ class AuditoriaDelOchoDeNoviembre(TestCase):
 
     def test_demo_explica_resultados_y_parametros(self):
         crear_datos_de_ejemplo()
-        r = self.client.get("/demo/")
+        r = self.client.get("/demo/tesis/")
         # IA-1: avisa que el motor de la tesis no usa los parámetros guardados
         self.assertContains(r, "guarda estos valores, pero no los usa")
         # H-3: ya no muestra el número interno de la configuración
@@ -351,7 +354,7 @@ class AuditoriaDelOchoDeNoviembre(TestCase):
         configuracion = crear_datos_de_ejemplo()
         with mock.patch("tesis.views.run_genetic_algorithm_logic",
                         return_value={"svg_content": "<svg></svg>", "distancia": 10, "diferencia": 0}):
-            r = self.client.get(f"/demo/?configuracion={configuracion.pk}&ejecutar=true")
+            r = self.client.get(f"/demo/tesis/?configuracion={configuracion.pk}&ejecutar=true")
         self.assertContains(r, "quiere decir que el calendario es válido")
         self.assertContains(r, "El árbol es el programa que arma el mejor calendario")
         # A-2: la ventana del árbol es un <dialog> con título
@@ -370,3 +373,49 @@ class AuditoriaDelOchoDeNoviembre(TestCase):
         html = self.client.get("/documentacion/avances/", HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
         self.assertNotIn("Planeado", html)
         self.assertIn("Segunda auditoría de la experiencia", html)
+
+
+class DemoCorta(TestCase):
+    """Demo en 3 pasos: se puede ver todo con "Siguiente" sin cambiar nada."""
+
+    def test_siguiente_siguiente_siguiente(self):
+        from tesis.demo import PRESELECCION
+        r = self.client.get(reverse("tesis:dashboard"))
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual(r.context["form"]["equipos"].value(), PRESELECCION)
+        self.assertContains(r, 'value="Mi torneo de prueba"')
+        # Paso 1: se envía lo que ya venía marcado
+        r = self.client.post(reverse("tesis:dashboard"), {"nombre": "", "equipos": PRESELECCION})
+        self.assertRedirects(r, reverse("tesis:demo_configuracion"))
+        # Paso 2: los valores ya elegidos
+        r = self.client.get(reverse("tesis:demo_configuracion"))
+        datos = {nombre: campo.value() for nombre, campo in
+                 ((c.name, c) for c in r.context["form"])}
+        self.assertEqual(datos["pasos"], 20000)
+        r = self.client.post(reverse("tesis:demo_configuracion"), datos)
+        self.assertRedirects(r, reverse("tesis:demo_resultado"))
+        # Paso 3: el calendario cumple las reglas y viaja menos que al azar
+        r = self.client.get(reverse("tesis:demo_resultado"))
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual(r.context["resultado"].reglas_rotas, 0)
+        self.assertGreater(r.context["mejora"], 0)
+        self.assertContains(r, "Cumple todas las reglas")
+        self.assertContains(r, reverse("tesis:repeticion"))
+        self.assertContains(r, reverse("tesis:dashboard_tesis"))
+
+    def test_maximo_diez_equipos(self):
+        from tesis.demo import equipos_mlb
+        once = list(equipos_mlb())[:11]
+        r = self.client.post(reverse("tesis:dashboard"), {"equipos": once})
+        self.assertEqual(r.status_code, 200)
+        self.assertContains(r, "Elige como máximo 10 equipos.")
+        r = self.client.post(reverse("tesis:dashboard"), {"equipos": once[:2]})
+        self.assertContains(r, "Elige al menos 3 equipos.")
+
+    def test_sin_equipos_regresa_al_paso_1(self):
+        self.assertRedirects(self.client.get(reverse("tesis:demo_resultado")), reverse("tesis:dashboard"))
+        self.assertRedirects(self.client.get(reverse("tesis:demo_configuracion")), reverse("tesis:dashboard"))
+
+    def test_enlaces_viejos_van_al_algoritmo_de_la_tesis(self):
+        r = self.client.get("/demo/?configuracion=4&ejecutar=true")
+        self.assertRedirects(r, "/demo/tesis/?configuracion=4&ejecutar=true", fetch_redirect_response=False)
