@@ -37,11 +37,13 @@ def main() -> None:
     p.add_argument("--pasos-entrenamiento", type=int, default=30_000)
     p.add_argument("--pasos-prueba", type=int, default=400_000)
     p.add_argument("--semillas-prueba", type=int, default=4)
+    p.add_argument("--practica", type=int, default=2, help="calendarios de práctica (semillas 100, 101, ...)")
     p.add_argument("--semilla", type=int, default=0)
     args = p.parse_args()
     coords = cargar_equipos(30)
     t = time.time()
-    r = evolucionar(coords, pasos_entrenamiento=args.pasos_entrenamiento, generaciones=args.generaciones,
+    r = evolucionar(coords, semillas_practica=tuple(range(100, 100 + args.practica)),
+                    pasos_entrenamiento=args.pasos_entrenamiento, generaciones=args.generaciones,
                     tam_poblacion=args.poblacion, semilla=args.semilla,
                     on_generation=lambda g, f, a: print(f"gen {g}: {f:,.0f} | {a}", flush=True))
     print(f"Entrenamiento: {time.time() - t:.0f}s. Mejor árbol: {r.mejor}")

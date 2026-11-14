@@ -15,8 +15,8 @@ BARRAS = [
     {"nombre": _("Calendario oficial 2023"), "km": KM_OFICIAL, "oficial": True},
     {"nombre": _("Turnos + movimientos al azar"), "km": 1.70, "oficial": False},
     {"nombre": _("Turnos + PG (solo mejoras)"), "km": 1.696, "oficial": False},
-    {"nombre": _("Turnos + recocido a mano"), "km": 1.580, "oficial": False},
-    {"nombre": _("Turnos + PG que aprende la temperatura"), "km": 1.575, "oficial": False},
+    {"nombre": _("Turnos + PG que aprende la temperatura"), "km": 1.571, "oficial": False},
+    {"nombre": _("Turnos + recocido a mano"), "km": 1.567, "oficial": False},
 ]
 
 TEXTOS = {

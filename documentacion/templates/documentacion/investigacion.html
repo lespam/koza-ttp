@@ -10,7 +10,7 @@
     <p class="miga"><a href="{% url 'documentacion:index' %}">{% translate "Documentación" %}</a> / <a href="{% url 'documentacion:avances' %}">{% translate "Avances" %}</a> / {% translate "Investigación actual" %}</p>
     <h1>{% translate "Investigación actual: ganarle al calendario oficial" %}</h1>
     <p class="entrada">{% blocktranslate trimmed %}Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 millones de km.{% endblocktranslate %}</p>
-    <p class="nota">{% blocktranslate trimmed %}Actualizado el 14 de noviembre de 2026. Estos motores están en pruebas: el sitio y la demo todavía no los usan.{% endblocktranslate %}</p>
+    <p class="nota">{% blocktranslate trimmed %}Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en pruebas: el sitio y la demo todavía no los usan.{% endblocktranslate %}</p>
 
     <section aria-labelledby="resultados">
         <h2 id="resultados">{% translate "1. Resultados de todas las pruebas" %}</h2>
@@ -18,14 +18,14 @@
 
         <figure class="figura" aria-labelledby="fig-barras-titulo">
             <div class="figura-barra">
-                <p class="figura-titulo" id="fig-barras-titulo">{% translate "Viaje total por versión del motor" %}</p>
+                <p class="figura-titulo" id="fig-barras-titulo">{% translate "Viaje total por versión del algoritmo" %}</p>
             </div>
             <ul class="leyenda">
-                <li><span class="muestra muestra-1" aria-hidden="true"></span>{% translate "Motores de Koza-TTP" %}</li>
+                <li><span class="muestra muestra-1" aria-hidden="true"></span>{% translate "Algoritmos de Koza-TTP" %}</li>
                 <li><span class="muestra muestra-2" aria-hidden="true"></span>{% translate "Calendario oficial 2023" %}</li>
             </ul>
             <svg id="fig-barras" viewBox="0 0 720 330" role="img" aria-labelledby="fig-barras-titulo fig-barras-desc"></svg>
-            <figcaption id="fig-barras-desc">{% blocktranslate trimmed %}Los dos motores por turnos con recocido le ganan al oficial por cerca de 9 %. La tabla de abajo tiene los mismos datos.{% endblocktranslate %}</figcaption>
+            <figcaption id="fig-barras-desc">{% blocktranslate trimmed %}Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de 9 %. La tabla de abajo tiene los mismos datos.{% endblocktranslate %}</figcaption>
         </figure>
 
         <div class="tabla-envoltura" role="region" aria-labelledby="tabla-pruebas" tabindex="0">
@@ -41,13 +41,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">{% translate "Motor por bloques, sin reglas de realismo" %}</th>
+                        <th scope="row">{% translate "Algoritmo por bloques, sin reglas de realismo" %}</th>
                         <td>{% translate "1.85 millones de km" %}</td>
                         <td>{% translate "No: giras de hasta 36 juegos seguidos" %}</td>
                         <td>{% translate "Parecía cerca del oficial, pero hacía trampa." %}</td>
                     </tr>
                     <tr>
-                        <th scope="row">{% translate "Motor por bloques, con reglas" %}</th>
+                        <th scope="row">{% translate "Algoritmo por bloques, con reglas" %}</th>
                         <td>{% translate "2.19 millones de km" %}</td>
                         <td>{% translate "No logra cumplirlas" %}</td>
                         <td>{% translate "Los bloques fijos no dejan ordenar bien las giras." %}</td>
@@ -78,15 +78,21 @@
                     </tr>
                     <tr>
                         <th scope="row">{% translate "Turnos + semana + recocido hecho a mano" %}</th>
-                        <td>{% translate "1.58 millones de km (promedio)" %}</td>
+                        <td class="mejor">{% translate "1.567 millones de km (promedio de 8 calendarios)" %}</td>
                         <td>{% translate "Sí, 4 de 4" %}</td>
                         <td>{% translate "Aceptar cambios peores al principio ayuda mucho." %}</td>
                     </tr>
                     <tr>
                         <th scope="row">{% translate "Turnos + semana + PG que aprende la temperatura" %}</th>
-                        <td class="mejor">{% translate "1.575 millones de km (promedio)" %}</td>
+                        <td>{% translate "1.571 millones de km (promedio de 8 calendarios)" %}</td>
                         <td>{% translate "Sí, 4 de 4" %}</td>
-                        <td>{% translate "La PG diseña su propia regla y empata con la hecha a mano." %}</td>
+                        <td>{% translate "La PG diseña su propia regla y casi empata con la hecha a mano (0.3 % más)." %}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{% translate "La misma PG, con más variedad y más práctica" %}</th>
+                        <td>{% translate "1.583 millones de km (promedio de 8 calendarios)" %}</td>
+                        <td>{% translate "Sí, 8 de 8" %}</td>
+                        <td>{% translate "Practicar con corridas cortas no enseña la mejor regla para corridas largas." %}</td>
                     </tr>
                     <tr>
                         <th scope="row">{% translate "Calendario oficial MLB 2023" %}</th>
@@ -173,13 +179,15 @@
                 <li><span class="muestra muestra-3" aria-hidden="true"></span>{% translate "PG, si se aceptan muchos cambios (50 %)" %}</li>
             </ul>
             <svg id="fig-temp" viewBox="0 0 720 320" role="img" aria-labelledby="fig-temp-titulo fig-temp-desc"></svg>
-            <figcaption id="fig-temp-desc">{% blocktranslate trimmed %}La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a calendarios de unos 1.58 millones de km.{% endblocktranslate %}</figcaption>
+            <figcaption id="fig-temp-desc">{% blocktranslate trimmed %}La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a calendarios de unos 1.57 millones de km.{% endblocktranslate %}</figcaption>
         </figure>
     </section>
 
     <section aria-labelledby="sigue">
         <h2 id="sigue">{% translate "6. Qué sigue" %}</h2>
-        <p>{% blocktranslate trimmed %}La PG ya empata con el recocido, pero todavía no le gana. La evolución dejó de mejorar en la generación 4, porque la población perdió variedad. El siguiente paso es darle más variedad y más práctica, y medir si así supera a la regla hecha a mano.{% endblocktranslate %}</p>
+        <p>{% blocktranslate trimmed %}La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG 1.571.{% endblocktranslate %}</p>
+        <p>{% blocktranslate trimmed %}Probamos darle más variedad (sin recetas repetidas) y más práctica (3 calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km. La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 000. Una regla buena para correr poco no es la mejor para correr mucho.{% endblocktranslate %}</p>
+        <p>{% blocktranslate trimmed %}El siguiente paso es que la PG practique con corridas más parecidas a la prueba y que empiece desde la regla hecha a mano, para que solo pueda mejorarla.{% endblocktranslate %}</p>
         <p><a href="https://github.com/lespam/koza-ttp/pull/38">{% translate "Ver el código de estas pruebas en GitHub" %}</a></p>
     </section>
 </div>

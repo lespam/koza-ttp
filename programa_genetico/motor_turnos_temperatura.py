@@ -17,6 +17,9 @@ de empeoramiento se toleran en cada paso:
 Un cambio que empeora ``d`` km se acepta con probabilidad ``e^(-d / T)``, igual
 que en el recocido. El recocido hecho a mano usa T = 20 000 · (50 / 20 000)^avance.
 
+Variedad: con ``sin_duplicados`` (por defecto), una receta repetida en la
+población se cambia por una nueva al azar.
+
 Entrenamiento: cada árbol corre un recocido corto (``pasos_entrenamiento``) en
 calendarios de práctica; su fitness es el costo final (reglas rotas primero,
 luego km). Prueba: el mejor árbol corre un recocido completo en calendarios
@@ -129,7 +132,7 @@ class Resultado:
 def evolucionar(coords: dict, semillas_practica=(100, 101), pasos_entrenamiento: int = 30_000,
                 generaciones: int = 12, tam_poblacion: int = 24, prob_cruce: float = 0.8,
                 prob_mutacion: float = 0.3, tam_torneo: int = 3, elite: int = 2, altura_max: int = 7,
-                procesos: int = 4, semilla: Optional[int] = None,
+                procesos: int = 4, sin_duplicados: bool = True, semilla: Optional[int] = None,
                 on_generation: Optional[Callable[[int, float, str], None]] = None) -> Resultado:
     random.seed(semilla)
     tb = base.Toolbox()
@@ -169,5 +172,12 @@ def evolucionar(coords: dict, semillas_practica=(100, 101), pasos_entrenamiento:
                     if nuevo.height <= altura_max:
                         hijos[i] = nuevo
             pop = elites + hijos
+            if sin_duplicados:
+                # Variedad: una receta repetida se cambia por una nueva al azar.
+                vistos = set()
+                for i, ind in enumerate(pop):
+                    while str(pop[i]) in vistos:
+                        pop[i] = tb.individual()
+                    vistos.add(str(pop[i]))
     mejor = min(pop, key=lambda i: i.fitness.values[0])
     return Resultado(mejor=mejor, fitness=mejor.fitness.values[0], historial=historial)
