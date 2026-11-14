@@ -18,6 +18,20 @@ class PaginasDeDocumentacion(SimpleTestCase):
         self.assertEqual(r.status_code, 200)
         self.assertContains(r, 'lang="en"')
 
+    def test_investigacion_tiene_datos_y_figuras(self):
+        import json
+        r = self.client.get(reverse("documentacion:investigacion"))
+        self.assertEqual(r.status_code, 200)
+        self.assertContains(r, 'aria-current="true"')  # dentro de Documentación
+        self.assertContains(r, 'id="investigacion-datos"')
+        for figura in ("fig-barras", "fig-turnos", "fig-kempe", "fig-valle", "fig-temp"):
+            self.assertContains(r, f'id="{figura}"')
+        import re
+        bloque = re.search(r'id="investigacion-datos"[^>]*>(.*?)</script>', r.content.decode(), re.S).group(1)
+        datos = json.loads(bloque)
+        self.assertEqual(datos["oficial"], 1.74)
+        self.assertEqual(sum(1 for b in datos["barras"] if b["oficial"]), 1)
+
     def test_resultado_negativo_visible(self):
         r = self.client.get(reverse("documentacion:historico"))
         self.assertContains(r, "3,182,738")
