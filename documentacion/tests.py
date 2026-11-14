@@ -259,3 +259,17 @@ class NavegacionDelSitio(SimpleTestCase):
                 html = self.client.get(url, HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
                 self.assertIn(f'<a href="{destino}#proyectos">', html)
                 self.assertIn(f'href="{destino}#contact"', html)
+
+
+class OrdenDeIdiomas(SimpleTestCase):
+    """Les, 14 de noviembre: español e inglés primero; los demás en orden alfabético."""
+
+    def test_orden_del_selector(self):
+        html = self.client.get("/", HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
+        opciones = html[html.index('id="language-select"'):html.index("</select>")]
+        import re
+        codigos = re.findall(r'<option value="([^"]+)"', opciones)
+        self.assertEqual(codigos[:2], ["es-mx", "en"])
+        self.assertEqual(len(codigos), 45)
+        self.assertLess(codigos.index("de"), codigos.index("fr"))
+        self.assertLess(codigos.index("fr"), codigos.index("pt"))
