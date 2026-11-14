@@ -277,6 +277,45 @@ class MotorTurnosTests(SimpleTestCase):
         self.assertAlmostEqual(m["km"], cal.evaluar()[1], delta=1)
 
 
+class DemoTurnosTests(SimpleTestCase):
+    """El algoritmo más nuevo en la demo: valores ya elegidos, de 3 a 10 equipos."""
+
+    COORDS = {"NYA": (40.83, -73.93), "BOS": (42.35, -71.10), "TOR": (43.64, -79.39),
+              "BAL": (39.28, -76.62), "TBA": (27.77, -82.65), "CLE": (41.50, -81.69),
+              "DET": (42.34, -83.05), "CHA": (41.83, -87.63), "MIN": (44.98, -93.28),
+              "KCA": (39.05, -94.48)}
+
+    def test_corre_con_valores_por_defecto(self):
+        from programa_genetico.demo_turnos import correr_demo
+
+        r = correr_demo(self.COORDS)
+        self.assertEqual(r.reglas_rotas, 0)
+        self.assertLess(r.km_final, r.km_azar)
+        self.assertEqual(r.revision["juegos"], (54, 54))  # 9 rivales x 2 series x 3 juegos
+        self.assertLessEqual(r.revision["max_visita"], 12)
+        self.assertLessEqual(r.revision["max_dias_seguidos"], 20)
+        self.assertGreater(len(r.historial), 2)
+
+    def test_reglas_y_tamanos(self):
+        from programa_genetico.demo_turnos import ConfigDemo, correr_demo
+
+        for regla in ("pg", "a_mano", "solo_mejoras"):
+            r = correr_demo(dict(list(self.COORDS.items())[:5]), ConfigDemo(regla=regla, pasos=2000))
+            self.assertEqual(r.revision["juegos"], (24, 24))
+        with self.assertRaises(ValueError):
+            correr_demo(dict(list(self.COORDS.items())[:2]))
+
+    def test_formulario(self):
+        from programa_genetico.demo_turnos import CONFIG_CAMPOS, ConfigDemo, config_desde_dict
+
+        self.assertEqual(config_desde_dict(None), ConfigDemo())
+        self.assertEqual(config_desde_dict({"pasos": "abc", "regla": "x", "juegos_por_serie": "9"}),
+                         ConfigDemo(juegos_por_serie=4))
+        self.assertEqual({c["grupo"] for c in CONFIG_CAMPOS}, {"torneo", "algoritmo"})
+        for c in CONFIG_CAMPOS:
+            self.assertTrue(str(c["etiqueta"]))
+
+
 class CruceTests(SimpleTestCase):
     """deap.gp.cxOnePointLeafBiased falla en Python 3.11+ (random.sample con un set)."""
 

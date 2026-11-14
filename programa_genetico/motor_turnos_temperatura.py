@@ -83,6 +83,11 @@ if not hasattr(creator, "IndividuoTemperatura"):
     creator.create("IndividuoTemperatura", gp.PrimitiveTree, fitness=creator.FitnessTemperatura)
 
 
+# Mejor árbol de la PG (entrenado con 2 calendarios de práctica, 30 000 pasos).
+# En 8 calendarios nuevos: 1.571 millones de km; la regla a mano, 1.567.
+REGLA_PG_APRENDIDA = "por(entre(entre(102.0, decae(maximo(avance, avance))), suma(avance, aceptados)), 0.587)"
+
+
 def temperatura_a_mano(avance: float, _aceptados: float) -> float:
     return 20_000.0 * (50.0 / 20_000.0) ** avance
 
