@@ -10,6 +10,11 @@
     <h1>{% translate "Histórico: la tesis (2026)" %}</h1>
     <p class="entrada">{% blocktranslate trimmed %}<cite>Programación genética en la planificación de temporadas de béisbol. Problema de viabilidad y optimización.</cite> Tesis de Ingeniería en Computación, ITAM. Asesor: Dr. Andrés Gómez de Silva Garza. Aprobada el 23 de julio de 2026.{% endblocktranslate %}</p>
 
+    <section aria-labelledby="verdad">
+        <h2 id="verdad">{% translate "Mi tesis dijo la verdad" %}</h2>
+        <p>{% blocktranslate trimmed with resultado=motor.tesis.frente_al_azar %}El piloto de la tesis no fue mejor que elegir calendarios al azar: {{ resultado }}. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese resultado mostró qué había que corregir para hacer el motor mejorado.{% endblocktranslate %}</p>
+    </section>
+
     <nav class="indice" aria-labelledby="indice-titulo">
         <h2 id="indice-titulo">{% translate "En esta página" %}</h2>
         <ol>
