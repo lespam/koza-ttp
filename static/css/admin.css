@@ -5,7 +5,7 @@
     :root { --texto: #eee7d8; --fondo: #13201d; --enlace: #e9b44c; --borde: #3c5550; }
 }
 * { box-sizing: border-box; }
-body { margin: 0 auto; max-width: 70rem; padding: 1rem; font-family: "Work Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 1.125rem; line-height: 1.6; color: var(--texto); background: var(--fondo); overflow-wrap: anywhere; }
+body { margin: 0 auto; max-width: 70rem; padding: 1rem; font-family: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", Verdana, system-ui, sans-serif; font-size: 1.125rem; line-height: 1.6; color: var(--texto); background: var(--fondo); overflow-wrap: anywhere; }
 a { color: var(--enlace); }
 a, button, input[type="submit"], input[type="button"] { min-height: 44px; }
 a { display: inline-block; padding: 0.4rem 0.1rem; }
