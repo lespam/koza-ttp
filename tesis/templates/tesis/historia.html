@@ -1,7 +1,7 @@
 {% extends "documentacion/base.html" %}
 {% load i18n static %}
 {% block titulo %}{% translate "Entender la idea en 2 minutos" %}{% endblock %}
-{% block descripcion %}{% translate "Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles de la programación genética y el resultado honesto de la tesis." %}{% endblock %}
+{% block descripcion %}{% translate "Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles de la programación genética y el camino del piloto de la tesis al motor mejorado." %}{% endblock %}
 {% block contenido %}
 <link rel="stylesheet" href="{% static 'css/historia.css' %}">
 {# Sin JavaScript se lee como un artículo con todos los pasos. Con JavaScript se ve un paso a la vez. #}
@@ -71,9 +71,9 @@
 
             <section class="historia-paso" id="paso-7" data-escena="resultado" aria-labelledby="t-paso-7">
                 <p class="historia-parte">{% translate "Parte 3 · El resultado" %}</p>
-                <h2 id="t-paso-7">{% translate "La tesis dijo la verdad" %}</h2>
-                <p>{% blocktranslate trimmed with resultado=motor.tesis.frente_al_azar %}El motor de la tesis <strong>no fue mejor</strong> que elegir calendarios al azar: {{ resultado }}.{% endblocktranslate %}</p>
+                <h2 id="t-paso-7">{% translate "Del piloto a un motor que funciona" %}</h2>
                 <p>{% blocktranslate trimmed with resultado=motor.mejorado.frente_al_azar corridas=motor.mejorado.corridas equipos=motor.mejorado.equipos %}El motor mejorado, por bloques, sí le gana al azar: {{ resultado }}, en pruebas preliminares ({{ corridas }} corridas, {{ equipos }} equipos).{% endblocktranslate %}</p>
+                <p>{% blocktranslate trimmed with resultado=motor.tesis.frente_al_azar %}El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir calendarios al azar: {{ resultado }}.{% endblocktranslate %}</p>
                 <p class="acciones historia-sin-js"><a class="boton" href="{% url 'tesis:guia' %}">{% translate "Probar la herramienta en 5 pasos" %} →</a></p>
             </section>
         </div>

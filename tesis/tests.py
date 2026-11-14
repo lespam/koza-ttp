@@ -40,7 +40,8 @@ class PaginaDeInicio(TestCase):
     def test_portada(self):
         r = self.client.get("/")
         self.assertEqual(r.status_code, 200)
-        self.assertContains(r, "el algoritmo no fue mejor que elegir calendarios al azar")
+        self.assertContains(r, "el motor mejorado logra 13\u00a0% menos viaje que elegir calendarios al azar.")
+        self.assertNotContains(r, "dijo la verdad")
         self.assertContains(r, 'id="boton-tema"')
         for nombre in ("documentacion:index", "tesis:guia", "documentacion:historico"):
             self.assertContains(r, f'href="{reverse(nombre)}"')
@@ -230,6 +231,16 @@ class GuiaDeCincoPasos(TestCase):
 
     def test_paso_desconocido_vuelve_al_inicio(self):
         self.assertRedirects(self.client.get("/guia/otro/"), "/guia/")
+
+
+class FraseDeLaTesisArchivada(TestCase):
+    """"Mi tesis dijo la verdad" vive solo en el Histórico."""
+
+    def test_solo_en_historico(self):
+        for nombre in ("tesis:inicio", "tesis:historia", "tesis:dashboard", "tesis:guia", "documentacion:index"):
+            with self.subTest(pagina=nombre):
+                self.assertNotContains(self.client.get(reverse(nombre)), "dijo la verdad")
+        self.assertContains(self.client.get(reverse("documentacion:historico")), "Mi tesis dijo la verdad")
 
 
 class HistoriaPasoAPaso(SimpleTestCase):

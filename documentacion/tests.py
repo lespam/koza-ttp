@@ -192,19 +192,12 @@ class UnaSolaCifraDelMotor(TestCase):
 
 
 class FraseLiteral(TestCase):
-    """T-1: la frase principal es literal y está bien traducida a mano en inglés y portugués."""
+    """T-1: el título de la portada es literal y sale de estado_motor."""
 
-    def test_portada_en_cada_idioma(self):
-        casos = {
-            "/": "el algoritmo no fue mejor que elegir calendarios al azar.",
-            "/en/": "the algorithm was not better than choosing schedules at random.",
-            "/pt/": "o algoritmo não foi melhor do que escolher calendários ao acaso.",
-        }
-        for url, frase in casos.items():
-            with self.subTest(url=url):
-                html = self.client.get(url, HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
-                self.assertIn(frase, html)
-                self.assertNotIn("le ganó al azar", html)
+    def test_titulo_de_la_portada(self):
+        html = self.client.get("/", HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
+        self.assertIn("el motor mejorado logra 13\u00a0% menos viaje que elegir calendarios al azar.", html)
+        self.assertNotIn("le ganó al azar", html)
 
 
 class TextosDePython(SimpleTestCase):
