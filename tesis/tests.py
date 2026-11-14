@@ -83,6 +83,15 @@ class PaginaDeDemo(TestCase):
         self.assertContains(r, "esta demo usa el motor de la tesis")
         self.assertContains(r, str(MOTOR["mejorado"]["frente_al_azar"]))
 
+    def test_aviso_de_espera_con_animacion(self):
+        # H-1: al ejecutar se muestra un aviso con el árbol animado (Lottie)
+        crear_datos_de_ejemplo()
+        r = self.client.get("/demo/")
+        self.assertContains(r, 'id="espera" role="status" hidden')
+        self.assertContains(r, "lottie/arbol_evoluciona.json")
+        self.assertContains(r, "js/espera.js")
+        self.assertNotContains(r, "Tarda unos segundos.")
+
     def test_configuracion_inexistente_da_404(self):
         self.assertEqual(self.client.get("/demo/?configuracion=999").status_code, 404)
 
@@ -311,3 +320,42 @@ class RepeticionTemporada2023(TestCase):
     def test_la_demo_enlaza_la_repeticion(self):
         r = self.client.get(reverse("tesis:dashboard"))
         self.assertContains(r, reverse("tesis:repeticion"))
+
+
+class AuditoriaDelOchoDeNoviembre(TestCase):
+    """Cambios de la auditoría UX, HCI e IA del 8 de noviembre de 2026."""
+
+    def test_demo_explica_resultados_y_parametros(self):
+        crear_datos_de_ejemplo()
+        r = self.client.get("/demo/")
+        # IA-1: avisa que el motor de la tesis no usa los parámetros guardados
+        self.assertContains(r, "guarda estos valores, pero no los usa")
+        # H-3: ya no muestra el número interno de la configuración
+        self.assertNotContains(r, "Configuración 1<")
+        # A-6: el bloque de código se alcanza con el teclado
+        self.assertContains(r, '<pre class="bloque-codigo" tabindex="0"')
+
+    def test_resultado_explica_las_reglas(self):
+        # IA-9 e IA-4: se explica qué quiere decir 0 y qué es el árbol
+        configuracion = crear_datos_de_ejemplo()
+        with mock.patch("tesis.views.run_genetic_algorithm_logic",
+                        return_value={"svg_content": "<svg></svg>", "distancia": 10, "diferencia": 0}):
+            r = self.client.get(f"/demo/?configuracion={configuracion.pk}&ejecutar=true")
+        self.assertContains(r, "quiere decir que el calendario es válido")
+        self.assertContains(r, "El árbol es el programa que arma el mejor calendario")
+        # A-2: la ventana del árbol es un <dialog> con título
+        self.assertContains(r, '<dialog id="svgModal"')
+
+    def test_paginas_de_administracion_legibles(self):
+        # H-5, A-9, H-8: hoja de estilo, idioma correcto y región principal
+        for url in ("/equipo/", "/liga/", "/torneo/", "/configuracion/", "/calendario/", "/equipo/create/"):
+            with self.subTest(url=url):
+                html = self.client.get(url).content.decode()
+                self.assertIn('<html lang="es-MX">', html)
+                self.assertIn("/static/css/admin.css", html)
+                self.assertIn("<main>", html)
+
+    def test_avances_al_dia(self):
+        html = self.client.get("/documentacion/avances/", HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
+        self.assertNotIn("Planeado", html)
+        self.assertIn("Segunda auditoría de la experiencia", html)

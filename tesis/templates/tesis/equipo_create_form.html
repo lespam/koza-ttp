@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
         <meta charset="UTF-8">
         <title>Crear equipo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/admin.css">
 </head>
 <body>
+<nav class="admin-volver" aria-label="Principal"><a href="/">Koza-TTP</a> · <a href="/guia/">Guía</a> · <a href="/demo/">Demo</a></nav>
+<main>
         <h2>Crear equipo</h2>
         {% if messages %}
         <ul class="messages">
@@ -24,6 +28,6 @@
     {% if math %}
         <h2>{{math}}</h2>
     {% endif %}
-    
+</main>
 </body>
 </html>
