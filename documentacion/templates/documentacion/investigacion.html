@@ -1,0 +1,192 @@
+{% extends "documentacion/base.html" %}
+{% load i18n static %}
+
+{% block titulo %}{% translate "Investigación actual" %}{% endblock %}
+{% block descripcion %}{% translate "Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con diagramas animados." %}{% endblock %}
+
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'css/investigacion.css' %}">
+<div class="envoltura">
+    <p class="miga"><a href="{% url 'documentacion:index' %}">{% translate "Documentación" %}</a> / <a href="{% url 'documentacion:avances' %}">{% translate "Avances" %}</a> / {% translate "Investigación actual" %}</p>
+    <h1>{% translate "Investigación actual: ganarle al calendario oficial" %}</h1>
+    <p class="entrada">{% blocktranslate trimmed %}Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 millones de km.{% endblocktranslate %}</p>
+    <p class="nota">{% blocktranslate trimmed %}Actualizado el 14 de noviembre de 2026. Estos motores están en pruebas: el sitio y la demo todavía no los usan.{% endblocktranslate %}</p>
+
+    <section aria-labelledby="resultados">
+        <h2 id="resultados">{% translate "1. Resultados de todas las pruebas" %}</h2>
+        <p>{% blocktranslate trimmed %}Cada barra es el viaje total de los 30 equipos en una temporada, en millones de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale de su casa, va de estadio en estadio y regresa al final.{% endblocktranslate %}</p>
+
+        <figure class="figura" aria-labelledby="fig-barras-titulo">
+            <div class="figura-barra">
+                <p class="figura-titulo" id="fig-barras-titulo">{% translate "Viaje total por versión del motor" %}</p>
+            </div>
+            <ul class="leyenda">
+                <li><span class="muestra muestra-1" aria-hidden="true"></span>{% translate "Motores de Koza-TTP" %}</li>
+                <li><span class="muestra muestra-2" aria-hidden="true"></span>{% translate "Calendario oficial 2023" %}</li>
+            </ul>
+            <svg id="fig-barras" viewBox="0 0 720 330" role="img" aria-labelledby="fig-barras-titulo fig-barras-desc"></svg>
+            <figcaption id="fig-barras-desc">{% blocktranslate trimmed %}Los dos motores por turnos con recocido le ganan al oficial por cerca de 9 %. La tabla de abajo tiene los mismos datos.{% endblocktranslate %}</figcaption>
+        </figure>
+
+        <div class="tabla-envoltura" role="region" aria-labelledby="tabla-pruebas" tabindex="0">
+            <table>
+                <caption id="tabla-pruebas">{% translate "Todas las pruebas, de la más antigua a la más reciente" %}</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">{% translate "Versión" %}</th>
+                        <th scope="col">{% translate "Viaje total" %}</th>
+                        <th scope="col">{% translate "¿Cumple las reglas?" %}</th>
+                        <th scope="col">{% translate "Qué aprendimos" %}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">{% translate "Motor por bloques, sin reglas de realismo" %}</th>
+                        <td>{% translate "1.85 millones de km" %}</td>
+                        <td>{% translate "No: giras de hasta 36 juegos seguidos" %}</td>
+                        <td>{% translate "Parecía cerca del oficial, pero hacía trampa." %}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{% translate "Motor por bloques, con reglas" %}</th>
+                        <td>{% translate "2.19 millones de km" %}</td>
+                        <td>{% translate "No logra cumplirlas" %}</td>
+                        <td>{% translate "Los bloques fijos no dejan ordenar bien las giras." %}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{% translate "Bloques mezclados, con reglas" %}</th>
+                        <td>{% translate "2.00 millones de km" %}</td>
+                        <td>{% translate "Sí" %}</td>
+                        <td>{% translate "Mejor, pero los 30 equipos siguen jugando al mismo tiempo." %}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{% translate "Turnos con series de 2, 3 y 4 juegos + recocido simulado" %}</th>
+                        <td>{% translate "1.52 a 1.60 millones de km" %}</td>
+                        <td>{% translate "3 de 4 corridas (una duró un día de más)" %}</td>
+                        <td>{% translate 'Quitar la regla de "todos al mismo tiempo" es lo que le gana al oficial.' %}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{% translate "Turnos + semana como MLB + PG que solo acepta mejoras" %}</th>
+                        <td>{% translate "1.70 millones de km (promedio)" %}</td>
+                        <td>{% translate "Sí, 4 de 4" %}</td>
+                        <td>{% translate "Le gana al oficial por poco, pero casi empata con movimientos al azar." %}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{% translate "Movimientos al azar, mismo esfuerzo que la PG" %}</th>
+                        <td>{% translate "1.70 millones de km (promedio)" %}</td>
+                        <td>{% translate "Sí, 4 de 4" %}</td>
+                        <td>{% translate "Línea base justa para medir a la PG." %}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{% translate "Turnos + semana + recocido hecho a mano" %}</th>
+                        <td>{% translate "1.58 millones de km (promedio)" %}</td>
+                        <td>{% translate "Sí, 4 de 4" %}</td>
+                        <td>{% translate "Aceptar cambios peores al principio ayuda mucho." %}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{% translate "Turnos + semana + PG que aprende la temperatura" %}</th>
+                        <td class="mejor">{% translate "1.575 millones de km (promedio)" %}</td>
+                        <td>{% translate "Sí, 4 de 4" %}</td>
+                        <td>{% translate "La PG diseña su propia regla y empata con la hecha a mano." %}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{% translate "Calendario oficial MLB 2023" %}</th>
+                        <td>{% translate "1.74 millones de km" %}</td>
+                        <td>{% translate "Sí" %}</td>
+                        <td>{% translate "La meta. Además cumple reglas que no modelamos, como fechas de estadios y televisión." %}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="nota">{% blocktranslate trimmed %}Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no repetir rival en series seguidas, máximo 20 días seguidos con juego y una temporada de 186 días. Del calendario oficial solo guardamos las cifras calculadas, por los términos de uso de MLB.{% endblocktranslate %}</p>
+    </section>
+
+    <section aria-labelledby="turnos">
+        <h2 id="turnos">{% translate "2. El cambio grande: turnos con series de 2, 3 y 4 juegos" %}</h2>
+        <p>{% blocktranslate trimmed %}Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2, 3 o 4 juegos, o descansa.{% endblocktranslate %}</p>
+        <figure class="figura" aria-labelledby="fig-turnos-titulo">
+            <div class="figura-barra">
+                <p class="figura-titulo" id="fig-turnos-titulo">{% translate "Modelo anterior contra modelo por turnos" %}</p>
+                <button type="button" class="boton-animacion" data-figura="turnos" hidden>{% translate "Pausar" %}</button>
+            </div>
+            <ul class="leyenda">
+                <li><span class="muestra muestra-1" aria-hidden="true"></span>{% translate "Serie (el número dice cuántos juegos)" %}</li>
+                <li><span class="muestra muestra-hueca" aria-hidden="true"></span>{% translate "Descanso" %}</li>
+            </ul>
+            <svg id="fig-turnos" viewBox="0 0 720 300" role="img" aria-labelledby="fig-turnos-titulo fig-turnos-desc"></svg>
+            <figcaption id="fig-turnos-desc">{% blocktranslate trimmed %}Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay descansos, así las giras se pueden armar con más libertad.{% endblocktranslate %}</figcaption>
+        </figure>
+    </section>
+
+    <section aria-labelledby="kempe">
+        <h2 id="kempe">{% translate "3. El movimiento principal: la cadena de Kempe" %}</h2>
+        <p>{% blocktranslate trimmed %}Para cambiar el calendario sin que un equipo juegue dos series a la vez, se toman dos turnos y una cadena de series que se alternan entre ellos. Todas las series de la cadena cambian de turno al mismo tiempo. El calendario sigue siendo válido.{% endblocktranslate %}</p>
+        <figure class="figura" aria-labelledby="fig-kempe-titulo">
+            <div class="figura-barra">
+                <p class="figura-titulo" id="fig-kempe-titulo">{% translate "Cadena de Kempe entre el turno A y el turno B" %}</p>
+                <button type="button" class="boton-animacion" data-figura="kempe" hidden>{% translate "Pausar" %}</button>
+            </div>
+            <ul class="leyenda">
+                <li><span class="muestra muestra-1" aria-hidden="true"></span>{% translate "Serie en el turno A (línea continua)" %}</li>
+                <li><span class="muestra muestra-linea" aria-hidden="true"></span>{% translate "Serie en el turno B (línea punteada)" %}</li>
+            </ul>
+            <svg id="fig-kempe" viewBox="0 0 720 330" role="img" aria-labelledby="fig-kempe-titulo fig-kempe-desc"></svg>
+            <figcaption id="fig-kempe-desc">{% blocktranslate trimmed %}Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro series cambian de turno. Las demás series no se mueven.{% endblocktranslate %}</figcaption>
+        </figure>
+    </section>
+
+    <section aria-labelledby="porque">
+        <h2 id="porque">{% translate "4. ¿Por qué el recocido le ganó a la PG?" %}</h2>
+        <p>{% blocktranslate trimmed %}La primera PG usaba los mismos movimientos que el recocido, pero quedó en 1.70 millones de km y el recocido en 1.58. Hay tres razones.{% endblocktranslate %}</p>
+        <ol class="razones">
+            <li>{% blocktranslate trimmed %}<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer "valle" que encuentra. El recocido acepta empeorar un poco al principio, y eso le deja cruzar la "colina" y llegar a un valle más profundo.{% endblocktranslate %}</li>
+            <li>{% blocktranslate trimmed %}<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y solo conserva el calendario de la mejor. El recocido conserva cada paso que da.{% endblocktranslate %}</li>
+            <li>{% blocktranslate trimmed %}<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol apuntan siempre a los mismos turnos y equipos. Los movimientos al azar recorren todo el calendario.{% endblocktranslate %}</li>
+        </ol>
+        <figure class="figura" aria-labelledby="fig-valle-titulo">
+            <div class="figura-barra">
+                <p class="figura-titulo" id="fig-valle-titulo">{% translate "Solo mejoras contra aceptar cambios peores" %}</p>
+                <button type="button" class="boton-animacion" data-figura="valle" hidden>{% translate "Pausar" %}</button>
+            </div>
+            <ul class="leyenda">
+                <li><span class="muestra muestra-1" aria-hidden="true"></span>{% translate "Solo acepta mejoras (círculo)" %}</li>
+                <li><span class="muestra muestra-2" aria-hidden="true"></span>{% translate "Recocido: acepta cambios peores (rombo)" %}</li>
+            </ul>
+            <svg id="fig-valle" viewBox="0 0 720 300" role="img" aria-labelledby="fig-valle-titulo fig-valle-desc"></svg>
+            <figcaption id="fig-valle-desc">{% blocktranslate trimmed %}La línea es el costo del calendario: más abajo es mejor. El círculo baja al primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar un poco, y llega al valle más profundo.{% endblocktranslate %}</figcaption>
+        </figure>
+    </section>
+
+    <section aria-labelledby="temperatura">
+        <h2 id="temperatura">{% translate "5. La PG que aprende cuándo aceptar cambios peores" %}</h2>
+        <p>{% blocktranslate trimmed %}Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos: qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco.{% endblocktranslate %}</p>
+        <p>{% blocktranslate trimmed %}La PG practicó con corridas cortas en 2 calendarios. Después probamos el árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:{% endblocktranslate %}</p>
+        <pre class="formula"><code>por(entre(entre(102.0, decae(maximo(avance, avance))), suma(avance, aceptados)), 0.587)</code></pre>
+        <p>{% blocktranslate trimmed %}En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza en 20 000 km y baja poco a poco hasta 50.{% endblocktranslate %}</p>
+        <figure class="figura" aria-labelledby="fig-temp-titulo">
+            <div class="figura-barra">
+                <p class="figura-titulo" id="fig-temp-titulo">{% translate "Tolerancia en km a lo largo de la corrida (escala logarítmica)" %}</p>
+                <button type="button" class="boton-animacion" data-figura="temp" hidden>{% translate "Pausar" %}</button>
+            </div>
+            <ul class="leyenda">
+                <li><span class="muestra muestra-1" aria-hidden="true"></span>{% translate "Regla hecha a mano" %}</li>
+                <li><span class="muestra muestra-2" aria-hidden="true"></span>{% translate "PG, si se aceptan pocos cambios (5 %)" %}</li>
+                <li><span class="muestra muestra-3" aria-hidden="true"></span>{% translate "PG, si se aceptan muchos cambios (50 %)" %}</li>
+            </ul>
+            <svg id="fig-temp" viewBox="0 0 720 320" role="img" aria-labelledby="fig-temp-titulo fig-temp-desc"></svg>
+            <figcaption id="fig-temp-desc">{% blocktranslate trimmed %}La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a calendarios de unos 1.58 millones de km.{% endblocktranslate %}</figcaption>
+        </figure>
+    </section>
+
+    <section aria-labelledby="sigue">
+        <h2 id="sigue">{% translate "6. Qué sigue" %}</h2>
+        <p>{% blocktranslate trimmed %}La PG ya empata con el recocido, pero todavía no le gana. La evolución dejó de mejorar en la generación 4, porque la población perdió variedad. El siguiente paso es darle más variedad y más práctica, y medir si así supera a la regla hecha a mano.{% endblocktranslate %}</p>
+        <p><a href="https://github.com/lespam/koza-ttp/pull/38">{% translate "Ver el código de estas pruebas en GitHub" %}</a></p>
+    </section>
+</div>
+
+{{ datos_investigacion|json_script:"investigacion-datos" }}
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/investigacion.js' %}"></script>
+{% endblock %}

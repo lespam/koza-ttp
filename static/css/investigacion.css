@@ -1,0 +1,92 @@
+/* Investigación actual (/documentacion/investigacion/).
+   Colores de las series: paleta validada (azul, naranja, aqua), con su versión
+   para modo oscuro. El texto nunca usa el color de la serie. */
+:root {
+    --serie-1: #2a78d6;
+    --serie-2: #eb6834;
+    --serie-3: #1baf7a;
+    --rejilla: #e4e0d8;
+}
+@media (prefers-color-scheme: dark) {
+    :root:not([data-tema="claro"]) {
+        --serie-1: #3987e5;
+        --serie-2: #d95926;
+        --serie-3: #199e70;
+        --rejilla: #2e4540;
+    }
+}
+:root[data-tema="oscuro"] {
+    --serie-1: #3987e5;
+    --serie-2: #d95926;
+    --serie-3: #199e70;
+    --rejilla: #2e4540;
+}
+
+.figura {
+    margin: 1.5rem 0 2rem;
+    padding: 1rem;
+    background: var(--superficie);
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+}
+.figura svg { display: block; width: 100%; height: auto; overflow: visible; }
+.figura figcaption { margin-top: 0.75rem; font-size: 0.97rem; color: var(--texto-suave); }
+.figura-barra {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+}
+.figura-titulo { margin: 0; font-weight: 600; font-size: 1.05rem; }
+.boton-animacion {
+    font: inherit;
+    font-size: 0.95rem;
+    min-height: 2.5rem;
+    padding: 0.35rem 0.9rem;
+    color: var(--texto);
+    background: var(--fondo);
+    border: 1px solid var(--borde-fuerte);
+    border-radius: 999px;
+    cursor: pointer;
+}
+.boton-animacion:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; }
+
+.leyenda { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; margin: 0.25rem 0 0.5rem; padding: 0; list-style: none; font-size: 0.95rem; }
+.leyenda li { display: inline-flex; align-items: center; gap: 0.4rem; }
+.muestra { display: inline-block; width: 1.1rem; height: 0.6rem; border-radius: 3px; }
+.muestra-1 { background: var(--serie-1); }
+.muestra-2 { background: var(--serie-2); }
+.muestra-3 { background: var(--serie-3); }
+.muestra-linea { height: 0; border-top: 3px dashed var(--serie-2); border-radius: 0; }
+.muestra-hueca { background: transparent; border: 2px dashed var(--texto-suave); }
+
+/* Textos y trazos dentro de los SVG */
+.svg-texto { fill: var(--texto); font-family: "Work Sans", system-ui, sans-serif; font-size: 15px; }
+.svg-suave { fill: var(--texto-suave); font-family: "Work Sans", system-ui, sans-serif; font-size: 14px; }
+.svg-mono { fill: var(--texto); font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 14px; }
+.svg-rejilla { stroke: var(--rejilla); stroke-width: 1; }
+.svg-eje { stroke: var(--borde-fuerte); stroke-width: 1; }
+.svg-serie-1 { fill: var(--serie-1); }
+.svg-serie-2 { fill: var(--serie-2); }
+.svg-trazo-1 { stroke: var(--serie-1); }
+.svg-trazo-2 { stroke: var(--serie-2); }
+.svg-trazo-3 { stroke: var(--serie-3); }
+.svg-hueco { fill: none; stroke: var(--texto-suave); stroke-width: 1.5; stroke-dasharray: 4 3; }
+.svg-nodo { fill: var(--superficie); stroke: var(--texto); stroke-width: 1.5; }
+.svg-nodo-activo { fill: var(--destacado); stroke: var(--foco); stroke-width: 3; }
+.svg-superficie { fill: var(--superficie); }
+.svg-etiqueta-celda { fill: #ffffff; font-family: "Work Sans", system-ui, sans-serif; font-size: 14px; font-weight: 600; }
+.svg-linea-costo { fill: none; stroke: var(--texto); stroke-width: 2; }
+.svg-halo { paint-order: stroke; stroke: var(--superficie); stroke-width: 4px; stroke-linejoin: round; }
+.svg-anillo { stroke: var(--superficie); stroke-width: 2; }
+
+.razones { padding-inline-start: 1.25rem; }
+.razones li + li { margin-top: 0.75rem; }
+.formula {
+    padding: 0.75rem 1rem;
+    background: var(--destacado);
+    border-radius: 8px;
+    overflow-x: auto;
+}
