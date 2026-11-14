@@ -1,6 +1,8 @@
 from django.urls import path
 from django.views.generic import TemplateView
 
+from documentacion.investigacion import Investigacion
+
 app_name = "documentacion"
 
 
@@ -13,4 +15,5 @@ urlpatterns = [
     path("", pagina("index", "inicio"), name="index"),
     path("historico/", pagina("historico", "historico"), name="historico"),
     path("avances/", pagina("avances", "avances"), name="avances"),
+    path("investigacion/", Investigacion.as_view(), name="investigacion"),
 ]
