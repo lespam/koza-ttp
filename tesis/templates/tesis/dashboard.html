@@ -10,6 +10,7 @@
     <p class="antetitulo">{% translate "Demo · Viaje justo entre equipos" %}</p>
     <h1>{% translate "Genera un calendario y" %} <span class="clave">{% translate "mide cuánto viaja cada equipo." %}</span></h1>
     <p class="entrada">{% blocktranslate trimmed %}La IA (programación genética) busca calendarios donde el viaje sea corto y parejo. ¿Quieres tus propios equipos? Usa la <a href="{{ guia }}">guía de 5 pasos</a>.{% endblocktranslate %}</p>
+    <p class="acciones"><a class="boton-secundario" href="{% url 'tesis:repeticion' %}">{% translate "Ver la temporada 2023 real, sin esperar" %} →</a></p>
 
     {% if not configuracion %}
     <section class="panel" aria-labelledby="sin-config">

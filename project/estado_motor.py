@@ -12,6 +12,8 @@ MOTOR = {
         # 19.5 % más distancia que la búsqueda aleatoria (tabla del Histórico)
         "frente_al_azar": _("19.5\u00a0% más distancia que elegir calendarios al azar"),
         "supera_al_azar": False,
+        # Distancia si elegir al azar = 100 (la usa la gráfica de la historia)
+        "distancia_vs_azar": 119.5,
     },
     "mejorado": {
         "nombre": _("Motor por bloques (versión mejorada)"),
@@ -19,6 +21,7 @@ MOTOR = {
         "corridas": 3,
         "equipos": 30,
         "supera_al_azar": True,
+        "distancia_vs_azar": 87,
         "fecha": "2026-11-08",
     },
     # Motor que corre el botón "Ejecutar optimización" de la demo

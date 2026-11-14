@@ -7,6 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{% block descripcion %}{% translate "Documentación de Koza-TTP: la tesis original y los avances posteriores." %}{% endblock %}">
     <title>{% block titulo %}{% endblock %} · Koza-TTP</title>
+    {# Ícono de la pestaña: un árbol de programación genética #}
+    <link rel="icon" href="{% static 'img/icono.svg' %}" type="image/svg+xml">
+    <link rel="icon" href="{% static 'img/icono-32.png' %}" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="{% static 'img/icono-180.png' %}">
+    {# Vista previa al compartir el enlace (LinkedIn, WhatsApp, X). La imagen se hizo en Adobe Express. #}
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Koza-TTP">
+    <meta property="og:title" content="{% block titulo_compartir %}Koza-TTP{% endblock %}">
+    <meta property="og:description" content="{% translate "Programación genética para hacer calendarios de béisbol. La tesis de Leslie Dickinson (ITAM), con resultados honestos." %}">
+    <meta property="og:url" content="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
+    <meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{% static 'img/koza-ttp-compartir.png' %}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{% translate "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un árbol de programación genética." %}">
+    <meta name="twitter:card" content="summary_large_image">
     {% for lang in site_languages %}
     <link rel="alternate" hreflang="{{ lang.code }}" href="{{ request.scheme }}://{{ request.get_host }}{{ lang.url }}">
     {% endfor %}
@@ -26,6 +41,7 @@
 
             <nav aria-label="{% translate "Principal" %}">
                 <ul class="menu">
+                    <li><a href="{% url 'tesis:historia' %}"{% if seccion == "historia" %} aria-current="page"{% endif %}>{% translate "Cómo funciona" %}</a></li>
                     <li><a href="{% url 'documentacion:index' %}"{% if seccion == "inicio" %} aria-current="page"{% endif %}>{% translate "Documentación" %}</a></li>
                     <li><a href="{% url 'documentacion:historico' %}"{% if seccion == "historico" %} aria-current="page"{% endif %}>{% translate "Histórico" %}</a></li>
                     <li><a href="{% url 'documentacion:avances' %}"{% if seccion == "avances" %} aria-current="page"{% endif %}>{% translate "Avances" %}</a></li>

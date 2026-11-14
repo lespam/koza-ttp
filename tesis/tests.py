@@ -2,7 +2,7 @@ import datetime
 from unittest import mock
 
 from django.urls import reverse
-from django.test import TestCase
+from django.test import SimpleTestCase, TestCase
 from django.urls import URLPattern
 
 from programa_genetico.programagenetico import ProgramaGenetico
@@ -230,3 +230,93 @@ class GuiaDeCincoPasos(TestCase):
 
     def test_paso_desconocido_vuelve_al_inicio(self):
         self.assertRedirects(self.client.get("/guia/otro/"), "/guia/")
+
+
+class HistoriaPasoAPaso(SimpleTestCase):
+    """La historia "Entender la idea en 2 minutos" (/historia/)."""
+
+    def test_carga_con_los_siete_pasos_y_los_30_estadios(self):
+        r = self.client.get(reverse("tesis:historia"))
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual(r.content.decode().count('class="historia-paso"'), 7)
+        self.assertContains(r, 'id="historia-datos"')
+        self.assertEqual(len(r.context["historia_datos"]["estadios"]), 30)
+        self.assertContains(r, "historia.js")
+        self.assertContains(r, "historia_mapa.js")
+
+    def test_cifras_salen_de_estado_motor(self):
+        from project.estado_motor import MOTOR
+        r = self.client.get(reverse("tesis:historia"))
+        self.assertEqual(r.context["historia_datos"]["indice"],
+                         {"tesis": MOTOR["tesis"]["distancia_vs_azar"],
+                          "bloques": MOTOR["mejorado"]["distancia_vs_azar"]})
+
+    def test_barra_superior_enlaza_a_la_historia(self):
+        r = self.client.get(reverse("documentacion:index"))
+        self.assertContains(r, f'href="{reverse("tesis:historia")}"')
+        r = self.client.get(reverse("tesis:historia"))
+        self.assertContains(r, 'aria-current="page">Cómo funciona')
+
+    def test_ultimo_paso_ofrece_probar_la_herramienta(self):
+        r = self.client.get(reverse("tesis:historia"))
+        self.assertContains(r, 'id="historia-final"')
+
+    def test_portada_enlaza_a_la_historia(self):
+        r = self.client.get(reverse("tesis:inicio"))
+        self.assertContains(r, f'href="{reverse("tesis:historia")}"')
+
+
+class VistaPreviaAlCompartir(SimpleTestCase):
+    """La imagen y el texto que aparecen al compartir el enlace en redes."""
+
+    def test_portada_tiene_imagen_para_compartir(self):
+        r = self.client.get(reverse("tesis:inicio"))
+        self.assertContains(r, 'property="og:image"')
+        self.assertContains(r, "img/koza-ttp-compartir.png")
+        self.assertContains(r, 'name="twitter:card" content="summary_large_image"')
+
+
+class IconoDeLaPestana(SimpleTestCase):
+    """El ícono que se ve en la pestaña del navegador."""
+
+    def test_paginas_enlazan_el_icono(self):
+        r = self.client.get(reverse("tesis:historia"))
+        self.assertContains(r, 'rel="icon"')
+        self.assertContains(r, "img/icono.svg")
+        self.assertContains(r, 'rel="apple-touch-icon"')
+
+    def test_favicon_ico_lleva_al_icono(self):
+        r = self.client.get("/favicon.ico")
+        self.assertEqual(r.status_code, 301)
+        self.assertTrue(r["Location"].endswith("img/icono-32.png"))
+
+
+class RepeticionTemporada2023(TestCase):
+    """Demo con datos reales: corrida guardada del motor contra el calendario oficial 2023."""
+
+    def test_pagina_con_cifras_y_tablas(self):
+        r = self.client.get(reverse("tesis:repeticion"))
+        self.assertEqual(r.status_code, 200)
+        self.assertContains(r, 'id="repeticion-datos"')
+        self.assertContains(r, "js/repeticion.js")
+        self.assertContains(r, "Oficial de las Grandes Ligas")
+        # 30 equipos en la tabla por equipo
+        self.assertEqual(r.content.decode().count("</td></tr>"), 30 + 3)
+
+    def test_datos_reales_y_honestos(self):
+        from tesis.repeticion import cargar_datos
+        d = cargar_datos()
+        self.assertEqual(len(d["oficial"]["equipos"]), 30)
+        self.assertEqual(len(d["motor"]["equipos"]), 30)
+        self.assertEqual(d["oficial"]["km"], sum(v["km"] for v in d["oficial"]["equipos"].values()))
+        # El oficial todavía le gana al motor, y el motor al azar
+        self.assertLess(d["oficial"]["km"], d["motor"]["km"])
+        self.assertLess(d["motor"]["km"], d["azar"]["km"])
+        # Desde que el motor cumple las reglas de juegos, la curva nunca sube
+        g = [km for km, ok in zip(d["motor"]["generaciones"], d["motor"]["cumple"]) if ok]
+        self.assertTrue(d["motor"]["cumple"][-1])
+        self.assertTrue(all(b <= a for a, b in zip(g, g[1:])))
+
+    def test_la_demo_enlaza_la_repeticion(self):
+        r = self.client.get(reverse("tesis:dashboard"))
+        self.assertContains(r, reverse("tesis:repeticion"))

@@ -26,6 +26,8 @@ from project.views import set_language
 urlpatterns = [
     # Language picker posts here (sets the language cookie and redirects)
     path('i18n/setlang/', set_language, name='set_language'),
+    # Los navegadores piden /favicon.ico aunque la página no lo enlace
+    path('favicon.ico', RedirectView.as_view(url=settings.STATIC_URL + 'img/icono-32.png', permanent=True)),
     # Mexican Spanish is the only Spanish: /es/... and /es-mx/... go to the unprefixed page
     re_path(r'^es(?:-mx)?/(?P<rest>.*)$', RedirectView.as_view(url='/%(rest)s', permanent=True,
                                                              query_string=True)),
