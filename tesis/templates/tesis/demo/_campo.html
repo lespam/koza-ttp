@@ -1,0 +1,16 @@
+{% load i18n %}
+<div class="campo{% if campo.errors %} campo-con-error{% endif %}">
+    {% if campo.widget_type == "radioselect" %}
+    <fieldset aria-describedby="{{ campo.auto_id }}-ayuda{% if campo.errors %} {{ campo.auto_id }}-error{% endif %}">
+        <legend>{{ campo.label }}</legend>
+        <p class="ayuda" id="{{ campo.auto_id }}-ayuda">{{ campo.help_text }}</p>
+        {% if campo.errors %}<p class="error" id="{{ campo.auto_id }}-error">{{ campo.errors|join:" " }}</p>{% endif %}
+        <div class="opciones">{% for opcion in campo %}<label class="opcion">{{ opcion.tag }} {{ opcion.choice_label }}</label>{% endfor %}</div>
+    </fieldset>
+    {% else %}
+    <label for="{{ campo.id_for_label }}">{{ campo.label }}</label>
+    <p class="ayuda" id="{{ campo.auto_id }}-ayuda">{{ campo.help_text }} {% blocktranslate trimmed with a=campo.field.min_value b=campo.field.max_value %}De {{ a }} a {{ b }}.{% endblocktranslate %}</p>
+    {% if campo.errors %}<p class="error" id="{{ campo.auto_id }}-error">{{ campo.errors|join:" " }}</p>{% endif %}
+    {{ campo }}
+    {% endif %}
+</div>

@@ -1,13 +1,17 @@
 from django.urls import path
-from . import guia, historia, repeticion, views
+from . import demo, guia, historia, repeticion, views
 
 app_name = "tesis"
 
 urlpatterns = [
     # Portada: quién es Leslie, qué es el proyecto y tres rutas
     path('', views.InicioView.as_view(), name='inicio'),
-    # Demo: configuración, calendario y ejecución del motor
-    path('demo/', views.DashboardView.as_view(), name='dashboard'),
+    # Demo corta en 3 pasos con el algoritmo más nuevo (todo ya elegido)
+    path('demo/', demo.DemoEquiposView.as_view(), name='dashboard'),
+    path('demo/configuracion/', demo.DemoConfiguracionView.as_view(), name='demo_configuracion'),
+    path('demo/resultado/', demo.DemoResultadoView.as_view(), name='demo_resultado'),
+    # Tablero con el algoritmo original de la tesis
+    path('demo/tesis/', views.DashboardView.as_view(), name='dashboard_tesis'),
 
     # Historia paso a paso: entender la idea en 2 minutos
     path('historia/', historia.HistoriaView.as_view(), name='historia'),

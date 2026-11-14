@@ -172,8 +172,8 @@ main:focus { outline: none; }
 .envoltura { max-width: 46rem; margin: 0 auto; padding: 2rem 1rem 3rem; }
 
 h1, h2, h3 { line-height: 1.25; }
-/* Misma letra que el sitio principal nuevo: Atkinson Hyperlegible Next, pensada para baja visión */
-h1 { font-weight: 800; font-size: 2.4rem; line-height: 1.15; margin: 0.25rem 0 1rem; }
+/* Títulos grandes en Bodoni (Les los prefiere así). Tamaño óptico de texto: trazos gruesos y legibles */
+h1 { font-family: "Bodoni Moda", Didot, Georgia, serif; font-weight: 600; font-optical-sizing: none; font-variation-settings: "opsz" 11; font-size: 2.4rem; margin: 0.25rem 0 1rem; }
 h2 { font-size: 1.45rem; margin: 2.5rem 0 0.75rem; }
 h3 { font-size: 1.15rem; margin: 0.25rem 0 0.5rem; }
 section > h2:first-child { scroll-margin-top: 1rem; }
@@ -342,7 +342,7 @@ thead th { font-size: 0.92rem; }
 .portada-figura { flex: 1 1 18rem; margin: 0; display: flex; justify-content: center; }
 .portada-figura svg { width: 100%; max-width: 21rem; height: auto; }
 .antetitulo { margin: 0 0 1rem; font-weight: 600; color: var(--enlace); }
-.portada h1 { font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.1; margin: 0; }
+.portada h1 { font-size: clamp(2.6rem, 6vw, 4.8rem); line-height: 1.05; margin: 0; }
 .portada h1 .clave, .demo h1 .clave { color: var(--acento); font-weight: 600; }
 .portada .entrada { max-width: 40rem; margin-top: 1.5rem; font-size: 1.25rem; color: var(--texto); }
 .firma { color: var(--texto-suave); font-size: 1rem; }
@@ -420,3 +420,16 @@ thead th { font-size: 0.92rem; }
 .modal-content { padding: 1rem; background: #ffffff; overflow: auto; }
 .close-btn { min-width: 44px; min-height: 44px; padding: 0.3rem 1rem; font: inherit; font-weight: 600; color: var(--texto); background: transparent; border: 1px solid var(--borde-fuerte); border-radius: 999px; cursor: pointer; }
 .resumen-arbol { font-size: 1rem; }
+
+/* Demo corta en 3 pasos */
+.demo-corta .acciones { margin: 1rem 0; }
+.grupo-campos { border: 1px solid var(--borde); border-radius: 8px; padding: 0.75rem 1rem 0.25rem; margin: 0 0 1.25rem; }
+.grupo-campos > legend { font-weight: 700; font-size: 1.15rem; padding: 0 0.4rem; }
+.demo-corta .campo .opciones { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 0.25rem 1rem; }
+.demo-corta .campo .opcion { min-height: 44px; }
+.resumen-demo li { display: flex; flex-direction: column; gap: 0.25rem; padding: 1rem; border: 1px solid var(--borde); border-radius: 8px; background: var(--superficie); }
+.resumen-demo strong { font-size: 1.4rem; }
+.curva-demo { margin: 1rem 0; }
+.curva-demo svg { width: 100%; height: 12rem; color: var(--acento); background: var(--superficie); border: 1px solid var(--borde); border-radius: 8px; }
+.acciones-lista li { margin: 0.4rem 0; }
+.acciones-lista a { display: inline-block; min-height: 44px; padding: 0.55rem 0; }

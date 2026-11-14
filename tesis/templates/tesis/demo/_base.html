@@ -1,0 +1,9 @@
+{% extends "documentacion/base.html" %}
+{% load i18n static %}
+{% block contenido %}
+<div class="envoltura guia demo-corta">
+    <p class="miga"><a href="{% url 'tesis:dashboard' %}">{% translate "Demo" %}</a> / <span aria-current="page">{% blocktranslate trimmed with n=numero t=total %}Paso {{ n }} de {{ t }}{% endblocktranslate %}</span></p>
+    {% include "tesis/demo/_pasos.html" %}
+    {% block paso %}{% endblock %}
+</div>
+{% endblock %}

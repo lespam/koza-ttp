@@ -1,0 +1,77 @@
+{% extends "tesis/demo/_base.html" %}
+{% load i18n l10n humanize %}
+{% block titulo %}{% translate "Demo: el calendario" %}{% endblock %}
+{% block paso %}
+<h1>{% translate "Paso 3: el calendario" %}</h1>
+<p class="etiqueta-motor">{% translate "Algoritmo más nuevo: modelo por turnos" %} · {{ regla }}</p>
+<p class="entrada">{% blocktranslate trimmed with nombre=nombre n=equipos|length %}<strong>{{ nombre }}</strong>: {{ n }} equipos.{% endblocktranslate %} {{ equipos|join:", " }}.</p>
+
+<section aria-labelledby="t-resumen">
+    <h2 id="t-resumen">{% translate "Qué logró el algoritmo" %}</h2>
+    <ul class="tarjetas resumen-demo">
+        <li><strong>{{ km_final|intcomma }} km</strong><span>{% translate "Viaje total de todos los equipos con el calendario del algoritmo." %}</span></li>
+        <li><strong>{{ km_azar|intcomma }} km</strong><span>{% translate "Viaje con un calendario hecho al azar, antes de optimizar." %}</span></li>
+        <li><strong>{{ mejora|unlocalize }}&nbsp;%</strong><span>{% translate "Menos viaje que el calendario al azar." %}</span></li>
+        <li><strong>{% if resultado.reglas_rotas == 0 %}{% translate "Cumple todas las reglas" %}{% else %}{% blocktranslate trimmed count n=resultado.reglas_rotas %}{{ n }} regla rota{% plural %}{{ n }} reglas rotas{% endblocktranslate %}{% endif %}</strong>
+            <span>{% blocktranslate trimmed with a=resultado.reglas_rotas_azar %}El calendario al azar rompía {{ a }}.{% endblocktranslate %}</span></li>
+    </ul>
+    <details>
+        <summary>{% translate "¿Qué reglas revisa?" %}</summary>
+        <ul>
+            <li>{% blocktranslate trimmed with n=resultado.revision.max_casa m=resultado.revision.max_visita %}Máximo 12 juegos seguidos en casa o de visita. Aquí: {{ n }} en casa y {{ m }} de visita.{% endblocktranslate %}</li>
+            <li>{% blocktranslate trimmed with n=resultado.revision.max_dias_seguidos %}Máximo 20 días seguidos con juego. Aquí: {{ n }}.{% endblocktranslate %}</li>
+            <li>{% translate "No jugar contra el mismo rival en dos series seguidas." %}</li>
+            <li>{% blocktranslate trimmed with a=resultado.revision.en_casa.0 b=resultado.revision.en_casa.1 %}Juegos en casa cerca de la mitad. Aquí: de {{ a }} a {{ b }} por equipo.{% endblocktranslate %}</li>
+        </ul>
+    </details>
+</section>
+
+{% if curva %}
+<section aria-labelledby="t-curva">
+    <h2 id="t-curva">{% translate "Cómo bajó el viaje" %}</h2>
+    <figure class="curva-demo">
+        <svg viewBox="0 0 {{ curva.ancho|unlocalize }} {{ curva.alto|unlocalize }}" role="img" aria-labelledby="curva-texto" preserveAspectRatio="none">
+            <polyline points="{{ curva.puntos }}" fill="none" stroke="currentColor" stroke-width="3" vector-effect="non-scaling-stroke"></polyline>
+        </svg>
+        <figcaption id="curva-texto">{% blocktranslate trimmed with a=curva.km_max|intcomma b=curva.km_min|intcomma p=curva.pasos|intcomma %}El viaje total bajó de {{ a }} km a {{ b }} km en {{ p }} pasos de búsqueda.{% endblocktranslate %}</figcaption>
+    </figure>
+</section>
+{% endif %}
+
+<section aria-labelledby="t-juegos">
+    <h2 id="t-juegos">{% blocktranslate trimmed with n=primeros|length t=total_juegos %}Los primeros {{ n }} de {{ t }} juegos{% endblocktranslate %}</h2>
+    <div class="tabla-envoltura" tabindex="0" role="region" aria-labelledby="t-juegos">
+        <table>
+            <thead><tr><th scope="col">{% translate "Fecha" %}</th><th scope="col">{% translate "En casa" %}</th><th scope="col">{% translate "Visita" %}</th></tr></thead>
+            <tbody>
+            {% for j in primeros %}<tr><td>{{ j.fecha|date:"j M" }}</td><td>{{ j.local }}</td><td>{{ j.visita }}</td></tr>{% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% if total_juegos > primeros|length %}
+    <details>
+        <summary>{% translate "Ver todos los juegos" %}</summary>
+        <div class="tabla-envoltura" tabindex="0" role="region" aria-label="{% translate "Todos los juegos" %}">
+            <table>
+                <thead><tr><th scope="col">{% translate "Fecha" %}</th><th scope="col">{% translate "En casa" %}</th><th scope="col">{% translate "Visita" %}</th></tr></thead>
+                <tbody>
+                {% for j in juegos %}<tr><td>{{ j.fecha|date:"j M" }}</td><td>{{ j.local }}</td><td>{{ j.visita }}</td></tr>{% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </details>
+    {% endif %}
+</section>
+
+<section aria-labelledby="t-sigue">
+    <h2 id="t-sigue">{% translate "¿Qué sigue?" %}</h2>
+    <ul class="acciones-lista">
+        <li><a href="{% url 'tesis:demo_configuracion' %}">{% translate "Cambiar la configuración y volver a correr" %}</a></li>
+        <li><a href="{% url 'tesis:dashboard' %}">{% translate "Elegir otros equipos" %}</a></li>
+        <li><a href="{% url 'tesis:repeticion' %}">{% translate "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial" %}</a></li>
+        <li><a href="{% url 'tesis:historia' %}">{% translate "Entender cómo funciona en 2 minutos" %}</a></li>
+        <li><a href="{% url 'tesis:guia' %}">{% translate "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos" %}</a></li>
+        <li><a href="{% url 'tesis:dashboard_tesis' %}">{% translate "Ver el algoritmo original de la tesis" %}</a></li>
+    </ul>
+</section>
+{% endblock %}

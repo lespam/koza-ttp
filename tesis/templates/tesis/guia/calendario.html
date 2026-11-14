@@ -22,7 +22,7 @@
 </div>
 <h2>{% translate "¿Y ahora?" %}</h2>
 <ul>
-    <li><a href="{% url 'tesis:dashboard' %}?configuracion={{ configuracion.pk }}">{% translate "Abrir este calendario en el panel y optimizarlo" %}</a> {% translate "(tarda unos 20 segundos)" %}</li>
+    <li><a href="{% url 'tesis:dashboard_tesis' %}?configuracion={{ configuracion.pk }}">{% translate "Abrir este calendario en el panel y optimizarlo" %}</a> {% translate "(tarda unos 20 segundos)" %}</li>
     <li><a href="{% url 'tesis:calendario_detail' calendario.pk %}">{% translate "Ver el detalle del calendario" %}</a></li>
     <li><a href="{% url 'documentacion:historico' %}">{% translate "Leer por qué la versión de la tesis no superó a la búsqueda aleatoria" %}</a></li>
 </ul>

@@ -31,7 +31,7 @@ class InicioView(View):
 
     def get(self, request):
         if request.GET.get("ejecutar") or request.GET.get("configuracion"):
-            return redirect(f"{reverse('tesis:dashboard')}?{request.GET.urlencode()}")
+            return redirect(f"{reverse('tesis:dashboard_tesis')}?{request.GET.urlencode()}")
         return render(request, "tesis/inicio.html", {"seccion": "inicio_sitio"})
 
 

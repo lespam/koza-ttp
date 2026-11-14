@@ -7,7 +7,8 @@
 {% block contenido %}
 <div class="demo">
     {% url 'tesis:guia' as guia %}
-    <p class="antetitulo">{% translate "Demo · Viaje justo entre equipos" %}</p>
+    <p class="miga"><a href="{% url 'tesis:dashboard' %}">{% translate "Demo" %}</a> / <span aria-current="page">{% translate "Algoritmo de la tesis" %}</span></p>
+    <p class="antetitulo">{% translate "Algoritmo original de la tesis (2026)" %}</p>
     <h1>{% translate "Genera un calendario y" %} <span class="clave">{% translate "mide cuánto viaja cada equipo." %}</span></h1>
     <p class="entrada">{% blocktranslate trimmed %}La IA (programación genética) busca calendarios donde el viaje sea corto y parejo. ¿Quieres tus propios equipos? Usa la <a href="{{ guia }}">guía de 5 pasos</a>.{% endblocktranslate %}</p>
     <p class="acciones"><a class="boton-secundario" href="{% url 'tesis:repeticion' %}">{% translate "Ver la temporada 2023 real, sin esperar" %} →</a></p>
