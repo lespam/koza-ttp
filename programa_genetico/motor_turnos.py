@@ -330,8 +330,14 @@ class CalendarioTurnos:
 def recocido(cal: CalendarioTurnos, rng: random.Random, pasos: int = 400_000,
              temp_inicial: float = 20_000.0, temp_final: float = 50.0,
              peso_regla: float = 20_000.0, peso_dia: float = 200_000.0,
-             on_paso: Optional[Callable[[int, int, float], None]] = None, cada: int = 10_000) -> tuple:
-    """Recocido simulado. Deja en ``cal`` el mejor calendario y devuelve (reglas rotas, km)."""
+             on_paso: Optional[Callable[[int, int, float], None]] = None, cada: int = 10_000,
+             temperatura: Optional[Callable[[float, float], float]] = None) -> tuple:
+    """Recocido simulado. Deja en ``cal`` el mejor calendario y devuelve (reglas rotas, km).
+
+    ``temperatura(avance, aceptados)`` reemplaza el enfriamiento geométrico.
+    ``avance`` va de 0 a 1 en la corrida y ``aceptados`` es la fracción
+    reciente de movimientos aceptados. Así la PG puede diseñar la regla.
+    """
     n, T = len(cal.equipos), cal.T
     dur = cal.duraciones()
     cache = [cal.costo_equipo(i, dur) for i in range(n)]
@@ -342,8 +348,17 @@ def recocido(cal: CalendarioTurnos, rng: random.Random, pasos: int = 400_000,
 
     actual = total(dur, cache)
     mejor, mejor_estado = actual, cal.copia_estado()
+    aceptados = 0.5
     for paso in range(pasos):
-        temp = temp_inicial * (temp_final / temp_inicial) ** (paso / pasos)
+        if temperatura is None:
+            temp = temp_inicial * (temp_final / temp_inicial) ** (paso / pasos)
+        else:
+            try:
+                temp = float(temperatura(paso / pasos, aceptados))
+            except (OverflowError, ValueError, ZeroDivisionError):
+                temp = 0.0
+            if not temp == temp:  # NaN
+                temp = 0.0
         r = rng.random()
         if r < 0.75:
             a, b = rng.randrange(T), rng.randrange(T)
@@ -378,7 +393,9 @@ def recocido(cal: CalendarioTurnos, rng: random.Random, pasos: int = 400_000,
             cache[i] = cal.costo_equipo(i, nueva_dur)
         nuevo = total(nueva_dur, cache)
         d = nuevo - actual
-        if d <= 0 or rng.random() < math.exp(-d / temp):
+        acepta = d <= 0 or (temp > 0 and rng.random() < math.exp(-d / temp))
+        aceptados = 0.99 * aceptados + 0.01 * acepta
+        if acepta:
             actual, dur = nuevo, nueva_dur
             if actual < mejor:
                 mejor, mejor_estado = actual, cal.copia_estado()

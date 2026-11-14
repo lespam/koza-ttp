@@ -247,6 +247,22 @@ class MotorTurnosTests(SimpleTestCase):
         c, fit = busqueda_aleatoria(otro, 500, __import__("random").Random(1))
         self._sin_choques(c)
 
+    def test_regla_de_temperatura_de_la_pg(self):
+        from deap import gp
+
+        from programa_genetico.motor_turnos import recocido
+        from programa_genetico.motor_turnos_temperatura import PSET
+
+        regla = gp.compile(gp.PrimitiveTree.from_string(
+            "por(entre(entre(102.0, decae(maximo(avance, avance))), suma(avance, aceptados)), 0.587)", PSET), PSET)
+        self.assertGreater(regla(0.5, 0.2), 0)
+        self.assertEqual(gp.compile(gp.PrimitiveTree.from_string("entre(avance, 0.0)", PSET), PSET)(0.3, 0.1), 1.0)
+        cal, rng = self._calendario(3)
+        antes = cal.evaluar()
+        despues = recocido(cal, rng, pasos=2000, temperatura=regla)
+        self._sin_choques(cal)
+        self.assertLessEqual(despues[0], antes[0])
+
     def test_medicion_de_juegos_por_fecha(self):
         from programa_genetico.motor_turnos import haversine_km, medir_juegos
 
