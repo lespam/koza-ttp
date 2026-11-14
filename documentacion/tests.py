@@ -3,8 +3,7 @@ from django.urls import reverse
 
 
 class PaginasDeDocumentacion(SimpleTestCase):
-    nombres = ["documentacion:index", "documentacion:historico", "documentacion:avances",
-               "documentacion:investigacion"]
+    nombres = ["documentacion:index", "documentacion:historico", "documentacion:avances"]
 
     def test_cargan_en_espanol(self):
         for nombre in self.nombres:
@@ -22,6 +21,8 @@ class PaginasDeDocumentacion(SimpleTestCase):
     def test_investigacion_tiene_datos_y_figuras(self):
         import json
         r = self.client.get(reverse("documentacion:investigacion"))
+        self.assertEqual(r.status_code, 200)
+        self.assertContains(r, 'aria-current="true"')  # dentro de Documentación
         self.assertContains(r, 'id="investigacion-datos"')
         for figura in ("fig-barras", "fig-turnos", "fig-kempe", "fig-valle", "fig-temp"):
             self.assertContains(r, f'id="{figura}"')
@@ -205,19 +206,15 @@ class UnaSolaCifraDelMotor(TestCase):
 
 
 class FraseLiteral(TestCase):
-    """T-1: la frase principal es literal y está bien traducida a mano en inglés y portugués."""
+    """T-1: el título de la portada es literal y sale de estado_motor."""
 
-    def test_portada_en_cada_idioma(self):
-        casos = {
-            "/": "el algoritmo no fue mejor que elegir calendarios al azar.",
-            "/en/": "the algorithm was not better than choosing schedules at random.",
-            "/pt/": "o algoritmo não foi melhor do que escolher calendários ao acaso.",
-        }
-        for url, frase in casos.items():
-            with self.subTest(url=url):
-                html = self.client.get(url, HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
-                self.assertIn(frase, html)
-                self.assertNotIn("le ganó al azar", html)
+    def test_titulo_de_la_portada(self):
+        html = self.client.get("/", HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
+        self.assertIn("Un mejor calendario de la MLB con programación genética.", html)
+        self.assertIn("13\u00a0% menos viaje que elegir calendarios al azar", html)
+        self.assertNotIn("le ganó al azar", html)
+        ingles = self.client.get("/en/").content.decode()
+        self.assertIn("A better MLB schedule with genetic programming.", ingles)
 
 
 class TextosDePython(SimpleTestCase):
@@ -241,3 +238,24 @@ class BotonDeModo(SimpleTestCase):
         self.assertIn('class="tema-a-oscuro"', html)
         self.assertIn('class="tema-a-claro" hidden', html)
         self.assertNotIn("aria-pressed", html)
+
+
+class NavegacionDelSitio(SimpleTestCase):
+    """Auditoría de navegación del 14 de noviembre: cabecera de 4 enlaces y enlace al sitio principal."""
+
+    def test_cabecera_con_cuatro_enlaces(self):
+        html = self.client.get("/documentacion/historico/", HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
+        menu = html[html.index('<ul class="menu">'):html.index("</ul>", html.index('<ul class="menu">'))]
+        self.assertEqual(menu.count("<li>"), 4)
+        # Histórico vive dentro de Documentación: la marca la sección, no la página
+        self.assertIn('aria-current="true">Documentación', menu)
+        self.assertIn('id="boton-menu" aria-expanded="false" aria-controls="cabecera-menu"', html)
+
+    def test_enlace_al_sitio_principal_segun_idioma(self):
+        casos = {"/": "https://lesliedickinson.dev/es/", "/en/": "https://lesliedickinson.dev/en/",
+                 "/pt/": "https://lesliedickinson.dev/en/"}
+        for url, destino in casos.items():
+            with self.subTest(url=url):
+                html = self.client.get(url, HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
+                self.assertIn(f'<a href="{destino}#proyectos">', html)
+                self.assertIn(f'href="{destino}#contact"', html)

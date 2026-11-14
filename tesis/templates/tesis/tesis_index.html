@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/admin.css">
 </head>
 <body>
+<nav class="admin-volver" aria-label="Principal"><a href="/">Koza-TTP</a> · <a href="/guia/">Guía</a> · <a href="/demo/">Demo</a></nav>
+<main>
     <h2>Menu</h2>
     <ul>
         <li><a href="{%url 'tesis:liga_list' %}">Liga</a></li>
@@ -13,5 +17,6 @@
         <li><a href="{%url 'tesis:calendario_list' %}">Calendario</a></li>
         <li><a href="{%url 'tesis:juego_list' %}">Juego</a></li>
     </ul>
+</main>
 </body>
 </html>

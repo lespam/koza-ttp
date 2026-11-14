@@ -1,6 +1,8 @@
 // Modo claro u oscuro. Se carga en <head> para aplicar el modo guardado antes de pintar.
 (function () {
     var raiz = document.documentElement;
+    // Avisa al CSS que hay JavaScript (el menú de celular lo necesita)
+    raiz.classList.add('js');
     try {
         var guardado = localStorage.getItem('tema');
         if (guardado === 'claro' || guardado === 'oscuro') raiz.setAttribute('data-tema', guardado);

@@ -1,12 +1,16 @@
 {% load humanize %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <title>Serie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/admin.css">
 </head>
 <body>
+<nav class="admin-volver" aria-label="Principal"><a href="/">Koza-TTP</a> · <a href="/guia/">Guía</a> · <a href="/demo/">Demo</a></nav>
+<main>
     <h1>Serie{{ serie.numero_de_serie }}</h1>
     {% if messages %}
     <ul class="messages">
@@ -59,6 +63,6 @@
     <p><a href="{% url 'tesis:serie_list' %}">Regresar a la lista de series</a></p>
     <p><a href="{% url 'tesis:serie_update' serie.id %}">Editar Serie</a></p>
     <p><a href="{% url 'tesis:serie_delete' serie.id %}">Eliminar Serie</a></p>
-
+</main>
 </body>
 </html>

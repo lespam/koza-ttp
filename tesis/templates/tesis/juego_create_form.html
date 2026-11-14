@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
         <meta charset="UTF-8">
         <title>Crear juego</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/admin.css">
 </head>
 <body>
+<nav class="admin-volver" aria-label="Principal"><a href="/">Koza-TTP</a> · <a href="/guia/">Guía</a> · <a href="/demo/">Demo</a></nav>
+<main>
         <h2>Crear juego</h2>
         {% if messages %}
         <ul class="messages">
@@ -24,7 +28,6 @@
         </form>
 
         <a href="{% url 'tesis:juego_list' %}">Cancelar</a>
-
-    
+</main>
 </body>
 </html>

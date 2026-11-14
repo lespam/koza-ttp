@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
   <meta charset="UTF-8" />
   <title>Calendario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/admin.css">
 </head>
 
 <body>
+<nav class="admin-volver" aria-label="Principal"><a href="/">Koza-TTP</a> · <a href="/guia/">Guía</a> · <a href="/demo/">Demo</a></nav>
+<main>
   <header>
     <h1>Información del calendario</h1>
   </header>
@@ -91,6 +95,7 @@
     <p><a href="{% url 'tesis:juego_create' %}">Crear un nuevo juego</a></p>
     <p><a href="{% url 'tesis:condicion_create' %}">Crear una nueva condición</a></p>
   </section>
+</main>
 </body>
 
 </html>

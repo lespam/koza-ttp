@@ -1,5 +1,5 @@
 {% extends "documentacion/base.html" %}
-{% load i18n %}
+{% load i18n static %}
 
 {% block titulo %}{% translate "Demo: calendario y viaje por equipo" %}{% endblock %}
 {% block descripcion %}{% translate "Genera un calendario de béisbol con programación genética y mide cuánto viaja cada equipo." %}{% endblock %}
@@ -27,14 +27,23 @@
                 <button type="button" class="miniatura" id="open-modal-trigger" aria-label="{% translate "Ver el árbol en grande" %}">
                     {% autoescape off %}{{ svg_content }}{% endautoescape %}
                 </button>
-                <p class="nota">{% translate "Haz clic en el árbol para expandir" %}</p>
-                <div class="dato"><span>{% translate "Costo de viaje total:" %}</span><strong>{{ distancia|floatformat:2 }} {{ calendario.torneo.unidad|default:"km" }}</strong></div>
-                <div class="dato"><span>{% translate "Violaciones de reglas:" %}</span><strong>{{ diferencia|floatformat:0 }}</strong></div>
+                <p class="nota">{% translate "Haz clic en el árbol para verlo en grande." %}</p>
+                <p class="resumen-arbol">{% blocktranslate trimmed %}El árbol es el programa que arma el mejor calendario. Cada rama une juegos; las hojas son los juegos (fecha, equipo local y equipo visitante).{% endblocktranslate %}</p>
+                <div class="dato"><span>{% translate "Viaje total de todos los equipos:" %}</span><strong>{{ distancia|floatformat:2 }} {{ calendario.torneo.unidad|default:"km" }}</strong></div>
+                <div class="dato"><span>{% translate "Juegos que rompen reglas:" %}</span><strong>{{ diferencia|floatformat:0 }}</strong></div>
+                <p class="nota">{% blocktranslate trimmed %}Una regla es que cada equipo juegue el número de juegos que pide el torneo. <strong>0 juegos que rompen reglas</strong> quiere decir que el calendario es válido.{% endblocktranslate %}</p>
             {% else %}
                 <p>{% translate "Presiona el botón para ejecutar el motor y ver el árbol del mejor calendario." %}</p>
             {% endif %}
-            <p class="acciones"><a href="?configuracion={{ configuracion.pk }}&amp;ejecutar=true" class="boton">{% translate "Ejecutar optimización" %}</a></p>
-            <p class="nota">{% translate "Tarda unos segundos." %}</p>
+            <p class="acciones"><a href="?configuracion={{ configuracion.pk }}&amp;ejecutar=true" class="boton" id="boton-ejecutar">{% translate "Ejecutar optimización" %}</a></p>
+            <p class="nota">{% translate "Puede tardar de unos segundos a varios minutos. Depende del número de equipos." %}</p>
+            <div class="espera" id="espera" role="status" hidden>
+                <div class="espera-animacion" id="espera-animacion" aria-hidden="true" data-animacion="{% static 'lottie/arbol_evoluciona.json' %}"></div>
+                <div>
+                    <p class="espera-titulo">{% translate "El motor está trabajando." %}</p>
+                    <p>{% translate "Crea calendarios, los combina y se queda con los mejores. No cierres esta página." %}</p>
+                </div>
+            </div>
             <div class="aviso-honesto">
                 {% if motor.en_la_demo == "tesis" %}
                 <p>{% blocktranslate trimmed %}<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue mejor que elegir calendarios al azar.{% endblocktranslate %}</p>
@@ -73,11 +82,15 @@
         </section>
 
         <section class="panel" aria-labelledby="t-config">
-            <h2 id="t-config">{% blocktranslate trimmed with id=configuracion.id %}Configuración {{ id }}{% endblocktranslate %}</h2>
+            <h2 id="t-config">{% translate "Parámetros guardados" %}</h2>
+            {% if configuracion.nombre %}<p class="nota">{% blocktranslate trimmed with nombre=configuracion.nombre %}Configuración «{{ nombre }}»{% endblocktranslate %}</p>{% endif %}
             <div class="dato"><span>{% translate "Tamaño de la población:" %}</span><strong>{{ configuracion.poblacion|default:"0" }}</strong></div>
             <div class="dato"><span>{% translate "Número de generaciones:" %}</span><strong>{{ configuracion.generaciones|default:"0" }}</strong></div>
             <div class="dato"><span>{% translate "Probabilidad de cruce:" %}</span><strong>{{ configuracion.probabilidad_de_cruce|default:"0" }}</strong></div>
             <div class="dato"><span>{% translate "Probabilidad de mutación:" %}</span><strong>{{ configuracion.probabilidad_de_reproduccion|default:"0" }}</strong></div>
+            {% if motor.en_la_demo == "tesis" %}
+            <p class="aviso-honesto">{% blocktranslate trimmed %}<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y mutación 0.2.{% endblocktranslate %}</p>
+            {% endif %}
         </section>
     </div>
     {% endif %}
@@ -112,7 +125,7 @@
     <section class="columnas" aria-label="{% translate "Córrelo y pide ayuda" %}">
         <div>
             <h2>{% translate "Córrelo en tu computadora" %}</h2>
-            <pre class="bloque-codigo"><code>git clone https://github.com/lespam/koza-ttp
+            <pre class="bloque-codigo" tabindex="0" role="region" aria-label="{% translate "Comandos para correrlo" %}"><code>git clone https://github.com/lespam/koza-ttp
 cd koza-ttp
 pip install -r requirements.txt
 python manage.py migrate
@@ -120,17 +133,27 @@ python manage.py runserver</code></pre>
         </div>
         <div>
             <h2>{% translate "Pídele ayuda a tu asistente de IA" %}</h2>
-            <p>{% translate "Copia esta pregunta y pégala en el asistente que uses, junto con el archivo programa_genetico/programagenetico.py." %}</p>
+            <p>{% translate "Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo programa_genetico/programagenetico.py (motor de la tesis) o programa_genetico/motor_bloques.py (motor mejorado)." %}</p>
             <p class="bloque-codigo">{% translate "Explícame paso a paso cómo este programa genético crea y evalúa un calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea la diferencia entre el equipo que más viaja y el que menos." %}</p>
             <p class="nota">{% translate "Revisa lo que te responda contra el código. La IA puede equivocarse." %}</p>
         </div>
     </section>
 </div>
 
-<div id="svgModal" class="modal">
-    <button type="button" class="close-btn" id="close-modal-trigger" aria-label="{% translate "Cerrar" %}">&times;</button>
-    <div class="modal-content" id="modal-content-wrapper">
+{% if svg_content %}
+<dialog id="svgModal" class="modal" aria-labelledby="titulo-arbol">
+    <div class="modal-barra">
+        <h2 id="titulo-arbol">{% translate "Árbol del mejor calendario" %}</h2>
+        <button type="button" class="close-btn" id="close-modal-trigger">{% translate "Cerrar" %}</button>
+    </div>
+    <div class="modal-content" id="modal-content-wrapper" tabindex="0" role="region" aria-label="{% translate "Árbol del mejor calendario" %}">
         {% autoescape off %}{{ svg_content }}{% endautoescape %}
     </div>
-</div>
+</dialog>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/lottie_light.min.js' %}"></script>
+<script src="{% static 'js/espera.js' %}"></script>
 {% endblock %}

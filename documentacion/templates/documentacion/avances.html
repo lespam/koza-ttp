@@ -6,7 +6,7 @@
 
 {% block contenido %}
 <div class="envoltura">
-    <p class="miga"><a href="{% url 'documentacion:index' %}">{% translate "Documentación" %}</a> / {% translate "Avances" %}</p>
+    <p class="miga"><a href="{% url 'documentacion:index' %}">{% translate "Documentación" %}</a> / <span aria-current="page">{% translate "Avances" %}</span></p>
     <h1>{% translate "Avances: después de la tesis" %}</h1>
     <p class="entrada">{% blocktranslate trimmed %}Aquí se registra cada cambio hecho después de la defensa. La versión de la tesis se conserva sin cambios, para poder comparar.{% endblocktranslate %}</p>
 
@@ -51,8 +51,31 @@
                 <article aria-labelledby="av-turnos">
                     <p class="meta"><time datetime="2026-11-14">{% translate "14 de noviembre de 2026" %}</time> · <span class="estado estado-curso">{% translate "En pruebas" %}</span></p>
                     <h3 id="av-turnos">{% translate "Algoritmo por turnos: le gana al calendario oficial de MLB 2023" %}</h3>
-                    <p>{% blocktranslate trimmed %}Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja 1.58 millones de km. El calendario oficial viaja 1.74 millones. Los dos cumplen las mismas reglas de realismo.{% endblocktranslate %}</p>
+                    <p>{% blocktranslate trimmed %}Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja 1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos cumplen las mismas reglas de realismo.{% endblocktranslate %}</p>
                     <p><a href="{% url 'documentacion:investigacion' %}">{% translate "Ver la investigación actual, con diagramas animados" %}</a></p>
+                </article>
+            </li>
+            <li>
+                <article aria-labelledby="av-temporada-2023">
+                    <p class="meta"><time datetime="2026-11-12">{% translate "12 de noviembre de 2026" %}</time> · <span class="estado estado-hecho">{% translate "Hecho" %}</span></p>
+                    <h3 id="av-temporada-2023">{% translate "La demo muestra la temporada 2023 real" %}</h3>
+                    <p>{% translate "Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que corra el motor." %}</p>
+                    <p><a href="{% url 'tesis:repeticion' %}">{% translate "Ver la temporada 2023" %}</a></p>
+                </article>
+            </li>
+            <li>
+                <article aria-labelledby="av-historia">
+                    <p class="meta"><time datetime="2026-11-09">{% translate "9 de noviembre de 2026" %}</time> · <span class="estado estado-hecho">{% translate "Hecho" %}</span></p>
+                    <h3 id="av-historia">{% translate "Historia paso a paso" %}</h3>
+                    <p>{% translate "Una explicación con el mapa de los 30 estadios, los árboles y la evolución, paso por paso." %}</p>
+                    <p><a href="{% url 'tesis:historia' %}">{% translate "Leer la historia" %}</a></p>
+                </article>
+            </li>
+            <li>
+                <article aria-labelledby="av-auditoria-2">
+                    <p class="meta"><time datetime="2026-11-08">{% translate "8 de noviembre de 2026" %}</time> · <span class="estado estado-hecho">{% translate "Hecho" %}</span></p>
+                    <h3 id="av-auditoria-2">{% translate "Segunda auditoría de la experiencia" %}</h3>
+                    <p>{% blocktranslate trimmed %}Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA. De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los puntos nuevos ya se corrigieron.{% endblocktranslate %}</p>
                 </article>
             </li>
             <li>
@@ -65,21 +88,23 @@
             </li>
             <li>
                 <article aria-labelledby="av-planeado-motor">
-                    <p class="meta"><span class="estado estado-planeado">{% translate "Planeado" %}</span></p>
+                    <p class="meta"><time datetime="2026-11-08">{% translate "8 de noviembre de 2026" %}</time> · <span class="estado estado-hecho">{% translate "Hecho" %}</span></p>
                     <h3 id="av-planeado-motor">{% translate "Operadores contextuales para el motor" %}</h3>
                     <p>{% blocktranslate trimmed %}Cambiar los operadores genéricos por otros que intercambien series completas, para que los hijos sigan siendo calendarios válidos. Es el trabajo futuro que propuso la tesis.{% endblocktranslate %}</p>
+                    <p>{% translate "Se hizo con el motor por series y después con el motor por bloques." %}</p>
                 </article>
             </li>
             <li>
                 <article aria-labelledby="av-planeado-flujo">
-                    <p class="meta"><span class="estado estado-planeado">{% translate "Planeado" %}</span></p>
+                    <p class="meta"><time datetime="2026-11-05">{% translate "5 de noviembre de 2026" %}</time> · <span class="estado estado-hecho">{% translate "Hecho" %}</span></p>
                     <h3 id="av-planeado-flujo">{% translate "Reparar el recorrido completo de la herramienta" %}</h3>
                     <p>{% blocktranslate trimmed %}Que se pueda ir del registro de equipos hasta ver el calendario sin errores, con un recorrido guiado paso a paso.{% endblocktranslate %}</p>
+                    <p><a href="{% url 'tesis:guia' %}">{% translate "Abrir la guía de 5 pasos" %}</a></p>
                 </article>
             </li>
             <li>
                 <article aria-labelledby="av-diagnostico">
-                    <p class="meta"><time datetime="2026-11-03">{% translate "3 de noviembre de 2026" %}</time> · <span class="estado estado-curso">{% translate "En curso" %}</span></p>
+                    <p class="meta"><time datetime="2026-11-03">{% translate "3 de noviembre de 2026" %}</time> · <span class="estado estado-hecho">{% translate "Hecho" %}</span></p>
                     <h3 id="av-diagnostico">{% translate "Diagnóstico del motor" %}</h3>
                     <p>{% blocktranslate trimmed %}Revisión del código para confirmar por qué la PG no fue mejor que elegir calendarios al azar. El cruce y la mutación rompen la viabilidad de los calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra los padres de la generación inicial.{% endblocktranslate %}</p>
                 </article>

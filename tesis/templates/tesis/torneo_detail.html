@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <title>Crear torneo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/admin.css">
 </head>
 <body>
+<nav class="admin-volver" aria-label="Principal"><a href="/">Koza-TTP</a> · <a href="/guia/">Guía</a> · <a href="/demo/">Demo</a></nav>
+<main>
     <h1>{{ torneo.nombre }}</h1>
 
     {% if messages %}
@@ -68,5 +72,6 @@
         <a href="{% url 'tesis:torneo_delete' torneo.id %}">Eliminar</a> |
         <a href="{% url 'tesis:torneo_list' %}">Volver al listado</a>
     </div>
+</main>
 </body> 
 </html>

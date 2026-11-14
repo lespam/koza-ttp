@@ -64,7 +64,7 @@
 .h-pulso { fill: none; stroke: var(--acento); stroke-width: 2; opacity: 0; transform-box: fill-box; transform-origin: center; pointer-events: none; }
 .h-pulso.late { animation: h-pulso 0.9s ease-out 1; }
 @keyframes h-pulso { from { opacity: 0.9; transform: scale(1); } to { opacity: 0; transform: scale(3.2); } }
-.h-etiqueta-fondo { font-family: "Work Sans", system-ui, sans-serif; font-size: 16px; font-weight: 600; paint-order: stroke; stroke: var(--superficie); stroke-width: 5px; stroke-linejoin: round; }
+.h-etiqueta-fondo { font-family: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", Verdana, system-ui, sans-serif; font-size: 16px; font-weight: 600; paint-order: stroke; stroke: var(--superficie); stroke-width: 5px; stroke-linejoin: round; }
 .h-rama { stroke: var(--borde-fuerte); stroke-width: 2; fill: none; transition: opacity 0.35s; }
 .h-rama.oculta { opacity: 0; }
 .h-nodo rect { fill: var(--superficie); stroke: var(--texto); stroke-width: 1.4; }

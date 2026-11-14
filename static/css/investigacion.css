@@ -63,8 +63,8 @@
 .muestra-hueca { background: transparent; border: 2px dashed var(--texto-suave); }
 
 /* Textos y trazos dentro de los SVG */
-.svg-texto { fill: var(--texto); font-family: "Work Sans", system-ui, sans-serif; font-size: 15px; }
-.svg-suave { fill: var(--texto-suave); font-family: "Work Sans", system-ui, sans-serif; font-size: 14px; }
+.svg-texto { fill: var(--texto); font-family: inherit; font-size: 15px; }
+.svg-suave { fill: var(--texto-suave); font-family: inherit; font-size: 14px; }
 .svg-mono { fill: var(--texto); font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 14px; }
 .svg-rejilla { stroke: var(--rejilla); stroke-width: 1; }
 .svg-eje { stroke: var(--borde-fuerte); stroke-width: 1; }
@@ -77,7 +77,7 @@
 .svg-nodo { fill: var(--superficie); stroke: var(--texto); stroke-width: 1.5; }
 .svg-nodo-activo { fill: var(--destacado); stroke: var(--foco); stroke-width: 3; }
 .svg-superficie { fill: var(--superficie); }
-.svg-etiqueta-celda { fill: #ffffff; font-family: "Work Sans", system-ui, sans-serif; font-size: 14px; font-weight: 600; }
+.svg-etiqueta-celda { fill: #ffffff; font-family: inherit; font-size: 14px; font-weight: 600; }
 .svg-linea-costo { fill: none; stroke: var(--texto); stroke-width: 2; }
 .svg-halo { paint-order: stroke; stroke: var(--superficie); stroke-width: 4px; stroke-linejoin: round; }
 .svg-anillo { stroke: var(--superficie); stroke-width: 2; }

@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
   <head>
     <meta charset="UTF-8" />
     <title>Configuracion</title>
-  </head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/admin.css">
+</head>
   <body>
+<nav class="admin-volver" aria-label="Principal"><a href="/">Koza-TTP</a> · <a href="/guia/">Guía</a> · <a href="/demo/">Demo</a></nav>
+<main>
     <h1>Configuracion {{ configuracion.id }}</h1>
     {% if messages %}
       <ul class="messages">
@@ -78,5 +82,6 @@
 
       <a href="{% url 'tesis:ejecutar_programa_genetico' configuracion.id %}">Ejecutar PF para el calendario {{ configuracion.calendario.id }}</a>
     </section>
-  </body>
+</main>
+</body>
 </html>

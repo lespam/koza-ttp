@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <title>juego</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/admin.css">
 </head>
 <body>
+<nav class="admin-volver" aria-label="Principal"><a href="/">Koza-TTP</a> · <a href="/guia/">Guía</a> · <a href="/demo/">Demo</a></nav>
+<main>
     <h1>Juegos</h1>
     {% if messages %}
         <ul class="messages">
@@ -42,5 +46,6 @@
         <p><a href="{% url 'tesis:juego_update' juego.id %}">Editar</a></p>
         <p><a href="{% url 'tesis:juego_delete' juego.id %}">Eliminar</a></p>
         <p><a href="{% url 'tesis:juego_list' %}">Volver</a></p>
-        </body>
+</main>
+</body>
     </html>
