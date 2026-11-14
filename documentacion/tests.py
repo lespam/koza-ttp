@@ -224,3 +224,24 @@ class BotonDeModo(SimpleTestCase):
         self.assertIn('class="tema-a-oscuro"', html)
         self.assertIn('class="tema-a-claro" hidden', html)
         self.assertNotIn("aria-pressed", html)
+
+
+class NavegacionDelSitio(SimpleTestCase):
+    """Auditoría de navegación del 14 de noviembre: cabecera de 4 enlaces y enlace al sitio principal."""
+
+    def test_cabecera_con_cuatro_enlaces(self):
+        html = self.client.get("/documentacion/historico/", HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
+        menu = html[html.index('<ul class="menu">'):html.index("</ul>", html.index('<ul class="menu">'))]
+        self.assertEqual(menu.count("<li>"), 4)
+        # Histórico vive dentro de Documentación: la marca la sección, no la página
+        self.assertIn('aria-current="true">Documentación', menu)
+        self.assertIn('id="boton-menu" aria-expanded="false" aria-controls="cabecera-menu"', html)
+
+    def test_enlace_al_sitio_principal_segun_idioma(self):
+        casos = {"/": "https://lesliedickinson.dev/es/", "/en/": "https://lesliedickinson.dev/en/",
+                 "/pt/": "https://lesliedickinson.dev/en/"}
+        for url, destino in casos.items():
+            with self.subTest(url=url):
+                html = self.client.get(url, HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
+                self.assertIn(f'<a href="{destino}">', html)
+                self.assertIn(f'href="{destino}#contact"', html)

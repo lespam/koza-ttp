@@ -35,44 +35,59 @@
 <body>
     <a class="saltar" href="#contenido">{% translate "Saltar al contenido" %}</a>
 
+    {# Barra del sitio principal: une Koza-TTP con lesliedickinson.dev #}
+    <div class="sitio-padre">
+        <div class="sitio-padre-interior">
+            <a href="{{ sitio_principal }}"><span aria-hidden="true">←</span> {% translate "Ir al sitio principal" %}<span class="sitio-padre-nombre"> · Leslie Dickinson</span></a>
+        </div>
+    </div>
     <header class="cabecera">
         <div class="cabecera-interior">
             <a class="marca" href="{% url 'tesis:inicio' %}">Koza-TTP</a>
 
-            <nav aria-label="{% translate "Principal" %}">
-                <ul class="menu">
-                    <li><a href="{% url 'tesis:historia' %}"{% if seccion == "historia" %} aria-current="page"{% endif %}>{% translate "Cómo funciona" %}</a></li>
-                    <li><a href="{% url 'documentacion:index' %}"{% if seccion == "inicio" %} aria-current="page"{% endif %}>{% translate "Documentación" %}</a></li>
-                    <li><a href="{% url 'documentacion:historico' %}"{% if seccion == "historico" %} aria-current="page"{% endif %}>{% translate "Histórico" %}</a></li>
-                    <li><a href="{% url 'documentacion:avances' %}"{% if seccion == "avances" %} aria-current="page"{% endif %}>{% translate "Avances" %}</a></li>
-                    <li><a href="{% url 'tesis:guia' %}"{% if seccion == "guia" %} aria-current="page"{% endif %}>{% translate "Guía" %}</a></li>
-                    <li><a href="{% url 'tesis:dashboard' %}"{% if seccion == "demo" %} aria-current="page"{% endif %}>{% translate "Demo" %}</a></li>
-                </ul>
-            </nav>
-
-            <button type="button" class="boton-tema" id="boton-tema" hidden>
-                {# El texto dice a qué modo cambia el botón; tema.js muestra uno u otro #}
-                <span class="tema-a-oscuro">
-                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"></path></svg>
-                    {% translate "Modo oscuro" %}
-                </span>
-                <span class="tema-a-claro" hidden>
-                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
-                    {% translate "Modo claro" %}
-                </span>
+            {# En celular, menu.js muestra este botón y guarda el menú. Sin JavaScript, el menú se ve completo. #}
+            <button type="button" class="boton-menu" id="boton-menu" aria-expanded="false" aria-controls="cabecera-menu">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+                {% translate "Menú" %}
             </button>
 
-            <form class="idioma" action="{% url 'set_language' %}" method="post">
-                {% csrf_token %}
-                <input name="next" type="hidden" value="{{ request.get_full_path }}">
-                <label for="language-select">{% translate "Idioma" %}</label>
-                <select name="language" id="language-select">
-                    {% for lang in site_languages %}
-                    <option value="{{ lang.code }}" lang="{{ lang.code }}"{% if lang.code == LANGUAGE_CODE %} selected{% endif %}>{{ lang.native }}</option>
-                    {% endfor %}
-                </select>
-                <noscript><button type="submit">{% translate "Cambiar" %}</button></noscript>
-            </form>
+            <div class="cabecera-menu" id="cabecera-menu">
+                <nav aria-label="{% translate "Principal" %}">
+                    <ul class="menu">
+                        {% url 'tesis:historia' as url_historia %}{% url 'tesis:dashboard' as url_demo %}{% url 'tesis:guia' as url_guia %}{% url 'documentacion:index' as url_docs %}
+                        <li><a href="{{ url_historia }}"{% if request.path == url_historia %} aria-current="page"{% endif %}>{% translate "Cómo funciona" %}</a></li>
+                        <li><a href="{{ url_demo }}"{% if request.path == url_demo %} aria-current="page"{% elif seccion == "demo" %} aria-current="true"{% endif %}>{% translate "Demo" %}</a></li>
+                        <li><a href="{{ url_guia }}"{% if request.path == url_guia %} aria-current="page"{% elif seccion == "guia" %} aria-current="true"{% endif %}>{% translate "Guía" %}</a></li>
+                        <li><a href="{{ url_docs }}"{% if request.path == url_docs %} aria-current="page"{% elif seccion == "historico" or seccion == "avances" %} aria-current="true"{% endif %}>{% translate "Documentación" %}</a></li>
+                    </ul>
+                </nav>
+
+                <div class="cabecera-ajustes">
+                    <button type="button" class="boton-tema" id="boton-tema" hidden>
+                        {# El texto dice a qué modo cambia el botón; tema.js muestra uno u otro #}
+                        <span class="tema-a-oscuro">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"></path></svg>
+                            {% translate "Modo oscuro" %}
+                        </span>
+                        <span class="tema-a-claro" hidden>
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+                            {% translate "Modo claro" %}
+                        </span>
+                    </button>
+
+                    <form class="idioma" action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ request.get_full_path }}">
+                        <label for="language-select">{% translate "Idioma" %}</label>
+                        <select name="language" id="language-select">
+                            {% for lang in site_languages %}
+                            <option value="{{ lang.code }}" lang="{{ lang.code }}"{% if lang.code == LANGUAGE_CODE %} selected{% endif %}>{{ lang.native }}</option>
+                            {% endfor %}
+                        </select>
+                        <noscript><button type="submit">{% translate "Cambiar" %}</button></noscript>
+                    </form>
+                </div>
+            </div>
         </div>
     </header>
     {% include "compartido/aviso_traduccion.html" %}
@@ -82,10 +97,18 @@
     </main>
 
     <footer class="pie">
+        <nav aria-label="{% translate "Leslie Dickinson" %}">
+            <ul class="pie-enlaces">
+                <li><a href="{{ sitio_principal }}">{% translate "Sitio principal" %}</a></li>
+                <li><a href="{{ sitio_principal }}#contact">{% translate "Contacto" %}</a></li>
+                <li><a href="https://www.linkedin.com/in/lespam">LinkedIn</a></li>
+                <li><a href="https://github.com/lespam/koza-ttp">{% translate "Código fuente en GitHub" %}</a></li>
+            </ul>
+        </nav>
         <p>© 2026 Leslie Dickinson · {% translate "Tesis publicada como Leslie Pamela Brenes Valencia" %} · ITAM</p>
-        <p><a href="https://github.com/lespam/koza-ttp">{% translate "Código fuente en GitHub" %}</a></p>
     </footer>
 
+    <script src="{% static 'js/menu.js' %}"></script>
     <script src="{% static 'js/app.js' %}"></script>
     {% block scripts %}{% endblock %}
 </body>

@@ -6,7 +6,7 @@
 
 {% block contenido %}
 <div class="envoltura">
-    <p class="miga"><a href="{% url 'documentacion:index' %}">{% translate "Documentación" %}</a> / {% translate "Avances" %}</p>
+    <p class="miga"><a href="{% url 'documentacion:index' %}">{% translate "Documentación" %}</a> / <span aria-current="page">{% translate "Avances" %}</span></p>
     <h1>{% translate "Avances: después de la tesis" %}</h1>
     <p class="entrada">{% blocktranslate trimmed %}Aquí se registra cada cambio hecho después de la defensa. La versión de la tesis se conserva sin cambios, para poder comparar.{% endblocktranslate %}</p>
 

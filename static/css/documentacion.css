@@ -119,7 +119,39 @@ a:hover { text-decoration-thickness: 2px; }
     border-bottom: 3px solid transparent;
 }
 .menu a:hover { border-bottom-color: var(--borde-fuerte); }
-.menu a[aria-current="page"] { border-bottom-color: var(--foco); font-weight: 600; }
+.menu a[aria-current="page"], .menu a[aria-current="true"] { border-bottom-color: var(--foco); font-weight: 600; }
+
+/* Barra del sitio principal: mismo fondo oscuro que lesliedickinson.dev */
+.sitio-padre { background: #1c1426; color: #ffffff; }
+.sitio-padre-interior { max-width: 68rem; margin: 0 auto; padding: 0 1rem; }
+.sitio-padre a, .sitio-padre a:visited {
+    display: inline-block; padding: 0.6rem 0; min-height: 44px;
+    color: #ffffff; font-size: 1rem; text-underline-offset: 0.2em;
+}
+.sitio-padre a:focus-visible { outline: 3px solid #b8ecf2; outline-offset: 2px; }
+
+/* Menú y ajustes de la cabecera */
+.cabecera-menu { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.5rem; }
+.cabecera-ajustes { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }
+.boton-menu {
+    display: none; align-items: center; gap: 0.4rem; min-height: 44px; padding: 0.3rem 1rem;
+    font: inherit; font-size: 1rem; color: var(--cabecera-texto); background: transparent;
+    border: 1px solid var(--borde-fuerte); border-radius: 999px; cursor: pointer;
+}
+.boton-menu svg { width: 1.2rem; height: 1.2rem; }
+.boton-menu[aria-expanded="true"] { background: var(--destacado); }
+/* Con JavaScript, en pantallas angostas el menú se guarda detrás del botón */
+@media (max-width: 56rem) {
+    .js .boton-menu { display: inline-flex; }
+    .js .cabecera-menu { display: none; }
+    .js .cabecera-menu.abierto {
+        display: flex; flex-direction: column; align-items: stretch; width: 100%;
+        padding: 0.5rem 0 0.75rem; border-top: 1px solid var(--borde);
+    }
+    .js .cabecera-menu.abierto .menu { flex-direction: column; }
+    .js .cabecera-menu.abierto .menu a { display: block; border-bottom: 0; border-inline-start: 4px solid transparent; }
+    .js .cabecera-menu.abierto .menu a[aria-current] { border-inline-start-color: var(--foco); }
+}
 
 .idioma { display: flex; align-items: center; gap: 0.5rem; }
 .idioma label { font-size: 0.95rem; }
@@ -237,6 +269,9 @@ thead th { font-size: 0.92rem; }
     color: var(--texto-suave);
 }
 .pie p { margin: 0.25rem 0; }
+.pie-enlaces { list-style: none; margin: 0 0 0.75rem; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.25rem 1.25rem; }
+.pie-enlaces li + li { margin-top: 0; }
+.pie-enlaces a { display: inline-block; min-height: 44px; padding: 0.6rem 0.25rem; }
 
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }

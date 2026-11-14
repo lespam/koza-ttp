@@ -5,6 +5,7 @@
 {% block contenido %}
 <link rel="stylesheet" href="{% static 'css/repeticion.css' %}">
 <div class="envoltura repeticion" id="repeticion">
+    <p class="miga"><a href="{% url 'tesis:dashboard' %}">{% translate "Demo" %}</a> / <span aria-current="page">{% translate "Temporada 2023" %}</span></p>
     <p class="antetitulo">{% translate "Demo con datos reales · Grandes Ligas 2023" %}</p>
     <h1>{% translate "Temporada 2023: el motor contra el calendario real" %}</h1>
     <p class="entrada">{% blocktranslate trimmed %}Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El calendario oficial de 2023 es la referencia. El motor por bloques intenta armar una temporada con menos viaje.{% endblocktranslate %}</p>
@@ -27,7 +28,7 @@
 
     <section aria-labelledby="t-resultado">
         <h2 id="t-resultado">{% translate "Resultado" %}</h2>
-        <div class="repeticion-desliza">
+        <div class="repeticion-desliza" tabindex="0" role="region" aria-label="{% translate "Tabla que se desliza de lado" %}">
             <table class="repeticion-tabla">
                 <caption class="nota">{% translate "Viaje de los 30 equipos en toda la temporada regular." %}</caption>
                 <thead><tr>
@@ -63,7 +64,7 @@
         </figure>
         <details class="repeticion-detalle">
             <summary>{% translate "Ver los 30 equipos como tabla" %}</summary>
-            <div class="repeticion-desliza">
+            <div class="repeticion-desliza" tabindex="0" role="region" aria-label="{% translate "Tabla que se desliza de lado" %}">
                 <table class="repeticion-tabla">
                     <thead><tr><th scope="col">{% translate "Equipo" %}</th><th scope="col">{% translate "Oficial (km)" %}</th><th scope="col">{% translate "Motor (km)" %}</th></tr></thead>
                     <tbody>{% localize on %}{% for f in por_equipo %}<tr><td>{{ f.equipo }}</td><td>{{ f.oficial }}</td><td>{{ f.motor }}</td></tr>
