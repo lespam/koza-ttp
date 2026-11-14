@@ -1,6 +1,6 @@
 {% load humanize %}
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <title>Optimización Genética | Dashboard</title>
@@ -19,8 +19,12 @@
         
         .btn-link { color: var(--primary); text-decoration: none; font-weight: bold; border: 1px solid var(--primary); padding: 5px 10px; border-radius: 4px; }
     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/admin.css">
 </head>
 <body>
+<nav class="admin-volver" aria-label="Principal"><a href="/">Koza-TTP</a> · <a href="/guia/">Guía</a> · <a href="/demo/">Demo</a></nav>
+<main>
 
 <div class="dashboard">
     <div class="header">
@@ -52,6 +56,6 @@
         {% comment %} <a href="{% url 'tesis:vista-svg' %}" target="_blank" class="btn-link">Ver SVG en pantalla completa</a> {% endcomment %}
     </div>
 </div>
-
+</main>
 </body>
 </html>

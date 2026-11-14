@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <title>Equipos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/admin.css">
 </head>
 <body>
+<nav class="admin-volver" aria-label="Principal"><a href="/">Koza-TTP</a> · <a href="/guia/">Guía</a> · <a href="/demo/">Demo</a></nav>
+<main>
     {% comment %} 
     Here we create the basic show and edit the data for each object. We have to create an HTML form for each property of the object.
     The object here is:
@@ -83,5 +87,6 @@
     <p><a href="{% url 'tesis:equipo_create' %}">Crear equipo</a></p>
     
     <p><a href="{% url 'tesis:inicio' %}">Volver al inicio</a></p>
+</main>
 </body>
 </html>

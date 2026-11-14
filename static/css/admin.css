@@ -1,0 +1,20 @@
+/* Páginas de administración (equipos, ligas, torneos...): estilo mínimo y legible.
+   Hallazgos H-5, A-9 y H-8 de la auditoría del 8 de noviembre de 2026. */
+:root { --texto: #17181c; --fondo: #f5f3ef; --enlace: #2340a0; --borde: #b9b6ae; }
+@media (prefers-color-scheme: dark) {
+    :root { --texto: #eee7d8; --fondo: #13201d; --enlace: #e9b44c; --borde: #3c5550; }
+}
+* { box-sizing: border-box; }
+body { margin: 0 auto; max-width: 70rem; padding: 1rem; font-family: "Work Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 1.125rem; line-height: 1.6; color: var(--texto); background: var(--fondo); overflow-wrap: anywhere; }
+a { color: var(--enlace); }
+a, button, input[type="submit"], input[type="button"] { min-height: 44px; }
+a { display: inline-block; padding: 0.4rem 0.1rem; }
+p a, li a, td a { display: inline-block; }
+button, input[type="submit"], input[type="button"] { padding: 0.5rem 1.25rem; font: inherit; font-weight: 600; border-radius: 8px; border: 2px solid var(--enlace); color: var(--texto); background: transparent; cursor: pointer; }
+input, select, textarea { font: inherit; min-height: 44px; max-width: 100%; padding: 0.3rem 0.5rem; }
+table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; }
+th, td { padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--borde); text-align: start; }
+svg, img { max-width: 100%; height: auto; }
+pre { overflow-x: auto; }
+.admin-volver { margin: 0 0 1rem; font-size: 1rem; }
+:focus-visible { outline: 3px solid var(--enlace); outline-offset: 2px; }

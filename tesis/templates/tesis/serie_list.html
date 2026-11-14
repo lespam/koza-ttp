@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <title>Serie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/admin.css">
 </head>
 <body>
+<nav class="admin-volver" aria-label="Principal"><a href="/">Koza-TTP</a> · <a href="/guia/">Guía</a> · <a href="/demo/">Demo</a></nav>
+<main>
     <h1> Series </h1>
     {% if messages %}
     <ul class="messages">
@@ -48,8 +52,6 @@
     <p><a href="{% url 'tesis:calendario_list' %}">Ir a lista de Torneos</a></p>
     <p><a href="{% url 'tesis:calendario_list' %}">Ir a lista de Calendarios</a></p>
     <p><a href="/">Inicio</a></p>
-
-    
-    
+</main>
 </body>
 </html>

@@ -1,12 +1,16 @@
 
 {% load humanize %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
   <head>
     <meta charset="UTF-8" />
     <title>Crear Arbol mediante Programacion Genetica | Version alternativa</title>
-  </head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/admin.css">
+</head>
   <body>
+<nav class="admin-volver" aria-label="Principal"><a href="/">Koza-TTP</a> · <a href="/guia/">Guía</a> · <a href="/demo/">Demo</a></nav>
+<main>
     {% for message in messages %}
       <p>{{ message }}</p>
     {% endfor %}
@@ -75,5 +79,6 @@
       
       </section>
       <p><a href="{% url 'tesis:ejecutar_programa_genetico' configuracion.id %}">Volver a la programacion genetica</a></p>
-    </body>
+</main>
+</body>
 </html>
