@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "Matokeo ya uboreshaji"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "Bofya mti ili kupanua"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "Jumla ya Gharama ya Kusafiri:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "Ukiukaji wa Sheria:"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Uboreshaji wa kukimbia"
 
@@ -133,10 +121,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "Kutoka ya hivi karibuni hadi ya zamani zaidi."
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "Imepangwa"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "Waendeshaji wa muktadha wa injini"
 
@@ -165,10 +149,6 @@ msgstr ""
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "Novemba 3, 2026"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "Inaendelea"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -612,10 +592,6 @@ msgstr ""
 "gani kila timu inasafiri."
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "Demo · Usafiri wa haki kati ya timu"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "Tengeneza kalenda na"
 
@@ -629,6 +605,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"AI (programu ya maumbile) hutafuta kalenda ambapo safari ni fupi na hata. "
+"Unataka timu zako mwenyewe? Tumia <a href=\"%(guia)s\">mwongozo wa hatua "
+"5</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -663,10 +642,6 @@ msgstr "Inachukua sekunde chache."
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "Ratiba: %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "Usanidi %(id)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -743,14 +718,6 @@ msgstr "Iendeshe kwenye kompyuta yako"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "Uliza msaidizi wako wa AI"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr ""
-"Nakili swali hili na ubandike kwenye mchawi unaotumia, pamoja na faili ya "
-"programa_genetico/programagenetico.py."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -975,30 +942,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "Programu ya Maumbile kwa Kalenda za Baseball"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr ""
-"Koza-TTP: Tasnifu ya Leslie Dickinson (ITAM) juu ya upangaji wa maumbile kwa"
-" kalenda za besiboli, na matokeo yake ya uaminifu na injini iliyoboreshwa."
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "Thesis ya ITAM · Programu ya Maumbile · Baseball"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "Thesis yangu ilisema ukweli:"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr ""
-"Koza-TTP inachukua nadharia hiyo kutengeneza kalenda za msimu wa besiboli na"
-" programu ya maumbile. Hapa utaona ni nini kilienda vibaya, kwa nini, na "
-"jinsi ninavyoirekebisha hadharani."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -1015,13 +960,6 @@ msgstr "Dakika 2"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "Kuelewa wazo"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr ""
-"Programu ya maumbile ni nini na kwa nini kalenda ya besiboli ni shida ngumu."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1101,37 +1039,39 @@ msgstr ""
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "Dhidi ya utafutaji wa nasibu"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "Je, ni bora kuliko kuchagua bila mpangilio?"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "Katika Upimaji"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, katika mbio %(corridas)s na timu %(equipos)s"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "Ndiyo, katika majaribio ya awali"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
 msgstr ""
+"Demo bado inatumia toleo la thesis. Injini iliyoboreshwa ililinganishwa na "
+"utafutaji wa nasibu ambao unakagua idadi sawa ya kalenda."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "Novemba 8, 2026"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "Zuia motor"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1140,12 +1080,18 @@ msgid ""
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
 msgstr ""
+"Kila sehemu ya ratiba (mgawanyiko, ligi na ligi) imeundwa na vitalu ambavyo "
+"kila mtu anacheza dhidi ya kila mtu. Kwa hivyo, sheria za MLB zinafuatwa "
+"kila wakati. Programu ya maumbile huchagua na kuagiza vitalu ili kupunguza "
+"usafiri."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"Matokeo ya awali: %(resultado)s, katika %(corridas)s kukimbia na timu "
+"%(equipos)s ."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1154,182 +1100,1873 @@ msgid ""
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
 msgstr ""
+"Mapitio ya msimbo ili kuthibitisha kwa nini PG haikuwa bora kuliko kuchagua "
+"kalenda bila mpangilio. Crossover na mabadiliko huvunja uwezekano wa "
+"kalenda, na uzito wa usawa husababisha watoto kupoteza kwa wazazi wa kizazi "
+"cha kwanza."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "Njia ya wazi"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "Injini: %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
 msgstr ""
+"<strong>Kumbuka:</strong> onyesho hili linatumia injini ya thesis. Injini "
+"hiyo haikuwa bora kuliko kuchagua kalenda bila mpangilio."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
 msgstr ""
+"Injini iliyoboreshwa ilikuwa bora zaidi, katika majaribio ya awali: "
+"%(resultado)s, katika kukimbia %(corridas)s . Bado haiko kwenye onyesho "
+"hili."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
 msgstr ""
+"Kwa mradi wa shule, hiyo ni pamoja: una msingi na uboreshaji ambao unaweza "
+"kupima."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "Tazama matokeo ya kila toleo"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
+"Katika majaribio: %(resultado)s, katika %(corridas)s inaendesha na timu "
+"%(equipos)s ."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "Toleo la Thesis (2026)"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "Umbali wa 19.5% zaidi kuliko kuchagua kalenda za nasibu"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "Injini ya kuzuia (toleo lililoboreshwa)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "Usafiri mdogo wa 13% kuliko kuchagua kalenda za nasibu"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "Kifupi (kwa mfano, SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "Jina la timu"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "Mji"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "Latitudo ya Uwanja"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "Urefu wa Uwanja"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "Katika digrii za desimali. Mfano: 47.59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "Katika digrii za desimali. Mfano: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "Timu za Ligi"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "Jina la Ligi"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "Chagua angalau timu 2."
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "Jina la mashindano"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "Siku ya kwanza"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "Siku ya mwisho"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "Michezo kwa mfululizo"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "Mfululizo wa Timu"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "Siku ya mwisho lazima iwe sawa na au baada ya ya kwanza."
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "Lazima iwe 1 au zaidi."
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "Jina la usanidi"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "Ukubwa wa idadi ya watu"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "Idadi ya vizazi"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "Uwezekano wa kuvuka (0 hadi 1)"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "Nafasi ya Mabadiliko (0 hadi 1)"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "Inapaswa kuwa kati ya 0 na 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "Vifaa"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "Ligi"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "Mashindano"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "Mipangilio"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "Kalenda"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "Kamilisha hatua hii kwanza."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "Vifaa vilivyoongezwa."
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "Michezo iliyozalishwa."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "Novemba 14, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
+msgstr "Algorithm inayotegemea zamu: inashinda ratiba rasmi ya MLB 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
 msgstr ""
+"Tuliondoa sheria kwamba timu zote 30 zinacheza mfululizo wa siku 3 kwa "
+"wakati mmoja. Kwa mfululizo wa michezo 2, 3 na 4 na mapumziko, algorithm "
+"bora husafiri kilomita milioni 1.57. Kalenda rasmi inasafiri milioni 1.74. "
+"Zote mbili zinakutana na sheria sawa za uhalisia."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr "Tazama utafiti wa sasa, na michoro ya uhuishaji"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "Novemba 12, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "Onyesho linaonyesha msimu halisi wa 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr ""
+"Unaweza kuona ratiba halisi ya Ligi Kuu ya Baseball ya 2023 bila kusubiri "
+"injini iendeshe."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "Tazama msimu wa 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "Novemba 9, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "Hadithi ya hatua kwa hatua"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr "Maelezo na ramani ya hatua 30, miti na mageuzi, hatua kwa hatua."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "Soma hadithi"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "Ukaguzi wa pili wa uzoefu"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr ""
+"Mapitio ya ufikiaji, utumiaji na mwingiliano wa binadamu-AI yalirudiwa. Kati"
+" ya pointi 28 katika ya kwanza, 13 zilitatuliwa. Pointi nyingi mpya tayari "
+"zimesahihishwa."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr "Alipata injini kwa mfululizo na kisha na vizuizi vya injini."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "Novemba 5, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "Fungua mwongozo wa hatua 5"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr ""
+"Programu ya maumbile kutengeneza kalenda za besiboli. Thesis ya Leslie "
+"Dickinson (ITAM), na matokeo ya uaminifu."
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr ""
+"Koza-TTP: ramani ya viwanja vya besiboli vilivyo na njia ya timu na mti wa "
+"programu ya maumbile."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "Nenda kwenye tovuti kuu"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "Menyu"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "Jinsi inavyofanya kazi"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "Leslie Dickinson"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "Tovuti kuu"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "Wasiliana"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "Thesis yangu ilisema ukweli"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"Majaribio ya thesis haikuwa bora kuliko kuchagua kalenda bila mpangilio: "
+"%(resultado)s. Kuripoti hivi, bila kuificha, ulikuwa uamuzi sahihi. Matokeo "
+"hayo yalionyesha kile kinachohitajika kusahihishwa ili kufanya injini "
+"iboreshwe."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "Utafiti wa sasa"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr ""
+"Kila kitu tulichojaribu kushinda ratiba rasmi ya MLB 2023, na michoro ya "
+"uhuishaji."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "Utafiti wa sasa: kupiga kalenda rasmi"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr ""
+"Lengo: Ratiba ya msimu wa Ligi Kuu ya Baseball ya 2023 ambayo husafiri chini"
+" ya ile rasmi na inatii sheria sawa. Rasmi husafiri kilomita milioni 1.74."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr ""
+"Ilisasishwa Novemba 14, 2026 (alasiri). Algorithms hizi ziko kwenye "
+"majaribio: tovuti na onyesho hazitumii bado."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "1. Matokeo ya vipimo vyote"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"Kila bar ni jumla ya safari ya timu 30 kwa msimu, katika mamilioni ya km. "
+"Chini ni bora. Takwimu zote zilipimwa sawa: kila timu inaondoka nyumbani "
+"kwake, huenda kutoka uwanja hadi uwanja na kurudi mwishoni."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "Jumla ya safari kwa toleo la algorithm"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "Algorithms ya Koza-TTP"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "Kalenda rasmi 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr ""
+"Algorithms mbili za annealing za zamu zilimpiga afisa huyo kwa karibu 9%%. "
+"Jedwali hapa chini lina data sawa."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "Vipimo vyote, kutoka kongwe hadi hivi karibuni"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "Jumla ya Safari"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "Je, inacheza kwa sheria?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "Tulichojifunza"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "Kuzuia algorithm, hakuna sheria za uhalisia"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "Kilomita milioni 1.85"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "Hapana: ziara za hadi michezo 36 mfululizo"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr "Alionekana kuwa karibu na afisa huyo, lakini alikuwa akidanganya."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "Kuzuia algorithm, na sheria"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "Kilomita milioni 2.19"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "Inashindwa kukutana nao"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr "Vitalu vilivyowekwa havikuruhusu kupanga ziara vizuri."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "Vitalu mchanganyiko, na watawala"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "Kilomita milioni 2.00"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "Ndiyo"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr "Bora, lakini timu zote 30 bado zinacheza kwa wakati mmoja."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr "Mabadiliko na seti za seti 2, 3 na 4 + annealing ya kuiga"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "Kilomita milioni 1.52 hadi 1.60"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "Kukimbia 3 kati ya 4 (moja ilidumu siku ya ziada)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr "Kuondoa sheria ya \"yote mara moja\" ndio inashinda afisa."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr "Shifts + wiki kama MLB + PG ambayo inakubali tu sasisho"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "Kilomita milioni 1.70 (wastani)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "Ndiyo, 4 kati ya 4"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr "Anampiga afisa, lakini karibu kusawazisha na hatua za nasibu."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "Harakati za nasibu, juhudi sawa na PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "Msingi wa haki wa kupima PG."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "Mabadiliko + wiki + annealing kwa mikono"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "Kilomita milioni 1.567 (wastani wa kalenda 8)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "Kukubali mabadiliko mabaya zaidi mwanzoni husaidia sana."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "Mabadiliko + wiki + PG joto la kujifunza"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "Kilomita milioni 1.571 (wastani wa kalenda 8)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr ""
+"PG huunda mtawala wake mwenyewe na karibu kushikamana na ile iliyotengenezwa"
+" kwa mikono (0.3%% zaidi)."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "PG sawa, na anuwai zaidi na mazoezi zaidi"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "Kilomita milioni 1.583 (wastani wa kalenda 8)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "Ndiyo, 8 kati ya 8"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr ""
+"Kufanya mazoezi na kukimbia kwa muda mfupi hakufundishi sheria bora kwa "
+"kukimbia kwa muda mrefu."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "Ratiba rasmi ya MLB 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "Kilomita milioni 1.74"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr ""
+"Lengo. Pia inatii sheria ambazo hatuiga mfano, kama vile tarehe za uwanja na"
+" televisheni."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"Kanuni za uhalisia: kiwango cha juu cha michezo 12 mfululizo nyumbani au "
+"ugenini, hakuna mpinzani anayerudia katika mfululizo mfululizo, upeo wa siku"
+" 20 mfululizo na kucheza na msimu wa siku 186. Kutoka kwa kalenda rasmi "
+"tunaweka tu takwimu zilizohesabiwa, kulingana na sheria na masharti ya MLB."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "2. Mabadiliko makubwa: hugeuka na seti za michezo 2, 3 na 4"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"Hapo awali, timu zote 30 zilicheza mfululizo wa siku 3 kwa wakati mmoja, "
+"bila mapumziko. Sasa msimu umegawanywa katika zamu za siku za wiki (siku 4) "
+"na wikendi (siku 3), kama vile MLB inavyofanya. Kila timu inacheza mfululizo"
+" wa michezo 2, 3 au 4, au kupumzika."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "Mfano uliopita dhidi ya mfano wa zamu"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "Sitisha"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "Mfululizo (nambari inasema michezo mingapi)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "Kuvunja"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"Timu sita katika zamu nane. Katika mfano uliopita kila mtu anacheza siku 3 "
+"katika kila zamu. Katika mfano wa mabadiliko mfululizo huchukua siku 2, 3 au"
+" 4 na kuna mapumziko, kwa hivyo ziara zinaweza kuwekwa pamoja na uhuru "
+"zaidi."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "3. Harakati kuu: mnyororo wa Kempe"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr ""
+"Ili kubadilisha ratiba bila timu kucheza mfululizo mbili mara moja, zamu "
+"mbili na mlolongo wa mfululizo mbadala kati yao huchukuliwa. Mfululizo wote "
+"katika mnyororo hubadilika kwa wakati mmoja. Ratiba bado ni halali."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "Mnyororo wa Kempe kati ya zamu A na zamu B"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "Mfululizo katika Shift A (Mstari Imara)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "Mfululizo kwenye Zamu B (mstari wa nukta)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr ""
+"Timu nane. Mtandao unaanzia NYA na unapitia BOS, TOR na BAL. Mfululizo wake "
+"minne hubadilika mabadiliko. Mfululizo mwingine hausogei."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "4. Kwa nini annealing ilishinda PG?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr ""
+"PG ya kwanza ilitumia harakati sawa na annealing, lakini ilikuwa kilomita "
+"milioni 1.70 na annealing kwa 1.58. Kuna sababu tatu."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>Alikubali tu maboresho.</strong> Kwa hivyo anakwama kwenye \"bonde\""
+" la kwanza analopata. Annealing inakubali kuwa mbaya zaidi mwanzoni, na hiyo"
+" inamruhusu kuvuka \"kilima\" na kufikia bonde la kina zaidi."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr ""
+"<strong>Alitumia juhudi.</strong> Katika kila kizazi anajaribu mapishi 16 na"
+" huweka tu kalenda ya bora zaidi. Annealing huhifadhi kila hatua "
+"anayochukua."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr ""
+"<strong>Alirudia maeneo yale yale.</strong> Nambari zilizowekwa kwenye mti "
+"daima zinaonyesha zamu na timu sawa. Hatua za nasibu hupitia kalenda nzima."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "Maboresho tu dhidi ya kukubali mabadiliko mabaya zaidi"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "Inakubali tu visasisho (mduara)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "Annealing: inakubali mabadiliko mabaya zaidi (rhombus)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr ""
+"Mstari ni gharama ya kalenda: chini ni bora. Mduara hushuka kwenye bonde la "
+"kwanza na kukaa hapo. Rhombus hupanda kilima, kwa sababu inakubali kuwa "
+"mbaya zaidi, na kufikia bonde la kina zaidi."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr "5. PG ambaye hujifunza wakati wa kukubali mabadiliko mabaya zaidi"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr ""
+"Ili kusahihisha sababu ya 1, PG sasa inaunda sheria ya annealing. Mti huamua"
+" ni kilomita ngapi za kuzorota zinakubaliwa katika kila hatua. Angalia "
+"vipande viwili vya data: ni umbali gani wa kukimbia na ni mabadiliko ngapi "
+"yalikubaliwa hivi karibuni."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr ""
+"PG ilifanya mazoezi kwa kukimbia kwa muda mfupi kwenye kalenda 2. Kisha "
+"tukajaribu mti wa kushinda kwenye kalenda 4 ambazo hakuwahi kuona. Huu ndio "
+"mti wa kushinda:"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr ""
+"Kwa kifupi: uvumilivu ni mdogo, karibu kilomita 60 hadi 1,200, na hupanda "
+"wakati mabadiliko karibu hayakubaliki. Mtawala aliyetengenezwa kwa mikono "
+"hufanya kinyume: huanza kwa kilomita 20,000 na hatua kwa hatua hushuka hadi "
+"50."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "Uvumilivu katika km wakati wote wa kukimbia (kiwango cha logarithmic)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "Mtawala aliyetengenezwa kwa mikono"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "PG, ikiwa mabadiliko machache yanakubaliwa (5%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "PG, ikiwa mabadiliko mengi yanakubaliwa (50%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr ""
+"Sheria iliyotengenezwa kwa mikono inashuka kutoka kilomita 20,000 hadi 50. "
+"Sheria ya PG inakaa kati ya kilomita 60 na 1,200 na inategemea ni mabadiliko"
+" ngapi yanakubaliwa. Zote mbili hufikia kalenda za takriban kilomita milioni"
+" 1.57."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "6. Nini kinafuata"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr ""
+"PG karibu imefungwa na annealing, lakini bado haiipigi. Katika kalenda 8 "
+"mpya, mtawala aliyetengenezwa kwa mikono husafiri kilomita milioni 1.567 na "
+"ile ya PG 1.571."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"Tulijaribu kuipa aina zaidi (bila mapishi ya kurudiwa) na mazoezi zaidi "
+"(kalenda 3, mapishi 32, vizazi 16). Ilikuwa mbaya zaidi: kilomita milioni "
+"1.583. PG hufanya mazoezi na kukimbia kwa muda mfupi wa hatua 40,000, lakini"
+" mtihani hutumia 400,000. Kanuni nzuri ya kukimbia kidogo sio bora kwa "
+"kukimbia sana."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr ""
+"Hatua inayofuata ni kwa PG kufanya mazoezi na kukimbia ambayo ni kama "
+"jaribio na kuanza kutoka kwa mtawala aliyetengenezwa kwa mikono, ili aweze "
+"kuiboresha tu."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "Tazama msimbo wa majaribio haya kwenye GitHub"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "Algorithm ya thesis"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "Algorithm ya Thesis ya Asili (2026)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "Tazama msimu halisi wa 2023, bila kusubiri"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "Bofya kwenye mti ili kuuona kuwa mkubwa zaidi."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr ""
+"Mti ni programu inayoweka pamoja kalenda bora. Kila tawi hujiunga na "
+"michezo; majani ni michezo (tarehe, timu ya nyumbani, na timu ya ugenini)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "Jumla ya usafiri wa timu zote:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "Michezo inayovunja sheria:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr ""
+"Sheria moja ni kwamba kila timu inacheza idadi ya michezo ambayo mashindano "
+"yanahitaji. <strong>Michezo 0 ambayo inavunja sheria</strong> inamaanisha "
+"kuwa ratiba ni halali."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr ""
+"Inaweza kuchukua sekunde chache hadi dakika kadhaa. Inategemea idadi ya "
+"kompyuta."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "Injini inafanya kazi."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr ""
+"Anaunda kalenda, anachanganya, na kuweka bora zaidi. Usifunge ukurasa huu."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "Vigezo vilivyohifadhiwa"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "Usanidi wa \"%(nombre)s\""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr ""
+"<strong>Muhimu:</strong> injini ya thesis huhifadhi maadili haya, lakini "
+"haitumii. Daima inaendesha na idadi ya watu 100, vizazi 20, 0.8 crossover na"
+" 0.2 mutation."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "Amri za kuiendesha"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"Nakili swali hili na ubandike kwenye mchawi unaotumia. Ambatanisha faili ya "
+"programa_genetico/programagenetico.py (injini ya thesis) au "
+"programa_genetico/motor_bloques.py (injini iliyoimarishwa)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "Mti Bora wa Kalenda"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "Kutoka %(a)s hadi %(b)s."
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "Hatua za Demo"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "Onyesho: Usanidi"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "Hatua ya 2: Kuweka"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr "Maadili yote tayari yamechaguliwa. Unaweza kuyabadilisha au kutoa \\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "Badilisha vifaa"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "Mashindano"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "Algorithm"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "Ifuatayo: Tazama kalenda"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "Onyesho: Chagua timu"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr ""
+"Onyesho la Koza-TTP: Unda kalenda ya besiboli na algoriti mpya zaidi katika "
+"hatua 3."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "Hatua ya 1: Chagua vifaa"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr ""
+"Algorithm huweka pamoja ratiba ya timu unazochagua na kutafuta ile iliyo na "
+"usafiri mdogo. Tayari tuliweka alama kwenye timu 10 za Ligi Kuu. Ikiwa "
+"unataka, bofya \"Ifuatayo\" bila kubadilisha chochote."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "Ifuatayo: Usanidi"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "Je, unapendelea kutazama msimu kamili wa kifalme?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "Tazama msimu wa 2023: timu 30 dhidi ya kalenda rasmi"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "Je, ungependa kusajili timu na viwanja vyako mwenyewe?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "Fanya mwenyewe katika mwongozo wa hatua 5"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "Onyesho: kalenda"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "Hatua ya 3: Kalenda"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "Algorithm mpya zaidi: Mfano wa zamu"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>: %(n)s timu."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "Algorithm ilifanikiwa nini"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr "Jumla ya usafiri wa timu zote na ratiba ya algorithm."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr "Safiri na kalenda iliyotengenezwa bila mpangilio, kabla ya kuboresha."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr "Usafiri mdogo kuliko kalenda ya nasibu."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "Fuata sheria zote"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "Kalenda ilivunjika bila mpangilio %(a)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "Je, unakagua sheria gani?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr ""
+"Upeo wa michezo 12 ya nyumbani au ugenini mfululizo. Hapa: %(n)s nyumbani na"
+" %(m)s ugenini."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "Upeo wa siku 20 mfululizo na kucheza. Hapa: %(n)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr "Sio kucheza dhidi ya mpinzani sawa katika safu mbili mfululizo."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr ""
+"Michezo ya nyumbani karibu nusu. Hapa: %(a)s hadi %(b)s kwa kila timu."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "Jinsi safari ilivyoshuka"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr ""
+"Safari ya jumla ilishuka kutoka kilomita %(a)s hadi kilomita %(b)s katika "
+"hatua %(p)s za utaftaji."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "%(n)s ya kwanza ya michezo %(t)s"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "Nyumbani"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "Tembelea"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "Tazama michezo yote"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "Michezo yote"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "Nini kinafuata?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "Badilisha mipangilio na uendeshe tena"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "Kuchagua vifaa vingine"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr "Tazama msimu mzima wa 2023: timu 30 dhidi ya kalenda rasmi"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "Elewa jinsi inavyofanya kazi kwa dakika 2"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr "Fanya mwenyewe: sajili vifaa vyako katika mwongozo wa hatua 5"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "Tazama algorithm asili ya thesis"
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "Elewa wazo kwa dakika 2"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr ""
+"Hadithi ya uhuishaji ya Koza-TTP: ramani ya safari za besiboli, miti ya "
+"programu ya maumbile na njia ya majaribio kutoka kwa thesis hadi injini "
+"iliyoboreshwa."
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "Dakika 2 · Hatua 7"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "Hatua za historia"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "Viwanja vya michezo"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "Kusafiri"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "Mti"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "Msalaba"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "Mabadiliko"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "Vizazi"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "Matokeo"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "Sehemu ya 1 · Tatizo"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "Timu 30 zinapaswa kucheza kila mmoja"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr ""
+"Ligi Kuu ya Baseball ina timu 30. Kila timu inacheza michezo 162 kwa msimu."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr ""
+"Kalenda inaelezea ni nani anayecheza dhidi ya nani, tarehe gani na katika "
+"uwanja gani."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "Gusa uwanja kwenye ramani ili kuona jina lake."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "Kila safari inagharimu muda na pesa"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr ""
+"Wakati timu inacheza barabarani, husafiri kwa ndege. Ratiba mbaya huwafanya "
+"wavuke nchi mara nyingi."
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr "Mfano wa safari ya ziara, na tarehe kwa mpangilio wa nasibu."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr "Gonga uwanja mwingine ili kutazama ziara ya timu hiyo."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "Sehemu ya 2 · Wazo la thesis"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "Kalenda inaweza kuandikwa kama mti"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr ""
+"Programu ya maumbile haiandiki kalenda kwa mkono. <strong>Inaandika "
+"maagizo</strong> ya kuiboresha."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"Maagizo haya huunda mti. <strong>Majani</strong> ni mfululizo wa michezo, "
+"kama vile \"SEA-NYA.\" <strong>Matawi</strong> ni vitendo, kama vile "
+"\"kubadilishana\" mfululizo wa tarehe mbili au \"kugeuza eneo\" (kubadilisha"
+" nani anacheza nyumbani)."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "Kuvuka: Miti miwili inachanganya"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr ""
+"Miti miwili inayofanya kazi vizuri huchukuliwa. Kila moja inatoa tawi."
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "Mti mpya, \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "Mabadiliko: Mabadiliko madogo, ya nasibu"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr ""
+"Wakati mwingine kipande kimoja cha mti hubadilika yenyewe. Hapa, mfululizo "
+"\\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr ""
+"Mabadiliko hutumika kujaribu mawazo mapya ambayo hakuna mzazi aliyekuwa "
+"nayo."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "Sehemu ya 3 · Matokeo"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "Kizazi baada ya kizazi"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr ""
+"Kila kizazi kina miti mingi. Wale wanaozalisha kalenda na usafiri mdogo wana"
+" watoto zaidi."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr ""
+"Mstari wa nukta ni lengo la chini: kalenda bora ambayo <strong>huchaguliwa "
+"bila mpangilio</strong> kwa juhudi sawa."
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "Chagua injini ili kuona jinsi ilivyokuwa."
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "Kutoka kwa rubani hadi injini inayofanya kazi"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"Injini iliyoboreshwa, kwa vizuizi, huipiga bila mpangilio: %(resultado)s, "
+"katika majaribio ya awali (%(corridas)s kukimbia, timu %(equipos)s )."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr ""
+"Rubani wa thesis (2026) <strong>hakuwa bora</strong> kuliko kuchagua kalenda"
+" bila mpangilio: %(resultado)s."
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "Jaribu zana katika hatua 5"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "Tazama viwanja vyote 30 kama meza"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "Data kutoka kwa faili ya mradi wa teams.csv."
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "Nambari"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "Timu"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "Uwanja"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "Mahali"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "Hapo awali"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "Inayofuata"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr ""
+"Koza-TTP: programu ya maumbile kwa kalenda za besiboli. Ilianza kama "
+"nadharia ya Leslie Dickinson (ITAM) na leo ina injini inayoshinda nafasi."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "Ratiba bora ya MLB na programu ya maumbile."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"Koza-TTP alizaliwa kama nadharia yangu huko ITAM. Rubani huyo wa kwanza "
+"hakupita bila mpangilio. Toleo la kuzuia hufanya: %(resultado)s, katika "
+"majaribio ya awali. Hapa ninakuonyesha jinsi inavyofanya kazi."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr ""
+"Hadithi ya uhuishaji: ramani ya safari, miti ya programu ya maumbile na "
+"matokeo."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "Msimu wa 2023: injini dhidi ya kalenda halisi"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr ""
+"Marudio ya uendeshaji wa injini ya programu ya kijeni na timu zote 30 za "
+"Ligi Kuu ya Baseball mnamo 2023, ikilinganishwa na ratiba rasmi na kwa "
+"bahati."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "Msimu wa 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "Onyesho na data halisi · Ligi Kuu ya Baseball 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr ""
+"Tunatumia timu 30 za Ligi Kuu ya Baseball na viwanja vyao halisi. Ratiba "
+"rasmi ya 2023 ni marejeleo. Injini ya msingi wa block inajaribu kuweka "
+"pamoja msimu na usafiri mdogo."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "Jinsi kilomita zinavyoshuka, kizazi kwa kizazi"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr ""
+"Hii ni uendeshaji halisi wa injini, iliyohifadhiwa ili utazame bila "
+"kusubiri. Ina vizazi %(generaciones)s vya kalenda 100 kila moja."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "Cheza"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "Kizazi"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "Ubao wa kuteleza kando"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "Usafiri wa timu 30 katika msimu wote wa kawaida."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "Ziara ndefu zaidi (michezo ya ugenini mfululizo)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "Michezo zaidi ya nyumbani mfululizo"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "Afisa wa Ligi Kuu ya Baseball"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "milioni km"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "Bora bila mpangilio, kwa juhudi sawa"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "Haifikii idadi ya michezo ya kila timu."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr ""
+"Injini <strong> husafiri%(pct)s%% chini ya</strong> ratiba bora ya nasibu. "
+"Injini hujifunza."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr ""
+"Kalenda rasmi <strong> husafiri%(pct)s%% chini ya</strong> injini. Bado "
+"hatujampiga."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"Kumbuka: kalenda ya injini ina ziara za hadi <strong> michezo%(gira)s ya "
+"ugenini mfululizo</strong>. Rasmi ina kiwango cha juu cha %(oficial)s. Timu "
+"halisi haitakubali ziara ndefu kama hizo."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "Safari ya kila timu"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr ""
+"Badilisha kati ya ratiba hizi mbili ili kuona ni timu zipi zinazosafiri "
+"zaidi."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "Kalenda ya Ramani"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "Rasmi"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "Injini"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "Tazama timu zote 30 kama jedwali"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "Rasmi (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "Injini (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "Data inatoka wapi"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr ""
+"Ratiba rasmi: Ligi Kuu ya Baseball 2023 msimu wa kawaida (MLB Stats API). "
+"Tunaweka tu nambari zilizohesabiwa hapa, sio ratiba."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr ""
+"Umbali: mstari wa moja kwa moja kati ya viwanja (fomula ya semiverse). Kila "
+"timu inaondoka nyumbani kwake, husafiri kutoka uwanja hadi uwanja na kurudi "
+"mwishoni."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr ""
+"Injini ya kuzuia: kalenda 100 kwa kila kizazi, %(evaluaciones)s kalenda "
+"zilizotathminiwa kwa jumla. Nafasi ilitathmini kiasi sawa."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "Tengeneza mashindano yako mwenyewe"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "Jinsi injini inavyofanya kazi"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "Vitalu, na sheria"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "Zamu + Hatua za Nasibu"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "Inageuka + PG (visasisho pekee)"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "Mabadiliko + joto la kujifunza la PG"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "Mabadiliko + annealing ya mkono"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "Zamani: Kila mtu anacheza siku 3 kila zamu"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "Sasa: mfululizo wa mchezo wa 2, 3 na 4, na mapumziko"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "Geuka"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "siku za wiki"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "Wikendi"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "Geuka A"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "Zamu B"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "1. Tunachagua timu na zamu mbili"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "2. Tunafuata mnyororo: A, B, A, B..."
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "3. Mabadiliko ya kubadili mfululizo wa mnyororo"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "Gharama ya Kalenda"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "bora"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "Bonde la Kwanza"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "Bonde la kina zaidi"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "Maendeleo ya mapigano ya ng'ombe"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "Nyumbani"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "Mwisho"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "Kwa mkono"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "PG, 5%"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "PG, 50%"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "Mashindano yangu ya Mtihani"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr "Hiari. Ukiiacha hapo, jina hili linatumika."
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "Timu za Mashindano"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr "Tayari tulifunga 10. Unaweza kuzibadilisha: kutoka timu 3 hadi 10."
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "Ramani ya viwanja 30 vya Ligi Kuu"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr "Ziara ya mfano wa {Timu}: ziara 12 kwa mpangilio wa nasibu."
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr "Ulichagua {timu}. Fuata hatua ya 2 ili kuona safari zao."
+
+#: tesis/historia.py
+msgid "km"
+msgstr "km"
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "Kuchanganya"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "Kubadilishana"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "Wekeza Eneo"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "Nyumbani"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "Tembelea"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "Mzazi A"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "Mzazi B"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "Mwana"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr ""
+"Mti wa mfano: changanya, na matawi mawili: badilisha SEA-NYA na BOS-TEX, na "
+"uwekeze eneo la LAN-CHN nyumbani."
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr ""
+"Crossover: baba A anatoa tawi lake la kushoto na baba B anatoa tawi lake la "
+"kushoto; mwana anachanganya hizo mbili."
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "Mabadiliko: Kwenye mti, jani la SEA-NYA hubadilika kuwa SEA-OAK."
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "Tazama tena"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "Kusafiri (nasibu = 100)"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "Nafasi"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "Idadi ya watu (miti 48)"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "Rangi zaidi = kusafiri kidogo"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "Injini ya Thesis"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{injini} · {g} kizazi cha {jumla}"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{injini} · imemalizika: {matokeo}."
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr ""
+"{injini}: huanza saa {mwanzo} na kuishia kwa {mwisho} (nafasi = 100). "
+"Matokeo: {matokeo}."
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr ""
+"Umbali dhidi ya nafasi: injini ya thesis {thesis}, bila mpangilio chagua "
+"100, block injini {vitalu}."
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "Injini ya Thesis (2026)"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "Kuchagua kalenda bila mpangilio"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "Injini ya kuzuia (Awali)"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr "Unaweza pia kutumia vitufe vya mshale kwenye kibodi yako."
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr ""
+"Kilomita za msimu kwa kizazi cha injini, ikilinganishwa na kalenda rasmi na "
+"nafasi"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "Kalenda rasmi"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "Bora bila mpangilio"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}: {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr "Bado haifikii idadi ya michezo ya kila timu."
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr ""
+"Mhimili wima: kutoka {min} hadi {max} milioni km. Mhimili wa usawa: vizazi 0"
+" hadi {mwisho}."
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr ""
+"Ramani: Kila mduara ni timu; kubwa inamaanisha maili zaidi katika msimu"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{timu}: {km} km"

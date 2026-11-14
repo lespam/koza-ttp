@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "Kết quả tối ưu hóa"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "Nhấp vào cây để mở rộng"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "Tổng chi phí đi lại:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "Vi phạm quy định:"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Tối ưu hóa chạy"
 
@@ -134,10 +122,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "Từ người mới nhất đến người lâu đời nhất."
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "Đã lên kế hoạch"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "Các toán tử ngữ cảnh cho engine"
 
@@ -166,10 +150,6 @@ msgstr ""
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "Ngày 3 tháng 11 năm 2026"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "Đang diễn ra"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -609,10 +589,6 @@ msgstr ""
 "thời gian mỗi đội di chuyển."
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "Demo · Di chuyển công bằng giữa các đội"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "Tạo lịch và"
 
@@ -626,6 +602,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"AI (lập trình di truyền) tìm kiếm lịch mà chuyến đi ngắn và đều. Muốn có đội"
+" riêng? Hãy sử dụng <a href=\"%(guia)s\">hướng dẫn 5 bước</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -660,10 +638,6 @@ msgstr "Chỉ mất vài giây thôi."
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "Lịch trình: %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "Cấu hình %(id)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -740,14 +714,6 @@ msgstr "Chạy trên máy tính của bạn"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "Hỏi trợ lý AI của bạn để được giúp đỡ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr ""
-"Sao chép câu hỏi này và dán vào trình hướng dẫn bạn sử dụng, cùng với tệp "
-"programa_genetico/programagenetico.py."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -972,30 +938,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "Lập trình di truyền cho lịch bóng chày"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr ""
-"Koza-TTP: Luận án của Leslie Dickinson (ITAM) về lập trình di truyền cho "
-"lịch bóng chày, với kết quả trung thực và công cụ cải tiến."
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "Luận văn ITAM · Lập trình di truyền · Bóng chày"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "Luận điểm của tôi đã nói lên sự thật:"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr ""
-"Koza-TTP tiếp nối luận điểm đó để làm lịch mùa bóng chày bằng lập trình di "
-"truyền. Ở đây bạn sẽ thấy điều gì đã sai, tại sao, và cách tôi đang sửa chữa"
-" nó công khai."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -1012,13 +956,6 @@ msgstr "2 phút"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "Hiểu về ý tưởng"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr ""
-"Lập trình di truyền là gì và tại sao lịch bóng chày lại là một vấn đề khó."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1098,37 +1035,39 @@ msgstr "Tự động, bao gồm cả Maya và Otomí. Bạn có thể sửa họ
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "So với tìm kiếm ngẫu nhiên"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "Có tốt hơn là chọn ngẫu nhiên không?"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "Đang thử nghiệm"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, trong %(corridas)s chạy với %(equipos)s đội"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "Có, trong các bài kiểm tra sơ bộ"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
 msgstr ""
+"Bản demo vẫn sử dụng phiên bản luận văn. Công cụ cải tiến được so sánh với "
+"một tìm kiếm ngẫu nhiên xem xét cùng số lượng lịch."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "Ngày 8 tháng 11 năm 2026"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "Động cơ khối"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1137,12 +1076,17 @@ msgid ""
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
 msgstr ""
+"Mỗi phần của lịch thi đấu (bảng, giải đấu và liên giải) gồm các khối mà mọi "
+"người thi đấu với nhau. Do đó, các quy tắc của MLB luôn được tuân thủ. Lập "
+"trình di truyền chọn và ra lệnh các khối để giảm di chuyển."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"Kết quả sơ bộ: %(resultado)s, trong %(corridas)s lần thi đấu với %(equipos)s"
+" đội."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1151,182 +1095,1866 @@ msgid ""
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
 msgstr ""
+"Xem xét mã để xác nhận lý do tại sao PG không tốt hơn việc chọn lịch một "
+"cách ngẫu nhiên. Giao thoa và đột biến làm mất khả năng tồn tại của lịch, và"
+" trọng lượng thể lực khiến trẻ em thua thiệt trước các bậc cha mẹ thế hệ "
+"đầu."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "Chế độ Clear"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "Động cơ: %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
 msgstr ""
+"<strong>Lưu ý:</strong> bản demo này sử dụng công cụ luận văn. Công cụ đó "
+"không tốt hơn việc chọn lịch ngẫu nhiên."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
 msgstr ""
+"Động cơ cải tiến đã tốt hơn trong các bài kiểm tra sơ bộ: %(resultado)s, "
+"trong %(corridas)s lần chạy bộ. Nó vẫn chưa được đưa vào bản demo này."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
 msgstr ""
+"Đối với một dự án ở trường, đó là một điểm cộng: bạn có một chuẩn mực và sự "
+"tiến bộ để đo lường."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "Xem kết quả của mỗi lần phát hành"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
+"Trong các trận kiểm tra: %(resultado)s, trong %(corridas)s lượt thi đấu với "
+"%(equipos)s đội."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "Phiên bản luận văn (2026)"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "Khoảng cách nhiều hơn 19,5% so với việc chọn lịch ngẫu nhiên"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "Block engine (phiên bản nâng cấp)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "Đi lại ít hơn 13% so với việc chọn lịch ngẫu nhiên"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "Viết tắt (ví dụ: SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "Tên đội"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "Thành phố"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "vĩ độ sân vận động"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "chiều dài sân vận động"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "Tính theo bậc thập phân. Ví dụ: 47.59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "Tính theo bậc thập phân. Ví dụ: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "Các đội trong giải đấu"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "Tên giải đấu"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "Chọn ít nhất 2 đội."
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "Tên giải đấu"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "Ngày đầu tiên"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "Ngày cuối cùng"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "Các trận đấu theo loạt"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "Loạt trận đồng đội"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "Ngày cuối cùng phải giống hoặc sau ngày đầu tiên."
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "Phải là 1 hoặc nhiều hơn."
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "Tên cấu hình"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "Quy mô dân số"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "Số thế hệ"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "Xác suất giao nhau (0 đến 1)"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "Cơ hội Đột biến (0 ăn 1)"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "Nó nên nằm trong khoảng từ 0 đến 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "Trang thiết bị"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "Liên đoàn"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "Giải đấu"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "Bối cảnh"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "Lịch thi đấu"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "Hoàn thành bước này trước."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "Thêm thiết bị."
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "Trò chơi được tạo ra."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "Ngày 14 tháng 11 năm 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
+msgstr "Thuật toán theo lượt: vượt qua lịch thi đấu chính thức của MLB 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
 msgstr ""
+"Chúng tôi đã loại bỏ quy định rằng tất cả 30 đội phải thi đấu các loạt 3 "
+"ngày cùng lúc. Với các chuỗi 2, 3 và 4 trận và các kỳ nghỉ, thuật toán tốt "
+"nhất sẽ di chuyển 1,57 triệu km. Lịch chính thức di chuyển 1,74 triệu. Cả "
+"hai đều tuân theo cùng một quy tắc về tính thực tế."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr "Xem nghiên cứu hiện tại, với sơ đồ động"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "Ngày 12 tháng 11 năm 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "Bản demo cho thấy mùa giải 2023 thực tế"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr ""
+"Bạn có thể xem lịch thi đấu Major League Baseball 2023 thực tế mà không cần "
+"chờ động cơ chạy."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "Xem mùa giải 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "Ngày 9 tháng 11 năm 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "Câu chuyện từng bước"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr ""
+"Một lời giải thích với bản đồ 30 giai đoạn, cây cối và sự tiến hóa, từng "
+"bước một."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "Đọc câu chuyện"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "Kiểm toán lần thứ hai về kinh nghiệm"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr ""
+"Việc xem xét lại khả năng tiếp cận, khả năng sử dụng và tương tác giữa con "
+"người và AI đã được lặp lại. Trong số 28 điểm của lần đầu tiên, 13 điểm đã "
+"được giải quyết. Hầu hết các điểm mới đã được sửa chữa."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr "Anh ấy lắp động cơ theo hàng loạt rồi sau đó là các khối động cơ."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "Ngày 5 tháng 11 năm 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "Mở hướng dẫn 5 bước"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr ""
+"Lập trình di truyền để làm lịch bóng chày. Luận án của Leslie Dickinson "
+"(ITAM), với kết quả trung thực."
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr ""
+"Koza-TTP: bản đồ các sân vận động bóng chày với lộ trình của đội và cây lập "
+"trình di truyền."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "Truy cập trang web chính"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "Thực đơn"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "Cách hoạt động"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "Leslie Dickinson"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "Trang web chính"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "Liên hệ"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "Luận văn của tôi đã nói lên sự thật"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"Thí điểm luận án cũng chẳng khác gì việc chọn lịch một cách ngẫu nhiên: "
+"%(resultado)s. Báo cáo như thế này, không giấu giếm, là quyết định đúng đắn."
+" Kết quả đó cho thấy những gì cần chỉnh sửa để động cơ được cải thiện."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "Nghiên cứu hiện tại"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr ""
+"Mọi thứ chúng tôi cố gắng đều vượt qua lịch thi đấu chính thức của MLB 2023,"
+" với các sơ đồ động."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "Nghiên cứu hiện tại: vượt qua lịch chính thức"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr ""
+"Mục tiêu: Lịch trình cho mùa giải Major League Baseball 2023 di chuyển ít "
+"hơn so với lịch chính thức và tuân thủ cùng các quy định. Lịch trình chính "
+"thức di chuyển 1,74 triệu km."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr ""
+"Cập nhật ngày 14 tháng 11 năm 2026 (buổi chiều). Các thuật toán này đang "
+"được thử nghiệm: trang web và bản demo chưa sử dụng chúng."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "1. Kết quả tất cả các thử nghiệm"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"Mỗi vạch là tổng hành trình của 30 đội trong một mùa giải, tính bằng hàng "
+"triệu km. Càng ít càng tốt. Tất cả các con số đều được đo giống nhau: mỗi "
+"đội rời sân nhà, đi từ sân này sang sân khác và trở về vào cuối cùng."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "Tổng chuyến đi theo phiên bản thuật toán"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "Thuật toán Koza-TTP"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "Lịch chính thức 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr ""
+"Hai thuật toán ủ theo lượt này vượt qua sĩ quan khoảng 9%%. Bảng dưới đây "
+"cũng có dữ liệu tương tự."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "Tất cả các xét nghiệm, từ lâu đời nhất đến mới nhất"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "Tổng số chuyến đi"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "Nó có tuân thủ luật chơi không?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "Những gì chúng tôi học được"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "Thuật toán khối, quy tắc không thực tế"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "1,85 triệu km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "Không: tour lên đến 36 trận liên tiếp"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr ""
+"Anh ta có vẻ thân thiết với viên cảnh sát, nhưng thực ra đang gian lận."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "Thuật toán khối, với các quy tắc"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "2,19 triệu km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "Không đáp ứng được"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr "Các khối cố định không cho phép bạn tổ chức tour một cách tốt."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "Khối hỗn hợp, có thước kẻ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "2,00 triệu km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "Đúng vậy"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr "Tốt hơn, nhưng cả 30 đội vẫn thi đấu cùng lúc."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr "Dịch chuyển với các bộ 2, 3 và 4 bộ + tôi mô phỏng"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "1,52 đến 1,60 triệu km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "3 trên 4 lần chạy (một lần kéo dài thêm một ngày)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr "Loại bỏ quy tắc \"tất cả cùng lúc\" là điều giúp sĩ quan thắng."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr "Ca + tuần với MLB + PG chỉ chấp nhận nâng cấp"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "1,70 triệu km (trung bình)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "Có, 4 trên 4"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr ""
+"Anh ta suýt chút nữa đánh bại sĩ quan, nhưng gần như gỡ hòa bằng những động "
+"tác ngẫu nhiên."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "Chuyển động ngẫu nhiên, nỗ lực giống như PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "Đó là cơ sở hợp lý để đo lường PG."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "Ca làm + tuần + ủ thủ công"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "1,567 triệu km (trung bình 8 lịch)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "Chấp nhận những thay đổi tệ hơn ngay từ đầu giúp ích rất nhiều."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "Ca + tuần + nhiệt độ học tập PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "1,571 triệu km (trung bình 8 lịch)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr ""
+"PG thiết kế thước riêng và gần như tương đương với thước thủ công (nhiều hơn"
+" 0,3%%)."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "Cùng một PG, với nhiều sự đa dạng và luyện tập hơn"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "1,583 triệu km (trung bình 8 lịch)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "Có, 8 trên 8"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr "Luyện tập với chạy ngắn không dạy được quy tắc tốt nhất cho chạy dài."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "Lịch thi đấu chính thức MLB 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "1,74 triệu km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr ""
+"Mục tiêu. Nó cũng tuân thủ các quy tắc mà chúng tôi không mô phỏng, như ngày"
+" diễn sân vận động và truyền hình."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"Quy tắc thực tế: tối đa 12 trận liên tiếp trên sân nhà hoặc sân khách, không"
+" có đối thủ lặp lại trong các loạt trận liên tiếp, tối đa 20 ngày thi đấu "
+"liên tiếp và mùa giải kéo dài 186 ngày. Theo lịch chính thức, chúng tôi chỉ "
+"giữ lại các con số đã tính theo điều khoản sử dụng của MLB."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "2. Thay đổi lớn: lượt chơi với các bộ 2, 3 và 4 trò chơi"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"Trước đây, cả 30 đội đều thi đấu các loạt trận 3 ngày cùng lúc, không nghỉ "
+"giải lao. Giờ đây, mùa giải được chia thành ca ngày thường (4 ngày) và ca "
+"cuối tuần (3 ngày), giống như MLB. Mỗi đội thi đấu một loạt 2, 3 hoặc 4 "
+"trận, hoặc nghỉ ngơi."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "Mô hình trước so với mô hình theo lượt"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "Tạm dừng"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "Series (con số cho biết có bao nhiêu trận)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "Nghỉ giải lao"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"Sáu đội trong tám ca. Trong mô hình trước đây, mỗi ca chơi 3 ngày. Trong mô "
+"hình ca, giải kéo dài 2, 3 hoặc 4 ngày và có các khoảng nghỉ, nên các tour "
+"có thể được tổ chức với nhiều tự do hơn."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "3. Chuyển động chính: chuỗi Kempe"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr ""
+"Để thay đổi lịch thi đấu mà không có đội chơi hai loạt trận cùng lúc, hai "
+"lượt và một chuỗi loạt trận luân phiên giữa chúng sẽ được thực hiện. Tất cả "
+"các chuỗi trong chuỗi thay đổi đều thay đổi cùng lúc. Lịch thi đấu vẫn còn "
+"hiệu lực."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "Xích Kempe giữa cua A và cua B"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "Chuỗi trong Shift A (Đường đặc)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "Chuỗi ở khúc cua B (đường đứng)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr ""
+"Tám đội. Mạng lưới bắt đầu ở NYA và trải qua BOS, TOR và BAL. Bốn mùa chuyển"
+" đổi theo chuỗi. Các mùa còn lại không chuyển đổi."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "4. Tại sao ủ lại vượt trội hơn PG?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr ""
+"PG đầu tiên sử dụng các chuyển động giống như ủ nhiệt, nhưng dài 1,70 triệu "
+"km và ủ là 1,58 triệu km. Có ba lý do."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>Ông chỉ chấp nhận những cải tiến.</strong> Vì vậy, ông bị mắc kẹt ở "
+"\"thung lũng\" đầu tiên mà ông tìm thấy. Quá trình ủ nhiệt ban đầu cho phép "
+"ông vượt qua \"ngọn đồi\" và đến một thung lũng sâu hơn."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr ""
+"<strong>Anh ấy đã nỗ lực.</strong> Mỗi thế hệ, anh ấy thử 16 công thức và "
+"chỉ giữ lịch của những công thức ngon nhất. Quá trình ủ sẽ bảo quản từng "
+"bước anh ấy thực hiện."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr ""
+"<strong>Anh lặp lại cùng một vị trí.</strong> Các số cố định trong cây luôn "
+"chỉ đến cùng một lượt và đội. Các nước đi ngẫu nhiên chạy xuyên suốt toàn bộ"
+" lịch."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "Chỉ cải thiện khi chấp nhận những thay đổi tệ hơn"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "Chỉ chấp nhận nâng cấp (vòng tròn)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "Ủ nhiệt: chấp nhận những thay đổi kém hơn (hình thoi)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr ""
+"Đường này là chi phí của lịch: thấp hơn càng tốt. Vòng tròn đi xuống thung "
+"lũng đầu tiên và giữ nguyên ở đó. Hình thoi đi lên đồi, vì nó đồng ý giảm "
+"xuống một chút, và đến thung lũng sâu nhất."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr "5. PG biết khi nào nên chấp nhận những thay đổi tệ hơn"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr ""
+"Để sửa lý do 1, PG giờ thiết kế quy tắc ủ nhiệt. Một cây quyết định số km "
+"xấu đi được chấp nhận trong mỗi bước. Hãy xem hai dữ liệu: đã đi đến đâu "
+"trong quá trình chạy và có bao nhiêu thay đổi được chấp nhận gần đây."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr ""
+"PG tập luyện với các buổi chạy ngắn trên 2 lịch. Sau đó chúng tôi thử cây "
+"thắng trên 4 lịch mà cô ấy chưa từng thấy. Đây là cây thắng cuộc:"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr ""
+"Tóm lại: dung sai nhỏ, khoảng 60 đến 1.200 km, và tăng lên khi gần như không"
+" chấp nhận được thay đổi. Thước thủ công thì ngược lại: bắt đầu từ 20.000 km"
+" và dần giảm xuống 50."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "Dung sai tính bằng km trong suốt quá trình chạy (thang đo logarit)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "thước thủ công"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "PG, nếu chấp nhận một vài thay đổi (5%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "PG, nếu chấp nhận nhiều thay đổi (50%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr ""
+"Quy tắc thủ công giảm từ 20.000 xuống còn 50 km. Quy tắc PG giữ từ 60 đến "
+"1.200 km và phụ thuộc vào số lượng thay đổi được chấp nhận. Cả hai đều đạt "
+"lịch khoảng 1,57 triệu km."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "6. Kế hoạch tiếp theo"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr ""
+"PG gần như ngang bằng với quá trình ủ nhiệt, nhưng vẫn không thể vượt qua "
+"nó. Trong 8 lịch mới, thước thủ công di chuyển 1,567 triệu km và thước đo "
+"của PG là 1,571 triệu km."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"Chúng tôi cố gắng tạo sự đa dạng hơn (không lặp lại công thức) và luyện tập "
+"nhiều hơn (3 lịch, 32 công thức, 16 thế hệ). Tệ hơn nữa: 1,583 triệu km. PG "
+"luyện tập với các buổi chạy ngắn 40.000 bước, nhưng bài kiểm tra sử dụng "
+"400.000 bước. Một quy tắc tốt cho việc chạy ít không phải là tốt nhất cho "
+"việc chạy nhiều."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr ""
+"Bước tiếp theo là PG luyện tập với các đường chạy giống như bài kiểm tra và "
+"bắt đầu từ thước thủ công, để cô ấy chỉ có thể cải thiện nó."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "Xem mã cho các bài kiểm tra này trên GitHub"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "Thuật toán luận văn"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "Thuật toán luận văn gốc (2026)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "Xem mùa giải 2023 thực tế mà không cần chờ đợi"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "Nhấp vào cây để xem kích thước lớn hơn."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr ""
+"Cây là chương trình tạo ra lịch đẹp nhất. Mỗi nhánh tham gia các trò chơi; "
+"lá là các trận đấu (ngày, đội chủ nhà và đội khách)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "Tổng số chuyến đi của tất cả các đội:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "Trò chơi phá luật:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr ""
+"Một quy tắc là mỗi đội phải thi đấu số trận mà giải đấu yêu cầu. "
+"<strong>Không có trận nào vi phạm quy tắc</strong> nghĩa là lịch thi đấu hợp"
+" lệ."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr "Có thể mất vài giây đến vài phút. Tùy thuộc vào số lượng máy tính."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "Động cơ đang hoạt động."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr ""
+"Anh ấy tạo lịch, kết hợp chúng lại và giữ lại những cuốn đẹp nhất. Đừng đóng"
+" trang này."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "Tham số đã lưu"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "Cấu hình \"%(nombre)s\""
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr ""
+"<strong>Quan trọng:</strong> động cơ luận văn lưu các giá trị này, nhưng "
+"không sử dụng chúng. Nó luôn vận hành với dân số 100, 20 thế hệ, 0,8 giao "
+"thoa và 0,2 đột biến."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "Các lệnh để chạy"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"Sao chép câu hỏi này và dán vào trình hướng dẫn bạn sử dụng. Đính kèm tệp "
+"programa_genetico/programagenetico.py (công cụ luận văn) hoặc "
+"programa_genetico/motor_bloques.py (công cụ nâng cao)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "Cây Lịch Tốt Nhất"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "Từ %(a)s đến %(b)s."
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "Các bước trình diễn"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "Demo: Cài đặt"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "Bước 2: Cài đặt"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr ""
+"Tất cả các giá trị đều đã được chọn. Bạn có thể thay đổi chúng hoặc cung cấp"
+" \\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "Thay đổi thiết bị"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "Giải đấu"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "Thuật toán"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "Tiếp theo: Xem lịch"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "Demo: Chọn đội"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr ""
+"Koza-TTP Demo: Xây dựng lịch bóng chày với thuật toán mới nhất trong 3 bước."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "Bước 1: Chọn thiết bị"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr ""
+"Thuật toán sẽ lập lịch trình cho các đội bạn chọn và tìm đội có ít chuyến đi"
+" nhất. Chúng tôi đã đánh dấu 10 đội Major League rồi. Nếu muốn, hãy nhấn "
+"\"Tiếp theo\" mà không cần thay đổi gì."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "Tiếp theo: Cài đặt"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "Bạn thích xem trọn vẹn một mùa hoàng gia?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "Xem mùa giải 2023: 30 đội theo lịch chính thức"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "Muốn đăng ký đội bóng và sân vận động của riêng bạn?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "Tự Làm Trong Hướng Dẫn 5 Bước"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "Demo: lịch trình"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "Bước 3: Lịch"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "Thuật toán mới hơn: Mô hình theo lượt"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>: %(n)s đội."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "Những gì thuật toán đã đạt được"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr "Tổng số chuyến đi của tất cả các đội theo lịch trình thuật toán."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr "Di chuyển với một lịch được tạo ngẫu nhiên, trước khi tối ưu hóa."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr "Đi lại ít hơn lịch ngẫu nhiên."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "Tuân thủ tất cả các quy tắc"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "Lịch bất ngờ bị hỏng %(a)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "Bạn xem xét những quy tắc nào?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr ""
+"Tối đa 12 trận sân nhà hoặc sân khách liên tiếp. Ở đây: %(n)s trên sân nhà "
+"và %(m)s sân khách."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "Tối đa 20 ngày liên tiếp với việc chơi. Ở đây: %(n)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr ""
+"Không phải đối đầu với cùng một đối thủ trong hai loạt trận liên tiếp."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr "Các trận sân nhà khoảng một nửa. Ở đây: %(a)s đến %(b)s mỗi đội."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "Chuyến đi diễn ra như thế nào"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr ""
+"Tổng chiều dài chuyến đi giảm từ %(a)s km xuống còn %(b)s km trong %(p)s "
+"bước tìm kiếm."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "%(n)s đầu tiên của %(t)s trò chơi"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "Ở nhà"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "Tham quan"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "Xem tất cả các trò chơi"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "Tất cả các trò chơi"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "Tiếp theo là gì?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "Thay đổi cài đặt và chạy lại"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "Lựa chọn thiết bị khác"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr "Xem toàn bộ mùa giải 2023: 30 đội theo lịch chính thức"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "Hiểu cách hoạt động chỉ trong 2 phút"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr "Tự làm: đăng ký thiết bị của bạn trong hướng dẫn 5 bước"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "Xem thuật toán gốc của luận văn"
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "Hiểu ý tưởng trong 2 phút"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr ""
+"Câu chuyện hoạt hình Koza-TTP: bản đồ hành trình bóng chày, cây lập trình di"
+" truyền và con đường của phi công từ luận văn đến động cơ cải tiến."
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "2 phút · 7 bậc thang"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "Các bước tiến của lịch sử"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "Sân vận động"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "Du lịch"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "Cây"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "Giao thoa"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "Đột biến"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "Các thế hệ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "Kết quả"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "Phần 1 · Vấn đề"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "30 đội phải thi đấu với nhau"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr ""
+"Giải bóng chày nhà nghề Mỹ có 30 đội. Mỗi đội thi đấu 162 trận trong một mùa"
+" giải."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr ""
+"Lịch cho biết ai sẽ thi đấu với ai, vào ngày nào và ở sân vận động nào."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "Nhấn vào một sân vận động trên bản đồ để xem tên của nó."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "Mỗi chuyến đi đều tốn thời gian và tiền bạc"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr ""
+"Khi một đội thi đấu trên sân khách, họ phải đi máy bay. Lịch thi đấu tệ "
+"khiến họ phải đi khắp đất nước nhiều lần."
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr ""
+"Một ví dụ về chuyến tham quan, với các ngày tháng được sắp xếp ngẫu nhiên."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr "Nhấn vào một sân vận động khác để xem chuyến du đấu của đội đó."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "Phần 2 · Ý tưởng của luận văn"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "Một lịch có thể được viết dưới dạng cây"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr ""
+"Lập trình di truyền không viết lịch bằng tay. Nó <strong>viết hướng "
+"dẫn</strong> để cải thiện nó."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"Những hướng dẫn này tạo thành một cây. <strong>Lá</strong> là chuỗi các trò "
+"chơi, chẳng hạn như \"SEA–NYA.\" <strong>Branch</strong> là các hành động, "
+"như \"hoán đổi\" hai chuỗi ngày hoặc \"đảo ngược địa điểm\" (thay đổi ai "
+"chơi ở nhà)."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "Giao nhau: Hai cây giao thoa"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr "Hai cây hoạt động tốt sẽ được chọn. Mỗi cây cho một cành cây."
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "Cây mới, \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "Đột biến: Một thay đổi nhỏ, ngẫu nhiên"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr "Đôi khi một phần của cây tự động thay đổi. Ở đây, chuỗi \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr ""
+"Đột biến nhằm thử nghiệm những ý tưởng mới mà không cha mẹ nào từng có."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "Phần 3 · Kết quả"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "Thế hệ này qua thế hệ khác"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr ""
+"Mỗi thế hệ có nhiều cây. Những người làm lịch ít đi lại hơn sẽ có nhiều con "
+"hơn."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr ""
+"Đường nét chấm là mục tiêu tối thiểu: lịch tốt nhất được <strong>chọn ngẫu "
+"nhiên</strong> với cùng một nỗ lực."
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "Chọn một động cơ để xem nó hoạt động ra sao."
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "Từ phi công đến động cơ hoạt động"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"Động cơ cải tiến, theo các khối, thực sự vượt qua nó một cách ngẫu nhiên: "
+"%(resultado)strong các bài kiểm tra sơ bộ (%(corridas)s lần chơi, "
+"%(equipos)s đội)."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr ""
+"Tập thử nghiệm của luận văn (2026) <strong>cũng không khá hơn</strong> việc "
+"chọn lịch một cách ngẫu nhiên: %(resultado)s."
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "Kiểm tra công cụ trong 5 bước"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "Xem tất cả 30 sân vận động dưới dạng một bàn"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "Dữ liệu từ tệp dự án teams.csv."
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "Mã nguồn"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "Đội ngũ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "Sân vận động"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "Vị trí"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "Trước đây"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "Tiếp theo"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr ""
+"Koza-TTP: lập trình di truyền cho lịch bóng chày. Nó bắt đầu như một luận "
+"văn của Leslie Dickinson (ITAM) và ngày nay có một động cơ vượt qua sự ngẫu "
+"nhiên."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "Lịch thi đấu MLB tốt hơn với chương trình di truyền."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"Koza-TTP ra đời như luận văn của tôi tại ITAM. Thử nghiệm đầu tiên đó không "
+"vượt qua một cách ngẫu nhiên. Phiên bản khối thì có: %(resultado)s, trong "
+"các bài kiểm tra sơ bộ. Ở đây tôi sẽ chỉ cho bạn cách nó hoạt động."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr ""
+"Một câu chuyện hoạt hình: bản đồ các hành trình, cây lập trình di truyền và "
+"kết quả."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "Mùa giải 2023: động cơ đối đầu với lịch thi đấu thực tế"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr ""
+"Một lần lặp lại động cơ lập trình di truyền với tất cả 30 đội bóng chày "
+"Major League Baseball năm 2023, so với lịch thi đấu chính thức và may rủi."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "Mùa giải 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "Bản demo với dữ liệu thực · Giải bóng chày nhà nghề Mỹ 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr ""
+"Chúng tôi sử dụng 30 đội bóng chày Major League Baseball và sân vận động "
+"thực tế của họ. Lịch thi đấu chính thức năm 2023 là tham khảo. Bộ máy dựa "
+"trên khối cố gắng xây dựng một mùa giải với ít thời gian di chuyển hơn."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "Cách số km giảm xuống, thế hệ này qua thế hệ khác"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr ""
+"Đây là một chuỗi thực sự của engine, được lưu lại để bạn xem mà không phải "
+"chờ đợi. Nó có %(generaciones)s thế hệ với 100 lịch mỗi thế hệ."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "Lối chơi"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "Thế hệ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "Ván trượt ngang"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "Chuyến đi của 30 đội trong suốt mùa giải chính."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "Tour dài nhất (các trận sân khách liên tiếp)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "Nhiều trận sân nhà liên tiếp"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "Trọng tài Major League Baseball"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "triệu km"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "Tốt hơn khi chơi ngẫu nhiên, với cùng một nỗ lực"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "Nó không đáp ứng số trận đấu của mỗi đội."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr ""
+"Động cơ <strong> di chuyển ít hơn%(pct)s%% so với</strong> lịch trình tốt "
+"nhất ngẫu nhiên. Động cơ học được."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr ""
+"Lịch chính thức <strong> di chuyển ít hơn động cơ%(pct)s%%.</strong> Chúng "
+"ta vẫn chưa đánh bại được anh ta."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"Lưu ý: lịch trình của engine có các tour với tối đa <strong>%(gira)s trận "
+"sân khách liên tiếp</strong>. Lịch chính thức có tối đa %(oficial)s. Một đội"
+" bóng thực sự sẽ không chấp nhận các tour dài như vậy."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "Hành trình của từng đội"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr "Chuyển đổi giữa hai lịch thi đấu để xem đội nào di chuyển nhiều nhất."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "Lịch Bản Đồ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "Chính thức"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "Động cơ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "Xem tất cả 30 đội dưới dạng một bảng"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "Số lượng xe chính thức (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "Động cơ (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "Dữ liệu đến từ đâu"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr ""
+"Lịch thi đấu chính thức: Mùa giải chính thức Major League Baseball 2023 (MLB"
+" Stats API). Chúng tôi chỉ giữ lại các con số đã tính ở đây, không phải lịch"
+" thi đấu."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr ""
+"Khoảng cách: đường thẳng giữa các sân vận động (công thức bán vũ trụ). Mỗi "
+"đội rời sân nhà, di chuyển từ sân này sang sân khác và trở về vào cuối."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr ""
+"Công cụ khối: 100 lịch mỗi thế hệ, tổng cộng %(evaluaciones)s lịch được đánh"
+" giá. Chance cũng đánh giá số lượng tương tự."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "Tự tổ chức giải đấu của riêng bạn"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "Cách động cơ hoạt động"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "Các khối, kèm theo quy tắc"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "Lượt + Nước đi ngẫu nhiên"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "Lượt + PG (chỉ nâng cấp)"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "Ca làm việc + nhiệt độ học PG"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "Chuyển số + ủ tay"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "Cũ: Mỗi người chơi 3 ngày mỗi lượt"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "Bây giờ: các loạt trận 2, 3 và 4, có nghỉ giải lao"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "Quay"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "các ngày trong tuần"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "Cuối tuần"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "rẽ A"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "Khúc cua B"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "1. Chúng tôi chọn một đội và hai ca làm việc"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "2. Chúng tôi tuân theo chuỗi: A, B, A, B..."
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "3. Chuyển số công tắc chuỗi chuỗi"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "Chi phí lịch"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "tốt nhất"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "Thung lũng Đầu tiên"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "Thung lũng sâu hơn"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "Tiến trình đấu bò"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "Trang chủ"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "Kết thúc"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "bằng tay"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "PG, 5%"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "PG, 50%"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "Giải đấu Test của tôi"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr "Tùy chọn. Nếu bạn dừng lại ở đó, tên này sẽ được sử dụng."
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "Các đội tham dự giải đấu"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr ""
+"Chúng ta đã ghi được 10 điểm rồi. Bạn có thể thay đổi: từ 3 lên 10 đội."
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "Bản đồ 30 sân vận động của các giải Major League"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr "{Nhóm} ví dụ tham quan: 12 lượt truy cập theo thứ tự ngẫu nhiên."
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr "Bạn đã chọn {team}. Làm theo bước 2 để xem hành trình của họ."
+
+#: tesis/historia.py
+msgid "km"
+msgstr "km"
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "Kết hợp"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "Trao đổi"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "Đầu tư Địa phương"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "Trang chủ"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "Tham quan"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "Cha mẹ A"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "Cha mẹ B"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "Con trai"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr ""
+"Cây ví dụ: kết hợp, với hai nhánh: trao đổi SEA-NYA với BOS-TEX, và đầu tư "
+"địa phương LAN-CHN tại quê nhà."
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr ""
+"Giao thoa: cha A trao nhánh trái và cha B trao nhánh trái; con trai kết hợp "
+"cả hai."
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "Đột biến: Trên cây, lá SEA–NYA chuyển thành SEA–OAK."
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "Xem lại"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "Du lịch (ngẫu nhiên = 100)"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "Chance"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "Dân số (48 cây)"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "Nhiều màu sắc hơn = ít di chuyển hơn"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "Công cụ luận văn"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{engine} · {g} tạo ra {total}"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{engine} · kết thúc: {kết quả}."
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr ""
+"{engine}: khởi động tại {start} và kết thúc tại {end} (chance = 100). Kết "
+"quả: {result}."
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr ""
+"Khoảng cách so với may rủi: động cơ luận văn {luận văn}, chọn ngẫu nhiên "
+"100, động cơ khối {khối}."
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "Động cơ luận văn (2026)"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "Chọn lịch ngẫu nhiên"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "Động cơ khối (sơ bộ)"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr "Bạn cũng có thể sử dụng các phím mũi tên trên bàn phím."
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr ""
+"Số km của mùa giải theo thế hệ động cơ, so với lịch chính thức và cơ hội"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "Lịch thi đấu chính thức"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "Tốt hơn khi ngẫu nhiên"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}: {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr "Tuy nhiên, số trận đấu của mỗi đội vẫn chưa đạt được."
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr ""
+"Trục dọc: từ {min} đến {max} million km. Trục ngang: các thế hệ từ 0 đến "
+"{last}."
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr ""
+"Bản đồ: Mỗi vòng tròn là một đội; lớn hơn nghĩa là nhiều dặm hơn trong mùa"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{đội}: {km} km"

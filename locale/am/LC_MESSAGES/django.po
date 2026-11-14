@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "የማመቻቸት ውጤቶች"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "ለማስፋት ዛፉን ጠቅ ያድርጉ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "ጠቅላላ የጉዞ ወጪ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "የደንብ ጥሰቶች -"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "ማመቻቸትን ያሂዱ"
 
@@ -131,10 +119,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "ከቅርብ ጊዜ እስከ ጥንታዊው."
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "የታቀደ"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "ለኤንጂኑ ዐውደ-ጽሑፋዊ ኦፕሬተሮች"
 
@@ -160,10 +144,6 @@ msgstr "የቀን መቁጠሪያውን ያለ ስህተቶች ለማየት ከ�
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "ኅዳር 3, 2026"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "በመካሄድ ላይ ያለ"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -583,10 +563,6 @@ msgid ""
 msgstr "ከጄኔቲክ ፕሮግራሚንግ ጋር የቤዝቦል ካላንደር ያመነጫል እና እያንዳንዱ ቡድን ምን ያህል እንደሚጓዝ ይለካል።"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "ማሳያ · በቡድኖች መካከል ፍትሃዊ ጉዞ"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "የቀን መቁጠሪያ ይፍጠሩ እና"
 
@@ -600,6 +576,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"AI (የጄኔቲክ ፕሮግራሚንግ) ጉዞው አጭር እና እኩል የሆነባቸውን የቀን መቁጠሪያዎች ይፈልጋል። የራስዎን ቡድኖች "
+"ይፈልጋሉ? ባለ <a href=\"%(guia)s\">5-ደረጃ መመሪያን</a> ይጠቀሙ."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -632,10 +610,6 @@ msgstr "ጥቂት ሰከንዶች ይወስዳል."
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "የጊዜ ሰሌዳ %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "የማዋቀር %(id)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -712,14 +686,6 @@ msgstr "በኮምፒተርዎ ላይ ያሂዱት"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "ለእርዳታ የ AI ረዳትዎን ይጠይቁ"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr ""
-"ይህንን ጥያቄ ይቅዱ እና ከ programa_genetico/programagenetico.py ፋይል ጋር ወደሚጠቀሙት ጠንቋይ "
-"ይለጥፉ።"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -938,29 +904,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "ለቤዝቦል የቀን መቁጠሪያዎች የጄኔቲክ ፕሮግራም"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr ""
-"ኮዛ-ቲቲፒ የሌስሊ ዲኪንሰን (ITAM) ተሲስ ለቤዝቦል የቀን መቁጠሪያዎች በጄኔቲክ ፕሮግራሚንግ ላይ፣ በታማኝነት ውጤቱ "
-"እና በተሻሻለ ሞተር።"
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "ኢታም ተሲስ · የጄኔቲክ ፕሮግራም · የቤዝቦል"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "የእኔ ተሲስ እውነቱን ተናግሯል -"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr ""
-"ኮዛ-ቲቲፒ የቤዝቦል ወቅት የቀን መቁጠሪያዎችን በጄኔቲክ ፕሮግራሚንግ ለመስራት ያንን ተሲስ ይወስዳል። እዚህ ምን "
-"እንደተፈጠረ፣ ለምን እና በአደባባይ እንዴት እንደማረም ታያለህ።"
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -977,12 +922,6 @@ msgstr "2 ደቂቃዎች"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "ሀሳቡን መረዳት"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr "የጄኔቲክ ፕሮግራሚንግ ምንድን ነው እና ለምን የቤዝቦል ካላንደር ከባድ ችግር ነው."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1060,37 +999,39 @@ msgstr "አውቶማቲክ፣ ማያ እና ኦቶሚን ጨምሮ። እነሱ�
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "በዘፈቀደ ፍለጋ ጋር"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "በዘፈቀደ ከመምረጥ ይሻላል?"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "በሙከራ ላይ"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s፣ በ %(corridas)s ውስጥ ከ %(equipos)s ቡድኖች ጋር ይሮጣል"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "አዎ፣ በቅድመ ሙከራዎች"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
 msgstr ""
+"ማሳያው አሁንም የመመረቂያ ሥሪቱን ይጠቀማል። የተሻሻለው ሞተር ተመሳሳይ የቀን መቁጠሪያዎችን ከሚገመግም የዘፈቀደ ፍለጋ "
+"ጋር ተነጻጽሯል።"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "ኅዳር 8, 2026"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "አግድ ሞተር"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1099,12 +1040,15 @@ msgid ""
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
 msgstr ""
+"እያንዳንዱ የጊዜ ሰሌዳው ክፍል (ዲቪዚዮን ፣ ሊግ እና ኢንተርሊግ) ሁሉም ሰው ከሁሉም ሰው ጋር በሚጫወትባቸው ብሎኮች "
+"የተዋቀረ ነው። ስለዚህ, የ MLB ደንቦች ሁልጊዜ ይከተላሉ. የጄኔቲክ ፕሮግራሚንግ ጉዞን ለመቀነስ ብሎኮችን ይመርጣል "
+"እና ያዛል።"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
-msgstr ""
+msgstr "የመጀመሪያ ውጤት %(resultado)s፣ በ %(corridas)s ከ %(equipos)s ቡድኖች ጋር ይሮጣል።"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1113,182 +1057,1787 @@ msgid ""
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
 msgstr ""
+"PG የቀን መቁጠሪያዎችን በዘፈቀደ ከመምረጥ ለምን የተሻለ እንዳልሆነ ለማረጋገጥ የኮድ ግምገማ። መስቀለኛ መንገድ እና "
+"ሚውቴሽን የቀን መቁጠሪያዎችን አዋጭነት ይሰብራሉ, እና የአካል ብቃት ክብደት ልጆች በመጀመሪያው ትውልድ ወላጆች "
+"እንዲሸነፉ ያደርጋቸዋል."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "አጽዳ ሁነታ"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "ሞተር %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
 msgstr ""
+"<strong>ማሳሰቢያ</strong> ይህ ማሳያ የመመረቂያ ሞተርን ይጠቀማል። ያ ሞተር የቀን መቁጠሪያዎችን በዘፈቀደ "
+"ከመምረጥ የተሻለ አልነበረም።"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
 msgstr ""
+"የተሻሻለው ሞተር የተሻለ ነበር, በቅድመ ሙከራዎች %(resultado)s, በ %(corridas)s ሩጫዎች. በዚህ ማሳያ "
+"ውስጥ ገና አይደለም."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
-msgstr ""
+msgstr "ለትምህርት ቤት ፕሮጀክት፣ ያ ተጨማሪ ነገር ነው እርስዎ ሊለኩት የሚችሉት መነሻ መስመር እና ማሻሻያ አለዎት።"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "የእያንዳንዱን ልቀት ውጤት ይመልከቱ"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr ""
+msgstr "በፈተናዎች ውስጥ %(resultado)s፣ በ %(corridas)s ከ %(equipos)s ቡድኖች ጋር ይሮጣል።"
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "የመመረቂያ ስሪት (2026)"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "የዘፈቀደ የቀን መቁጠሪያዎችን ከመምረጥ 19.5% የበለጠ ርቀት"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "የማገጃ ሞተር (የተሻሻለ ስሪት)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "የዘፈቀደ የቀን መቁጠሪያዎችን ከመምረጥ 13% ያነሰ ጉዞ"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "ምህጻረ ቃል (ለምሳሌ SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "የቡድን ስም"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "ከተማ"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "ስታዲየም ኬክሮስ"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "የስታዲየም ርዝመት"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "በአስርዮሽ ዲግሪዎች. ለምሳሌ 47.59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "በአስርዮሽ ዲግሪዎች. ለምሳሌ -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "ሊግ ቡድኖች"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "የሊግ ስም"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "ቢያንስ 2 ቡድኖችን ይምረጡ።"
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "የውድድር ስም"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "የመጀመሪያ ቀን"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "የመጨረሻው ቀን"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "ጨዋታዎች በተከታታይ"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "የቡድን ተከታታይ"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "የመጨረሻው ቀን ከመጀመሪያው ወይም በኋላ ተመሳሳይ መሆን አለበት."
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "1 ወይም ከዚያ በላይ መሆን አለበት."
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "የማዋቀር ስም"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "የህዝብ ብዛት"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "የትውልዶች ብዛት"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "የመሻገር እድል (ከ 0 እስከ 1)"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "ሚውቴሽን እድል (ከ 0 እስከ 1)"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "በ 0 እና 1 መካከል መሆን አለበት."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "የጥቅል ይዘት"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "ሊግ"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "ውድድር"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "ማሰናጃዎች"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "ቀን መቁጠሪያ"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "መጀመሪያ ይህንን እርምጃ ያጠናቅቁ."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "የተጨመሩ መሳሪያዎች."
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "የተፈጠሩ ጨዋታዎች።"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "14 ማርስ 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
+msgstr "ተራ ላይ የተመሰረተ ስልተ ቀመር ኦፊሴላዊውን የMLB 2023 መርሃ ግብር አሸንፏል"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
 msgstr ""
+"ሁሉም 30 ቡድኖች የ3-ቀን ተከታታይ በአንድ ጊዜ ይጫወታሉ የሚለውን ህግ አስወግደናል። በተከታታይ 2፣ 3 እና 4 "
+"ጨዋታዎች እና እረፍቶች፣ ምርጡ ስልተ ቀመር 1.57 ሚሊዮን ኪ.ሜ ይጓዛል። ኦፊሴላዊው የቀን መቁጠሪያ 1.74 ሚሊዮን "
+"ይጓዛል። ሁለቱም ተመሳሳይ የእውነታ ህጎችን ያሟላሉ።"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr "የአሁኑን ምርምር ይመልከቱ፣ በአኒሜሽን ሥዕላዊ መግለጫዎች"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "12 ማርስ 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "ማሳያው እውነተኛውን የ2023 ወቅት ያሳያል"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr "ሞተሩ እስኪሰራ ድረስ ሳይጠብቁ ትክክለኛውን የ2023 ሜጀር ሊግ ቤዝቦል መርሃ ግብር ማየት ይችላሉ።"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "የ2023 የውድድር ዘመን ይመልከቱ"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "ኅዳር 9, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "የደረጃ በደረጃ ታሪክ"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr "ከ 30 ደረጃዎች ካርታ ጋር ማብራሪያ, ዛፎች እና ዝግመተ ለውጥ, ደረጃ በደረጃ."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "ታሪኩን ያንብቡ"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "የልምዱ ሁለተኛ ኦዲት"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr ""
+"የተደራሽነት፣ የአጠቃቀም እና የሰው-AI መስተጋብር ግምገማ ተደግሟል። በመጀመሪያው 28 ነጥቦች ውስጥ 13ቱ ተፈትተዋል።"
+" አብዛኛዎቹ አዳዲስ ነጥቦች አስቀድመው ተስተካክለዋል።"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr "ሞተሩን በተከታታይ እና ከዚያም በኤንጂን ብሎኮች አግኝቷል."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "ኅዳር 5, 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "ባለ 5-ደረጃ መመሪያን ይክፈቱ"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr ""
+"የቤዝቦል የቀን መቁጠሪያዎችን ለማዘጋጀት የጄኔቲክ ፕሮግራም. የሌስሊ ዲኪንሰን (ITAM) ተሲስ ፣ ከሐቀኛ ውጤቶች ጋር።"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr "ኮዛ-ቲቲፒ የቤዝቦል ስታዲየሞች ካርታ ከቡድን መንገድ እና ከጄኔቲክ ፕሮግራሚንግ ዛፍ ጋር።"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "ወደ ዋናው ጣቢያ ይሂዱ"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "ምናሌ"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "እንዴት እንደሚሰራ"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "ሌስሊ ዲኪንሰን"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "ዋና ጣቢያ"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "አግኙን"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "የእኔ ተሲስ እውነቱን ተናግሯል"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"የመመረቂያ አብራሪው የቀን መቁጠሪያዎችን በዘፈቀደ ከመምረጥ የተሻለ አልነበረም %(resultado)s. እንደዚህ ሪፖርት "
+"ማድረግ, ሳይደብቅ, ትክክለኛ ውሳኔ ነበር. ያ ውጤት ሞተሩን ለማሻሻል ምን መስተካከል እንዳለበት ያሳያል."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "ወቅታዊ ምርምር"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr "ኦፊሴላዊውን የMLB 2023 መርሃ ግብር ለማሸነፍ የሞከርነው ነገር ሁሉ፣ በአኒሜሽን ሥዕላዊ መግለጫዎች።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "ወቅታዊ ምርምር ኦፊሴላዊውን የቀን መቁጠሪያ መምታት"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr ""
+"ግብ የ2023 ሜጀር ሊግ ቤዝቦል የውድድር ዘመን ከኦፊሴላዊው ያነሰ የሚጓዝ እና ተመሳሳይ ህጎችን የሚያከብር መርሃ "
+"ግብር። ኦፊሴላዊው 1.74 ሚሊዮን ኪ.ሜ ይጓዛል."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr ""
+"እ.ኤ.አ. ኖቬምበር 14፣ 2026 (ከሰአት በኋላ) ተዘምኗል። እነዚህ ስልተ ቀመሮች በሙከራ ላይ ናቸው ጣቢያው እና "
+"ማሳያው እስካሁን አይጠቀሙባቸውም።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "1. የሁሉም ፈተናዎች ውጤቶች"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"እያንዳንዱ ባር በአንድ ወቅት የ 30 ቡድኖች አጠቃላይ ጉዞ ነው, በሚሊዮኖች ኪ.ሜ. ያነሰ የተሻለ ነው። ሁሉም አሃዞች "
+"የሚለካው አንድ አይነት ነው እያንዳንዱ ቡድን ቤቱን ለቆ ከስታዲየም ወደ ስታዲየም ሄዶ በመጨረሻ ይመለሳል።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "ጠቅላላ ጉዞ በአልጎሪዝም ስሪት"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "ኮዛ-ቲቲፒ ስልተ ቀመሮች"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "ኦፊሴላዊ የቀን መቁጠሪያ 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr ""
+"ሁለቱ ተራ ላይ የተመሰረቱ የማደንዘዣ ስልተ ቀመሮች መኮንኑን በ9%% ገደማ አሸንፈዋል። ከዚህ በታች ያለው ሰንጠረዥ "
+"ተመሳሳይ መረጃ አለው."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "ሁሉም ሙከራዎች, ከጥንታዊ እስከ በጣም የቅርብ ጊዜ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "ጠቅላላ ጉዞ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "በህጎቹ ይጫወታል?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "የተማርነው"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "አግድ አልጎሪዝም፣ ምንም የእውነታ ህጎች የሉም"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "1.85 ሚሊዮን ኪ.ሜ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "አይ በተከታታይ እስከ 36 የሚደርሱ ጨዋታዎች ጉብኝቶች"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr "እሱ ወደ መኮንኑ የቀረበ ይመስላል ፣ ግን እያጭበረበረ ነበር ።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "አግድ አልጎሪዝም፣ ከህጎች ጋር"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "2.19 ሚሊዮን ኪ.ሜ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "እነሱን ማሟላት አልቻለም"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr "ቋሚ ብሎኮች ጉብኝቶቹን በደንብ እንዲያደራጁ አይፈቅዱልዎትም."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "የተቀላቀሉ ብሎኮች፣ ከገዥዎች ጋር"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "2.00 ሚሊዮን ኪ.ሜ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "አዎ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr "የተሻለ, ግን ሁሉም 30 ቡድኖች አሁንም በተመሳሳይ ጊዜ እየተጫወቱ ነው."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr "ከ 2 ፣ 3 እና 4 ስብስቦች + አስመሳይ ማደንዘዣ ስብስቦች ጋር ፈረቃዎች"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "ከ 1.52 እስከ 1.60 ሚሊዮን ኪ.ሜ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "3 ከ 4 ሩጫዎች (አንድ ተጨማሪ ቀን ቆይቷል)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr "\"ሁሉንም በአንድ ጊዜ\" የሚለውን ህግ ማስወገድ መኮንኑን የሚያሸንፈው ነው።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr "ማሻሻያዎችን ብቻ የሚቀበል ፈረቃ + ሳምንት እንደ MLB + PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "1.70 ሚሊዮን ኪሜ (አማካይ)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "አዎ ፣ 4 ከ 4"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr "መኮንኑን በጠባብ ይደበድባል፣ ነገር ግን በዘፈቀደ እንቅስቃሴዎች እኩል ይሆናል።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "የዘፈቀደ እንቅስቃሴዎች፣ ከፒጂ ጋር ተመሳሳይ ጥረት"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "PG ለመለካት ትክክለኛ መነሻ።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "ፈረቃዎች + ሳምንት + በእጅ የተሰራ ማደንዘዣ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "1.567 ሚሊዮን ኪሜ (በአማካይ የ 8 ቀን መቁጠሪያዎች)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "መጀመሪያ ላይ የከፋ ለውጦችን መቀበል በጣም ይረዳል."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "ፈረቃዎች + ሳምንት + PG የመማሪያ ሙቀት"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "1.571 ሚሊዮን ኪሜ (በአማካይ 8 የቀን መቁጠሪያዎች)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr "ፒጂ የራሱን ገዥ ይነድፋል እና በእጅ ከተሰራው (0.3%% ተጨማሪ) ጋር ይገናኛል።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "ተመሳሳይ PG፣ በበለጠ ልዩነት እና የበለጠ ልምምድ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "1.583 ሚሊዮን ኪሜ (በአማካይ 8 የቀን መቁጠሪያዎች)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "አዎ ፣ 8 ከ 8"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr "በአጭር ሩጫዎች መለማመድ ለረጅም ሩጫዎች ምርጡን ህግ አያስተምርም።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "ይፋዊ የMLB 2023 መርሃ ግብር"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "1.74 ሚሊዮን ኪ.ሜ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr "ግቡ. እንደ ስታዲየም ቀኖች እና ቴሌቪዥን ያሉ ሞዴል የማናደርጋቸውን ህጎችም ያከብራል።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"የእውነታ ህጎች ቢበዛ 12 ተከታታይ ጨዋታዎች በቤት ውስጥም ሆነ ከሜዳ ውጪ፣ በተከታታይ ተደጋጋሚ ተቃዋሚ የለም፣ ቢበዛ "
+"20 ተከታታይ ቀናት በጨዋታ እና የ186 ቀናት የውድድር ዘመን። ከኦፊሴላዊው የቀን መቁጠሪያ በMLB የአጠቃቀም ውል "
+"የተሰሉ አሃዞችን ብቻ እናስቀምጣለን።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "2. ትልቁ ለውጥ ከ2፣ 3 እና 4 ጨዋታዎች ስብስቦች ጋር ይዞራል።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"ከዚህ በፊት ሁሉም 30 ቡድኖች ምንም እረፍት ሳይኖራቸው የ3-ቀን ተከታታዮችን በአንድ ጊዜ ይጫወቱ ነበር። አሁን ወቅቱ "
+"ልክ እንደ MLB በሳምንቱ ቀናት (4 ቀናት) እና ቅዳሜና እሁድ (3 ቀናት) ፈረቃ ተከፍሏል። እያንዳንዱ ቡድን ተከታታይ"
+" 2፣ 3 ወይም 4 ጨዋታዎችን ይጫወታል ወይም ያርፋል።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "የቀደመው ሞዴል እና ተራ ላይ የተመሰረተ ሞዴል"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "ለአፍታ አቁም"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "ተከታታይ (ቁጥሩ ስንት ጨዋታዎችን ይናገራል)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "እረፍት"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"በስምንት ፈረቃዎች ውስጥ ስድስት ቡድኖች። በቀደመው ሞዴል ሁሉም ሰው በእያንዳንዱ ፈረቃ 3 ቀናት ይጫወታል. በፈረቃ "
+"ሞዴል ውስጥ ተከታታዩ 2, 3 ወይም 4 ቀናት ይቆያል እና እረፍቶች አሉ, ስለዚህ ጉብኝቶቹ በበለጠ ነፃነት ሊጣመሩ "
+"ይችላሉ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "3. ዋናው እንቅስቃሴ የኬምፔ ሰንሰለት"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr ""
+"አንድ ቡድን በአንድ ጊዜ ሁለት ተከታታዮችን ሳይጫወት መርሃ ግብሩን ለመቀየር ሁለት ተራዎች እና በመካከላቸው የተከታታይ "
+"ተለዋጭ ሰንሰለት ይወሰዳሉ። በሰንሰለቱ ውስጥ ያሉት ሁሉም ተከታታይ ለውጦች በተመሳሳይ ጊዜ ይቀየራሉ. መርሃግብሩ አሁንም"
+" የሚሰራ ነው።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "በመታጠፍ A እና በመታጠፍ B መካከል ያለው የኬምፔ ሰንሰለት"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "ተከታታይ በ Shift A (ጠንካራ መስመር)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "ተከታታይ መታጠፊያ B (ነጠብጣብ መስመር)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr ""
+"ስምንት ቡድኖች. አውታረ መረቡ የሚጀምረው በ NYA ሲሆን በ BOS፣ TOR እና BAL በኩል ያልፋል። አራቱ ተከታታይ "
+"ለውጦች ይለወጣሉ። ሌሎቹ ተከታታይ አይንቀሳቀሱም."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "4. ማደንዘዣ ፒጂን ለምን አሸነፈ?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr ""
+"የመጀመሪያው ፒጂ እንደ ማደንዘዣ ተመሳሳይ እንቅስቃሴዎችን ተጠቅሟል, ነገር ግን 1.70 ሚሊዮን ኪ.ሜ እና በ 1.58 "
+"ላይ ማደንዘዣ ነበር. ሦስት ምክንያቶች አሉ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>ማሻሻያዎችን ብቻ ተቀብሏል.</strong> ስለዚህ ባገኘው የመጀመሪያ \"ሸለቆ\" ውስጥ ተጣብቋል. "
+"ማደንዘዣው መጀመሪያ ላይ ትንሽ ለመባባስ ይስማማል, እና ይህም \"ኮረብታውን\" አቋርጦ ወደ ጥልቅ ሸለቆ እንዲደርስ "
+"ያስችለዋል."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr ""
+"<strong>ጥረት አድርጓል።</strong> በእያንዳንዱ ትውልድ ውስጥ 16 የምግብ አዘገጃጀት መመሪያዎችን ይሞክራል እና"
+" ምርጡን የቀን መቁጠሪያ ብቻ ይጠብቃል. ማደንዘዣው የሚወስደውን እያንዳንዱን እርምጃ ይጠብቃል።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr ""
+"<strong>ተመሳሳይ ቦታዎችን ደጋግሟል።</strong> በዛፉ ውስጥ ያሉት ቋሚ ቁጥሮች ሁልጊዜ ተመሳሳይ መዞሪያዎችን "
+"እና ቡድኖችን ያመለክታሉ. የዘፈቀደ እንቅስቃሴዎች በጠቅላላው የቀን መቁጠሪያ ውስጥ ያልፋሉ።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "የከፋ ለውጦችን ለመቀበል ማሻሻያዎች ብቻ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "ማሻሻያዎችን ብቻ ይቀበላል (ክበብ)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "ማደንዘዣ የከፋ ለውጦችን ይቀበላል (rhombus)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr ""
+"መስመሩ የቀን መቁጠሪያው ዋጋ ነው ዝቅተኛ የተሻለ ነው. ክበቡ ወደ መጀመሪያው ሸለቆ ወርዶ እዚያ ይቆያል. ሮምቡስ ወደ "
+"ኮረብታው ይወጣል, ምክንያቱም ትንሽ ለመባባስ ስለተስማማ, እና ወደ ጥልቅ ሸለቆ ይደርሳል."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr "5. የከፋ ለውጦችን መቼ መቀበል እንዳለበት የሚማር PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr ""
+"ምክንያት 1ን ለማስተካከል፣ PG አሁን የማደንዘዣ ደንቡን ይነድፋል። አንድ ዛፍ በእያንዳንዱ እርምጃ ምን ያህል ኪሎ "
+"ሜትር የከፋ ሁኔታ እንደሚቀበል ይወስናል. ሁለት መረጃዎችን ይመልከቱ በሩጫው ላይ ምን ያህል ርቀት እንዳለ እና ምን "
+"ያህል ለውጦች በቅርብ ጊዜ ተቀባይነት እንዳገኙ።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr ""
+"ፒጂ በ 2 የቀን መቁጠሪያዎች ላይ በአጫጭር ሩጫዎች ተለማምዷል። ከዚያም አሸናፊውን ዛፍ በ 4 የቀን መቁጠሪያዎች ላይ "
+"ሞክረናል. ይህ አሸናፊው ዛፍ ነው-"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr ""
+"ባጭሩ መቻቻሉ ትንሽ ነው, ከ 60 እስከ 1,200 ኪ.ሜ, እና ለውጦች ተቀባይነት በማይኖራቸው ጊዜ ወደ ላይ ይወጣል. "
+"በእጅ የተሠራው ገዥ ተቃራኒውን ያደርጋል በ 20,000 ኪ.ሜ ይጀምራል እና ቀስ በቀስ ወደ 50 ይወርዳል."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "በሩጫው ሁሉ በኪሜ ውስጥ መቻቻል (ሎጋሪዝም ሚዛን)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "በእጅ የተሰራ ገዥ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "PG, ጥቂት ለውጦች ተቀባይነት ካገኙ (5%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "PG, ብዙ ለውጦች ተቀባይነት ካገኙ (50%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr ""
+"በእጅ የተሰራው ህግ ከ 20,000 ወደ 50 ኪ.ሜ ዝቅ ይላል. የ PG ደንብ በ 60 እና 1,200 ኪ.ሜ መካከል ይቆያል"
+" እና ምን ያህል ለውጦች ተቀባይነት እንዳላቸው ይወሰናል. ሁለቱም ወደ 1.57 ሚሊዮን ኪ.ሜ የቀን መቁጠሪያዎች "
+"ይደርሳሉ."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "6. ቀጥሎ ምን አለ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr ""
+"ፒጂ ከማደንዘዣ ጋር የተሳሰረ ነው ፣ ግን አሁንም አላሸነፈውም። በ 8 አዳዲስ የቀን መቁጠሪያዎች ውስጥ በእጅ የተሠራው "
+"ገዥ 1.567 ሚሊዮን ኪ.ሜ እና የ PG 1.571 ይጓዛል።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"የበለጠ ልዩነት (ያለ ተደጋጋሚ የምግብ አዘገጃጀቶች) እና ተጨማሪ ልምምድ (3 የቀን መቁጠሪያዎች, 32 የምግብ "
+"አዘገጃጀቶች, 16 ትውልዶች) ለመስጠት ሞክረናል. የከፋ ነበር 1.583 ሚሊዮን ኪ.ሜ. PG በ 40,000 እርከኖች "
+"አጭር ሩጫዎች ይለማመዳል, ነገር ግን ፈተናው 400,000 ይጠቀማል. ትንሽ ለመሮጥ ጥሩ ህግ ብዙ ለመሮጥ በጣም ጥሩ "
+"አይደለም."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr ""
+"ቀጣዩ እርምጃ ፒጂ እንደ ፈተናው በሚመስሉ ሩጫዎች መለማመድ እና በእጅ ከተሰራው ገዥ እንድትጀምር ብቻ ማሻሻል ትችላለች።"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "ለእነዚህ ሙከራዎች ኮድ በ GitHub ላይ ይመልከቱ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "የመመረቂያ ስልተ ቀመር"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "ኦሪጅናል ተሲስ አልጎሪዝም (2026)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "ሳይጠብቁ እውነተኛውን የ2023 የውድድር ዘመን ይመልከቱ"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "ትልቅ ለማየት ዛፉን ጠቅ ያድርጉ።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr ""
+"ዛፉ ምርጡን የቀን መቁጠሪያ የሚያሰባስብ ፕሮግራም ነው. እያንዳንዱ ቅርንጫፍ ጨዋታዎችን ይቀላቀላል; ቅጠሎቹ ጨዋታዎች "
+"(ቀን፣ የቤት ቡድን እና ከሜዳ ውጪ ቡድን) ናቸው።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "የሁሉም ቡድኖች ጠቅላላ ጉዞ -"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "ህጎችን የሚጥሱ ጨዋታዎች -"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr ""
+"አንደኛው ህግ እያንዳንዱ ቡድን ውድድሩ የሚፈልገውን የጨዋታ ብዛት መጫወት ነው። <strong>ደንቦችን የሚጥሱ 0 "
+"ጨዋታዎች</strong> ማለት መርሃግብሩ ትክክለኛ ነው ማለት ነው።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr "ከጥቂት ሰከንዶች እስከ ብዙ ደቂቃዎች ሊወስድ ይችላል. በኮምፒውተሮች ብዛት ላይ የተመሰረተ ነው."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "ሞተሩ እየሰራ ነው."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr "እሱ የቀን መቁጠሪያዎችን ይፈጥራል ፣ ያጣምራቸዋል እና ምርጦቹን ያስቀምጣል ። ይህንን ገጽ አይዝጉ።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "የተቀመጡ መለኪያዎች"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "\"%(nombre)s\" ውቅር"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr ""
+"<strong>አስፈላጊ</strong> የመመረቂያ ሞተር እነዚህን እሴቶች ይቆጥባል, ነገር ግን አይጠቀምባቸውም. ሁልጊዜም "
+"በ100፣ 20 ትውልዶች፣ 0.8 ተሻጋሪ እና 0.2 ሚውቴሽን ህዝብ ይሰራል።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "እሱን ለማስኬድ ትዕዛዞች"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"ይህንን ጥያቄ ይቅዱ እና በሚጠቀሙት ጠንቋይ ውስጥ ይለጥፉ። programa_genetico/programagenetico.py "
+"(ተሲስ ሞተር) ወይም programa_genetico/motor_bloques.py (የተሻሻለ ሞተር) ፋይልን ያያይዙ።"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "ምርጥ የቀን መቁጠሪያ ዛፍ"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "ከ %(a)s እስከ %(b)s."
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "የማሳያ ደረጃዎች"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "ማሳያ ማዋቀር"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "ደረጃ 2 ማዋቀር"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr "ሁሉም እሴቶች አስቀድመው ተመርጠዋል. እነሱን መለወጥ ወይም መስጠት ይችላሉ \\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "መሳሪያዎችን ይቀይሩ"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "ውድድሩ"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "አልጎሪዝም"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "ቀጣይ የቀን መቁጠሪያውን ይመልከቱ"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "ማሳያ ቡድኖቹን ይምረጡ"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr "Koza-TTP ማሳያ በአዲሱ ስልተ ቀመር በ3 ደረጃዎች የቤዝቦል ካላንደር ይገንቡ።"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "ደረጃ 1 መሳሪያውን ይምረጡ"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr ""
+"አልጎሪዝም ለመረጡት ቡድኖች መርሃ ግብር ያዘጋጃል እና አነስተኛ ጉዞ ያለውን ይፈልጋል። አስቀድመን 10 የሜጀር ሊግ "
+"ቡድኖችን ምልክት አድርገናል። ከፈለጉ ምንም ነገር ሳይቀይሩ \"ቀጣይ\" ን ጠቅ ያድርጉ."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "ቀጣይ አዘገጃጀት"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "ሙሉ የንጉሣዊ ወቅት ማየት ይመርጣሉ?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "የ2023 የውድድር ዘመን ይመልከቱ 30 ቡድኖች ከኦፊሴላዊው የቀን መቁጠሪያ ጋር"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "የራስዎን ቡድኖች እና ስታዲየሞች መመዝገብ ይፈልጋሉ?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "ባለ 5-ደረጃ መመሪያ ውስጥ እራስዎ ያድርጉት"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "ማሳያ የቀን መቁጠሪያ"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "ደረጃ 3 የቀን መቁጠሪያ"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "አዲስ ስልተ ቀመር ተራ ላይ የተመሰረተ ሞዴል"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>%(n)s ቡድኖች."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "አልጎሪዝም ያገኘው"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr "ከአልጎሪዝም መርሃ ግብር ጋር የሁሉም ቡድኖች አጠቃላይ ጉዞ።"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr "ከማመቻቸትዎ በፊት በዘፈቀደ በተሰራ የቀን መቁጠሪያ ይጓዙ።"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr "ከዘፈቀደ የቀን መቁጠሪያ ያነሰ ጉዞ።"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "ሁሉንም ህጎች ይከተሉ"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "የቀን መቁጠሪያው በዘፈቀደ %(a)sሰበረ።"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "ምን ደንቦችን ይገመግማሉ?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr "በተከታታይ ቢበዛ 12 የቤት ወይም የውጪ ጨዋታዎች። እዚህ ቤት ውስጥ %(n)s እና %(m)s ውጭ።"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "በተከታታይ ቢበዛ 20 ቀናት ከጨዋታ ጋር። እዚህ %(n)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr "በተከታታይ በሁለት ተከታታይ ከተመሳሳይ ተቃዋሚ ጋር አለመጫወት።"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr "የቤት ጨዋታዎች ግማሽ ያህሉ። እዚህ በቡድን ከ %(a)s እስከ %(b)s ።"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "ጉዞው እንዴት እንደወረደ"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr "አጠቃላይ ጉዞው በፍለጋ %(p)s ከ%(a)s ኪሎ ሜትር ወደ %(b)s ኪ.ሜ ዝቅ ብሏል።"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "የ %(t)s ጨዋታዎች የመጀመሪያ %(n)s"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "ቤት ውስጥ"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "ጉብኝት"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "ሁሉንም ጨዋታዎች ይመልከቱ"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "ሁሉም ጨዋታዎች"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "ቀጥሎ ምን አለ?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "ቅንብሮችን ይቀይሩ እና እንደገና ያሂዱ"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "ሌሎች መሳሪያዎችን መምረጥ"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr "ሙሉውን የ2023 የውድድር ዘመን ይመልከቱ 30 ቡድኖች ከኦፊሴላዊው የቀን መቁጠሪያ ጋር"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "በ 2 ደቂቃዎች ውስጥ እንዴት እንደሚሰራ ይረዱ"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr "እራስዎ ያድርጉት መሳሪያዎን በ 5-ደረጃ መመሪያ ውስጥ ያስመዝግቡ"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "የመመረቂያውን የመጀመሪያ ስልተ ቀመር ይመልከቱ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "ሀሳቡን በ 2 ደቂቃዎች ውስጥ ይረዱ"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr ""
+"የኮዛ-ቲቲፒ አኒሜሽን ታሪክ የቤዝቦል ጉዞዎች ካርታ፣ የጄኔቲክ ፕሮግራሚንግ ዛፎች እና የአብራሪው መንገድ ከተሲስ ወደ "
+"ተሻሻለ ሞተር።"
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "2 ደቂቃዎች · 7 እርምጃዎች"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "የታሪክ ደረጃዎች"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "ስታዲየሞች"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "ጉዞ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "ዛፍ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "ተሻጋሪ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "ሚውቴሽን"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "ትውልዶች"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "ውጤት"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "ክፍል 1 · ችግሩ"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "30 ቡድኖች እርስ በእርሳቸው መጫወት አለባቸው"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr "ሜጀር ሊግ ቤዝቦል 30 ቡድኖች አሉት። እያንዳንዱ ቡድን በአንድ የውድድር ዘመን 162 ጨዋታዎችን ያደርጋል።"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr "የቀን መቁጠሪያ ማን ከማን ጋር እንደሚጫወት፣ በምን ቀን እና በየትኛው ስታዲየም እንደሚጫወት ይናገራል።"
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "ስሙን ለማየት በካርታው ላይ ስታዲየም ይንኩ።"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "እያንዳንዱ ጉዞ ጊዜ እና ገንዘብ ያስከፍላል"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr ""
+"አንድ ቡድን በመንገድ ላይ ሲጫወት በአውሮፕላን ይጓዛሉ. መጥፎ መርሃ ግብር ብዙ ጊዜ አገሪቱን እንዲያቋርጡ ያደርጋቸዋል።"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr "የጉብኝት ጉዞ ምሳሌ፣ ቀኖቹ በዘፈቀደ ቅደም ተከተል።"
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr "የዚያን ቡድን ጉብኝት ለመመልከት ሌላ ስታዲየም ይንኩ።"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "ክፍል 2 · የመመረቂያው ሀሳብ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "አንድ የቀን መቁጠሪያ እንደ ዛፍ ሊጻፍ ይችላል"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr ""
+"የጄኔቲክ ፕሮግራሚንግ የቀን መቁጠሪያውን በእጅ አይጽፍም. እሱን ለማሻሻል <strong>መመሪያዎችን ይጽፋል</strong>"
+" ."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"እነዚህ መመሪያዎች ዛፍ ይመሰርታሉ. <strong>ቅጠሎች</strong> እንደ \"SEA–NYA\" ያሉ ተከታታይ ጨዋታዎች "
+"ናቸው። <strong>ቅርንጫፎች</strong> እንደ ሁለት ተከታታይ የቀን ተከታታዮች ወይም \"አካባቢን መገልበጥ\" "
+"(በቤት ውስጥ ማን እንደሚጫወት መቀየር) ያሉ ድርጊቶች ናቸው።"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "መሻገሪያ ሁለት ዛፎች ይደባለቃሉ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr "በደንብ የሚሰሩ ሁለት ዛፎች ይወሰዳሉ. እያንዳንዳቸው ቅርንጫፍ ይሰጣሉ."
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "አዲሱ ዛፍ፣ የ \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "ሚውቴሽን ትንሽ፣ የዘፈቀደ ለውጥ"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr "አንዳንድ ጊዜ አንድ የዛፉ ቁራጭ በራሱ ይለወጣል. እዚህ, ተከታታይ \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr "ሚውቴሽን ማንም ወላጅ ያልነበራቸውን አዳዲስ ሀሳቦችን ለመፈተሽ ያገለግላል።"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "ክፍል 3 · ውጤቱ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "ከትውልድ በኋላ ትውልድ"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr ""
+"እያንዳንዱ ትውልድ ብዙ ዛፎች አሉት. አነስተኛ ጉዞ ያላቸው የቀን መቁጠሪያዎችን የሚያመርቱ ብዙ ልጆች አሏቸው።"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr ""
+"ነጠብጣብ ያለው መስመር ዝቅተኛው ግብ ነው በተመሳሳይ ጥረት <strong>በዘፈቀደ የሚመረጠው</strong> ምርጥ የቀን "
+"መቁጠሪያ።"
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "እንዴት እንደነበረ ለማየት ሞተር ይምረጡ።"
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "ከአብራሪው እስከ የሚሰራ ሞተር"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"የተሻሻለው ሞተር፣ በብሎኮች፣ በዘፈቀደ ያሸንፋል %(resultado)s፣ በቅድመ ሙከራዎች (%(corridas)s ሩጫዎች "
+"%(equipos)s ቡድኖች)።"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr ""
+"የመመረቂያው አብራሪ (2026) የቀን መቁጠሪያዎችን በዘፈቀደ ከመምረጥ <strong>የተሻለ አልነበረም</strong> "
+"%(resultado)s."
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "መሳሪያውን በ 5 ደረጃዎች ይሞክሩት"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "ሁሉንም 30 ስታዲየሞች እንደ ጠረጴዛ ይመልከቱ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "ከ teams.csv ፕሮጀክት ፋይል የተገኘ ውሂብ።"
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "ኮድ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "ቡድን"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "ስታዲየም"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "አካባቢ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "መልስ ይስጡ"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "1 ሥዕል 2"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr ""
+"Koza-TTP ለቤዝቦል የቀን መቁጠሪያዎች የጄኔቲክ ፕሮግራሚንግ። በሌስሊ ዲኪንሰን (ITAM) እንደ ተሲስ ተጀምሯል እና"
+" ዛሬ እድልን የሚያሸንፍ ሞተር አለው።"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "ከጄኔቲክ ፕሮግራሚንግ ጋር የተሻለ የMLB መርሃ ግብር።"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"ኮዛ-ቲቲፒ የተወለደው በ ITAM ውስጥ እንደ ተሲስ ነው። ያ የመጀመሪያው አብራሪ በዘፈቀደ አላለፈም። የማገጃው ስሪት "
+"ያደርጋል %(resultado)s, በቅድመ ሙከራዎች. እዚህ እንዴት እንደሚሰራ አሳያችኋለሁ."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr "የታነመ ታሪክ የጉዞዎች ካርታ, የጄኔቲክ ፕሮግራሚንግ ዛፎች እና ውጤቱ."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "2023 ወቅት ሞተሩ ከእውነተኛው የቀን መቁጠሪያ ጋር"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr ""
+"እ.ኤ.አ. በ30 ከሁሉም 2023 የሜጀር ሊግ ቤዝቦል ቡድኖች ጋር የጄኔቲክ ፕሮግራሚንግ ሞተር መድገም ከኦፊሴላዊው መርሃ"
+" ግብር እና ከአጋጣሚ ጋር ሲነጻጸር።"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "ወቅት 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "ማሳያ ከእውነተኛ ውሂብ ጋር · ሜጀር ሊግ ቤዝቦል 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr ""
+"30 የሜጀር ሊግ ቤዝቦል ቡድኖችን እና ትክክለኛ ስታዲየሞቻቸውን እንጠቀማለን። ኦፊሴላዊው የ2023 መርሃ ግብር ማጣቀሻ "
+"ነው። በብሎክ ላይ የተመሰረተው ሞተር አነስተኛ ጉዞ ያለበትን ወቅት ለማቀናጀት ይሞክራል።"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "ኪሎሜትሮች እንዴት እንደሚወርዱ ፣ በትውልድ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr ""
+"ይህ እውነተኛ የሞተር ሩጫ ነው፣ ሳይጠብቁ እንዲመለከቱት ተቀምጧል። እያንዳንዳቸው 100 የቀን መቁጠሪያዎች "
+"%(generaciones)s ትውልዶች አሉት።"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "ይጫወቱ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "ትውልድ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "በጎን ተንሸራታች ሰሌዳ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "በመደበኛው የውድድር ዘመን የ30 ቡድኖች ጉዞ።"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "ረጅሙ ጉብኝት (በተከታታይ ከሜዳ ውጪ ጨዋታዎች)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "በተከታታይ ተጨማሪ የቤት ጨዋታዎች"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "ሜጀር ሊግ ቤዝቦል ኦፊሴላዊ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "ሚሊዮን ኪ.ሜ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "በዘፈቀደ የተሻለ፣ በተመሳሳይ ጥረት"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "የእያንዳንዱን ቡድን ጨዋታዎች ብዛት አያሟላም።"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr "ሞተሩ ከዘፈቀደ ምርጥ መርሃ ግብር <strong>%(pct)s%% ያነሰ ይጓዛል።</strong> ሞተሩ ይማራል።"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr ""
+"ኦፊሴላዊው የቀን መቁጠሪያ ከኤንጂኑ <strong>%(pct)s%% ያነሰ ይጓዛል</strong> ። እስካሁን አላሸነፍነውም።"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"ማሳሰቢያ የሞተር ካላንደር <strong> በተከታታይ እስከ%(gira)s የሚደርሱ የሜዳ ውጪ ጨዋታዎች</strong> "
+"ጉብኝቶች አሉት። ኦፊሴላዊው ከፍተኛ %(oficial)sአለው። እውነተኛ ቡድን እንደዚህ አይነት ረጅም ጉብኝቶችን "
+"አይቀበልም."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "የእያንዳንዱ ቡድን ጉዞ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr "የትኞቹ ቡድኖች በብዛት እንደሚጓዙ ለማየት በሁለቱ መርሃ ግብሮች መካከል ይቀያይሩ።"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "የካርታ ቀን መቁጠሪያ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "ባለሥልጣዊ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "ሞተሩ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "ሁሉንም 30 ቡድኖች እንደ ሠንጠረዥ ይመልከቱ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "ኦፊሴላዊ (ኪሜ)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "ሞተር (ኪ.ሜ.)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "ውሂቡ ከየት ነው የመጣው"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr ""
+"ይፋዊ መርሃ ግብር ሜጀር ሊግ ቤዝቦል 2023 መደበኛ ወቅት (MLB ስታቲስቲክስ ኤፒአይ)። የተሰሉትን ቁጥሮች እዚህ ብቻ"
+" ነው የምናስቀምጠው እንጂ መርሃ ግብሩን አይደለም።"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr ""
+"ርቀቶች በስታዲየሞች መካከል ቀጥተኛ መስመር (ከፊልቨርስ ቀመር)። እያንዳንዱ ቡድን ቤቱን ለቆ ከስታዲየም ወደ ስታዲየም "
+"ይጓዛል እና መጨረሻ ላይ ይመለሳል።"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr ""
+"የማገጃ ሞተር 100 የቀን መቁጠሪያዎች በአንድ ትውልድ፣ %(evaluaciones)s የቀን መቁጠሪያዎች በአጠቃላይ "
+"ተገምግመዋል። ዕድል ተመሳሳይ መጠን ገምግሟል።"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "የራስዎን ውድድር ያድርጉ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "ሞተሩ እንዴት እንደሚሰራ"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "ብሎኮች፣ ከህጎች ጋር"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "መዞሪያዎች + የዘፈቀደ እንቅስቃሴዎች"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "መዞሪያዎች + PG (ማሻሻያዎች ብቻ)"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "ፈረቃዎች + PG የመማሪያ ሙቀት"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "ፈረቃዎች + የእጅ ማደንዘዣ"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "አሮጌ ሁሉም ሰው በእያንዳንዱ ዙር 3 ቀን ይጫወታል"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "አሁን 2፣ 3 እና 4 ተከታታይ ጨዋታዎች፣ ከእረፍቶች ጋር"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "ማዞር"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "ሳምንቱ ቀናት"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "ቅዳሜና እሁድ"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "ማዞሪያ ሀ"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "ማዞሪያ B"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "1. ቡድን እና ሁለት ፈረቃዎችን እንመርጣለን"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "2. ሰንሰለቱን እንከተላለን A, B, A, B..."
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "3. ሰንሰለት ተከታታይ መቀየሪያ ፈረቃዎች"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "የቀን መቁጠሪያ ወጪ"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "የሚበጀንን"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "የመጀመሪያ ሸለቆ"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "ጥልቅ ሸለቆ"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "የበሬ ፍልሚያ እድገት"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "መግቢያ ገፅ"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "መጨረሻ"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "በእጅ"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "ፒጂ ፣ 5%"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "ፒጂ ፣ 50%"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "የእኔ የሙከራ ውድድር"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr "አማራጭ። በዚያ ላይ ከተዉት, ይህ ስም ጥቅም ላይ ይውላል."
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "የውድድር ቡድኖች"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr "አስቀድመን 10 አስቆጥረናል። እነሱን መቀየር ይችላሉ ከ 3 እስከ 10 ቡድኖች."
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "የ 30 ዋና ሊጎች ስታዲየሞች ካርታ"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr "{ቡድን} ምሳሌ ጉብኝት 12 ጉብኝቶች በዘፈቀደ ቅደም ተከተል።"
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr "{ቡድን}ን መርጠሃል። ጉዞዎቻቸውን ለማየት ደረጃ 2ን ይከተሉ።"
+
+#: tesis/historia.py
+msgid "km"
+msgstr "ኪ.ሜ."
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "አጣምር"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "መለዋወጥ"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "አካባቢን ኢንቨስት ያድርጉ"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "መግቢያ ገፅ"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "ጉብኝት"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "ወላጅ ሀ"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "ወላጅ ለ"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "ወንድ ልጅ"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr ""
+"ምሳሌ ዛፍ ያጣምሩ፣ ከሁለት ቅርንጫፎች ጋር SEA-NYAን ከ BOS-TEX ጋር ይለዋወጡ እና የ LAN-CHN አካባቢን "
+"በቤት ውስጥ ኢንቨስት ያድርጉ።"
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr "ተሻጋሪ አባት ሀ የግራ ቅርንጫፉን ይሰጣል እና አባት ቢ የግራ ቅርንጫፉን ይሰጣል; ልጁ ሁለቱን ያጣምራል."
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "ሚውቴሽን በዛፉ ላይ, የ SEA-NYA ቅጠል ወደ SEA-OAK ይቀየራል."
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "እንደገና ይመልከቱ"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "ጉዞ (በዘፈቀደ = 100)"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "ዕድል"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "የህዝብ ብዛት (48 ዛፎች)"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "ተጨማሪ ቀለም = ያነሰ ጉዞ"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "ተሲስ ሞተር"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{ሞተር} · {g} የ{ጠቅላላ} ትውልድ"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{ሞተር} · አልቋል {ውጤት}."
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr "{ሞተር} በ{ጅምር} ይጀምራል እና በ {መጨረሻ} ያበቃል (ዕድል = 100)። ውጤት {ውጤት}."
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr "ርቀት ከአጋጣሚ ጋር ተሲስ ሞተር {ተሲስ}፣ በዘፈቀደ 100 ይምረጡ፣ ሞተር {ብሎኮች} አግድ።"
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "ተሲስ ሞተር (2026)"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "የቀን መቁጠሪያዎችን በዘፈቀደ መምረጥ"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "የማገጃ ሞተር (ቅድመ)"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr "እንዲሁም በቁልፍ ሰሌዳዎ ላይ የቀስት ቁልፎችን መጠቀም ይችላሉ።"
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr "ከኦፊሴላዊው የቀን መቁጠሪያ እና እድል ጋር ሲነፃፀር የወቅቱ ኪሎሜትሮች በሞተር ትውልድ"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "ኦፊሴላዊ የቀን መቁጠሪያ"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "በዘፈቀደ የተሻለ"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}: {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr "አሁንም የእያንዳንዱን ቡድን ጨዋታዎች ብዛት አላሟላም።"
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr "አቀባዊ ዘንግ ከ {ደቂቃ} እስከ {ከፍተኛ} ሚሊዮን ኪሜ. አግድም ዘንግ ትውልዶች 0 እስከ {የመጨረሻው}."
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr "ካርታ እያንዳንዱ ክበብ ቡድን ነው; ትልቅ ማለት በወቅቱ ተጨማሪ ማይሎች ማለት ነው"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{ቡድን} {ኪሜ} ኪሜ"

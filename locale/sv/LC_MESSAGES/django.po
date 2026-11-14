@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "Optimeringsresultat"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "Klicka på trädet för att expandera"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "Total resekostnad:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "Regelbrott:"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "Köroptimering"
 
@@ -132,10 +120,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "Från den senaste till den äldsta."
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "Planerat"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "Kontextuella operatorer för motorn"
 
@@ -164,10 +148,6 @@ msgstr ""
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "3 november 2026"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "Pågående"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -614,10 +594,6 @@ msgstr ""
 "mycket varje lag reser."
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "Demo · Rättvisa resor mellan lag"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "Generera en kalender och"
 
@@ -631,6 +607,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"AI (genetisk programmering) letar efter kalendrar där resan är kort och "
+"jämn. Vill du ha egna team? Använd <a href=\"%(guia)s\">5-stegsguiden</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -666,10 +644,6 @@ msgstr "Det tar några sekunder."
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "Schema: %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "Konfiguration %(id)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -746,14 +720,6 @@ msgstr "Kör det på din dator"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "Be din AI-assistent om hjälp"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr ""
-"Kopiera den här frågan och klistra in den i guiden du använder, tillsammans "
-"med filen programa_genetico/programagenetico.py."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -976,30 +942,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "Genetisk programmering för basebollkalendrar"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr ""
-"Koza-TTP: Leslie Dickinsons (ITAM) avhandling om genetisk programmering för "
-"basebollkalendrar, med dess ärliga resultat och förbättrade motor."
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "ITAM-avhandling · Genetisk programmering · Baseboll"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "Min avhandling talade sanning:"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr ""
-"Koza-TTP tar upp den tesen för att skapa basebollsäsongskalendrar med "
-"genetisk programmering. Här kommer du att se vad som gick fel, varför och "
-"hur jag rättar det offentligt."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -1016,14 +960,6 @@ msgstr "2 minuter"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "Att förstå idén"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr ""
-"Vad är genetisk programmering och varför en basebollkalender är ett svårt "
-"problem."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1102,37 +1038,39 @@ msgstr "Automatiskt, inklusive Maya och Otomí. Du kan fixa dem."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "Mot slumpmässig sökning"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "Är det bättre än att välja slumpmässigt?"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "Under testning"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, i %(corridas)s löpningar med %(equipos)s lag"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "Ja, i preliminära tester"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
 msgstr ""
+"Demon använder fortfarande avhandlingsversionen. Den förbättrade motorn "
+"jämfördes med en slumpmässig sökning som granskar samma antal kalendrar."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "8 november 2026"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "Blockmotor"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1141,12 +1079,17 @@ msgid ""
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
 msgstr ""
+"Varje del av schemat (division, liga och interliga) består av block där alla"
+" spelar mot alla. Därför följs alltid MLB:s regler. Genetisk programmering "
+"väljer och ordnar blocken för att minska resan."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"Preliminärt resultat: %(resultado)s, i %(corridas)s lopp med %(equipos)s "
+"lag."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1155,182 +1098,1859 @@ msgid ""
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
 msgstr ""
+"Kodgranskning för att bekräfta varför PG inte var bättre än att välja "
+"kalendrar slumpmässigt. Crossover och mutation bryter kalendrarnas "
+"livskraft, och fitnessvikten gör att barn förlorar mot föräldrar från den "
+"första generationen."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "Rensa läge"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "Motor: %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
 msgstr ""
+"<strong>Obs:</strong> denna demo använder examensmotorn. Den motorn var inte"
+" bättre än att slumpmässigt välja kalendrar."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
 msgstr ""
+"Den förbättrade motorn var bättre i preliminära tester: %(resultado)s, i "
+"%(corridas)s körningar. Den finns ännu inte med i denna demo."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
 msgstr ""
+"För ett skolprojekt är det en fördel: du har en baslinje och en förbättring "
+"som du kan mäta."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "Se resultaten från varje utgåva"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr ""
+msgstr "I tester: %(resultado)s, i %(corridas)s löper med %(equipos)s lag."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "Avhandlingsversion (2026)"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "19,5 % längre avstånd än att välja slumpmässiga kalendrar"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "Blockmotor (uppgraderad version)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "13 % mindre resande än att välja slumpmässiga kalendrar"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "Förkortning (t.ex. SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "Lagets namn"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "Stad"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "Stadion Latitude"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "Stadionlängd"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "I decimalgrader. Exempel: 47,59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "I decimalgrader. Exempel: -122,33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "Ligalag"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "Ligans namn"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "Välj minst två lag."
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "Turneringens namn"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "Första dagen"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "Sista dagen"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "Spel per serie"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "Lagserier"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "Den sista dagen måste vara densamma som eller efter den första."
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "Det måste vara 1 eller fler."
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "Konfigurationsnamn"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "Befolkningsstorlek"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "Antal generationer"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "Sannolikhet för korsning (0 till 1)"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "Chans för mutation (0 till 1)"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "Det borde ligga mellan 0 och 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "Utrustning"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "Ligan"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "Turnering"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "Miljöer"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "Kalender"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "Slutför detta steg först."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "Tillagd utrustning."
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "Spel genererade."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "14 november 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
+msgstr "Turordningsbaserad algoritm: slår det officiella MLB 2023-schemat"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
 msgstr ""
+"Vi tog bort regeln att alla 30 lag spelar 3-dagarsserier samtidigt. Med "
+"serier av 2, 3 och 4 matcher och breaks reser den bästa algoritmen 1,57 "
+"miljoner km. Den officiella kalendern reser 1,74 miljoner. Båda uppfyller "
+"samma realismregler."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr "Visa aktuell forskning, med animerade diagram"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "12 november 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "Demon visar den verkliga säsongen 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr ""
+"Du kan se det faktiska spelschemat för Major League Baseball 2023 utan att "
+"vänta på att motorn ska köra."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "Se säsongen 2023"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "9 november 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "Steg-för-steg-berättelse"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr ""
+"En förklaring med kartan över de 30 stadierna, träden och evolutionen, steg "
+"för steg."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "Läs artikeln"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "Andra granskningen av upplevelsen"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr ""
+"Granskningen av tillgänglighet, användbarhet och interaktion mellan människa"
+" och AI upprepades. Av de 28 punkterna i den första var 13 lösta. De flesta "
+"av de nya punkterna har redan rättats."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr "Han fick motorn i serie och sedan med motorblocken."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "5 november 2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "Öppna 5-stegsguiden"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr ""
+"Genetisk programmering för att skapa basebollkalendrar. Leslie Dickinsons "
+"(ITAM) tes, med ärliga resultat."
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr ""
+"Koza-TTP: karta över basebollarenor med ett lags rutt och ett genetiskt "
+"programmeringsträd."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "Gå till huvudsidan"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "Meny"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "Hur det fungerar"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "Leslie Dickinson"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "Huvudplats"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "Kontakt"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "Min avhandling talade sanning"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"Pilotavhandlingen var inte bättre än att slumpmässigt välja kalendrar: "
+"%(resultado)s. Att rapportera det så här, utan att dölja det, var rätt "
+"beslut. Det resultatet visade vad som behövde rättas till för att förbättra "
+"motorn."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "Aktuell forskning"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr ""
+"Allt vi försökte för att slå det officiella MLB 2023-schemat, med animerade "
+"diagram."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "Aktuell forskning: att slå den officiella kalendern"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr ""
+"Mål: Ett schema för Major League Baseball-säsongen 2023 som färdas kortare "
+"än det officiella och följer samma regler. Det officiella är 1,74 miljoner "
+"km."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr ""
+"Uppdaterad 14 november 2026 (eftermiddag). Dessa algoritmer testas: "
+"webbplatsen och demon använder dem ännu inte."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "1. Resultat av alla tester"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"Varje stång är den totala resan för de 30 lagen under en säsong, i "
+"miljontals kilometer. Mindre är bättre. Alla siffror mättes likadant: varje "
+"lag lämnar sin hemmaplan, går från arena till arena och återvänder i slutet."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "Total resa per algoritmversion"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "Koza-TTP-algoritmer"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "Officiell kalender 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr ""
+"De två turordningsbaserade glödgningsalgoritmerna slår officeren med cirka 9"
+" %%. Tabellen nedan har samma data."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "Alla tester, från äldsta till senaste"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "Total resa"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "Följer den reglerna?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "Vad vi lärde oss"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "Blockalgoritm, inga realismregler"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "1,85 miljoner km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "Nej: turnéer på upp till 36 matcher i rad"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr "Han verkade nära polisen, men han fuskade."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "Blockalgoritm, med regler"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "2,19 miljoner km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "Misslyckas med att träffa dem"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr "Fasta block gör att du inte kan organisera turerna väl."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "Blandade block, med linjaler"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "2,00 miljoner km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "Ja"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr "Bättre, men alla 30 lag spelar fortfarande samtidigt."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr "Skiften med mängder av 2, 3 och 4 mängder + simulerad glödgning"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "1,52 till 1,60 miljoner km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "3 av 4 omgångar (en varade en extra dag)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr "Att ta bort regeln om \"alla på en gång\" är det som vinner polisen."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr "Skift + vecka som MLB + PG som bara accepterar uppgraderingar"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "1,70 miljoner km (i genomsnitt)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "Ja, 4 av 4"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr ""
+"Han slår polisen med knapp marginal, men är nära att jämna ut med "
+"slumpmässiga drag."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "Slumpmässiga rörelser, samma ansträngning som PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "Rimlig baslinje för att mäta PG."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "Skift + vecka + handgjord glödgning"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "1,567 miljoner km (genomsnitt av 8 kalendrar)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "Att acceptera sämre förändringar i början hjälper mycket."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "Skift + vecka + PG inlärningstemperatur"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "1,571 miljoner km (genomsnitt av 8 kalendrar)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr ""
+"PG designar sin egen linjal och är nästan lika bra som den handgjorda (0,3 "
+"%% mer)."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "Samma PG, med mer variation och mer övning"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "1,583 miljoner km (genomsnitt av 8 kalendrar)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "Ja, 8 av 8"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr "Att öva med korta pass lär inte ut den bästa regeln för långpass."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "Officiellt MLB 2023-schema"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "1,74 miljoner km"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr ""
+"Målet. Det följer också regler som vi inte förebygger, som stadionspelningar"
+" och tv."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"Realismregler: maximalt 12 raka matcher hemma eller borta, ingen "
+"återkommande motståndare i raka serier, maximalt 20 på varandra följande "
+"speldagar och en säsong på 186 dagar. Från den officiella kalendern behåller"
+" vi endast de beräknade siffrorna enligt MLB:s användarvillkor."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "2. Den stora förändringen: omgångar med set av 2, 3 och 4 partier"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"Tidigare spelade alla 30 lag 3-dagarsserier samtidigt, utan pauser. Nu är "
+"säsongen uppdelad i vardagspass (4 dagar) och helgpass (3 dagar), precis som"
+" MLB gör. Varje lag spelar en serie om 2, 3 eller 4 matcher, eller vilor."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "Tidigare modell vs. turordningsbaserad modell"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "Paus"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "Serie (numret anger hur många matcher)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "Bryt"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"Sex lag i åtta skift. I den tidigare modellen spelar alla 3 dagar i varje "
+"skift. I skiftmodellen varar serierna 2, 3 eller 4 dagar och det finns "
+"pauser, så turerna kan sättas ihop med större frihet."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "3. Huvudrörelsen: Kempekedjan"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr ""
+"För att ändra schemat utan att ett lag spelar två serier samtidigt tas två "
+"turer och en kedja av serier som alternerar mellan dem. Alla serier i kedjan"
+" byts samtidigt. Schemat gäller fortfarande."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "Kempekedja mellan sväng A och B."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "Serie i skift A (hel linje)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "Serie på Turn B (streckad linje)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr ""
+"Åtta lag. Nätverket startar i NYA och går genom BOS, TOR och BAL. Dess fyra "
+"säsongsskift byter. De andra serierna flyttar inte."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "4. Varför slog glödgning PG?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr ""
+"Den första PG använde samma rörelser som glödgningen, men den var 1,70 "
+"miljoner km och glödgde vid 1,58. Det finns tre skäl."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>Han accepterade bara förbättringar.</strong> Således fastnar han i "
+"den första \"dalen\" han hittar. Glödgningen går med på att bli lite värre "
+"till en början, vilket gör att han kan korsa \"kullen\" och nå en djupare "
+"dal."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr ""
+"<strong>Han lade ner ansträngning.</strong> I varje generation provar han 16"
+" recept och håller bara kalendern över de bästa. Glödgningen bevarar varje "
+"steg han tar."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr ""
+"<strong>Han upprepade samma platser.</strong> De fasta siffrorna i trädet "
+"pekar alltid på samma turer och lag. Slumpmässiga drag löper genom hela "
+"kalendern."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "Endast förbättringar jämfört med att acceptera sämre förändringar"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "Accepterar endast uppgraderingar (cirkel)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "Annealing: accepterar värre förändringar (romb)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr ""
+"Linjen är kalenderns kostnad: lägre är bättre. Cirkeln går ner till den "
+"första dalen och stannar där. Romben går uppför kullen, eftersom den går med"
+" på att bli lite sämre, och når den djupaste dalen."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr "5. PG:n som lär sig när den ska acceptera värre förändringar"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr ""
+"För att rätta till anledning 1 utformar PG nu glödgningsregeln. Ett träd "
+"avgör hur många kilometer försämring som accepteras i varje steg. Titta på "
+"två data: hur långt gången sträckan är och hur många förändringar som "
+"nyligen accepterats."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr ""
+"PG:n övade med korta löpningar på två kalendrar. Sedan testade vi "
+"vinnarträdet på fyra kalendrar som hon aldrig såg. Det här är vinnarträdet:"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr ""
+"Kort sagt: toleransen är liten, cirka 60 till 1 200 km, och den ökar när "
+"förändringar nästan inte accepteras. Den handgjorda linjalen gör motsatsen: "
+"den börjar vid 20 000 km och går gradvis ner till 50."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "Tolerans i km under hela loppet (logaritmisk skala)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "Handgjord linjal"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "PG, om få förändringar accepteras (5 %%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "PG, om många förändringar accepteras (50 %%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr ""
+"Den handgjorda regeln sänks från 20 000 till 50 km. PG-regeln ligger mellan "
+"60 och 1 200 km och beror på hur många förändringar som accepteras. Båda når"
+" kalendrar på cirka 1,57 miljoner km."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "6. Vad händer härnäst"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr ""
+"PG var nästan lika lång som glödgningen, men slår den fortfarande inte. I "
+"åtta nya kalendrar färdas den handgjorda linjalen 1,567 miljoner km och PG "
+"1,571."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"Vi försökte ge det mer variation (utan upprepade recept) och mer övning (3 "
+"kalendrar, 32 recept, 16 generationer). Det var värre: 1,583 miljoner km. PG"
+" övar med korta löpningar på 40 000 steg, men testet använder 400 000. En "
+"bra regel för att springa lite är inte den bästa för att springa mycket."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr ""
+"Nästa steg är att PG ska öva på löpningar som är mer som testet och börja "
+"med den handgjorda linjalen, så att hon bara kan förbättra den."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "Se koden för dessa tester på GitHub"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "Avhandlingsalgoritm"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "Ursprunglig avhandlingsalgoritm (2026)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "Se den riktiga säsongen 2023, utan att vänta"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "Klicka på trädet för att se det större."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr ""
+"Trädet är programmet som sätter ihop den bästa kalendern. Varje gren "
+"ansluter till matcher; bladen är matcherna (datum, hemmalag och bortalag)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "Total resande för alla lag:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "Spel som bryter mot regler:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr ""
+"En regel är att varje lag spelar det antal matcher som turneringen kräver. "
+"<strong>0 matcher som bryter mot reglerna</strong> betyder att schemat är "
+"giltigt."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr ""
+"Det kan ta några sekunder till flera minuter. Det beror på antalet datorer."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "Motorn fungerar."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr ""
+"Han skapar kalendrar, kombinerar dem och sparar de bästa. Stäng inte den här"
+" sidan."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "Sparade parametrar"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "\"%(nombre)s\"-konfiguration"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr ""
+"<strong>Viktigt:</strong> tesmotorn sparar dessa värden, men använder dem "
+"inte. Den körs alltid med en population på 100, 20 generationer, 0,8 "
+"crossover och 0,2 mutation."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "Kommandon för att köra den"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"Kopiera den här frågan och klistra in den i guiden du använder. Bifoga filen"
+" programa_genetico/programagenetico.py (avhandlingsmotor) eller "
+"programa_genetico/motor_bloques.py (förbättrad motor)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "Bästa kalenderträd"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "Från %(a)s till %(b)s."
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "Demosteg"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "Demo: Setup"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "Steg 2: Uppsättning"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr "Alla värden är redan valda. Du kan ändra dem eller ge \\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "Byt utrustning"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "Turneringen"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "Algoritmen"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "Nästa: Se kalendern"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "Demo: Välj lagen"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr ""
+"Koza-TTP Demo: Bygg en basebollkalender med den senaste algoritmen i tre "
+"steg."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "Steg 1: Välj utrustningen"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr ""
+"Algoritmen sätter ihop ett schema för de lag du väljer och letar efter det "
+"lag med minst resande. Vi har redan markerat 10 Major League-lag. Om du "
+"vill, klicka på \"Nästa\" utan att ändra något."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "Nästa: Uppsättning"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "Föredrar du att se en hel kunglig säsong?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "Titta på säsongen 2023: 30 lag mot den officiella kalendern"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "Vill du registrera dina egna lag och arenor?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "Gör det själv i 5-stegsguiden"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "Demo: kalendern"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "Steg 3: Kalendern"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "Nyare algoritm: Turordningsbaserad modell"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>: %(n)s lag."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "Vad algoritmen uppnådde"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr "Total resande av alla lag enligt algoritmens schema."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr "Res med en slumpmässigt skapad kalender innan du optimerar."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr "Mindre resande än den slumpmässiga kalendern."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "Följ alla regler"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "Kalendern gick slumpmässigt sönder %(a)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "Vilka regler granskar du?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr ""
+"Maximalt 12 hemma- eller bortamatcher i rad. Här: %(n)s hemma och %(m)s "
+"borta."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "Maximalt 20 dagar i rad med lek. Här: %(n)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr "Att inte spela mot samma motståndare i två serier i rad."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr "Hemmamatcher ungefär hälften. Här: %(a)s till %(b)s per lag."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "Hur resan gick till"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr ""
+"Den totala resan minskade från %(a)s km till %(b)s km i %(p)s söksteg."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "Den första %(n)s av %(t)s spel"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "Hemma"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "Besök"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "Se alla matcher"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "Alla matcher"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "Vad händer härnäst?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "Byt inställningar och kör igen"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "Val av annan utrustning"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr "Se hela säsongen 2023: 30 lag mot den officiella kalendern"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "Förstå hur det fungerar på 2 minuter"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr "Gör det själv: registrera din utrustning i 5-stegsguiden"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "Se den ursprungliga algoritmen för avhandlingen"
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "Förstå idén på 2 minuter"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr ""
+"Koza-TTP animerad berättelse: kartan över basebollresor, träden i genetisk "
+"programmering och pilotens väg från avhandling till förbättrad motor."
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "2 minuter · 7 steg"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "Historiens steg"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "Arenor"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "Resor"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "Träd"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "Korsning"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "Mutation"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "Generationer"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "Resultat"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "Del 1 · Problemet"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "30 lag måste möta varandra"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr ""
+"Major League Baseball har 30 lag. Varje lag spelar 162 matcher under en "
+"säsong."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr ""
+"En kalender visar vem som spelar mot vem, vilket datum och i vilken arena."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "Tryck på en arena på kartan för att se dess namn."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "Varje resa kostar tid och pengar"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr ""
+"När ett lag spelar på bortaplan reser de med flyg. Ett dåligt schema gör att"
+" de korsar landet många gånger."
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr "Ett exempel på en tur, med datumen i slumpmässig ordning."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr "Titta på en annan arena för att se det lagets turné."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "Del 2 · Idén med tesen"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "En kalender kan skrivas som ett träd"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr ""
+"Genetisk programmering skriver inte kalendern för hand. Den <strong>skriver "
+"instruktioner</strong> för att förbättra den."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"Dessa instruktioner bildar ett träd. <strong>Blad</strong> är serier av "
+"spel, såsom \"SEA–NYA.\" <strong>Grenar</strong> är handlingar, som att "
+"\"byta\" två datumserier eller \"invertera lokalitet\" (byta vem som spelar "
+"hemma)."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "Korsning: Två träd blandas"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr "Två träd som fungerar bra tas upp. Varje träd ger en gren."
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "Det nya trädet, \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "Mutation: En liten, slumpmässig förändring"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr "Ibland ändras en del av trädet av sig själv. Här är serien \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr "Mutation tjänar till att testa nya idéer som ingen förälder hade."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "Del 3 · Resultatet"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "Generation efter generation"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr ""
+"Varje generation har många träd. De som producerar kalendrar med mindre "
+"resande får fler barn."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr ""
+"Den streckade linjen är minimimålet: den bästa kalendern som <strong>väljs "
+"slumpmässigt</strong> med samma ansträngning."
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "Välj en motor för att se hur det gick."
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "Från piloten till en fungerande motor"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"Den förbättrade motorn, med flera delar, slår den slumpmässigt: "
+"%(resultado)si preliminära tester (%(corridas)s körningar, %(equipos)s lag)."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr ""
+"Pilotavhandlingen (2026) <strong>var inte bättre</strong> än att välja "
+"kalendrar slumpmässigt: %(resultado)s."
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "Testa verktyget i 5 steg"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "Visa alla 30 arenor som en tabell"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "Data från teams.csv projektfilen."
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "Kod"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "Lag"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "Stadion"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "Läge"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "Tidigare"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "Nästa"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr ""
+"Koza-TTP: genetisk programmering för basebollkalendrar. Det började som en "
+"avhandling av Leslie Dickinson (ITAM) och har idag en motor som övervinner "
+"slumpen."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "Ett bättre MLB-schema med genetisk programmering."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"Koza-TTP föddes som min avhandling vid ITAM. Den första piloten gick inte "
+"igenom slumpmässigt. Blockversionen gör: %(resultado)s, i preliminära "
+"tester. Här visar jag hur det fungerar."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr ""
+"En animerad berättelse: kartan över resorna, träden av genetisk "
+"programmering och resultatet."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "Säsongen 2023: motorn mot den verkliga kalendern"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr ""
+"En upprepning av en genomgång av den genetiska programmeringsmotorn med alla"
+" 30 Major League Baseball-lag 2023, jämfört med det officiella schemat och "
+"med slumpen."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "Säsong 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "Demo med verklig data · Major League Baseball 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr ""
+"Vi använder de 30 Major League Baseball-lagen och deras faktiska arenor. Det"
+" officiella schemat för 2023 är referensen. Den blockbaserade motorn "
+"försöker sätta ihop en säsong med mindre resande."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "Hur kilometerna minskar, generation för generation"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr ""
+"Det här är en riktig körning av motorn, sparad för att du ska kunna titta "
+"utan att vänta. Den har %(generaciones)s generationer med 100 kalendrar "
+"vardera."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "Spel"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "Produktion"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "Sidledande glidbräda"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "Resor med de 30 lagen under grundserien."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "Längsta turnén (bortamatcher i rad)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "Fler hemmamatcher i rad"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "Major League Baseball-tjänsteman"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "miljoner km"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "Bättre slumpmässigt, med samma ansträngning"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "Den uppfyller inte antalet matcher för varje lag."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr ""
+"Motorn <strong> färdas%(pct)s %% mindre än</strong> det slumpmässiga bästa "
+"schemat. Motorn lär sig."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr ""
+"Den officiella <strong> kalendern går%(pct)s %% mindre än</strong> motorn. "
+"Vi har fortfarande inte slagit honom."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"Notera: motorkalendern har turnéer med upp till <strong>%(gira)s "
+"bortamatcher i rad</strong>. Den officiella har maximal %(oficial)s. Ett "
+"riktigt lag skulle inte acceptera så långa turnéer."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "Varje lags resa"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr "Byt mellan de två scheman för att se vilka lag som reser mest."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "Kartkalender"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "Officiell"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "Motor"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "Visa alla 30 lag som en tabell"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "Officiell (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "Motor (km)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "Var datan kommer ifrån"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr ""
+"Officiellt schema: Major League Baseball 2023 grundserie (MLB Stats API). Vi"
+" behåller endast de beräknade siffrorna här, inte schemat."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr ""
+"Avstånd: rak linje mellan arenor (semiversumformel). Varje lag lämnar sin "
+"hemmaplan, reser från arena till arena och återvänder i slutet."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr ""
+"Blockmotor: 100 kalendrar per generation, %(evaluaciones)s kalendrar "
+"utvärderade totalt. Chans utvärderade samma mängd."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "Skapa din egen turnering"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "Hur motorn fungerar"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "Block, med regler"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "Turer + slumpmässiga drag"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "Turer + PG (endast uppgraderingar)"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "Skift + PG inlärningstemperatur"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "Skift + handglödgning"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "Gammal: Alla spelar 3 dagar varje tur"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "Nu: 2, 3 och 4 matcher långa serier, med pauser"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "Sväng"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "vardagar"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "Helg"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "Tur A"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "Turn B"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "1. Vi väljer ett team och två skift"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "2. Vi följer kedjan: A, B, A, B..."
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "3. Kedjeserieskift"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "Kalenderkostnad"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "Bäst"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "Första dalen"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "Djupare dal"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "Tjurfäktningens framsteg"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "Hem"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "Slut"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "för hand"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "PG, 5 %"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "PG, 50 %"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "Min testturnering"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr "Valfritt. Om du lämnar det där, används detta namn."
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "Turneringslag"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr "Vi har redan fått 10 poäng. Du kan ändra dem: från 3 till 10 lag."
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "Karta över de 30 arenorna i Major League"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr "{Team} exempelrundtur: 12 besök i slumpmässig ordning."
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr "Du valde {team}. Följ steg 2 för att se deras resor."
+
+#: tesis/historia.py
+msgid "km"
+msgstr "km"
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "Combine"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "Utbyte"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "Investera lokalitet"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "Hem"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "Besök"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "Förälder A"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "Förälder B"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "Son"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr ""
+"Exempelträd: kombinera, med två grenar: byt ut SEA-NYA med BOS-TEX, och "
+"investera LAN-HN-lokalitet hemma."
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr ""
+"Crossover: far A ger sin vänstra gren och far B ger sin vänstra gren; sonen "
+"kombinerar de två."
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "Mutation: På trädet ändras SEA–NYA-bladet till SEA–OAK."
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "Titta igen"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "Resa (slumpmässigt = 100)"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "Chans"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "Befolkning (48 träd)"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "Mer färg = mindre resor"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "Avhandlingsmotor"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{motor} · {g} generering av {total}"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{motor} · avslutat: {resultat}."
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr ""
+"{engine}: börjar vid {start} och slutar vid {end} (chans = 100). Resultat: "
+"{result}."
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr ""
+"Avstånd kontra slump: tesmotor {tes}, välj slumpmässigt 100, blockmotor "
+"{block}."
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "Avhandlingsmotor (2026)"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "Att välja kalendrar slumpmässigt"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "Blockmotor (Preliminär)"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr "Du kan också använda piltangenterna på ditt tangentbord."
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr ""
+"Säsongens kilometer per motorproduktion, jämfört med den officiella "
+"kalendern och slumpen"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "Officiell kalender"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "Bättre på slumpmässigt"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}: {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr "Det uppfyller fortfarande inte antalet matcher för varje lag."
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr ""
+"Vertikal axel: från {min} till {max} miljon km. Horisontell axel: "
+"generationer 0 till {last}."
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr ""
+"Karta: Varje cirkel är ett lag; större betyder fler mil under säsongen"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{team}: {km} km"

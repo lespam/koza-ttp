@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "अनुकूलन परिणाम"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "विस्तार करने के लिए पेड़ पर क्लिक करें"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "कुल यात्रा लागत:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "नियम उल्लंघन:"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "अनुकूलन चलाएँ"
 
@@ -134,10 +122,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "सबसे हाल से लेकर सबसे पुराने तक।"
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "योजना बनाई"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "इंजन के लिए प्रासंगिक ऑपरेटर"
 
@@ -166,10 +150,6 @@ msgstr ""
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "नवम्बर 3/2026"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "सतत"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -612,10 +592,6 @@ msgstr ""
 "कि प्रत्येक टीम कितनी यात्रा करती है।"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "डेमो · टीमों के बीच निष्पक्ष यात्रा"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "एक कैलेंडर जनरेट करें और"
 
@@ -629,6 +605,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"एआई (जेनेटिक प्रोग्रामिंग) ऐसे कैलेंडर की तलाश करता है जहां यात्रा छोटी और "
+"सम हो। अपनी खुद की टीम चाहते हैं? <a href=\"%(guia)s\">5-चरणीय "
+"मार्गदर्शिका</a> का उपयोग करें।"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -663,10 +642,6 @@ msgstr "इसमें कुछ सेकंड लगते हैं।"
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "अनुसूची: %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "कॉन्फ़िगरेशन %(id)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -743,14 +718,6 @@ msgstr "इसे अपने कंप्यूटर पर चलाएं"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "मदद के लिए अपने एआई सहायक से पूछें"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr ""
-"इस प्रश्न की प्रतिलिपि बनाएँ और इसे programa_genetico/programagenetico.py "
-"फ़ाइल के साथ आपके द्वारा उपयोग किए जाने वाले विज़ार्ड में चिपकाएँ."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -977,30 +944,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "बेसबॉल कैलेंडर के लिए आनुवंशिक प्रोग्रामिंग"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr ""
-"कोज़ा-टीटीपी: बेसबॉल कैलेंडर के लिए आनुवंशिक प्रोग्रामिंग पर लेस्ली डिकिंसन "
-"(आईटीएएम) की थीसिस, इसके ईमानदार परिणाम और बेहतर इंजन के साथ।"
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "आईटीएएम थीसिस · जेनेटिक प्रोग्रामिंग · बेसबॉल"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "मेरी थीसिस ने सच कहा:"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr ""
-"कोज़ा-टीटीपी आनुवंशिक प्रोग्रामिंग के साथ बेसबॉल सीज़न कैलेंडर बनाने के लिए "
-"उस थीसिस को लेता है। यहां आप देखेंगे कि क्या गलत हुआ, क्यों, और मैं इसे "
-"सार्वजनिक रूप से कैसे ठीक कर रहा हूं।"
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -1017,13 +962,6 @@ msgstr "2 मिनट"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "विचार को समझना"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr ""
-"जेनेटिक प्रोग्रामिंग क्या है और बेसबॉल कैलेंडर एक कठिन समस्या क्यों है।"
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1104,37 +1042,39 @@ msgstr "माया और ओटोमी सहित स्वचालि�
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "बनाम यादृच्छिक खोज"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "क्या यह बेतरतीब ढंग से चुनने से बेहतर है?"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "परीक्षण में"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, %(equipos)s टीमों के साथ %(corridas)s रन में"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "हां, प्रारंभिक परीक्षणों में"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
 msgstr ""
+"डेमो अभी भी थीसिस संस्करण का उपयोग करता है। बेहतर इंजन की तुलना एक यादृच्छिक"
+" खोज से की गई थी जो समान संख्या में कैलेंडर की समीक्षा करती है।"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "नवम्बर 8/2026"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "ब्लॉक मोटर"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1143,12 +1083,18 @@ msgid ""
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
 msgstr ""
+"शेड्यूल का प्रत्येक भाग (डिवीजन, लीग और इंटरलीग) ब्लॉकों से बना होता है "
+"जिसमें हर कोई सभी के खिलाफ खेलता है। इस प्रकार, एमएलबी नियमों का हमेशा पालन "
+"किया जाता है। जेनेटिक प्रोग्रामिंग यात्रा को कम करने के लिए ब्लॉकों को चुनती"
+" है और आदेश देती है।"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"प्रारंभिक परिणाम: %(resultado)s, %(equipos)s टीमों के साथ %(corridas)s रन "
+"में।"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1157,182 +1103,1869 @@ msgid ""
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
 msgstr ""
+"कोड समीक्षा यह पुष्टि करने के लिए कि पीजी यादृच्छिक रूप से कैलेंडर चुनने से "
+"बेहतर क्यों नहीं था। क्रॉसओवर और उत्परिवर्तन कैलेंडर की व्यवहार्यता को "
+"तोड़ते हैं, और फिटनेस के वजन के कारण बच्चे प्रारंभिक पीढ़ी के माता-पिता से "
+"हार जाते हैं।"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "साफ़ मोड"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "इंजन: %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
 msgstr ""
+"<strong>नोट:</strong> यह डेमो थीसिस इंजन का उपयोग करता है। वह इंजन यादृच्छिक"
+" रूप से कैलेंडर चुनने से बेहतर नहीं था।"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
 msgstr ""
+"प्रारंभिक परीक्षणों में बेहतर इंजन बेहतर था: %(resultado)s, %(corridas)s रन "
+"में। यह अभी इस डेमो में नहीं है।"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
 msgstr ""
+"एक स्कूल परियोजना के लिए, यह एक प्लस है: आपके पास एक आधार रेखा और एक सुधार "
+"है जिसे आप माप सकते हैं।"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "प्रत्येक रिलीज़ के परिणाम देखें"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
+"टेस्ट में: %(resultado)s, %(equipos)s टीमों के साथ %(corridas)s रन में।"
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "थीसिस संस्करण (2026)"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "यादृच्छिक कैलेंडर चुनने की तुलना में 19.5% अधिक दूरी"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "ब्लॉक इंजन (उन्नत संस्करण)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "यादृच्छिक कैलेंडर चुनने की तुलना में 13% कम यात्रा"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "संक्षिप्त नाम (जैसे, SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "टीम का नाम"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "शहर"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "स्टेडियम अक्षांश"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "स्टेडियम की लंबाई"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "दशमलव डिग्री में। उदाहरण: 47.59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "दशमलव डिग्री में। उदाहरण: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "लीग टीमें"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "लीग का नाम"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "कम से कम 2 टीमें चुनें।"
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "टूर्नामेंट का नाम"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "पहला दिन"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "अंतिम दिन"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "श्रृंखला द्वारा खेल"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "टीम सीरीज"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "अंतिम दिन पहले के समान या बाद में होना चाहिए।"
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "यह 1 या अधिक होना चाहिए।"
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "कॉन्फ़िगरेशन नाम"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "जनसंख्या का आकार"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "पीढ़ियों की संख्या"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "पार करने की प्रायिकता (0 से 1)"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "उत्परिवर्तन की संभावना (0 से 1)"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "यह 0 और 1 के बीच होना चाहिए।"
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "साधन"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "लीग"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "टुर्नामेंट"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "सेटिंग"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "कैलेंडर"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "पहले इस चरण को पूरा करें।"
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "जोड़ा उपकरण।"
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "खेल उत्पन्न।"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "नवम्बर 14/2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
+msgstr "टर्न-आधारित एल्गोरिथ्म: आधिकारिक एमएलबी 2023 शेड्यूल को मात देता है"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
 msgstr ""
+"हमने इस नियम को हटा दिया कि सभी 30 टीमें एक ही समय में 3 दिवसीय श्रृंखला "
+"खेलती हैं। 2, 3 और 4 गेम और ब्रेक की श्रृंखला के साथ, सबसे अच्छा एल्गोरिदम "
+"1.57 मिलियन किमी की यात्रा करता है। आधिकारिक कैलेंडर 1.74 मिलियन की यात्रा "
+"करता है। दोनों यथार्थवाद के समान नियमों को पूरा करते हैं।"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr "एनिमेटेड आरेखों के साथ वर्तमान शोध देखें"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "नवम्बर 12/2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "डेमो असली 2023 सीज़न दिखाता है"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr ""
+"आप इंजन के चलने की प्रतीक्षा किए बिना वास्तविक 2023 मेजर लीग बेसबॉल शेड्यूल "
+"देख सकते हैं।"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "2023 सीज़न देखें"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "नवम्बर 9/2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "चरण-दर-चरण कहानी"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr "30 चरणों के नक्शे के साथ एक स्पष्टीकरण, पेड़ और विकास, चरण दर चरण।"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "कहानी पढ़ें"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "अनुभव का दूसरा ऑडिट"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr ""
+"पहुंच, प्रयोज्यता और मानव-एआई इंटरैक्शन की समीक्षा दोहराई गई। पहले वाले में "
+"28 बिंदुओं में से 13 को हल कर लिया गया था। अधिकांश नए बिंदुओं को पहले ही ठीक"
+" कर दिया गया है।"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr "उन्हें इंजन को श्रृंखला में और फिर इंजन ब्लॉक के साथ मिला।"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "नवम्बर 5/2026"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "5-चरणीय मार्गदर्शिका खोलें"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr ""
+"बेसबॉल कैलेंडर बनाने के लिए जेनेटिक प्रोग्रामिंग। लेस्ली डिकिंसन (आईटीएएम) "
+"की थीसिस, ईमानदार परिणामों के साथ।"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr ""
+"कोज़ा-टीटीपी: एक टीम के मार्ग और एक आनुवंशिक प्रोग्रामिंग ट्री के साथ बेसबॉल"
+" स्टेडियमों का नक्शा।"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "मुख्य साइट पर जाएं"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "मेनू"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "यह काम किस प्रकार करता है"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "लेस्ली डिकिंसन"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "मुख्य साइट"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "संपर्क करें"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "मेरी थीसिस ने सच कहा"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"थीसिस पायलट यादृच्छिक रूप से कैलेंडर चुनने से बेहतर नहीं था: %(resultado)s. "
+"इसे छिपाए बिना इस तरह रिपोर्ट करना सही निर्णय था। उस परिणाम से पता चला कि "
+"इंजन को बेहतर बनाने के लिए क्या ठीक करने की आवश्यकता है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "वर्तमान शोध"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr ""
+"हमने एनिमेटेड आरेखों के साथ आधिकारिक एमएलबी 2023 शेड्यूल को हराने की कोशिश "
+"की।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "वर्तमान शोध: आधिकारिक कैलेंडर को हराना"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr ""
+"लक्ष्य: 2023 मेजर लीग बेसबॉल सीज़न के लिए एक शेड्यूल जो आधिकारिक से कम "
+"यात्रा करता है और समान नियमों का अनुपालन करता है। आधिकारिक 1.74 मिलियन किमी "
+"की यात्रा करता है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr ""
+"14 नवंबर, 2026 (दोपहर) को अपडेट किया गया। ये एल्गोरिदम परीक्षण में हैं: साइट"
+" और डेमो अभी तक उनका उपयोग नहीं करते हैं।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "1. सभी परीक्षणों के परिणाम"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"प्रत्येक बार एक सीज़न में 30 टीमों की कुल यात्रा है, लाखों किमी में। कम "
+"बेहतर है। सभी आंकड़े समान मापे गए थे: प्रत्येक टीम अपना घर छोड़ती है, "
+"स्टेडियम से स्टेडियम जाती है और अंत में लौटती है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "एल्गोरिथ्म संस्करण द्वारा कुल यात्रा"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "कोज़ा-टीटीपी एल्गोरिदम"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "आधिकारिक कैलेंडर 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr ""
+"दो टर्न-आधारित एनीलिंग एल्गोरिदम ने अधिकारी को लगभग 9%% से हरा दिया। नीचे दी"
+" गई तालिका में समान डेटा है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "सभी परीक्षण, सबसे पुराने से लेकर नवीनतम तक"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "कुल यात्रा"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "क्या यह नियमों से खेलता है?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "हमने क्या सीखा"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "ब्लॉक एल्गोरिथ्म, कोई यथार्थवाद नियम नहीं"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "1.85 मिलियन किमी"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "नहीं: लगातार 36 खेलों तक के दौरे"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr "वह अधिकारी के करीब लग रहा था, लेकिन वह धोखा दे रहा था।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "ब्लॉक एल्गोरिथ्म, नियमों के साथ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "2.19 मिलियन किमी"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "उनसे मिलने में विफल रहता है"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr ""
+"फिक्स्ड ब्लॉक आपको पर्यटन को अच्छी तरह से व्यवस्थित करने की अनुमति नहीं देते"
+" हैं।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "मिश्रित ब्लॉक, शासकों के साथ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "2.00 मिलियन किमी"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "हाँ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr "बेहतर है, लेकिन सभी 30 टीमें अभी भी एक ही समय में खेल रही हैं।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr "2, 3 और 4 सेट के सेट के साथ बदलाव + सिम्युलेटेड एनीलिंग"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "1.52 से 1.60 मिलियन किमी"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "3 में से 4 रन (एक अतिरिक्त दिन चला)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr "\"ऑल एट एव\" नियम को हटाना ही अधिकारी को जीतता है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr ""
+"एमएलबी + पीजी के रूप में शिफ्ट + सप्ताह जो केवल अपग्रेड स्वीकार करता है"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "1.70 मिलियन किमी (औसत)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "हाँ, 4 में से 4"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr ""
+"वह अधिकारी को बाल-बाल हरा देता है, लेकिन यादृच्छिक चालों के साथ लगभग बराबरी "
+"कर लेता है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "यादृच्छिक आंदोलन, पीजी के समान प्रयास"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "पीजी को मापने के लिए उचित आधार रेखा।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "शिफ्ट + सप्ताह + हस्तनिर्मित एनीलिंग"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "1.567 मिलियन किमी (8 कैलेंडर का औसत)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "शुरुआत में बदतर बदलावों को स्वीकार करने से बहुत मदद मिलती है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "शिफ्ट + सप्ताह + पीजी सीखने का तापमान"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "1.571 मिलियन किमी (8 कैलेंडर का औसत)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr ""
+"पीजी अपने स्वयं के शासक को डिजाइन करता है और हस्तनिर्मित (0.3%% अधिक) के साथ"
+" लगभग संबंध रखता है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "एक ही पीजी, अधिक विविधता और अधिक अभ्यास के साथ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "1.583 मिलियन किमी (8 कैलेंडर का औसत)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "हाँ, 8 में से 8"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr ""
+"छोटे रन के साथ अभ्यास करना लंबे समय तक चलने के लिए सबसे अच्छा नियम नहीं "
+"सिखाता है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "आधिकारिक एमएलबी 2023 शेड्यूल"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "1.74 मिलियन किमी"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr ""
+"लक्ष्य। यह उन नियमों का भी अनुपालन करता है जिन्हें हम मॉडल नहीं करते हैं, "
+"जैसे स्टेडियम की तारीखें और टेलीविजन।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"यथार्थवाद के नियम: घर पर या बाहर लगातार 12 गेम, लगातार श्रृंखला में कोई "
+"दोहराए जाने वाला प्रतिद्वंद्वी, खेल के साथ अधिकतम 20 दिन और 186 दिनों का "
+"सीज़न। आधिकारिक कैलेंडर से हम केवल गणना किए गए आंकड़े रखते हैं, एमएलबी उपयोग"
+" की शर्तों के अनुसार।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "2. बड़ा बदलाव: 2, 3 और 4 गेम के सेट के साथ बदल जाता है"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"इससे पहले, सभी 30 टीमें एक ही समय में 3-दिवसीय श्रृंखला खेलती थीं, जिसमें "
+"कोई ब्रेक नहीं था। अब सीज़न को कार्यदिवस (4 दिन) और सप्ताहांत (3 दिन) शिफ्ट "
+"में विभाजित किया गया है, ठीक वैसे ही जैसे एमएलबी करता है। प्रत्येक टीम 2, 3 "
+"या 4 खेलों की श्रृंखला खेलती है, या आराम करती है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "पिछला मॉडल बनाम टर्न-आधारित मॉडल"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "ठहराव"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "श्रृंखला (संख्या बताती है कि कितने खेल)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "सौभाग्‍य"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"आठ पारियों में छह टीमें। पिछले मॉडल में हर कोई प्रत्येक शिफ्ट में 3 दिन "
+"खेलता है। शिफ्ट मॉडल में श्रृंखला 2, 3 या 4 दिनों तक चलती है और ब्रेक होते "
+"हैं, इसलिए पर्यटन को अधिक स्वतंत्रता के साथ एक साथ रखा जा सकता है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "3. मुख्य आंदोलन: केम्पे श्रृंखला"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr ""
+"एक टीम को एक साथ दो श्रृंखलाएं खेले बिना शेड्यूल बदलने के लिए, दो मोड़ और "
+"उनके बीच वैकल्पिक श्रृंखला की एक श्रृंखला ली जाती है। श्रृंखला में सभी "
+"श्रृंखलाएं एक ही समय में बदल जाती हैं। शेड्यूल अभी भी मान्य है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "टर्न ए और टर्न बी के बीच केम्पे श्रृंखला"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "शिफ्ट ए में श्रृंखला (ठोस रेखा)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "टर्न बी पर श्रृंखला (बिंदीदार रेखा)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr ""
+"आठ टीमें। नेटवर्क NYA में शुरू होता है और BOS, TOR और BAL से होकर गुजरता है।"
+" इसकी चार श्रृंखलाएँ बदलती हैं। दूसरी श्रृंखला नहीं चलती।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "4. एनीलिंग ने पीजी को क्यों हराया?"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr ""
+"पहले पीजी ने एनीलिंग के समान आंदोलनों का उपयोग किया, लेकिन यह 1.70 मिलियन "
+"किमी और 1.58 पर एनीलिंग था। तीन कारण हैं।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>उन्होंने केवल सुधार स्वीकार किए।</strong> इस प्रकार वह पहली \"घाटी\""
+" में फंस जाता है जो उसे मिलती है। एनीलिंग पहली बार में थोड़ा खराब होने के "
+"लिए सहमत होता है, और इससे उसे \"पहाड़ी\" पार करने और एक गहरी घाटी तक पहुंचने"
+" की अनुमति मिलती है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr ""
+"<strong>उसने प्रयास खर्च किया।</strong> प्रत्येक पीढ़ी में वह 16 व्यंजनों की"
+" कोशिश करता है और केवल सर्वश्रेष्ठ का कैलेंडर रखता है। एनीलिंग उसके हर कदम "
+"को संरक्षित करता है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr ""
+"<strong>उसने उन्हीं जगहों को दोहराया।</strong> पेड़ में निश्चित संख्याएँ "
+"हमेशा समान मोड़ और टीमों की ओर इशारा करती हैं। यादृच्छिक चालें पूरे कैलेंडर "
+"में चलती हैं।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "केवल बदतर परिवर्तनों को स्वीकार करने के खिलाफ सुधार"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "केवल अपग्रेड स्वीकार करता है (सर्कल)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "एनीलिंग: बदतर परिवर्तनों को स्वीकार करता है (रोम्बस)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr ""
+"लाइन कैलेंडर की लागत है: कम बेहतर है। सर्कल पहली घाटी में जाता है और वहीं "
+"रहता है। समचतुर्भुज पहाड़ी पर चढ़ता है, क्योंकि यह थोड़ा खराब होने के लिए "
+"सहमत होता है, और सबसे गहरी घाटी तक पहुंचता है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr "5. पीजी जो सीखता है कि बदतर परिवर्तनों को कब स्वीकार करना है"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr ""
+"कारण 1 को सही करने के लिए, पीजी अब एनीलिंग नियम डिजाइन करता है। एक पेड़ तय "
+"करता है कि प्रत्येक चरण में कितने किमी खराब होने को स्वीकार किया जाता है। "
+"डेटा के दो टुकड़ों को देखें: रन के साथ कितनी दूर है और हाल ही में कितने "
+"बदलाव स्वीकार किए गए थे।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr ""
+"पीजी ने 2 कैलेंडर पर छोटे रन के साथ अभ्यास किया। फिर हमने 4 कैलेंडर पर जीतने"
+" वाले पेड़ की कोशिश की जो उसने कभी नहीं देखा। यह जीतने वाला पेड़ है:"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr ""
+"संक्षेप में: सहिष्णुता छोटी है, लगभग 60 से 1,200 किमी, और यह तब बढ़ जाती है "
+"जब परिवर्तन लगभग स्वीकार नहीं किए जाते हैं। हाथ से बना शासक इसके विपरीत करता"
+" है: यह 20,000 किमी से शुरू होता है और धीरे-धीरे 50 तक नीचे चला जाता है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "पूरे रन के दौरान किमी में सहिष्णुता (लघुगणकीय पैमाने)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "हस्तनिर्मित शासक"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "पीजी, यदि कुछ परिवर्तन स्वीकार किए जाते हैं (5%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "पीजी, यदि कई परिवर्तन स्वीकार किए जाते हैं (50%%)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr ""
+"हाथ से बनाया गया नियम 20,000 से घटकर 50 किमी हो जाता है। पीजी नियम 60 से "
+"1,200 किमी के बीच रहता है और यह इस बात पर निर्भर करता है कि कितने बदलाव "
+"स्वीकार किए जाते हैं। दोनों लगभग 1.57 मिलियन किमी के कैलेंडर तक पहुंचते हैं।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "6. आगे क्या है"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr ""
+"पीजी लगभग एनीलिंग से बंधा हुआ है, लेकिन फिर भी इसे हरा नहीं देता है। 8 नए "
+"कैलेंडर में, हस्तनिर्मित शासक 1.567 मिलियन किमी और पीजी 1.571 की यात्रा करता"
+" है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"हमने इसे अधिक विविधता (बार-बार व्यंजनों के बिना) और अधिक अभ्यास (3 कैलेंडर, "
+"32 व्यंजनों, 16 पीढ़ियां) देने की कोशिश की। यह बदतर था: 1.583 मिलियन किमी। "
+"पीजी 40,000 चरणों के छोटे रन के साथ अभ्यास करता है, लेकिन परीक्षण 400,000 का"
+" उपयोग करता है। बहुत दौड़ने के लिए थोड़ा दौड़ने का एक अच्छा नियम सबसे अच्छा "
+"नहीं है।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr ""
+"अगला कदम पीजी के लिए उन रनों के साथ अभ्यास करना है जो परीक्षण की तरह हैं और "
+"हस्तनिर्मित शासक से शुरू करते हैं, ताकि वह केवल इसमें सुधार कर सके।"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "GitHub पर इन परीक्षणों के लिए कोड देखें"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "थीसिस एल्गोरिथ्म"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "मूल थीसिस एल्गोरिथम (2026)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "बिना इंतजार किए असली 2023 सीज़न देखें"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "इसे बड़ा देखने के लिए पेड़ पर क्लिक करें।"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr ""
+"पेड़ वह कार्यक्रम है जो सबसे अच्छा कैलेंडर एक साथ रखता है। प्रत्येक शाखा "
+"खेलों में शामिल होती है; पत्तियां खेल हैं (तारीख, घरेलू टीम और दूर की टीम)।"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "सभी टीमों की कुल यात्रा:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "नियम तोड़ने वाले खेल:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr ""
+"एक नियम यह है कि प्रत्येक टीम उन खेलों की संख्या खेलती है जिनके लिए "
+"टूर्नामेंट की आवश्यकता होती है। <strong>0 गेम जो नियम तोड़ते</strong> हैं "
+"इसका मतलब है कि शेड्यूल मान्य है।"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr ""
+"इसमें कुछ सेकंड से लेकर कई मिनट तक का समय लग सकता है। यह कंप्यूटर की संख्या "
+"पर निर्भर करता है।"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "इंजन काम कर रहा है।"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr ""
+"वह कैलेंडर बनाता है, उन्हें जोड़ता है, और सबसे अच्छे कैलेंडर रखता है। इस पेज"
+" को बंद न करें।"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "सहेजे गए पैरामीटर"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "\"%(nombre)s\" कॉन्फ़िगरेशन"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr ""
+"<strong>महत्वपूर्ण:</strong> थीसिस इंजन इन मूल्यों को बचाता है, लेकिन उनका "
+"उपयोग नहीं करता है। यह हमेशा 100, 20 पीढ़ियों, 0.8 क्रॉसओवर और 0.2 "
+"उत्परिवर्तन की आबादी के साथ चलता है।"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "इसे चलाने के लिए आदेश"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"इस प्रश्न की प्रतिलिपि बनाएँ और इसे आपके द्वारा उपयोग किए जाने वाले विज़ार्ड"
+" में पेस्ट करें। programa_genetico/programagenetico.py (थीसिस इंजन) या "
+"programa_genetico/motor_bloques.py (उन्नत इंजन) फ़ाइल संलग्न करें।"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "सर्वश्रेष्ठ कैलेंडर ट्री"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "%(a)s से %(b)sतक।"
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "डेमो चरण"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "डेमो: सेटअप"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "चरण 2: सेटअप"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr "सभी मान पहले से ही चुने गए हैं। आप उन्हें बदल सकते हैं या \\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "उपकरण बदलें"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "टूर्नामेंट"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "एल्गोरिथ्म"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "अगला: कैलेंडर देखें"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "डेमो: टीमों का चयन करें"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr ""
+"कोज़ा-टीटीपी डेमो: 3 चरणों में नवीनतम एल्गोरिदम के साथ एक बेसबॉल कैलेंडर "
+"बनाएं।"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "चरण 1: उपकरण चुनें"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr ""
+"एल्गोरिथ्म आपके द्वारा चुनी गई टीमों के लिए एक शेड्यूल तैयार करता है और सबसे"
+" कम यात्रा करने वाली टीम की तलाश करता है। हमने पहले ही 10 मेजर लीग टीमों को "
+"चिह्नित कर लिया है। यदि आप चाहें, तो बिना कुछ बदले \"अगला\" पर क्लिक करें।"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "अगले: सेटअप"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "एक पूर्ण शाही मौसम देखना पसंद करते हैं?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "2023 सीज़न देखें: आधिकारिक कैलेंडर के विरुद्ध 30 टीमें"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "क्या आप अपनी खुद की टीमों और स्टेडियमों को पंजीकृत करना चाहते हैं?"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "इसे 5-चरणीय मार्गदर्शिका में स्वयं करें"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "डेमो: कैलेंडर"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "चरण 3: कैलेंडर"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "नया एल्गोरिथ्म: टर्न-आधारित मॉडल"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>: %(n)s टीमें।"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "एल्गोरिथ्म ने क्या हासिल किया"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr "एल्गोरिथ्म के शेड्यूल के साथ सभी टीमों की कुल यात्रा।"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr "अनुकूलन से पहले, बेतरतीब ढंग से बनाए गए कैलेंडर के साथ यात्रा करें।"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr "यादृच्छिक कैलेंडर की तुलना में कम यात्रा।"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "सभी नियमों का पालन करें"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "कैलेंडर बेतरतीब ढंग से %(a)sटूट गया।"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "आप किन नियमों की समीक्षा करते हैं?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr ""
+"लगातार अधिकतम 12 घरेलू या दूर के खेल। यहां: %(n)s घर पर और %(m)s बाहर।"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "खेल के साथ लगातार अधिकतम 20 दिन। यहाँ: %(n)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr ""
+"एक ही प्रतिद्वंद्वी के खिलाफ लगातार दो श्रृंखलाओं में नहीं खेल रहे हैं।"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr "घरेलू खेल लगभग आधा। यहां: प्रति टीम %(a)s %(b)s है।"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "यात्रा कैसे नीचे चली"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr "%(p)s खोज चरणों में कुल यात्रा %(a)s किमी से घटकर %(b)s किमी हो गई।"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "%(t)s खेलों का पहला %(n)s"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "घर पर"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "जाना"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "सभी खेल देखें"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "सभी खेल"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "आगे क्या होगा?"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "सेटिंग्स बदलें और फिर से चलाएं"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "अन्य उपकरण चुनना"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr "पूरा 2023 सीज़न देखें: आधिकारिक कैलेंडर के विरुद्ध 30 टीमें"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "समझें कि यह 2 मिनट में कैसे काम करता है"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr "इसे स्वयं करें: अपने उपकरण को 5-चरणीय मार्गदर्शिका में पंजीकृत करें"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "थीसिस का मूल एल्गोरिथ्म देखें"
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "2 मिनट में विचार को समझें"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr ""
+"कोज़ा-टीटीपी एनिमेटेड कहानी: बेसबॉल यात्रा का नक्शा, आनुवंशिक प्रोग्रामिंग "
+"के पेड़ और थीसिस से बेहतर इंजन तक पायलट का मार्ग।"
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "2 मिनट · 7 कदम"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "इतिहास के चरण"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "स्टेडियम"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "यात्रा"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "दरख्‍़त"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "क्रॉसओवर"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "उत्परिवर्तन"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "पीढ़ियों"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "परिणाम"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "भाग 1 · समस्या"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "30 टीमों को एक दूसरे से खेलना है"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr ""
+"मेजर लीग बेसबॉल में 30 टीमें हैं। प्रत्येक टीम एक सीज़न में 162 गेम खेलती "
+"है।"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr ""
+"एक कैलेंडर बताता है कि कौन किसके खिलाफ, किस तारीख को और किस स्टेडियम में "
+"खेलता है।"
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "किसी स्टेडियम का नाम देखने के लिए मानचित्र पर उस पर टैप करें."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "हर यात्रा में समय और पैसा खर्च होता है"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr ""
+"जब कोई टीम सड़क पर खेलती है, तो वे हवाई जहाज से यात्रा करते हैं। खराब "
+"शेड्यूल उन्हें कई बार देश पार करने के लिए मजबूर करता है।"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr "एक उदाहरण यात्रा यात्रा, यादृच्छिक क्रम में तारीखों के साथ।"
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr "उस टीम के दौरे को देखने के लिए दूसरे स्टेडियम पर टैप करें।"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "भाग 2 · थीसिस का विचार"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "एक कैलेंडर को एक पेड़ के रूप में लिखा जा सकता है"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr ""
+"जेनेटिक प्रोग्रामिंग कैलेंडर को हाथ से नहीं लिखती है। यह इसे सुधारने के "
+"<strong>लिए निर्देश लिखता</strong> है।"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"ये निर्देश एक पेड़ बनाते हैं। <strong>पत्तियां</strong> खेलों की श्रृंखला "
+"हैं, जैसे \"एसईए-एनवाईए। <strong>शाखाएं</strong> क्रियाएं हैं, जैसे "
+"\"स्वैपिंग\" दो तारीख श्रृंखला या \"इनवर्टिंग इलाके\" (घर पर कौन खेलता है) "
+"बदलना।"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "क्रॉसिंग: दो पेड़ मिश्रण"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr ""
+"दो पेड़ जो अच्छी तरह से काम करते हैं उन्हें लिया जाता है। हर एक एक शाखा देता"
+" है।"
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "नया पेड़, \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "उत्परिवर्तन: एक छोटा, यादृच्छिक परिवर्तन"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr "कभी-कभी पेड़ का एक टुकड़ा अपने आप बदल जाता है। यहाँ, श्रृंखला \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr ""
+"उत्परिवर्तन नए विचारों का परीक्षण करने का कार्य करता है जो किसी भी माता-पिता"
+" के पास नहीं थे।"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "भाग 3 · परिणाम"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "पीढ़ी दर पीढ़ी"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr ""
+"प्रत्येक पीढ़ी में कई पेड़ होते हैं। जो लोग कम यात्रा के साथ कैलेंडर बनाते "
+"हैं उनके बच्चे अधिक होते हैं।"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr ""
+"बिंदीदार रेखा न्यूनतम लक्ष्य है: सबसे अच्छा कैलेंडर जो एक ही प्रयास के साथ "
+"<strong>यादृच्छिक रूप से चुना</strong> जाता है।"
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "यह देखने के लिए एक इंजन चुनें कि यह कैसा रहा।"
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "पायलट से लेकर काम करने वाले इंजन तक"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"बेहतर इंजन, ब्लॉक द्वारा, इसे यादृच्छिक रूप से हरा देता है: %(resultado)s, "
+"प्रारंभिक परीक्षणों में (%(corridas)s रन, %(equipos)s टीम)।"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr ""
+"थीसिस का पायलट (2026) यादृच्छिक रूप से कैलेंडर चुनने से <strong>बेहतर नहीं "
+"था</strong> : %(resultado)s."
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "5 चरणों में टूल का परीक्षण करें"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "सभी 30 स्टेडियमों को एक टेबल के रूप में देखें"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "teams.csv प्रोजेक्ट फ़ाइल से डेटा।"
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "कोड"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "टीम"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "स्‍टेडियम"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "स्थान"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "पिछला"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "अगला"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr ""
+"कोज़ा-टीटीपी: बेसबॉल कैलेंडर के लिए आनुवंशिक प्रोग्रामिंग। यह लेस्ली डिकिंसन"
+" (आईटीएएम) द्वारा एक थीसिस के रूप में शुरू हुआ और आज इसमें एक इंजन है जो "
+"मौका पर काबू पाता है।"
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "आनुवंशिक प्रोग्रामिंग के साथ एक बेहतर एमएलबी शेड्यूल।"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"कोज़ा-टीटीपी का जन्म आईटीएएम में मेरी थीसिस के रूप में हुआ था। वह पहला पायलट"
+" बेतरतीब ढंग से पास नहीं हुआ। ब्लॉक संस्करण करता है: %(resultado)s, "
+"प्रारंभिक परीक्षणों में। यहां मैं आपको दिखाता हूं कि यह कैसे काम करता है।"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr ""
+"एक एनिमेटेड कहानी: यात्रा का नक्शा, आनुवंशिक प्रोग्रामिंग के पेड़ और परिणाम।"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "2023 सीज़न: द इंजन अगेंस्ट द रियल कैलेंडर"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr ""
+"30 में सभी 2023 मेजर लीग बेसबॉल टीमों के साथ आनुवंशिक प्रोग्रामिंग इंजन के "
+"एक रन की पुनरावृत्ति, आधिकारिक कार्यक्रम और संयोग की तुलना में।"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "सीजन 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "वास्तविक डेटा के साथ डेमो · मेजर लीग बेसबॉल 2023"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr ""
+"हम 30 मेजर लीग बेसबॉल टीमों और उनके वास्तविक स्टेडियमों का उपयोग करते हैं। "
+"आधिकारिक 2023 शेड्यूल संदर्भ है। ब्लॉक-आधारित इंजन कम यात्रा के साथ एक सीज़न"
+" को एक साथ रखने की कोशिश करता है।"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "पीढ़ी दर पीढ़ी किलोमीटर कैसे नीचे जाते हैं"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr ""
+"यह इंजन का एक वास्तविक रन है, जिसे आपके लिए बिना प्रतीक्षा किए देखने के लिए "
+"सहेजा गया है। इसमें प्रत्येक 100 कैलेंडर की %(generaciones)s पीढ़ियाँ हैं।"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "खेल"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "पीढ़ी"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "बग़ल में स्लाइडिंग बोर्ड"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "नियमित सीज़न में 30 टीमों की यात्रा।"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "सबसे लंबा दौरा (लगातार दूर के खेल)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "एक पंक्ति में अधिक घरेलू खेल"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "मेजर लीग बेसबॉल अधिकारी"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "मिलियन किमी"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "यादृच्छिक रूप से बेहतर, एक ही प्रयास के साथ"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "यह प्रत्येक टीम के खेलों की संख्या को पूरा नहीं करता है।"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr ""
+"इंजन यादृच्छिक सर्वोत्तम शेड्यूल <strong> से%(pct)s%% कम यात्रा "
+"करता</strong> है। इंजन सीखता है।"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr ""
+"आधिकारिक कैलेंडर इंजन <strong> से%(pct)s%% कम यात्रा करता है</strong>। हमने "
+"अभी भी उसे नहीं हराया है."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"नोट: इंजन कैलेंडर में <strong> लगातार%(gira)s दूर के खेलों</strong> के दौरे "
+"हैं। आधिकारिक के पास अधिकतम %(oficial)sहै। एक वास्तविक टीम इतने लंबे दौरों "
+"को स्वीकार नहीं करेगी।"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "प्रत्येक टीम की यात्रा"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr ""
+"यह देखने के लिए दो शेड्यूल के बीच स्विच करें कि कौन सी टीमें सबसे अधिक "
+"यात्रा करती हैं।"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "मानचित्र कैलेंडर"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "अफ़सर"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "इंजन"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "सभी 30 टीमों को एक तालिका के रूप में देखें"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "आधिकारिक (किमी)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "इंजन (किमी)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "डेटा कहां से आता है"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr ""
+"आधिकारिक कार्यक्रम: मेजर लीग बेसबॉल 2023 नियमित सीज़न (एमएलबी स्टैट्स "
+"एपीआई)। हम यहां केवल गणना की गई संख्याएँ रखते हैं, शेड्यूल नहीं।"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr ""
+"दूरियां: स्टेडियमों के बीच सीधी रेखा (अर्धछंद सूत्र)। प्रत्येक टीम अपना घर "
+"छोड़ती है, स्टेडियम से स्टेडियम तक यात्रा करती है और अंत में लौटती है।"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr ""
+"ब्लॉक इंजन: प्रति पीढ़ी 100 कैलेंडर, कुल %(evaluaciones)s कैलेंडर का "
+"मूल्यांकन किया गया। चांस ने समान राशि का मूल्यांकन किया।"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "अपना खुद का टूर्नामेंट बनाएं"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "इंजन कैसे काम करता है"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "ब्लॉक, नियमों के साथ"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "मोड़ + यादृच्छिक चालें"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "टर्न्स + पीजी (केवल अपग्रेड)"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "शिफ्ट + पीजी सीखने का तापमान"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "शिफ्ट + हैंड एनीलिंग"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "पुराना: हर कोई प्रत्येक बारी 3 दिन खेलता है"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "अब: 2, 3 और 4 गेम श्रृंखला, ब्रेक के साथ"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "मोड़"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "सप्ताह के दिन"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "सप्‍ताहांत"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "एक बारी"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "टर्न बी"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "1. हम एक टीम और दो शिफ्ट चुनते हैं"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "2. हम श्रृंखला का पालन करते हैं: ए, बी, ए, बी..."
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "3. चेन श्रृंखला स्विच शिफ्ट"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "कैलेंडर की लागत"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "सर्वश्रेष्ठ"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "पहली घाटी"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "गहरी घाटी"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "बुलफाइट की प्रगति"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "घर"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "समाप्त"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "हाथ से"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "पीजी, 5%"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "पीजी, 50%"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "मेरा टेस्ट टूर्नामेंट"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr ""
+"वैकल्पिक। यदि आप इसे वहीं छोड़ देते हैं, तो इस नाम का उपयोग किया जाता है।"
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "टूर्नामेंट टीमें"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr ""
+"हम पहले ही 10 रन बना चुके हैं। आप उन्हें बदल सकते हैं: 3 से 10 टीमों तक।"
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "मेजर लीग के 30 स्टेडियमों का नक्शा"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr "{टीम} उदाहरण दौरा: यादृच्छिक क्रम में 12 विज़िट।"
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr ""
+"आपने {टीम} को चुना है. उनकी यात्राएँ देखने के लिए चरण 2 का अनुसरण करें."
+
+#: tesis/historia.py
+msgid "km"
+msgstr "किलोमिटर"
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "गठबंधन"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "बदलना"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "निवेश स्थानीयता"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "घर"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "जाना"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "माता-पिता ए"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "माता-पिता बी"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "बेटा"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr ""
+"उदाहरण पेड़: दो शाखाओं के साथ गठबंधन करें: BOS-TX के साथ SEA-NYA का "
+"आदान-प्रदान करें, और घर पर LAN-CHN इलाके का निवेश करें।"
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr ""
+"क्रॉसओवर: पिता A अपनी बाईं शाखा देता है और पिता B अपनी बाईं शाखा देता है; "
+"बेटा दोनों को जोड़ता है।"
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "उत्परिवर्तन: पेड़ पर, SEA-NYA पत्ती SEA-OAK में बदल जाती है।"
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "फिर से देखें"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "यात्रा (यादृच्छिक = 100)"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "आकस्मिक"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "जनसंख्या (48 पेड़)"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "अधिक रंग = कम यात्रा"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "थीसिस इंजन"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{इंजन} · {g} {कुल} की पीढ़ी"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{इंजन} · समाप्त: {परिणाम}।"
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr ""
+"{engine}: {start} से शुरू होता है और {अंत} पर समाप्त होता है (मौका = 100)। "
+"परिणाम: {परिणाम}।"
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr ""
+"दूरी बनाम मौका: थीसिस इंजन {थीसिस}, बेतरतीब ढंग से 100 चुनें, इंजन {ब्लॉक} "
+"को ब्लॉक करें।"
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "थीसिस इंजन (2026)"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "यादृच्छिक रूप से कैलेंडर चुनना"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "ब्लॉक इंजन (प्रारंभिक)"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr "आप अपने कीबोर्ड पर तीर कुंजियों का भी उपयोग कर सकते हैं।"
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr ""
+"इंजन उत्पादन द्वारा मौसम के किलोमीटर, आधिकारिक कैलेंडर और मौका की तुलना में"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "आधिकारिक कैलेंडर"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "यादृच्छिक रूप से बेहतर"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}: {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr "यह अभी भी प्रत्येक टीम के खेलों की संख्या को पूरा नहीं करता है।"
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr ""
+"लंबवत अक्ष: {min} से {max} मिलियन किमी तक। क्षैतिज अक्ष: पीढ़ियाँ 0 से "
+"{अंतिम}।"
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr "नक्शा: प्रत्येक सर्कल एक टीम है; बड़े का मतलब है कि मौसम में अधिक मील"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{टीम}: {किमी} किमी"

@@ -56,18 +56,6 @@ msgid "Resultados de optimización"
 msgstr "نتایج بهینه سازی"
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Haz clic en el árbol para expandir"
-msgstr "برای گسترش روی درخت کلیک کنید"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Costo de viaje total:"
-msgstr "کل هزینه سفر:"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Violaciones de reglas:"
-msgstr "تخلفات قانونی:"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Ejecutar optimización"
 msgstr "بهینه سازی اجرا"
 
@@ -134,10 +122,6 @@ msgid "Del más reciente al más antiguo."
 msgstr "از جدیدترین تا قدیمی ترین."
 
 #: documentacion/templates/documentacion/avances.html
-msgid "Planeado"
-msgstr "برنامه ریزی شده"
-
-#: documentacion/templates/documentacion/avances.html
 msgid "Operadores contextuales para el motor"
 msgstr "اپراتورهای زمینه ای موتور"
 
@@ -166,10 +150,6 @@ msgstr ""
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
 msgstr "۳ نوامبر ۲۰۲۶"
-
-#: documentacion/templates/documentacion/avances.html
-msgid "En curso"
-msgstr "ادامه دارد"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Diagnóstico del motor"
@@ -606,10 +586,6 @@ msgstr ""
 " تیم را اندازه گیری می کند."
 
 #: tesis/templates/tesis/dashboard.html
-msgid "Demo · Viaje justo entre equipos"
-msgstr "دمو · سفر منصفانه بین تیم ها"
-
-#: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
 msgstr "یک تقویم تولید کنید و"
 
@@ -623,6 +599,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"هوش مصنوعی (برنامه نویسی ژنتیکی) به دنبال تقویم هایی است که سفر در آن ها "
+"کوتاه و یکنواخت است. تیم های خودتان را می خواهید؟ <a href=\"%(guia)s\">از "
+"راهنمای ۵ مرحله</a> ای استفاده کنید."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -657,10 +636,6 @@ msgstr "چند ثانیه طول می کشد."
 #: tesis/templates/tesis/dashboard.html
 msgid "Calendario: %(torneo)s"
 msgstr "برنامه: %(torneo)s"
-
-#: tesis/templates/tesis/dashboard.html
-msgid "Configuración %(id)s"
-msgstr "%(id)s پیکربندی"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
@@ -738,14 +713,6 @@ msgstr "آن را روی کامپیوتر خود اجرا کنید"
 #: tesis/templates/tesis/dashboard.html
 msgid "Pídele ayuda a tu asistente de IA"
 msgstr "از دستیار هوش مصنوعی خود کمک بخواهید"
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"Copia esta pregunta y pégala en el asistente que uses, junto con el archivo "
-"programa_genetico/programagenetico.py."
-msgstr ""
-"این سؤال را کپی کنید و همراه با فایل programa_genetico/programagenetico.py "
-"در جادوگری که استفاده می کنید بچسبانید."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -971,30 +938,8 @@ msgid "Programación genética para calendarios de béisbol"
 msgstr "برنامه نویسی ژنتیکی برای تقویم های بیسبال"
 
 #: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP: la tesis de Leslie Dickinson (ITAM) sobre programación genética "
-"para calendarios de béisbol, con su resultado honesto y el motor mejorado."
-msgstr ""
-"Koza-TTP: پایان نامه لزلی دیکینسون (ITAM) درباره برنامه نویسی ژنتیکی برای "
-"تقویم های بیسبال، با نتیجه صادقانه و موتور بهبود یافته."
-
-#: tesis/templates/tesis/inicio.html
 msgid "Tesis ITAM · Programación genética · Béisbol"
 msgstr "پایان نامه ITAM · برنامه ریزی ژنتیکی · بیسبال"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Mi tesis dijo la verdad:"
-msgstr "پایان نامه من حقیقت را گفت:"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP retoma esa tesis para hacer calendarios de temporadas de béisbol "
-"con programación genética. Aquí verás qué falló, por qué, y cómo lo estoy "
-"corrigiendo en público."
-msgstr ""
-"Koza-TTP این پایان نامه را برای ساخت تقویم های فصل بیسبال با برنامه ریزی "
-"ژنتیکی به کار می گیرد. در اینجا خواهید دید چه اشتباهی رخ داده، چرا و چگونه "
-"آن را در ملأ عام اصلاح می کنم."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Ingeniería en Computación, ITAM"
@@ -1011,12 +956,6 @@ msgstr "۲ دقیقه"
 #: tesis/templates/tesis/inicio.html
 msgid "Entender la idea"
 msgstr "درک ایده"
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Qué es la programación genética y por qué un calendario de béisbol es un "
-"problema difícil."
-msgstr "برنامه ریزی ژنتیکی چیست و چرا تقویم بیسبال مسئله ای دشوار است."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Empezar aquí"
@@ -1097,37 +1036,39 @@ msgstr "اتوماتیک، شامل مایا و اوتومی. می تونی در
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Frente a la búsqueda aleatoria"
-msgstr ""
+msgstr "در مقابل جستجوی تصادفی"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "¿Es mejor que elegir al azar?"
-msgstr ""
+msgstr "آیا بهتر از انتخاب تصادفی است؟"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "En pruebas"
-msgstr ""
+msgstr "در آزمون"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s، در %(corridas)s دور با %(equipos)s تیم"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
-msgstr ""
+msgstr "بله، در آزمون های مقدماتی"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "La demo todavía usa la versión de la tesis. El motor mejorado se comparó con"
 " una búsqueda aleatoria que revisa el mismo número de calendarios."
 msgstr ""
+"دمو هنوز از نسخه پایان نامه استفاده می کند. موتور بهبود یافته با جستجوی "
+"تصادفی که تعداد تقویم ها را بررسی می کند مقایسه شد."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "8 de noviembre de 2026"
-msgstr ""
+msgstr "۸ نوامبر ۲۰۲۶"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Motor por bloques"
-msgstr ""
+msgstr "موتور بلوکی"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1136,12 +1077,16 @@ msgid ""
 "siempre. La programación genética elige y ordena los bloques para reducir el"
 " viaje."
 msgstr ""
+"هر بخش از برنامه (بخش، لیگ و بین لیگ ها) از بلوک هایی تشکیل شده که همه در آن"
+" ها مقابل هم بازی می کنند. بنابراین، قوانین MLB همیشه رعایت می شوند. برنامه "
+"ریزی ژنتیکی بلوک ها را انتخاب و ترتیب می دهد تا سفر کاهش یابد."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"نتیجه مقدماتی: %(resultado)s، در %(corridas)s امتیاز با %(equipos)s تیم."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1150,182 +1095,1844 @@ msgid ""
 "calendarios, y los pesos de la aptitud hacen que los hijos pierdan contra "
 "los padres de la generación inicial."
 msgstr ""
+"بررسی کد برای تأیید اینکه چرا PG بهتر از انتخاب تصادفی تقویم ها نبود. کراس "
+"اور و جهش پذیری تقویم ها را از بین می برد و وزن تناسب اندام باعث می شود "
+"کودکان به والدین نسل اولیه ببازند."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Modo claro"
-msgstr ""
+msgstr "حالت پاک سازی"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Motor: %(motor_demo)s"
-msgstr ""
+msgstr "موتور: %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
 "mejor que elegir calendarios al azar."
 msgstr ""
+"<strong>توجه:</strong> این دمو از موتور پایان نامه استفاده می کند. آن موتور "
+"بهتر از انتخاب تصادفی تقویم ها نبود."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
 "%(corridas)s corridas. Todavía no está en esta demo."
 msgstr ""
+"موتور بهبود یافته در آزمایش های اولیه بهتر بود: %(resultado)s، در "
+"%(corridas)s دوره. هنوز در این دمو نیست."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
 msgstr ""
+"برای یک پروژه مدرسه، این یک امتیاز است: شما یک مبنا و بهبودی دارید که می "
+"توانید اندازه گیری کنید."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Ver los resultados de cada versión"
-msgstr ""
-
-#: tesis/templates/tesis/inicio.html
-msgid "el algoritmo no fue mejor que elegir calendarios al azar."
-msgstr ""
+msgstr "نتایج هر انتشار را مشاهده کنید"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr ""
+msgstr "در تست ها: %(resultado)s، در %(corridas)s با تیم های %(equipos)s ."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
-msgstr ""
+msgstr "نسخه پایان نامه (۲۰۲۶)"
 
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
-msgstr ""
+msgstr "۱۹.۵٪ مسافت بیشتر نسبت به انتخاب تقویم های تصادفی"
 
 #: project/estado_motor.py
 msgid "Motor por bloques (versión mejorada)"
-msgstr ""
+msgstr "موتور بلوکی (نسخه ارتقا یافته)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
-msgstr ""
+msgstr "۱۳٪ سفر کمتر نسبت به انتخاب تقویم های تصادفی"
 
 #: tesis/guia.py
 msgid "Abreviatura (por ejemplo, SEA)"
-msgstr ""
+msgstr "اختصار (مثلا SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "نام تیم"
 
 #: tesis/guia.py
 msgid "Ciudad"
-msgstr ""
+msgstr "شهر"
 
 #: tesis/guia.py
 msgid "Latitud del estadio"
-msgstr ""
+msgstr "عرض جغرافیایی استادیوم"
 
 #: tesis/guia.py
 msgid "Longitud del estadio"
-msgstr ""
+msgstr "طول ورزشگاه"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: 47.59"
-msgstr ""
+msgstr "بر حسب درجات اعشاری. مثال: 47.59"
 
 #: tesis/guia.py
 msgid "En grados decimales. Ejemplo: -122.33"
-msgstr ""
+msgstr "بر حسب درجات اعشاری. مثال: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "تیم های لیگ"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
-msgstr ""
+msgstr "نام لیگ"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "حداقل دو تیم را انتخاب کنید."
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
-msgstr ""
+msgstr "نام تورنمنت"
 
 #: tesis/guia.py
 msgid "Primer día"
-msgstr ""
+msgstr "روز اول"
 
 #: tesis/guia.py
 msgid "Último día"
-msgstr ""
+msgstr "آخرین روز"
 
 #: tesis/guia.py
 msgid "Juegos por serie"
-msgstr ""
+msgstr "بازی ها بر اساس سری"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "سری تیمی"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
-msgstr ""
+msgstr "روز آخر باید مثل روز اول یا بعد از آن باشد."
 
 #: tesis/guia.py
 msgid "Debe ser 1 o más."
-msgstr ""
+msgstr "باید یکی یا بیشتر باشد."
 
 #: tesis/guia.py
 msgid "Nombre de la configuración"
-msgstr ""
+msgstr "نام پیکربندی"
 
 #: tesis/guia.py
 msgid "Tamaño de la población"
-msgstr ""
+msgstr "اندازه جمعیت"
 
 #: tesis/guia.py
 msgid "Número de generaciones"
-msgstr ""
+msgstr "تعداد نسل ها"
 
 #: tesis/guia.py
 msgid "Probabilidad de cruce (0 a 1)"
-msgstr ""
+msgstr "احتمال عبور (۰ به ۱)"
 
 #: tesis/guia.py
 msgid "Probabilidad de mutación (0 a 1)"
-msgstr ""
+msgstr "احتمال جهش (۰ به ۱)"
 
 #: tesis/guia.py
 msgid "Debe estar entre 0 y 1."
-msgstr ""
+msgstr "باید بین ۰ تا ۱ باشد."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "تجهیزات"
 
 #: tesis/guia.py
 msgid "Liga"
-msgstr ""
+msgstr "لیگ"
 
 #: tesis/guia.py
 msgid "Torneo"
-msgstr ""
+msgstr "تورنمنت"
 
 #: tesis/guia.py
 msgid "Configuración"
-msgstr ""
+msgstr "محیط ها"
 
 #: tesis/guia.py
 msgid "Calendario"
-msgstr ""
+msgstr "تقویم"
 
 #: tesis/guia.py
 msgid "Primero completa este paso."
-msgstr ""
+msgstr "اول این مرحله را کامل کنید."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "تجهیزات اضافه."
 
 #: tesis/guia.py
 msgid "Juegos generados."
+msgstr "بازی های تولید شده."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "14 de noviembre de 2026"
+msgstr "۱۴ نوامبر ۲۰۲۶"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Algoritmo por turnos: le gana al calendario oficial de MLB 2023"
+msgstr "الگوریتم نوبتی: برنامه رسمی MLB 2023 را شکست می دهد"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Quitamos la regla de que los 30 equipos jueguen series de 3 días al mismo "
+"tiempo. Con series de 2, 3 y 4 juegos y descansos, el mejor algoritmo viaja "
+"1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
+"cumplen las mismas reglas de realismo."
 msgstr ""
+"ما قانونی را حذف کردیم که همه ۳۰ تیم همزمان سری سه روزه بازی کنند. با سری "
+"های ۲، ۳ و ۴ بازی و وقفه، بهترین الگوریتم ۱.۵۷ میلیون کیلومتر را طی می کند. "
+"تقویم رسمی ۱.۷۴ میلیون کیلومتر سفر می کند. هر دو قوانین واقع گرایی یکسانی "
+"دارند."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la investigación actual, con diagramas animados"
+msgstr "مشاهده تحقیقات جاری با نمودارهای متحرک"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "12 de noviembre de 2026"
+msgstr "۱۲ نوامبر ۲۰۲۶"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "La demo muestra la temporada 2023 real"
+msgstr "دمو فصل واقعی ۲۰۲۳ را نشان می دهد"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Puedes ver el calendario real de las Grandes Ligas de 2023 sin esperar a que"
+" corra el motor."
+msgstr ""
+"شما می توانید برنامه واقعی لیگ برتر بیسبال ۲۰۲۳ را بدون انتظار برای روشن شدن"
+" موتور ببینید."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Ver la temporada 2023"
+msgstr "فصل ۲۰۲۳ را ببینید"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "9 de noviembre de 2026"
+msgstr "۹ نوامبر ۲۰۲۶"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Historia paso a paso"
+msgstr "داستان گام به گام"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Una explicación con el mapa de los 30 estadios, los árboles y la evolución, "
+"paso por paso."
+msgstr "توضیحی با نقشه ۳۰ مرحله، درختان و تکامل، گام به گام."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Leer la historia"
+msgstr "داستان را بخوانید"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Segunda auditoría de la experiencia"
+msgstr "دومین بررسی تجربه"
+
+#: documentacion/templates/documentacion/avances.html
+msgid ""
+"Se repitió la revisión de accesibilidad, usabilidad e interacción humano-IA."
+" De los 28 puntos de la primera, 13 quedaron resueltos. La mayoría de los "
+"puntos nuevos ya se corrigieron."
+msgstr ""
+"بازنگری دسترسی پذیری، قابلیت استفاده و تعامل انسان و هوش مصنوعی تکرار شد. از"
+" ۲۸ نکته در مورد اول، ۱۳ مورد حل و فصل شدند. بیشتر نکات جدید قبلا اصلاح شده "
+"اند."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Se hizo con el motor por series y después con el motor por bloques."
+msgstr "او موتور را به صورت سری و سپس با بلوک های موتور گرفت."
+
+#: documentacion/templates/documentacion/avances.html
+msgid "5 de noviembre de 2026"
+msgstr "۵ نوامبر ۲۰۲۶"
+
+#: documentacion/templates/documentacion/avances.html
+msgid "Abrir la guía de 5 pasos"
+msgstr "راهنمای ۵ مرحله ای را باز کنید"
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Programación genética para hacer calendarios de béisbol. La tesis de Leslie "
+"Dickinson (ITAM), con resultados honestos."
+msgstr ""
+"برنامه ریزی ژنتیکی برای ساخت تقویم های بیسبال. پایان نامه لزلی دیکینسون "
+"(ITAM)، با نتایج صادقانه."
+
+#: documentacion/templates/documentacion/base.html
+msgid ""
+"Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
+"árbol de programación genética."
+msgstr ""
+"Koza-TTP: نقشه استادیوم های بیسبال با مسیر تیم و درخت برنامه نویسی ژنتیکی."
+
+#: documentacion/templates/documentacion/base.html
+msgid "Ir al sitio principal"
+msgstr "به سایت اصلی بروید"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Menú"
+msgstr "منو"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Cómo funciona"
+msgstr "نحوه کار آن"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Leslie Dickinson"
+msgstr "لزلی دیکینسون"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Sitio principal"
+msgstr "سایت اصلی"
+
+#: documentacion/templates/documentacion/base.html
+msgid "Contacto"
+msgstr "تماس"
+
+#: documentacion/templates/documentacion/historico.html
+msgid "Mi tesis dijo la verdad"
+msgstr "پایان نامه ام حقیقت را گفت"
+
+#: documentacion/templates/documentacion/historico.html
+msgid ""
+"El piloto de la tesis no fue mejor que elegir calendarios al azar: "
+"%(resultado)s. Reportarlo así, sin esconderlo, fue la decisión correcta. Ese"
+" resultado mostró qué había que corregir para hacer el motor mejorado."
+msgstr ""
+"پایلوت پایان نامه بهتر از انتخاب تصادفی تقویم ها نبود: %(resultado)s. گزارش "
+"دادن به این شکل، بدون پنهان کردن، تصمیم درستی بود. آن نتیجه نشان داد چه "
+"چیزهایی باید اصلاح شود تا موتور بهبود یابد."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual"
+msgstr "پژوهش های جاری"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Todo lo que probamos para ganarle al calendario oficial de MLB 2023, con "
+"diagramas animados."
+msgstr ""
+"همه تلاش هایی که کردیم تا برنامه رسمی MLB 2023 را با نمودارهای متحرک پشت سر "
+"بگذاریم."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Investigación actual: ganarle al calendario oficial"
+msgstr "تحقیقات فعلی: پیشی گرفتن از تقویم رسمی"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Meta: un calendario de la temporada 2023 de las Grandes Ligas que viaje "
+"menos que el oficial y que cumpla las mismas reglas. El oficial viaja 1.74 "
+"millones de km."
+msgstr ""
+"هدف: برنامه ای برای فصل ۲۰۲۳ لیگ برتر بیسبال که کمتر از فصل رسمی سفر می کند "
+"و با همان قوانین مطابقت دارد. برنامه رسمی مسافت ۱.۷۴ میلیون کیلومتر را طی می"
+" کند."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Actualizado el 14 de noviembre de 2026 (tarde). Estos algoritmos están en "
+"pruebas: el sitio y la demo todavía no los usan."
+msgstr ""
+"به روزرسانی شده در ۱۴ نوامبر ۲۰۲۶ (بعدازظهر). این الگوریتم ها در حال آزمایش "
+"هستند: سایت و دمو هنوز از آن ها استفاده نمی کنند."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1. Resultados de todas las pruebas"
+msgstr "۱. نتایج همه آزمون ها"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Cada barra es el viaje total de los 30 equipos en una temporada, en millones"
+" de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
+" de su casa, va de estadio en estadio y regresa al final."
+msgstr ""
+"هر میله مجموع مسیر ۳۰ تیم در یک فصل، به میلیون ها کیلومتر است. کمتر بهتر "
+"است. تمام اعداد به یک شکل اندازه گیری شدند: هر تیم خانه خود را ترک می کند، "
+"از استادیومی به ورزشگاه دیگر می رود و در پایان بازمی گردد."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total por versión del algoritmo"
+msgstr "کل سفر بر اساس نسخه الگوریتم"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmos de Koza-TTP"
+msgstr "الگوریتم های Koza-TTP"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial 2023"
+msgstr "تقویم رسمی ۲۰۲۳"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Los dos algoritmos por turnos con recocido le ganan al oficial por cerca de "
+"9 %%. La tabla de abajo tiene los mismos datos."
+msgstr ""
+"دو الگوریتم آنیل نوبتی حدود ۹٪ از افسر پیشی گرفتند. جدول زیر داده های مشابهی"
+" دارد."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Todas las pruebas, de la más antigua a la más reciente"
+msgstr "تمام آزمایش ها، از قدیمی ترین تا جدیدترین"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Viaje total"
+msgstr "سفر کامل"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "¿Cumple las reglas?"
+msgstr "آیا طبق قوانین بازی می کند؟"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Qué aprendimos"
+msgstr "آنچه آموختیم"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, sin reglas de realismo"
+msgstr "الگوریتم بلوکی، بدون قوانین واقع گرایی"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.85 millones de km"
+msgstr "۱.۸۵ میلیون کیلومتر"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No: giras de hasta 36 juegos seguidos"
+msgstr "نه: تورهایی تا ۳۶ بازی متوالی"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Parecía cerca del oficial, pero hacía trampa."
+msgstr "او به نظر می رسید به افسر نزدیک است، اما تقلب می کرد."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Algoritmo por bloques, con reglas"
+msgstr "الگوریتم بلوک، با قواعد"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.19 millones de km"
+msgstr "۲.۱۹ میلیون کیلومتر"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "No logra cumplirlas"
+msgstr "موفق به ملاقات با آن ها نمی شود"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Los bloques fijos no dejan ordenar bien las giras."
+msgstr "بلوک های ثابت اجازه نمی دهند تورها را به خوبی سازماندهی کنید."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Bloques mezclados, con reglas"
+msgstr "بلوک های مختلط، با خط کش"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2.00 millones de km"
+msgstr "۲.۰۰ میلیون کیلومتر"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí"
+msgstr "بله"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
+msgstr "بهتر است، اما هر ۳۰ تیم هنوز همزمان بازی می کنند."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
+msgstr "شیفت هایی با مجموعه های ۲، ۳ و ۴ مجموعه + آنیل سازی شبیه سازی شده"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.52 a 1.60 millones de km"
+msgstr "۱.۵۲ تا ۱.۶۰ میلیون کیلومتر"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3 de 4 corridas (una duró un día de más)"
+msgstr "۳ از ۴ امتیاز (یکی یک روز اضافه دوام آورد)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Quitar la regla de \"todos al mismo tiempo\" es lo que le gana al oficial."
+msgstr "حذف قانون «همه با هم» چیزی است که افسر را پیروز می کند."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana como MLB + PG que solo acepta mejoras"
+msgstr "شیفت ها + هفته به عنوان MLB + PG که فقط ارتقا قبول می کند"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.70 millones de km (promedio)"
+msgstr "۱.۷۰ میلیون کیلومتر (میانگین)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 4 de 4"
+msgstr "بله، ۴ از ۴"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Le gana al oficial por poco, pero casi empata con movimientos al azar."
+msgstr ""
+"او به سختی افسر را شکست می دهد، اما تقریبا با حرکات تصادفی بازی را مساوی می "
+"کند."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Movimientos al azar, mismo esfuerzo que la PG"
+msgstr "حرکات تصادفی، همان تلاش PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Línea base justa para medir a la PG."
+msgstr "پایه منصفانه ای برای اندازه گیری PG است."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + recocido hecho a mano"
+msgstr "شیفت ها + هفته + آنیلینگ دست ساز"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.567 millones de km (promedio de 8 calendarios)"
+msgstr "۱.۵۶۷ میلیون کیلومتر (میانگین ۸ تقویم)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Aceptar cambios peores al principio ayuda mucho."
+msgstr "پذیرفتن تغییرات بدتر در ابتدا خیلی کمک می کند."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Turnos + semana + PG que aprende la temperatura"
+msgstr "شیفت ها + هفته + دمای یادگیری PG"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.571 millones de km (promedio de 8 calendarios)"
+msgstr "۱.۵۷۱ میلیون کیلومتر (میانگین ۸ تقویم)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG diseña su propia regla y casi empata con la hecha a mano (0.3 %% más)."
+msgstr ""
+"PG خط کش خودش را طراحی می کند و تقریبا با خط کش دست ساز برابری می کند (۰.۳٪ "
+"بیشتر)."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "La misma PG, con más variedad y más práctica"
+msgstr "همان PG، با تنوع بیشتر و تمرین بیشتر"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.583 millones de km (promedio de 8 calendarios)"
+msgstr "۱.۵۸۳ میلیون کیلومتر (میانگین ۸ تقویم)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Sí, 8 de 8"
+msgstr "بله، ۸ از ۸"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Practicar con corridas cortas no enseña la mejor regla para corridas largas."
+msgstr ""
+"تمرین با دویدن های کوتاه بهترین قانون برای دویدن های طولانی را آموزش نمی "
+"دهد."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Calendario oficial MLB 2023"
+msgstr "برنامه رسمی MLB 2023"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "1.74 millones de km"
+msgstr "۱.۷۴ میلیون کیلومتر"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La meta. Además cumple reglas que no modelamos, como fechas de estadios y "
+"televisión."
+msgstr ""
+"هدف. همچنین با قوانینی که ما مدل سازی نمی کنیم، مثل قرارهای استادیوم و "
+"تلویزیون، مطابقت دارد."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Reglas de realismo: máximo 12 juegos seguidos en casa o de visita, no "
+"repetir rival en series seguidas, máximo 20 días seguidos con juego y una "
+"temporada de 186 días. Del calendario oficial solo guardamos las cifras "
+"calculadas, por los términos de uso de MLB."
+msgstr ""
+"قوانین واقع گرایی: حداکثر ۱۲ بازی متوالی در خانه یا خارج از خانه، بدون حریف "
+"تکراری در سری های متوالی، حداکثر ۲۰ روز متوالی بازی و فصلی ۱۸۶ روزه. از "
+"تقویم رسمی فقط ارقام محاسبه شده را طبق شرایط استفاده MLB نگه می داریم."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "2. El cambio grande: turnos con series de 2, 3 y 4 juegos"
+msgstr "۲. تغییر بزرگ: نوبت هایی با ست های ۲، ۳ و ۴ بازی"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Antes, los 30 equipos jugaban series de 3 días al mismo tiempo, sin "
+"descansos. Ahora la temporada se divide en turnos de entre semana (4 días) y"
+" de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
+" 3 o 4 juegos, o descansa."
+msgstr ""
+"قبلا هر ۳۰ تیم سری سه روزه را همزمان و بدون وقفه بازی می کردند. اکنون فصل به"
+" شیفت های روزهای هفته (۴ روز) و آخر هفته (۳ روز) تقسیم می شود، درست مانند "
+"MLB. هر تیم یک سری ۲، ۳ یا ۴ بازی یا استراحت انجام می دهد."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Modelo anterior contra modelo por turnos"
+msgstr "مدل قبلی در مقابل مدل نوبتی"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Pausar"
+msgstr "توقف"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie (el número dice cuántos juegos)"
+msgstr "سری ها (عدد نشان می دهد چند بازی)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Descanso"
+msgstr "وقفه"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Seis equipos en ocho turnos. En el modelo anterior todos juegan 3 días en "
+"cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
+"descansos, así las giras se pueden armar con más libertad."
+msgstr ""
+"شش تیم در هشت شیفت. در مدل قبلی همه در هر شیفت ۳ روز بازی می کردند. در مدل "
+"شیفت، سری ۲، ۳ یا ۴ روز طول می کشد و وقفه هایی وجود دارد تا تورها با آزادی "
+"بیشتری برگزار شوند."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "3. El movimiento principal: la cadena de Kempe"
+msgstr "۳. حرکت اصلی: زنجیره کمپ"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para cambiar el calendario sin que un equipo juegue dos series a la vez, se "
+"toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
+"las series de la cadena cambian de turno al mismo tiempo. El calendario "
+"sigue siendo válido."
+msgstr ""
+"برای تغییر برنامه زمانی بدون اینکه تیمی دو سری را همزمان بازی کند، دو نوبت و"
+" زنجیره ای از سری ها به صورت متناوب انجام می شود. تمام سری های زنجیره همزمان"
+" تغییر می کنند. برنامه همچنان معتبر است."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Cadena de Kempe entre el turno A y el turno B"
+msgstr "زنجیره کمپ بین پیچ A و پیچ B"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno A (línea continua)"
+msgstr "سری در شیفت A (خط جامد)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Serie en el turno B (línea punteada)"
+msgstr "سریال در پیچ B (خط نقطه چین)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
+" series cambian de turno. Las demás series no se mueven."
+msgstr ""
+"هشت تیم. شبکه از NYA شروع می شود و از BOS، TOR و BAL عبور می کند. چهار سری "
+"آن تغییر می کنند. سری های دیگر جابجا نمی شوند."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "4. ¿Por qué el recocido le ganó a la PG?"
+msgstr "۴. چرا آنیلینگ PG را شکست داد؟"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La primera PG usaba los mismos movimientos que el recocido, pero quedó en "
+"1.70 millones de km y el recocido en 1.58. Hay tres razones."
+msgstr ""
+"اولین PG از همان حرکات آنیلینگ استفاده می کرد، اما ۱.۷۰ میلیون کیلومتر و "
+"آنیلینگ ۱.۵۸ کیلومتر بود. سه دلیل وجود دارد."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Solo aceptaba mejoras.</strong> Así se atora en el primer \"valle\" "
+"que encuentra. El recocido acepta empeorar un poco al principio, y eso le "
+"deja cruzar la \"colina\" y llegar a un valle más profundo."
+msgstr ""
+"<strong>او فقط بهبودها را پذیرفت.</strong> بنابراین در اولین «دره» که پیدا "
+"می کند گیر می کند. آنیلینگ موافقت می کند که ابتدا کمی بدتر شود و این به او "
+"اجازه می دهد از «تپه» عبور کند و به دره ای عمیق تر برسد."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Gastaba esfuerzo.</strong> En cada generación prueba 16 recetas y "
+"solo conserva el calendario de la mejor. El recocido conserva cada paso que "
+"da."
+msgstr ""
+"<strong>او تلاش کرد.</strong> در هر نسل ۱۶ دستور پخت را امتحان می کند و فقط "
+"تقویم بهترین ها را نگه می دارد. آنیلینگ هر قدمی که برمی دارد را حفظ می کند."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
+"apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
+"recorren todo el calendario."
+msgstr ""
+"<strong>همان جاها را تکرار می کرد.</strong> اعداد ثابت در درخت همیشه به همان"
+" نوبت ها و تیم ها اشاره می کنند. حرکات تصادفی در سراسر تقویم اجرا می شوند."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo mejoras contra aceptar cambios peores"
+msgstr "تنها بهبودها در برابر پذیرش تغییرات بدتر"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Solo acepta mejoras (círculo)"
+msgstr "فقط ارتقاءها را قبول می کند (دایره)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Recocido: acepta cambios peores (rombo)"
+msgstr "آنیلینگ: پذیرش تغییرات بدتر (لوزی لوزی ها)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La línea es el costo del calendario: más abajo es mejor. El círculo baja al "
+"primer valle y se queda ahí. El rombo sube la colina, porque acepta empeorar"
+" un poco, y llega al valle más profundo."
+msgstr ""
+"خط هزینه تقویم است: پایین تر بهتر است. دایره به دره اول پایین می رود و همان "
+"جا می ماند. لوزی به بالای تپه می رود، چون موافقت می کند کمی بدتر شود و به "
+"عمیق ترین دره می رسد."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "5. La PG que aprende cuándo aceptar cambios peores"
+msgstr "۵. PG که یاد می گیرد چه زمانی تغییرات بدتر را بپذیرد"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Para corregir la razón 1, la PG ahora diseña la regla del recocido. Un árbol"
+" decide cuántos km de empeoramiento se aceptan en cada paso. Mira dos datos:"
+" qué tan avanzada va la corrida y cuántos cambios se aceptaron hace poco."
+msgstr ""
+"برای اصلاح دلیل اول، PG اکنون قانون آنیلینگ را طراحی می کند. یک درخت تعیین "
+"می کند که در هر مرحله چند کیلومتر بدتر شدن پذیرفته شود. به دو داده نگاه "
+"کنید: چقدر در مسیر است و چند تغییر اخیرا پذیرفته شده است."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG practicó con corridas cortas en 2 calendarios. Después probamos el "
+"árbol ganador en 4 calendarios que nunca vio. Este es el árbol ganador:"
+msgstr ""
+"PG با دویدن های کوتاه روی ۲ تقویم تمرین کرد. سپس درخت برنده را روی ۴ تقویم "
+"که هرگز ندیده بود امتحان کردیم. این درخت برنده است:"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"En palabras: la tolerancia es pequeña, de unos 60 a 1 200 km, y sube cuando "
+"casi no se aceptan cambios. La regla hecha a mano hace lo contrario: empieza"
+" en 20 000 km y baja poco a poco hasta 50."
+msgstr ""
+"خلاصه اینکه: تلرانس کم است، حدود ۶۰ تا ۱۲۰۰ کیلومتر، و وقتی تغییرات تقریبا "
+"پذیرفته نمی شوند افزایش می یابد. خط کش دست ساز برعکس عمل می کند: از ۲۰۰۰۰ "
+"کیلومتر شروع می شود و به تدریج به ۵۰ کاهش می یابد."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Tolerancia en km a lo largo de la corrida (escala logarítmica)"
+msgstr "تحمل بر حسب کیلومتر در طول مسیر (مقیاس لگاریتمی)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Regla hecha a mano"
+msgstr "خط کش دست ساز"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan pocos cambios (5 %%)"
+msgstr "PG، اگر تغییرات کمی پذیرفته شود (۵٪)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "PG, si se aceptan muchos cambios (50 %%)"
+msgstr "PG، اگر تغییرات زیادی پذیرفته شود (۵۰٪)"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La regla hecha a mano baja de 20 000 a 50 km. La de la PG se queda entre 60 "
+"y 1 200 km y depende de cuántos cambios se aceptan. Las dos llegan a "
+"calendarios de unos 1.57 millones de km."
+msgstr ""
+"قانون دست ساز از ۲۰,۰۰۰ به ۵۰ کیلومتر کاهش می یابد. قانون PG بین ۶۰ تا ۱,۲۰۰"
+" کیلومتر باقی می ماند و بستگی به تعداد تغییرات پذیرفته شده دارد. هر دو به "
+"تقویم حدود ۱.۵۷ میلیون کیلومتر می رسند."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "6. Qué sigue"
+msgstr "۶. قدم بعدی چیست"
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"La PG casi empata con el recocido, pero todavía no le gana. En 8 calendarios"
+" nuevos, la regla hecha a mano viaja 1.567 millones de km y la de la PG "
+"1.571."
+msgstr ""
+"PG تقریبا با آنیلینگ مساوی شد، اما هنوز هم آن را شکست نداد. در ۸ تقویم جدید،"
+" خط کش دست ساز ۱.۵۶۷ میلیون کیلومتر و خط کش PG ۱.۵۷۱ میلیون کیلومتر سفر می "
+"کند."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"Probamos darle más variedad (sin recetas repetidas) y más práctica (3 "
+"calendarios, 32 recetas, 16 generaciones). Quedó peor: 1.583 millones de km."
+" La PG practica con corridas cortas de 40 000 pasos, pero la prueba usa 400 "
+"000. Una regla buena para correr poco no es la mejor para correr mucho."
+msgstr ""
+"سعی کردیم تنوع بیشتری (بدون دستورهای تکراری) و تمرین بیشتری (۳ تقویم، ۳۲ "
+"دستور پخت، ۱۶ نسل) بدهیم. بدتر بود: ۱.۵۸۳ میلیون کیلومتر. PG با دویدن کوتاه "
+"۴۰,۰۰۰ قدم تمرین می کند، اما آزمون ۴۰۰,۰۰۰ قدم استفاده می کند. یک قانون خوب "
+"برای دویدن کم بهترین گزینه برای دویدن زیاد نیست."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid ""
+"El siguiente paso es que la PG practique con corridas más parecidas a la "
+"prueba y que empiece desde la regla hecha a mano, para que solo pueda "
+"mejorarla."
+msgstr ""
+"مرحله بعدی این است که PG با ردیف هایی تمرین کند که بیشتر شبیه تست هستند و از"
+" خط کش دست ساز شروع کند تا فقط بتواند آن را بهبود دهد."
+
+#: documentacion/templates/documentacion/investigacion.html
+msgid "Ver el código de estas pruebas en GitHub"
+msgstr "کد این تست ها را در گیت هاب مشاهده کنید"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo de la tesis"
+msgstr "الگوریتم پایان نامه"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Algoritmo original de la tesis (2026)"
+msgstr "الگوریتم اصلی پایان نامه (۲۰۲۶)"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la temporada 2023 real, sin esperar"
+msgstr "فصل واقعی ۲۰۲۳ را بدون انتظار تماشا کنید"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Haz clic en el árbol para verlo en grande."
+msgstr "برای دیدن بزرگ تر درخت، روی آن کلیک کنید."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
+"las hojas son los juegos (fecha, equipo local y equipo visitante)."
+msgstr ""
+"درخت برنامه ای است که بهترین تقویم را تهیه می کند. هر شاخه به بازی ها می "
+"پیوندد؛ برگ ها بازی ها هستند (تاریخ، تیم میزبان و تیم میهمان)."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Viaje total de todos los equipos:"
+msgstr "مجموع سفر همه تیم ها:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Juegos que rompen reglas:"
+msgstr "بازی هایی که قوانین را می شکنند:"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
+"<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
+"es válido."
+msgstr ""
+"یکی از قوانین این است که هر تیم تعداد بازی هایی را که تورنمنت نیاز دارد "
+"انجام می دهد. <strong>۰ بازی که قوانین را نقض</strong> کند به این معنی است "
+"که برنامه بازی معتبر است."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Puede tardar de unos segundos a varios minutos. Depende del número de "
+"equipos."
+msgstr ""
+"ممکن است چند ثانیه تا چند دقیقه طول بکشد. بستگی به تعداد کامپیوترها دارد."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "El motor está trabajando."
+msgstr "موتور داره کار می کنه."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Crea calendarios, los combina y se queda con los mejores. No cierres esta "
+"página."
+msgstr ""
+"او تقویم می سازد، آن ها را ترکیب می کند و بهترین ها را نگه می دارد. این صفحه"
+" را نبندید."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Parámetros guardados"
+msgstr "پارامترهای ذخیره شده"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Configuración «%(nombre)s»"
+msgstr "پیکربندی «%(nombre)s»"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Importante:</strong> el motor de la tesis guarda estos valores, pero"
+" no los usa. Siempre corre con población 100, 20 generaciones, cruce 0.8 y "
+"mutación 0.2."
+msgstr ""
+"<strong>مهم:</strong> موتور پایان نامه این مقادیر را ذخیره می کند، اما از آن"
+" ها استفاده نمی کند. همیشه با جمعیتی ۱۰۰ نفر، ۲۰ نسل، ۰.۸ کراس اور و ۰.۲ جهش"
+" اجرا می شود."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Comandos para correrlo"
+msgstr "دستورات اجرای آن"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"Copia esta pregunta y pégala en el asistente que uses. Adjunta el archivo "
+"programa_genetico/programagenetico.py (motor de la tesis) o "
+"programa_genetico/motor_bloques.py (motor mejorado)."
+msgstr ""
+"این سوال را کپی کنید و در جادوگری که استفاده می کنید پیست کنید. فایل "
+"programa_genetico/programagenetico.py (موتور پایان نامه) یا "
+"programa_genetico/motor_bloques.py (موتور بهبود یافته) را ضمیمه کنید."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Árbol del mejor calendario"
+msgstr "بهترین درخت تقویم"
+
+#: tesis/templates/tesis/demo/_campo.html
+msgid "De %(a)s a %(b)s."
+msgstr "از %(a)s تا %(b)s."
+
+#: tesis/templates/tesis/demo/_pasos.html
+msgid "Pasos de la demo"
+msgstr "مراحل دمو"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: configuración"
+msgstr "دمو: راه اندازی"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: configuración"
+msgstr "مرحله ۲: راه اندازی"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
+msgstr ""
+"همه مقادیر قبلا انتخاب شده اند. می توانید آن ها را تغییر دهید یا بدهید \\"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Cambiar equipos"
+msgstr "تعویض تجهیزات"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El torneo"
+msgstr "تورنمنت"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "El algoritmo"
+msgstr "الگوریتم"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Siguiente: ver el calendario"
+msgstr "بعدی: تقویم را مشاهده کنید"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige los equipos"
+msgstr "دمو: انتخاب تیم ها"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
+"en 3 pasos."
+msgstr "دمو Koza-TTP: یک تقویم بیسبال با جدیدترین الگوریتم در ۳ مرحله بسازید."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige los equipos"
+msgstr "مرحله ۱: تجهیزات را انتخاب کنید"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para los equipos que elijas y busca el que "
+"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
+"da \"Siguiente\" sin cambiar nada."
+msgstr ""
+"الگوریتم برای تیم هایی که انتخاب می کنید برنامه ریزی می کند و به دنبال تیمی "
+"با کمترین سفر می گردد. ما قبلا ۱۰ تیم لیگ برتر را علامت گذاری کرده ایم. اگر "
+"خواستید، روی «بعدی» کلیک کنید بدون اینکه چیزی تغییر کند."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: configuración"
+msgstr "بعدی: مقدمه"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Prefieres ver una temporada real completa?"
+msgstr "ترجیح می دهید یک فصل کامل رویال را تماشا کنید؟"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
+msgstr "فصل ۲۰۲۳ را تماشا کنید: ۳۰ تیم در برابر تقویم رسمی"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "¿Quieres registrar tus propios equipos y estadios?"
+msgstr "می خواهید تیم ها و استادیوم های خود را ثبت کنید؟"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Hazlo tú mismo en la guía de 5 pasos"
+msgstr "خودتان در راهنمای پنج مرحله ای انجام دهید"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Demo: el calendario"
+msgstr "دمو: تقویم"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Paso 3: el calendario"
+msgstr "مرحله ۳: تقویم"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Algoritmo más nuevo: modelo por turnos"
+msgstr "الگوریتم جدیدتر: مدل نوبتی"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
+msgstr "<strong>%(nombre)s</strong>: %(n)s تیم."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Qué logró el algoritmo"
+msgstr "آنچه الگوریتم به دست آورد"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje total de todos los equipos con el calendario del algoritmo."
+msgstr "مجموع سفر همه تیم ها با برنامه زمانی الگوریتم."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Viaje con un calendario hecho al azar, antes de optimizar."
+msgstr "قبل از بهینه سازی، با یک تقویم تصادفی سفر کنید."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Menos viaje que el calendario al azar."
+msgstr "سفر کمتر از تقویم تصادفی."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cumple todas las reglas"
+msgstr "تمام قوانین را رعایت کنید"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario al azar rompía %(a)s."
+msgstr "تقویم به طور تصادفی خراب %(a)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué reglas revisa?"
+msgstr "چه قوانینی را مرور می کنید؟"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Máximo 12 juegos seguidos en casa o de visita. Aquí: %(n)s en casa y %(m)s "
+"de visita."
+msgstr ""
+"حداکثر ۱۲ بازی خانگی یا خارج از خانه متوالی. اینجا: %(n)s در خانه و %(m)s "
+"خارج از خانه."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Máximo 20 días seguidos con juego. Aquí: %(n)s."
+msgstr "حداکثر ۲۰ روز متوالی با بازی. اینجا: %(n)s."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "No jugar contra el mismo rival en dos series seguidas."
+msgstr "بازی نکردن مقابل یک حریف در دو سری متوالی."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
+msgstr "بازی های خانگی حدود نیمی. اینجا: %(a)s به %(b)s برای هر تیم."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cómo bajó el viaje"
+msgstr "سفر چگونه پیش رفت"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El viaje total bajó de %(a)s km a %(b)s km en %(p)s pasos de búsqueda."
+msgstr ""
+"مجموع سفر %(p)sدر مراحل جستجو از %(a)s کیلومتر به %(b)s کیلومتر کاهش یافت."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los primeros %(n)s de %(t)s juegos"
+msgstr "اولین %(n)s از بازی های %(t)s"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "En casa"
+msgstr "در خانه"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Visita"
+msgstr "بازدید"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos"
+msgstr "همه بازی ها را ببینید"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Todos los juegos"
+msgstr "تمام بازی ها"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "¿Qué sigue?"
+msgstr "بعدش چی؟"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar la configuración y volver a correr"
+msgstr "تنظیمات را تغییر دهید و دوباره اجرا کنید"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Elegir otros equipos"
+msgstr "انتخاب تجهیزات دیگر"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
+msgstr "کل فصل ۲۰۲۳ را تماشا کنید: ۳۰ تیم مقابل تقویم رسمی"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Entender cómo funciona en 2 minutos"
+msgstr "در دو دقیقه بفهمید چگونه کار می کند"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
+msgstr "خودتان انجام دهید: تجهیزات خود را در راهنمای ۵ مرحله ای ثبت کنید"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver el algoritmo original de la tesis"
+msgstr "به الگوریتم اصلی پایان نامه مراجعه کنید"
+
+#: tesis/templates/tesis/historia.html
+msgid "Entender la idea en 2 minutos"
+msgstr "ایده را در دو دقیقه درک کنید"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Historia animada de Koza-TTP: el mapa de los viajes del béisbol, los árboles"
+" de la programación genética y el camino del piloto de la tesis al motor "
+"mejorado."
+msgstr ""
+"داستان انیمیشنی Koza-TTP: نقشه سفرهای بیسبال، درختان برنامه نویسی ژنتیکی و "
+"مسیر پایلوت از پایان نامه تا موتور بهبود یافته."
+
+#: tesis/templates/tesis/historia.html
+msgid "2 minutos · 7 pasos"
+msgstr "۲ دقیقه · ۷ مرحله"
+
+#: tesis/templates/tesis/historia.html
+msgid "Pasos de la historia"
+msgstr "مراحل تاریخی"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadios"
+msgstr "ورزشگاه ها"
+
+#: tesis/templates/tesis/historia.html
+msgid "Viajes"
+msgstr "سفر"
+
+#: tesis/templates/tesis/historia.html
+msgid "Árbol"
+msgstr "درخت"
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce"
+msgstr "کراس اور"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación"
+msgstr "جهش"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generaciones"
+msgstr "نسل ها"
+
+#: tesis/templates/tesis/historia.html
+msgid "Resultado"
+msgstr "نتیجه"
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 1 · El problema"
+msgstr "بخش ۱ · مسئله"
+
+#: tesis/templates/tesis/historia.html
+msgid "30 equipos tienen que jugar entre sí"
+msgstr "۳۰ تیم باید با هم بازی کنند"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
+"partidos en una temporada."
+msgstr ""
+"لیگ برتر بیسبال دارای ۳۰ تیم است. هر تیم در یک فصل ۱۶۲ بازی انجام می دهد."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Un calendario dice quién juega contra quién, en qué fecha y en qué estadio."
+msgstr ""
+"یک تقویم نشان می دهد چه کسی مقابل چه کسی بازی می کند، در چه تاریخی و در کدام"
+" ورزشگاه."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca un estadio del mapa para ver su nombre."
+msgstr "برای دیدن نام یک استادیوم روی نقشه، آن را لمس کنید."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cada viaje cuesta tiempo y dinero"
+msgstr "هر سفر هزینه زمان و هزینه دارد"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
+"cruzar el país muchas veces."
+msgstr ""
+"وقتی یک تیم در خارج از خانه بازی می کند، با هواپیما سفر می کند. برنامه بد "
+"باعث می شود بارها از کشور عبور کنند."
+
+#: tesis/templates/tesis/historia.html
+msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
+msgstr "یک نمونه سفر تور، با تاریخ ها به ترتیب تصادفی."
+
+#: tesis/templates/tesis/historia.html
+msgid "Toca otro estadio para ver la gira de ese equipo."
+msgstr "برای تماشای تور آن تیم، به ورزشگاه دیگری ضربه بزنید."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 2 · La idea de la tesis"
+msgstr "بخش ۲ · ایده پایان نامه"
+
+#: tesis/templates/tesis/historia.html
+msgid "Un calendario se puede escribir como un árbol"
+msgstr "تقویم را می توان به صورت درخت نوشت"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La programación genética no escribe el calendario a mano. Escribe "
+"<strong>instrucciones</strong> para mejorarlo."
+msgstr ""
+"برنامه نویسی ژنتیکی تقویم را با دست نمی نویسد. بلکه دستورالعمل هایی برای "
+"بهبود آن <strong>می نویسد</strong> ."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Esas instrucciones forman un árbol. Las <strong>hojas</strong> son series de"
+" juegos, por ejemplo \"SEA–NYA\". Las <strong>ramas</strong> son acciones, "
+"por ejemplo \"intercambiar\" dos series de fecha o \"invertir localía\" "
+"(cambiar quién juega en casa)."
+msgstr ""
+"این دستورالعمل ها یک درخت را تشکیل می دهند. <strong>برگ</strong> ها مجموعه "
+"ای از بازی ها هستند، مانند «SEA–NYA». <strong>شاخه</strong> ها اقداماتی "
+"هستند، مانند «تعویض» سری دو تاریخ یا «معکوس کردن محل» (تغییر بازیکن در "
+"خانه)."
+
+#: tesis/templates/tesis/historia.html
+msgid "Cruce: dos árboles se mezclan"
+msgstr "عبور: دو درخت با هم ترکیب می شوند"
+
+#: tesis/templates/tesis/historia.html
+msgid "Se toman dos árboles que funcionan bien. Cada uno da una rama."
+msgstr "دو درخت که خوب کار می کنند گرفته می شوند. هر کدام یک شاخه می دهند."
+
+#: tesis/templates/tesis/historia.html
+msgid "El árbol nuevo, el \\"
+msgstr "درخت جدید، \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "Mutación: un cambio pequeño al azar"
+msgstr "جهش: یک تغییر کوچک و تصادفی"
+
+#: tesis/templates/tesis/historia.html
+msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
+msgstr "گاهی یک بخش از درخت خود به خود تغییر می کند. اینجا، سری \\"
+
+#: tesis/templates/tesis/historia.html
+msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
+msgstr "جهش برای آزمایش ایده های جدیدی است که هیچ والدینی نداشت."
+
+#: tesis/templates/tesis/historia.html
+msgid "Parte 3 · El resultado"
+msgstr "بخش ۳ · نتیجه"
+
+#: tesis/templates/tesis/historia.html
+msgid "Generación tras generación"
+msgstr "نسل به نسل"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"Cada generación tiene muchos árboles. Los que producen calendarios con menos"
+" viaje tienen más hijos."
+msgstr ""
+"هر نسل درختان زیادی دارد. کسانی که تقویم هایی با سفر کمتر تولید می کنند، "
+"فرزندان بیشتری دارند."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"La línea punteada es la meta mínima: el mejor calendario que se encuentra "
+"<strong>eligiendo al azar</strong> con el mismo esfuerzo."
+msgstr ""
+"خط نقطه چین حداقل هدف است: بهترین تقویمی که <strong>به طور تصادفی</strong> و"
+" با همان تلاش انتخاب می شود."
+
+#: tesis/templates/tesis/historia.html
+msgid "Elige un motor para ver cómo le fue."
+msgstr "یک موتور انتخاب کنید تا ببینید چطور عمل کرده است."
+
+#: tesis/templates/tesis/historia.html
+msgid "Del piloto a un motor que funciona"
+msgstr "از خلبان تا یک موتور عملیاتی"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
+"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"موتور بهبود یافته، با بلوک ها، به طور تصادفی آن را شکست می دهد: "
+"%(resultado)s، در تست های مقدماتی (%(corridas)s دویدن، %(equipos)s تیم)."
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
+"calendarios al azar: %(resultado)s."
+msgstr ""
+"قسمت آزمایشی پایان نامه (۲۰۲۶) <strong>بهتر</strong> از انتخاب تصادفی تقویم "
+"ها نبود: %(resultado)s."
+
+#: tesis/templates/tesis/historia.html
+msgid "Probar la herramienta en 5 pasos"
+msgstr "ابزار را در ۵ مرحله آزمایش کنید"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver los 30 estadios como tabla"
+msgstr "مشاهده تمام ۳۰ ورزشگاه به صورت میز"
+
+#: tesis/templates/tesis/historia.html
+msgid "Datos del archivo teams.csv del proyecto."
+msgstr "داده هایی از فایل پروژه teams.csv."
+
+#: tesis/templates/tesis/historia.html
+msgid "Código"
+msgstr "کد"
+
+#: tesis/templates/tesis/historia.html
+msgid "Equipo"
+msgstr "تیم"
+
+#: tesis/templates/tesis/historia.html
+msgid "Estadio"
+msgstr "ورزشگاه"
+
+#: tesis/templates/tesis/historia.html
+msgid "Lugar"
+msgstr "موقعیت"
+
+#: tesis/templates/tesis/historia.html
+msgid "Anterior"
+msgstr "گذشته"
+
+#: tesis/templates/tesis/historia.html
+msgid "Siguiente"
+msgstr "بعدی"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP: programación genética para calendarios de béisbol. Empezó como "
+"tesis de Leslie Dickinson (ITAM) y hoy tiene un motor que supera al azar."
+msgstr ""
+"Koza-TTP: برنامه نویسی ژنتیکی برای تقویم های بیسبال. این برنامه به عنوان "
+"پایان نامه ای از لزلی دیکینسون (ITAM) آغاز شد و امروزه موتوری دارد که بر "
+"شانس غلبه می کند."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Un mejor calendario de la MLB con programación genética."
+msgstr "برنامه بهتر MLB با برنامه ریزی ژنتیکی."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
+"preliminares. Aquí te muestro cómo funciona."
+msgstr ""
+"Koza-TTP به عنوان پایان نامه من در ITAM متولد شد. آن پایلوت اول به طور "
+"تصادفی قبول نشد. نسخه بلوکی: %(resultado)s، در آزمون های مقدماتی قبول می "
+"شود. اینجا به شما نشان می دهم چگونه کار می کند."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Una historia animada: el mapa de los viajes, los árboles de la programación "
+"genética y el resultado."
+msgstr "یک داستان انیمیشنی: نقشه سفرها، درختان برنامه ریزی ژنتیکی و نتیجه."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el motor contra el calendario real"
+msgstr "فصل ۲۰۲۳: موتور در برابر تقویم واقعی"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del motor de programación genética con los 30 "
+"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
+"con el azar."
+msgstr ""
+"تکرار چرخه موتور برنامه ریزی ژنتیکی با تمام ۳۰ تیم لیگ برتر بیسبال در سال "
+"۲۰۲۳، در مقایسه با برنامه رسمی و شانس."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023"
+msgstr "فصل ۲۰۲۳"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Demo con datos reales · Grandes Ligas 2023"
+msgstr "دمو با داده های واقعی · لیگ برتر بیسبال ۲۰۲۳"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
+"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
+"armar una temporada con menos viaje."
+msgstr ""
+"ما از ۳۰ تیم لیگ برتر بیسبال و ورزشگاه های واقعی آن ها استفاده می کنیم. "
+"برنامه رسمی ۲۰۲۳ مرجع است. موتور مبتنی بر بلوک تلاش می کند فصلی با سفر کمتر "
+"داشته باشد."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros, generación por generación"
+msgstr "چگونه کیلومترها نسل به نسل پایین می روند"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
+"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
+msgstr ""
+"این یک دوره واقعی از موتور است که برای تماشای آن بدون انتظار ذخیره شده است. "
+"%(generaciones)s نسل ۱۰۰ تقویم دارد."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Reproducir"
+msgstr "بازی"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Generación"
+msgstr "تولید"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Tabla que se desliza de lado"
+msgstr "تخته کشویی جانبی"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de los 30 equipos en toda la temporada regular."
+msgstr "سفر ۳۰ تیم در طول فصل عادی."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Gira más larga (juegos seguidos de visita)"
+msgstr "طولانی ترین تور (بازی های خارج از خانه متوالی)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Más juegos seguidos en casa"
+msgstr "بازی های خانگی بیشتر پشت سر هم"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial de las Grandes Ligas"
+msgstr "مسئول لیگ برتر بیسبال"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "millones de km"
+msgstr "میلیون کیلومتر"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Mejor al azar, con el mismo esfuerzo"
+msgstr "بهتر به صورت تصادفی و با همان تلاش"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "No cumple el número de juegos de cada equipo."
+msgstr "تعداد بازی های هر تیم را پوشش نمی دهد."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
+"azar. El motor sí aprende."
+msgstr ""
+"موتور <strong>%(pct)s٪ کمتر از بهترین برنامه تصادفی حرکت می کند</strong>. "
+"موتور یاد می گیرد."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
+"Todavía no le ganamos."
+msgstr ""
+"تقویم رسمی <strong>%(pct)s٪ کمتر از موتور حرکت می کند</strong>. ما هنوز او "
+"را شکست نداده ایم."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
+"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
+"real no aceptaría giras tan largas."
+msgstr ""
+"توجه: تقویم موتور تورهایی تا <strong>%(gira)s بازی خارج از خانه پشت "
+"سر</strong> هم دارد. تقویم رسمی حداکثر تعداد %(oficial)sرا دارد. یک تیم "
+"واقعی چنین تورهای طولانی را قبول نمی کند."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Viaje de cada equipo"
+msgstr "سفر هر تیم"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
+msgstr "بین این دو برنامه جابجا شوید تا ببینید کدام تیم ها بیشتر سفر می کنند."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario del mapa"
+msgstr "تقویم نقشه"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial"
+msgstr "رسمی"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor"
+msgstr "موتور"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Ver los 30 equipos como tabla"
+msgstr "مشاهده همه ۳۰ تیم به صورت یک جدول"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Oficial (km)"
+msgstr "رسمی (کیلومتر)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Motor (km)"
+msgstr "موتور (کیلومتر)"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "De dónde salen los datos"
+msgstr "داده ها از کجا می آیند"
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Calendario oficial: temporada regular 2023 de las Grandes Ligas (MLB Stats "
+"API). Aquí solo guardamos las cifras calculadas, no el calendario."
+msgstr ""
+"برنامه رسمی: فصل عادی لیگ برتر بیسبال ۲۰۲۳ (API آمار MLB). ما فقط اعداد "
+"محاسبه شده را اینجا نگه می داریم، نه برنامه را."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
+"equipo sale de su casa, viaja de estadio en estadio y regresa al final."
+msgstr ""
+"فاصله ها: خط مستقیم بین ورزشگاه ها (فرمول نیم جهانی). هر تیم خانه خود را ترک"
+" می کند، از استادیومی به ورزشگاه دیگر سفر می کند و در پایان بازمی گردد."
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
+"calendarios evaluados en total. El azar evaluó la misma cantidad."
+msgstr ""
+"موتور بلوک: ۱۰۰ تقویم در هر نسل، %(evaluaciones)s تقویم در مجموع ارزیابی "
+"شده. شانس به همان مقدار ارزیابی شده است."
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Haz tu propio torneo"
+msgstr "تورنمنت خودت را بساز"
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el motor"
+msgstr "نحوه کار موتور"
+
+#: documentacion/investigacion.py
+msgid "Bloques, con reglas"
+msgstr "بلوک ها، با قوانین"
+
+#: documentacion/investigacion.py
+msgid "Turnos + movimientos al azar"
+msgstr "نوبت ها + حرکات تصادفی"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG (solo mejoras)"
+msgstr "نوبت ها + PG (فقط ارتقاءها)"
+
+#: documentacion/investigacion.py
+msgid "Turnos + PG que aprende la temperatura"
+msgstr "شیفت ها + دمای یادگیری PG"
+
+#: documentacion/investigacion.py
+msgid "Turnos + recocido a mano"
+msgstr "شیفت ها + آنیل دستی"
+
+#: documentacion/investigacion.py
+msgid "Antes: todos juegan 3 días en cada turno"
+msgstr "قدیمی: همه هر نوبت ۳ روز بازی می کنند"
+
+#: documentacion/investigacion.py
+msgid "Ahora: series de 2, 3 y 4 juegos, con descansos"
+msgstr "حالا: سری بازی های ۲، ۳ و ۴، با وقفه ها"
+
+#: documentacion/investigacion.py
+msgid "Turno"
+msgstr "Turn"
+
+#: documentacion/investigacion.py
+msgid "entre semana"
+msgstr "روزهای هفته"
+
+#: documentacion/investigacion.py
+msgid "fin de semana"
+msgstr "آخر هفته"
+
+#: documentacion/investigacion.py
+msgid "Turno A"
+msgstr "پیچ A"
+
+#: documentacion/investigacion.py
+msgid "Turno B"
+msgstr "پیچ B"
+
+#: documentacion/investigacion.py
+msgid "1. Elegimos un equipo y dos turnos"
+msgstr "۱. یک تیم و دو شیفت انتخاب می کنیم"
+
+#: documentacion/investigacion.py
+msgid "2. Seguimos la cadena: A, B, A, B…"
+msgstr "۲. زنجیره را دنبال می کنیم: A، B، A، B..."
+
+#: documentacion/investigacion.py
+msgid "3. Las series de la cadena cambian de turno"
+msgstr "۳. تعویض کلیدهای سری زنجیره ای"
+
+#: documentacion/investigacion.py
+msgid "Costo del calendario"
+msgstr "هزینه تقویم"
+
+#: documentacion/investigacion.py
+msgid "mejor"
+msgstr "بهترین ها"
+
+#: documentacion/investigacion.py
+msgid "primer valle"
+msgstr "دره اول"
+
+#: documentacion/investigacion.py
+msgid "valle más profundo"
+msgstr "دره عمیق تر"
+
+#: documentacion/investigacion.py
+msgid "Avance de la corrida"
+msgstr "پیشرفت گاوبازی"
+
+#: documentacion/investigacion.py
+msgid "inicio"
+msgstr "خانه"
+
+#: documentacion/investigacion.py
+msgid "fin"
+msgstr "پایان"
+
+#: documentacion/investigacion.py
+msgid "a mano"
+msgstr "با دست"
+
+#: documentacion/investigacion.py
+msgid "PG, 5 %"
+msgstr "PG، ۵٪"
+
+#: documentacion/investigacion.py
+msgid "PG, 50 %"
+msgstr "PG، ۵۰٪"
+
+#: tesis/demo.py
+msgid "Mi torneo de prueba"
+msgstr "تورنمنت تست من"
+
+#: tesis/demo.py
+msgid "Opcional. Si lo dejas así, se usa este nombre."
+msgstr "اختیاری. اگر همین را رها کنید، این نام استفاده می شود."
+
+#: tesis/demo.py
+msgid "Equipos del torneo"
+msgstr "تیم های تورنمنت"
+
+#: tesis/demo.py
+msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
+msgstr ""
+"ما قبلا ۱۰ امتیاز گرفتیم. می توانید آن ها را تغییر دهید: از ۳ به ۱۰ تیم."
+
+#: tesis/demo.py
+msgid "Elige al menos %(n)d equipos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Elige como máximo %(n)d equipos."
+msgstr ""
+
+#: tesis/historia.py
+msgid "Mapa de los 30 estadios de las Grandes Ligas"
+msgstr "نقشه ۳۰ ورزشگاه لیگ برتر"
+
+#: tesis/historia.py
+msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
+msgstr "تور {تیم} مثال: ۱۲ بازدید به ترتیب تصادفی."
+
+#: tesis/historia.py
+msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
+msgstr ""
+"شما {تیم} را انتخاب کردید. مرحله ۲ را دنبال کنید تا سفرهایشان را ببینید."
+
+#: tesis/historia.py
+msgid "km"
+msgstr "کیلومتر"
+
+#: tesis/historia.py
+msgid "combinar"
+msgstr "کامباین"
+
+#: tesis/historia.py
+msgid "intercambiar"
+msgstr "بورس"
+
+#: tesis/historia.py
+msgid "invertir localía"
+msgstr "اینوست لوکالیتی"
+
+#: tesis/historia.py
+msgid "casa"
+msgstr "خانه"
+
+#: tesis/historia.py
+msgid "visita"
+msgstr "بازدید"
+
+#: tesis/historia.py
+msgid "Padre A"
+msgstr "والد الف"
+
+#: tesis/historia.py
+msgid "Padre B"
+msgstr "والد B"
+
+#: tesis/historia.py
+msgid "Hijo"
+msgstr "پسر"
+
+#: tesis/historia.py
+msgid ""
+"Árbol de ejemplo: combinar, con dos ramas: intercambiar SEA–NYA con BOS–TEX,"
+" e invertir localía de LAN–CHN en casa."
+msgstr ""
+"درخت نمونه: ترکیب، با دو شاخه: تبادل SEA-NYA با BOS-TEX و سرمایه گذاری محلی "
+"LAN-CHN در خانه."
+
+#: tesis/historia.py
+msgid ""
+"Cruce: el padre A da su rama izquierda y el padre B da su rama izquierda; el"
+" hijo combina las dos."
+msgstr ""
+"تقاطع ها: پدر A شاخه چپ خود را می دهد و پدر B شاخه چپ خود را؛ پسر این دو را "
+"ترکیب می کند."
+
+#: tesis/historia.py
+msgid "Mutación: en el árbol, la hoja SEA–NYA cambia a SEA–OAK."
+msgstr "جهش: روی درخت، برگ SEA–NYA به SEA–OAK تغییر می کند."
+
+#: tesis/historia.py
+msgid "Ver otra vez"
+msgstr "دوباره تماشا کن"
+
+#: tesis/historia.py
+msgid "Viaje (azar = 100)"
+msgstr "سفر (تصادفی = ۱۰۰)"
+
+#: tesis/historia.py
+msgid "Azar"
+msgstr "شانس"
+
+#: tesis/historia.py
+msgid "Población (48 árboles)"
+msgstr "جمعیت (۴۸ درخت)"
+
+#: tesis/historia.py
+msgid "Más color = menos viaje"
+msgstr "رنگ بیشتر = سفر کمتر"
+
+#: tesis/historia.py
+msgid "Motor de la tesis"
+msgstr "موتور پایان نامه"
+
+#: tesis/historia.py
+msgid "{motor} · generación {g} de {total}"
+msgstr "{موتور} · {g} نسل {کل}"
+
+#: tesis/historia.py
+msgid "{motor} · terminó: {resultado}."
+msgstr "{موتور} · پایان: {نتیجه}."
+
+#: tesis/historia.py
+msgid ""
+"{motor}: empieza en {inicio} y termina en {fin} (azar = 100). Resultado: "
+"{resultado}."
+msgstr ""
+"{engine}: از {start} شروع می شود و در {end} پایان می یابد (شانس = 100). "
+"نتیجه: {نتیجه}."
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
+"motor por bloques {bloques}."
+msgstr ""
+"فاصله در مقابل شانس: موتور پایان نامه {thesis}، به طور تصادفی ۱۰۰ را انتخاب "
+"کنید، موتور بلوک {blocks}."
+
+#: tesis/historia.py
+msgid "Motor de la tesis (2026)"
+msgstr "موتور پایان نامه (۲۰۲۶)"
+
+#: tesis/historia.py
+msgid "Elegir calendarios al azar"
+msgstr "انتخاب تصادفی تقویم ها"
+
+#: tesis/historia.py
+msgid "Motor por bloques (preliminar)"
+msgstr "موتور بلوک (مقدماتی)"
+
+#: tesis/historia.py
+msgid "También puedes usar las flechas del teclado."
+msgstr "همچنین می توانید از کلیدهای جهت دار روی کیبورد خود استفاده کنید."
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada por generación del motor, comparados con el "
+"calendario oficial y con el azar"
+msgstr "کیلومترهای فصل بر اساس تولید موتور، در مقایسه با تقویم رسمی و شانس"
+
+#: tesis/repeticion.py
+msgid "Calendario oficial"
+msgstr "تقویم رسمی"
+
+#: tesis/repeticion.py
+msgid "Mejor al azar"
+msgstr "بهتر به صورت تصادفی"
+
+#: tesis/repeticion.py
+msgid "Generación {gen} de {total}: {km} km"
+msgstr "Generación {gen} de {total}: {km} km"
+
+#: tesis/repeticion.py
+msgid "Todavía no cumple el número de juegos de cada equipo."
+msgstr "این هنوز تعداد بازی های هر تیم را برآورده نمی کند."
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
+"0 a {ultima}."
+msgstr ""
+"محور عمودی: از {min} تا {max} میلیون کیلومتر. محور افقی: نسل های 0 تا {آخر}."
+
+#: tesis/repeticion.py
+msgid ""
+"Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
+"temporada"
+msgstr "نقشه: هر دایره یک تیم است؛ بزرگ تر یعنی مسافت بیشتر در فصل"
+
+#: tesis/repeticion.py
+msgid "{equipo}: {km} km"
+msgstr "{تیم}: {کیلومتر} کیلومتر"
