@@ -243,5 +243,5 @@ class NavegacionDelSitio(SimpleTestCase):
         for url, destino in casos.items():
             with self.subTest(url=url):
                 html = self.client.get(url, HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
-                self.assertIn(f'<a href="{destino}">', html)
+                self.assertIn(f'<a href="{destino}#proyectos">', html)
                 self.assertIn(f'href="{destino}#contact"', html)
