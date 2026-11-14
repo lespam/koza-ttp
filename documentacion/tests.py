@@ -196,8 +196,11 @@ class FraseLiteral(TestCase):
 
     def test_titulo_de_la_portada(self):
         html = self.client.get("/", HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
-        self.assertIn("el motor mejorado logra 13\u00a0% menos viaje que elegir calendarios al azar.", html)
+        self.assertIn("Un mejor calendario de la MLB con programación genética.", html)
+        self.assertIn("13\u00a0% menos viaje que elegir calendarios al azar", html)
         self.assertNotIn("le ganó al azar", html)
+        ingles = self.client.get("/en/").content.decode()
+        self.assertIn("A better MLB schedule with genetic programming.", ingles)
 
 
 class TextosDePython(SimpleTestCase):

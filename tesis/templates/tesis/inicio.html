@@ -9,8 +9,8 @@
     <section class="portada-hero" aria-labelledby="titulo">
         <div class="portada-texto">
             <p class="antetitulo">{% translate "Tesis ITAM · Programación genética · Béisbol" %}</p>
-            <h1 id="titulo">{% translate "Calendarios de béisbol con programación genética:" %} <span class="clave">{% blocktranslate trimmed with resultado=motor.mejorado.frente_al_azar %}el motor mejorado logra {{ resultado }}.{% endblocktranslate %}</span></h1>
-            <p class="entrada">{% blocktranslate trimmed %}Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al azar. La versión por bloques sí lo supera en pruebas preliminares. Aquí te muestro cómo funciona.{% endblocktranslate %}</p>
+            <h1 id="titulo">{% translate "Un mejor calendario de la MLB con programación genética." %}</h1>
+            <p class="entrada">{% blocktranslate trimmed with resultado=motor.mejorado.frente_al_azar %}Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al azar. La versión por bloques sí lo supera: {{ resultado }}, en pruebas preliminares. Aquí te muestro cómo funciona.{% endblocktranslate %}</p>
             <p class="firma">Leslie Dickinson · {% translate "Ingeniería en Computación, ITAM" %}</p>
         </div>
         <figure class="portada-figura" aria-hidden="true">
