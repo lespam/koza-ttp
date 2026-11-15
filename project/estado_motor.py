@@ -24,6 +24,13 @@ MOTOR = {
         "distancia_vs_azar": 87,
         "fecha": "2026-11-08",
     },
+    # Algoritmo más nuevo: modelo por turnos + temperatura aprendida con PG.
+    # Fuente: static/data/temporada_2023.json (semilla 1, 400,000 pasos).
+    "turnos": {
+        "nombre": _("Algoritmo por turnos (el más nuevo)"),
+        "frente_al_oficial": _("11\u00a0% menos viaje que el calendario oficial de las Grandes Ligas 2023"),
+        "fecha": "2026-11-15",
+    },
     # Motor que corre el botón "Ejecutar optimización" de la demo
     "en_la_demo": "tesis",
 }

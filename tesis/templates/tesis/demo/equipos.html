@@ -1,15 +1,38 @@
 {% extends "tesis/demo/_base.html" %}
 {% load i18n %}
-{% block titulo %}{% translate "Demo: elige los equipos" %}{% endblock %}
+{% block titulo %}{% translate "Demo: elige un torneo" %}{% endblock %}
 {% block descripcion %}{% translate "Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo en 3 pasos." %}{% endblock %}
 {% block paso %}
-<h1>{% translate "Paso 1: elige los equipos" %}</h1>
-<p class="entrada">{% blocktranslate trimmed with maximo=maximo %}El algoritmo arma un calendario para los equipos que elijas y busca el que tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, da "Siguiente" sin cambiar nada.{% endblocktranslate %}</p>
+<h1>{% translate "Paso 1: elige un torneo" %}</h1>
+<p class="entrada">{% blocktranslate trimmed %}El algoritmo arma un calendario para el torneo y busca el que tenga menos viaje. Cada torneo ya trae sus equipos y reglas. Si quieres, da "Siguiente" sin cambiar nada.{% endblocktranslate %}</p>
 <form method="post" novalidate>
     {% csrf_token %}
-    <p class="acciones"><button type="submit" class="boton">{% translate "Siguiente: configuración" %} →</button></p>
-    {% include "tesis/guia/_formulario.html" %}
-    <p class="acciones"><button type="submit" class="boton">{% translate "Siguiente: configuración" %} →</button></p>
+    {% if form.errors %}<div class="error-resumen" role="alert"><p>{% translate "Revisa los campos marcados." %}</p></div>{% endif %}
+    <p class="acciones"><button type="submit" class="boton">{% translate "Siguiente: equipos y reglas" %} →</button></p>
+    <div class="campo{% if form.torneo.errors %} campo-con-error{% endif %}">
+        <fieldset aria-describedby="id_torneo-ayuda">
+            <legend>{{ form.torneo.label }}</legend>
+            <p class="ayuda" id="id_torneo-ayuda">{{ form.torneo.help_text }}</p>
+            {% if form.torneo.errors %}<p class="error">{{ form.torneo.errors|join:" " }}</p>{% endif %}
+            <div class="opciones opciones-torneo">
+            {% for opcion in form.torneo %}{% with t=torneos|slice:forloop.counter|last %}
+                <label class="opcion opcion-torneo">{{ opcion.tag }}
+                    <span><strong>{{ opcion.choice_label }}</strong>
+                    <span class="opcion-detalle">{{ t.descripcion }} {{ t.fuente }}</span></span>
+                </label>
+            {% endwith %}{% endfor %}
+            </div>
+        </fieldset>
+    </div>
+    {% with campo=form.nombre %}
+    <div class="campo{% if campo.errors %} campo-con-error{% endif %}">
+        <label for="{{ campo.id_for_label }}">{{ campo.label }}</label>
+        <p class="ayuda" id="{{ campo.auto_id }}-ayuda">{{ campo.help_text }}</p>
+        {% if campo.errors %}<p class="error" id="{{ campo.auto_id }}-error">{{ campo.errors|join:" " }}</p>{% endif %}
+        {{ campo }}
+    </div>
+    {% endwith %}
+    <p class="acciones"><button type="submit" class="boton">{% translate "Siguiente: equipos y reglas" %} →</button></p>
 </form>
 <p class="nota">{% translate "¿Prefieres ver una temporada real completa?" %} <a href="{% url 'tesis:repeticion' %}">{% translate "Ver la temporada 2023: 30 equipos contra el calendario oficial" %}</a>.</p>
 <p class="nota">{% translate "¿Quieres registrar tus propios equipos y estadios?" %} <a href="{% url 'tesis:guia' %}">{% translate "Hazlo tú mismo en la guía de 5 pasos" %}</a>.</p>

@@ -4,7 +4,7 @@
 {% block paso %}
 <h1>{% translate "Paso 3: el calendario" %}</h1>
 <p class="etiqueta-motor">{% translate "Algoritmo más nuevo: modelo por turnos" %} · {{ regla }}</p>
-<p class="entrada">{% blocktranslate trimmed with nombre=nombre n=equipos|length %}<strong>{{ nombre }}</strong>: {{ n }} equipos.{% endblocktranslate %} {{ equipos|join:", " }}.</p>
+<p class="entrada">{{ torneo.nombre }}. {% blocktranslate trimmed with nombre=nombre n=equipos|length %}<strong>{{ nombre }}</strong>: {{ n }} equipos.{% endblocktranslate %} {{ equipos|join:", " }}.</p>
 
 <section aria-labelledby="t-resumen">
     <h2 id="t-resumen">{% translate "Qué logró el algoritmo" %}</h2>
@@ -66,8 +66,8 @@
 <section aria-labelledby="t-sigue">
     <h2 id="t-sigue">{% translate "¿Qué sigue?" %}</h2>
     <ul class="acciones-lista">
-        <li><a href="{% url 'tesis:demo_configuracion' %}">{% translate "Cambiar la configuración y volver a correr" %}</a></li>
-        <li><a href="{% url 'tesis:dashboard' %}">{% translate "Elegir otros equipos" %}</a></li>
+        <li><a href="{% url 'tesis:demo_configuracion' %}">{% translate "Cambiar equipos o reglas y volver a correr" %}</a></li>
+        <li><a href="{% url 'tesis:dashboard' %}">{% translate "Elegir otro torneo" %}</a></li>
         <li><a href="{% url 'tesis:repeticion' %}">{% translate "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial" %}</a></li>
         <li><a href="{% url 'tesis:historia' %}">{% translate "Entender cómo funciona en 2 minutos" %}</a></li>
         <li><a href="{% url 'tesis:guia' %}">{% translate "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos" %}</a></li>
