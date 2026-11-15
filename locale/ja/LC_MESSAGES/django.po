@@ -556,8 +556,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI(遺伝子プログラミング)は、旅が短くて均等なカレンダーを探します。自分のチームが欲しいですか? <a "
-"href=\"%(guia)s\">5ステップガイド</a>を使いましょう。"
+"AI(遺伝子プログラミング)は、移動が短くて均一なスケジュールを探します。自分のチームが欲しいですか? <a "
+"href=\"%(guia)s\">5ステップガイド</a>を使ってください。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -790,7 +790,7 @@ msgstr "チームを追加"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "機器の追加"
+msgstr "チーム追加"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -798,7 +798,7 @@ msgstr "ステップ2:リーグへ進む"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "少なくとも2つのチームがフォローする必要があります。"
+msgstr "続けるには最低でも2チームが必要です。"
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -862,8 +862,7 @@ msgstr "ステップ3:トーナメント"
 msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
-msgstr ""
-"この大会は「%(liga)s」リーグのチームを対象としています。試合は月曜日から木曜日、そして土曜日の初日から最終日までの間に予定されています。"
+msgstr "この大会は「%(liga)s」リーグのチームを用います。試合は月曜日から木曜日、そして土曜日の初日から最終日までの間に予定されています。"
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -1014,7 +1013,7 @@ msgstr ""
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
-msgstr "予備結果:%(resultado)s、%(equipos)sチームでの%(corridas)s回のラン。"
+msgstr "初期結果:%(equipos)sチームで%(corridas)sランで%(resultado)s。"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1060,7 +1059,7 @@ msgstr "各リリースの結果を見る"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr "テストでは%(resultado)s、%(equipos)sチームでの%(corridas)sランで。"
+msgstr "テストでは、%(resultado)s%(corridas)s%(equipos)sチームでプレイしています。"
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1136,7 +1135,7 @@ msgstr "シリーズ別ゲーム"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "チームシリーズ"
+msgstr "チームごとのシリーズ"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1172,7 +1171,7 @@ msgstr "0から1の間にあるべきです。"
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "装備"
+msgstr "チーム"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1196,7 +1195,7 @@ msgstr "まずはこのステップをクリアしてください。"
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "装備も追加されました。"
+msgstr "チームが付け加えた。"
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1878,7 +1877,7 @@ msgstr "すべての値はすでに選ばれています。変更したり、\\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "装備変更"
+msgstr "チームを変える"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -1904,7 +1903,7 @@ msgstr "Koza-TTPデモ:最新のアルゴリズムで3ステップで野球カ�
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "ステップ1:機器の選択"
+msgstr "ステップ1:チームの選択"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2034,7 +2033,7 @@ msgstr "設定を変更して再度実行します"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "その他の機材選び"
+msgstr "他のチームを選んでください"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2047,7 +2046,7 @@ msgstr "2分で仕組みを理解する"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "自分でやる:5ステップガイドに機器を登録してください"
+msgstr "自分でやる:5ステップガイドにチーム登録"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2224,7 +2223,7 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"改良されたエンジンは、ブロック単位でランダムにそれを上回っています:予備テスト(%(corridas)s回、チーム%(equipos)s回)で%(resultado)s。"
+"改良されたブロックベースのエンジンは、予備テスト(%(corridas)sラン、%(equipos)sチーム)でランダム%(resultado)sを上回っています。"
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2276,10 +2275,6 @@ msgid ""
 msgstr ""
 "Koza-"
 "TTP:野球カレンダーのための遺伝子プログラミング。これはレスリー・ディキンソン(ITAM)による論文として始まり、現在では偶然を乗り越えるエンジンを持っています。"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "遺伝子プログラムによるより良いMLBスケジュール。"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2392,11 +2387,11 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"注:エンジンカレンダーには最大<strong>で%(gira)s</strong>試合連続のツアーがあります。公式カレンダーは最大で最長のツアー%(oficial)sです。実際のチームはこれほど長いツアーを受け入れません。"
+"注:エンジンカレンダーには最大<strong>%(gira)s</strong>連戦のツアーがあります。公式カレンダーには最大で最大のツアーが設けられています%(oficial)s。実際のチームはこれほど長いツアーを受け入れません。"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "各チームの歩み"
+msgstr "チーム別移動"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2569,19 +2564,19 @@ msgstr "任意です。それで終わるなら、この名前が使われます
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "トーナメントチーム"
+msgstr "トーナメント出場チーム"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "もう10チーム取ったよ。3チームから10チームに変えられる。"
+msgstr "すでに10チームを確認しました。変更できます:3チームから10チームに。"
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "少なくとも %(n)d チームを選んでください。"
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "最大でも %(n)d チームを選んでください。"
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2744,3 +2739,9 @@ msgstr "地図:各サークルはチームを表しています。大きいほ�
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{team}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr "<span class=\"clave\">遺伝子プログラムによる</span>より良いMLBスケジュール。"

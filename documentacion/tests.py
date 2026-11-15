@@ -210,11 +210,11 @@ class FraseLiteral(TestCase):
 
     def test_titulo_de_la_portada(self):
         html = self.client.get("/", HTTP_ACCEPT_LANGUAGE="es-MX").content.decode()
-        self.assertIn("Un mejor calendario de la MLB con programación genética.", html)
+        self.assertIn('Un mejor calendario de la MLB <span class="clave">con programación genética.</span>', html)
         self.assertIn("13\u00a0% menos viaje que elegir calendarios al azar", html)
         self.assertNotIn("le ganó al azar", html)
         ingles = self.client.get("/en/").content.decode()
-        self.assertIn("A better MLB schedule with genetic programming.", ingles)
+        self.assertIn('A better MLB schedule <span class="clave">with genetic programming.</span>', ingles)
 
 
 class TextosDePython(SimpleTestCase):

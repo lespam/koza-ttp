@@ -334,7 +334,8 @@ msgid ""
 "calendario es válido."
 msgstr ""
 "<strong>Kelayakan (C1):</strong> Setiap tim harus memainkan persis jumlah "
-"pertandingan yang diminta turnamen. Nilai 0 berarti jadwal tersebut valid."
+"pertandingan yang diwajibkan oleh turnamen. Nilai 0 berarti jadwal tersebut "
+"valid."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -606,9 +607,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI (pemrograman genetik) mencari kalender di mana perjalanan singkat dan "
-"merata. Ingin tim sendiri? Gunakan <a href=\"%(guia)s\">panduan 5 "
-"langkah</a>."
+"AI (pemrograman genetik) mencari jadwal di mana perjalanan singkat dan "
+"merata. Apakah Anda ingin tim sendiri? Gunakan <a href=\"%(guia)s\">panduan "
+"5 langkah</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -845,7 +846,7 @@ msgstr "Anda bisa menggunakan yang sudah ada atau menambahkan yang baru."
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "Lihat Tim Terdaftar Terbaru"
+msgstr "Lihat tim terdaftar terbaru"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
@@ -853,7 +854,7 @@ msgstr "Tambahkan tim"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Tambah Peralatan"
+msgstr "Tambah tim"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -861,7 +862,7 @@ msgstr "Lanjutkan ke Langkah 2: Liga"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Kamu butuh setidaknya 2 tim untuk mengikuti."
+msgstr "Kamu butuh setidaknya 2 tim untuk lanjut."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -1092,8 +1093,7 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Hasil awal: %(resultado)s, dalam %(corridas)s berlari bersama %(equipos)s "
-"tim."
+"Hasil awal: %(resultado)s, dalam %(corridas)s run bersama %(equipos)s tim."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1147,8 +1147,8 @@ msgstr "Lihat hasil setiap rilis"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"Dalam tes: %(resultado)s, dalam %(corridas)s berlari dengan tim %(equipos)s "
-"."
+"Dalam pengujian: %(resultado)s, dalam %(corridas)s berlari dengan tim "
+"%(equipos)s ."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1172,7 +1172,7 @@ msgstr "Singkatan (misalnya, SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr "Nama Tim"
+msgstr "Nama tim"
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1196,7 +1196,7 @@ msgstr "Dalam derajat desimal. Contoh: -122,33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "Tim Liga"
+msgstr "Tim liga"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1224,7 +1224,7 @@ msgstr "Permainan berdasarkan seri"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Seri Tim"
+msgstr "Seri per tim"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1260,7 +1260,7 @@ msgstr "Seharusnya antara 0 dan 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Perlengkapan"
+msgstr "Tim"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1284,7 +1284,7 @@ msgstr "Selesaikan langkah ini terlebih dahulu."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Peralatan tambahan."
+msgstr "Tim menambahkan."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2045,7 +2045,7 @@ msgstr "Semua nilai sudah dipilih. Anda dapat mengubahnya atau memberikan \\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Ganti peralatan"
+msgstr "Ganti tim"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2073,7 +2073,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Langkah 1: Pilih peralatan"
+msgstr "Langkah 1: Pilih tim"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2211,7 +2211,7 @@ msgstr "Ubah pengaturan dan jalankan lagi"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Memilih Peralatan Lain"
+msgstr "Pilih tim lain"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2224,7 +2224,7 @@ msgstr "Pahami cara kerjanya dalam 2 menit"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Lakukan sendiri: daftarkan peralatan Anda dalam panduan 5 langkah"
+msgstr "Lakukan sendiri: daftarkan tim Anda dalam panduan 5 langkah"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2421,8 +2421,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Mesin yang ditingkatkan, secara bertahap, memang mengalahkannya secara acak:"
-" %(resultado)s, dalam tes awal (%(corridas)s run, %(equipos)s tim)."
+"Mesin berbasis blok yang ditingkatkan memang mengalahkan random: "
+"%(resultado)s, dalam tes awal (%(corridas)s run, %(equipos)s tim)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2476,10 +2476,6 @@ msgstr ""
 "Koza-TTP: pemrograman genetik untuk kalender bisbol. Awalnya adalah tesis "
 "oleh Leslie Dickinson (ITAM) dan kini memiliki mesin yang mengalahkan "
 "kebetulan."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Jadwal MLB yang lebih baik dengan pemrograman genetik."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2608,11 +2604,11 @@ msgid ""
 msgstr ""
 "Catatan: kalender mesin memiliki tur hingga <strong>%(gira)s pertandingan "
 "tandang berturut-turut</strong>. Yang resmi memiliki %(oficial)smaksimum. "
-"Tim sungguhan tidak akan menerima tur yang panjang seperti itu."
+"Tim sungguhan tidak akan menerima tur yang begitu panjang."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Perjalanan setiap tim"
+msgstr "Bepergian berdasarkan tim"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2790,19 +2786,20 @@ msgstr "Opsional. Jika Anda berhenti di situ, nama ini digunakan."
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "Tim Turnamen"
+msgstr "Tim turnamen"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "Kita sudah mencetak 10. Anda bisa mengubahnya: dari 3 menjadi 10 tim."
+msgstr ""
+"Kami sudah memeriksa 10. Anda bisa mengubahnya: dari 3 menjadi 10 tim."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Pilih setidaknya %(n)d tim."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Pilih paling banyak %(n)d tim."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2979,3 +2976,11 @@ msgstr ""
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{tim}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""
+"Jadwal MLB yang lebih baik <span class=\"clave\">dengan pemrograman "
+"genetik.</span>"

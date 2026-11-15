@@ -308,8 +308,8 @@ msgid ""
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
 "<strong>표현:</strong> 각 달력은 트리입니다. 노드는 (날짜, 홈팀, 원정팀) 와 "
-"<code>obtener_calendario</code>같은 <code>crear_juego</code> 연산으로, 두 경기 리스트에 "
-"연결됩니다."
+"<code>obtener_calendario</code>같은 <code>crear_juego</code> 연산으로, 두 경기 목록을 "
+"연결합니다."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -565,8 +565,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI(유전자 프로그래밍)는 여행이 짧고 일정한 달력을 찾습니다. 자신만의 팀을 원하시나요? <a href=\"%(guia)s\">5단계 "
-"가이드</a>를 사용하세요."
+"AI(유전자 프로그래밍)는 이동이 짧고 일정한 일정을 찾습니다. 여러분은 자신만의 팀을 원하시나요? <a "
+"href=\"%(guia)s\">5단계 가이드</a>를 사용하세요."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -799,7 +799,7 @@ msgstr "팀 추가"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "장비 추가"
+msgstr "팀 추가"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -807,7 +807,7 @@ msgstr "2단계: 리그로 계속 진행"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "따라갈 팀이 최소 두 팀이어야 합니다."
+msgstr "계속하려면 최소 두 팀이 필요합니다."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -873,8 +873,8 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"이 토너먼트는 '%(liga)s' 리그 팀들을 사용합니다. 경기는 월요일부터 목요일, 그리고 토요일, 첫날부터 마지막 날까지 일정이 잡혀"
-" 있습니다."
+"이 대회는 '%(liga)s' 리그 팀들을 사용합니다. 경기는 월요일부터 목요일, 그리고 토요일, 첫날부터 마지막 날까지 일정이 "
+"열립니다."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -1026,7 +1026,7 @@ msgstr ""
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
-msgstr "예비 결과: %(equipos)s 팀과 %(corridas)s 경기 %(resultado)s."
+msgstr "초기 결과: %(equipos)s 팀과 %(corridas)s 번 연주에서 %(resultado)s승리."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1073,7 +1073,7 @@ msgstr "각 릴리스의 결과를 확인하세요"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr "테스트에서는 %(resultado)s, %(equipos)s 팀과 함께 %(corridas)s 런을 기록했습니다."
+msgstr "테스트에서는 %(resultado)s, %(equipos)s 팀과 함께 %(corridas)s 번 플레이했습니다."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1149,7 +1149,7 @@ msgstr "시리즈별 게임"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "팀 시리즈"
+msgstr "팀별 시리즈"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1185,7 +1185,7 @@ msgstr "0과 1 사이여야 합니다."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "장비"
+msgstr "팀"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1209,7 +1209,7 @@ msgstr "먼저 이 단계를 완료하세요."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "추가 장비."
+msgstr "팀이 덧붙였다."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1910,7 +1910,7 @@ msgstr "모든 값은 이미 선택된 상태입니다. 변경하거나 \\을 �
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "장비 변경"
+msgstr "팀 교체"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -1936,7 +1936,7 @@ msgstr "Koza-TTP 데모: 최신 알고리즘으로 3단계로 야구 달력을 �
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "1단계: 장비 선택"
+msgstr "1단계: 팀 선택"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2067,7 +2067,7 @@ msgstr "설정을 변경하고 다시 실행하세요"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "기타 장비 선택"
+msgstr "다른 팀을 선택하세요"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2080,7 +2080,7 @@ msgstr "2분 만에 작동 방식을 이해하세요"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "직접 하세요: 5단계 가이드에 장비를 등록하세요"
+msgstr "직접 하세요: 팀을 5단계 가이드에 등록하세요"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2257,8 +2257,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"개선된 엔진은 블록 단위로 무작위로 %(resultado)s예비 테스트(%(corridas)s 주행, %(equipos)s 팀)에서 "
-"이겼습니다."
+"개선된 블록 기반 엔진은 예비 테스트(%(corridas)s run, %(equipos)s 팀)에서 랜덤: %(resultado)s를 "
+"이깁니다."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2309,10 +2309,6 @@ msgid ""
 msgstr ""
 "Koza-TTP: 야구 달력을 위한 유전 프로그래밍. 이 프로젝트는 레슬리 디킨슨(ITAM)의 논문으로 시작되어 오늘날 우연을 극복하는 "
 "엔진을 갖추게 되었습니다."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "유전적 프로그래밍이 있는 더 나은 MLB 일정."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2428,12 +2424,12 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"참고: 엔진 캘린더에는 최대%(gira)s경기 연 <strong> 속 원정</strong> 투어가 포함되어 있습니다. 공식 일정은 최대 "
-"%(oficial)s을 기록합니다. 실제 팀은 이렇게 긴 투어를 받아들이지 않을 것입니다."
+"참고: 엔진 캘린더에는 <strong> 최대%(gira)s</strong>경기 원정 경기가 연속으로 포함되어 있습니다. 공식 일정은 최대"
+" %(oficial)s입니다. 실제 팀은 이렇게 긴 투어를 받아들이지 않을 것입니다."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "각 팀의 여정"
+msgstr "팀별 이동"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2610,15 +2606,15 @@ msgstr "토너먼트 참가 팀"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "우리는 이미 10팀을 기록했어요. 변경할 수 있어요: 3팀에서 10팀으로요."
+msgstr "이미 10팀을 확인했어요. 변경할 수 있어요: 3팀에서 10팀으로."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "최소 %(n)d 팀을 선택하세요."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "최대 %(n)d 팀을 선택하세요."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2781,3 +2777,9 @@ msgstr "지도: 각 원은 한 팀입니다; 더 클수록 시즌 내 더 많은
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{팀}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr "<span class=\"clave\">유전적 프로그래밍이 있는</span> 더 나은 MLB 일정."

@@ -326,7 +326,7 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
-"<strong>Αναπαράσταση: Κάθε</strong> ημερολόγιο είναι ένα δέντρο. Οι κόμβοι "
+"<strong>Αναπαράσταση:</strong> Κάθε ημερολόγιο είναι ένα δέντρο. Οι κόμβοι "
 "του είναι λειτουργίες όπως <code>crear_juego</code> (ημερομηνία, γηπεδούχος,"
 " φιλοξενούμενη ομάδα) και <code>obtener_calendario</code>, που ενώνει δύο "
 "λίστες παιχνιδιών."
@@ -338,7 +338,7 @@ msgid ""
 "calendario es válido."
 msgstr ""
 "<strong>Βιωσιμότητα (C1):</strong> Κάθε ομάδα πρέπει να παίξει ακριβώς τον "
-"αριθμό των παιχνιδιών που απαιτεί το τουρνουά. Η τιμή 0 σημαίνει ότι το "
+"αριθμό των αγώνων που απαιτεί το τουρνουά. Η τιμή 0 σημαίνει ότι το "
 "πρόγραμμα είναι έγκυρο."
 
 #: documentacion/templates/documentacion/historico.html
@@ -613,9 +613,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"Η τεχνητή νοημοσύνη (γενετικός προγραμματισμός) αναζητά ημερολόγια όπου το "
-"ταξίδι είναι σύντομο και ομοιόμορφο. Θέλετε τις δικές σας ομάδες; "
-"Χρησιμοποιήστε τον <a href=\"%(guia)s\">οδηγό 5 βημάτων</a>."
+"Το AI (γενετικός προγραμματισμός) αναζητά χρονοδιαγράμματα όπου τα ταξίδια "
+"είναι σύντομα και ομοιόμορφα. Θέλετε τις δικές σας ομάδες; Χρησιμοποιήστε "
+"τον <a href=\"%(guia)s\">οδηγό 5 βημάτων</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -859,7 +859,7 @@ msgstr "Μπορείτε να χρησιμοποιήσετε υπάρχοντα 
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "Δείτε τις πιο πρόσφατες εγγεγραμμένες ομάδες"
+msgstr "Δείτε τις τελευταίες εγγεγραμμένες ομάδες"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
@@ -867,7 +867,7 @@ msgstr "Προσθήκη ομάδας"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Προσθήκη εξοπλισμού"
+msgstr "Προσθήκη ομάδας"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -875,7 +875,7 @@ msgstr "Συνεχίστε στο Βήμα 2: League"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Χρειάζεστε τουλάχιστον 2 ομάδες για να ακολουθήσετε."
+msgstr "Χρειάζεστε τουλάχιστον 2 ομάδες για να συνεχίσετε."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -948,9 +948,9 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"Το τουρνουά χρησιμοποιεί τις ομάδες του πρωταθλήματος «%(liga)s». Οι αγώνες "
-"είναι προγραμματισμένοι από Δευτέρα έως Πέμπτη και τα Σάββατα, μεταξύ της "
-"πρώτης και της τελευταίας ημέρας."
+"Το τουρνουά χρησιμοποιεί τις ομάδες του πρωταθλήματος \"%(liga)s\". Οι "
+"αγώνες είναι προγραμματισμένοι από Δευτέρα έως Πέμπτη και τα Σάββατα, μεταξύ"
+" της πρώτης και της τελευταίας ημέρας."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -1112,8 +1112,8 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Προκαταρκτικό αποτέλεσμα: %(resultado)s, σε %(corridas)s τρεξίματα με "
-"%(equipos)s ομάδες."
+"Πρώιμο αποτέλεσμα: %(resultado)s, σε %(corridas)s τρεξίματα με %(equipos)s "
+"ομάδες."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1215,7 +1215,7 @@ msgstr "Σε δεκαδικές μοίρες. Παράδειγμα: -122,33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "Ομάδες Πρωταθλήματος"
+msgstr "Ομάδες πρωταθλήματος"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1243,7 +1243,7 @@ msgstr "Παιχνίδια ανά σειρά"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Ομαδικό Πρωτάθλημα"
+msgstr "Σειρά ανά ομάδα"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1279,7 +1279,7 @@ msgstr "Θα πρέπει να είναι μεταξύ 0 και 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Εξοπλισμός"
+msgstr "Ομάδες"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1303,7 +1303,7 @@ msgstr "Ολοκληρώστε πρώτα αυτό το βήμα."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Προστέθηκε εξοπλισμός."
+msgstr "πρόσθεσε η ομάδα."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2076,7 +2076,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Αλλαγή εξοπλισμού"
+msgstr "Αλλαγή ομάδων"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2104,7 +2104,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Βήμα 1: Επιλέξτε τον εξοπλισμό"
+msgstr "Βήμα 1: Επιλέξτε τις ομάδες"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2244,7 +2244,7 @@ msgstr "Αλλάξτε τις ρυθμίσεις και εκτελέστε ξα�
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Επιλογή άλλου εξοπλισμού"
+msgstr "Επιλέξτε άλλες ομάδες"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2258,8 +2258,7 @@ msgstr "Κατανοήστε πώς λειτουργεί σε 2 λεπτά"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr ""
-"Κάντε το μόνοι σας: καταχωρήστε τον εξοπλισμό σας στον οδηγό 5 βημάτων"
+msgstr "Κάντε το μόνοι σας: καταχωρήστε τις ομάδες σας στον οδηγό 5 βημάτων"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2457,8 +2456,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Ο βελτιωμένος κινητήρας, κατά μπλοκ, το κερδίζει τυχαία: %(resultado)s, σε "
-"προκαταρκτικές δοκιμές (%(corridas)s τρεξίματα, %(equipos)s ομάδες)."
+"Η βελτιωμένη μηχανή που βασίζεται σε μπλοκ κερδίζει τυχαία: %(resultado)s, "
+"σε προκαταρκτικές δοκιμές (%(corridas)s τρεξίματα, %(equipos)s ομάδες)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2512,10 +2511,6 @@ msgstr ""
 "Koza-TTP: γενετικός προγραμματισμός για ημερολόγια μπέιζμπολ. Ξεκίνησε ως "
 "διατριβή του Leslie Dickinson (ITAM) και σήμερα έχει μια μηχανή που ξεπερνά "
 "την τύχη."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Ένα καλύτερο πρόγραμμα MLB με γενετικό προγραμματισμό."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2642,14 +2637,14 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"Σημείωση: το ημερολόγιο του κινητήρα έχει περιοδείες έως και "
+"Σημείωση: το ημερολόγιο του κινητήρα έχει περιηγήσεις έως και "
 "<strong>%(gira)s εκτός έδρας αγώνων στη σειρά</strong>. Το επίσημο έχει "
 "μέγιστο %(oficial)s. Μια πραγματική ομάδα δεν θα δεχόταν τόσο μεγάλες "
 "περιοδείες."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Ταξίδι κάθε ομάδας"
+msgstr "Ταξίδι ανά ομάδα"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2832,15 +2827,15 @@ msgstr "Ομάδες τουρνουά"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "Έχουμε ήδη σκοράρει 10. Μπορείτε να τα αλλάξετε: από 3 σε 10 ομάδες."
+msgstr "Έχουμε ήδη ελέγξει 10. Μπορείτε να τα αλλάξετε: από 3 σε 10 ομάδες."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Επιλέξτε τουλάχιστον %(n)d ομάδες."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Επιλέξτε το πολύ %(n)d ομάδες."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -3019,3 +3014,11 @@ msgstr ""
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{ομάδα}: {km} χλμ"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""
+"Ένα καλύτερο πρόγραμμα MLB <span class=\"clave\">με γενετικό "
+"προγραμματισμό.</span>"

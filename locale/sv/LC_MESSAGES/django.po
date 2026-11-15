@@ -334,7 +334,7 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
-"<strong>Livskraft (C1):</strong> Varje lag måste spela exakt det antal "
+"<strong>Genomförbarhet (C1):</strong> Varje lag måste spela exakt det antal "
 "matcher som turneringen kräver. Ett värde på 0 betyder att schemat är "
 "giltigt."
 
@@ -607,8 +607,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI (genetisk programmering) letar efter kalendrar där resan är kort och "
-"jämn. Vill du ha egna team? Använd <a href=\"%(guia)s\">5-stegsguiden</a>."
+"AI:n (genetisk programmering) letar efter scheman där resandet är korta och "
+"jämna. Vill du ha egna team? Använd <a href=\"%(guia)s\">5-stegsguiden</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -852,7 +852,7 @@ msgstr "Lägg till ett lag"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Lägg till utrustning"
+msgstr "Lägg till lag"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -860,7 +860,7 @@ msgstr "Fortsätt till steg 2: Ligan"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Du behöver minst två lag att följa med."
+msgstr "Du behöver minst två lag för att fortsätta."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -930,8 +930,8 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"Turneringen använder lagen från \"%(liga)s\"-ligan. Matcherna är schemalagda"
-" måndag till torsdag och på lördagar, mellan första och sista dagen."
+"Turneringen använder lagen från \"%(liga)s\" ligan. Matcherna spelas måndag "
+"till torsdag och på lördagar, mellan första och sista dagen."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -1088,8 +1088,7 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Preliminärt resultat: %(resultado)s, i %(corridas)s lopp med %(equipos)s "
-"lag."
+"Tidigt resultat: %(resultado)s, i %(corridas)s runs med %(equipos)s lag."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1142,7 +1141,7 @@ msgstr "Se resultaten från varje utgåva"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr "I tester: %(resultado)s, i %(corridas)s löper med %(equipos)s lag."
+msgstr "Vid tester: %(resultado)s, i %(corridas)s kör med %(equipos)s lag."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1218,7 +1217,7 @@ msgstr "Spel per serie"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Lagserier"
+msgstr "Serier per lag"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1254,7 +1253,7 @@ msgstr "Det borde ligga mellan 0 och 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Utrustning"
+msgstr "Lag"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1278,7 +1277,7 @@ msgstr "Slutför detta steg först."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Tillagd utrustning."
+msgstr "lade teamet till."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2033,7 +2032,7 @@ msgstr "Alla värden är redan valda. Du kan ändra dem eller ge \\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Byt utrustning"
+msgstr "Byt lag"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2061,7 +2060,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Steg 1: Välj utrustningen"
+msgstr "Steg 1: Välj lagen"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2196,7 +2195,7 @@ msgstr "Byt inställningar och kör igen"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Val av annan utrustning"
+msgstr "Välj andra lag"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2209,7 +2208,7 @@ msgstr "Förstå hur det fungerar på 2 minuter"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Gör det själv: registrera din utrustning i 5-stegsguiden"
+msgstr "Gör det själv: registrera dina team i femstegsguiden"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2399,8 +2398,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Den förbättrade motorn, med flera delar, slår den slumpmässigt: "
-"%(resultado)si preliminära tester (%(corridas)s körningar, %(equipos)s lag)."
+"Den förbättrade blockbaserade motorn slår slumpmässigt: %(resultado)s, i "
+"preliminära tester (%(corridas)s runs, %(equipos)s lag)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2454,10 +2453,6 @@ msgstr ""
 "Koza-TTP: genetisk programmering för basebollkalendrar. Det började som en "
 "avhandling av Leslie Dickinson (ITAM) och har idag en motor som övervinner "
 "slumpen."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Ett bättre MLB-schema med genetisk programmering."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2585,12 +2580,12 @@ msgid ""
 "real no aceptaría giras tan largas."
 msgstr ""
 "Notera: motorkalendern har turnéer med upp till <strong>%(gira)s "
-"bortamatcher i rad</strong>. Den officiella har maximal %(oficial)s. Ett "
-"riktigt lag skulle inte acceptera så långa turnéer."
+"bortamatcher i rad</strong>. Den officiella kalendern har maximalt "
+"%(oficial)s. Ett riktigt lag skulle inte acceptera så långa turnéer."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Varje lags resa"
+msgstr "Resa per lag"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2770,15 +2765,15 @@ msgstr "Turneringslag"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "Vi har redan fått 10 poäng. Du kan ändra dem: från 3 till 10 lag."
+msgstr "Vi har redan kollat 10. Du kan ändra dem: från 3 till 10 lag."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Välj minst %(n)d lag."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Välj högst %(n)d lag."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2954,3 +2949,11 @@ msgstr ""
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{team}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""
+"Ett bättre MLB-schema <span class=\"clave\">med genetisk "
+"programmering.</span>"

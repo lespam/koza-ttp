@@ -320,7 +320,7 @@ msgid ""
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
 "<strong>Nnọchiteanya:</strong> Kalenda ọ bụla bụ osisi. Ọnụ ya bụ arụmọrụ "
-"dịka <code>crear_juego</code> (ụbọchị, otu ụlọ, otu ndị ọzọ) na "
+"dịka <code>crear_juego</code> (ụbọchị, otu ụlọ, otu pụọ n'èzí) na "
 "<code>obtener_calendario</code>, nke na-esonye na ndepụta abụọ nke "
 "egwuregwu."
 
@@ -330,7 +330,7 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
-"<strong>Viability (C1):</strong> Ndị otu ọ bụla ga-egwu kpọmkwem ọnụ ọgụgụ "
+"<strong>Ike (C1):</strong> Ndị otu ọ bụla ga-egwu kpọmkwem ọnụ ọgụgụ "
 "egwuregwu nke asọmpi ahụ chọrọ. Uru nke 0 pụtara na usoro ihe omume ahụ dị "
 "irè."
 
@@ -601,8 +601,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI (mmemme mkpụrụ ndụ ihe nketa) na-achọ kalenda ebe njem ahụ dị mkpụmkpụ na"
-" ọbụna. Chọrọ ndị otu gị? Jiri <a href=\"%(guia)s\">ntuziaka 5</a>."
+"AI (mmemme mkpụrụ ndụ ihe nketa) na-achọ usoro ebe njem dị mkpụmkpụ na "
+"ọbụlagodi. Ị chọrọ ndị otu gị? Jiri <a href=\"%(guia)s\">ntuziaka 5</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -840,7 +840,7 @@ msgstr "Ị nwere ike iji ndị dị ugbu a ma ọ bụ gbakwunye nke ọhụr�
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "View Latest Registered Teams"
+msgstr "Lelee ndị otu kachasị ọhụrụ edebanyere aha"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
@@ -848,7 +848,7 @@ msgstr "Tinye otu ìgwè"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Tinye akụrụngwa"
+msgstr "Tinye otu"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -856,7 +856,7 @@ msgstr "Gaa n'ihu na Nzọụkwụ 2: Njikọ"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Ị ga-achọ ma ọ dịkarịa ala ìgwè 2 iji soro."
+msgstr "Ị ga-achọ ma ọ dịkarịa ala ìgwè 2 iji gaa n'ihu."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -928,8 +928,8 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"Asọmpi ahụ na-eji ndị otu \"%(liga)s\". A na-ahazi egwuregwu site na Mọnde "
-"ruo Tọzdee na Satọdee, n'etiti ụbọchị mbụ na ụbọchị ikpeazụ."
+"The ndorondoro na-eji ìgwè nke \"%(liga)sLeague\". Games na-ndokwa si Monday"
+" ka Thursday na Saturday, n'etiti mbụ na ikpeazụ ụbọchị."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -1086,8 +1086,8 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Nsonaazụ mbụ: %(resultado)s, na %(corridas)s na-agba ọsọ na ndị otu "
-"%(equipos)s ."
+"Nsonaazụ mbụ: %(resultado)s, na %(corridas)s na-agba ọsọ na %(equipos)s "
+"ìgwè."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1164,7 +1164,7 @@ msgstr "Nkenke aha onyonyo Oké Osimiri (dịka ọmụmaatụ, Oké Osimiri)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr "Team aha"
+msgstr "Aha otu"
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1188,7 +1188,7 @@ msgstr "Na decimal degrees. Ihe Nlereanya: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "Njikọ Njikọ"
+msgstr "Njikọ njikọ"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1216,7 +1216,7 @@ msgstr "Egwuregwu site na usoro"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Usoro otu"
+msgstr "Usoro kwa otu"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1252,7 +1252,7 @@ msgstr "Ọ ga-adị n'etiti 0 na 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Akụrụngwa"
+msgstr "Ndị otu"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1276,7 +1276,7 @@ msgstr "Mezue nzọụkwụ a mbụ."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Akụrụngwa agbakwunyere."
+msgstr "Ndị otu na-agbakwụnye."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2031,7 +2031,7 @@ msgstr "A na-ahọrọworị ụkpụrụ niile. Ị nwere ike ịgbanwe ha ma �
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Gbanwee akụrụngwa"
+msgstr "Gbanwee ndị otu"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2059,7 +2059,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Nzọụkwụ 1: Họrọ Ngwá Ọrụ"
+msgstr "Nzọụkwụ 1: Họrọ ndị na-ede blọgụ"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2196,7 +2196,7 @@ msgstr "Gbanwee nhazi ma bido ọzọ"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Ịhọrọ Ngwaọrụ Ndị Ọzọ"
+msgstr "Họrọ ìgwè ndị ọzọ"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2209,7 +2209,7 @@ msgstr "Ghọta otú o si arụ ọrụ na 2 nkeji."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Nkowasi: Hazie gị ngwaọrụ na 5-nzọụkwụ nduzi."
+msgstr "Nkowasi: Hazie gị iPad na 5-nzọụkwụ nduzi."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2402,7 +2402,7 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"The mma engine, site blocks, na-eti ya na random: %(resultado)s, na mbụ ule "
+"The mma ngọngọ-dabeere engine na-eti random: %(resultado)s, na mbụ ule "
 "(%(corridas)s na-agba ọsọ, %(equipos)s ìgwè)."
 
 #: tesis/templates/tesis/historia.html
@@ -2457,10 +2457,6 @@ msgstr ""
 "Koza-TTP: mmemme mkpụrụ ndụ ihe nketa maka kalenda baseball. Ọ malitere dị "
 "ka edemede site n'aka Leslie Dickinson (ITAM) ma taa nwere injin nke na-"
 "emeri ohere."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Usoro MLB ka mma na mmemme mkpụrụ ndụ ihe nketa."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2585,13 +2581,13 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"Rịba ama: kalenda injin nwere njem nke ihe ruru <strong>%(gira)s egwuregwu "
-"n'usoro</strong>. Onye ọrụ nwere %(oficial)skachasị. Ezigbo otu agaghị "
-"anabata njem dị ogologo dị otú ahụ."
+"Rịba ama: kalenda injin nwere njem nlegharị anya nke <strong> "
+"egwuregwu%(gira)s n'usoro</strong>. Onye ọrụ gọọmentị nwere oke %(oficial)s."
+" Ezigbo otu agaghị anabata njem dị ogologo dị otú ahụ."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Njem nke otu ọ bụla"
+msgstr "Njem site na Team"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2773,15 +2769,15 @@ msgstr "Ndị otu asọmpi"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "Anyị meriri 10. Ị nwere ike ịgbanwe ha: site na 3 ruo 10 ìgwè."
+msgstr "Anyị enyochaworị 10. Ị nwere ike ịgbanwe ha: site na 3 ruo 10 ìgwè."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Họrọ ma ọ dịkarịa ala %(n)d n'ime ndị na-ede blọgụ."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Họrọ n'ọtụtụ %(n)d ìgwè."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2956,3 +2952,11 @@ msgstr "Map: Okirikiri ọ bụla bụ otu; Nnukwu pụtara ọtụtụ kilomita
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{otu}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""
+"Usoro MLB ka <span class=\"clave\">mma na mmemme mkpụrụ ndụ ihe "
+"nketa.</span>"

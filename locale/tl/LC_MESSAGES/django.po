@@ -620,9 +620,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"Ang AI (genetic programming) ay naghahanap ng mga kalendaryo kung saan "
-"maikli at pantay ang biyahe. Gusto mo ba ng sarili mong mga koponan? Gamitin"
-" ang <a href=\"%(guia)s\">5-hakbang na gabay</a>."
+"Ang AI (genetic programming) ay naghahanap ng mga iskedyul kung saan maikli "
+"at pantay ang biyahe. Gusto mo ba ng sarili mong mga koponan? Gamitin ang <a"
+" href=\"%(guia)s\">5-hakbang na gabay</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -864,7 +864,7 @@ msgstr "Pwede mong gamitin ang mga existing o magdagdag ng bago."
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "Tingnan ang Pinakabagong Rehistradong mga Koponan"
+msgstr "Tingnan ang pinakabagong rehistradong mga koponan"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
@@ -872,7 +872,7 @@ msgstr "Magdagdag ng koponan"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Magdagdag ng Kagamitan"
+msgstr "Magdagdag ng koponan"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -880,7 +880,7 @@ msgstr "Magpatuloy sa Hakbang 2: League"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Kailangan mo ng hindi bababa sa 2 koponan para sundan."
+msgstr "Kailangan mo ng hindi bababa sa 2 koponan para magpatuloy."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -1119,8 +1119,8 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Paunang resulta: %(resultado)s, sa %(corridas)s na tumakbo kasama ang "
-"%(equipos)s koponan."
+"Maagang resulta: %(resultado)s, sa %(corridas)s runs kasama ang %(equipos)s "
+"teams."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1175,8 +1175,8 @@ msgstr "Tingnan ang mga resulta ng bawat release"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"Sa mga pagsubok: %(resultado)s, sa %(corridas)s tumatakbo kasama ang "
-"%(equipos)s koponan."
+"Sa testing: %(resultado)s, sa %(corridas)s ay tumatakbo kasama ang "
+"%(equipos)s teams."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1200,7 +1200,7 @@ msgstr "Daglat (hal., SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr "Pangalan ng Koponan"
+msgstr "Pangalan ng koponan"
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1224,7 +1224,7 @@ msgstr "Sa decimal degrees. Halimbawa: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "Mga Koponan sa Liga"
+msgstr "Mga koponan sa liga"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1252,7 +1252,7 @@ msgstr "Mga laro ayon sa serye"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Team Series"
+msgstr "Serye kada koponan"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1288,7 +1288,7 @@ msgstr "Dapat nasa pagitan ito ng 0 at 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Kagamitan"
+msgstr "Mga Koponan"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1312,7 +1312,7 @@ msgstr "Tapusin muna ang hakbang na ito."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Nagdagdag ng kagamitan."
+msgstr "Dagdag pa ni Team."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2093,7 +2093,7 @@ msgstr "Lahat ng halaga ay napili na. Maaari mo silang baguhin o ibigay \\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Palitan ang kagamitan"
+msgstr "Magpalit ng koponan"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2121,7 +2121,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Hakbang 1: Piliin ang kagamitan"
+msgstr "Hakbang 1: Piliin ang mga koponan"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2258,7 +2258,7 @@ msgstr "Baguhin ang mga setting at patakbuhin muli"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Pagpili ng Iba pang Kagamitan"
+msgstr "Pumili ng ibang mga koponan"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2272,7 +2272,7 @@ msgstr "Maintindihan kung paano ito gumagana sa loob ng 2 minuto"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Gawin mo mismo: irehistro ang iyong kagamitan sa 5-hakbang na gabay"
+msgstr "Gawin mo mismo: irehistro ang iyong mga team sa 5-step guide"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2472,8 +2472,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Ang pinahusay na engine, ayon sa blocks, ay natalo ito nang random: "
-"%(resultado)s, sa preliminary tests (%(corridas)s runs, %(equipos)s teams)."
+"Ang pinahusay na block-based engine ay nanalo sa random: %(resultado)s, sa "
+"preliminary tests (%(corridas)s runs, %(equipos)s teams)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2527,10 +2527,6 @@ msgstr ""
 "Koza-TTP: genetic programming para sa mga kalendaryo ng baseball. Nagsimula "
 "ito bilang isang tesis ni Leslie Dickinson (ITAM) at ngayon ay may makina na"
 " nangunguna sa pagkakataon."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Mas maganda ang MLB schedule na may genetic programming."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2659,13 +2655,12 @@ msgid ""
 "real no aceptaría giras tan largas."
 msgstr ""
 "Tandaan: ang engine calendar ay may mga tour na hanggang <strong>%(gira)s "
-"sunod-sunod na away games</strong>. Ang opisyal na kalendaryo ay may maximum"
-" na %(oficial)s. Hindi tatanggapin ng totoong koponan ang ganitong haba ng "
-"tours."
+"away games sunod-sunod</strong>. Ang opisyal na kalendaryo ay may maximum na"
+" %(oficial)s. Hindi tatanggapin ng totoong team ang ganitong haba ng tours."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Paglalakbay ng bawat koponan"
+msgstr "Paglalakbay ayon sa koponan"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2850,16 +2845,15 @@ msgstr "Mga koponan sa torneo"
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
 msgstr ""
-"Nakapuntos na tayo ng 10. Pwede mo silang baguhin: mula 3 hanggang 10 "
-"koponan."
+"Na-check na namin ang 10. Pwede mo silang baguhin: mula 3 hanggang 10 teams."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Pumili ng hindi bababa sa %(n)d koponan."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Pumili ng pinakamaraming %(n)d koponan."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -3040,3 +3034,11 @@ msgstr ""
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{team}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""
+"Mas maganda ang MLB schedule <span class=\"clave\">na may genetic "
+"programming.</span>"

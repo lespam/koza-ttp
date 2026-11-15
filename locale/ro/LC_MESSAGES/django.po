@@ -326,8 +326,8 @@ msgid ""
 msgstr ""
 "<strong>Reprezentare:</strong> Fiecare calendar este un arbore. Nodurile "
 "sale sunt operații precum <code>crear_juego</code> (data, echipa gazdă, "
-"echipa oaspete) și <code>obtener_calendario</code>, care se alătură a două "
-"liste de meciuri."
+"echipa oaspete) și <code>obtener_calendario</code>, care se alătură celor "
+"două liste de meciuri."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -336,8 +336,8 @@ msgid ""
 "calendario es válido."
 msgstr ""
 "<strong>Viabilitate (C1):</strong> Fiecare echipă trebuie să joace exact "
-"numărul de meciuri cerut de turneu. O valoare de 0 înseamnă că programul "
-"este valabil."
+"numărul de meciuri cerut de turneu. Valoarea 0 înseamnă că programul este "
+"valabil."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -609,9 +609,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI (programare genetică) caută calendare unde călătoria este scurtă și "
-"uniformă. Vrei propriile echipe? Folosește <a href=\"%(guia)s\">ghidul în 5 "
-"pași</a>."
+"AI-ul (programarea genetică) caută programe în care călătoriile sunt scurte "
+"și regulate. Vrei echipe proprii? Folosește <a href=\"%(guia)s\">ghidul în 5"
+" pași</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -857,7 +857,7 @@ msgstr "Adaugă o echipă"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Adaugă echipament"
+msgstr "Adaugă echipă"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -865,7 +865,7 @@ msgstr "Continuă la Pasul 2: Ligă"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Ai nevoie de cel puțin 2 echipe pe care să le urmezi."
+msgstr "Ai nevoie de cel puțin 2 echipe pentru a continua."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -1096,7 +1096,7 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Rezultat preliminar: %(resultado)s, în %(corridas)s serii cu %(equipos)s "
+"Rezultat timpuriu: %(resultado)s, în %(corridas)s runde cu %(equipos)s "
 "echipe."
 
 #: documentacion/templates/documentacion/avances.html
@@ -1151,7 +1151,7 @@ msgstr "Vezi rezultatele fiecărei versiuni"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"În teste: %(resultado)s, în %(corridas)s run-uri cu %(equipos)s echipe."
+"În testare: %(resultado)s, în %(corridas)s rulează cu %(equipos)s echipe."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1227,7 +1227,7 @@ msgstr "Meciuri pe serii"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Seria pe echipe"
+msgstr "Serii pe echipă"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1263,7 +1263,7 @@ msgstr "Ar trebui să fie între 0 și 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Echipament"
+msgstr "Echipe"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1287,7 +1287,7 @@ msgstr "Parcurge acest pas mai întâi."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Echipament suplimentar."
+msgstr "A adăugat echipa."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2048,7 +2048,7 @@ msgstr "Toate valorile sunt deja alese. Le poți schimba sau le poți da \\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Schimbă echipamentul"
+msgstr "Schimbă echipa"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2076,7 +2076,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Pasul 1: Alege echipamentul"
+msgstr "Pasul 1: Alege echipele"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2211,7 +2211,7 @@ msgstr "Schimbă setările și rulează din nou"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Alegerea altor echipamente"
+msgstr "Alege alte echipe"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2225,7 +2225,7 @@ msgstr "Înțelege cum funcționează în 2 minute"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Fă-o singur: înregistrează-ți echipamentul în ghidul în 5 pași"
+msgstr "Fă-o singur: înregistrează-ți echipele în ghidul în 5 pași"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2418,9 +2418,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Motorul îmbunătățit, prin blocuri, îl depășește la întâmplare: "
-"%(resultado)s, în teste preliminare (%(corridas)s runde, %(equipos)s "
-"echipe)."
+"Motorul îmbunătățit bazat pe blocuri chiar învinge random: %(resultado)s, în"
+" teste preliminare (%(corridas)s runde, %(equipos)s echipe)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2474,10 +2473,6 @@ msgstr ""
 "Koza-TTP: programare genetică pentru calendare de baseball. A început ca o "
 "teză a lui Leslie Dickinson (ITAM) și astăzi are un motor care depășește "
 "șansele."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Un program MLB mai bun cu programare genetică."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2604,13 +2599,13 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"Notă: calendarul motorului conține tururi cu până <strong> la%(gira)s "
-"meciuri consecutive în deplasare</strong>. Cel oficial are %(oficial)smaxim."
-" O echipă reală nu ar accepta turnee atât de lungi."
+"Notă: calendarul motorului are tururi cu până <strong> la%(gira)s meciuri "
+"consecutive în deplasare</strong>. Cel oficial are %(oficial)smaxim. O "
+"echipă reală nu ar accepta turnee atât de lungi."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Călătoria fiecărei echipe"
+msgstr "Călătorii pe echipe"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2789,19 +2784,19 @@ msgstr "Opțional. Dacă lași așa, se folosește acest nume."
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "Echipele turneului"
+msgstr "Echipele din turneu"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "Am marcat deja 10. Poți să-i schimbi: de la 3 la 10 echipe."
+msgstr "Am verificat deja 10. Le poți schimba: de la 3 la 10 echipe."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Alege cel puțin %(n)d echipe."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Alege cel mult %(n)d echipe."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2978,3 +2973,10 @@ msgstr ""
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{echipă}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""
+"Un program MLB mai <span class=\"clave\">bun cu programare genetică.</span>"

@@ -605,9 +605,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI (programu ya maumbile) hutafuta kalenda ambapo safari ni fupi na hata. "
-"Unataka timu zako mwenyewe? Tumia <a href=\"%(guia)s\">mwongozo wa hatua "
-"5</a>."
+"AI (programu ya maumbile) hutafuta ratiba ambapo usafiri ni mfupi na hata. "
+"Je, unataka timu zako mwenyewe? Tumia <a href=\"%(guia)s\">mwongozo wa hatua"
+" 5</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -850,7 +850,7 @@ msgstr "Ongeza timu"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Ongeza vifaa"
+msgstr "Ongeza timu"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -858,7 +858,7 @@ msgstr "Endelea hadi Hatua ya 2: Ligi"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Unahitaji angalau timu 2 kufuata."
+msgstr "Unahitaji angalau timu 2 kuendelea."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -1090,7 +1090,7 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Matokeo ya awali: %(resultado)s, katika %(corridas)s kukimbia na timu "
+"Matokeo ya mapema: %(resultado)s, katika kukimbia %(corridas)s na timu "
 "%(equipos)s ."
 
 #: documentacion/templates/documentacion/avances.html
@@ -1146,7 +1146,7 @@ msgstr "Tazama matokeo ya kila toleo"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"Katika majaribio: %(resultado)s, katika %(corridas)s inaendesha na timu "
+"Katika majaribio: %(resultado)s, katika %(corridas)s kukimbia na timu "
 "%(equipos)s ."
 
 #: project/estado_motor.py
@@ -1195,7 +1195,7 @@ msgstr "Katika digrii za desimali. Mfano: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "Timu za Ligi"
+msgstr "Timu za ligi"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1223,7 +1223,7 @@ msgstr "Michezo kwa mfululizo"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Mfululizo wa Timu"
+msgstr "Mfululizo kwa kila timu"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1259,7 +1259,7 @@ msgstr "Inapaswa kuwa kati ya 0 na 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Vifaa"
+msgstr "Timu"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1283,7 +1283,7 @@ msgstr "Kamilisha hatua hii kwanza."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Vifaa vilivyoongezwa."
+msgstr "Timu iliongeza."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2040,7 +2040,7 @@ msgstr "Maadili yote tayari yamechaguliwa. Unaweza kuyabadilisha au kutoa \\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Badilisha vifaa"
+msgstr "Badilisha timu"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2068,7 +2068,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Hatua ya 1: Chagua vifaa"
+msgstr "Hatua ya 1: Chagua timu"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2205,7 +2205,7 @@ msgstr "Badilisha mipangilio na uendeshe tena"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Kuchagua vifaa vingine"
+msgstr "Chagua timu zingine"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2218,7 +2218,7 @@ msgstr "Elewa jinsi inavyofanya kazi kwa dakika 2"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Fanya mwenyewe: sajili vifaa vyako katika mwongozo wa hatua 5"
+msgstr "Fanya mwenyewe: sajili timu zako katika mwongozo wa hatua 5"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2414,8 +2414,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Injini iliyoboreshwa, kwa vizuizi, huipiga bila mpangilio: %(resultado)s, "
-"katika majaribio ya awali (%(corridas)s kukimbia, timu %(equipos)s )."
+"Injini iliyoboreshwa ya msingi wa block hupiga nasibu: %(resultado)s, katika"
+" majaribio ya awali (%(corridas)s kukimbia, %(equipos)s timu)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2468,10 +2468,6 @@ msgid ""
 msgstr ""
 "Koza-TTP: programu ya maumbile kwa kalenda za besiboli. Ilianza kama "
 "nadharia ya Leslie Dickinson (ITAM) na leo ina injini inayoshinda nafasi."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Ratiba bora ya MLB na programu ya maumbile."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2598,12 +2594,12 @@ msgid ""
 "real no aceptaría giras tan largas."
 msgstr ""
 "Kumbuka: kalenda ya injini ina ziara za hadi <strong> michezo%(gira)s ya "
-"ugenini mfululizo</strong>. Rasmi ina kiwango cha juu cha %(oficial)s. Timu "
+"ugenini mfululizo</strong>. Rasmi ina kiwango cha juu %(oficial)s. Timu "
 "halisi haitakubali ziara ndefu kama hizo."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Safari ya kila timu"
+msgstr "Kusafiri kwa timu"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2782,19 +2778,19 @@ msgstr "Hiari. Ukiiacha hapo, jina hili linatumika."
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "Timu za Mashindano"
+msgstr "Timu za mashindano"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "Tayari tulifunga 10. Unaweza kuzibadilisha: kutoka timu 3 hadi 10."
+msgstr "Tayari tumeangalia 10. Unaweza kuzibadilisha: kutoka timu 3 hadi 10."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Chagua angalau timu %(n)d ."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Chagua timu nyingi %(n)d ."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2970,3 +2966,9 @@ msgstr ""
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{timu}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr "Ratiba bora ya MLB <span class=\"clave\">na programu ya maumbile.</span>"

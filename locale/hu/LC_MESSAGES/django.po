@@ -323,9 +323,8 @@ msgid ""
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
 "<strong>Ábrázolás:</strong> Minden naptár egy fa. Csomópontjai olyan "
-"műveletek, mint <code>crear_juego</code> (dátum, hazai csapat, idegen "
-"csapat) és <code>obtener_calendario</code>, amelyek két meccslistához "
-"csatlakoznak."
+"műveletek, mint <code>crear_juego</code> (dátum, hazai csapat, vendégcsapat)"
+" és <code>obtener_calendario</code>, amelyek két játéklistához csatlakoznak."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -609,9 +608,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"Az MI (genetikai programozás) olyan naptárakat keres, ahol az utazás rövid "
-"és egyenletes. Saját csapatokat akarsz? Használd az <a href=\"%(guia)s\">5 "
-"lépéses útmutatót</a>."
+"Az AI (genetikai programozás) olyan menetrendeket keres, ahol az utazás "
+"rövid és egyenletes. Szeretnél saját csapatokat? Használd az <a "
+"href=\"%(guia)s\">5 lépéses útmutatót</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -858,7 +857,7 @@ msgstr "Csapat hozzáadása"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Felszerelés hozzáadása"
+msgstr "Csapat hozzáadása"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -866,7 +865,7 @@ msgstr "Folytasd a 2. lépésre: Liga"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Legalább két csapatra van szükséged, hogy követd."
+msgstr "Legalább két csapatra van szükség a folytatáshoz."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -937,8 +936,8 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"A tornán az \"%(liga)s\" liga csapatai szerepelnek. A mérkőzések hétfőtől "
-"csütörtökig, valamint szombaton, az első és utolsó nap között zajlanak."
+"A torna a \"%(liga)s\" liga csapatait használják. A mérkőzések hétfőtől "
+"csütörtökig, valamint szombatonként az első és utolsó nap között zajlanak."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -1098,8 +1097,7 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Előzetes eredmény: %(resultado)s, %(corridas)s futamban %(equipos)s "
-"csapattal."
+"Korai eredmény: %(resultado)s, %(corridas)s futamban %(equipos)s csapattal."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1152,8 +1150,7 @@ msgstr "Minden kiadás eredményei megtekintése"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr ""
-"Tesztekben: %(resultado)s, %(corridas)s futamokban %(equipos)s csapattal."
+msgstr "Tesztek: %(resultado)s, %(corridas)s futamok %(equipos)s csapattal."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1229,7 +1226,7 @@ msgstr "Játékok sorozatonként"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Csapatsorozat"
+msgstr "Sorozatok csapatonként"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1265,7 +1262,7 @@ msgstr "0 és 1 között kellene lennie."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Felszerelés"
+msgstr "Csapatok"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1289,7 +1286,7 @@ msgstr "Először ezt a lépést teljesítsd."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Hozzáadott felszerelés."
+msgstr "Hozzátette a csapat."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2051,7 +2048,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Cserélőfelszerelés"
+msgstr "Csapatváltás"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2079,7 +2076,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "1. lépés: Válaszd ki a felszerelést"
+msgstr "1. lépés: Válaszd ki a csapatokat"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2216,7 +2213,7 @@ msgstr "Változtasd meg a beállításokat, és futtasd újra"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Egyéb felszerelések kiválasztása"
+msgstr "Válassz más csapatokat"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2230,7 +2227,7 @@ msgstr "Megértsd meg, hogyan működik 2 perc alatt"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Csináld magad: regisztráld a felszerelésedet az 5 lépéses útmutatóban"
+msgstr "Csináld magad: regisztráld csapataidat az 5 lépéses útmutatóban"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2424,8 +2421,9 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"A továbbfejlesztett motor blokkokkal véletlenszerűen megelőzi: "
-"%(resultado)saz előzetes teszteken (%(corridas)s futás, %(equipos)s csapat)."
+"A továbbfejlesztett blokkalapú motor valóban legyőzi a véletlenszerű "
+"teszteket: %(resultado)saz előzetes teszteken (%(corridas)s futás, "
+"%(equipos)s csapat)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2479,10 +2477,6 @@ msgstr ""
 "Koza-TTP: genetikai programozás baseball naptárokhoz. Leslie Dickinson "
 "(ITAM) szakdolgozatával kezdődött, és ma már van egy motorja, amely legyőzi "
 "a véletlent."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Jobb MLB menetrend genetikai programozással."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2609,12 +2603,13 @@ msgid ""
 "real no aceptaría giras tan largas."
 msgstr ""
 "Megjegyzés: a motornaptárban akár <strong>%(gira)s idegenbeli meccset is "
-"tartalmaz egymás után</strong>. A hivatalos naptár maximális %(oficial)s. "
-"Egy igazi csapat nem fogadná el ilyen hosszú túrákat."
+"kínálnak egymás után</strong>. A hivatalos naptár maximum "
+"%(oficial)srendelkezik. Egy igazi csapat nem fogadná el ilyen hosszú "
+"túrákat."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Minden csapat útja"
+msgstr "Csapatonként utazás"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2796,15 +2791,15 @@ msgstr "Versenycsapatok"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "Már 10 pontot szereztünk. Megváltoztathatod őket: 3-ról 10-re."
+msgstr "Már ellenőriztük a 10-et. Megváltoztathatod őket: 3-ról 10-re."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Válassz legalább %(n)d csapatot."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Legfeljebb %(n)d csapatot válassz."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2980,3 +2975,9 @@ msgstr ""
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{team}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr "Jobb MLB <span class=\"clave\">menetrend genetikai programozással.</span>"

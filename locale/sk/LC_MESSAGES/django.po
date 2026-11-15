@@ -600,9 +600,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI (genetické programovanie) hľadá kalendáre, kde je cesta krátka a "
-"rovnomerná. Chcete vlastné tímy? Použite <a href=\"%(guia)s\">5-krokového "
-"sprievodcu</a>."
+"AI (genetické programovanie) hľadá rozvrhy, kde je cestovanie krátke a "
+"rovnomerné. Chcete vlastné tímy? Použite <a href=\"%(guia)s\">5-krokový "
+"návod</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -841,7 +841,7 @@ msgstr "Môžete použiť existujúce alebo pridať nové."
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "Zobraziť najnovšie registrované tímy"
+msgstr "Pozrite si najnovšie registrované tímy"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
@@ -849,7 +849,7 @@ msgstr "Pridajte tím"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Pridať vybavenie"
+msgstr "Pridať tím"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -857,7 +857,7 @@ msgstr "Pokračovať na Krok 2: Liga"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Na sledovanie potrebuješ aspoň 2 tímy."
+msgstr "Na pokračovanie potrebujete aspoň 2 tímy."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -928,7 +928,7 @@ msgid ""
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
 "Turnaj využíva tímy z ligy \"%(liga)s\". Zápasy sú naplánované od pondelka "
-"do štvrtka a v sobotu, medzi prvým a posledným dňom."
+"do štvrtka a v sobotu medzi prvým a posledným dňom."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -1086,8 +1086,7 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Predbežný výsledok: %(resultado)s, v %(corridas)s behoch s %(equipos)s "
-"tímami."
+"Skorý výsledok: %(resultado)s, v %(corridas)s behoch s %(equipos)s tímami."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1139,7 +1138,8 @@ msgstr "Pozrite si výsledky každého vydania"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr "V testoch: %(resultado)s, v %(corridas)s behá s %(equipos)s tímami."
+msgstr ""
+"Pri testovaní: %(resultado)s, v %(corridas)s beží s %(equipos)s tímami."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1215,7 +1215,7 @@ msgstr "Hry podľa sérií"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Tímová séria"
+msgstr "Série podľa tímov"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1251,7 +1251,7 @@ msgstr "Malo by to byť medzi 0 a 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Vybavenie"
+msgstr "Tímy"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1275,7 +1275,7 @@ msgstr "Najskôr dokončite tento krok."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Pridané vybavenie."
+msgstr "Dodal tím."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2023,7 +2023,7 @@ msgstr "Všetky hodnoty sú už vybrané. Môžete ich zmeniť alebo dať \\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Výmena vybavenia"
+msgstr "Zmeň tímy"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2051,7 +2051,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Krok 1: Vyberte vybavenie"
+msgstr "Krok 1: Vyberte tímy"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2186,7 +2186,7 @@ msgstr "Zmeňte nastavenia a spustite znova"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Výber iného vybavenia"
+msgstr "Vyberte si iné tímy"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2199,8 +2199,7 @@ msgstr "Pochopte, ako to funguje za 2 minúty"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr ""
-"Urobte to sami: zaregistrujte svoje vybavenie v 5-krokovom sprievodcovi"
+msgstr "Urobte to sami: zaregistrujte svoje tímy v 5-krokovom sprievodcovi"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2389,7 +2388,7 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Vylepšený engine blokmi ho porazí náhodne: %(resultado)s, v predbežných "
+"Vylepšený blokový engine porazí náhodné: %(resultado)s, v predbežných "
 "testoch (%(corridas)s behov, %(equipos)s tímy)."
 
 #: tesis/templates/tesis/historia.html
@@ -2444,10 +2443,6 @@ msgstr ""
 "Koza-TTP: genetické programovanie pre baseballové kalendáre. Začalo to ako "
 "diplomová práca Leslieho Dickinsona (ITAM) a dnes má motor, ktorý prekonáva "
 "náhodu."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Lepší rozvrh MLB s genetickým programovaním."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2578,7 +2573,7 @@ msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Cesta každého tímu"
+msgstr "Cestovanie podľa tímov"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2760,15 +2755,15 @@ msgstr "Turnajové tímy"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "Už sme dali 10 bodov. Môžete ich zmeniť: z 3 na 10 tímov."
+msgstr "Už sme skontrolovali 10. Môžete ich zmeniť: z 3 na 10 tímov."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Vyberte aspoň %(n)d tímov."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Vyberte si najviac %(n)d tímov."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2944,3 +2939,9 @@ msgstr "Mapa: Každý kruh je tím; väčší znamená viac míľ v sezóne"
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{tím}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr "Lepší rozvrh MLB <span class=\"clave\">s genetickým programovaním.</span>"

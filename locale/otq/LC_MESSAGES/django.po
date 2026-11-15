@@ -302,7 +302,7 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
-"<strong>Viabilidad (C1):</strong> Kadu̲ 'nar equipo da 'ñeni exactamente yá "
+"<strong>Viabilidad (C1):</strong> Nu'bu̲ equipo da 'ñeni exactamente yá "
 "'bede ya juegos nä'ä bí requiere ar torneo. 'Nar hmädi 0 ir bo̲ni ke ar "
 "programa ar válido."
 
@@ -609,8 +609,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"IA (programación genética) gi hyoni calendarios ho ar viaje ar hingi maa ne "
-"'nehe . ¿Gi ne ir propios equipos? Utilice <a href=\"%(guia)s\">ar guía 5 "
+"Ar IA (programación genética) gi hyoni horarios ho ar viaje ar hingi maa ne "
+"'ra. ¿Gi ne yá propios equipos? Utilice <a href=\"%(guia)s\">ar guía 5 ar "
 "pasos</a>."
 
 #: tesis/templates/tesis/dashboard.html
@@ -847,7 +847,7 @@ msgstr "Pe utilizar ya 'bui wa agregar 'na 'ra'yo."
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "Ga equipos registrados mäs recientes"
+msgstr "Ga equipos mäs recientes registrados"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
@@ -855,7 +855,7 @@ msgstr "Añadir 'nar equipo"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Añadir equipo"
+msgstr "Agregar equipo"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -863,7 +863,7 @@ msgstr "Da 'ño bi thogi 2: Liga"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "T'ot'e tso̲kwa menu 2 equipos pa seguir."
+msgstr "T'ot'e tso̲kwa menu 2 equipos pa da 'ño."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -935,9 +935,9 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"Ar torneo gi japu̲'be̲fi ya equipos ar liga \"%(liga)s\". Ya juegos ar "
-"programan ar nonxi asta ar jupe ne ya nsabu̲ho, entre ar ndu̲i ne ar ngäts'i"
-" ar pa."
+"Ar torneo gi japu̲'be̲fi ya equipos ar \"%(liga)s\"liga\". Ya juegos gi "
+"'bu̲hu̲ programados ar nonxi asta ar jueveo ne ya nsaho, entre ar ndu̲i ne "
+"ar ngäts'i ar pa."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -1097,8 +1097,7 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Nt'uni preliminar: %(resultado)s, jar %(corridas)s carreras ko ya equipos "
-"%(equipos)s ."
+"Nt'uni ngut'ä: %(resultado)s, jar %(corridas)s corre ko %(equipos)s equipos."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1152,8 +1151,8 @@ msgstr "Ga ya resultados ya lanzamiento"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"Ja ya pruebas: %(resultado)s, jar %(corridas)s corre ko ya equipos "
-"%(equipos)s ."
+"Ja ar ntsa̲: %(resultado)s, jar %(corridas)s corre ko ya equipos %(equipos)s"
+" ."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1177,7 +1176,7 @@ msgstr "Abreviatura (nt'udi, SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr "Thuuhu ar equipo"
+msgstr "Thuhuu ar equipo"
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1229,7 +1228,7 @@ msgstr "Juegos ya serie"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Serie equipos"
+msgstr "Serie ya equipo"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1265,7 +1264,7 @@ msgstr "Gi 'bu̲i entre 0 ne 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Equipo"
+msgstr "Ya equipos"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1289,7 +1288,7 @@ msgstr "Complete nuna bi thogi 'me̲t'o."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Añadido ar equipo."
+msgstr "Equipo añadido."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2052,7 +2051,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Mpa̲ti equipo"
+msgstr "Mpa̲ti ya equipos"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2080,7 +2079,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Thogi 1: Da 'ñets'i ar equipo"
+msgstr "Thogi 1: Da 'ñets'i ya equipos"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2214,7 +2213,7 @@ msgstr "Mpa̲ti configuración ne ejecutar ma 'nagi"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Da 'ñets'i ma'ra ya equipos"
+msgstr "Da 'ñets'i ma 'ra ya equipos"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2227,7 +2226,7 @@ msgstr "Entender Temu̲ funciona jar 2 ya t'olo ora"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Gi 'yo̲t'e gí xkagentho: registrar ár equipo ar guía 5 pasos"
+msgstr "Gi 'yo̲t'e gí xkagentho: registrar yá equipos ar guía 5 pasos"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2419,8 +2418,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Ar motor mejorado, ir nge ya bloques, bí da vence ja ar azar: %(resultado)s,"
-" jar pruebas preliminares (%(corridas)s ya runs, %(equipos)s equipos)."
+"Ar motor basado bloques mejorado bí thogi ar azar: %(resultado)s, jar "
+"pruebas preliminares (%(corridas)s carreras, %(equipos)s equipos)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2474,10 +2473,6 @@ msgstr ""
 "Koza — TTP: programación genética pa calendarios béisbol. Comenzó komongu "
 "'nar tesis ya Leslie Dickinson (ITAM) ne nu'bya pe̲ts'i 'nar motor da supera"
 " ar azar."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "'Nar mäs xi hño horario MLB ko programación genética."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2603,13 +2598,13 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"Hñeti: nthuxu̲pa ar motor pe̲ts'i recorridos asta <strong>%(gira)s juegos "
-"alejados jar 'nar fila</strong>. Ar xidi mfädi pe̲ts'i máximo %(oficial)s. "
-"'Nar equipo real hingi aceptaría ngut'ä largos recorridos."
+"Hñeti: Nthuxu̲pa ar motor pe̲ts'i recorridos asta <strong>%(gira)s juegos "
+"ya'bu̲ jar fila</strong>. Ar xidi mfädi pe̲ts'i máximo %(oficial)s. 'Nar "
+"equipo real hingi aceptaría ngut'ä largos recorridos."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Viaje ya equipo"
+msgstr "Viajar ya equipo"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2785,19 +2780,19 @@ msgstr "Opcional. Nu'bu̲ bí dejas jar nä'ä, nuna thuuhu ar gi japu̲'be̲fi.
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "Equipos ar torneo"
+msgstr "Ya equipos ar torneo"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "Ya puntuamos 10. Nu'i gí tsa̲ da mpa̲ti: 3 ma 10 equipos."
+msgstr "Ya comprobamos 10. Nu'i gí tsa̲ da mpa̲ti ya: 3 ma 10 equipos."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Da 'ñets'i tso̲kwa menu %(n)d equipos."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Da 'ñets'i jar 'nar dätä %(n)d equipos."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2974,3 +2969,11 @@ msgstr ""
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{team}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""
+"'Nar mäs xi hño horario <span class=\"clave\">MLB ko programación "
+"genética.</span>"

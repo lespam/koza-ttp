@@ -321,7 +321,7 @@ msgid ""
 "calendario es válido."
 msgstr ""
 "<strong>አዋጭነት (C1)</strong> እያንዳንዱ ቡድን ውድድሩ የሚፈልገውን የጨዋታ ብዛት በትክክል መጫወት "
-"አለበት። የ 0 እሴት ማለት መርሃ ግብሩ ትክክለኛ ነው ማለት ነው."
+"አለበት። የ 0 እሴት ማለት መርሃግብሩ ትክክለኛ ነው ማለት ነው."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -576,8 +576,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI (የጄኔቲክ ፕሮግራሚንግ) ጉዞው አጭር እና እኩል የሆነባቸውን የቀን መቁጠሪያዎች ይፈልጋል። የራስዎን ቡድኖች "
-"ይፈልጋሉ? ባለ <a href=\"%(guia)s\">5-ደረጃ መመሪያን</a> ይጠቀሙ."
+"AI (የጄኔቲክ ፕሮግራሚንግ) ጉዞ አጭር እና እኩል የሆነባቸውን መርሃ ግብሮች ይፈልጋል። የራስዎን ቡድኖች ይፈልጋሉ? "
+"ባለ <a href=\"%(guia)s\">5-ደረጃ መመሪያን</a> ይጠቀሙ."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -815,7 +815,7 @@ msgstr "ቡድን ያክሉ"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "መሳሪያዎችን ይጨምሩ"
+msgstr "ቡድን ያክሉ"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -823,7 +823,7 @@ msgstr "ወደ ደረጃ 2 ይቀጥሉ ሊግ"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "ለመከተል ቢያንስ 2 ቡድኖች ያስፈልጉዎታል።"
+msgstr "ለመቀጠል ቢያንስ 2 ቡድኖች ያስፈልጉዎታል።"
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -1048,7 +1048,7 @@ msgstr ""
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
-msgstr "የመጀመሪያ ውጤት %(resultado)s፣ በ %(corridas)s ከ %(equipos)s ቡድኖች ጋር ይሮጣል።"
+msgstr "ቀደምት ውጤት %(resultado)sበ %(corridas)s ከ %(equipos)s ቡድኖች ጋር ይሮጣል።"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1098,7 +1098,8 @@ msgstr "የእያንዳንዱን ልቀት ውጤት ይመልከቱ"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr "በፈተናዎች ውስጥ %(resultado)s፣ በ %(corridas)s ከ %(equipos)s ቡድኖች ጋር ይሮጣል።"
+msgstr ""
+"በሙከራ ውስጥ %(resultado)s, በ %(corridas)s ውስጥ ከ %(equipos)s ቡድኖች ጋር ይሮጣል."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1146,7 +1147,7 @@ msgstr "በአስርዮሽ ዲግሪዎች. ለምሳሌ -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "ሊግ ቡድኖች"
+msgstr "የሊግ ቡድኖች"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1174,7 +1175,7 @@ msgstr "ጨዋታዎች በተከታታይ"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "የቡድን ተከታታይ"
+msgstr "ተከታታይ በቡድን"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1210,7 +1211,7 @@ msgstr "በ 0 እና 1 መካከል መሆን አለበት."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "የጥቅል ይዘት"
+msgstr "ቡድኖች"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1234,7 +1235,7 @@ msgstr "መጀመሪያ ይህንን እርምጃ ያጠናቅቁ."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "የተጨመሩ መሳሪያዎች."
+msgstr "ቡድኑ ታክሏል።"
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1953,7 +1954,7 @@ msgstr "ሁሉም እሴቶች አስቀድመው ተመርጠዋል. እነሱ�
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "መሳሪያዎችን ይቀይሩ"
+msgstr "ቡድኖችን ይለውጡ"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -1979,7 +1980,7 @@ msgstr "Koza-TTP ማሳያ በአዲሱ ስልተ ቀመር በ3 ደረጃዎች
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "ደረጃ 1 መሳሪያውን ይምረጡ"
+msgstr "ደረጃ 1 ቡድኖቹን ይምረጡ"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2110,7 +2111,7 @@ msgstr "ቅንብሮችን ይቀይሩ እና እንደገና ያሂዱ"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "ሌሎች መሳሪያዎችን መምረጥ"
+msgstr "ሌሎች ቡድኖችን ይምረጡ"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2123,7 +2124,7 @@ msgstr "በ 2 ደቂቃዎች ውስጥ እንዴት እንደሚሰራ ይረ�
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "እራስዎ ያድርጉት መሳሪያዎን በ 5-ደረጃ መመሪያ ውስጥ ያስመዝግቡ"
+msgstr "እራስዎ ያድርጉት ቡድኖችዎን በ 5-ደረጃ መመሪያ ውስጥ ያስመዝግቡ"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2307,8 +2308,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"የተሻሻለው ሞተር፣ በብሎኮች፣ በዘፈቀደ ያሸንፋል %(resultado)s፣ በቅድመ ሙከራዎች (%(corridas)s ሩጫዎች "
-"%(equipos)s ቡድኖች)።"
+"የተሻሻለው በብሎክ ላይ የተመሰረተ ሞተር በዘፈቀደ ያሸንፋል %(resultado)sበቅድመ ሙከራዎች (%(corridas)s "
+"ሩጫዎች %(equipos)s ቡድኖች)።"
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2361,10 +2362,6 @@ msgid ""
 msgstr ""
 "Koza-TTP ለቤዝቦል የቀን መቁጠሪያዎች የጄኔቲክ ፕሮግራሚንግ። በሌስሊ ዲኪንሰን (ITAM) እንደ ተሲስ ተጀምሯል እና"
 " ዛሬ እድልን የሚያሸንፍ ሞተር አለው።"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "ከጄኔቲክ ፕሮግራሚንግ ጋር የተሻለ የMLB መርሃ ግብር።"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2482,13 +2479,12 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"ማሳሰቢያ የሞተር ካላንደር <strong> በተከታታይ እስከ%(gira)s የሚደርሱ የሜዳ ውጪ ጨዋታዎች</strong> "
-"ጉብኝቶች አሉት። ኦፊሴላዊው ከፍተኛ %(oficial)sአለው። እውነተኛ ቡድን እንደዚህ አይነት ረጅም ጉብኝቶችን "
-"አይቀበልም."
+"ማሳሰቢያ የሞተር ካላንደር <strong> በተከታታይ እስከ%(gira)s የሚደርሱ ጨዋታዎች</strong> ጉብኝቶች አሉት።"
+" ኦፊሴላዊው ከፍተኛው %(oficial)sአለው። እውነተኛ ቡድን እንደዚህ አይነት ረጅም ጉብኝቶችን አይቀበልም."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "የእያንዳንዱ ቡድን ጉዞ"
+msgstr "በቡድን ይጓዙ"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2668,15 +2664,15 @@ msgstr "የውድድር ቡድኖች"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "አስቀድመን 10 አስቆጥረናል። እነሱን መቀየር ይችላሉ ከ 3 እስከ 10 ቡድኖች."
+msgstr "አስቀድመን 10 ን አረጋግጠናል። እነሱን መቀየር ይችላሉ ከ 3 ወደ 10 ቡድኖች."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "ቢያንስ %(n)d ቡድኖችን ይምረጡ።"
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "ቢበዛ %(n)d ቡድኖችን ይምረጡ።"
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2841,3 +2837,9 @@ msgstr "ካርታ እያንዳንዱ ክበብ ቡድን ነው; ትልቅ ማ�
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{ቡድን} {ኪሜ} ኪሜ"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr "<span class=\"clave\">ከጄኔቲክ ፕሮግራሚንግ ጋር</span> የተሻለ የMLB መርሃ ግብር።"

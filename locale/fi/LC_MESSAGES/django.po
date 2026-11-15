@@ -341,7 +341,7 @@ msgid ""
 msgstr ""
 "<strong>Kannattavuus (C1):</strong> Jokaisen joukkueen on pelattava "
 "täsmälleen sen määrän pelejä, joita turnaus vaatii. Arvo 0 tarkoittaa, että "
-"aikataulu on voimassa."
+"otteluohjelma on voimassa."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -611,9 +611,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"Tekoäly (geneettinen ohjelmointi) etsii kalentereita, joissa matka on lyhyt "
-"ja tasainen. Haluatko omat tiimisi? Käytä <a href=\"%(guia)s\">viiden "
-"askeleen opasta</a>."
+"Tekoäly (geneettinen ohjelmointi) etsii aikatauluja, joissa matkustaminen on"
+" lyhyttä ja tasaista. Haluatko omat tiimisi? Käytä <a "
+"href=\"%(guia)s\">viiden askeleen opasta</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -858,7 +858,7 @@ msgstr "Lisää tiimi"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Lisää laitteita"
+msgstr "Lisää joukkue"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -866,7 +866,7 @@ msgstr "Jatka vaiheeseen 2: Liiga"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Tarvitset vähintään kaksi joukkuetta seuraamaan."
+msgstr "Tarvitset vähintään kaksi joukkuetta jatkaaksesi."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -939,7 +939,7 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"Turnauksessa pelaavat \"%(liga)s\"-liigan joukkueet. Ottelut ovat "
+"Turnauksessa käytetään \"%(liga)s\" -liigan joukkueita. Ottelut ovat "
 "aikataulutettu maanantaista torstaihin ja lauantaisin ensimmäisen ja "
 "viimeisen päivän välille."
 
@@ -1099,7 +1099,7 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Alustava tulos: %(resultado)s, %(corridas)s juoksua %(equipos)s joukkueen "
+"Varhainen tulos: %(resultado)s, %(corridas)s juoksua %(equipos)s joukkueen "
 "kanssa."
 
 #: documentacion/templates/documentacion/avances.html
@@ -1154,7 +1154,7 @@ msgstr "Katso jokaisen julkaisun tulokset"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"Testeissä: %(resultado)s, %(corridas)s %(equipos)s joukkueiden kanssa."
+"Testauksessa: %(resultado)s, %(corridas)s %(equipos)s joukkueiden kanssa."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1203,7 +1203,7 @@ msgstr "Desimaaliasteina. Esimerkki: -122,33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "Liigan joukkueet"
+msgstr "Liigajoukkueet"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1231,7 +1231,7 @@ msgstr "Ottelut sarjoittain"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Team Series"
+msgstr "Sarja per joukkue"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1267,7 +1267,7 @@ msgstr "Sen pitäisi olla välillä 0–1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Varusteet"
+msgstr "Joukkueet"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1291,7 +1291,7 @@ msgstr "Suorita tämä vaihe ensin."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Lisälaitteita."
+msgstr "Team lisäsi."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2052,7 +2052,7 @@ msgstr "Kaikki arvot on jo valittu. Voit muuttaa niitä tai antaa \\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Varusteiden vaihto"
+msgstr "Vaihda joukkuetta"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2080,7 +2080,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Vaihe 1: Valitse varusteet"
+msgstr "Vaihe 1: Valitse joukkueet"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2215,7 +2215,7 @@ msgstr "Vaihda asetuksia ja aja uudelleen"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Muiden varusteiden valinta"
+msgstr "Valitse muut joukkueet"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2228,7 +2228,7 @@ msgstr "Ymmärrä, miten se toimii kahdessa minuutissa"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Tee se itse: rekisteröi laitteesi viiden askeleen oppaaseen"
+msgstr "Tee se itse: rekisteröi tiimisi viiden askeleen oppaaseen"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2420,8 +2420,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Parannettu moottori voittaa sen sattumanvaraisesti: "
-"%(resultado)salkutesteissä (%(corridas)s juoksuja %(equipos)s joukkueita)."
+"Parannettu lohkopohjainen moottori voittaa satunnaiset: %(resultado)s, "
+"alustavissa testeissä (%(corridas)s suoritukset %(equipos)s joukkueet)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2475,10 +2475,6 @@ msgstr ""
 "Koza-TTP: geneettinen ohjelmointi baseball-kalentereihin. Se sai alkunsa "
 "Leslie Dickinsonin (ITAM) opinnäytetyöstä, ja nykyään sillä on moottori, "
 "joka voittaa sattuman."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Parempi MLB-aikataulu geneettisellä ohjelmoinnilla."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2606,12 +2602,12 @@ msgid ""
 "real no aceptaría giras tan largas."
 msgstr ""
 "Huomautus: moottorikalenterissa on jopa <strong>%(gira)s peräkkäistä "
-"vieraspeliä</strong>. Virallisessa kalenterissa on maksimimäärä %(oficial)s."
-" Oikea joukkue ei hyväksyisi näin pitkiä kiertueita."
+"vieraspeliä</strong> kiertueita. Virallisessa kalenterissa on enimmäismäärä "
+"%(oficial)s. Oikea joukkue ei hyväksyisi näin pitkiä kiertueita."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Jokaisen joukkueen matka"
+msgstr "Matkustaminen joukkueittain"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2793,17 +2789,15 @@ msgstr "Turnausjoukkueet"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr ""
-"Olemme jo tehneet 10 pistettä. Voit vaihtaa ne: 3:sta kymmeneen "
-"joukkueeseen."
+msgstr "Olemme jo tarkistaneet 10. Voit vaihtaa ne: 3:sta 10:een."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Valitse vähintään %(n)d joukkuetta."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Valitse korkeintaan %(n)d joukkuetta."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2979,3 +2973,11 @@ msgstr ""
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{team}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""
+"Parempi <span class=\"clave\">MLB-aikataulu geneettisellä "
+"ohjelmoinnilla.</span>"

@@ -315,8 +315,8 @@ msgid ""
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
 "<strong>ייצוג:</strong> כל לוח שנה הוא עץ. הצמתים שלו הם פעולות כמו "
-"<code>crear_juego</code> (תאריך, קבוצה ביתית, קבוצה אורחת) ו "
-"<code>obtener_calendario</code>-, שמצטרף לשתי רשימות משחקים."
+"<code>crear_juego</code> (תאריך, קבוצה ביתית, קבוצת חוץ) ו "
+"<code>obtener_calendario</code>-, שמחברת שתי רשימות משחקים."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -583,8 +583,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"בינה מלאכותית (תכנות גנטי) מחפשת לוחות שנה שבהם הטיול קצר ואחיד. רוצים "
-"צוותים משלכם? השתמשו <a href=\"%(guia)s\">במדריך בן 5 שלבים</a>."
+"הבינה המלאכותית (תכנות גנטי) מחפשת לוחות זמנים שבהם הנסיעות קצרות ואחידות. "
+"אתה רוצה צוותים משלך? השתמש <a href=\"%(guia)s\">במדריך בן 5 שלבים</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -826,7 +826,7 @@ msgstr "הוסף צוות"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "הוספת ציוד"
+msgstr "הוסף צוות"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -834,7 +834,7 @@ msgstr "המשך לשלב 2: ליגה"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "אתה צריך לפחות שתי קבוצות לעקוב."
+msgstr "צריך לפחות שתי קבוצות כדי להמשיך."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -1110,7 +1110,7 @@ msgstr "צפה בתוצאות כל שחרור"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr "במבחנים: %(resultado)s, בריצות %(corridas)s עם קבוצות %(equipos)s ."
+msgstr "במבחנים: %(resultado)s, בריצות %(corridas)s עם %(equipos)s צוותים."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1158,7 +1158,7 @@ msgstr "במעלות עשרוניות. דוגמה: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "קבוצות ליגה"
+msgstr "קבוצות הליגה"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1186,7 +1186,7 @@ msgstr "משחקים לפי סדרה"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "סדרת קבוצות"
+msgstr "סדרות לפי קבוצה"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1222,7 +1222,7 @@ msgstr "זה אמור להיות בין 0 ל-1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "ציוד"
+msgstr "קבוצות"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1246,7 +1246,7 @@ msgstr "השלים את השלב הזה קודם."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "הוספת ציוד."
+msgstr "הצוות הוסיף."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1976,7 +1976,7 @@ msgstr "כל הערכים כבר נבחרו. אתה יכול לשנות אותם
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "החלפת ציוד"
+msgstr "החלפת קבוצות"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2003,7 +2003,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "שלב 1: בחר את הציוד"
+msgstr "שלב 1: בחר את הקבוצות"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2134,7 +2134,7 @@ msgstr "שנה הגדרות ורץ שוב"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "בחירת ציוד נוסף"
+msgstr "בחרו קבוצות נוספות"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2147,7 +2147,7 @@ msgstr "תבין איך זה עובד בשתי דקות"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "עשה זאת בעצמך: רשום את הציוד שלך במדריך בן 5 שלבים"
+msgstr "עשה זאת בעצמך: רשמו את הצוותים שלכם במדריך בן 5 שלבים"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2333,8 +2333,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"המנוע המשופר, לפי בלוקים, אכן מנצח אותו באקראי: %(resultado)s, במבחנים "
-"ראשוניים (%(corridas)s ריצות, %(equipos)s צוותים)."
+"מנוע הבלוקים המשופר אכן מנצח אקראי: %(resultado)s, במבחנים ראשוניים "
+"(%(corridas)s ריצות, %(equipos)s קבוצות)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2387,10 +2387,6 @@ msgid ""
 msgstr ""
 "Koza-TTP: תכנות גנטי ללוחות שנה של בייסבול. הוא התחיל כתזה של לסלי דיקינסון "
 "(ITAM) והיום יש לו מנוע שמתגבר על מזל."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "לוח זמנים טוב יותר ב-MLB עם תכנות גנטי."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2513,12 +2509,12 @@ msgid ""
 "real no aceptaría giras tan largas."
 msgstr ""
 "הערה: לוח השנה של המנוע כולל סיורים של עד <strong>%(gira)s משחקי חוץ "
-"ברצף</strong>. הלוח הרשמי כולל %(oficial)sמקסימלי. קבוצה אמיתית לא תקבל "
+"ברצף</strong>. הלוח הרשמי כולל %(oficial)sמקסימום. קבוצה אמיתית לא תקבל "
 "סיורים כה ארוכים."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "המסע של כל קבוצה"
+msgstr "נסיעה לפי קבוצה"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2698,15 +2694,15 @@ msgstr "קבוצות טורניר"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "כבר קיבלנו 10. אפשר לשנות אותם: מ-3 ל-10 קבוצות."
+msgstr "כבר בדקנו 10. אפשר לשנות אותם: מ-3 ל-10 קבוצות."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "בחר לפחות %(n)d קבוצות."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "בחר לכל היותר %(n)d קבוצות."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2874,3 +2870,9 @@ msgstr "מפה: כל מעגל הוא קבוצה; גדול יותר אומר יו
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{צוות}: {ק\"מ} ק\"מ"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr "לוח <span class=\"clave\">זמנים טוב יותר ב-MLB עם תכנות גנטי.</span>"

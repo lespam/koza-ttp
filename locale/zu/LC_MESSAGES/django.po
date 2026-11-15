@@ -329,8 +329,8 @@ msgid ""
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
 "<strong>Ukumelwa:</strong> Ikhalenda ngalinye liyisihlahla. Ama-node ayo "
-"yimisebenzi efana <code>crear_juego</code> (usuku, iqembu lasekhaya, iqembu "
-"elikude) kanye <code>obtener_calendario</code>ne-, ejoyina uhlu olubili "
+"ayimisebenzi efana <code>crear_juego</code> (usuku, iqembu lasekhaya, iqembu"
+" elikude) kanye <code>obtener_calendario</code>ne-, ejoyina uhlu olubili "
 "lwemidlalo."
 
 #: documentacion/templates/documentacion/historico.html
@@ -614,8 +614,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"I-AI (uhlelo lwezakhi zofuzo) ibheka amakhalenda lapho uhambo lufushane "
-"futhi lulingana. Ufuna amaqembu akho? Sebenzisa <a "
+"I-AI (uhlelo lwezakhi zofuzo) ibheka amashejuli lapho ukuhamba kufushane "
+"futhi kulingana. Ufuna amaqembu akho? Sebenzisa <a "
 "href=\"%(guia)s\">umhlahlandlela wezinyathelo ezi-5</a>."
 
 #: tesis/templates/tesis/dashboard.html
@@ -856,7 +856,7 @@ msgstr "Ungasebenzisa amathuluzi akhona noma ungeze entsha."
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "Buka Amaqembu Akamuva Abhalisiwe"
+msgstr "Buka amaqembu akamuva abhalisiwe"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
@@ -864,7 +864,7 @@ msgstr "Engeza ithimba"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Engeza imishini"
+msgstr "Engeza ithimba"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -872,7 +872,7 @@ msgstr "Qhubeka Isinyathelo 2: Iligi"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Udinga okungenani amaqembu ama-2 ukulandela."
+msgstr "Udinga okungenani amaqembu ama-2 ukuze uqhubeke."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -944,7 +944,7 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"Lo mqhudelwano usebenzisa amaqembu eligi \"%(liga)s\". Imidlalo ihlelelwe "
+"Lo mqhudelwano usebenzisa amaqembu \"%(liga)sleague\". Imidlalo ihlelelwe "
 "kusukela ngoMsombuluko kuya kuLwesine nangoMgqibelo, phakathi kosuku "
 "lokuqala nokugcina."
 
@@ -1107,7 +1107,7 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Umphumela wokuqala: %(resultado)s, kuma-runs %(corridas)s namaqembu "
+"Umphumela wokuqala: %(resultado)s, ku- %(corridas)s egijima namaqembu "
 "%(equipos)s ."
 
 #: documentacion/templates/documentacion/avances.html
@@ -1162,8 +1162,7 @@ msgstr "Bheka imiphumela yokukhishwa ngakunye"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"Ezivivinyweni: %(resultado)s, ku- %(corridas)s ugijima namaqembu %(equipos)s"
-" ."
+"Ekuhlolweni: %(resultado)s, ku- %(corridas)s egijima namaqembu %(equipos)s ."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1239,7 +1238,7 @@ msgstr "Imidlalo ngochungechunge"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Uchungechunge lweqembu"
+msgstr "Uchungechunge ngeqembu ngalinye"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1275,7 +1274,7 @@ msgstr "Kufanele kube phakathi kuka-0 no-1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Imishini"
+msgstr "Amaqembu"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1299,7 +1298,7 @@ msgstr "Qedela lesi sinyathelo kuqala."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Imishini eyengeziwe."
+msgstr "Iqembu lanezela."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2081,7 +2080,7 @@ msgstr "Wonke amanani asevele ekhethiwe. Ungawashintsha noma unikeze \\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Shintsha imishini"
+msgstr "Shintsha amaqembu"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2109,7 +2108,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Isinyathelo 1: Khetha imishini"
+msgstr "Isinyathelo 1: Khetha amaqembu"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2251,7 +2250,7 @@ msgstr "Shintsha izimiso bese ugijima futhi"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Ukukhetha ezinye imishini"
+msgstr "Khetha amanye amaqembu"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2267,7 +2266,7 @@ msgstr "Thola ukuthi isebenza kanjani ngemizuzu emi-2"
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
 msgstr ""
-"Zenzele ngokwakho: Bhalisa imishini yakho kumhlahlandlela wezinyathelo ezi-5"
+"Zenzele ngokwakho: Bhalisa amaqembu akho kumhlahlandlela wezinyathelo ezi-5"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2464,8 +2463,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Injini ethuthukisiwe, ngamabhlogo, ayishaya ngokungahleliwe: %(resultado)s, "
-"ezivivinyweni zokuqala (%(corridas)s -runs, %(equipos)s amaqembu)."
+"Injini ethuthukisiwe block-based ishaya okungahleliwe: %(resultado)s, "
+"ezivivinyweni zokuqala (%(corridas)s runs, %(equipos)s amaqembu)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2519,10 +2518,6 @@ msgstr ""
 "I-Koza-TTP: uhlelo lwezakhi zofuzo lwamakhalenda e-baseball. Yaqala "
 "njengethiyori kaLeslie Dickinson (ITAM) futhi namuhla inenjini enqoba "
 "ithuba."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Uhlelo olungcono lwe-MLB olunezinhlelo zofuzo."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2648,14 +2643,14 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"Qaphela: ikhalenda lenjini linezinkambo zemidlalo engama <strong> -%(gira)s "
+"Qaphela: ikhalenda lenjini linezinkambo zemidlalo <strong> engama-%(gira)s "
 "kude ngokulandelana</strong>. Iqembu elisemthethweni "
 "line-%(oficial)seliphezulu. Iqembu langempela ngeke lamukele izinkambo "
 "ezinde kangaka."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Uhambo lweqembu ngalinye"
+msgstr "Ukuhamba ngeqembu"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2839,16 +2834,15 @@ msgstr "Amaqembu omqhudelwano"
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
 msgstr ""
-"Sesivele sathola amaphuzu angu-10. Ungawashintsha: kusuka kumaqembu ama-3 "
-"kuye kwayi-10."
+"Sesivele sihlole i-10. Ungazishintsha: kusuka kumaqembu ama-3 kuye kwayi-10."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Khetha okungenani amaqembu %(n)d ."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Khetha amaqembu %(n)d amaningi."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -3027,3 +3021,10 @@ msgstr ""
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{iqembu}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""
+"Uhlelo olungcono lwe-MLB <span class=\"clave\">olunezinhlelo zofuzo.</span>"

@@ -323,8 +323,8 @@ msgid ""
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
 "<strong>Temsil:</strong> Her takvim bir ağaçtır. Düğümleri (tarih, ev sahibi"
-" takım, deplasman takımı) ve <code>obtener_calendario</code>, gibi "
-"işlemlerdir <code>crear_juego</code> ; bu da iki oyun listesine katılır."
+" takım, deplasman takım) ve <code>obtener_calendario</code>, gibi "
+"işlemlerdir <code>crear_juego</code> ve bu iki oyun listesine katılır."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -598,8 +598,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"Yapay zeka (genetik programlama), seyahatin kısa ve eşit olduğu takvimleri "
-"arıyor. Kendi takımlarınızı mı istiyorsun? <a href=\"%(guia)s\">5 adımlı "
+"Yapay zeka (genetik programlama) seyahatin kısa ve eşit olduğu programları "
+"arar. Kendi takımlarınızı mı istiyorsunuz? <a href=\"%(guia)s\">5 adımlı "
 "rehberi</a> kullanın."
 
 #: tesis/templates/tesis/dashboard.html
@@ -835,7 +835,7 @@ msgstr "Mevcut olanları kullanabilir veya yenisini ekleyebilirsiniz."
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "En Son Kayıtlı Takımları Görüntüleyin"
+msgstr "En son kayıtlı takımları görüntüle"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
@@ -843,7 +843,7 @@ msgstr "Bir takım ekle"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Ekipman Ekle"
+msgstr "Takım ekle"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -851,7 +851,7 @@ msgstr "Devam Et: 2. Adım: Lig"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Takip etmek için en az 2 takım olmalı."
+msgstr "Devam etmek için en az 2 takım gerekiyor."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -923,8 +923,8 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"Turnuva, \"%(liga)s\" liginin takımlarını kullanır. Maçlar Pazartesi'den "
-"Perşembe'ye ve Cumartesi günleri, ilk ve son gün arasında planlanır."
+"Turnuva, \"%(liga)s\" ligi takımlarını kullanır. Maçlar Pazartesi'den "
+"Perşembe'ye ve Cumartesi günleri, ilk ve son gün arasında planlanmıştır."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -1079,7 +1079,7 @@ msgstr ""
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
-msgstr "Ön sonuç: %(resultado)s, %(equipos)s takımla %(corridas)s koşuda."
+msgstr "Erken sonuç: %(resultado)s, %(equipos)s takımla %(corridas)s koşuda."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1131,7 +1131,8 @@ msgstr "Her yayının sonuçlarını görüntüleyin"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr "Testlerde: %(resultado)s, %(corridas)s %(equipos)s takımla koşu."
+msgstr ""
+"Testlerde: %(resultado)s, %(corridas)s %(equipos)s takımla yapılan koşular."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1155,7 +1156,7 @@ msgstr "Kısaltma (örneğin, SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr "Takım Adı"
+msgstr "Takım adı"
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1179,7 +1180,7 @@ msgstr "Ondalık derecelerde. Örnek: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "Lig Takımları"
+msgstr "Lig takımları"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1207,7 +1208,7 @@ msgstr "Seriler bazında oyunlar"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Takım Serisi"
+msgstr "Takım başına seriler"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1243,7 +1244,7 @@ msgstr "0 ile 1 arasında olmalı."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Ekipman"
+msgstr "Takımlar"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1267,7 +1268,7 @@ msgstr "Önce bu adımı tamamla."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Eklenmiş ekipman."
+msgstr "Takım ekledi."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2017,7 +2018,7 @@ msgstr "Tüm değerler zaten seçilmiştir. Onları değiştirebilir veya \\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Ekipman değiştirme"
+msgstr "Takım değişimi"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2045,7 +2046,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Adım 1: Ekipmanı seçin"
+msgstr "Adım 1: Takımları seçin"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2181,7 +2182,7 @@ msgstr "Ayarları değiştir ve tekrar çalıştır"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Diğer Ekipman Seçimi"
+msgstr "Diğer takımları seçin"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2194,7 +2195,7 @@ msgstr "Nasıl çalıştığını 2 dakikada anlayın"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Kendin yap: ekipmanınızı 5 adımlı rehbere kaydedin"
+msgstr "Kendin yap: takımlarını 5 adımlı rehbere kaydet"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2387,8 +2388,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Geliştirilmiş motor, bloklarla rastgele yeniliyor: %(resultado)s, ön "
-"testlerde (%(corridas)s koşu, %(equipos)s takım)."
+"Geliştirilmiş blok tabanlı motor, ön testlerde (%(corridas)s koşu, "
+"%(equipos)s takımlarda rastgele oyunlara %(resultado)syener."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2441,10 +2442,6 @@ msgid ""
 msgstr ""
 "Koza-TTP: beyzbol takvimleri için genetik programlama. Leslie Dickinson'ın "
 "(ITAM) teziyle başladı ve bugün şansı alt eden bir motora sahip."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Genetik programlama ile daha iyi bir MLB takvimi."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2570,12 +2567,12 @@ msgid ""
 "real no aceptaría giras tan largas."
 msgstr ""
 "Not: Motor takviminde <strong> art arda%(gira)s deplasman maçı</strong> "
-"turları vardır. Resmi takvimde maksimum %(oficial)svardır. Gerçek bir takım "
+"turları vardır. Resmi takvim maksimum %(oficial)siçerir. Gerçek bir takım "
 "böyle uzun turları kabul etmez."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Her takımın yolculuğu"
+msgstr "Takım bazında seyahat"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2754,19 +2751,19 @@ msgstr "İsteğe bağlı. Eğer bu konuda bırakırsanız, bu isim kullanılıyo
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "Turnuva Takımları"
+msgstr "Turnuva takımları"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "Zaten 10 puan aldık. Değiştirebilirsiniz: 3'ten 10'a takım."
+msgstr "Zaten 10 takibi kontrol ettik. Değiştirebilirsiniz: 3'ten 10'a kadar."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "En az %(n)d takım seçin."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "En fazla %(n)d takım seçin."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2941,3 +2938,11 @@ msgstr ""
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{team}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""
+"<span class=\"clave\">Genetik programlama</span> ile daha iyi bir MLB "
+"takvimi."

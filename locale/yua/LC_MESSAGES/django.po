@@ -294,8 +294,8 @@ msgid ""
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
 "<strong>Representación:</strong> Amal calendario jach junkúul che'. U nodos "
-"ku operaciones tales como <code>crear_juego</code> (k'áalil, nu'ukulil u "
-"najo'ob, nu'ukulil náachil) yéetel <code>obtener_calendario</code>, ku une "
+"ku operaciones tales como <code>crear_juego</code> (k'iinil, nu'ukulil u "
+"wotoch, nu'ukulil náachil) yéetel <code>obtener_calendario</code>, ku une "
 "ka'ap'éel listas juegos."
 
 #: documentacion/templates/documentacion/historico.html
@@ -616,9 +616,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"IA (programación genética) ku kaxtik calendarios tu'ux le náachil jach corto"
-" yéetel par. Táak wáaj u chíikbesik nu'ukulil? Meyaj le <a "
-"href=\"%(guia)s\">náakake' u yaak'il 5 wook</a>."
+"Le IA (programación genética) ku kaxtik horarios tu'ux le viaje jach corto "
+"yéetel par. Táak wáaj u leti'ob nu'ukulil? Meyaj le <a "
+"href=\"%(guia)s\">náakake' u yaak'il ti' 5 wook</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -860,7 +860,7 @@ msgstr "Je'el u páajtal u utilizar le existentes wa añadir jump'éel túumben.
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "Wil ichil nu'ukulo'ob registrados"
+msgstr "Wil nu'ukulilo'ob registrados asab recientes"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
@@ -876,7 +876,7 @@ msgstr "Táanil paso 2: Liga"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "K'abéet a bey 2 nu'ukulilo'ob in t'u'uchpachtik."
+msgstr "K'abéet a bey 2 nu'ukulilo'ob utia'al táanil."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -949,8 +949,8 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"Le torneo meyajtiko'ob le nu'ukulilo'ob ti' le “%(liga)s” liga. Le juegos ku"
-" programan lunes tak jueves yéetel le sábados, ichil le yáax yéetel le "
+"Le torneo meyajtiko'ob nu'ukulilo'ob ti' le “%(liga)s” liga. U programan le "
+"juegos tak le lunes tak jueves yéetel le sábados, ichil le yáax yéetel "
 "ts'ook k'iin."
 
 #: tesis/templates/tesis/guia/torneo.html
@@ -1117,8 +1117,8 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Resultado preliminar: %(resultado)s, ti' %(corridas)s yáalkabkab yéetel "
-"%(equipos)s ''ukulilo'ob."
+"Yáax resultado: %(resultado)s, ti' %(corridas)s ku ejecuta yéetel nu'ukulil "
+"%(equipos)s ."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1172,7 +1172,7 @@ msgstr "Wil ya'ala'al máaxo'ob máano'ob Amal versión"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"Ti' pruebas: %(resultado)s, ti' %(corridas)s corre yéetel nu'ukulilo'ob "
+"Ti' pruebas: %(resultado)s, ti' %(corridas)s ku ejecuta yéetel nu'ukulo'ob "
 "%(equipos)s ."
 
 #: project/estado_motor.py
@@ -1222,7 +1222,7 @@ msgstr "Ti' grados décimales. Ejemplo: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "Nu'ukulo'ob le liga"
+msgstr "Nu'ukulilo'ob ti' le liga"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1250,7 +1250,7 @@ msgstr "Juegos tumen serie"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Serie nu'ukulil"
+msgstr "Serie tumen nu'ukulil"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1287,7 +1287,7 @@ msgstr "K'a'ana'an u ichil 0 yéetel 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Nu'ukulo'ob"
+msgstr "Nu'ukulilo'ob"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1311,7 +1311,7 @@ msgstr "Kuuch le paso táanile'."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Ku ts'áabal nu'ukulil."
+msgstr "Nu'ukulil añadido."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2086,7 +2086,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "K'ex le nu'ukulil"
+msgstr "K'ex le nu'ukulilo'ob"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2114,7 +2114,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Máan 1: Elija le nu'ukulil"
+msgstr "Máan 1: Elegir le nu'ukulilo'ob"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2255,7 +2255,7 @@ msgstr "K'ex configuración yéetel ejecutar tu ka'atéen"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Elegir uláak' nu'ukulo'ob"
+msgstr "Elegir uláak' nu'ukulilo'ob"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2271,7 +2271,8 @@ msgstr "Entender bix u meyaj ti' 2 minutos"
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
 msgstr ""
-"Beetik tech wéet: registrar u nu'ukulil ti' le náakake' u yaak'il ti' 5 wook"
+"Beetik tech wéet: registrar u nu'ukulilo'ob ti' le náakake' u yaak'il ti' 5 "
+"wook"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2468,9 +2469,9 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Le kisbuuts'o' mejorado, tuméen bloques, je'el le vence ti' le azar: "
-"%(resultado)s, ti' pruebas preliminares (%(corridas)s ejecuciones, "
-"%(equipos)s nu'ukulil)."
+"Le kisbuuts'o' je'el basado ti' bloques mejorado je'el le k'a'atik: "
+"%(resultado)s, ti' pruebas preliminares (%(corridas)s carreras, %(equipos)s "
+"nu'ukulil)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2524,10 +2525,6 @@ msgstr ""
 "Koza-TTP: programación genética utia'al u calendarios béisbol. Káaj bey "
 "tesis tumen Leslie Dickinson (ITAM) yéetel bejla'e' yaan jump'éel "
 "kisbuuts'o' supera le oportunidad."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Jump'éel utsil horario MLB yéetel programación genética."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2653,14 +2650,14 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"Not: Le calendario le kisbuuts'o' yaan u tours tak <strong>%(gira)s juegos "
-"náach ti' jump'éel t'o'okol</strong> ti'. Le way sijnáaleche' yaan "
+"Not: Le calendario le kisbuuts'o' yaan ti' tours tak <strong>%(gira)s juegos"
+" náach ti' jump'éel t'éelpajal</strong>. Le way sijnáaleche' yaan "
 "%(oficial)smáximo. Juntúul nu'ukulil xíimbal tumen ma' aceptaría tours jach "
-"chowakoki'."
+"chowaktako'ob."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Náachil Amal nu'ukulil"
+msgstr "Máan tumen nu'ukulil"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2845,15 +2842,15 @@ msgstr "Nu'ukulilo'ob ti' le torneo"
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
 msgstr ""
-"Ts'o'ok k puntu 10. Je'el u páajtal u k'expajal: u 3 u 10 nu'ukulilo'ob."
+"Ts'o'ok k wilik 10. Je'el u páajtal u k'expajal: 3 u 10 nu'ukulilo'ob."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Yéey bey %(n)d 'éel nu'ukulil."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Elegir ti' óol tuláakal le máasewáalo'obo' %(n)d 'ukulilo'ob."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -3030,3 +3027,11 @@ msgstr ""
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{team}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""
+"Jump'éel utsil horario MLB <span class=\"clave\">yéetel programación "
+"genética.</span>"

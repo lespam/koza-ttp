@@ -331,7 +331,7 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
-"<strong>Iṣeeṣe (C1):</strong> Ẹgbẹ kọọkan gbọdọ mu deede nọmba awọn ere ti "
+"<strong>Iṣeeṣe (C1):</strong> Ẹgbẹ kọọkan gbọdọ mu gangan nọmba awọn ere ti "
 "idije naa pe. Iye ti 0 tumọ si pe iṣeto naa wulo."
 
 #: documentacion/templates/documentacion/historico.html
@@ -598,9 +598,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI (siseto jiini) n wa awọn kalẹnda nibiti irin-ajo naa jẹ kukuru ati "
-"paapaa. Ṣe o fẹ awọn ẹgbẹ tirẹ? Lo <a href=\"%(guia)s\">itọsọna igbesẹ "
-"5</a>."
+"AI (siseto jiini) n wa awọn iṣeto nibiti irin-ajo jẹ kukuru ati paapaa. Ṣe o"
+" fẹ awọn ẹgbẹ tirẹ? Lo <a href=\"%(guia)s\">itọsọna igbesẹ marun</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -835,7 +834,7 @@ msgstr "O le lo awọn ti o wa tẹlẹ tabi ṣafikun titun kan."
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "Wo Awọn ẹgbẹ ti a forukọsilẹ tuntun"
+msgstr "Wo awọn ẹgbẹ ti a forukọsilẹ tuntun"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
@@ -843,7 +842,7 @@ msgstr "Ṣafikun ẹgbẹ kan"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Ṣafikun awọn ohun elo"
+msgstr "Ṣafikun ẹgbẹ"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -851,7 +850,7 @@ msgstr "Igbesẹ 2: Ajumọṣe"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "O nilo o kere ju awọn ẹgbẹ meji lati tẹle."
+msgstr "O nilo o kere ju awọn ẹgbẹ meji lati tẹsiwaju."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -1082,8 +1081,8 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Abajade: %(resultado)s, ni awọn %(corridas)s ṣiṣe pẹlu awọn ẹgbẹ %(equipos)s"
-" ."
+"Ni kutukutu abajade: %(resultado)s, ni %(corridas)s gbalaye pẹlu awọn ẹgbẹ "
+"%(equipos)s ."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1136,8 +1135,8 @@ msgstr "Wo awọn abajade ti imudojuiwọn kọọkan."
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"Ni awọn idanwo: %(resultado)s, ni %(corridas)s gbalaye pẹlu awọn ẹgbẹ "
-"%(equipos)s ."
+"Ni idanwo: %(resultado)s, ni %(corridas)s gbalaye pẹlu awọn ẹgbẹ %(equipos)s"
+" ."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1213,7 +1212,7 @@ msgstr "Awọn ere nipasẹ jara"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Ẹgbẹ Series"
+msgstr "jara fun ẹgbẹ"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1249,7 +1248,7 @@ msgstr "O yẹ ki o wa laarin 0 ati 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Awọn ohun elo"
+msgstr "Awọn ẹgbẹ"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1273,7 +1272,7 @@ msgstr "Pari igbesẹ yii ni akọkọ."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Awọn ohun elo ti a fi kun."
+msgstr "Ẹgbẹ naa ṣafikun."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2027,7 +2026,7 @@ msgstr "Gbogbo awọn iye ti wa ni ti a ti yan tẹlẹ. O le yi wọn pada tabi
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Yi ẹrọ pada"
+msgstr "Yi awọn ẹgbẹ pada"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2055,7 +2054,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Igbesẹ 1: Yan ẹrọ naa"
+msgstr "Igbesẹ 1: Yan awọn ẹgbẹ"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2194,7 +2193,7 @@ msgstr "Pààrọ̀ ètò kí o sì tún ṣiṣẹ́ lẹ́ẹ̀kan sí i"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Yan awọn ohun elo miiran"
+msgstr "Yan awọn ẹgbẹ miiran"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2207,7 +2206,7 @@ msgstr "Jẹ ki a mọ bi o ṣe n ṣiṣẹ ni iṣẹju 2."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Ṣe o funrararẹ: Forukọsilẹ ẹrọ rẹ ni itọsọna igbesẹ 5"
+msgstr "Ṣe o funrararẹ: Forukọsilẹ awọn ẹgbẹ rẹ ni itọsọna igbesẹ 5"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2397,8 +2396,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Awọn dara engine, nipa awọn bulọọki, ko lu o ni laileto: %(resultado)s, ni "
-"alakoko igbeyewo (%(corridas)s runs, %(equipos)s egbe)."
+"Awọn dara Àkọsílẹ-orisun engine ko lu laileto: %(resultado)s, ni alakoko "
+"igbeyewo (%(corridas)s runs, %(equipos)s egbe)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2451,10 +2450,6 @@ msgid ""
 msgstr ""
 "Koza-TTP: siseto jiini fun awọn kalẹnda baseball. O bẹrẹ bi iwe-akọọlẹ "
 "nipasẹ Leslie Dickinson (ITAM) ati loni o ni ẹrọ ti o bori anfani."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Iṣeto MLB ti o dara julọ pẹlu siseto jiini."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2580,12 +2575,12 @@ msgid ""
 "real no aceptaría giras tan largas."
 msgstr ""
 "Akiyesi: kalẹnda engine ni awọn irin-ajo ti o to <strong> awọn ere%(gira)s "
-"kuro ni ọna kan.</strong> Ọkan osise ni o ni %(oficial)sti o pọju. Ẹgbẹ gidi"
-" kii yoo gba iru awọn irin-ajo gigun bẹ."
+"kuro ni ọna kan</strong>. Ọkan osise ni o ni awọn %(oficial)sti o pọju. Ẹgbẹ"
+" gidi kii yoo gba iru awọn irin-ajo gigun bẹ."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Irin-ajo ti ẹgbẹ kọọkan"
+msgstr "Irin-ajo nipasẹ ẹgbẹ"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2767,15 +2762,15 @@ msgstr "Awọn ẹgbẹ idije"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "A ti gba 10 tẹlẹ. O le yi wọn pada: lati awọn ẹgbẹ 3 si 10."
+msgstr "A ti ṣayẹwo 10 tẹlẹ. O le yi wọn pada: lati awọn ẹgbẹ 3 si 10."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Yan o kere ju awọn ẹgbẹ %(n)d ."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Yan awọn ẹgbẹ %(n)d julọ."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2951,3 +2946,9 @@ msgstr ""
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{ẹgbẹ}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr "Iṣeto MLB ti o dara <span class=\"clave\">julọ pẹlu siseto jiini.</span>"

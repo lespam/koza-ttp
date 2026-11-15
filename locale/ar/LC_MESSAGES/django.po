@@ -317,9 +317,9 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
-"<strong>التمثيل:</strong> كل تقويم هو شجرة. عقدته هي عمليات مثل "
+"<strong>التمثيل:</strong> كل تقويم هو شجرة. عقداته هي عمليات مثل "
 "<code>crear_juego</code> (التاريخ، الفريق المضيف، الفريق الضيف) و "
-"<code>obtener_calendario</code>، والتي تربط قائمتين من المباريات."
+"<code>obtener_calendario</code>، والتي تنضم إلى قائمتين من المباريات."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -327,8 +327,8 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
-"<strong>الجدوى (C1):</strong> يجب على كل فريق لعب بالضبط عدد المباريات التي "
-"تتطلبها البطولة. قيمة 0 تعني أن الجدول صالح."
+"<strong>الجدوى (C1):</strong> يجب على كل فريق أن يلعب بالضبط عدد المباريات "
+"التي تتطلبها البطولة. قيمة 0 تعني أن الجدول صالح."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -589,8 +589,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"الذكاء الاصطناعي (البرمجة الجينية) يبحث عن جداول تكون فيها الرحلة قصيرة "
-"ومتساوية. هل تريد فرقك الخاصة؟ استخدم <a href=\"%(guia)s\">دليل الخطوات "
+"الذكاء الاصطناعي (البرمجة الجينية) يبحث عن جداول يكون فيها السفر قصيرا "
+"ومتساويا. هل تريد فرقك الخاصة؟ استخدم <a href=\"%(guia)s\">دليل الخطوات "
 "الخمس</a>."
 
 #: tesis/templates/tesis/dashboard.html
@@ -831,7 +831,7 @@ msgstr "إضافة فريق"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "إضافة المعدات"
+msgstr "إضافة الفريق"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -839,7 +839,7 @@ msgstr "تابع إلى الخطوة 2: الدوري"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "تحتاج إلى فريقين على الأقل لمتابعتهم."
+msgstr "تحتاج على الأقل إلى فريقين للاستمرار."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -908,7 +908,7 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"تستخدم البطولة فرق دوري \"%(liga)s\". تقام المباريات من الاثنين إلى الخميس "
+"تستخدم البطولة فرق دوري \"%(liga)s\". تجدول المباريات من الاثنين إلى الخميس "
 "وأيام السبت بين اليوم الأول واليومي الأخير."
 
 #: tesis/templates/tesis/guia/torneo.html
@@ -1065,7 +1065,7 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"النتيجة الأولية: %(resultado)s، في %(corridas)s جولة مع %(equipos)s فريقا."
+"النتيجة المبكرة: %(resultado)s، في %(corridas)s جولة مع %(equipos)s فرق."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1116,7 +1116,7 @@ msgstr "عرض نتائج كل إصدار"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"في الاختبارات: %(resultado)s، في %(corridas)s الجولات مع %(equipos)s فرق."
+"في الاختبار: %(resultado)s، في %(corridas)s الجولات مع %(equipos)s الفرق."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1192,7 +1192,7 @@ msgstr "المباريات حسب السلسلة"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "سلسلة الفرق"
+msgstr "سلسلة لكل فريق"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1228,7 +1228,7 @@ msgstr "يجب أن يكون بين 0 و1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "المعدات"
+msgstr "الفرق"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1252,7 +1252,7 @@ msgstr "أكمل هذه الخطوة أولا."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "المعدات الإضافية."
+msgstr "وأضاف الفريق."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1990,7 +1990,7 @@ msgstr "جميع القيم قد تم اختيارها بالفعل. يمكنك 
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "تغيير المعدات"
+msgstr "تغيير الفرق"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2017,7 +2017,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "الخطوة 1: اختر المعدات"
+msgstr "الخطوة 1: اختر الفرق"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2152,7 +2152,7 @@ msgstr "غير الإعدادات وشغل مرة أخرى"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "اختيار معدات أخرى"
+msgstr "اختر فرقا أخرى"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2165,7 +2165,7 @@ msgstr "افهم كيف يعمل في دقيقتين"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "قم بذلك بنفسك: سجل معداتك في دليل الخطوات الخمس"
+msgstr "قم بذلك بنفسك: سجل فرقك في دليل الخطوات الخمس"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2352,8 +2352,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"المحرك المحسن، بحجم الكتل، يتفوق عليه عشوائيا: %(resultado)s، في الاختبارات "
-"التمهيدية (%(corridas)s الجري، %(equipos)s الفرق)."
+"المحرك المحسن القائم على الكتل يتفوق على العشوائي: %(resultado)s، في "
+"الاختبارات الأولية (%(corridas)s الجولات، %(equipos)s الفرق)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2406,10 +2406,6 @@ msgid ""
 msgstr ""
 "Koza-TTP: برمجة جينية لتقويمات البيسبول. بدأت كأطروحة كتهربتها ليزلي ديكنسون"
 " (ITAM) واليوم لديها محرك يتغلب على الصدفة."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "جدول أفضل في دوري البيسبول الأمريكي مع برمجة جينية."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2538,7 +2534,7 @@ msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "رحلة كل فريق"
+msgstr "السفر حسب الفريق"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2718,15 +2714,15 @@ msgstr "فرق البطولة"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "لقد سجلنا بالفعل 10 نقاط. يمكنك تغييرها: من 3 إلى 10 فرق."
+msgstr "لقد تحققنا من 10 بالفعل. يمكنك تغييرها: من 3 إلى 10 فرق."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "اختر على الأقل %(n)d فرق."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "اختر على الأكثر %(n)d الفرق."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2899,3 +2895,11 @@ msgstr "الخريطة: كل دائرة هي فريق؛ الأكبر يعني ا
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{الفريق}: {كم} كم"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""
+"جدول أفضل في دوري البيسبول <span class=\"clave\">الأمريكي مع برمجة "
+"جينية.</span>"

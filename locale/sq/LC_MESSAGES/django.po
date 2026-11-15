@@ -608,9 +608,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI (programimi gjenetik) kërkon kalendarë ku udhëtimi është i shkurtër dhe i"
-" barabartë. Dëshiron ekipet e tua? Përdor <a href=\"%(guia)s\">udhëzuesin me"
-" 5 hapa</a>."
+"AI (programimi gjenetik) kërkon orare ku udhëtimi është i shkurtër dhe i "
+"barabartë. Dëshiron skuadrat e tua? Përdor <a href=\"%(guia)s\">udhëzuesin "
+"me 5 hapa</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -856,7 +856,7 @@ msgstr "Shto një ekip"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Shto Pajisje"
+msgstr "Shto ekipin"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -864,7 +864,7 @@ msgstr "Vazhdo në Hapin 2: Liga"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Duhet të ndjekësh të paktën 2 ekipe."
+msgstr "Duhet të kesh të paktën 2 ekipe për të vazhduar."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -937,8 +937,8 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"Turneu përdor ekipet e ligës \"%(liga)s\". Ndeshjet janë planifikuar nga e "
-"hëna në të enjte dhe të shtunave, midis ditës së parë dhe të fundit."
+"Turneu përdor ekipet e ligës \"%(liga)s\". Ndeshjet janë të planifikuara nga"
+" e hëna në të enjte dhe të shtunave, nga dita e parë deri në të fundit."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -1096,7 +1096,7 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Rezultati paraprak: %(resultado)s, në %(corridas)s pikë me %(equipos)s "
+"Rezultati i hershëm: %(resultado)s, në %(corridas)s pikë me %(equipos)s "
 "ekipe."
 
 #: documentacion/templates/documentacion/avances.html
@@ -1150,7 +1150,7 @@ msgstr "Shikoni rezultatet e çdo publikimi"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr "Në teste: %(resultado)s, në %(corridas)s me %(equipos)s ekipe."
+msgstr "Në testim: %(resultado)s, në %(corridas)s gara me %(equipos)s ekipe."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1174,7 +1174,7 @@ msgstr "Shkurtimi (p.sh., SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr "Emri i Ekipit"
+msgstr "Emri i ekipit"
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1198,7 +1198,7 @@ msgstr "Në shkallë dhjetore. Shembull: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "Skuadrat e Ligës"
+msgstr "Skuadrat e ligës"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1226,7 +1226,7 @@ msgstr "Ndeshjet sipas serive"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Seria e Ekipeve"
+msgstr "Seritë për ekip"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1262,7 +1262,7 @@ msgstr "Duhet të jetë midis 0 dhe 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Pajisjet"
+msgstr "Skuadrat"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1286,7 +1286,7 @@ msgstr "Përfundoni këtë hap së pari."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Pajisje shtesë."
+msgstr "Shtoi Team."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -2044,7 +2044,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Ndërrimi i pajisjeve"
+msgstr "Ndërrimi i ekipeve"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2072,7 +2072,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Hapi 1: Zgjidh pajisjet"
+msgstr "Hapi 1: Zgjidh ekipet"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2207,7 +2207,7 @@ msgstr "Ndrysho cilësimet dhe ekzekuto përsëri"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Zgjedhja e pajisjeve të tjera"
+msgstr "Zgjidh ekipe të tjera"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2220,7 +2220,7 @@ msgstr "Kupto si funksionon për 2 minuta"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Bëje vetë: regjistro pajisjet në udhëzuesin me 5 hapa"
+msgstr "Bëjeni vetë: regjistroni ekipet tuaja në udhëzuesin me 5 hapa"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2413,8 +2413,9 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Motori i përmirësuar, me blloqe, e mposht atë në mënyrë të rastësishme: "
-"%(resultado)s, në testet paraprake (%(corridas)s gara, %(equipos)s ekipe)."
+"Motori i përmirësuar i bazuar në blloqe mund të mundë rastësisht: "
+"%(resultado)s, në testet paraprake (%(corridas)s vrapime, %(equipos)s "
+"ekipe)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2467,10 +2468,6 @@ msgid ""
 msgstr ""
 "Koza-TTP: programimi gjenetik për kalendarët e bejsbollit. Filloi si një "
 "tezë nga Leslie Dickinson (ITAM) dhe sot ka një motor që kapërcen rastësinë."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Një orar më i mirë MLB me programim gjenetik."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2597,12 +2594,12 @@ msgid ""
 "real no aceptaría giras tan largas."
 msgstr ""
 "Shënim: kalendari i motorit ka turne deri në <strong>%(gira)s ndeshje jashtë"
-" fushe radhazi.</strong> Kalendari zyrtar ka maksimumin %(oficial)s. Një "
-"ekip i vërtetë nuk do të pranonte turne kaq të gjata."
+" fushe radhazi.</strong> Ai zyrtar ka maksimumin %(oficial)s. Një ekip i "
+"vërtetë nuk do të pranonte turne kaq të gjata."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Udhëtimi i secilit ekip"
+msgstr "Udhëtimi sipas ekipit"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2779,19 +2776,19 @@ msgstr "Opsionale. Nëse e lë kështu, përdoret ky emër."
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "Skuadrat e Turneut"
+msgstr "Skuadrat e turneut"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "Kemi shënuar tashmë 10. Mund t'i ndryshosh: nga 3 në 10 ekipe."
+msgstr "Ne tashmë kontrolluam 10. Mund t'i ndryshosh: nga 3 në 10 ekipe."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Zgjidh të paktën %(n)d ekipe."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Zgjidh maksimumi %(n)d ekipe."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2968,3 +2965,10 @@ msgstr ""
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{ekipi}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""
+"Një orar më i mirë MLB <span class=\"clave\">me programim gjenetik.</span>"
