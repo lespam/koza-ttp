@@ -142,6 +142,8 @@ msgid ""
 "Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
 " con un recorrido guiado paso a paso."
 msgstr ""
+"Ви можете перейти з реєстру команди, щоб переглянути календар без помилок, "
+"за допомогою покрокової екскурсії."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
@@ -289,6 +291,9 @@ msgid ""
 "viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
 "2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
 msgstr ""
+"MLB планує 2 430 ігор для 30 команд приблизно за 180 днів. Кожна команда "
+"подорожує між містами, і відстань значно відрізняється від команди до "
+"команди. У 2016 році Сіетл подолав 76 683 км, а Чикаго Кабс — 39 015 км."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -317,6 +322,9 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
+"<strong>Представлення:</strong> Кожен календар — це дерево. Його вузли — це "
+"операції, такі як <code>crear_juego</code> (дата, домашня команда, гостьова "
+"команда) та <code>obtener_calendario</code>, що об'єднує два списки ігор."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -324,6 +332,8 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
+"<strong>Життєздатність (C1):</strong> Кожна команда повинна зіграти рівно ту"
+" кількість ігор, яку вимагає турнір. Значення 0 означає, що розклад дійсний."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -348,6 +358,7 @@ msgid ""
 "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
 "generaciones."
 msgstr ""
+"Спробуйте 30 команд, по 163 ігри на команду, 5-матчеві серії та 20 поколінь."
 
 #: documentacion/templates/documentacion/historico.html
 msgid "Comparación de la búsqueda aleatoria y la programación genética"
@@ -571,13 +582,15 @@ msgstr "Темний режим"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
-msgstr ""
+msgstr "Демо: Розклад і командні поїздки"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Genera un calendario de béisbol con programación genética y mide cuánto "
 "viaja cada equipo."
 msgstr ""
+"Вона генерує бейсбольний календар із генетичним програмуванням і вимірює, "
+"скільки подорожує кожна команда."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
@@ -585,7 +598,7 @@ msgstr "Згенеруйте календар і"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "mide cuánto viaja cada equipo."
-msgstr ""
+msgstr "Виміряйте, скільки подорожує кожна команда."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -593,6 +606,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"Штучний інтелект (генетичне програмування) шукає розклади, де подорожі "
+"короткі та рівномірні. Хочете мати власні команди? Використовуйте <a "
+"href=\"%(guia)s\">п'ятикроковий посібник</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -603,6 +619,8 @@ msgid ""
 "Para optimizar un calendario, primero registra los equipos, la liga y el "
 "torneo, y después crea una configuración."
 msgstr ""
+"Щоб оптимізувати розклад, спочатку запишіть команди, лігу та турнір, а потім"
+" створіть конфігурацію."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Abrir la guía"
@@ -630,7 +648,7 @@ msgstr "Розклад: %(torneo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
-msgstr ""
+msgstr "Щоб познайомити його з вашою командою"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las respuestas que te van a pedir en clase."
@@ -666,13 +684,15 @@ msgstr "Як мені це адаптувати?"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambia equipos y reglas"
-msgstr ""
+msgstr "Зміна команд і правил"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
 " el patrón Strategy para la medida de “viaje justo”."
 msgstr ""
+"Команди та координати записуються у гіді. Ідея для вашої команди: "
+"використовуйте стратегічний шаблон для показника «справедливої подорожі»."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¿Puedo usarlo?"
@@ -708,6 +728,10 @@ msgid ""
 "calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
 " la diferencia entre el equipo que más viaja y el que menos."
 msgstr ""
+"Поясніть мені крок за кроком, як ця генетична програма створює і оцінює "
+"розклад. Потім скажіть, що б ви змінили, щоб міра «справедливої подорожі» "
+"була різницею між командою, яка подорожує найбільше, і тією, що подорожує "
+"найменше."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
@@ -815,7 +839,7 @@ msgstr "Збережіть і продовжуйте крок 5"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Paso 1: equipos"
-msgstr ""
+msgstr "Крок 1: Команди"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Puedes usar los que ya existen o agregar uno nuevo."
@@ -823,15 +847,15 @@ msgstr "Можна використовувати існуючі або дода
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr ""
+msgstr "Перегляньте останні зареєстровані команди"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
-msgstr ""
+msgstr "Додайте команду"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr ""
+msgstr "Додати команду"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -839,7 +863,7 @@ msgstr "Продовжуйте до Кроку 2: Ліга"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr ""
+msgstr "Для продовження потрібно щонайменше 2 команди."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -850,14 +874,17 @@ msgid ""
 "En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
 " el algoritmo y generas un calendario de juegos."
 msgstr ""
+"За 5 кроків ви реєструєте команди, створюєте лігу та турнір, обираєте, як "
+"запускати алгоритм, і генеруєте розклад ігор."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
 msgstr ""
+"Команди: зареєструйте щонайменше 2 з місцем розташування їхнього стадіону."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Liga: elige qué equipos juegan juntos."
-msgstr ""
+msgstr "Ліга: Обирайте, які команди гратимуть разом."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Torneo: define las fechas, las series y los juegos."
@@ -892,6 +919,9 @@ msgid ""
 "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
 "equipos: con un número impar, uno se queda sin rival en cada serie."
 msgstr ""
+"Ліга — це група команд, які грають між собою. Використовуйте парну кількість"
+" команд: при непарному числі одна команда залишається без суперника в кожній"
+" серії."
 
 #: tesis/templates/tesis/guia/liga.html
 msgid "Guardar y seguir al paso 3"
@@ -906,6 +936,8 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
+"У турнірі беруть участь команди ліги \"%(liga)s\". Ігри заплановані з "
+"понеділка по четвер та по суботах, між першим і останнім днем."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -951,6 +983,8 @@ msgstr "Спробуйте інструмент"
 msgid ""
 "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
 msgstr ""
+"Реєструйте команди, створюйте лігу та створюйте власний календар. Без "
+"акаунта."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Sin prisa"
@@ -1023,7 +1057,7 @@ msgstr "Під час тестування"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, у %(corridas)s ранах з %(equipos)s командами"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
@@ -1062,6 +1096,8 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"Ранній результат: %(resultado)s, у %(corridas)s ранах з %(equipos)s "
+"командами."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1115,6 +1151,7 @@ msgstr "Перегляньте результати кожного релізу"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
+"У тестах: %(resultado)s, у %(corridas)s проходження з %(equipos)s командами."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1138,7 +1175,7 @@ msgstr "Скорочення (наприклад, SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "Назва команди"
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1162,7 +1199,7 @@ msgstr "У десяткових градусах. Приклад: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "Команди ліги"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1170,7 +1207,7 @@ msgstr "Назва ліги"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "Виберіть щонайменше 2 команди."
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
@@ -1190,7 +1227,7 @@ msgstr "Ігри за серіями"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "Серії на команду"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1226,7 +1263,7 @@ msgstr "Він має бути між 0 і 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "Команди"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1250,7 +1287,7 @@ msgstr "Спочатку виконайте цей крок."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "Додала команда."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1271,6 +1308,10 @@ msgid ""
 "1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
 "cumplen las mismas reglas de realismo."
 msgstr ""
+"Ми прибрали правило, що всі 30 команд грають триденні серії одночасно. З "
+"серіями з 2, 3 і 4 ігор і перервами найкращий алгоритм долає 1,57 мільйона "
+"км. Офіційний календар охоплює 1,74 мільйона. Обидва відповідають однаковим "
+"правилам реалізму."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Ver la investigación actual, con diagramas animados"
@@ -1353,6 +1394,8 @@ msgid ""
 "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
 "árbol de programación genética."
 msgstr ""
+"Koza-TTP: карта бейсбольних стадіонів з маршрутом команди та деревом "
+"генетичного програмування."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Ir al sitio principal"
@@ -1437,6 +1480,9 @@ msgid ""
 " de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
 " de su casa, va de estadio en estadio y regresa al final."
 msgstr ""
+"Кожен бар — це загальна подорож 30 команд за сезон, у мільйонах км. Менше — "
+"краще. Всі показники вимірювалися однаково: кожна команда залишає свій дім, "
+"переїжджає зі стадіону на стадіон і повертається наприкінці."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Viaje total por versión del algoritmo"
@@ -1520,7 +1566,7 @@ msgstr "Так"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
-msgstr ""
+msgstr "Краще, але всі 30 команд все ще грають одночасно."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
@@ -1648,6 +1694,9 @@ msgid ""
 " de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
 " 3 o 4 juegos, o descansa."
 msgstr ""
+"Раніше всі 30 команд грали 3-денні серії одночасно без перерв. Тепер сезон "
+"поділений на будні (4 дні) та вихідні (3 дні) зміни, як і в MLB. Кожна "
+"команда грає серію з 2, 3 або 4 ігор, або робить відпочинок."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Modelo anterior contra modelo por turnos"
@@ -1671,6 +1720,9 @@ msgid ""
 "cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
 "descansos, así las giras se pueden armar con más libertad."
 msgstr ""
+"Шість команд у вісім змін. У попередній моделі всі грають по 3 дні в кожній "
+"зміні. У змінній моделі серія триває 2, 3 або 4 дні, і є перерви, тож тури "
+"можна організовувати з більшою свободою."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "3. El movimiento principal: la cadena de Kempe"
@@ -1683,6 +1735,9 @@ msgid ""
 "las series de la cadena cambian de turno al mismo tiempo. El calendario "
 "sigue siendo válido."
 msgstr ""
+"Щоб змінити розклад без того, щоб команда грала дві серії одночасно, беруть "
+"два ходи і чергується ланцюг серій. Усі серії в ланцюжку змінюються "
+"одночасно. Розклад залишається дійсним."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Cadena de Kempe entre el turno A y el turno B"
@@ -1701,6 +1756,8 @@ msgid ""
 "Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
 " series cambian de turno. Las demás series no se mueven."
 msgstr ""
+"Вісім команд. Мережа починається в NYA і проходить через BOS, TOR і BAL. "
+"Чотири сезони змінюють зміни. Інші сезони не змінюються."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "4. ¿Por qué el recocido le ganó a la PG?"
@@ -1739,6 +1796,9 @@ msgid ""
 "apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
 "recorren todo el calendario."
 msgstr ""
+"<strong>Він повторював ті самі місця.</strong> Фіксовані числа в дереві "
+"завжди вказують на ті ж ходи і команди. Випадкові ходи проходять крізь весь "
+"календар."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Solo mejoras contra aceptar cambios peores"
@@ -1882,10 +1942,13 @@ msgid ""
 "El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
 "las hojas son los juegos (fecha, equipo local y equipo visitante)."
 msgstr ""
+"Дерево — це програма, яка складає найкращий календар. Кожна гілка "
+"приєднується до ігор; листя — це ігри (дата, домашня команда та виїзна "
+"команда)."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Viaje total de todos los equipos:"
-msgstr ""
+msgstr "Загальна кількість поїздок усіх команд:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Juegos que rompen reglas:"
@@ -1897,12 +1960,17 @@ msgid ""
 "<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
 "es válido."
 msgstr ""
+"Одне з правил полягає в тому, що кожна команда грає ту кількість ігор, яку "
+"вимагає турнір. <strong>0 ігор, які порушують правила</strong> , означає, що"
+" розклад дійсний."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Puede tardar de unos segundos a varios minutos. Depende del número de "
 "equipos."
 msgstr ""
+"Це може тривати від кількох секунд до кількох хвилин. Це залежить від "
+"кількості комп'ютерів."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "El motor está trabajando."
@@ -1974,7 +2042,7 @@ msgstr "Всі значення вже обрані. Ви можете змін�
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr ""
+msgstr "Зміна команди"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -1990,7 +2058,7 @@ msgstr "Далі: Перегляньте календар"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Demo: elige los equipos"
-msgstr ""
+msgstr "Демо: Обирайте команди"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2002,7 +2070,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr ""
+msgstr "Крок 1: Обирайте команди"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2010,6 +2078,9 @@ msgid ""
 "tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
 "da \"Siguiente\" sin cambiar nada."
 msgstr ""
+"Алгоритм складає розклад для обраних вами команд і шукає ту, з найменшою "
+"кількістю подорожей. Ми вже позначили 10 команд Головної ліги. Якщо хочете, "
+"натисніть «Далі», нічого не змінюючи."
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Siguiente: configuración"
@@ -2021,11 +2092,11 @@ msgstr "Віддаєте перевагу повному королівсько�
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
-msgstr ""
+msgstr "Дивіться сезон 2023: 30 команд за офіційним календарем"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Quieres registrar tus propios equipos y estadios?"
-msgstr ""
+msgstr "Хочете реєструвати власні команди та стадіони?"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Hazlo tú mismo en la guía de 5 pasos"
@@ -2045,7 +2116,7 @@ msgstr "Новіший алгоритм: покрокова модель"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
-msgstr ""
+msgstr "<strong>%(nombre)s</strong>: %(n)s команд."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Qué logró el algoritmo"
@@ -2053,7 +2124,7 @@ msgstr "Чого досяг алгоритм"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje total de todos los equipos con el calendario del algoritmo."
-msgstr ""
+msgstr "Загальна кількість поїздок усіх команд за розкладом алгоритму."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje con un calendario hecho al azar, antes de optimizar."
@@ -2093,7 +2164,7 @@ msgstr "Не грати проти одного й того ж суперник�
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
-msgstr ""
+msgstr "Домашні матчі приблизно наполовину. Тут: %(a)s до %(b)s на команду."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Cómo bajó el viaje"
@@ -2135,12 +2206,12 @@ msgstr "Змініть налаштування і запустіть знову
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr ""
+msgstr "Обирайте інші команди"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
 "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
-msgstr ""
+msgstr "Дивіться повний сезон 2023: 30 команд за офіційним календарем"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Entender cómo funciona en 2 minutos"
@@ -2148,7 +2219,7 @@ msgstr "Зрозумійте, як це працює, за 2 хвилини"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr ""
+msgstr "Зроби сам: зареєструй свої команди у п'ятикроковому посібнику"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2209,13 +2280,14 @@ msgstr "Частина 1 · Проблема"
 
 #: tesis/templates/tesis/historia.html
 msgid "30 equipos tienen que jugar entre sí"
-msgstr ""
+msgstr "30 команд мають зіграти одна з одною"
 
 #: tesis/templates/tesis/historia.html
 msgid ""
 "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
 "partidos en una temporada."
 msgstr ""
+"Головна ліга бейсболу має 30 команд. Кожна команда грає 162 ігри за сезон."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2236,6 +2308,8 @@ msgid ""
 "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
 "cruzar el país muchas veces."
 msgstr ""
+"Коли команда грає на виїзді, вони подорожують літаком. Поганий розклад "
+"змушує їх багато разів перетинати країну."
 
 #: tesis/templates/tesis/historia.html
 msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
@@ -2243,7 +2317,7 @@ msgstr "Приклад туристичної поїздки з датами у 
 
 #: tesis/templates/tesis/historia.html
 msgid "Toca otro estadio para ver la gira de ese equipo."
-msgstr ""
+msgstr "Зайдіть на інший стадіон, щоб подивитися тур цієї команди."
 
 #: tesis/templates/tesis/historia.html
 msgid "Parte 2 · La idea de la tesis"
@@ -2334,6 +2408,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
+"Покращений блочний рушій справді перемагає випадковий: %(resultado)s, у "
+"попередніх тестах (%(corridas)s проходження, %(equipos)s командах)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2361,7 +2437,7 @@ msgstr "Код"
 
 #: tesis/templates/tesis/historia.html
 msgid "Equipo"
-msgstr ""
+msgstr "Команда"
 
 #: tesis/templates/tesis/historia.html
 msgid "Estadio"
@@ -2416,6 +2492,9 @@ msgid ""
 "equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
 "con el azar."
 msgstr ""
+"Повторення циклу роботи генетичного програмного двигуна з усіма 30 командами"
+" Головної ліги бейсболу у 2023 році, порівняно з офіційним розкладом і "
+"випадковістю."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
@@ -2431,6 +2510,9 @@ msgid ""
 "calendario oficial de 2023 es la referencia. El motor por bloques intenta "
 "armar una temporada con menos viaje."
 msgstr ""
+"Ми використовуємо 30 команд Головної ліги бейсболу та їхні реальні стадіони."
+" Офіційний розклад 2023 року — це референс. Блочний двигун намагається "
+"зібрати сезон з меншими поїздками."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cómo bajan los kilómetros, generación por generación"
@@ -2458,7 +2540,7 @@ msgstr "Бокова ковзна дошка"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de los 30 equipos en toda la temporada regular."
-msgstr ""
+msgstr "Подорожі 30 команд протягом регулярного сезону."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Gira más larga (juegos seguidos de visita)"
@@ -2482,7 +2564,7 @@ msgstr "Краще випадково, з такими ж зусиллями"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "No cumple el número de juegos de cada equipo."
-msgstr ""
+msgstr "Вона не відповідає кількості ігор кожної команди."
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2506,14 +2588,19 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
+"Примітка: у календарі двигунів є тури до <strong>%(gira)s виїзних матчів "
+"поспіль</strong>. Офіційний календар має максимальний %(oficial)s. Справжня "
+"команда не прийме такі довгі тури."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr ""
+msgstr "Подорожі командами"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
 msgstr ""
+"Перемикайтеся між двома розкладами, щоб побачити, які команди подорожують "
+"найчастіше."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Calendario del mapa"
@@ -2529,7 +2616,7 @@ msgstr "Двигун"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
-msgstr ""
+msgstr "Перегляньте всі 30 команд у вигляді таблиці"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
@@ -2556,6 +2643,9 @@ msgid ""
 "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
 "equipo sale de su casa, viaja de estadio en estadio y regresa al final."
 msgstr ""
+"Відстані: пряма лінія між стадіонами (формула напіввсесвіту). Кожна команда "
+"залишає свій дім, подорожує від стадіону до стадіону і повертається "
+"наприкінці."
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2623,7 +2713,7 @@ msgstr "Поворот B"
 
 #: documentacion/investigacion.py
 msgid "1. Elegimos un equipo y dos turnos"
-msgstr ""
+msgstr "1. Ми обираємо команду і дві зміни"
 
 #: documentacion/investigacion.py
 msgid "2. Seguimos la cadena: A, B, A, B…"
@@ -2683,19 +2773,19 @@ msgstr "Необов'язково. Якщо на цьому зупинитися
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr ""
+msgstr "Турнірні команди"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr ""
+msgstr "Ми вже перевірили 10. Ви можете їх змінити: з 3 на 10 команд."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Обирайте щонайменше %(n)d команд."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Обирайте максимум %(n)d команд."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2703,11 +2793,11 @@ msgstr "Карта 30 стадіонів Вищої ліги"
 
 #: tesis/historia.py
 msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
-msgstr ""
+msgstr "Приклад туру {Team}: 12 візитів у випадковому порядку."
 
 #: tesis/historia.py
 msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
-msgstr ""
+msgstr "Ви обрали {team}. Виконайте крок 2, щоб побачити їхні подорожі."
 
 #: tesis/historia.py
 msgid "km"
@@ -2851,7 +2941,7 @@ msgstr "Generación {gen} de {total}: {km} km"
 
 #: tesis/repeticion.py
 msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr ""
+msgstr "Вона досі не відповідає кількості ігор кожної команди."
 
 #: tesis/repeticion.py
 msgid ""
@@ -2865,14 +2955,15 @@ msgstr ""
 msgid ""
 "Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
 "temporada"
-msgstr ""
+msgstr "Карта: Кожне коло — це команда; більше — більше миль у сезоні"
 
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
-msgstr ""
+msgstr "{team}: {km} km"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "Un mejor calendario de la MLB <span class=\"clave\">con programación "
 "genética.</span>"
 msgstr ""
+"Кращий розклад <span class=\"clave\">MLB з генетичним програмуванням.</span>"

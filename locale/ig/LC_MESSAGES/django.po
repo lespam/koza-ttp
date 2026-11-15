@@ -143,6 +143,8 @@ msgid ""
 "Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
 " con un recorrido guiado paso a paso."
 msgstr ""
+"Ị nwere ike ịga site na ndekọ otu iji hụ kalenda na-enweghị njehie, yana "
+"njem nlegharị anya na-eduzi."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
@@ -286,6 +288,9 @@ msgid ""
 "viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
 "2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
 msgstr ""
+"MLB na-ahazi egwuregwu 2,430 maka ndị otu 30 n'ihe dị ka ụbọchị 180. Ndị otu"
+" ọ bụla na-eme njem n'etiti obodo, ebe dị anya dịgasị iche site na otu gaa "
+"na otu. Na 2016, Seattle gara 76,683 km, na Chicago Cubs gara 39,015 km."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -314,6 +319,10 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
+"<strong>Nnọchiteanya:</strong> Kalenda ọ bụla bụ osisi. Ọnụ ya bụ arụmọrụ "
+"dịka <code>crear_juego</code> (ụbọchị, otu ụlọ, otu pụọ n'èzí) na "
+"<code>obtener_calendario</code>, nke na-esonye na ndepụta abụọ nke "
+"egwuregwu."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -321,6 +330,9 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
+"<strong>Ike (C1):</strong> Ndị otu ọ bụla ga-egwu kpọmkwem ọnụ ọgụgụ "
+"egwuregwu nke asọmpi ahụ chọrọ. Uru nke 0 pụtara na usoro ihe omume ahụ dị "
+"irè."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -343,7 +355,7 @@ msgstr ""
 msgid ""
 "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
 "generaciones."
-msgstr ""
+msgstr "Gbalịa ìgwè 30, egwuregwu 163 kwa otu, usoro egwuregwu 5, na ọgbọ 20."
 
 #: documentacion/templates/documentacion/historico.html
 msgid "Comparación de la búsqueda aleatoria y la programación genética"
@@ -565,13 +577,15 @@ msgstr "Ọnọdụ gbara ọchịchịrị"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
-msgstr ""
+msgstr "Ngosipụta: Usoro ihe omume na njem"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Genera un calendario de béisbol con programación genética y mide cuánto "
 "viaja cada equipo."
 msgstr ""
+"Ọ na-emepụta kalenda baseball na mmemme mkpụrụ ndụ ihe nketa ma tụọ ole otu "
+"ọ bụla na-eme njem."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
@@ -579,7 +593,7 @@ msgstr "Mepụta kalenda na"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "mide cuánto viaja cada equipo."
-msgstr ""
+msgstr "Tụlee ego ole otu ọ bụla na-aga."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -587,6 +601,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"AI (mmemme mkpụrụ ndụ ihe nketa) na-achọ usoro ebe njem dị mkpụmkpụ na "
+"ọbụlagodi. Ị chọrọ ndị otu gị? Jiri <a href=\"%(guia)s\">ntuziaka 5</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -597,6 +613,7 @@ msgid ""
 "Para optimizar un calendario, primero registra los equipos, la liga y el "
 "torneo, y después crea una configuración."
 msgstr ""
+"Iji bulie oge, buru ụzọ dekọọ ìgwè, njikọ, na asọmpi, wee mepụta nhazi."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Abrir la guía"
@@ -623,7 +640,7 @@ msgstr "Usoro iheomume: %(torneo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
-msgstr ""
+msgstr "Tinye ya na ìgwè gị."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las respuestas que te van a pedir en clase."
@@ -659,13 +676,15 @@ msgstr "Olee otú m ga-esi gbanwee ya?"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambia equipos y reglas"
-msgstr ""
+msgstr "Gbanwee ndị otu na iwu"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
 " el patrón Strategy para la medida de “viaje justo”."
 msgstr ""
+"A na-edekọ ndị otu na nhazi na ntuziaka ahụ. Echiche maka ndị otu gị: jiri "
+"usoro atụmatụ maka usoro \"njem ziri ezi\"."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¿Puedo usarlo?"
@@ -701,6 +720,10 @@ msgid ""
 "calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
 " la diferencia entre el equipo que más viaja y el que menos."
 msgstr ""
+"Kọwaara m nzọụkwụ site na nzọụkwụ otu usoro mkpụrụ ndụ ihe nketa a si "
+"emepụta ma nyochaa oge. Mgbe ahụ gwa m ihe ị ga-agbanwe ka usoro nke \"njem "
+"ziri ezi\" bụrụ ọdịiche dị n'etiti ndị otu na-eme njem kachasị na nke na-eme"
+" njem karịa."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
@@ -809,7 +832,7 @@ msgstr "Zọpụta ma gaa n'ihu na Nzọụkwụ 5"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Paso 1: equipos"
-msgstr ""
+msgstr "Nzọụkwụ 1: Ìgwè"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Puedes usar los que ya existen o agregar uno nuevo."
@@ -817,15 +840,15 @@ msgstr "Ị nwere ike iji ndị dị ugbu a ma ọ bụ gbakwunye nke ọhụr�
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr ""
+msgstr "Lelee ndị otu kachasị ọhụrụ edebanyere aha"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
-msgstr ""
+msgstr "Tinye otu ìgwè"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr ""
+msgstr "Tinye otu"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -833,7 +856,7 @@ msgstr "Gaa n'ihu na Nzọụkwụ 2: Njikọ"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr ""
+msgstr "Ị ga-achọ ma ọ dịkarịa ala ìgwè 2 iji gaa n'ihu."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -844,14 +867,16 @@ msgid ""
 "En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
 " el algoritmo y generas un calendario de juegos."
 msgstr ""
+"N'ime usoro 5 ị debanyere aha ìgwè, setịpụ otu na asọmpi, họrọ otu esi agba "
+"ọsọ algọridim ma mepụta usoro egwuregwu."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
-msgstr ""
+msgstr "Otu: Debanye aha ma ọ dịkarịa ala 2, na ọnọdụ nke ámá egwuregwu ha."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Liga: elige qué equipos juegan juntos."
-msgstr ""
+msgstr "League: Họrọ ndị otu na-egwuri egwu ọnụ."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Torneo: define las fechas, las series y los juegos."
@@ -887,6 +912,8 @@ msgid ""
 "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
 "equipos: con un número impar, uno se queda sin rival en cada serie."
 msgstr ""
+"Njikọ bụ otu ìgwè ndị na-egwu ibe ha. Jiri ọnụ ọgụgụ dị iche iche: na ọnụ "
+"ọgụgụ na-adịghị mma, a na-ahapụ otu na-enweghị onye mmegide na usoro ọ bụla."
 
 #: tesis/templates/tesis/guia/liga.html
 msgid "Guardar y seguir al paso 3"
@@ -901,6 +928,8 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
+"The ndorondoro na-eji ìgwè nke \"%(liga)sLeague\". Games na-ndokwa si Monday"
+" ka Thursday na Saturday, n'etiti mbụ na ikpeazụ ụbọchị."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -945,7 +974,7 @@ msgstr "Gbalịa Ngwá Ọrụ"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
-msgstr ""
+msgstr "Debanye aha ìgwè, wuo otu, ma mepụta kalenda nke gị. Enweghị akaụntụ."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Sin prisa"
@@ -1018,7 +1047,7 @@ msgstr "Na ule"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, na %(corridas)s na-agba ọsọ na %(equipos)s ìgwè"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
@@ -1057,6 +1086,8 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"Nsonaazụ mbụ: %(resultado)s, na %(corridas)s na-agba ọsọ na %(equipos)s "
+"ìgwè."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1109,6 +1140,7 @@ msgstr "Lelee nsonaazụ nke ntọhapụ ọ bụla."
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
+"Na ule: %(resultado)s, na %(corridas)s na-agba ọsọ na %(equipos)s ìgwè."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1132,7 +1164,7 @@ msgstr "Nkenke aha onyonyo Oké Osimiri (dịka ọmụmaatụ, Oké Osimiri)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "Aha otu"
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1156,7 +1188,7 @@ msgstr "Na decimal degrees. Ihe Nlereanya: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "Njikọ njikọ"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1164,7 +1196,7 @@ msgstr "Aha Njikọ"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "Họrọ ma ọ dịkarịa ala 2 panels."
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
@@ -1184,7 +1216,7 @@ msgstr "Egwuregwu site na usoro"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "Usoro kwa otu"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1220,7 +1252,7 @@ msgstr "Ọ ga-adị n'etiti 0 na 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "Ndị otu"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1244,7 +1276,7 @@ msgstr "Mezue nzọụkwụ a mbụ."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "Ndị otu na-agbakwụnye."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1265,6 +1297,10 @@ msgid ""
 "1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
 "cumplen las mismas reglas de realismo."
 msgstr ""
+"Anyị wepụrụ iwu na ndị otu 30 niile na-egwu usoro ụbọchị 3 n'otu oge ahụ. "
+"Site na usoro nke egwuregwu 2, 3 na 4 na ezumike, algọridim kachasị mma na-"
+"aga 1.57 nde kilomita. Kalenda gọọmentị na-eme njem nde 1.74. Ha abụọ na-"
+"agbaso otu iwu nke eziokwu."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Ver la investigación actual, con diagramas animados"
@@ -1346,6 +1382,8 @@ msgid ""
 "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
 "árbol de programación genética."
 msgstr ""
+"Koza-TTP: map nke ámá egwuregwu baseball na ụzọ otu na osisi mmemme mkpụrụ "
+"ndụ ihe nketa."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Ir al sitio principal"
@@ -1429,6 +1467,9 @@ msgid ""
 " de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
 " de su casa, va de estadio en estadio y regresa al final."
 msgstr ""
+"Ogwe ọ bụla bụ ngụkọta njem nke ndị otu 30 n'otu oge, na ọtụtụ nde kilomita."
+" Obere ka mma. A tụrụ ọnụ ọgụgụ niile n'otu ụzọ ahụ: otu ọ bụla na-ahapụ ụlọ"
+" ya, na-aga site n'ámá egwuregwu gaa n'ámá egwuregwu ma laghachi na njedebe."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Viaje total por versión del algoritmo"
@@ -1512,7 +1553,7 @@ msgstr "Ee"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
-msgstr ""
+msgstr "Ọ ka mma, mana ndị otu 30 niile ka na-egwu egwu n'otu oge."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
@@ -1640,6 +1681,10 @@ msgid ""
 " de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
 " 3 o 4 juegos, o descansa."
 msgstr ""
+"N'oge gara aga, ndị otu 30 niile na-egwuri egwu ụbọchị 3 n'otu oge ahụ, na-"
+"enweghị ezumike. Ugbu a, a na-ekewa oge ahụ n'ime izu ụka (ụbọchị 4) na "
+"ngwụsị izu (ụbọchị 3) mgbanwe, dị ka MLB na-eme. Ndị otu ọ bụla na-egwu "
+"egwuregwu 2, 3 ma ọ bụ 4, ma ọ bụ izu ike."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Modelo anterior contra modelo por turnos"
@@ -1663,6 +1708,9 @@ msgid ""
 "cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
 "descansos, así las giras se pueden armar con más libertad."
 msgstr ""
+"Ndị otu isii na mgbanwe asatọ. Na ụdị gara aga, onye ọ bụla na-egwu ụbọchị 3"
+" na ngbanwe ọ bụla. Na ụdị ngbanwe usoro ahụ na-adịru ụbọchị 2, 3 ma ọ bụ 4 "
+"ma enwere ezumike, yabụ enwere ike itinye njegharị ahụ na nnwere onwe karịa."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "3. El movimiento principal: la cadena de Kempe"
@@ -1675,6 +1723,9 @@ msgid ""
 "las series de la cadena cambian de turno al mismo tiempo. El calendario "
 "sigue siendo válido."
 msgstr ""
+"Iji gbanwee usoro na-enweghị otu na-egwu usoro abụọ n'otu oge, a na-ewere "
+"ntụgharị abụọ na usoro usoro na-agbanwe n'etiti ha. Usoro niile dị na yinye "
+"na-agbanwe agbanwe n'otu oge. Usoro ihe omume ahụ ka dị irè."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Cadena de Kempe entre el turno A y el turno B"
@@ -1693,6 +1744,8 @@ msgid ""
 "Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
 " series cambian de turno. Las demás series no se mueven."
 msgstr ""
+"Ndị otu asatọ. Netwọk ahụ na-amalite na NYA ma na-agafe BOS, TOR na BAL. "
+"Usoro anọ ya na-agbanwe agbanwe. Usoro ndị ọzọ anaghị agagharị."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "4. ¿Por qué el recocido le ganó a la PG?"
@@ -1733,6 +1786,9 @@ msgid ""
 "apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
 "recorren todo el calendario."
 msgstr ""
+"<strong>Ọ na-ekwughachi otu ebe ahụ.</strong> Ọnụ ọgụgụ ndị a na-edozi "
+"n'osisi ahụ na-arụtụ aka mgbe niile n'otu ntụgharị na ìgwè. Random mmegharị "
+"na-aga n'ihu na kalenda dum."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Solo mejoras contra aceptar cambios peores"
@@ -1875,10 +1931,13 @@ msgid ""
 "El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
 "las hojas son los juegos (fecha, equipo local y equipo visitante)."
 msgstr ""
+"Osisi bụ usoro ihe omume nke na-achịkọta kalenda kachasị mma. Alaka ọ bụla "
+"na-esonye na egwuregwu; epupụta bụ egwuregwu (ụbọchị, otu ụlọ, na ndị otu "
+"pụọ n'èzí)."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Viaje total de todos los equipos:"
-msgstr ""
+msgstr "Njem zuru ezu maka ndị otu niile:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Juegos que rompen reglas:"
@@ -1890,12 +1949,17 @@ msgid ""
 "<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
 "es válido."
 msgstr ""
+"Otu iwu bụ na otu ọ bụla na-egwu ọnụ ọgụgụ egwuregwu nke asọmpi ahụ chọrọ. "
+"<strong>Egwuregwu 0 na-emebi iwu</strong> pụtara na usoro ihe omume ahụ dị "
+"irè."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Puede tardar de unos segundos a varios minutos. Depende del número de "
 "equipos."
 msgstr ""
+"Ọ nwere ike were sekọnd ole na ole ruo nkeji ole na ole. Ọ dabere na ọnụ "
+"ọgụgụ nke kọmputa."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "El motor está trabajando."
@@ -1967,7 +2031,7 @@ msgstr "A na-ahọrọworị ụkpụrụ niile. Ị nwere ike ịgbanwe ha ma �
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr ""
+msgstr "Gbanwee ndị otu"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -1983,7 +2047,7 @@ msgstr "Osote: Lelee kalenda"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Demo: elige los equipos"
-msgstr ""
+msgstr "Nkowasi: Họrọ ndị na-ede blọgụ"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -1995,7 +2059,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr ""
+msgstr "Nzọụkwụ 1: Họrọ ndị na-ede blọgụ"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2003,6 +2067,9 @@ msgid ""
 "tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
 "da \"Siguiente\" sin cambiar nada."
 msgstr ""
+"Algọridim na-etinye usoro ihe omume maka ndị otu ị họọrọ ma chọọ onye nwere "
+"obere njem. Anyị na-etinye akara 10 Major League ìgwè. Ọ bụrụ na ịchọrọ, pịa"
+" \"Na-esote\" na-enweghị ịgbanwe ihe ọ bụla."
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Siguiente: configuración"
@@ -2014,11 +2081,11 @@ msgstr "Kedu ka ị ga-esi lelee oge eze zuru ezu?"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
-msgstr ""
+msgstr "Lelee oge 2023: Ndị otu 30 megide kalenda gọọmentị"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Quieres registrar tus propios equipos y estadios?"
-msgstr ""
+msgstr "Chọrọ ịdebanye aha ndị otu gị na ámá egwuregwu?"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Hazlo tú mismo en la guía de 5 pasos"
@@ -2038,7 +2105,7 @@ msgstr "Algorithm ọhụrụ: Atụgharị-dabeere nlereanya"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
-msgstr ""
+msgstr "<strong>%(nombre)s</strong>: %(n)s ìgwè."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Qué logró el algoritmo"
@@ -2047,6 +2114,8 @@ msgstr "Ihe algọridim na-enweta"
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje total de todos los equipos con el calendario del algoritmo."
 msgstr ""
+"A na-eji usoro ihe omume niile eme ihe n'ụzọ zuru ezu site na usoro ihe "
+"omume algorithm."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje con un calendario hecho al azar, antes de optimizar."
@@ -2085,7 +2154,7 @@ msgstr "Ọ naghị egwuri egwu megide otu onye iro ahụ n'usoro abụọ n'uso
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
-msgstr ""
+msgstr "Egwuregwu n'ụlọ ihe dị ka ọkara. Ebe a: %(a)s %(b)s kwa otu."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Cómo bajó el viaje"
@@ -2127,12 +2196,12 @@ msgstr "Gbanwee nhazi ma bido ọzọ"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr ""
+msgstr "Họrọ ìgwè ndị ọzọ"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
 "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
-msgstr ""
+msgstr "Lelee oge 2023 zuru ezu: Ndị otu 30 megide kalenda gọọmentị"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Entender cómo funciona en 2 minutos"
@@ -2140,7 +2209,7 @@ msgstr "Ghọta otú o si arụ ọrụ na 2 nkeji."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr ""
+msgstr "Nkowasi: Hazie gị iPad na 5-nzọụkwụ nduzi."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2202,13 +2271,15 @@ msgstr "Nkebi nke 1 · Nsogbu"
 
 #: tesis/templates/tesis/historia.html
 msgid "30 equipos tienen que jugar entre sí"
-msgstr ""
+msgstr "30 Ndị na-egwu egwuregwu na-egwuri egwu na ibe ha."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
 "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
 "partidos en una temporada."
 msgstr ""
+"Major League Baseball nwere ìgwè 30. Ndị otu ọ bụla na-egwu egwuregwu 162 "
+"n'otu oge."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2230,6 +2301,8 @@ msgid ""
 "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
 "cruzar el país muchas veces."
 msgstr ""
+"Mgbe otu egwuregwu na-egwuri egwu n'okporo ụzọ, ha na-eji ụgbọelu eme njem. "
+"Usoro ihe omume na-adịghị mma na-eme ka ha gafee mba ahụ ọtụtụ ugboro."
 
 #: tesis/templates/tesis/historia.html
 msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
@@ -2237,7 +2310,7 @@ msgstr "Ihe atụ nke njem njem, na ụbọchị ndị a na-enweghị usoro."
 
 #: tesis/templates/tesis/historia.html
 msgid "Toca otro estadio para ver la gira de ese equipo."
-msgstr ""
+msgstr "Kpatụ ámá egwuregwu ọzọ iji lelee njem ndị otu ahụ."
 
 #: tesis/templates/tesis/historia.html
 msgid "Parte 2 · La idea de la tesis"
@@ -2329,6 +2402,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
+"The mma ngọngọ-dabeere engine na-eti random: %(resultado)s, na mbụ ule "
+"(%(corridas)s na-agba ọsọ, %(equipos)s ìgwè)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2356,7 +2431,7 @@ msgstr "Koodu"
 
 #: tesis/templates/tesis/historia.html
 msgid "Equipo"
-msgstr ""
+msgstr "Ndị otu"
 
 #: tesis/templates/tesis/historia.html
 msgid "Estadio"
@@ -2411,6 +2486,8 @@ msgid ""
 "equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
 "con el azar."
 msgstr ""
+"Mmeghachi omume nke injin mmemme mkpụrụ ndụ ihe nketa na ndị otu 30 Major "
+"League Baseball niile na 2023, ma e jiri ya tụnyere usoro gọọmentị na ohere."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
@@ -2426,6 +2503,9 @@ msgid ""
 "calendario oficial de 2023 es la referencia. El motor por bloques intenta "
 "armar una temporada con menos viaje."
 msgstr ""
+"Anyị na-eji ndị otu 30 Major League Baseball na ámá egwuregwu ha n'ezie. "
+"Usoro ihe omume 2023 bụ ntụnye aka. Ngọngọ na-adabere na ngọngọ na-anwa "
+"ịmepụta oge na-enweghị njem."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cómo bajan los kilómetros, generación por generación"
@@ -2453,7 +2533,7 @@ msgstr "Sideways eji osisi"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de los 30 equipos en toda la temporada regular."
-msgstr ""
+msgstr "A na-eme njem nke ndị otu 30 n'oge oge niile."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Gira más larga (juegos seguidos de visita)"
@@ -2477,7 +2557,7 @@ msgstr "Ọ ka mma na mberede, site n'otu mgbalị ahụ."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "No cumple el número de juegos de cada equipo."
-msgstr ""
+msgstr "Ọ naghị egbo ọnụ ọgụgụ nke egwuregwu nke otu ọ bụla."
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2501,14 +2581,18 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
+"Rịba ama: kalenda injin nwere njem nlegharị anya nke <strong> "
+"egwuregwu%(gira)s n'usoro</strong>. Onye ọrụ gọọmentị nwere oke %(oficial)s."
+" Ezigbo otu agaghị anabata njem dị ogologo dị otú ahụ."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr ""
+msgstr "Njem site na Team"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
 msgstr ""
+"Gbanwee n'etiti usoro ihe omume abụọ ahụ iji hụ ndị otu na-eme njem kachasị."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Calendario del mapa"
@@ -2524,7 +2608,7 @@ msgstr "Injin"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
-msgstr ""
+msgstr "Lelee ndị otu 30 niile dị ka tebụl"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
@@ -2551,6 +2635,9 @@ msgid ""
 "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
 "equipo sale de su casa, viaja de estadio en estadio y regresa al final."
 msgstr ""
+"Anya: ahịrị kwụ ọtọ n'etiti ámá egwuregwu (semiverse formula). Ndị otu ọ "
+"bụla na-ahapụ ụlọ ya, na-aga site n'ámá egwuregwu gaa n'ámá egwuregwu ma "
+"laghachi na njedebe."
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2618,7 +2705,7 @@ msgstr "Tụgharịa B"
 
 #: documentacion/investigacion.py
 msgid "1. Elegimos un equipo y dos turnos"
-msgstr ""
+msgstr "1. Anyị na-ahọrọ otu na mgbanwe abụọ"
 
 #: documentacion/investigacion.py
 msgid "2. Seguimos la cadena: A, B, A, B…"
@@ -2678,19 +2765,19 @@ msgstr "Nhọrọ. Ọ bụrụ na ị hapụ ya na nke ahụ, a ga-eji aha a."
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr ""
+msgstr "Ndị otu asọmpi"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr ""
+msgstr "Anyị enyochaworị 10. Ị nwere ike ịgbanwe ha: site na 3 ruo 10 ìgwè."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Họrọ ma ọ dịkarịa ala %(n)d n'ime ndị na-ede blọgụ."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Họrọ n'ọtụtụ %(n)d ìgwè."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2698,11 +2785,11 @@ msgstr "Map nke 30 stadiums nke Major Leagues"
 
 #: tesis/historia.py
 msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
-msgstr ""
+msgstr "{Team} ihe atụ njem: 12 nleta na random iji."
 
 #: tesis/historia.py
 msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
-msgstr ""
+msgstr "Ị họọrọ {otu}. Soro nzọụkwụ 2 iji hụ njem ha."
 
 #: tesis/historia.py
 msgid "km"
@@ -2846,7 +2933,7 @@ msgstr "Generación {gen} de {total}: {km} km"
 
 #: tesis/repeticion.py
 msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr ""
+msgstr "Ọ ka na-ezute ọnụ ọgụgụ nke egwuregwu nke otu ọ bụla."
 
 #: tesis/repeticion.py
 msgid ""
@@ -2860,14 +2947,16 @@ msgstr ""
 msgid ""
 "Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
 "temporada"
-msgstr ""
+msgstr "Map: Okirikiri ọ bụla bụ otu; Nnukwu pụtara ọtụtụ kilomita n'oge"
 
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
-msgstr ""
+msgstr "{otu}: {km} km"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "Un mejor calendario de la MLB <span class=\"clave\">con programación "
 "genética.</span>"
 msgstr ""
+"Usoro MLB ka <span class=\"clave\">mma na mmemme mkpụrụ ndụ ihe "
+"nketa.</span>"

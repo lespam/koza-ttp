@@ -141,6 +141,8 @@ msgid ""
 "Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
 " con un recorrido guiado paso a paso."
 msgstr ""
+"Ou ka ale soti nan enskri ekip la yo wè kalandriye a san erè, ak yon vwayaj "
+"gide etap-pa-etap."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
@@ -284,6 +286,9 @@ msgid ""
 "viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
 "2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
 msgstr ""
+"MLB orè 2,430 jwèt pou 30 ekip nan apeprè 180 jou. Chak ekip vwayaje ant vil"
+" yo ak distans la varye anpil de ekip a ekip. An 2016, Seattle te vwayaje "
+"76,683 km ak Chicago Cubs yo te vwayaje 39,015 km."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -312,6 +317,9 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
+"<strong>Reprezantasyon:</strong> Chak kalandriye se yon pyebwa. Nœuds li yo "
+"se operasyon tankou <code>crear_juego</code> (dat, ekip lakay, ekip ale) ak "
+"<code>obtener_calendario</code>, ki rantre nan de lis nan jwèt."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -319,6 +327,8 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
+"<strong>Viabilite (C1):</strong> Chak ekip dwe jwe egzakteman kantite jwèt "
+"ke tounwa a mande pou. Yon valè 0 vle di ke orè a valab."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -341,7 +351,7 @@ msgstr ""
 msgid ""
 "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
 "generaciones."
-msgstr ""
+msgstr "Eseye 30 ekip, 163 jwèt pou chak ekip, 5-jwèt seri ak 20 jenerasyon."
 
 #: documentacion/templates/documentacion/historico.html
 msgid "Comparación de la búsqueda aleatoria y la programación genética"
@@ -557,13 +567,15 @@ msgstr "Mòd fè nwa"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
-msgstr ""
+msgstr "Demo: Orè ak Ekip Vwayaj"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Genera un calendario de béisbol con programación genética y mide cuánto "
 "viaja cada equipo."
 msgstr ""
+"Li jenere yon kalandriye bezbòl ak pwogramasyon jenetik ak mezire konbyen "
+"chak ekip vwayaje."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
@@ -571,7 +583,7 @@ msgstr "Jenere yon kalandriye ak"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "mide cuánto viaja cada equipo."
-msgstr ""
+msgstr "Mezire konbyen chak ekip vwayaje."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -579,6 +591,8 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"AI a (pwogramasyon jenetik) sanble pou orè kote vwayaj se kout ak menm Èske "
+"ou vle pwòp ekip ou yo? Sèvi ak gid la <a href=\"%(guia)s\">5 etap</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -589,6 +603,8 @@ msgid ""
 "Para optimizar un calendario, primero registra los equipos, la liga y el "
 "torneo, y después crea una configuración."
 msgstr ""
+"Pou optimize yon orè, premye anrejistre ekip yo, lig ak tounwa, ak lè sa a, "
+"kreye yon konfigirasyon."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Abrir la guía"
@@ -614,7 +630,7 @@ msgstr "Orè: %(torneo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
-msgstr ""
+msgstr "Pou entwodui li nan ekip ou"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las respuestas que te van a pedir en clase."
@@ -650,13 +666,15 @@ msgstr "Kouman pou mwen adapte li?"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambia equipos y reglas"
-msgstr ""
+msgstr "Chanje ekip ak règ yo"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
 " el patrón Strategy para la medida de “viaje justo”."
 msgstr ""
+"Ekip ak kowòdone yo anrejistre nan gid la. Yon lide pou ekip ou a: sèvi ak "
+"modèl la Estrateji pou mezi \"vwayaj san patipri\"."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¿Puedo usarlo?"
@@ -692,6 +710,10 @@ msgid ""
 "calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
 " la diferencia entre el equipo que más viaja y el que menos."
 msgstr ""
+"Eksplike m 'etap pa etap ki jan pwogram jenetik sa a kreye ak evalye yon "
+"orè. Lè sa a, di m 'kisa ou ta chanje pou ke mezi a nan \"vwayaj jis\" se "
+"diferans ki genyen ant ekip la ki vwayaje pi plis ak youn nan ki vwayaje pi "
+"piti a."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
@@ -797,7 +819,7 @@ msgstr "Sove epi kontinye nan etap 5"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Paso 1: equipos"
-msgstr ""
+msgstr "Etap 1: Ekip yo"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Puedes usar los que ya existen o agregar uno nuevo."
@@ -805,15 +827,15 @@ msgstr "Ou ka itilize sa ki deja egziste oswa ajoute yon nouvo."
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr ""
+msgstr "Gade dènye ekip ki anrejistre"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
-msgstr ""
+msgstr "Ajoute yon ekip"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr ""
+msgstr "Ajoute ekip"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -821,7 +843,7 @@ msgstr "Kontinye nan Etap 2: Lig"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr ""
+msgstr "Ou bezwen omwen 2 ekip pou kontinye."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -832,14 +854,16 @@ msgid ""
 "En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
 " el algoritmo y generas un calendario de juegos."
 msgstr ""
+"Nan 5 etap ou enskri ekip, mete kanpe yon lig ak yon tounwa, chwazi ki jan "
+"yo kouri algorithm la ak jenere yon orè jwèt."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
-msgstr ""
+msgstr "Ekip: enskri omwen 2, ak kote estad yo"
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Liga: elige qué equipos juegan juntos."
-msgstr ""
+msgstr "Lig: Chwazi ki ekip yo jwe ansanm."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Torneo: define las fechas, las series y los juegos."
@@ -874,6 +898,8 @@ msgid ""
 "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
 "equipos: con un número impar, uno se queda sin rival en cada serie."
 msgstr ""
+"Yon lig se gwoup ekip ki jwe youn ak lòt. Sèvi ak yon nimewo menm nan ekip: "
+"ak yon nimewo enpè, youn rete san yon advèsè nan chak seri."
 
 #: tesis/templates/tesis/guia/liga.html
 msgid "Guardar y seguir al paso 3"
@@ -888,6 +914,8 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
+"Tounwa a sèvi ak ekip yo nan lig la \"%(liga)s\". Jwèt yo pwograme soti nan "
+"Lendi a Jedi ak nan samdi, ant premye ak dènye jou a."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -932,7 +960,7 @@ msgstr "Eseye zouti a"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
-msgstr ""
+msgstr "Enskri ekip, bati yon lig ak jenere kalandriye pwòp ou a. Pa gen kont"
 
 #: tesis/templates/tesis/inicio.html
 msgid "Sin prisa"
@@ -1005,7 +1033,7 @@ msgstr "Nan tès"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, nan %(corridas)s kouri ak ekip %(equipos)s"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
@@ -1043,6 +1071,7 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"Rezilta bonè: %(resultado)s, nan %(corridas)s kouri ak ekip %(equipos)s"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1095,7 +1124,7 @@ msgstr "Gade rezilta yo nan chak lage"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr ""
+msgstr "Nan tès: %(resultado)s, nan %(corridas)s kouri ak ekip %(equipos)s"
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1119,7 +1148,7 @@ msgstr "Abrevyasyon (egzanp SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "Non ekip la"
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1143,7 +1172,7 @@ msgstr "Nan degre desimal Egzanp: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "Ekip lig la"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1151,7 +1180,7 @@ msgstr "Non lig la"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "Chwazi omwen 2 ekip"
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
@@ -1171,7 +1200,7 @@ msgstr "Jwèt pa seri"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "Seri pou chak ekip"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1207,7 +1236,7 @@ msgstr "Li ta dwe ant 0 ak 1"
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "Ekip yo"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1231,7 +1260,7 @@ msgstr "Fè etap sa a an premye."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "Ekip te ajoute."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1252,6 +1281,10 @@ msgid ""
 "1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
 "cumplen las mismas reglas de realismo."
 msgstr ""
+"Nou retire règ la ke tout ekip 30 jwe 3-jou seri an menm tan an. Avèk seri "
+"2, 3 ak 4 jwèt ak repo algorithm nan pi bon vwayaje 1.57 milyon km. "
+"Kalandriye ofisyèl la vwayaje 1.74 milyon dola. Tou de satisfè règ yo menm "
+"nan réalisme."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Ver la investigación actual, con diagramas animados"
@@ -1336,6 +1369,8 @@ msgid ""
 "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
 "árbol de programación genética."
 msgstr ""
+"Koza-TTP: kat jeyografik nan estad bezbòl ak wout yon ekip ak yon pye bwa "
+"pwogramasyon jenetik"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Ir al sitio principal"
@@ -1416,6 +1451,9 @@ msgid ""
 " de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
 " de su casa, va de estadio en estadio y regresa al final."
 msgstr ""
+"Chak ba se vwayaj la total nan ekip yo 30 nan yon sezon, nan dè milyon de "
+"km. Mwens se pi bon Tout figi yo te mezire menm bagay la: chak ekip kite kay"
+" li, ale soti nan estad nan estad ak retounen nan fen a."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Viaje total por versión del algoritmo"
@@ -1499,7 +1537,7 @@ msgstr "Wi"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
-msgstr ""
+msgstr "Pi bon, men tout ekip 30 yo toujou ap jwe an menm tan an."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
@@ -1624,6 +1662,9 @@ msgid ""
 " de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
 " 3 o 4 juegos, o descansa."
 msgstr ""
+"Anvan tout ekip 30 yo te jwe seri 3 jou an menm tan an, san repo. Koulye a, "
+"sezon an divize an jou lasemèn (4 jou) ak wikenn (3 jou) chanjman menm jan "
+"ak MLB fè. Chak ekip jwe yon seri 2, 3 oswa 4 jwèt, oswa rès."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Modelo anterior contra modelo por turnos"
@@ -1647,6 +1688,9 @@ msgid ""
 "cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
 "descansos, así las giras se pueden armar con más libertad."
 msgstr ""
+"Sis ekip nan uit chanjman Nan modèl anvan an tout moun jwe 3 jou nan chak "
+"chanjman. Nan modèl la chanjman, seri a dènye 2, 3 oswa 4 jou epi gen repo "
+"konsa Tours yo ka mete ansanm ak plis libète."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "3. El movimiento principal: la cadena de Kempe"
@@ -1659,6 +1703,9 @@ msgid ""
 "las series de la cadena cambian de turno al mismo tiempo. El calendario "
 "sigue siendo válido."
 msgstr ""
+"Pou chanje orè a san yo pa yon ekip jwe de seri nan yon fwa, de vire ak yon "
+"chèn seri altène ant yo pran. Tout seri nan chanjman chèn lan an menm tan "
+"an. Orè a toujou valab"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Cadena de Kempe entre el turno A y el turno B"
@@ -1677,6 +1724,8 @@ msgid ""
 "Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
 " series cambian de turno. Las demás series no se mueven."
 msgstr ""
+"uit ekip Rezo a kòmanse nan NYA epi li ale nan BOS, TOR ak BAL. Kat seri li "
+"yo chanje chanjman. Lòt seri a pa deplase."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "4. ¿Por qué el recocido le ganó a la PG?"
@@ -1716,6 +1765,9 @@ msgid ""
 "apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
 "recorren todo el calendario."
 msgstr ""
+"<strong>Li repete menm kote yo.</strong> Nimewo fiks yo nan pyebwa a toujou "
+"montre nan vire yo menm ak ekip. Mouvman o aza kouri nan kalandriye a tout "
+"antye."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Solo mejoras contra aceptar cambios peores"
@@ -1857,10 +1909,12 @@ msgid ""
 "El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
 "las hojas son los juegos (fecha, equipo local y equipo visitante)."
 msgstr ""
+"Pye bwa a se pwogram nan ki mete kalandriye a pi byen. Chak branch rantre "
+"nan jwèt; fèy yo se jwèt yo (dat, ekip lakay ak ekip ale)."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Viaje total de todos los equipos:"
-msgstr ""
+msgstr "Total vwayaj nan tout ekip yo:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Juegos que rompen reglas:"
@@ -1872,12 +1926,14 @@ msgid ""
 "<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
 "es válido."
 msgstr ""
+"Yon règ se ke chak ekip jwe kantite jwèt ke tounwa a mande pou. <strong>0 "
+"jwèt ki kraze règ</strong> yo vle di ke orè a se valab"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Puede tardar de unos segundos a varios minutos. Depende del número de "
 "equipos."
-msgstr ""
+msgstr "Li ka pran kèk segond a plizyè minit. Li depann de kantite òdinatè"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "El motor está trabajando."
@@ -1948,7 +2004,7 @@ msgstr "Tout valè yo deja chwazi. Ou ka chanje yo oswa bay \\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr ""
+msgstr "Chanje ekip yo"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -1964,7 +2020,7 @@ msgstr "Pwochen: Gade kalandriye a"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Demo: elige los equipos"
-msgstr ""
+msgstr "Demo: Chwazi ekip yo"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -1975,7 +2031,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr ""
+msgstr "Etap 1: Chwazi ekip yo"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -1983,6 +2039,9 @@ msgid ""
 "tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
 "da \"Siguiente\" sin cambiar nada."
 msgstr ""
+"Algorithm la mete ansanm yon orè pou ekip ou chwazi yo epi gade pou yon sèl "
+"la ki gen pi piti vwayaj. Nou deja make 10 ekip Lig Majò Si ou vle, klike "
+"sou \"Next\" san yo pa chanje anyen."
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Siguiente: configuración"
@@ -1994,11 +2053,11 @@ msgstr "Prefere gade yon sezon wayal plen?"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
-msgstr ""
+msgstr "Gade sezon 2023 la: 30 ekip kont kalandriye ofisyèl la"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Quieres registrar tus propios equipos y estadios?"
-msgstr ""
+msgstr "Vle enskri ekip pwòp ou yo ak estad?"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Hazlo tú mismo en la guía de 5 pasos"
@@ -2018,7 +2077,7 @@ msgstr "Nouvo algorithm: vire ki baze sou modèl"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
-msgstr ""
+msgstr "<strong>%(nombre)s</strong>: %(n)s ekip"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Qué logró el algoritmo"
@@ -2026,7 +2085,7 @@ msgstr "Ki sa algorithm la reyalize"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje total de todos los equipos con el calendario del algoritmo."
-msgstr ""
+msgstr "Total vwayaj nan tout ekip ak orè algorithm la."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje con un calendario hecho al azar, antes de optimizar."
@@ -2066,7 +2125,7 @@ msgstr "Pa jwe kont advèsè a menm nan de seri nan yon ranje."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
-msgstr ""
+msgstr "Kay jwèt sou mwatye Isit la: %(a)s %(b)s pou chak ekip"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Cómo bajó el viaje"
@@ -2107,12 +2166,12 @@ msgstr "Chanje anviwònman epi kouri ankò"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr ""
+msgstr "Chwazi lòt ekip"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
 "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
-msgstr ""
+msgstr "Gade sezon 2023 konplè a: 30 ekip kont kalandriye ofisyèl la"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Entender cómo funciona en 2 minutos"
@@ -2120,7 +2179,7 @@ msgstr "Konprann ki jan li fonksyone nan 2 minit"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr ""
+msgstr "Fè li tèt ou: enskri ekip ou yo nan gid 5 etap la"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2181,13 +2240,13 @@ msgstr "Pati 1 · Pwoblèm nan"
 
 #: tesis/templates/tesis/historia.html
 msgid "30 equipos tienen que jugar entre sí"
-msgstr ""
+msgstr "30 ekip oblije jwe youn ak lòt"
 
 #: tesis/templates/tesis/historia.html
 msgid ""
 "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
 "partidos en una temporada."
-msgstr ""
+msgstr "Gwo Lig bezbòl gen 30 ekip Chak ekip jwe 162 jwèt nan yon sezon."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2208,6 +2267,8 @@ msgid ""
 "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
 "cruzar el país muchas veces."
 msgstr ""
+"Lè yon ekip jwe sou wout la, yo vwayaje nan avyon. Move orè fè yo travèse "
+"peyi a anpil fwa."
 
 #: tesis/templates/tesis/historia.html
 msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
@@ -2215,7 +2276,7 @@ msgstr "Yon vwayaj vwayaj egzanp, ak dat yo nan lòd o aza."
 
 #: tesis/templates/tesis/historia.html
 msgid "Toca otro estadio para ver la gira de ese equipo."
-msgstr ""
+msgstr "Tape yon lòt estad yo gade vwayaj ekip sa a."
 
 #: tesis/templates/tesis/historia.html
 msgid "Parte 2 · La idea de la tesis"
@@ -2306,6 +2367,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
+"Blòk ki baze sou motè a amelyore bat o aza: %(resultado)s, nan tès preliminè"
+" (%(corridas)s kouri, %(equipos)s ekip)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2333,7 +2396,7 @@ msgstr "Kòd"
 
 #: tesis/templates/tesis/historia.html
 msgid "Equipo"
-msgstr ""
+msgstr "Ekip"
 
 #: tesis/templates/tesis/historia.html
 msgid "Estadio"
@@ -2387,6 +2450,8 @@ msgid ""
 "equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
 "con el azar."
 msgstr ""
+"Yon repete nan kouri nan motè a pwogramasyon jenetik ak tout 30 ekip bezbòl "
+"Lig Gwo nan 2023, konpare ak orè ofisyèl la ak chans."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
@@ -2402,6 +2467,9 @@ msgid ""
 "calendario oficial de 2023 es la referencia. El motor por bloques intenta "
 "armar una temporada con menos viaje."
 msgstr ""
+"Nou itilize 30 ekip bezbòl Lig Gwo ak estad aktyèl yo. Orè ofisyèl 2023 la "
+"se referans lan. Blòk ki baze sou motè a eseye mete ansanm yon sezon ak "
+"mwens vwayaj."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cómo bajan los kilómetros, generación por generación"
@@ -2429,7 +2497,7 @@ msgstr "Sideways glisman tablo"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de los 30 equipos en toda la temporada regular."
-msgstr ""
+msgstr "Vwayaj nan ekip yo 30 pandan tout sezon regilye a"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Gira más larga (juegos seguidos de visita)"
@@ -2453,7 +2521,7 @@ msgstr "Pi bon nan o aza, ak menm efò a"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "No cumple el número de juegos de cada equipo."
-msgstr ""
+msgstr "Li pa satisfè kantite a nan jwèt yo nan chak ekip"
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2477,14 +2545,17 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
+"Remak: kalandriye a motè gen Tours nan jiska <strong>%(gira)s jwèt lwen nan "
+"yon ranje</strong>. Ofisyèl la gen %(oficial)smaksimòm . Yon ekip reyèl pa "
+"ta aksepte Tours long sa yo."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr ""
+msgstr "Vwayaje pa ekip"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
-msgstr ""
+msgstr "Chanje ant de orè yo wè ki ekip vwayaje pi plis la."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Calendario del mapa"
@@ -2500,7 +2571,7 @@ msgstr "Motè"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
-msgstr ""
+msgstr "Gade tout ekip 30 kòm yon tab"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
@@ -2527,6 +2598,8 @@ msgid ""
 "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
 "equipo sale de su casa, viaja de estadio en estadio y regresa al final."
 msgstr ""
+"Distans: liy dwat ant estad yo (fòmil semiverse). Chak ekip kite kay li, "
+"vwayaje soti nan estad nan estad ak retounen nan fen a."
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2594,7 +2667,7 @@ msgstr "Vire B"
 
 #: documentacion/investigacion.py
 msgid "1. Elegimos un equipo y dos turnos"
-msgstr ""
+msgstr "1. Nou chwazi yon ekip ak de chanjman"
 
 #: documentacion/investigacion.py
 msgid "2. Seguimos la cadena: A, B, A, B…"
@@ -2654,19 +2727,19 @@ msgstr "Si ou vle. Si ou kite li nan sa, non sa a itilize."
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr ""
+msgstr "Ekip tounwa"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr ""
+msgstr "Nou deja tcheke 10 Ou ka chanje yo: soti nan 3 a 10 ekip"
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Chwazi omwen %(n)d ekip yo."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Chwazi nan pifò %(n)d ekip yo."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2674,11 +2747,11 @@ msgstr "Kat jeyografik 30 estad yo nan Lig yo Gwo"
 
 #: tesis/historia.py
 msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
-msgstr ""
+msgstr "{Ekip} vwayaj egzanp: 12 vizit nan lòd o aza."
 
 #: tesis/historia.py
 msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
-msgstr ""
+msgstr "Ou chwazi {ekip}. Swiv etap 2 pou wè vwayaj yo."
 
 #: tesis/historia.py
 msgid "km"
@@ -2821,7 +2894,7 @@ msgstr "Generación {gen} de {total}: {km} km"
 
 #: tesis/repeticion.py
 msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr ""
+msgstr "Li toujou pa satisfè kantite a nan jwèt yo nan chak ekip"
 
 #: tesis/repeticion.py
 msgid ""
@@ -2835,14 +2908,14 @@ msgstr ""
 msgid ""
 "Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
 "temporada"
-msgstr ""
+msgstr "Kat: Chak sèk se yon ekip; pi gwo vle di plis kilomèt nan sezon an"
 
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
-msgstr ""
+msgstr "{ekip}: {km} km"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "Un mejor calendario de la MLB <span class=\"clave\">con programación "
 "genética.</span>"
-msgstr ""
+msgstr "Pi bon orè MLB <span class=\"clave\">ak pwogramasyon jenetik</span>"

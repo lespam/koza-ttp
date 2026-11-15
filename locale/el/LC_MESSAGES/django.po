@@ -143,6 +143,8 @@ msgid ""
 "Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
 " con un recorrido guiado paso a paso."
 msgstr ""
+"Μπορείτε να μεταβείτε από την εγγραφή της ομάδας για να δείτε το ημερολόγιο "
+"χωρίς σφάλματα, με μια καθοδηγούμενη περιήγηση βήμα προς βήμα."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
@@ -291,6 +293,10 @@ msgid ""
 "viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
 "2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
 msgstr ""
+"Το MLB προγραμματίζει 2,430 παιχνίδια για 30 ομάδες σε περίπου 180 ημέρες. "
+"Κάθε ομάδα ταξιδεύει μεταξύ πόλεων και η απόσταση ποικίλλει πολύ από ομάδα "
+"σε ομάδα. Το 2016, το Σιάτλ ταξίδεψε 76,683 χιλιόμετρα και οι Chicago Cubs "
+"ταξίδεψαν 39,015 χιλιόμετρα."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -320,6 +326,10 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
+"<strong>Αναπαράσταση:</strong> Κάθε ημερολόγιο είναι ένα δέντρο. Οι κόμβοι "
+"του είναι λειτουργίες όπως <code>crear_juego</code> (ημερομηνία, γηπεδούχος,"
+" φιλοξενούμενη ομάδα) και <code>obtener_calendario</code>, που ενώνει δύο "
+"λίστες παιχνιδιών."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -327,6 +337,9 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
+"<strong>Βιωσιμότητα (C1):</strong> Κάθε ομάδα πρέπει να παίξει ακριβώς τον "
+"αριθμό των αγώνων που απαιτεί το τουρνουά. Η τιμή 0 σημαίνει ότι το "
+"πρόγραμμα είναι έγκυρο."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -350,6 +363,7 @@ msgid ""
 "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
 "generaciones."
 msgstr ""
+"Δοκιμάστε 30 ομάδες, 163 παιχνίδια ανά ομάδα, σειρές 5 αγώνων και 20 γενιές."
 
 #: documentacion/templates/documentacion/historico.html
 msgid "Comparación de la búsqueda aleatoria y la programación genética"
@@ -575,13 +589,15 @@ msgstr "Σκοτεινή λειτουργία"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
-msgstr ""
+msgstr "Επίδειξη: Πρόγραμμα και ομαδικά ταξίδια"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Genera un calendario de béisbol con programación genética y mide cuánto "
 "viaja cada equipo."
 msgstr ""
+"Δημιουργεί ένα ημερολόγιο μπέιζμπολ με γενετικό προγραμματισμό και μετρά "
+"πόσο ταξιδεύει κάθε ομάδα."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
@@ -589,7 +605,7 @@ msgstr "Δημιουργήστε ένα ημερολόγιο και"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "mide cuánto viaja cada equipo."
-msgstr ""
+msgstr "Μετρήστε πόσο ταξιδεύει κάθε ομάδα."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -597,6 +613,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"Το AI (γενετικός προγραμματισμός) αναζητά χρονοδιαγράμματα όπου τα ταξίδια "
+"είναι σύντομα και ομοιόμορφα. Θέλετε τις δικές σας ομάδες; Χρησιμοποιήστε "
+"τον <a href=\"%(guia)s\">οδηγό 5 βημάτων</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -607,6 +626,9 @@ msgid ""
 "Para optimizar un calendario, primero registra los equipos, la liga y el "
 "torneo, y después crea una configuración."
 msgstr ""
+"Για να βελτιστοποιήσετε ένα χρονοδιάγραμμα, καταγράψτε πρώτα τις ομάδες, το "
+"πρωτάθλημα και το τουρνουά και, στη συνέχεια, δημιουργήστε μια ρύθμιση "
+"παραμέτρων."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Abrir la guía"
@@ -634,7 +656,7 @@ msgstr "Πρόγραμμα: %(torneo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
-msgstr ""
+msgstr "Για να το παρουσιάσετε στην ομάδα σας"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las respuestas que te van a pedir en clase."
@@ -670,13 +692,16 @@ msgstr "Πώς μπορώ να το προσαρμόσω;"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambia equipos y reglas"
-msgstr ""
+msgstr "Αλλαγή ομάδων και κανόνων"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
 " el patrón Strategy para la medida de “viaje justo”."
 msgstr ""
+"Οι ομάδες και οι συντεταγμένες καταγράφονται στον οδηγό. Μια ιδέα για την "
+"ομάδα σας: χρησιμοποιήστε το μοτίβο στρατηγικής για το μέτρο \"δίκαιο "
+"ταξίδι\"."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¿Puedo usarlo?"
@@ -713,6 +738,10 @@ msgid ""
 "calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
 " la diferencia entre el equipo que más viaja y el que menos."
 msgstr ""
+"Εξηγήστε μου βήμα προς βήμα πώς αυτό το γενετικό πρόγραμμα δημιουργεί και "
+"αξιολογεί ένα πρόγραμμα. Στη συνέχεια, πείτε μου τι θα αλλάζατε ώστε το "
+"μέτρο του «δίκαιου ταξιδιού» να είναι η διαφορά μεταξύ της ομάδας που "
+"ταξιδεύει περισσότερο και αυτής που ταξιδεύει λιγότερο."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
@@ -822,7 +851,7 @@ msgstr "Αποθηκεύστε και συνεχίστε στο βήμα 5"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Paso 1: equipos"
-msgstr ""
+msgstr "Βήμα 1: Ομάδες"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Puedes usar los que ya existen o agregar uno nuevo."
@@ -830,15 +859,15 @@ msgstr "Μπορείτε να χρησιμοποιήσετε υπάρχοντα 
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr ""
+msgstr "Δείτε τις τελευταίες εγγεγραμμένες ομάδες"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
-msgstr ""
+msgstr "Προσθήκη ομάδας"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr ""
+msgstr "Προσθήκη ομάδας"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -846,7 +875,7 @@ msgstr "Συνεχίστε στο Βήμα 2: League"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr ""
+msgstr "Χρειάζεστε τουλάχιστον 2 ομάδες για να συνεχίσετε."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -857,14 +886,17 @@ msgid ""
 "En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
 " el algoritmo y generas un calendario de juegos."
 msgstr ""
+"Σε 5 βήματα εγγράφετε ομάδες, δημιουργείτε ένα πρωτάθλημα και ένα τουρνουά, "
+"επιλέγετε πώς θα εκτελέσετε τον αλγόριθμο και δημιουργείτε ένα πρόγραμμα "
+"παιχνιδιών."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
-msgstr ""
+msgstr "Ομάδες: δηλώστε τουλάχιστον 2, με την τοποθεσία του γηπέδου τους."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Liga: elige qué equipos juegan juntos."
-msgstr ""
+msgstr "League: Επιλέξτε ποιες ομάδες θα παίξουν μαζί."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Torneo: define las fechas, las series y los juegos."
@@ -899,6 +931,9 @@ msgid ""
 "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
 "equipos: con un número impar, uno se queda sin rival en cada serie."
 msgstr ""
+"Ένα πρωτάθλημα είναι η ομάδα των ομάδων που παίζουν μεταξύ τους. "
+"Χρησιμοποιήστε ζυγό αριθμό ομάδων: με μονό αριθμό, μία μένει χωρίς αντίπαλο "
+"σε κάθε σειρά."
 
 #: tesis/templates/tesis/guia/liga.html
 msgid "Guardar y seguir al paso 3"
@@ -913,6 +948,9 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
+"Το τουρνουά χρησιμοποιεί τις ομάδες του πρωταθλήματος \"%(liga)s\". Οι "
+"αγώνες είναι προγραμματισμένοι από Δευτέρα έως Πέμπτη και τα Σάββατα, μεταξύ"
+" της πρώτης και της τελευταίας ημέρας."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -958,6 +996,8 @@ msgstr "Δοκιμάστε το εργαλείο"
 msgid ""
 "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
 msgstr ""
+"Καταχωρίστε ομάδες, δημιουργήστε ένα πρωτάθλημα και δημιουργήστε το δικό σας"
+" ημερολόγιο. Χωρίς λογαριασμό."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Sin prisa"
@@ -1032,7 +1072,7 @@ msgstr "Σε δοκιμές"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, σε %(corridas)s τρεξίματα με %(equipos)s ομάδες"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
@@ -1072,6 +1112,8 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"Πρώιμο αποτέλεσμα: %(resultado)s, σε %(corridas)s τρεξίματα με %(equipos)s "
+"ομάδες."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1125,6 +1167,7 @@ msgstr "Δείτε τα αποτελέσματα κάθε έκδοσης"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
+"Σε δοκιμές: %(resultado)s, σε %(corridas)s τρεξίματα με %(equipos)s ομάδες."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1148,7 +1191,7 @@ msgstr "Συντομογραφία (π.χ. SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "Όνομα ομάδας"
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1172,7 +1215,7 @@ msgstr "Σε δεκαδικές μοίρες. Παράδειγμα: -122,33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "Ομάδες πρωταθλήματος"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1180,7 +1223,7 @@ msgstr "Όνομα Πρωταθλήματος"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "Επιλέξτε τουλάχιστον 2 ομάδες."
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
@@ -1200,7 +1243,7 @@ msgstr "Παιχνίδια ανά σειρά"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "Σειρά ανά ομάδα"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1236,7 +1279,7 @@ msgstr "Θα πρέπει να είναι μεταξύ 0 και 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "Ομάδες"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1260,7 +1303,7 @@ msgstr "Ολοκληρώστε πρώτα αυτό το βήμα."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "πρόσθεσε η ομάδα."
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1281,6 +1324,11 @@ msgid ""
 "1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
 "cumplen las mismas reglas de realismo."
 msgstr ""
+"Καταργήσαμε τον κανόνα ότι και οι 30 ομάδες παίζουν σειρές 3 ημερών "
+"ταυτόχρονα. Με σειρές 2, 3 και 4 παιχνιδιών και διαλειμμάτων, ο καλύτερος "
+"αλγόριθμος διανύει 1,57 εκατομμύρια χιλιόμετρα. Το επίσημο ημερολόγιο "
+"ταξιδεύει 1,74 εκατομμύρια. Και οι δύο πληρούν τους ίδιους κανόνες "
+"ρεαλισμού."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Ver la investigación actual, con diagramas animados"
@@ -1365,6 +1413,8 @@ msgid ""
 "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
 "árbol de programación genética."
 msgstr ""
+"Koza-TTP: χάρτης γηπέδων μπέιζμπολ με τη διαδρομή μιας ομάδας και ένα δέντρο"
+" γενετικού προγραμματισμού."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Ir al sitio principal"
@@ -1450,6 +1500,10 @@ msgid ""
 " de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
 " de su casa, va de estadio en estadio y regresa al final."
 msgstr ""
+"Κάθε μπάρα είναι το συνολικό ταξίδι των 30 ομάδων σε μια σεζόν, σε "
+"εκατομμύρια χιλιόμετρα. Λιγότερο είναι καλύτερο. Όλα τα νούμερα μετρήθηκαν "
+"το ίδιο: κάθε ομάδα φεύγει από το σπίτι της, πηγαίνει από γήπεδο σε γήπεδο "
+"και επιστρέφει στο τέλος."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Viaje total por versión del algoritmo"
@@ -1534,7 +1588,7 @@ msgstr "Ναι"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
-msgstr ""
+msgstr "Καλύτερα, αλλά και οι 30 ομάδες εξακολουθούν να παίζουν ταυτόχρονα."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
@@ -1665,6 +1719,10 @@ msgid ""
 " de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
 " 3 o 4 juegos, o descansa."
 msgstr ""
+"Πριν, και οι 30 ομάδες έπαιζαν σειρές 3 ημερών ταυτόχρονα, χωρίς "
+"διαλείμματα. Τώρα η σεζόν χωρίζεται σε βάρδιες τις καθημερινές (4 ημέρες) "
+"και το Σαββατοκύριακο (3 ημέρες), όπως ακριβώς κάνει το MLB. Κάθε ομάδα "
+"παίζει μια σειρά από 2, 3 ή 4 παιχνίδια ή ξεκουράζεται."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Modelo anterior contra modelo por turnos"
@@ -1688,6 +1746,10 @@ msgid ""
 "cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
 "descansos, así las giras se pueden armar con más libertad."
 msgstr ""
+"Έξι ομάδες σε οκτώ βάρδιες. Στο προηγούμενο μοντέλο όλοι παίζουν 3 ημέρες σε"
+" κάθε βάρδια. Στο μοντέλο βάρδιας η σειρά διαρκεί 2, 3 ή 4 ημέρες και "
+"υπάρχουν διαλείμματα, οπότε οι εκδρομές μπορούν να οργανωθούν με περισσότερη"
+" ελευθερία."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "3. El movimiento principal: la cadena de Kempe"
@@ -1700,6 +1762,10 @@ msgid ""
 "las series de la cadena cambian de turno al mismo tiempo. El calendario "
 "sigue siendo válido."
 msgstr ""
+"Για να αλλάξει το πρόγραμμα χωρίς μια ομάδα να παίζει δύο σειρές ταυτόχρονα,"
+" λαμβάνονται δύο γύροι και μια αλυσίδα σειρών που εναλλάσσονται μεταξύ τους."
+" Όλες οι σειρές στην αλυσίδα αλλάζουν ταυτόχρονα. Το πρόγραμμα εξακολουθεί "
+"να ισχύει."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Cadena de Kempe entre el turno A y el turno B"
@@ -1718,6 +1784,8 @@ msgid ""
 "Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
 " series cambian de turno. Las demás series no se mueven."
 msgstr ""
+"Οκτώ ομάδες. Το δίκτυο ξεκινά από τη Νέα Υόρκη και περνά από BOS, TOR και "
+"BAL. Οι τέσσερις σειρές του αλλάζουν βάρδιες. Οι άλλες σειρές δεν κινούνται."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "4. ¿Por qué el recocido le ganó a la PG?"
@@ -1757,6 +1825,9 @@ msgid ""
 "apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
 "recorren todo el calendario."
 msgstr ""
+"<strong>Επανέλαβε τα ίδια μέρη.</strong> Οι σταθεροί αριθμοί στο δέντρο "
+"δείχνουν πάντα τις ίδιες στροφές και ομάδες. Τυχαίες κινήσεις διατρέχουν "
+"ολόκληρο το ημερολόγιο."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Solo mejoras contra aceptar cambios peores"
@@ -1903,10 +1974,13 @@ msgid ""
 "El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
 "las hojas son los juegos (fecha, equipo local y equipo visitante)."
 msgstr ""
+"Το δέντρο είναι το πρόγραμμα που συντάσσει το καλύτερο ημερολόγιο. Κάθε "
+"κλάδος συμμετέχει σε παιχνίδια. τα φύλλα είναι τα παιχνίδια (ημερομηνία, "
+"γηπεδούχος και φιλοξενούμενη ομάδα)."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Viaje total de todos los equipos:"
-msgstr ""
+msgstr "Συνολικά ταξίδια όλων των ομάδων:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Juegos que rompen reglas:"
@@ -1918,12 +1992,17 @@ msgid ""
 "<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
 "es válido."
 msgstr ""
+"Ένας κανόνας είναι ότι κάθε ομάδα παίζει τον αριθμό των παιχνιδιών που "
+"απαιτεί το τουρνουά. <strong>0 παιχνίδια που παραβιάζουν τους "
+"κανόνες</strong> σημαίνει ότι το πρόγραμμα είναι έγκυρο."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Puede tardar de unos segundos a varios minutos. Depende del número de "
 "equipos."
 msgstr ""
+"Μπορεί να διαρκέσει από μερικά δευτερόλεπτα έως αρκετά λεπτά. Εξαρτάται από "
+"τον αριθμό των υπολογιστών."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "El motor está trabajando."
@@ -1997,7 +2076,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr ""
+msgstr "Αλλαγή ομάδων"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2013,7 +2092,7 @@ msgstr "Επόμενο: Προβολή του ημερολογίου"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Demo: elige los equipos"
-msgstr ""
+msgstr "Επίδειξη: Επιλέξτε τις ομάδες"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2025,7 +2104,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr ""
+msgstr "Βήμα 1: Επιλέξτε τις ομάδες"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2033,6 +2112,9 @@ msgid ""
 "tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
 "da \"Siguiente\" sin cambiar nada."
 msgstr ""
+"Ο αλγόριθμος συντάσσει ένα πρόγραμμα για τις ομάδες που επιλέγετε και "
+"αναζητά αυτή με τα λιγότερα ταξίδια. Έχουμε ήδη επισημάνει 10 ομάδες της "
+"Major League. Αν θέλετε, κάντε κλικ στο «Επόμενο» χωρίς να αλλάξετε τίποτα."
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Siguiente: configuración"
@@ -2044,11 +2126,11 @@ msgstr "Προτιμάτε να παρακολουθήσετε μια πλήρη
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
-msgstr ""
+msgstr "Δείτε τη σεζόν 2023: 30 ομάδες ενάντια στο επίσημο ημερολόγιο"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Quieres registrar tus propios equipos y estadios?"
-msgstr ""
+msgstr "Θέλετε να εγγράψετε τις δικές σας ομάδες και γήπεδα;"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Hazlo tú mismo en la guía de 5 pasos"
@@ -2068,7 +2150,7 @@ msgstr "Νεότερος αλγόριθμος: Turn-based μοντέλο"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
-msgstr ""
+msgstr "<strong>%(nombre)s</strong>: %(n)s ομάδες."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Qué logró el algoritmo"
@@ -2077,6 +2159,7 @@ msgstr "Τι πέτυχε ο αλγόριθμος"
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje total de todos los equipos con el calendario del algoritmo."
 msgstr ""
+"Συνολικές μετακινήσεις όλων των ομάδων με το πρόγραμμα του αλγορίθμου."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje con un calendario hecho al azar, antes de optimizar."
@@ -2119,6 +2202,7 @@ msgstr "Δεν παίζει εναντίον του ίδιου αντιπάλο�
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
 msgstr ""
+"Εντός έδρας παιχνίδια περίπου τα μισά. Εδώ: %(a)s έως %(b)s ανά ομάδα."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Cómo bajó el viaje"
@@ -2160,12 +2244,13 @@ msgstr "Αλλάξτε τις ρυθμίσεις και εκτελέστε ξα�
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr ""
+msgstr "Επιλέξτε άλλες ομάδες"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
 "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
 msgstr ""
+"Παρακολουθήστε ολόκληρη τη σεζόν 2023: 30 ομάδες στο επίσημο ημερολόγιο"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Entender cómo funciona en 2 minutos"
@@ -2173,7 +2258,7 @@ msgstr "Κατανοήστε πώς λειτουργεί σε 2 λεπτά"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr ""
+msgstr "Κάντε το μόνοι σας: καταχωρήστε τις ομάδες σας στον οδηγό 5 βημάτων"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2235,13 +2320,15 @@ msgstr "Μέρος 1 · Το πρόβλημα"
 
 #: tesis/templates/tesis/historia.html
 msgid "30 equipos tienen que jugar entre sí"
-msgstr ""
+msgstr "30 ομάδες πρέπει να παίξουν μεταξύ τους"
 
 #: tesis/templates/tesis/historia.html
 msgid ""
 "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
 "partidos en una temporada."
 msgstr ""
+"Η Major League Baseball έχει 30 ομάδες. Κάθε ομάδα παίζει 162 παιχνίδια σε "
+"μια σεζόν."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2263,6 +2350,8 @@ msgid ""
 "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
 "cruzar el país muchas veces."
 msgstr ""
+"Όταν μια ομάδα παίζει εκτός έδρας, ταξιδεύει με αεροπλάνο. Ένα κακό "
+"πρόγραμμα τους κάνει να διασχίζουν τη χώρα πολλές φορές."
 
 #: tesis/templates/tesis/historia.html
 msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
@@ -2271,6 +2360,8 @@ msgstr "Ένα παράδειγμα εκδρομής, με τις ημερομη
 #: tesis/templates/tesis/historia.html
 msgid "Toca otro estadio para ver la gira de ese equipo."
 msgstr ""
+"Αγγίξτε ένα άλλο στάδιο για να παρακολουθήσετε την περιοδεία αυτής της "
+"ομάδας."
 
 #: tesis/templates/tesis/historia.html
 msgid "Parte 2 · La idea de la tesis"
@@ -2365,6 +2456,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
+"Η βελτιωμένη μηχανή που βασίζεται σε μπλοκ κερδίζει τυχαία: %(resultado)s, "
+"σε προκαταρκτικές δοκιμές (%(corridas)s τρεξίματα, %(equipos)s ομάδες)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2392,7 +2485,7 @@ msgstr "Κωδικός"
 
 #: tesis/templates/tesis/historia.html
 msgid "Equipo"
-msgstr ""
+msgstr "Ομάδα"
 
 #: tesis/templates/tesis/historia.html
 msgid "Estadio"
@@ -2447,6 +2540,9 @@ msgid ""
 "equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
 "con el azar."
 msgstr ""
+"Μια επανάληψη μιας σειράς της μηχανής γενετικού προγραμματισμού και με τις "
+"30 ομάδες του Major League Baseball το 2023, σε σύγκριση με το επίσημο "
+"πρόγραμμα και την τύχη."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
@@ -2462,6 +2558,9 @@ msgid ""
 "calendario oficial de 2023 es la referencia. El motor por bloques intenta "
 "armar una temporada con menos viaje."
 msgstr ""
+"Χρησιμοποιούμε τις 30 ομάδες μπέιζμπολ της Major League και τα πραγματικά "
+"τους γήπεδα. Το επίσημο πρόγραμμα του 2023 είναι η αναφορά. Ο κινητήρας που "
+"βασίζεται σε μπλοκ προσπαθεί να δημιουργήσει μια σεζόν με λιγότερα ταξίδια."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cómo bajan los kilómetros, generación por generación"
@@ -2490,7 +2589,7 @@ msgstr "Πλάγια συρόμενη σανίδα"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de los 30 equipos en toda la temporada regular."
-msgstr ""
+msgstr "Ταξίδια των 30 ομάδων σε όλη την κανονική περίοδο."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Gira más larga (juegos seguidos de visita)"
@@ -2514,7 +2613,7 @@ msgstr "Καλύτερα τυχαία, με την ίδια προσπάθεια
 
 #: tesis/templates/tesis/repeticion.html
 msgid "No cumple el número de juegos de cada equipo."
-msgstr ""
+msgstr "Δεν ανταποκρίνεται στον αριθμό των αγώνων κάθε ομάδας."
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2538,14 +2637,20 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
+"Σημείωση: το ημερολόγιο του κινητήρα έχει περιηγήσεις έως και "
+"<strong>%(gira)s εκτός έδρας αγώνων στη σειρά</strong>. Το επίσημο έχει "
+"μέγιστο %(oficial)s. Μια πραγματική ομάδα δεν θα δεχόταν τόσο μεγάλες "
+"περιοδείες."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr ""
+msgstr "Ταξίδι ανά ομάδα"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
 msgstr ""
+"Κάντε εναλλαγή μεταξύ των δύο προγραμμάτων για να δείτε ποιες ομάδες "
+"ταξιδεύουν περισσότερο."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Calendario del mapa"
@@ -2561,7 +2666,7 @@ msgstr "Κινητήρας"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
-msgstr ""
+msgstr "Δείτε και τις 30 ομάδες ως πίνακα"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
@@ -2588,6 +2693,9 @@ msgid ""
 "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
 "equipo sale de su casa, viaja de estadio en estadio y regresa al final."
 msgstr ""
+"Αποστάσεις: ευθεία γραμμή μεταξύ γηπέδων (τύπος ημισύμπαντος). Κάθε ομάδα "
+"φεύγει από το σπίτι της, ταξιδεύει από γήπεδο σε γήπεδο και επιστρέφει στο "
+"τέλος."
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2655,7 +2763,7 @@ msgstr "Στροφή Β"
 
 #: documentacion/investigacion.py
 msgid "1. Elegimos un equipo y dos turnos"
-msgstr ""
+msgstr "1. Επιλέγουμε ομάδα και δύο βάρδιες"
 
 #: documentacion/investigacion.py
 msgid "2. Seguimos la cadena: A, B, A, B…"
@@ -2715,19 +2823,19 @@ msgstr "Προαιρετικός. Αν το αφήσετε έτσι, χρησι�
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr ""
+msgstr "Ομάδες τουρνουά"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr ""
+msgstr "Έχουμε ήδη ελέγξει 10. Μπορείτε να τα αλλάξετε: από 3 σε 10 ομάδες."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Επιλέξτε τουλάχιστον %(n)d ομάδες."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Επιλέξτε το πολύ %(n)d ομάδες."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2735,11 +2843,12 @@ msgstr "Χάρτης των 30 γηπέδων των Major Leagues"
 
 #: tesis/historia.py
 msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
-msgstr ""
+msgstr "Παράδειγμα περιήγησης {Team}: 12 επισκέψεις με τυχαία σειρά."
 
 #: tesis/historia.py
 msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
 msgstr ""
+"Επιλέξατε {ομάδα}. Ακολουθήστε το βήμα 2 για να δείτε τα ταξίδια τους."
 
 #: tesis/historia.py
 msgid "km"
@@ -2884,7 +2993,7 @@ msgstr "Generación {gen} de {total}: {km} km"
 
 #: tesis/repeticion.py
 msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr ""
+msgstr "Ακόμα δεν ανταποκρίνεται στον αριθμό των αγώνων κάθε ομάδας."
 
 #: tesis/repeticion.py
 msgid ""
@@ -2899,13 +3008,17 @@ msgid ""
 "Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
 "temporada"
 msgstr ""
+"Χάρτης: Κάθε κύκλος είναι μια ομάδα. μεγαλύτερο σημαίνει περισσότερα μίλια "
+"στη σεζόν"
 
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
-msgstr ""
+msgstr "{ομάδα}: {km} χλμ"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "Un mejor calendario de la MLB <span class=\"clave\">con programación "
 "genética.</span>"
 msgstr ""
+"Ένα καλύτερο πρόγραμμα MLB <span class=\"clave\">με γενετικό "
+"προγραμματισμό.</span>"

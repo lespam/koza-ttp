@@ -141,6 +141,8 @@ msgid ""
 "Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
 " con un recorrido guiado paso a paso."
 msgstr ""
+"আপনি একটি গাইডেড ধাপে ধাপে ট্যুর সহ ত্রুটি ছাড়াই ক্যালেন্ডারটি দেখতে টিম "
+"রেজিস্টার থেকে যেতে পারেন।"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
@@ -286,6 +288,10 @@ msgid ""
 "viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
 "2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
 msgstr ""
+"এমএলবি প্রায় 180 দিনের মধ্যে 30 টি দলের জন্য 2,430 টি গেম নির্ধারণ করে। "
+"প্রতিটি দল শহরগুলির মধ্যে ভ্রমণ করে এবং দূরত্ব দল থেকে দলে ব্যাপকভাবে "
+"পরিবর্তিত হয়। 2016 সালে, সিয়াটল 76,683 কিলোমিটার ভ্রমণ করেছিল এবং শিকাগো "
+"কাবস 39,015 কিলোমিটার ভ্রমণ করেছিল।"
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -314,6 +320,9 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
+"<strong>উপস্থাপনা:</strong> প্রতিটি ক্যালেন্ডার একটি গাছ। এর নোডগুলি অপারেশন"
+" যেমন ( <code>crear_juego</code> তারিখ, হোম টিম, অ্যাওয়ে টিম) এবং , "
+"<code>obtener_calendario</code>যা গেমগুলির দুটি তালিকায় যোগ দেয়।"
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -321,6 +330,8 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
+"<strong>কার্যকারিতা (সি 1):</strong> প্রতিটি দলকে অবশ্যই টুর্নামেন্টের জন্য "
+"ঠিক সংখ্যক গেম খেলতে হবে। 0 এর মান মানে হল যে সময়সূচীটি বৈধ।"
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -345,6 +356,8 @@ msgid ""
 "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
 "generaciones."
 msgstr ""
+"30 টি দল, প্রতি দলে 163 টি গেমস, 5-গেম সিরিজ এবং 20 টি প্রজন্মের চেষ্টা "
+"করুন।"
 
 #: documentacion/templates/documentacion/historico.html
 msgid "Comparación de la búsqueda aleatoria y la programación genética"
@@ -563,13 +576,15 @@ msgstr "ডার্ক মোড"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
-msgstr ""
+msgstr "ডেমো: সময়সূচী এবং টিম ভ্রমণ"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Genera un calendario de béisbol con programación genética y mide cuánto "
 "viaja cada equipo."
 msgstr ""
+"এটি জেনেটিক প্রোগ্রামিং সহ একটি বেসবল ক্যালেন্ডার তৈরি করে এবং প্রতিটি দল "
+"কতটা ভ্রমণ করে তা পরিমাপ করে।"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
@@ -577,7 +592,7 @@ msgstr "একটি ক্যালেন্ডার তৈরি করুন
 
 #: tesis/templates/tesis/dashboard.html
 msgid "mide cuánto viaja cada equipo."
-msgstr ""
+msgstr "প্রতিটি দল কতটুকু ভ্রমণ করে তা পরিমাপ করুন।"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -585,6 +600,9 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
+"এআই (জেনেটিক প্রোগ্রামিং) এমন সময়সূচী সন্ধান করে যেখানে ভ্রমণ সংক্ষিপ্ত এবং"
+" সমান। আপনি কি নিজের দল চান? <a href=\"%(guia)s\">5-ধাপের গাইড</a> ব্যবহার "
+"করুন।"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -595,6 +613,8 @@ msgid ""
 "Para optimizar un calendario, primero registra los equipos, la liga y el "
 "torneo, y después crea una configuración."
 msgstr ""
+"একটি সময়সূচী অনুকূল করতে, প্রথমে দলগুলি, লীগ এবং টুর্নামেন্টগুলি রেকর্ড "
+"করুন এবং তারপরে একটি কনফিগারেশন তৈরি করুন।"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Abrir la guía"
@@ -620,7 +640,7 @@ msgstr "সময়সূচি: %(torneo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
-msgstr ""
+msgstr "এটি আপনার দলের সাথে পরিচয় করিয়ে দিতে"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las respuestas que te van a pedir en clase."
@@ -656,13 +676,15 @@ msgstr "আমি কীভাবে এটি খাপ খাইয়ে ন�
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambia equipos y reglas"
-msgstr ""
+msgstr "দল এবং নিয়ম পরিবর্তন করুন"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
 " el patrón Strategy para la medida de “viaje justo”."
 msgstr ""
+"দল এবং স্থানাঙ্কগুলি গাইডে রেকর্ড করা হয়। আপনার দলের জন্য একটি ধারণা: "
+"\"ন্যায্য ভ্রমণ\" পরিমাপের জন্য কৌশল প্যাটার্নটি ব্যবহার করুন।"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¿Puedo usarlo?"
@@ -698,6 +720,10 @@ msgid ""
 "calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
 " la diferencia entre el equipo que más viaja y el que menos."
 msgstr ""
+"এই জেনেটিক প্রোগ্রামটি কীভাবে একটি সময়সূচী তৈরি করে এবং মূল্যায়ন করে তা "
+"আমাকে ধাপে ধাপে ব্যাখ্যা করুন। তারপরে আপনি কী পরিবর্তন করবেন তা আমাকে বলুন "
+"যাতে \"ন্যায্য ভ্রমণ\" এর পরিমাপটি সবচেয়ে বেশি ভ্রমণ করে এবং সবচেয়ে কম "
+"ভ্রমণ করে এমন দলের মধ্যে পার্থক্য।"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
@@ -805,7 +831,7 @@ msgstr "সংরক্ষণ করুন এবং ধাপ 5 এ চাল�
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Paso 1: equipos"
-msgstr ""
+msgstr "ধাপ 1: দল"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Puedes usar los que ya existen o agregar uno nuevo."
@@ -813,15 +839,15 @@ msgstr "আপনি বিদ্যমান ব্যবহার করতে
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr ""
+msgstr "সাম্প্রতিকতম নিবন্ধিত দলগুলি দেখুন"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
-msgstr ""
+msgstr "একটি দল যোগ করুন"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr ""
+msgstr "দল যোগ করুন"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -829,7 +855,7 @@ msgstr "ধাপ 2 চালিয়ে যান: লীগ"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr ""
+msgstr "চালিয়ে যাওয়ার জন্য আপনার কমপক্ষে 2 টি দল প্রয়োজন।"
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -840,14 +866,17 @@ msgid ""
 "En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
 " el algoritmo y generas un calendario de juegos."
 msgstr ""
+"5 টি ধাপে আপনি দলগুলি নিবন্ধন করুন, একটি লীগ এবং একটি টুর্নামেন্ট সেট আপ "
+"করুন, অ্যালগরিদমটি কীভাবে চালাবেন এবং একটি গেমের সময়সূচী তৈরি করবেন তা চয়ন"
+" করুন।"
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
-msgstr ""
+msgstr "দলগুলি: তাদের স্টেডিয়ামের অবস্থান সহ কমপক্ষে 2 টি নিবন্ধন করুন।"
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Liga: elige qué equipos juegan juntos."
-msgstr ""
+msgstr "লীগ: কোন দলগুলি একসাথে খেলবে তা নির্বাচন করুন।"
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Torneo: define las fechas, las series y los juegos."
@@ -882,6 +911,9 @@ msgid ""
 "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
 "equipos: con un número impar, uno se queda sin rival en cada serie."
 msgstr ""
+"একটি লীগ হ'ল দলগুলির গ্রুপ যা একে অপরের সাথে খেলে। দলগুলির একটি জোড় সংখ্যা "
+"ব্যবহার করুন: একটি বিজোড় সংখ্যা সহ, প্রতিটি সিরিজে একটি প্রতিপক্ষ ছাড়াই "
+"থাকে।"
 
 #: tesis/templates/tesis/guia/liga.html
 msgid "Guardar y seguir al paso 3"
@@ -896,6 +928,8 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
+"টুর্নামেন্টটি \"%(liga)s\" লিগের দলগুলি ব্যবহার করে। খেলাগুলি সোমবার থেকে "
+"বৃহস্পতিবার এবং শনিবার, প্রথম এবং শেষ দিনের মধ্যে নির্ধারিত হয়।"
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -941,6 +975,8 @@ msgstr "টুলটি ব্যবহার করে দেখুন"
 msgid ""
 "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
 msgstr ""
+"দলগুলি নিবন্ধন করুন, একটি লীগ তৈরি করুন এবং আপনার নিজের ক্যালেন্ডার তৈরি "
+"করুন। কোনও অ্যাকাউন্ট নেই।"
 
 #: tesis/templates/tesis/inicio.html
 msgid "Sin prisa"
@@ -1014,7 +1050,7 @@ msgstr "পরীক্ষায়"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s, %(equipos)s দলের সাথে %(corridas)s রানে"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
@@ -1053,6 +1089,7 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
+"প্রাথমিক ফলাফল: %(resultado)s, %(equipos)s দলের সাথে %(corridas)s রানে।"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1105,7 +1142,7 @@ msgstr "প্রতিটি রিলিজের ফলাফল দেখু
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr ""
+msgstr "পরীক্ষায়: %(resultado)s, %(equipos)s দলের সাথে %(corridas)s রানে।"
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1129,7 +1166,7 @@ msgstr "সংক্ষিপ্ত রূপ (উদাঃ, এসইএ)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "দলের নাম"
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1153,7 +1190,7 @@ msgstr "দশমিক ডিগ্রিতে। উদাহরণ: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "লীগ দলসমূহ"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1161,7 +1198,7 @@ msgstr "লীগের নাম"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "কমপক্ষে 2 টি দল চয়ন করুন।"
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
@@ -1181,7 +1218,7 @@ msgstr "সিরিজ অনুযায়ী গেম"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "প্রতি দলে সিরিজ"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1217,7 +1254,7 @@ msgstr "এটি 0 এবং 1 এর মধ্যে হওয়া উচি
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "দলসমূহ"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1241,7 +1278,7 @@ msgstr "প্রথমে এই ধাপটি সম্পূর্ণ ক�
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "দল যোগ করেছে।"
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1262,6 +1299,10 @@ msgid ""
 "1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
 "cumplen las mismas reglas de realismo."
 msgstr ""
+"আমরা এই নিয়মটি সরিয়ে দিয়েছি যে সমস্ত 30 টি দল একই সময়ে 3-দিনের সিরিজ "
+"খেলবে। 2, 3 এবং 4 গেম এবং বিরতির সিরিজের সাথে, সেরা অ্যালগরিদম 1.57 মিলিয়ন "
+"কিলোমিটার ভ্রমণ করে। অফিসিয়াল ক্যালেন্ডারটি 1.74 মিলিয়ন ভ্রমণ করে। উভয়ই "
+"বাস্তবতার একই নিয়ম পূরণ করে।"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Ver la investigación actual, con diagramas animados"
@@ -1344,6 +1385,8 @@ msgid ""
 "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
 "árbol de programación genética."
 msgstr ""
+"কোজা-টিটিপি: একটি দলের রুট এবং একটি জেনেটিক প্রোগ্রামিং ট্রি সহ বেসবল "
+"স্টেডিয়ামগুলির মানচিত্র।"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Ir al sitio principal"
@@ -1426,6 +1469,9 @@ msgid ""
 " de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
 " de su casa, va de estadio en estadio y regresa al final."
 msgstr ""
+"প্রতিটি বার একটি মরসুমে 30 টি দলের মোট যাত্রা, কয়েক মিলিয়ন কিলোমিটারের "
+"মধ্যে। কম ভাল। সমস্ত পরিসংখ্যান একই পরিমাপ করা হয়েছিল: প্রতিটি দল তাদের "
+"বাড়ি ছেড়ে চলে যায়, স্টেডিয়াম থেকে স্টেডিয়ামে যায় এবং শেষে ফিরে আসে।"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Viaje total por versión del algoritmo"
@@ -1509,7 +1555,7 @@ msgstr "হ্যাঁ"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
-msgstr ""
+msgstr "আরও ভাল, তবে সমস্ত 30 টি দল এখনও একই সময়ে খেলছে।"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
@@ -1637,6 +1683,9 @@ msgid ""
 " de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
 " 3 o 4 juegos, o descansa."
 msgstr ""
+"এর আগে, সমস্ত 30 টি দল একই সময়ে 3-দিনের সিরিজ খেলেছিল, কোনও বিরতি ছাড়াই। "
+"এখন মরসুমটি এমএলবির মতো সপ্তাহের দিন (4 দিন) এবং সপ্তাহান্তে (3 দিন) শিফটে "
+"বিভক্ত। প্রতিটি দল 2, 3 বা 4 টি গেমের একটি সিরিজ খেলে বা বিশ্রাম নেয়।"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Modelo anterior contra modelo por turnos"
@@ -1660,6 +1709,9 @@ msgid ""
 "cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
 "descansos, así las giras se pueden armar con más libertad."
 msgstr ""
+"আটটি শিফটে ছয়টি দল। পূর্ববর্তী মডেলে প্রত্যেকে প্রতিটি শিফটে 3 দিন খেলে। "
+"শিফট মডেলে সিরিজটি 2, 3 বা 4 দিন স্থায়ী হয় এবং বিরতি রয়েছে, তাই ট্যুরগুলি"
+" আরও স্বাধীনতার সাথে একসাথে রাখা যেতে পারে।"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "3. El movimiento principal: la cadena de Kempe"
@@ -1672,6 +1724,9 @@ msgid ""
 "las series de la cadena cambian de turno al mismo tiempo. El calendario "
 "sigue siendo válido."
 msgstr ""
+"একটি দল একসাথে দুটি সিরিজ না খেলে সময়সূচী পরিবর্তন করার জন্য, দুটি টার্ন "
+"এবং তাদের মধ্যে বিকল্প সিরিজের একটি চেইন নেওয়া হয়। চেইন পরিবর্তনের সমস্ত "
+"সিরিজ একই সময়ে স্থানান্তরিত হয়। সময়সূচী এখনও বৈধ।"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Cadena de Kempe entre el turno A y el turno B"
@@ -1690,6 +1745,8 @@ msgid ""
 "Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
 " series cambian de turno. Las demás series no se mueven."
 msgstr ""
+"আটটি দল। নেটওয়ার্কটি এনওয়াইএ থেকে শুরু হয় এবং বিওএস, টিওআর এবং বিএএল-এর "
+"মধ্য দিয়ে যায়। এর চারটি সিরিজ পরিবর্তন শিফট হয়। অন্য সিরিজগুলি নড়ে না।"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "4. ¿Por qué el recocido le ganó a la PG?"
@@ -1729,6 +1786,9 @@ msgid ""
 "apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
 "recorren todo el calendario."
 msgstr ""
+"<strong>তিনি একই জায়গাগুলি পুনরাবৃত্তি করেছিলেন।</strong> গাছের স্থির "
+"সংখ্যাগুলি সর্বদা একই বাঁক এবং দলগুলির দিকে ইঙ্গিত করে। এলোমেলো পদক্ষেপগুলি "
+"পুরো ক্যালেন্ডার জুড়ে চলে।"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Solo mejoras contra aceptar cambios peores"
@@ -1873,10 +1933,12 @@ msgid ""
 "El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
 "las hojas son los juegos (fecha, equipo local y equipo visitante)."
 msgstr ""
+"গাছ হ'ল প্রোগ্রাম যা সেরা ক্যালেন্ডার একসাথে রাখে। প্রতিটি শাখা গেমসে যোগ "
+"দেয়; পাতাগুলি গেমস (তারিখ, হোম টিম এবং অ্যাওয়ে টিম)।"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Viaje total de todos los equipos:"
-msgstr ""
+msgstr "সব দলের মোট ভ্রমণ:"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Juegos que rompen reglas:"
@@ -1888,12 +1950,17 @@ msgid ""
 "<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
 "es válido."
 msgstr ""
+"একটি নিয়ম হ'ল প্রতিটি দল টুর্নামেন্টের জন্য যে সংখ্যক গেম খেলে তার সংখ্যা "
+"খেলে। <strong>0 টি গেম যা নিয়ম ভঙ্গ করে</strong> তার অর্থ হল সময়সূচীটি "
+"বৈধ।"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Puede tardar de unos segundos a varios minutos. Depende del número de "
 "equipos."
 msgstr ""
+"এটি কয়েক সেকেন্ড থেকে কয়েক মিনিট সময় নিতে পারে। এটি কম্পিউটারের সংখ্যার "
+"উপর নির্ভর করে।"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "El motor está trabajando."
@@ -1967,7 +2034,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr ""
+msgstr "দল পরিবর্তন করুন"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -1983,7 +2050,7 @@ msgstr "পরবর্তী: ক্যালেন্ডার দেখুন
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Demo: elige los equipos"
-msgstr ""
+msgstr "ডেমো: দল নির্বাচন করুন"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -1995,7 +2062,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr ""
+msgstr "ধাপ 1: দল নির্বাচন করুন"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2003,6 +2070,9 @@ msgid ""
 "tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
 "da \"Siguiente\" sin cambiar nada."
 msgstr ""
+"অ্যালগরিদমটি আপনার পছন্দসই দলগুলির জন্য একটি সময়সূচী তৈরি করে এবং সর্বনিম্ন"
+" ভ্রমণকারী দলটির সন্ধান করে। আমরা ইতিমধ্যে 10 টি মেজর লিগ দলকে চিহ্নিত "
+"করেছি। আপনি যদি চান তবে কিছু পরিবর্তন না করে \"পরবর্তী\" ক্লিক করুন।"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Siguiente: configuración"
@@ -2014,11 +2084,11 @@ msgstr "একটি সম্পূর্ণ রাজকীয় মরসু
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
-msgstr ""
+msgstr "2023 মরসুম দেখুন: অফিসিয়াল ক্যালেন্ডারের বিরুদ্ধে 30 টি দল"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Quieres registrar tus propios equipos y estadios?"
-msgstr ""
+msgstr "নিজের দল এবং স্টেডিয়াম নিবন্ধন করতে চান?"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Hazlo tú mismo en la guía de 5 pasos"
@@ -2038,7 +2108,7 @@ msgstr "নতুন অ্যালগরিদম: টার্ন-ভিত�
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
-msgstr ""
+msgstr "<strong>%(nombre)s</strong>: %(n)s দল।"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Qué logró el algoritmo"
@@ -2046,7 +2116,7 @@ msgstr "অ্যালগরিদম যা অর্জন করেছে"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje total de todos los equipos con el calendario del algoritmo."
-msgstr ""
+msgstr "অ্যালগরিদমের সময়সূচী সহ সমস্ত দলের মোট ভ্রমণ।"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje con un calendario hecho al azar, antes de optimizar."
@@ -2086,7 +2156,7 @@ msgstr "টানা দুই সিরিজে একই প্রতিপ�
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
-msgstr ""
+msgstr "হোম গেমস প্রায় অর্ধেক। এখানে: প্রতি দলে %(a)s %(b)s ।"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Cómo bajó el viaje"
@@ -2128,12 +2198,12 @@ msgstr "সেটিংস পরিবর্তন করুন এবং আ�
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr ""
+msgstr "অন্য দল নির্বাচন করুন"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
 "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
-msgstr ""
+msgstr "পুরো 2023 মরসুম দেখুন: অফিসিয়াল ক্যালেন্ডারের বিরুদ্ধে 30 টি দল"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Entender cómo funciona en 2 minutos"
@@ -2141,7 +2211,7 @@ msgstr "এটি কীভাবে কাজ করে তা 2 মিনি�
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr ""
+msgstr "এটি নিজেই করুন: 5-ধাপের গাইডে আপনার দলগুলি নিবন্ধন করুন"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2202,13 +2272,14 @@ msgstr "পর্ব 1 · সমস্যা"
 
 #: tesis/templates/tesis/historia.html
 msgid "30 equipos tienen que jugar entre sí"
-msgstr ""
+msgstr "30 টি দলকে একে অপরের সাথে খেলতে হবে"
 
 #: tesis/templates/tesis/historia.html
 msgid ""
 "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
 "partidos en una temporada."
 msgstr ""
+"মেজর লীগ বেসবলের 30 টি দল রয়েছে। প্রতিটি দল একটি মরসুমে 162 টি গেম খেলে।"
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2230,6 +2301,8 @@ msgid ""
 "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
 "cruzar el país muchas veces."
 msgstr ""
+"যখন একটি দল রাস্তায় খেলে, তখন তারা বিমানে ভ্রমণ করে। একটি খারাপ সময়সূচী "
+"তাদের অনেকবার দেশ অতিক্রম করতে বাধ্য করে।"
 
 #: tesis/templates/tesis/historia.html
 msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
@@ -2237,7 +2310,7 @@ msgstr "একটি উদাহরণ ট্যুর ট্রিপ, এল�
 
 #: tesis/templates/tesis/historia.html
 msgid "Toca otro estadio para ver la gira de ese equipo."
-msgstr ""
+msgstr "সেই দলের সফর দেখতে অন্য স্টেডিয়ামটি আলতো চাপুন।"
 
 #: tesis/templates/tesis/historia.html
 msgid "Parte 2 · La idea de la tesis"
@@ -2330,6 +2403,8 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
+"উন্নত ব্লক-ভিত্তিক ইঞ্জিন এলোমেলো: %(resultado)s, প্রাথমিক পরীক্ষায় "
+"(%(corridas)s রান, %(equipos)s দল)।"
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2357,7 +2432,7 @@ msgstr "কোড"
 
 #: tesis/templates/tesis/historia.html
 msgid "Equipo"
-msgstr ""
+msgstr "দল"
 
 #: tesis/templates/tesis/historia.html
 msgid "Estadio"
@@ -2412,6 +2487,8 @@ msgid ""
 "equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
 "con el azar."
 msgstr ""
+"অফিসিয়াল শিডিউল এবং সুযোগের তুলনায় 2023 সালে সমস্ত 30 টি মেজর লিগ বেসবল "
+"দলের সাথে জেনেটিক প্রোগ্রামিং ইঞ্জিনের একটি রানের পুনরাবৃত্তি।"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
@@ -2427,6 +2504,9 @@ msgid ""
 "calendario oficial de 2023 es la referencia. El motor por bloques intenta "
 "armar una temporada con menos viaje."
 msgstr ""
+"আমরা 30 টি মেজর লিগ বেসবল দল এবং তাদের আসল স্টেডিয়ামগুলি ব্যবহার করি। "
+"অফিসিয়াল 2023 সময়সূচী হ'ল রেফারেন্স। ব্লক-ভিত্তিক ইঞ্জিনটি কম ভ্রমণের সাথে"
+" একটি মরসুম একসাথে রাখার চেষ্টা করে।"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cómo bajan los kilómetros, generación por generación"
@@ -2454,7 +2534,7 @@ msgstr "সাইডওয়েজ স্লাইডিং বোর্ড"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de los 30 equipos en toda la temporada regular."
-msgstr ""
+msgstr "নিয়মিত মরসুম জুড়ে 30 টি দলের ভ্রমণ।"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Gira más larga (juegos seguidos de visita)"
@@ -2478,7 +2558,7 @@ msgstr "এলোমেলোভাবে আরও ভাল, একই প্�
 
 #: tesis/templates/tesis/repeticion.html
 msgid "No cumple el número de juegos de cada equipo."
-msgstr ""
+msgstr "এটি প্রতিটি দলের খেলার সংখ্যা পূরণ করে না।"
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2502,14 +2582,18 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
+"দ্রষ্টব্য: ইঞ্জিন ক্যালেন্ডারে <strong> পরপর%(gira)s অ্যাওয়ে গেমের</strong>"
+" ট্যুর রয়েছে। অফিসিয়াল একটির সর্বাধিক %(oficial)sরয়েছে। একটি বাস্তব দল এত"
+" দীর্ঘ ট্যুর গ্রহণ করবে না।"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr ""
+msgstr "দল অনুযায়ী ভ্রমণ"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
 msgstr ""
+"কোন দলগুলি সবচেয়ে বেশি ভ্রমণ করে তা দেখতে দুটি সময়সূচীর মধ্যে স্যুইচ করুন।"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Calendario del mapa"
@@ -2525,7 +2609,7 @@ msgstr "ইঞ্জিন"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
-msgstr ""
+msgstr "সমস্ত 30 টি দলকে একটি সারণী হিসাবে দেখুন"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
@@ -2552,6 +2636,9 @@ msgid ""
 "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
 "equipo sale de su casa, viaja de estadio en estadio y regresa al final."
 msgstr ""
+"দূরত্ব: স্টেডিয়ামের মধ্যে সরল রেখা (সেমিভার্স সূত্র)। প্রতিটি দল তাদের "
+"বাড়ি ছেড়ে চলে যায়, স্টেডিয়াম থেকে স্টেডিয়ামে ভ্রমণ করে এবং শেষে ফিরে "
+"আসে।"
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2619,7 +2706,7 @@ msgstr "B টার্ন করুন"
 
 #: documentacion/investigacion.py
 msgid "1. Elegimos un equipo y dos turnos"
-msgstr ""
+msgstr "1. আমরা একটি দল এবং দুটি শিফট নির্বাচন করি"
 
 #: documentacion/investigacion.py
 msgid "2. Seguimos la cadena: A, B, A, B…"
@@ -2679,19 +2766,21 @@ msgstr "ঐচ্ছিক। আপনি যদি এটি ছেড়ে �
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr ""
+msgstr "টুর্নামেন্ট দলসমূহ"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
 msgstr ""
+"আমরা ইতিমধ্যে 10 টি চেক করেছি। আপনি তাদের পরিবর্তন করতে পারেন: 3 থেকে 10 টি "
+"দল পর্যন্ত।"
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "অন্তত %(n)d টি দল নির্বাচন করুন।"
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "সবচেয়ে বেশি %(n)d দল নির্বাচন করুন।"
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2699,11 +2788,11 @@ msgstr "মেজর লিগের 30 টি স্টেডিয়ামে
 
 #: tesis/historia.py
 msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
-msgstr ""
+msgstr "{টিম} উদাহরণ সফর: এলোমেলো ক্রমে 12 টি পরিদর্শন।"
 
 #: tesis/historia.py
 msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
-msgstr ""
+msgstr "আপনি {team} বেছে নিয়েছেন। তাদের ভ্রমণ দেখতে ধাপ 2 অনুসরণ করুন।"
 
 #: tesis/historia.py
 msgid "km"
@@ -2847,7 +2936,7 @@ msgstr "Generación {gen} de {total}: {km} km"
 
 #: tesis/repeticion.py
 msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr ""
+msgstr "এটি এখনও প্রতিটি দলের খেলার সংখ্যা পূরণ করে না।"
 
 #: tesis/repeticion.py
 msgid ""
@@ -2861,14 +2950,15 @@ msgstr ""
 msgid ""
 "Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
 "temporada"
-msgstr ""
+msgstr "মানচিত্র: প্রতিটি বৃত্ত একটি দল; বৃহত্তর মানে মরসুমে আরও মাইল"
 
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
-msgstr ""
+msgstr "{দল}: {km} km"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "Un mejor calendario de la MLB <span class=\"clave\">con programación "
 "genética.</span>"
 msgstr ""
+"<span class=\"clave\">জেনেটিক প্রোগ্রামিং সহ একটি</span> ভাল এমএলবি শিডিউল।"

@@ -136,7 +136,7 @@ msgstr "修复整个刀具路径"
 msgid ""
 "Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
 " con un recorrido guiado paso a paso."
-msgstr ""
+msgstr "你可以从团队注册处查看日历，没有错误，并有逐步导览。"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
@@ -274,6 +274,7 @@ msgid ""
 "viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
 "2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
 msgstr ""
+"MLB在约180天内安排30支球队共2,430场比赛。每支球队在不同城市之间进行巡回比赛，距离因队而异。2016年，西雅图行驶了76,683公里，芝加哥小熊队行驶了39,015公里。"
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -296,13 +297,15 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
+"<strong>表示法：</strong> 每个日历都是一棵树。其节点是诸 <code>crear_juego</code> "
+"如（日期、主场球队、客队）和 <code>obtener_calendario</code>的运算，这些操作连接了两个比赛列表。"
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
 "<strong>Viabilidad (C1):</strong> cada equipo debe jugar exactamente el "
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
-msgstr ""
+msgstr "<strong>可行性（C1）：</strong> 每支队伍必须进行恰好比赛所需的比赛场次。值为0表示赛程有效。"
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -321,7 +324,7 @@ msgstr "<strong>软件：</strong> 三个模块（规划器、计算器和遗传
 msgid ""
 "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
 "generaciones."
-msgstr ""
+msgstr "试试30支球队，每队163场比赛，5场系列赛，20代。"
 
 #: documentacion/templates/documentacion/historico.html
 msgid "Comparación de la búsqueda aleatoria y la programación genética"
@@ -516,13 +519,13 @@ msgstr "暗影模式"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
-msgstr ""
+msgstr "演示：日程安排与团队旅行"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Genera un calendario de béisbol con programación genética y mide cuánto "
 "viaja cada equipo."
-msgstr ""
+msgstr "它生成带有基因编程的棒球赛历，并测量每支球队的旅行次数。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
@@ -530,14 +533,14 @@ msgstr "生成一个日历，并且"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "mide cuánto viaja cada equipo."
-msgstr ""
+msgstr "测量每支球队的出差次数。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "La IA (programación genética) busca calendarios donde el viaje sea corto y "
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
-msgstr ""
+msgstr "AI（基因编程）会寻找出差时间短且均匀的行程安排。你想要自己的团队吗？使用 <a href=\"%(guia)s\">五步指南</a>。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -547,7 +550,7 @@ msgstr "还没有配置"
 msgid ""
 "Para optimizar un calendario, primero registra los equipos, la liga y el "
 "torneo, y después crea una configuración."
-msgstr ""
+msgstr "为了优化赛程，首先记录球队、联赛和锦标赛，然后创建配置。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Abrir la guía"
@@ -573,7 +576,7 @@ msgstr "时间表： %(torneo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
-msgstr ""
+msgstr "把它介绍给你的团队"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las respuestas que te van a pedir en clase."
@@ -605,13 +608,13 @@ msgstr "我该如何调整它？"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambia equipos y reglas"
-msgstr ""
+msgstr "更换队伍和规则"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
 " el patrón Strategy para la medida de “viaje justo”."
-msgstr ""
+msgstr "队伍和坐标会记录在指南中。给你的团队一个建议：使用策略模式作为“公平行程”衡量标准。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¿Puedo usarlo?"
@@ -646,7 +649,7 @@ msgid ""
 "Explícame paso a paso cómo este programa genético crea y evalúa un "
 "calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
 " la diferencia entre el equipo que más viaja y el que menos."
-msgstr ""
+msgstr "请一步步向我解释这个基因项目如何制定和评估赛程表。然后告诉我你会改变什么，使“公平旅行”的衡量标准成为出差最多和出差最少的队伍之间的差值。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
@@ -747,7 +750,7 @@ msgstr "保存并继续到第5步"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Paso 1: equipos"
-msgstr ""
+msgstr "第一步：团队"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Puedes usar los que ya existen o agregar uno nuevo."
@@ -755,15 +758,15 @@ msgstr "你可以使用现有的，也可以添加新的。"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr ""
+msgstr "查看最新注册球队"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
-msgstr ""
+msgstr "添加团队"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr ""
+msgstr "加入团队"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -771,7 +774,7 @@ msgstr "继续进入第二步：联赛"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr ""
+msgstr "你需要至少两个团队才能继续。"
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -781,15 +784,15 @@ msgstr "指南：从注册到日历"
 msgid ""
 "En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
 " el algoritmo y generas un calendario de juegos."
-msgstr ""
+msgstr "只需5个步骤，你注册球队、设置联赛和锦标赛、选择如何运行算法并生成比赛日程。"
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
-msgstr ""
+msgstr "队伍：至少注册2人，并标明他们的体育场所在位置。"
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Liga: elige qué equipos juegan juntos."
-msgstr ""
+msgstr "联赛：选择哪些球队一起作战。"
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Torneo: define las fechas, las series y los juegos."
@@ -821,7 +824,7 @@ msgstr "第二步：建立联系"
 msgid ""
 "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
 "equipos: con un número impar, uno se queda sin rival en cada serie."
-msgstr ""
+msgstr "联赛是指相互对战的球队组成的组合。使用偶数支球队：奇数支球队则每个系列赛中没有对手。"
 
 #: tesis/templates/tesis/guia/liga.html
 msgid "Guardar y seguir al paso 3"
@@ -835,7 +838,7 @@ msgstr "第三步：锦标赛"
 msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
-msgstr ""
+msgstr "该锦标赛使用“%(liga)s”联赛的队伍参赛。比赛安排在周一至周四以及周六，在第一天到最后一天之间进行。"
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -880,7 +883,7 @@ msgstr "试试这个工具"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
-msgstr ""
+msgstr "注册球队，组建联赛，生成自己的日历。没有账号。"
 
 #: tesis/templates/tesis/inicio.html
 msgid "Sin prisa"
@@ -953,7 +956,7 @@ msgstr "在测试中"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr ""
+msgstr "%(resultado)s， %(corridas)s 与 %(equipos)s 队的运行"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
@@ -985,7 +988,7 @@ msgstr "赛程的每个部分（分区、联盟和跨联盟）都由多个时段
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
-msgstr ""
+msgstr "早期成绩： %(resultado)s， %(corridas)s 轮 %(equipos)s 队。"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1028,7 +1031,7 @@ msgstr "查看每次发布的结果"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr ""
+msgstr "测试中：%(resultado)s，%(corridas)s%(equipos)s队。"
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1052,7 +1055,7 @@ msgstr "缩写（例如，SEA）"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr ""
+msgstr "队名"
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1076,7 +1079,7 @@ msgstr "以十进制度表示。示例：-122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr ""
+msgstr "联赛球队"
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1084,7 +1087,7 @@ msgstr "联赛名称"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr ""
+msgstr "至少选两支队伍。"
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
@@ -1104,7 +1107,7 @@ msgstr "按系列赛分的比赛"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr ""
+msgstr "每支队伍的系列赛"
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1140,7 +1143,7 @@ msgstr "应该在0到1之间。"
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr ""
+msgstr "参赛队伍"
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1164,7 +1167,7 @@ msgstr "先完成这一步。"
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr ""
+msgstr "团队补充道。"
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1185,6 +1188,7 @@ msgid ""
 "1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
 "cumplen las mismas reglas de realismo."
 msgstr ""
+"我们取消了所有30支球队同时进行3天系列赛的规则。采用2、3和4场系列赛及休息，最佳算法可行驶157万公里。官方日历可行驶174万公里。两者都符合相同的现实规则。"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Ver la investigación actual, con diagramas animados"
@@ -1259,7 +1263,7 @@ msgstr "制作棒球日历的基因编程。莱斯利·迪金森（ITAM）的论
 msgid ""
 "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
 "árbol de programación genética."
-msgstr ""
+msgstr "Koza-TTP：棒球场地图，包含球队路线和基因编程树。"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Ir al sitio principal"
@@ -1334,6 +1338,7 @@ msgid ""
 " de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
 " de su casa, va de estadio en estadio y regresa al final."
 msgstr ""
+"每条条代表30支球队在一个赛季中的总行程，单位是数百万公里。越少越好。所有数据的测量方式相同：每支球队离开主场，从一个球场到另一个球场，最后返回。"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Viaje total por versión del algoritmo"
@@ -1415,7 +1420,7 @@ msgstr "是的"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
-msgstr ""
+msgstr "更好了，但30支球队仍然同时比赛。"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
@@ -1533,6 +1538,7 @@ msgid ""
 " de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
 " 3 o 4 juegos, o descansa."
 msgstr ""
+"此前，所有30支球队同时进行3天系列赛，没有休息。现在赛季分为工作日（4天）和周末（3天）轮班，就像MLB一样。每支球队进行2、3或4场比赛，或休息。"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Modelo anterior contra modelo por turnos"
@@ -1556,6 +1562,7 @@ msgid ""
 "cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
 "descansos, así las giras se pueden armar con más libertad."
 msgstr ""
+"六支队伍，分八个班次。在之前的模式中，每个班次每个人打3天。在轮班模式下，系列赛持续2、3或4天，并且有休息时间，因此巡回赛可以更自由地组织。"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "3. El movimiento principal: la cadena de Kempe"
@@ -1567,7 +1574,7 @@ msgid ""
 "toman dos turnos y una cadena de series que se alternan entre ellos. Todas "
 "las series de la cadena cambian de turno al mismo tiempo. El calendario "
 "sigue siendo válido."
-msgstr ""
+msgstr "如果要改变赛程，而没有队伍同时进行两个系列赛，则需要轮流进行两轮和一系列系列赛。所有系列赛同时变更。赛程仍然有效。"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Cadena de Kempe entre el turno A y el turno B"
@@ -1585,7 +1592,7 @@ msgstr "B弯系列赛（虚线）"
 msgid ""
 "Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
 " series cambian de turno. Las demás series no se mueven."
-msgstr ""
+msgstr "八支球队。网络从NYA开始，经历BOS、TOR和BAL。其四个系列会变换。其他系列则不变。"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "4. ¿Por qué el recocido le ganó a la PG?"
@@ -1617,7 +1624,7 @@ msgid ""
 "<strong>Repetía los mismos lugares.</strong> Los números fijos del árbol "
 "apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
 "recorren todo el calendario."
-msgstr ""
+msgstr "<strong>他重复了同样的位置。</strong> 树中固定的数字总是指向相同的回合和队伍。随机的动作贯穿整个日历。"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Solo mejoras contra aceptar cambios peores"
@@ -1736,11 +1743,11 @@ msgstr "点击树查看更大。"
 msgid ""
 "El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
 "las hojas son los juegos (fecha, equipo local y equipo visitante)."
-msgstr ""
+msgstr "树是整理最佳日历的程序。每个分支连接比赛;叶子代表比赛（日期、主场队和客队）。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Viaje total de todos los equipos:"
-msgstr ""
+msgstr "所有队伍的总旅行量："
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Juegos que rompen reglas:"
@@ -1751,13 +1758,13 @@ msgid ""
 "Una regla es que cada equipo juegue el número de juegos que pide el torneo. "
 "<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
 "es válido."
-msgstr ""
+msgstr "其中一条规则是每支队伍按比赛要求进行比赛场次。 <strong>0场违反规则的比赛</strong> 意味着赛程有效。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Puede tardar de unos segundos a varios minutos. Depende del número de "
 "equipos."
-msgstr ""
+msgstr "这可能需要几秒钟到几分钟。这取决于计算机的数量。"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "El motor está trabajando."
@@ -1822,7 +1829,7 @@ msgstr "所有值都已经选定了。你可以更改它们，或者给出 \\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr ""
+msgstr "换队"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -1838,7 +1845,7 @@ msgstr "下一页：查看日历"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Demo: elige los equipos"
-msgstr ""
+msgstr "演示：选择队伍"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -1848,14 +1855,14 @@ msgstr "Koza-TTP 演示：用最新算法在三步内构建棒球日历。"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr ""
+msgstr "第一步：选择队伍"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
 "El algoritmo arma un calendario para los equipos que elijas y busca el que "
 "tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
 "da \"Siguiente\" sin cambiar nada."
-msgstr ""
+msgstr "算法会为你选择的球队整理赛程，并寻找出场最少的球队。我们已经标记了10支大联盟球队。如果你愿意，可以点击“下一步”，不更改任何内容。"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Siguiente: configuración"
@@ -1867,11 +1874,11 @@ msgstr "更喜欢看完整的皇家季吗？"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
-msgstr ""
+msgstr "观看2023赛季：官方赛历对比30支球队"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Quieres registrar tus propios equipos y estadios?"
-msgstr ""
+msgstr "想注册自己的球队和球场吗？"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Hazlo tú mismo en la guía de 5 pasos"
@@ -1891,7 +1898,7 @@ msgstr "更新算法：回合制模型"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
-msgstr ""
+msgstr "<strong>%(nombre)s</strong>：%(n)s队。"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Qué logró el algoritmo"
@@ -1899,7 +1906,7 @@ msgstr "算法的成果"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje total de todos los equipos con el calendario del algoritmo."
-msgstr ""
+msgstr "算法安排下所有团队的总行程。"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje con un calendario hecho al azar, antes de optimizar."
@@ -1937,7 +1944,7 @@ msgstr "连续两个系列赛对阵同一对手。"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
-msgstr ""
+msgstr "主场比赛大约一半。这里：每队 %(a)s 到 %(b)s 。"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Cómo bajó el viaje"
@@ -1977,12 +1984,12 @@ msgstr "更改设置，重新运行"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr ""
+msgstr "选择其他球队"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
 "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
-msgstr ""
+msgstr "观看2023赛季完整赛程：官方赛历对比30支球队"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Entender cómo funciona en 2 minutos"
@@ -1990,7 +1997,7 @@ msgstr "两分钟内理解它的运作方式"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr ""
+msgstr "自己动手：在五步指南中注册你的团队"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2049,13 +2056,13 @@ msgstr "第一部分 ·问题"
 
 #: tesis/templates/tesis/historia.html
 msgid "30 equipos tienen que jugar entre sí"
-msgstr ""
+msgstr "30支队伍必须相互对阵"
 
 #: tesis/templates/tesis/historia.html
 msgid ""
 "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
 "partidos en una temporada."
-msgstr ""
+msgstr "美国职业棒球大联盟共有30支球队。每支球队一个赛季进行162场比赛。"
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2074,7 +2081,7 @@ msgstr "每次旅行都需要时间和金钱"
 msgid ""
 "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
 "cruzar el país muchas veces."
-msgstr ""
+msgstr "当一支球队在客场作战时，他们会乘坐飞机。糟糕的赛程让他们多次穿越全国。"
 
 #: tesis/templates/tesis/historia.html
 msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
@@ -2082,7 +2089,7 @@ msgstr "一个旅游旅行的例子，日期顺序随机。"
 
 #: tesis/templates/tesis/historia.html
 msgid "Toca otro estadio para ver la gira de ese equipo."
-msgstr ""
+msgstr "点击另一个体育场观看该队的巡回赛。"
 
 #: tesis/templates/tesis/historia.html
 msgid "Parte 2 · La idea de la tesis"
@@ -2164,7 +2171,7 @@ msgstr "从飞行员到一台正常工作的发动机"
 msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
-msgstr ""
+msgstr "改进后的基于模块的引擎在初步测试（%(corridas)s次运行，%(equipos)s队伍）中击败了随机%(resultado)s。"
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2190,7 +2197,7 @@ msgstr "代码"
 
 #: tesis/templates/tesis/historia.html
 msgid "Equipo"
-msgstr ""
+msgstr "团队"
 
 #: tesis/templates/tesis/historia.html
 msgid "Estadio"
@@ -2238,7 +2245,7 @@ msgid ""
 "Repetición de una corrida del motor de programación genética con los 30 "
 "equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
 "con el azar."
-msgstr ""
+msgstr "这是2023年对所有30支美国职业棒球大联盟球队进行基因编程引擎的重复，与官方赛程和机率相比。"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
@@ -2253,7 +2260,7 @@ msgid ""
 "Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
 "calendario oficial de 2023 es la referencia. El motor por bloques intenta "
 "armar una temporada con menos viaje."
-msgstr ""
+msgstr "我们使用了30支美国职业棒球大联盟球队及其实际球场。官方2023年赛程是参考。基于区块的引擎试图安排一个出差更少的赛季。"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cómo bajan los kilómetros, generación por generación"
@@ -2279,7 +2286,7 @@ msgstr "侧滑板"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de los 30 equipos en toda la temporada regular."
-msgstr ""
+msgstr "30支球队在常规赛期间的出差。"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Gira más larga (juegos seguidos de visita)"
@@ -2303,7 +2310,7 @@ msgstr "随机更好，付出同样的努力"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "No cumple el número de juegos de cada equipo."
-msgstr ""
+msgstr "它不符合每支球队的比赛场次。"
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2323,14 +2330,16 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
+"注：发动机赛历中连续最多可安排 <strong>%(gira)s 场客场比赛</strong>。官方赛历有最大 "
+"%(oficial)s。真实球队不会接受如此长的巡回赛。"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr ""
+msgstr "球队旅行"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
-msgstr ""
+msgstr "在两种赛程间切换，看看哪些队伍出差最多。"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Calendario del mapa"
@@ -2346,7 +2355,7 @@ msgstr "发动机"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
-msgstr ""
+msgstr "以表格形式查看全部30支球队"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
@@ -2370,7 +2379,7 @@ msgstr "官方赛程：2023年美国职业棒球大联盟常规赛（MLB统计AP
 msgid ""
 "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
 "equipo sale de su casa, viaja de estadio en estadio y regresa al final."
-msgstr ""
+msgstr "距离：体育场之间的直线（半宇宙公式）。每支球队离开主场，从一个体育场到另一个体育场，结束时返回。"
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2436,7 +2445,7 @@ msgstr "B弯"
 
 #: documentacion/investigacion.py
 msgid "1. Elegimos un equipo y dos turnos"
-msgstr ""
+msgstr "1. 我们选择一个团队和两个班次"
 
 #: documentacion/investigacion.py
 msgid "2. Seguimos la cadena: A, B, A, B…"
@@ -2496,19 +2505,19 @@ msgstr "可选。如果就此停止，这个名字就被使用了。"
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr ""
+msgstr "锦标赛参赛队伍"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr ""
+msgstr "我们已经检查了10支。你可以更改：从3支到10支。"
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "至少选 %(n)d 支队伍。"
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "最多选择 %(n)d 队。"
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2516,11 +2525,11 @@ msgstr "大联盟30座球场地图"
 
 #: tesis/historia.py
 msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
-msgstr ""
+msgstr "{Team} 示例参观：12次访问，顺序随机。"
 
 #: tesis/historia.py
 msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
-msgstr ""
+msgstr "你选择了{team}。按照步骤2查看他们的行程。"
 
 #: tesis/historia.py
 msgid "km"
@@ -2654,7 +2663,7 @@ msgstr "Generación {gen} de {total}： {km} km"
 
 #: tesis/repeticion.py
 msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr ""
+msgstr "但这仍然无法达到每支球队的比赛场次。"
 
 #: tesis/repeticion.py
 msgid ""
@@ -2666,14 +2675,14 @@ msgstr "纵轴：从{min}到{max}百万公里。水平轴：从0代到{last}。"
 msgid ""
 "Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
 "temporada"
-msgstr ""
+msgstr "地图：每个圆圈代表一个团队;越大意味着赛季中跑的里程越多"
 
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
-msgstr ""
+msgstr "{team}： {km} 公里"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "Un mejor calendario de la MLB <span class=\"clave\">con programación "
 "genética.</span>"
-msgstr ""
+msgstr "一个 <span class=\"clave\">更好的MLB赛程，配合基因编程。</span>"
