@@ -142,8 +142,6 @@ msgid ""
 "Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
 " con un recorrido guiado paso a paso."
 msgstr ""
-"Puoi andare dalla registrazione del team per vedere il calendario senza "
-"errori, con un tour guidato passo dopo passo."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
@@ -292,9 +290,6 @@ msgid ""
 "viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
 "2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
 msgstr ""
-"La MLB programma 2.430 partite per 30 squadre in circa 180 giorni. Ogni "
-"squadra viaggia tra le città e la distanza varia notevolmente da squadra a "
-"squadra. Nel 2016, Seattle ha percorso 76.683 km e i Chicago Cubs 39.015 km."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -323,10 +318,6 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
-"<strong>Rappresentazione:</strong> ogni calendario è un albero. I suoi nodi "
-"sono operazioni come <code>crear_juego</code> (data, squadra di casa, "
-"squadra ospite) e <code>obtener_calendario</code>, che uniscono due liste di"
-" partite."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -334,9 +325,6 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
-"<strong>Fattibilità (C1):</strong> Ogni squadra deve giocare esattamente il "
-"numero di partite richieste dal torneo. Un valore pari a 0 significa che il "
-"calendario è valido."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -360,8 +348,6 @@ msgid ""
 "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
 "generaciones."
 msgstr ""
-"Prova 30 squadre, 163 partite per squadra, serie da 5 partite e 20 "
-"generazioni."
 
 #: documentacion/templates/documentacion/historico.html
 msgid "Comparación de la búsqueda aleatoria y la programación genética"
@@ -585,15 +571,13 @@ msgstr "Modalità Oscura"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
-msgstr "Demo: Calendario e viaggi della squadra"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Genera un calendario de béisbol con programación genética y mide cuánto "
 "viaja cada equipo."
 msgstr ""
-"Genera un calendario del baseball con programmazione genetica e misura "
-"quanto viaggia ogni squadra."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
@@ -601,7 +585,7 @@ msgstr "Generare un calendario e"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "mide cuánto viaja cada equipo."
-msgstr "Misura quanto viaggia ogni squadra."
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -609,9 +593,6 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"L'IA (programmazione genetica) cerca calendari in cui il viaggio è breve e "
-"uniforme. Vuoi le tue squadre? Usa la <a href=\"%(guia)s\">guida in 5 "
-"passaggi</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -622,8 +603,6 @@ msgid ""
 "Para optimizar un calendario, primero registra los equipos, la liga y el "
 "torneo, y después crea una configuración."
 msgstr ""
-"Per ottimizzare un calendario, prima registra le squadre, la lega e il "
-"torneo, e poi crea una configurazione."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Abrir la guía"
@@ -651,7 +630,7 @@ msgstr "Programma: %(torneo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
-msgstr "Per introdurlo al tuo team"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las respuestas que te van a pedir en clase."
@@ -687,15 +666,13 @@ msgstr "Come posso adattarlo?"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambia equipos y reglas"
-msgstr "Cambia squadre e regole"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
 " el patrón Strategy para la medida de “viaje justo”."
 msgstr ""
-"Le squadre e le coordinate sono registrate nella guida. Un'idea per la tua "
-"squadra: usa il pattern Strategia per la misura del \"viaggio equo\"."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¿Puedo usarlo?"
@@ -731,10 +708,6 @@ msgid ""
 "calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
 " la diferencia entre el equipo que más viaja y el que menos."
 msgstr ""
-"Spiegami passo dopo passo come questo programma genetico crea e valuta un "
-"calendario. Poi dimmi cosa cambieresti affinché la misura del \"viaggio "
-"equo\" sia la differenza tra la squadra che viaggia di più e quella che "
-"viaggia di meno."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
@@ -841,7 +814,7 @@ msgstr "Salva e continua al passo 5"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Paso 1: equipos"
-msgstr "Passo 1: Squadre"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Puedes usar los que ya existen o agregar uno nuevo."
@@ -849,15 +822,15 @@ msgstr "Puoi usare quelli esistenti o aggiungerne uno nuovo."
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "Visualizza le ultime squadre registrate"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
-msgstr "Aggiungi una squadra"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Aggiungi Attrezzatura"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -865,7 +838,7 @@ msgstr "Continua al Passo 2: Lega"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Servono almeno 2 squadre da seguire."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -876,16 +849,14 @@ msgid ""
 "En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
 " el algoritmo y generas un calendario de juegos."
 msgstr ""
-"In 5 passaggi registri le squadre, crei una lega e un torneo, scegli come "
-"eseguire l'algoritmo e generi un calendario delle partite."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
-msgstr "Squadre: registrate almeno 2, con la posizione del loro stadio."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Liga: elige qué equipos juegan juntos."
-msgstr "Lega: Scegli quali squadre giocano insieme."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Torneo: define las fechas, las series y los juegos."
@@ -920,9 +891,6 @@ msgid ""
 "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
 "equipos: con un número impar, uno se queda sin rival en cada serie."
 msgstr ""
-"Una lega è il gruppo di squadre che si affrontano tra loro. Usa un numero "
-"pari di squadre: con un numero dispari, una rimane senza avversario in ogni "
-"serie."
 
 #: tesis/templates/tesis/guia/liga.html
 msgid "Guardar y seguir al paso 3"
@@ -937,9 +905,6 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"Il torneo utilizza le squadre della lega \"%(liga)s\". Le partite sono "
-"programmate dal lunedì al giovedì e il sabato, tra il primo e l'ultimo "
-"giorno."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -985,8 +950,6 @@ msgstr "Prova lo strumento"
 msgid ""
 "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
 msgstr ""
-"Registra le squadre, costruisci una lega e genera il tuo calendario. Nessun "
-"account."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Sin prisa"
@@ -1060,7 +1023,7 @@ msgstr "Nei Test"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr "%(resultado)s, in %(corridas)s run con %(equipos)s squadre"
+msgstr ""
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
@@ -1100,8 +1063,6 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Risultato preliminare: %(resultado)s, in %(corridas)s run con %(equipos)s "
-"squadre."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1154,7 +1115,7 @@ msgstr "Visualizza i risultati di ogni release"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr "Nei test: %(resultado)s, in %(corridas)s run con %(equipos)s squadre."
+msgstr ""
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1178,7 +1139,7 @@ msgstr "Abbreviazione (ad esempio, SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr "Nome della squadra"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1202,7 +1163,7 @@ msgstr "In gradi decimali. Esempio: -122,33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "Squadre di lega"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1210,7 +1171,7 @@ msgstr "Nome della lega"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr "Scegli almeno 2 squadre."
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
@@ -1230,7 +1191,7 @@ msgstr "Partite per serie"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Serie a squadre"
+msgstr ""
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1266,7 +1227,7 @@ msgstr "Dovrebbe essere tra 0 e 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Equipaggiamento"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1290,7 +1251,7 @@ msgstr "Completa prima questo passaggio."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Attrezzatura aggiuntiva."
+msgstr ""
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1311,10 +1272,6 @@ msgid ""
 "1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
 "cumplen las mismas reglas de realismo."
 msgstr ""
-"Abbiamo rimosso la regola che tutte e 30 le squadre giocano serie di 3 "
-"giorni contemporaneamente. Con serie di partite da 2, 3 e 4 e pause, il "
-"miglior algoritmo percorre 1,57 milioni di km. Il calendario ufficiale "
-"viaggia 1,74 milioni. Entrambi rispettano le stesse regole di realismo."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Ver la investigación actual, con diagramas animados"
@@ -1399,8 +1356,6 @@ msgid ""
 "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
 "árbol de programación genética."
 msgstr ""
-"Koza-TTP: mappa degli stadi di baseball con il percorso della squadra e un "
-"albero di programmazione genetica."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Ir al sitio principal"
@@ -1485,10 +1440,6 @@ msgid ""
 " de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
 " de su casa, va de estadio en estadio y regresa al final."
 msgstr ""
-"Ogni barra rappresenta il percorso totale delle 30 squadre in una stagione, "
-"in milioni di km. Meno è meglio. Tutte le cifre sono state misurate allo "
-"stesso modo: ogni squadra lascia la propria casa, va da uno stadio all'altro"
-" e torna alla fine."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Viaje total por versión del algoritmo"
@@ -1572,7 +1523,7 @@ msgstr "Sì"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
-msgstr "Meglio, ma tutte e 30 le squadre giocano ancora contemporaneamente."
+msgstr ""
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
@@ -1699,10 +1650,6 @@ msgid ""
 " de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
 " 3 o 4 juegos, o descansa."
 msgstr ""
-"In passato, tutte e 30 le squadre giocavano serie di 3 giorni "
-"contemporaneamente, senza pause. Ora la stagione è suddivisa in turni "
-"feriali (4 giorni) e weekend (3 giorni), proprio come fa la MLB. Ogni "
-"squadra gioca una serie di 2, 3 o 4 partite, o riposo."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Modelo anterior contra modelo por turnos"
@@ -1726,9 +1673,6 @@ msgid ""
 "cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
 "descansos, así las giras se pueden armar con más libertad."
 msgstr ""
-"Sei squadre in otto turni. Nel modello precedente tutti giocano 3 giorni per"
-" turno. Nel modello di turno la serie dura 2, 3 o 4 giorni e ci sono pause, "
-"così i tour possono essere organizzati con maggiore libertà."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "3. El movimiento principal: la cadena de Kempe"
@@ -1741,10 +1685,6 @@ msgid ""
 "las series de la cadena cambian de turno al mismo tiempo. El calendario "
 "sigue siendo válido."
 msgstr ""
-"Per cambiare il calendario senza che una squadra giochi due serie "
-"contemporaneamente, si fanno due turni e una catena di serie alternate tra "
-"di esse. Tutte le serie della catena cambiano turni contemporaneamente. Il "
-"calendario è ancora valido."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Cadena de Kempe entre el turno A y el turno B"
@@ -1763,8 +1703,6 @@ msgid ""
 "Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
 " series cambian de turno. Las demás series no se mueven."
 msgstr ""
-"Otto squadre. La rete inizia a NYA e passa attraverso BOS, TOR e BAL. Le sue"
-" quattro serie cambiano turni. Le altre serie non si muovono."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "4. ¿Por qué el recocido le ganó a la PG?"
@@ -1805,9 +1743,6 @@ msgid ""
 "apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
 "recorren todo el calendario."
 msgstr ""
-"<strong>Ripeté gli stessi punti.</strong> I numeri fissi nell'albero "
-"indicano sempre gli stessi turni e squadre. Mosse casuali attraversano tutto"
-" il calendario."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Solo mejoras contra aceptar cambios peores"
@@ -1951,13 +1886,10 @@ msgid ""
 "El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
 "las hojas son los juegos (fecha, equipo local y equipo visitante)."
 msgstr ""
-"L'albero è il programma che mette insieme il miglior calendario. Ogni ramo "
-"partecipa alle partite; le foglie rappresentano le partite (data, squadra di"
-" casa e squadra ospite)."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Viaje total de todos los equipos:"
-msgstr "Viaggi totali di tutte le squadre:"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Juegos que rompen reglas:"
@@ -1969,17 +1901,12 @@ msgid ""
 "<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
 "es válido."
 msgstr ""
-"Una regola è che ogni squadra gioca il numero di partite previsto dal "
-"torneo. <strong>0 partite che infrangono le regole</strong> significa che il"
-" calendario è valido."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Puede tardar de unos segundos a varios minutos. Depende del número de "
 "equipos."
 msgstr ""
-"Può volerci da pochi secondi a diversi minuti. Dipende dal numero di "
-"computer."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "El motor está trabajando."
@@ -2051,7 +1978,7 @@ msgstr "Tutti i valori sono già scelti. Puoi cambiarli o dare \\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Cambia attrezzatura"
+msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2067,7 +1994,7 @@ msgstr "Prossimo: Visualizza il calendario"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Demo: elige los equipos"
-msgstr "Demo: Scegli le squadre"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2079,7 +2006,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Passo 1: Scegli l'attrezzatura"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2087,9 +2014,6 @@ msgid ""
 "tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
 "da \"Siguiente\" sin cambiar nada."
 msgstr ""
-"L'algoritmo crea un calendario per le squadre che scegli e cerca quella con "
-"meno viaggi. Abbiamo già segnato 10 squadre della Major League. Se vuoi, "
-"clicca su \"Avanti\" senza cambiare nulla."
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Siguiente: configuración"
@@ -2101,11 +2025,11 @@ msgstr "Preferisci guardare una stagione reale completa?"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
-msgstr "Guarda la stagione 2023: 30 squadre contro il calendario ufficiale"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Quieres registrar tus propios equipos y estadios?"
-msgstr "Vuoi registrare le tue squadre e stadi?"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Hazlo tú mismo en la guía de 5 pasos"
@@ -2125,7 +2049,7 @@ msgstr "Algoritmo più recente: modello a turni"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
-msgstr "<strong>%(nombre)s</strong>: %(n)s squadre."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Qué logró el algoritmo"
@@ -2133,7 +2057,7 @@ msgstr "Cosa ha ottenuto l'algoritmo"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje total de todos los equipos con el calendario del algoritmo."
-msgstr "Viaggi totali di tutte le squadre con il programma dell'algoritmo."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje con un calendario hecho al azar, antes de optimizar."
@@ -2173,7 +2097,7 @@ msgstr "Non giocare contro lo stesso avversario in due serie di fila."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
-msgstr "Partite casalinghe circa la metà. Qui: %(a)s a %(b)s per squadra."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Cómo bajó el viaje"
@@ -2214,13 +2138,12 @@ msgstr "Cambia le impostazioni e riprova"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Scelta di Altri Equipaggiamenti"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
 "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
 msgstr ""
-"Guarda l'intera stagione 2023: 30 squadre contro il calendario ufficiale"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Entender cómo funciona en 2 minutos"
@@ -2228,7 +2151,7 @@ msgstr "Capire come funziona in 2 minuti"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Fallo da solo: registra la tua attrezzatura nella guida in 5 passaggi"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2290,15 +2213,13 @@ msgstr "Parte 1 · Il problema"
 
 #: tesis/templates/tesis/historia.html
 msgid "30 equipos tienen que jugar entre sí"
-msgstr "30 squadre devono affrontarsi tra loro"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid ""
 "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
 "partidos en una temporada."
 msgstr ""
-"La Major League Baseball ha 30 squadre. Ogni squadra gioca 162 partite in "
-"una stagione."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2319,8 +2240,6 @@ msgid ""
 "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
 "cruzar el país muchas veces."
 msgstr ""
-"Quando una squadra gioca in trasferta, viaggia in aereo. Un cattivo "
-"programma li fa attraversare il paese molte volte."
 
 #: tesis/templates/tesis/historia.html
 msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
@@ -2328,7 +2247,7 @@ msgstr "Un esempio di viaggio turistico, con le date in ordine casuale."
 
 #: tesis/templates/tesis/historia.html
 msgid "Toca otro estadio para ver la gira de ese equipo."
-msgstr "Tocca un altro stadio per guardare il tour di quella squadra."
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Parte 2 · La idea de la tesis"
@@ -2419,8 +2338,6 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Il motore migliorato, a blocchi, lo batte a caso: %(resultado)s, nei test "
-"preliminari (%(corridas)s corse, %(equipos)s squadre)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2448,7 +2365,7 @@ msgstr "Codice"
 
 #: tesis/templates/tesis/historia.html
 msgid "Equipo"
-msgstr "Squadra"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Estadio"
@@ -2473,10 +2390,6 @@ msgid ""
 msgstr ""
 "Koza-TTP: programmazione genetica per calendari di baseball. È nata come "
 "tesi di Leslie Dickinson (ITAM) e oggi ha un motore che supera il caso."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Un calendario MLB migliore con programmazione genetica."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2506,9 +2419,6 @@ msgid ""
 "equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
 "con el azar."
 msgstr ""
-"Una ripetizione di una serie del motore di programmazione genetica con tutte"
-" e 30 le squadre della Major League Baseball nel 2023, rispetto al "
-"calendario ufficiale e al caso."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
@@ -2524,9 +2434,6 @@ msgid ""
 "calendario oficial de 2023 es la referencia. El motor por bloques intenta "
 "armar una temporada con menos viaje."
 msgstr ""
-"Usiamo le 30 squadre della Major League Baseball e i loro stadi reali. Il "
-"calendario ufficiale del 2023 è il riferimento. Il motore a blocchi cerca di"
-" realizzare una stagione con meno viaggi."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cómo bajan los kilómetros, generación por generación"
@@ -2554,7 +2461,7 @@ msgstr "Tavola scorrevole laterale"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de los 30 equipos en toda la temporada regular."
-msgstr "Viaggi delle 30 squadre durante tutta la stagione regolare."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Gira más larga (juegos seguidos de visita)"
@@ -2578,7 +2485,7 @@ msgstr "Meglio a caso, con lo stesso sforzo"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "No cumple el número de juegos de cada equipo."
-msgstr "Non raggiunge il numero di partite di ogni squadra."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2602,18 +2509,14 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"Nota: il calendario motore prevede tour fino a <strong>%(gira)s partite in "
-"trasferta consecutive</strong>. Quello ufficiale ha il massimo %(oficial)s. "
-"Una vera squadra non accetterebbe tour così lunghi."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Percorso di ciascuna squadra"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
 msgstr ""
-"Alterna tra i due calendari per vedere quali squadre viaggiano di più."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Calendario del mapa"
@@ -2629,7 +2532,7 @@ msgstr "Motore"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
-msgstr "Visualizza tutte e 30 le squadre come una tabella"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
@@ -2656,8 +2559,6 @@ msgid ""
 "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
 "equipo sale de su casa, viaja de estadio en estadio y regresa al final."
 msgstr ""
-"Distanze: linea retta tra stadi (formula del semiverso). Ogni squadra lascia"
-" la propria casa, viaggia da uno stadio all'altro e torna alla fine."
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2725,7 +2626,7 @@ msgstr "Curva B"
 
 #: documentacion/investigacion.py
 msgid "1. Elegimos un equipo y dos turnos"
-msgstr "1. Scegliamo una squadra e due turni"
+msgstr ""
 
 #: documentacion/investigacion.py
 msgid "2. Seguimos la cadena: A, B, A, B…"
@@ -2785,11 +2686,11 @@ msgstr "Opzionale. Se lasci stare, viene usato questo nome."
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "Squadre del torneo"
+msgstr ""
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "Abbiamo già segnato 10. Puoi cambiarli: da 3 a 10 squadre."
+msgstr ""
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
@@ -2805,11 +2706,11 @@ msgstr "Mappa dei 30 stadi delle Major Leagues"
 
 #: tesis/historia.py
 msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
-msgstr "Esempi di tour {Team}: 12 visite in ordine casuale."
+msgstr ""
 
 #: tesis/historia.py
 msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
-msgstr "Hai scelto {squadra}. Segui il passo 2 per vedere i loro viaggi."
+msgstr ""
 
 #: tesis/historia.py
 msgid "km"
@@ -2953,7 +2854,7 @@ msgstr "Generación {gen} de {total}: {km} km"
 
 #: tesis/repeticion.py
 msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr "Non raggiunge ancora il numero di partite di ogni squadra."
+msgstr ""
 
 #: tesis/repeticion.py
 msgid ""
@@ -2968,9 +2869,13 @@ msgid ""
 "Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
 "temporada"
 msgstr ""
-"Mappa: Ogni cerchio è una squadra; più grande significa più miglia nella "
-"stagione"
 
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
-msgstr "{team}: {km} km"
+msgstr ""
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""

@@ -144,8 +144,6 @@ msgid ""
 "Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
 " con un recorrido guiado paso a paso."
 msgstr ""
-"Bạn có thể từ sổ đăng ký nhóm để xem lịch mà không gặp lỗi, với hướng dẫn "
-"từng bước có hướng dẫn."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
@@ -293,9 +291,6 @@ msgid ""
 "viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
 "2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
 msgstr ""
-"MLB lên lịch thi đấu 2.430 trận cho 30 đội trong khoảng 180 ngày. Mỗi đội di"
-" chuyển giữa các thành phố, và khoảng cách rất khác nhau giữa các đội. Năm "
-"2016, Seattle di chuyển 76.683 km, còn Chicago Cubs di chuyển 39.015 km."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -324,9 +319,6 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
-"<strong>Biểu diễn:</strong> Mỗi lịch là một cây. Các nút của nó là các phép "
-"toán như <code>crear_juego</code> (ngày, đội nhà, đội khách) và "
-"<code>obtener_calendario</code>, kết nối hai danh sách trò chơi."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -334,8 +326,6 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
-"Tính <strong>khả thi (C1):</strong> Mỗi đội phải chơi đúng số trận mà giải "
-"đấu yêu cầu. Giá trị 0 nghĩa là lịch thi đấu hợp lệ."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -358,7 +348,7 @@ msgstr ""
 msgid ""
 "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
 "generaciones."
-msgstr "Hãy thử 30 đội, 163 trận mỗi đội, loạt 5 trận và 20 thế hệ."
+msgstr ""
 
 #: documentacion/templates/documentacion/historico.html
 msgid "Comparación de la búsqueda aleatoria y la programación genética"
@@ -578,15 +568,13 @@ msgstr "Chế độ Tối"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
-msgstr "Demo: Lịch trình và Du lịch Nhóm"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Genera un calendario de béisbol con programación genética y mide cuánto "
 "viaja cada equipo."
 msgstr ""
-"Nó tạo ra một lịch bóng chày với chương trình di truyền và đo lường lượng "
-"thời gian mỗi đội di chuyển."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
@@ -594,7 +582,7 @@ msgstr "Tạo lịch và"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "mide cuánto viaja cada equipo."
-msgstr "Đo lường lượng thời gian mỗi đội di chuyển."
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -602,8 +590,6 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI (lập trình di truyền) tìm kiếm lịch mà chuyến đi ngắn và đều. Muốn có đội"
-" riêng? Hãy sử dụng <a href=\"%(guia)s\">hướng dẫn 5 bước</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -614,8 +600,6 @@ msgid ""
 "Para optimizar un calendario, primero registra los equipos, la liga y el "
 "torneo, y después crea una configuración."
 msgstr ""
-"Để tối ưu hóa lịch trình, trước tiên hãy ghi lại các đội, giải đấu và giải "
-"đấu, sau đó tạo cấu hình."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Abrir la guía"
@@ -641,7 +625,7 @@ msgstr "Lịch trình: %(torneo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
-msgstr "Để giới thiệu cho đội ngũ của bạn"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las respuestas que te van a pedir en clase."
@@ -677,15 +661,13 @@ msgstr "Làm sao để tôi thích nghi với nó?"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambia equipos y reglas"
-msgstr "Thay đổi đội và luật chơi"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
 " el patrón Strategy para la medida de “viaje justo”."
 msgstr ""
-"Các đội và tọa độ được ghi lại trong hướng dẫn. Một ý tưởng cho đội của bạn:"
-" sử dụng mẫu Chiến lược cho phép đo \"chuyến đi công bằng\"."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¿Puedo usarlo?"
@@ -721,10 +703,6 @@ msgid ""
 "calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
 " la diferencia entre el equipo que más viaja y el que menos."
 msgstr ""
-"Hãy giải thích từng bước cho tôi cách chương trình di truyền này tạo ra và "
-"đánh giá lịch trình. Sau đó hãy cho tôi biết bạn muốn thay đổi điều gì để "
-"thước đo \"du lịch công bằng\" là sự khác biệt giữa đội đi nhiều nhất và "
-"nhóm đi ít nhất."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
@@ -831,7 +809,7 @@ msgstr "Lưu và tiếp tục đến bước 5"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Paso 1: equipos"
-msgstr "Bước 1: Đội"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Puedes usar los que ya existen o agregar uno nuevo."
@@ -839,15 +817,15 @@ msgstr "Bạn có thể sử dụng các bản hiện có hoặc thêm một b�
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "Xem các đội đã đăng ký mới nhất"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
-msgstr "Thêm một đội"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Thêm thiết bị"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -855,7 +833,7 @@ msgstr "Tiếp tục đến Bước 2: Liên đoàn"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Bạn cần ít nhất 2 đội để theo dõi."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -866,16 +844,14 @@ msgid ""
 "En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
 " el algoritmo y generas un calendario de juegos."
 msgstr ""
-"Chỉ với 5 bước, bạn đăng ký đội bóng, thiết lập giải đấu và giải đấu, chọn "
-"cách chạy thuật toán và tạo lịch thi đấu."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
-msgstr "Số đội: đăng ký ít nhất 2 đội, kèm theo vị trí sân vận động của họ."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Liga: elige qué equipos juegan juntos."
-msgstr "Giải đấu: Chọn các đội thi đấu cùng nhau."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Torneo: define las fechas, las series y los juegos."
@@ -910,8 +886,6 @@ msgid ""
 "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
 "equipos: con un número impar, uno se queda sin rival en cada serie."
 msgstr ""
-"Giải đấu là nhóm các đội thi đấu với nhau. Sử dụng số đội chẵn: với số lượng"
-" lẻ, một đội sẽ không có đối thủ trong mỗi loạt trận."
 
 #: tesis/templates/tesis/guia/liga.html
 msgid "Guardar y seguir al paso 3"
@@ -926,8 +900,6 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"Giải đấu sử dụng các đội của giải \"%(liga)s\". Các trận đấu được lên lịch "
-"từ thứ Hai đến thứ Năm và vào thứ Bảy, giữa ngày đầu tiên và ngày cuối cùng."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -973,8 +945,6 @@ msgstr "Thử công cụ"
 msgid ""
 "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
 msgstr ""
-"Đăng ký đội, xây dựng giải đấu và tạo lịch của riêng bạn. Không có tài "
-"khoản."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Sin prisa"
@@ -1047,7 +1017,7 @@ msgstr "Đang thử nghiệm"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr "%(resultado)s, trong %(corridas)s chạy với %(equipos)s đội"
+msgstr ""
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
@@ -1085,8 +1055,6 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Kết quả sơ bộ: %(resultado)s, trong %(corridas)s lần thi đấu với %(equipos)s"
-" đội."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1140,8 +1108,6 @@ msgstr "Xem kết quả của mỗi lần phát hành"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"Trong các trận kiểm tra: %(resultado)s, trong %(corridas)s lượt thi đấu với "
-"%(equipos)s đội."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1165,7 +1131,7 @@ msgstr "Viết tắt (ví dụ: SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr "Tên đội"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1189,7 +1155,7 @@ msgstr "Tính theo bậc thập phân. Ví dụ: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "Các đội trong giải đấu"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1197,7 +1163,7 @@ msgstr "Tên giải đấu"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr "Chọn ít nhất 2 đội."
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
@@ -1217,7 +1183,7 @@ msgstr "Các trận đấu theo loạt"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Loạt trận đồng đội"
+msgstr ""
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1253,7 +1219,7 @@ msgstr "Nó nên nằm trong khoảng từ 0 đến 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Trang thiết bị"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1277,7 +1243,7 @@ msgstr "Hoàn thành bước này trước."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Thêm thiết bị."
+msgstr ""
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1298,10 +1264,6 @@ msgid ""
 "1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
 "cumplen las mismas reglas de realismo."
 msgstr ""
-"Chúng tôi đã loại bỏ quy định rằng tất cả 30 đội phải thi đấu các loạt 3 "
-"ngày cùng lúc. Với các chuỗi 2, 3 và 4 trận và các kỳ nghỉ, thuật toán tốt "
-"nhất sẽ di chuyển 1,57 triệu km. Lịch chính thức di chuyển 1,74 triệu. Cả "
-"hai đều tuân theo cùng một quy tắc về tính thực tế."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Ver la investigación actual, con diagramas animados"
@@ -1386,8 +1348,6 @@ msgid ""
 "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
 "árbol de programación genética."
 msgstr ""
-"Koza-TTP: bản đồ các sân vận động bóng chày với lộ trình của đội và cây lập "
-"trình di truyền."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Ir al sitio principal"
@@ -1471,9 +1431,6 @@ msgid ""
 " de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
 " de su casa, va de estadio en estadio y regresa al final."
 msgstr ""
-"Mỗi vạch là tổng hành trình của 30 đội trong một mùa giải, tính bằng hàng "
-"triệu km. Càng ít càng tốt. Tất cả các con số đều được đo giống nhau: mỗi "
-"đội rời sân nhà, đi từ sân này sang sân khác và trở về vào cuối cùng."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Viaje total por versión del algoritmo"
@@ -1558,7 +1515,7 @@ msgstr "Đúng vậy"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
-msgstr "Tốt hơn, nhưng cả 30 đội vẫn thi đấu cùng lúc."
+msgstr ""
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
@@ -1685,10 +1642,6 @@ msgid ""
 " de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
 " 3 o 4 juegos, o descansa."
 msgstr ""
-"Trước đây, cả 30 đội đều thi đấu các loạt trận 3 ngày cùng lúc, không nghỉ "
-"giải lao. Giờ đây, mùa giải được chia thành ca ngày thường (4 ngày) và ca "
-"cuối tuần (3 ngày), giống như MLB. Mỗi đội thi đấu một loạt 2, 3 hoặc 4 "
-"trận, hoặc nghỉ ngơi."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Modelo anterior contra modelo por turnos"
@@ -1712,9 +1665,6 @@ msgid ""
 "cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
 "descansos, así las giras se pueden armar con más libertad."
 msgstr ""
-"Sáu đội trong tám ca. Trong mô hình trước đây, mỗi ca chơi 3 ngày. Trong mô "
-"hình ca, giải kéo dài 2, 3 hoặc 4 ngày và có các khoảng nghỉ, nên các tour "
-"có thể được tổ chức với nhiều tự do hơn."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "3. El movimiento principal: la cadena de Kempe"
@@ -1727,10 +1677,6 @@ msgid ""
 "las series de la cadena cambian de turno al mismo tiempo. El calendario "
 "sigue siendo válido."
 msgstr ""
-"Để thay đổi lịch thi đấu mà không có đội chơi hai loạt trận cùng lúc, hai "
-"lượt và một chuỗi loạt trận luân phiên giữa chúng sẽ được thực hiện. Tất cả "
-"các chuỗi trong chuỗi thay đổi đều thay đổi cùng lúc. Lịch thi đấu vẫn còn "
-"hiệu lực."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Cadena de Kempe entre el turno A y el turno B"
@@ -1749,8 +1695,6 @@ msgid ""
 "Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
 " series cambian de turno. Las demás series no se mueven."
 msgstr ""
-"Tám đội. Mạng lưới bắt đầu ở NYA và trải qua BOS, TOR và BAL. Bốn mùa chuyển"
-" đổi theo chuỗi. Các mùa còn lại không chuyển đổi."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "4. ¿Por qué el recocido le ganó a la PG?"
@@ -1790,9 +1734,6 @@ msgid ""
 "apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
 "recorren todo el calendario."
 msgstr ""
-"<strong>Anh lặp lại cùng một vị trí.</strong> Các số cố định trong cây luôn "
-"chỉ đến cùng một lượt và đội. Các nước đi ngẫu nhiên chạy xuyên suốt toàn bộ"
-" lịch."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Solo mejoras contra aceptar cambios peores"
@@ -1935,12 +1876,10 @@ msgid ""
 "El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
 "las hojas son los juegos (fecha, equipo local y equipo visitante)."
 msgstr ""
-"Cây là chương trình tạo ra lịch đẹp nhất. Mỗi nhánh tham gia các trò chơi; "
-"lá là các trận đấu (ngày, đội chủ nhà và đội khách)."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Viaje total de todos los equipos:"
-msgstr "Tổng số chuyến đi của tất cả các đội:"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Juegos que rompen reglas:"
@@ -1952,15 +1891,12 @@ msgid ""
 "<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
 "es válido."
 msgstr ""
-"Một quy tắc là mỗi đội phải thi đấu số trận mà giải đấu yêu cầu. "
-"<strong>Không có trận nào vi phạm quy tắc</strong> nghĩa là lịch thi đấu hợp"
-" lệ."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Puede tardar de unos segundos a varios minutos. Depende del número de "
 "equipos."
-msgstr "Có thể mất vài giây đến vài phút. Tùy thuộc vào số lượng máy tính."
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "El motor está trabajando."
@@ -2034,7 +1970,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Thay đổi thiết bị"
+msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2050,7 +1986,7 @@ msgstr "Tiếp theo: Xem lịch"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Demo: elige los equipos"
-msgstr "Demo: Chọn đội"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2061,7 +1997,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Bước 1: Chọn thiết bị"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2069,9 +2005,6 @@ msgid ""
 "tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
 "da \"Siguiente\" sin cambiar nada."
 msgstr ""
-"Thuật toán sẽ lập lịch trình cho các đội bạn chọn và tìm đội có ít chuyến đi"
-" nhất. Chúng tôi đã đánh dấu 10 đội Major League rồi. Nếu muốn, hãy nhấn "
-"\"Tiếp theo\" mà không cần thay đổi gì."
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Siguiente: configuración"
@@ -2083,11 +2016,11 @@ msgstr "Bạn thích xem trọn vẹn một mùa hoàng gia?"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
-msgstr "Xem mùa giải 2023: 30 đội theo lịch chính thức"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Quieres registrar tus propios equipos y estadios?"
-msgstr "Muốn đăng ký đội bóng và sân vận động của riêng bạn?"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Hazlo tú mismo en la guía de 5 pasos"
@@ -2107,7 +2040,7 @@ msgstr "Thuật toán mới hơn: Mô hình theo lượt"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
-msgstr "<strong>%(nombre)s</strong>: %(n)s đội."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Qué logró el algoritmo"
@@ -2115,7 +2048,7 @@ msgstr "Những gì thuật toán đã đạt được"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje total de todos los equipos con el calendario del algoritmo."
-msgstr "Tổng số chuyến đi của tất cả các đội theo lịch trình thuật toán."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje con un calendario hecho al azar, antes de optimizar."
@@ -2156,7 +2089,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
-msgstr "Các trận sân nhà khoảng một nửa. Ở đây: %(a)s đến %(b)s mỗi đội."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Cómo bajó el viaje"
@@ -2198,12 +2131,12 @@ msgstr "Thay đổi cài đặt và chạy lại"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Lựa chọn thiết bị khác"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
 "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
-msgstr "Xem toàn bộ mùa giải 2023: 30 đội theo lịch chính thức"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Entender cómo funciona en 2 minutos"
@@ -2211,7 +2144,7 @@ msgstr "Hiểu cách hoạt động chỉ trong 2 phút"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Tự làm: đăng ký thiết bị của bạn trong hướng dẫn 5 bước"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2272,15 +2205,13 @@ msgstr "Phần 1 · Vấn đề"
 
 #: tesis/templates/tesis/historia.html
 msgid "30 equipos tienen que jugar entre sí"
-msgstr "30 đội phải thi đấu với nhau"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid ""
 "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
 "partidos en una temporada."
 msgstr ""
-"Giải bóng chày nhà nghề Mỹ có 30 đội. Mỗi đội thi đấu 162 trận trong một mùa"
-" giải."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2301,8 +2232,6 @@ msgid ""
 "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
 "cruzar el país muchas veces."
 msgstr ""
-"Khi một đội thi đấu trên sân khách, họ phải đi máy bay. Lịch thi đấu tệ "
-"khiến họ phải đi khắp đất nước nhiều lần."
 
 #: tesis/templates/tesis/historia.html
 msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
@@ -2311,7 +2240,7 @@ msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Toca otro estadio para ver la gira de ese equipo."
-msgstr "Nhấn vào một sân vận động khác để xem chuyến du đấu của đội đó."
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Parte 2 · La idea de la tesis"
@@ -2403,9 +2332,6 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Động cơ cải tiến, theo các khối, thực sự vượt qua nó một cách ngẫu nhiên: "
-"%(resultado)strong các bài kiểm tra sơ bộ (%(corridas)s lần chơi, "
-"%(equipos)s đội)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2433,7 +2359,7 @@ msgstr "Mã nguồn"
 
 #: tesis/templates/tesis/historia.html
 msgid "Equipo"
-msgstr "Đội ngũ"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Estadio"
@@ -2459,10 +2385,6 @@ msgstr ""
 "Koza-TTP: lập trình di truyền cho lịch bóng chày. Nó bắt đầu như một luận "
 "văn của Leslie Dickinson (ITAM) và ngày nay có một động cơ vượt qua sự ngẫu "
 "nhiên."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Lịch thi đấu MLB tốt hơn với chương trình di truyền."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2492,8 +2414,6 @@ msgid ""
 "equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
 "con el azar."
 msgstr ""
-"Một lần lặp lại động cơ lập trình di truyền với tất cả 30 đội bóng chày "
-"Major League Baseball năm 2023, so với lịch thi đấu chính thức và may rủi."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
@@ -2509,9 +2429,6 @@ msgid ""
 "calendario oficial de 2023 es la referencia. El motor por bloques intenta "
 "armar una temporada con menos viaje."
 msgstr ""
-"Chúng tôi sử dụng 30 đội bóng chày Major League Baseball và sân vận động "
-"thực tế của họ. Lịch thi đấu chính thức năm 2023 là tham khảo. Bộ máy dựa "
-"trên khối cố gắng xây dựng một mùa giải với ít thời gian di chuyển hơn."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cómo bajan los kilómetros, generación por generación"
@@ -2539,7 +2456,7 @@ msgstr "Ván trượt ngang"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de los 30 equipos en toda la temporada regular."
-msgstr "Chuyến đi của 30 đội trong suốt mùa giải chính."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Gira más larga (juegos seguidos de visita)"
@@ -2563,7 +2480,7 @@ msgstr "Tốt hơn khi chơi ngẫu nhiên, với cùng một nỗ lực"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "No cumple el número de juegos de cada equipo."
-msgstr "Nó không đáp ứng số trận đấu của mỗi đội."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2587,17 +2504,14 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"Lưu ý: lịch trình của engine có các tour với tối đa <strong>%(gira)s trận "
-"sân khách liên tiếp</strong>. Lịch chính thức có tối đa %(oficial)s. Một đội"
-" bóng thực sự sẽ không chấp nhận các tour dài như vậy."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Hành trình của từng đội"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
-msgstr "Chuyển đổi giữa hai lịch thi đấu để xem đội nào di chuyển nhiều nhất."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Calendario del mapa"
@@ -2613,7 +2527,7 @@ msgstr "Động cơ"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
-msgstr "Xem tất cả 30 đội dưới dạng một bảng"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
@@ -2641,8 +2555,6 @@ msgid ""
 "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
 "equipo sale de su casa, viaja de estadio en estadio y regresa al final."
 msgstr ""
-"Khoảng cách: đường thẳng giữa các sân vận động (công thức bán vũ trụ). Mỗi "
-"đội rời sân nhà, di chuyển từ sân này sang sân khác và trở về vào cuối."
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2710,7 +2622,7 @@ msgstr "Khúc cua B"
 
 #: documentacion/investigacion.py
 msgid "1. Elegimos un equipo y dos turnos"
-msgstr "1. Chúng tôi chọn một đội và hai ca làm việc"
+msgstr ""
 
 #: documentacion/investigacion.py
 msgid "2. Seguimos la cadena: A, B, A, B…"
@@ -2770,12 +2682,11 @@ msgstr "Tùy chọn. Nếu bạn dừng lại ở đó, tên này sẽ được 
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "Các đội tham dự giải đấu"
+msgstr ""
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
 msgstr ""
-"Chúng ta đã ghi được 10 điểm rồi. Bạn có thể thay đổi: từ 3 lên 10 đội."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
@@ -2791,11 +2702,11 @@ msgstr "Bản đồ 30 sân vận động của các giải Major League"
 
 #: tesis/historia.py
 msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
-msgstr "{Nhóm} ví dụ tham quan: 12 lượt truy cập theo thứ tự ngẫu nhiên."
+msgstr ""
 
 #: tesis/historia.py
 msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
-msgstr "Bạn đã chọn {team}. Làm theo bước 2 để xem hành trình của họ."
+msgstr ""
 
 #: tesis/historia.py
 msgid "km"
@@ -2938,7 +2849,7 @@ msgstr "Generación {gen} de {total}: {km} km"
 
 #: tesis/repeticion.py
 msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr "Tuy nhiên, số trận đấu của mỗi đội vẫn chưa đạt được."
+msgstr ""
 
 #: tesis/repeticion.py
 msgid ""
@@ -2953,8 +2864,13 @@ msgid ""
 "Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
 "temporada"
 msgstr ""
-"Bản đồ: Mỗi vòng tròn là một đội; lớn hơn nghĩa là nhiều dặm hơn trong mùa"
 
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
-msgstr "{đội}: {km} km"
+msgstr ""
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""

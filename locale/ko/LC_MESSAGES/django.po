@@ -138,7 +138,7 @@ msgstr "전체 공구 경로를 수리하세요"
 msgid ""
 "Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
 " con un recorrido guiado paso a paso."
-msgstr "팀 등록부에서 오류 없이 달력을 확인할 수 있으며, 단계별 가이드 투어가 제공됩니다."
+msgstr ""
 
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
@@ -279,8 +279,6 @@ msgid ""
 "viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
 "2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
 msgstr ""
-"MLB는 약 180일 동안 30개 팀에 2,430경기를 일정 조정합니다. 각 팀은 도시 간 이동을 하며, 팀마다 거리가 크게 다릅니다. "
-"2016년 시애틀은 76,683km, 시카고 컵스는 39,015km를 이동했습니다."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -307,9 +305,6 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
-"<strong>표현:</strong> 각 달력은 트리입니다. 노드는 (날짜, 홈팀, 원정팀) 와 "
-"<code>obtener_calendario</code>같은 <code>crear_juego</code> 연산으로, 두 경기 리스트에 "
-"연결됩니다."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -317,8 +312,6 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
-"<strong>유효성(C1):</strong> 각 팀은 토너먼트가 요구하는 정확한 경기 수를 치러야 합니다. 0이 되면 일정이 유효하다는"
-" 뜻입니다."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -339,7 +332,7 @@ msgstr ""
 msgid ""
 "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
 "generaciones."
-msgstr "30개 팀, 팀당 163경기, 5경기 시리즈, 20세대를 시도해 보세요."
+msgstr ""
 
 #: documentacion/templates/documentacion/historico.html
 msgid "Comparación de la búsqueda aleatoria y la programación genética"
@@ -543,13 +536,13 @@ msgstr "다크 모드"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
-msgstr "데모: 일정과 팀 여행"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Genera un calendario de béisbol con programación genética y mide cuánto "
 "viaja cada equipo."
-msgstr "유전 프로그래밍으로 야구 달력을 생성하고 각 팀이 얼마나 이동하는지 측정합니다."
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
@@ -557,7 +550,7 @@ msgstr "달력을 생성하고"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "mide cuánto viaja cada equipo."
-msgstr "각 팀이 얼마나 이동하는지 측정하세요."
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -565,8 +558,6 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI(유전자 프로그래밍)는 여행이 짧고 일정한 달력을 찾습니다. 자신만의 팀을 원하시나요? <a href=\"%(guia)s\">5단계 "
-"가이드</a>를 사용하세요."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -576,7 +567,7 @@ msgstr "아직 설정은 없습니다"
 msgid ""
 "Para optimizar un calendario, primero registra los equipos, la liga y el "
 "torneo, y después crea una configuración."
-msgstr "일정을 최적화하려면 먼저 팀, 리그, 토너먼트를 기록한 후 구성을 만드세요."
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Abrir la guía"
@@ -602,7 +593,7 @@ msgstr "일정: %(torneo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
-msgstr "팀에 소개하는 거야"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las respuestas que te van a pedir en clase."
@@ -637,13 +628,13 @@ msgstr "어떻게 적응시켜야 할까요?"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambia equipos y reglas"
-msgstr "팀과 규칙 변경"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
 " el patrón Strategy para la medida de “viaje justo”."
-msgstr "팀과 좌표는 가이드에 기록되어 있습니다. 팀을 위한 아이디어: 전략 패턴을 '공정한 여행' 지표로 사용하세요."
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¿Puedo usarlo?"
@@ -679,8 +670,6 @@ msgid ""
 "calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
 " la diferencia entre el equipo que más viaja y el que menos."
 msgstr ""
-"이 유전 프로그램이 어떻게 일정을 만들고 평가하는지 단계별로 설명해 주세요. 그리고 '공정한 여행'의 척도가 가장 많이 이동하는 팀과 "
-"가장 적게 이동하는 팀의 차이가 되도록 바꾸고 싶은 점을 말해 주세요."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
@@ -783,7 +772,7 @@ msgstr "저장하고 5단계로 계속 진행하세요"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Paso 1: equipos"
-msgstr "1단계: 팀"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Puedes usar los que ya existen o agregar uno nuevo."
@@ -791,15 +780,15 @@ msgstr "기존 글을 쓰거나 새로 추가할 수도 있어요."
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "최신 등록 팀 보기"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
-msgstr "팀 추가"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "장비 추가"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -807,7 +796,7 @@ msgstr "2단계: 리그로 계속 진행"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "따라갈 팀이 최소 두 팀이어야 합니다."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -817,15 +806,15 @@ msgstr "가이드: 등록부터 달력까지"
 msgid ""
 "En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
 " el algoritmo y generas un calendario de juegos."
-msgstr "5단계로 팀을 등록하고, 리그와 토너먼트를 설정하며, 알고리즘 실행 방법을 선택하고 경기 일정을 생성합니다."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
-msgstr "팀: 최소 2팀을 등록하고, 각 팀의 경기장 위치를 명시하세요."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Liga: elige qué equipos juegan juntos."
-msgstr "리그: 함께 플레이할 팀을 선택하세요."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Torneo: define las fechas, las series y los juegos."
@@ -858,7 +847,6 @@ msgid ""
 "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
 "equipos: con un número impar, uno se queda sin rival en cada serie."
 msgstr ""
-"리그는 서로 경기를 치르는 팀들의 그룹입니다. 짝수 팀 사용 방법: 홀수 팀 수는 각 시리즈에서 한 팀이 팀 없이 남게 됩니다."
 
 #: tesis/templates/tesis/guia/liga.html
 msgid "Guardar y seguir al paso 3"
@@ -873,8 +861,6 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"이 토너먼트는 '%(liga)s' 리그 팀들을 사용합니다. 경기는 월요일부터 목요일, 그리고 토요일, 첫날부터 마지막 날까지 일정이 잡혀"
-" 있습니다."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -919,7 +905,7 @@ msgstr "도구를 사용해 보세요"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
-msgstr "팀을 등록하고, 리그를 만들고, 직접 달력을 생성하세요. 계정은 없습니다."
+msgstr ""
 
 #: tesis/templates/tesis/inicio.html
 msgid "Sin prisa"
@@ -992,7 +978,7 @@ msgstr "테스트 중"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr "%(resultado)s, %(equipos)s 팀과 함께 %(corridas)s 런"
+msgstr ""
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
@@ -1026,7 +1012,7 @@ msgstr ""
 msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
-msgstr "예비 결과: %(equipos)s 팀과 %(corridas)s 경기 %(resultado)s."
+msgstr ""
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1073,7 +1059,7 @@ msgstr "각 릴리스의 결과를 확인하세요"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr "테스트에서는 %(resultado)s, %(equipos)s 팀과 함께 %(corridas)s 런을 기록했습니다."
+msgstr ""
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1097,7 +1083,7 @@ msgstr "약어(예: SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr "팀 이름"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1121,7 +1107,7 @@ msgstr "소수점 단위로. 예시: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "리그 팀"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1129,7 +1115,7 @@ msgstr "리그 이름"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr "최소 두 팀을 선택하세요."
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
@@ -1149,7 +1135,7 @@ msgstr "시리즈별 게임"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "팀 시리즈"
+msgstr ""
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1185,7 +1171,7 @@ msgstr "0과 1 사이여야 합니다."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "장비"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1209,7 +1195,7 @@ msgstr "먼저 이 단계를 완료하세요."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "추가 장비."
+msgstr ""
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1230,8 +1216,6 @@ msgid ""
 "1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
 "cumplen las mismas reglas de realismo."
 msgstr ""
-"30개 팀 모두가 동시에 3일 시리즈를 치르는 규칙을 제거했습니다. 2, 3, 4경기 시리즈와 휴식 시간을 포함해 최고의 알고리즘은 "
-"157만 km를 이동합니다. 공식 달력은 174만 km를 이동합니다. 두 팀 모두 동일한 현실성 규칙을 충족합니다."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Ver la investigación actual, con diagramas animados"
@@ -1308,7 +1292,7 @@ msgstr "야구 달력을 만들기 위한 유전 프로그래밍. 레슬리 딕�
 msgid ""
 "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
 "árbol de programación genética."
-msgstr "Koza-TTP: 야구장 지도와 팀의 경로, 유전 프로그래밍 트리가 포함되어 있습니다."
+msgstr ""
 
 #: documentacion/templates/documentacion/base.html
 msgid "Ir al sitio principal"
@@ -1386,8 +1370,6 @@ msgid ""
 " de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
 " de su casa, va de estadio en estadio y regresa al final."
 msgstr ""
-"각 막대는 30개 팀이 한 시즌 동안 총 이동한 수백만 km 거리를 나타냅니다. 적을수록 좋습니다. 모든 수치는 동일하게 측정되었습니다:"
-" 각 팀은 홈구장을 떠나 경기장에서 경기장으로 이동한 뒤 마지막에 돌아옵니다."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Viaje total por versión del algoritmo"
@@ -1469,7 +1451,7 @@ msgstr "네"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
-msgstr "더 나아졌지만, 30개 팀 모두 동시에 경기를 치르고 있습니다."
+msgstr ""
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
@@ -1588,8 +1570,6 @@ msgid ""
 " de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
 " 3 o 4 juegos, o descansa."
 msgstr ""
-"이전에는 30개 팀 모두가 휴식 없이 동시에 3일 시리즈를 치렀습니다. 현재는 MLB처럼 평일(4일)과 주말(3일) 교대로 나뉩니다. 각"
-" 팀은 2, 3, 4경기 시리즈를 치르거나 휴식을 취합니다."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Modelo anterior contra modelo por turnos"
@@ -1613,8 +1593,6 @@ msgid ""
 "cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
 "descansos, así las giras se pueden armar con más libertad."
 msgstr ""
-"여섯 팀이 8교대로 구성됩니다. 이전 모델에서는 모든 팀이 각 교대마다 3일씩 경기를 했습니다. 교대 모델에서는 시리즈가 2일, 3일 "
-"또는 4일로 진행되며 휴식 기간이 있어 투어를 더 자유롭게 구성할 수 있습니다."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "3. El movimiento principal: la cadena de Kempe"
@@ -1627,8 +1605,6 @@ msgid ""
 "las series de la cadena cambian de turno al mismo tiempo. El calendario "
 "sigue siendo válido."
 msgstr ""
-"팀이 두 시리즈를 동시에 치르지 않고 일정을 변경하려면 두 턴과 그 사이에 시리즈의 연쇄가 교차됩니다. 체인 변경에 포함된 모든 시리즈는"
-" 동시에 이동합니다. 일정은 여전히 유효합니다."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Cadena de Kempe entre el turno A y el turno B"
@@ -1647,8 +1623,6 @@ msgid ""
 "Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
 " series cambian de turno. Las demás series no se mueven."
 msgstr ""
-"8개 팀. 네트워크는 NYA에서 시작해 BOS, TOR, BAL을 거칩니다. 네 개의 시리즈는 교대가 바뀝니다. 다른 시리즈는 이동하지 "
-"않습니다."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "4. ¿Por qué el recocido le ganó a la PG?"
@@ -1685,8 +1659,6 @@ msgid ""
 "apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
 "recorren todo el calendario."
 msgstr ""
-"<strong>그는 같은 장소를 반복했다.</strong> 가계도의 고정된 숫자들은 항상 같은 턴과 팀을 가리킨다. 무작위 이동들이 달력"
-" 전체를 가리킨다."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Solo mejoras contra aceptar cambios peores"
@@ -1819,11 +1791,11 @@ msgstr "트리를 클릭하면 더 크게 볼 수 있습니다."
 msgid ""
 "El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
 "las hojas son los juegos (fecha, equipo local y equipo visitante)."
-msgstr "트리는 최고의 달력을 만들어주는 프로그램입니다. 각 가지는 경기에 참여하며; 잎사귀는 경기(날짜, 홈팀, 원정팀)입니다."
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Viaje total de todos los equipos:"
-msgstr "모든 팀의 총 이동 거리:"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Juegos que rompen reglas:"
@@ -1835,14 +1807,12 @@ msgid ""
 "<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
 "es válido."
 msgstr ""
-"한 가지 규칙은 각 팀이 토너먼트에서 요구하는 경기 수를 치르는 것입니다. <strong>규칙을 위반한 경기가 0</strong> 경기면"
-" 일정이 유효하다는 뜻입니다."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Puede tardar de unos segundos a varios minutos. Depende del número de "
 "equipos."
-msgstr "몇 초에서 몇 분까지 걸릴 수 있습니다. 컴퓨터 수에 따라 다릅니다."
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "El motor está trabajando."
@@ -1910,7 +1880,7 @@ msgstr "모든 값은 이미 선택된 상태입니다. 변경하거나 \\을 �
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "장비 변경"
+msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -1926,7 +1896,7 @@ msgstr "다음: 달력 보기"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Demo: elige los equipos"
-msgstr "데모: 팀 선택"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -1936,7 +1906,7 @@ msgstr "Koza-TTP 데모: 최신 알고리즘으로 3단계로 야구 달력을 �
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "1단계: 장비 선택"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -1944,8 +1914,6 @@ msgid ""
 "tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
 "da \"Siguiente\" sin cambiar nada."
 msgstr ""
-"알고리즘은 선택한 팀의 일정을 만들어 가장 적은 이동 팀을 찾습니다. 이미 메이저리그 팀 10개를 표시했습니다. 원하시면 아무것도 바꾸지"
-" 않고 \"다음\"을 클릭하세요."
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Siguiente: configuración"
@@ -1957,11 +1925,11 @@ msgstr "전체 로열 시즌을 보고 싶으신가요?"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
-msgstr "2023 시즌 시청: 공식 캘린더에 대비한 30개 팀"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Quieres registrar tus propios equipos y estadios?"
-msgstr "직접 팀과 경기장을 등록하고 싶으신가요?"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Hazlo tú mismo en la guía de 5 pasos"
@@ -1981,7 +1949,7 @@ msgstr "새로운 알고리즘: 턴제 모델"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
-msgstr "<strong>%(nombre)s</strong>: %(n)s 팀."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Qué logró el algoritmo"
@@ -1989,7 +1957,7 @@ msgstr "알고리즘이 이룬 성과는"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje total de todos los equipos con el calendario del algoritmo."
-msgstr "알고리즘 일정에 따라 모든 팀의 총 이동 거리."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje con un calendario hecho al azar, antes de optimizar."
@@ -2027,7 +1995,7 @@ msgstr "같은 상대와 연속 두 시리즈에서 경기를 하지 않는 것.
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
-msgstr "홈 경기는 절반 정도입니다. 여기: 팀당 %(a)s %(b)s 있습니다."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Cómo bajó el viaje"
@@ -2067,12 +2035,12 @@ msgstr "설정을 변경하고 다시 실행하세요"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "기타 장비 선택"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
 "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
-msgstr "2023 시즌 전체 시청: 공식 캘린더에 따른 30개 팀"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Entender cómo funciona en 2 minutos"
@@ -2080,7 +2048,7 @@ msgstr "2분 만에 작동 방식을 이해하세요"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "직접 하세요: 5단계 가이드에 장비를 등록하세요"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2140,13 +2108,13 @@ msgstr "파트 1 · 문제"
 
 #: tesis/templates/tesis/historia.html
 msgid "30 equipos tienen que jugar entre sí"
-msgstr "30개 팀이 서로 경기를 해야 합니다"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid ""
 "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
 "partidos en una temporada."
-msgstr "메이저 리그 베이스볼에는 30개 팀이 있습니다. 각 팀은 한 시즌에 162경기를 치릅니다."
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2165,7 +2133,7 @@ msgstr "모든 여행에는 시간과 비용이 듭니다"
 msgid ""
 "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
 "cruzar el país muchas veces."
-msgstr "원정 경기를 할 때는 비행기를 타고 이동한다. 나쁜 일정 때문에 여러 번 전국을 횡단한다."
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
@@ -2173,7 +2141,7 @@ msgstr "예를 들어 투어 여행, 날짜가 무작위로 나열되어 있습�
 
 #: tesis/templates/tesis/historia.html
 msgid "Toca otro estadio para ver la gira de ese equipo."
-msgstr "다른 경기장을 탭해 그 팀의 투어를 시청하세요."
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Parte 2 · La idea de la tesis"
@@ -2257,8 +2225,6 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"개선된 엔진은 블록 단위로 무작위로 %(resultado)s예비 테스트(%(corridas)s 주행, %(equipos)s 팀)에서 "
-"이겼습니다."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2284,7 +2250,7 @@ msgstr "코드"
 
 #: tesis/templates/tesis/historia.html
 msgid "Equipo"
-msgstr "팀"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Estadio"
@@ -2311,10 +2277,6 @@ msgstr ""
 "엔진을 갖추게 되었습니다."
 
 #: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "유전적 프로그래밍이 있는 더 나은 MLB 일정."
-
-#: tesis/templates/tesis/inicio.html
 msgid ""
 "Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
 "azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
@@ -2339,7 +2301,6 @@ msgid ""
 "equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
 "con el azar."
 msgstr ""
-"2023년 공식 일정과 우연 비교와 비교해 30개 메이저 리그 베이스볼 팀 모두에서 유전자 프로그래밍 엔진을 반복한 결과입니다."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
@@ -2355,8 +2316,6 @@ msgid ""
 "calendario oficial de 2023 es la referencia. El motor por bloques intenta "
 "armar una temporada con menos viaje."
 msgstr ""
-"우리는 30개의 메이저 리그 베이스볼 팀과 그들의 실제 구장을 사용합니다. 공식 2023년 일정이 참고 자료입니다. 블록 기반 엔진은 "
-"이동이 적은 시즌을 구성하려고 합니다."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cómo bajan los kilómetros, generación por generación"
@@ -2384,7 +2343,7 @@ msgstr "옆으로 슬라이딩 보드"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de los 30 equipos en toda la temporada regular."
-msgstr "정규 시즌 동안 30개 팀의 이동 기록."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Gira más larga (juegos seguidos de visita)"
@@ -2408,7 +2367,7 @@ msgstr "같은 노력으로 무작위로 더 나아지죠"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "No cumple el número de juegos de cada equipo."
-msgstr "각 팀의 경기 수를 충족하지 못합니다."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2428,16 +2387,14 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"참고: 엔진 캘린더에는 최대%(gira)s경기 연 <strong> 속 원정</strong> 투어가 포함되어 있습니다. 공식 일정은 최대 "
-"%(oficial)s을 기록합니다. 실제 팀은 이렇게 긴 투어를 받아들이지 않을 것입니다."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "각 팀의 여정"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
-msgstr "두 일정을 번갈아 가며 어떤 팀이 더 많이 이동하는지 확인하세요."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Calendario del mapa"
@@ -2453,7 +2410,7 @@ msgstr "엔진"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
-msgstr "30개 팀 전체를 표로 보기"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
@@ -2479,7 +2436,7 @@ msgstr ""
 msgid ""
 "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
 "equipo sale de su casa, viaja de estadio en estadio y regresa al final."
-msgstr "거리: 경기장 간 직선 거리(세미버스 공식). 각 팀은 홈구장을 떠나 경기장에서 경기장으로 이동한 뒤 끝나면 돌아옵니다."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2546,7 +2503,7 @@ msgstr "코너 B"
 
 #: documentacion/investigacion.py
 msgid "1. Elegimos un equipo y dos turnos"
-msgstr "1. 팀과 두 교대 교대 선정"
+msgstr ""
 
 #: documentacion/investigacion.py
 msgid "2. Seguimos la cadena: A, B, A, B…"
@@ -2606,11 +2563,11 @@ msgstr "선택 사항입니다. 거기서 그만둔다면, 이 이름이 사용�
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "토너먼트 참가 팀"
+msgstr ""
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "우리는 이미 10팀을 기록했어요. 변경할 수 있어요: 3팀에서 10팀으로요."
+msgstr ""
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
@@ -2626,11 +2583,11 @@ msgstr "메이저 리그 30개 구장 지도"
 
 #: tesis/historia.py
 msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
-msgstr "{Team} 예시 투어: 무작위 순서로 12회 방문."
+msgstr ""
 
 #: tesis/historia.py
 msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
-msgstr "{team}을 선택하셨습니다. 2단계를 따라 그들의 이동 경로를 확인하세요."
+msgstr ""
 
 #: tesis/historia.py
 msgid "km"
@@ -2764,7 +2721,7 @@ msgstr "Generación {gen} de {total}: {km} km"
 
 #: tesis/repeticion.py
 msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr "여전히 각 팀의 경기 수를 충족하지 못합니다."
+msgstr ""
 
 #: tesis/repeticion.py
 msgid ""
@@ -2776,8 +2733,14 @@ msgstr "수직 축: {min}에서 {max} 백만 km까지. 수평 축: 0세대부터
 msgid ""
 "Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
 "temporada"
-msgstr "지도: 각 원은 한 팀입니다; 더 클수록 시즌 내 더 많은 거리를 달립니다"
+msgstr ""
 
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
-msgstr "{팀}: {km} km"
+msgstr ""
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""

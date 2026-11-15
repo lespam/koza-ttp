@@ -141,8 +141,6 @@ msgid ""
 "Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
 " con un recorrido guiado paso a paso."
 msgstr ""
-"يمكنك الانتقال من سجل الفريق لرؤية التقويم بدون أخطاء، مع جولة إرشادية خطوة "
-"بخطوة."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
@@ -287,9 +285,6 @@ msgid ""
 "viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
 "2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
 msgstr ""
-"يحدد دوري البيسبول الرئيسي 2,430 مباراة ل 30 فريقا في حوالي 180 يوما. يسافر "
-"كل فريق بين المدن، وتختلف المسافة بشكل كبير من فريق لآخر. في عام 2016، قطع "
-"سياتل 76,683 كم، وقطع شيكاغو كابز 39,015 كم."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -317,9 +312,6 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
-"<strong>التمثيل:</strong> كل تقويم هو شجرة. عقدته هي عمليات مثل "
-"<code>crear_juego</code> (التاريخ، الفريق المضيف، الفريق الضيف) و "
-"<code>obtener_calendario</code>، والتي تربط قائمتين من المباريات."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -327,8 +319,6 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
-"<strong>الجدوى (C1):</strong> يجب على كل فريق لعب بالضبط عدد المباريات التي "
-"تتطلبها البطولة. قيمة 0 تعني أن الجدول صالح."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -351,7 +341,7 @@ msgstr ""
 msgid ""
 "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
 "generaciones."
-msgstr "جرب 30 فريقا، 163 مباراة لكل فريق، سلسلة من 5 مباريات، و20 جيرا."
+msgstr ""
 
 #: documentacion/templates/documentacion/historico.html
 msgid "Comparación de la búsqueda aleatoria y la programación genética"
@@ -565,15 +555,13 @@ msgstr "الوضع المظلم"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
-msgstr "العرض التجريبي: الجدول الزمني والسفر الجماعي"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Genera un calendario de béisbol con programación genética y mide cuánto "
 "viaja cada equipo."
 msgstr ""
-"يقوم بإنشاء تقويم بيسبول يحتوي على برمجة جينية ويقيس مقدار السفر الذي يسافر "
-"كل فريق."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
@@ -581,7 +569,7 @@ msgstr "إنشاء تقويم و"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "mide cuánto viaja cada equipo."
-msgstr "قس مقدار السفر الذي يسافر كل فريق."
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -589,9 +577,6 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"الذكاء الاصطناعي (البرمجة الجينية) يبحث عن جداول تكون فيها الرحلة قصيرة "
-"ومتساوية. هل تريد فرقك الخاصة؟ استخدم <a href=\"%(guia)s\">دليل الخطوات "
-"الخمس</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -601,7 +586,7 @@ msgstr "لا يوجد تكوين حتى الآن"
 msgid ""
 "Para optimizar un calendario, primero registra los equipos, la liga y el "
 "torneo, y después crea una configuración."
-msgstr "لتحسين الجدول، قم أولا بتسجيل الفرق والدوري والبطولة، ثم إنشاء تكوين."
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Abrir la guía"
@@ -627,7 +612,7 @@ msgstr "الجدول: %(torneo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
-msgstr "لتقديمه لفريقك"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las respuestas que te van a pedir en clase."
@@ -663,15 +648,13 @@ msgstr "كيف يمكنني تعديله؟"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambia equipos y reglas"
-msgstr "تغيير الفرق والقواعد"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
 " el patrón Strategy para la medida de “viaje justo”."
 msgstr ""
-"يتم تسجيل الفرق والإحداثيات في الدليل. فكرة لفريقك: استخدم نمط الاستراتيجية "
-"لمقياس \"الرحلة العادلة\"."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¿Puedo usarlo?"
@@ -707,9 +690,6 @@ msgid ""
 "calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
 " la diferencia entre el equipo que más viaja y el que menos."
 msgstr ""
-"اشرح لي خطوة بخطوة كيف يخلق هذا البرنامج الجيني ويقيم جدولا زمنيا. ثم أخبرني"
-" ماذا ستغيره بحيث يكون مقياس \"السفر العادل\" هو الفرق بين الفريق الذي يسافر"
-" أكثر والفريق الذي يسافر أقل."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
@@ -815,7 +795,7 @@ msgstr "احفظ واستمر في الخطوة 5"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Paso 1: equipos"
-msgstr "الخطوة 1: الفرق"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Puedes usar los que ya existen o agregar uno nuevo."
@@ -823,15 +803,15 @@ msgstr "يمكنك استخدام البطاقات الموجودة أو إضا�
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "عرض أحدث الفرق المسجلة"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
-msgstr "إضافة فريق"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "إضافة المعدات"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -839,7 +819,7 @@ msgstr "تابع إلى الخطوة 2: الدوري"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "تحتاج إلى فريقين على الأقل لمتابعتهم."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -850,16 +830,14 @@ msgid ""
 "En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
 " el algoritmo y generas un calendario de juegos."
 msgstr ""
-"في 5 خطوات تسجل الفرق، وتجهز دوري وبطولة، تختار كيفية تشغيل الخوارزمية وتولد"
-" جدول المباريات."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
-msgstr "الفرق: سجل على الأقل 2 فرق، مع موقع ملعبهم."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Liga: elige qué equipos juegan juntos."
-msgstr "الدوري: اختر الفرق التي تلعب معا."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Torneo: define las fechas, las series y los juegos."
@@ -892,8 +870,6 @@ msgid ""
 "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
 "equipos: con un número impar, uno se queda sin rival en cada serie."
 msgstr ""
-"الدوري هو مجموعة الفرق التي تلعب ضد بعضها البعض. استخدم عددا زوجيا من الفرق:"
-" مع العدد الفردي، يبقى فريق واحد بدون خصم في كل سلسلة."
 
 #: tesis/templates/tesis/guia/liga.html
 msgid "Guardar y seguir al paso 3"
@@ -908,8 +884,6 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"تستخدم البطولة فرق دوري \"%(liga)s\". تقام المباريات من الاثنين إلى الخميس "
-"وأيام السبت بين اليوم الأول واليومي الأخير."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -954,7 +928,7 @@ msgstr "جرب الأداة"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
-msgstr "سجل الفرق، ابن دوريا، وأنشئ تقويمك الخاص. لا يوجد حساب."
+msgstr ""
 
 #: tesis/templates/tesis/inicio.html
 msgid "Sin prisa"
@@ -1027,7 +1001,7 @@ msgstr "في الاختبار"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr "%(resultado)s، في %(corridas)s الجولة مع %(equipos)s الفرق"
+msgstr ""
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
@@ -1065,7 +1039,6 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"النتيجة الأولية: %(resultado)s، في %(corridas)s جولة مع %(equipos)s فريقا."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1116,7 +1089,6 @@ msgstr "عرض نتائج كل إصدار"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"في الاختبارات: %(resultado)s، في %(corridas)s الجولات مع %(equipos)s فرق."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1140,7 +1112,7 @@ msgstr "الاختصار (مثل SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr "اسم الفريق"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1164,7 +1136,7 @@ msgstr "بالدرجات العشرية. مثال: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "فرق الدوري"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1172,7 +1144,7 @@ msgstr "اسم الدوري"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr "اختر على الأقل فريقين."
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
@@ -1192,7 +1164,7 @@ msgstr "المباريات حسب السلسلة"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "سلسلة الفرق"
+msgstr ""
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1228,7 +1200,7 @@ msgstr "يجب أن يكون بين 0 و1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "المعدات"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1252,7 +1224,7 @@ msgstr "أكمل هذه الخطوة أولا."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "المعدات الإضافية."
+msgstr ""
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1274,9 +1246,6 @@ msgid ""
 "1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
 "cumplen las mismas reglas de realismo."
 msgstr ""
-"أزلنا قاعدة أن جميع الفرق الثلاثين تلعب سلسلة من 3 أيام في نفس الوقت. مع "
-"سلاسل من 2 و3 و4 مباريات وفترات استراحة، أفضل خوارزمية تقطع 1.57 مليون كم. "
-"التقويم الرسمي يقطع 1.74 مليون كيلومتر. كلاهما يلتزم بنفس قواعد الواقعية."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Ver la investigación actual, con diagramas animados"
@@ -1358,7 +1327,7 @@ msgstr ""
 msgid ""
 "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
 "árbol de programación genética."
-msgstr "Koza-TTP: خريطة لملاعب البيسبول مع مسار الفريق وشجرة برمجة جينية."
+msgstr ""
 
 #: documentacion/templates/documentacion/base.html
 msgid "Ir al sitio principal"
@@ -1441,9 +1410,6 @@ msgid ""
 " de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
 " de su casa, va de estadio en estadio y regresa al final."
 msgstr ""
-"كل شريط هو إجمالي رحلة 30 فريقا في موسم واحد، بملايين الكيلومترات. الأقل "
-"أفضل. تم قياس جميع الأرقام بنفس الطريقة: يغادر كل فريق موطنه، ينتقل من ملعب "
-"إلى آخر ويعود في النهاية."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Viaje total por versión del algoritmo"
@@ -1527,7 +1493,7 @@ msgstr "نعم"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
-msgstr "أفضل، لكن جميع الفرق الثلاثين لا تزال تلعب في نفس الوقت."
+msgstr ""
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
@@ -1649,10 +1615,6 @@ msgid ""
 " de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
 " 3 o 4 juegos, o descansa."
 msgstr ""
-"في السابق، كانت جميع الفرق الثلاثين تلعب سلسلة من 3 أيام في نفس الوقت، دون "
-"استراحات. الآن يتم تقسيم الموسم إلى فترات في أيام الأسبوع (4 أيام) وعطلة "
-"نهاية الأسبوع (3 أيام)، تماما كما يفعل MLB. يلعب كل فريق سلسلة من 2 أو 3 أو "
-"4 مباريات، أو يأخذ فترات راحة."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Modelo anterior contra modelo por turnos"
@@ -1676,9 +1638,6 @@ msgid ""
 "cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
 "descansos, así las giras se pueden armar con más libertad."
 msgstr ""
-"ستة فرق في ثماني ورديات. في النموذج السابق، كان الجميع يلعب 3 أيام في كل "
-"وردية. في نموذج الوردية، تستمر السلسلة يومين أو ثلاثة أو أربعة أيام وهناك "
-"فترات استراحة، لذا يمكن تنظيم الجولات بحرية أكبر."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "3. El movimiento principal: la cadena de Kempe"
@@ -1691,9 +1650,6 @@ msgid ""
 "las series de la cadena cambian de turno al mismo tiempo. El calendario "
 "sigue siendo válido."
 msgstr ""
-"لتغيير الجدول بدون أن يلعب الفريق سلسلتين في نفس الوقت، يتم إجراء دورين "
-"وسلسلة من السلاسل بالتناوب بينهما. جميع السلاسل في السلسلة تتغير في نفس "
-"الوقت. الجدول لا يزال ساريا."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Cadena de Kempe entre el turno A y el turno B"
@@ -1712,8 +1668,6 @@ msgid ""
 "Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
 " series cambian de turno. Las demás series no se mueven."
 msgstr ""
-"ثمانية فرق. تبدأ الشبكة في NYA وتمر عبر BOS وTOR وBAL. تتغير السلاسل "
-"الأربعة. أما السلاسل الأخرى فلا تتحرك."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "4. ¿Por qué el recocido le ganó a la PG?"
@@ -1752,8 +1706,6 @@ msgid ""
 "apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
 "recorren todo el calendario."
 msgstr ""
-"<strong>كرر نفس الأماكن.</strong> الأرقام الثابتة في الشجرة تشير دائما إلى "
-"نفس الأدوار والفرق. الحركات العشوائية تمر عبر التقويم بأكمله."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Solo mejoras contra aceptar cambios peores"
@@ -1895,12 +1847,10 @@ msgid ""
 "El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
 "las hojas son los juegos (fecha, equipo local y equipo visitante)."
 msgstr ""
-"الشجرة هي البرنامج الذي يجمع أفضل تقويم. كل فرع ينضم إلى الألعاب؛ الأوراق هي"
-" المباريات (التاريخ، الفريق المضيف، والفريق الضيف)."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Viaje total de todos los equipos:"
-msgstr "إجمالي السفر لجميع الفرق:"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Juegos que rompen reglas:"
@@ -1912,16 +1862,12 @@ msgid ""
 "<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
 "es válido."
 msgstr ""
-"إحدى القواعد هي أن يلعب كل فريق عدد المباريات التي تتطلبها البطولة. "
-"<strong>0 مباريات تخالف القواعد</strong> تعني أن الجدول صالح."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Puede tardar de unos segundos a varios minutos. Depende del número de "
 "equipos."
 msgstr ""
-"قد يستغرق الأمر من بضع ثوان إلى عدة دقائق. يعتمد ذلك على عدد أجهزة "
-"الكمبيوتر."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "El motor está trabajando."
@@ -1990,7 +1936,7 @@ msgstr "جميع القيم قد تم اختيارها بالفعل. يمكنك 
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "تغيير المعدات"
+msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2006,7 +1952,7 @@ msgstr "التالي: عرض التقويم"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Demo: elige los equipos"
-msgstr "عرض توضيحي: اختر الفرق"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2017,7 +1963,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "الخطوة 1: اختر المعدات"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2025,9 +1971,6 @@ msgid ""
 "tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
 "da \"Siguiente\" sin cambiar nada."
 msgstr ""
-"تضع الخوارزمية جدولا للفرق التي تختارها وتبحث عن الفريق الذي يحمل أقل عدد من"
-" السفر. لقد علمنا بالفعل 10 فرق في الدوري الرئيسي. إذا أردت، اضغط على "
-"\"التالي\" دون تغيير أي شيء."
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Siguiente: configuración"
@@ -2039,11 +1982,11 @@ msgstr "تفضل مشاهدة موسم كامل للرويال؟"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
-msgstr "شاهد موسم 2023: 30 فريقا ضد الجدول الرسمي"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Quieres registrar tus propios equipos y estadios?"
-msgstr "هل ترغب في تسجيل فرقك وملاعبك الخاصة؟"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Hazlo tú mismo en la guía de 5 pasos"
@@ -2063,7 +2006,7 @@ msgstr "خوارزمية أحدث: نموذج الأدوار"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
-msgstr "<strong>%(nombre)s</strong>: %(n)s فرق."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Qué logró el algoritmo"
@@ -2071,7 +2014,7 @@ msgstr "ما حققته الخوارزمية"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje total de todos los equipos con el calendario del algoritmo."
-msgstr "إجمالي السفر لجميع الفرق وفقا لجدول الخوارزمية."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje con un calendario hecho al azar, antes de optimizar."
@@ -2112,7 +2055,6 @@ msgstr "عدم اللعب ضد نفس الخصم في سلسلتين متتال�
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
 msgstr ""
-"المباريات على أرضه حوالي نصف المباريات. هنا: %(a)s إلى %(b)s لكل فريق."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Cómo bajó el viaje"
@@ -2152,12 +2094,12 @@ msgstr "غير الإعدادات وشغل مرة أخرى"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "اختيار معدات أخرى"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
 "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
-msgstr "شاهد موسم 2023 بالكامل: 30 فريقا ضد الجدول الرسمي"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Entender cómo funciona en 2 minutos"
@@ -2165,7 +2107,7 @@ msgstr "افهم كيف يعمل في دقيقتين"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "قم بذلك بنفسك: سجل معداتك في دليل الخطوات الخمس"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2226,14 +2168,13 @@ msgstr "الجزء الأول · المشكلة"
 
 #: tesis/templates/tesis/historia.html
 msgid "30 equipos tienen que jugar entre sí"
-msgstr "يجب أن يلعب 30 فريقا ضد بعضهم البعض"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid ""
 "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
 "partidos en una temporada."
 msgstr ""
-"يضم دوري البيسبول الرئيسي 30 فريقا. يلعب كل فريق 162 مباراة في الموسم."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2253,8 +2194,6 @@ msgid ""
 "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
 "cruzar el país muchas veces."
 msgstr ""
-"عندما يلعب الفريق خارج أرضه، يسافر بالطائرة. جدول سيئ يجعلهم يعبرون البلاد "
-"عدة مرات."
 
 #: tesis/templates/tesis/historia.html
 msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
@@ -2262,7 +2201,7 @@ msgstr "مثال على رحلة جولة، مع ترتيب التواريخ ع�
 
 #: tesis/templates/tesis/historia.html
 msgid "Toca otro estadio para ver la gira de ese equipo."
-msgstr "اذهب إلى ملعب آخر لمشاهدة جولة ذلك الفريق."
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Parte 2 · La idea de la tesis"
@@ -2352,8 +2291,6 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"المحرك المحسن، بحجم الكتل، يتفوق عليه عشوائيا: %(resultado)s، في الاختبارات "
-"التمهيدية (%(corridas)s الجري، %(equipos)s الفرق)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2381,7 +2318,7 @@ msgstr "الشيفرة"
 
 #: tesis/templates/tesis/historia.html
 msgid "Equipo"
-msgstr "الفريق"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Estadio"
@@ -2406,10 +2343,6 @@ msgid ""
 msgstr ""
 "Koza-TTP: برمجة جينية لتقويمات البيسبول. بدأت كأطروحة كتهربتها ليزلي ديكنسون"
 " (ITAM) واليوم لديها محرك يتغلب على الصدفة."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "جدول أفضل في دوري البيسبول الأمريكي مع برمجة جينية."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2437,8 +2370,6 @@ msgid ""
 "equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
 "con el azar."
 msgstr ""
-"تكرار لسلسلة محرك البرمجة الجينية مع جميع فرق دوري البيسبول الكبرى الثلاثين "
-"في عام 2023، مقارنة بالجدول الرسمي وإلى الحظ."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
@@ -2454,9 +2385,6 @@ msgid ""
 "calendario oficial de 2023 es la referencia. El motor por bloques intenta "
 "armar una temporada con menos viaje."
 msgstr ""
-"نستخدم 30 فريقا في دوري البيسبول الرئيسي وملاعبهم الفعلية. الجدول الرسمي "
-"لعام 2023 هو المرجع. محرك اللعب القائم على البلوك يحاول تنظيم موسم أقل من "
-"السفر."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cómo bajan los kilómetros, generación por generación"
@@ -2484,7 +2412,7 @@ msgstr "لوح منزلق جانبي"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de los 30 equipos en toda la temporada regular."
-msgstr "السفر بين الفرق الثلاثين طوال الموسم العادي."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Gira más larga (juegos seguidos de visita)"
@@ -2508,7 +2436,7 @@ msgstr "أفضل بشكل عشوائي، وبنفس الجهد"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "No cumple el número de juegos de cada equipo."
-msgstr "لا يحقق عدد مباريات كل فريق."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2532,17 +2460,14 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"ملاحظة: جدول المحرك يحتوي على جولات تصل إلى <strong>%(gira)s مباراة خارج "
-"أرضه متتالية</strong>. الجدول الرسمي لديه أقصى %(oficial)s. الفريق الحقيقي "
-"لن يقبل جولات طويلة كهذه."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "رحلة كل فريق"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
-msgstr "انتقل بين الجدولين لترى أي الفرق تسافر أكثر."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Calendario del mapa"
@@ -2558,7 +2483,7 @@ msgstr "المحرك"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
-msgstr "عرض جميع الفرق الثلاثين كجدول"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
@@ -2585,8 +2510,6 @@ msgid ""
 "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
 "equipo sale de su casa, viaja de estadio en estadio y regresa al final."
 msgstr ""
-"المسافات: خط مستقيم بين الملاعب (صيغة نصف الكون). يغادر كل فريق منزله، "
-"ويسافر من ملعب إلى آخر ويعود في النهاية."
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2654,7 +2577,7 @@ msgstr "المنعطف B"
 
 #: documentacion/investigacion.py
 msgid "1. Elegimos un equipo y dos turnos"
-msgstr "1. نختار فريقا وورديتان"
+msgstr ""
 
 #: documentacion/investigacion.py
 msgid "2. Seguimos la cadena: A, B, A, B…"
@@ -2714,11 +2637,11 @@ msgstr "اختياري. إذا تركت الأمر عند هذا الحد، يس
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "فرق البطولة"
+msgstr ""
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "لقد سجلنا بالفعل 10 نقاط. يمكنك تغييرها: من 3 إلى 10 فرق."
+msgstr ""
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
@@ -2734,11 +2657,11 @@ msgstr "خريطة الملاعب الثلاثين في الدوريات الك�
 
 #: tesis/historia.py
 msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
-msgstr "جولة {الفريق} المثالية: 12 زيارة عشوائية."
+msgstr ""
 
 #: tesis/historia.py
 msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
-msgstr "اخترت {فريق}. اتبع الخطوة 2 لترى رحلاتهم."
+msgstr ""
 
 #: tesis/historia.py
 msgid "km"
@@ -2880,7 +2803,7 @@ msgstr "Generación {gen} de {total}: {km} km"
 
 #: tesis/repeticion.py
 msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr "ولا يزال لا يحقق عدد مباريات كل فريق."
+msgstr ""
 
 #: tesis/repeticion.py
 msgid ""
@@ -2894,8 +2817,14 @@ msgstr ""
 msgid ""
 "Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
 "temporada"
-msgstr "الخريطة: كل دائرة هي فريق؛ الأكبر يعني المزيد من الأميال في الموسم"
+msgstr ""
 
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
-msgstr "{الفريق}: {كم} كم"
+msgstr ""
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""

@@ -142,8 +142,6 @@ msgid ""
 "Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
 " con un recorrido guiado paso a paso."
 msgstr ""
-"Anda boleh pergi dari daftar pasukan untuk melihat kalendar tanpa ralat, "
-"dengan lawatan langkah demi langkah berpandu."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
@@ -291,10 +289,6 @@ msgid ""
 "viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
 "2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
 msgstr ""
-"MLB menjadualkan 2,430 perlawanan untuk 30 pasukan dalam kira-kira 180 hari."
-" Setiap pasukan bergerak antara bandar, dan jaraknya sangat berbeza antara "
-"pasukan. Pada tahun 2016, Seattle menempuh perjalanan sejauh 76,683 km, dan "
-"Chicago Cubs menempuh 39,015 km."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -324,10 +318,6 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
-"<strong>Perwakilan:</strong> Setiap kalendar adalah pokok. Nodnya adalah "
-"operasi seperti <code>crear_juego</code> (tarikh, pasukan tuan rumah, "
-"pasukan pelawat) dan <code>obtener_calendario</code>, yang menggabungkan dua"
-" senarai permainan."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -335,9 +325,6 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
-"<strong>Kebolehlaksanaan (C1):</strong> Setiap pasukan mesti bermain tepat "
-"bilangan perlawanan yang ditetapkan oleh kejohanan. Nilai 0 bermakna jadual "
-"adalah sah."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -362,8 +349,6 @@ msgid ""
 "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
 "generaciones."
 msgstr ""
-"Cuba 30 pasukan, 163 perlawanan setiap pasukan, siri 5 perlawanan, dan 20 "
-"generasi."
 
 #: documentacion/templates/documentacion/historico.html
 msgid "Comparación de la búsqueda aleatoria y la programación genética"
@@ -587,15 +572,13 @@ msgstr "Mod Gelap"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
-msgstr "Demo: Jadual dan Perjalanan Pasukan"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Genera un calendario de béisbol con programación genética y mide cuánto "
 "viaja cada equipo."
 msgstr ""
-"Ia menjana kalendar besbol dengan pengaturcaraan genetik dan mengukur berapa"
-" banyak setiap pasukan bergerak."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
@@ -603,7 +586,7 @@ msgstr "Jana kalendar dan"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "mide cuánto viaja cada equipo."
-msgstr "Ukur berapa banyak setiap pasukan bergerak."
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -611,9 +594,6 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI (pengaturcaraan genetik) mencari kalendar di mana perjalanan pendek dan "
-"sekata. Mahukan pasukan sendiri? Gunakan <a href=\"%(guia)s\">panduan 5 "
-"langkah</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -624,8 +604,6 @@ msgid ""
 "Para optimizar un calendario, primero registra los equipos, la liga y el "
 "torneo, y después crea una configuración."
 msgstr ""
-"Untuk mengoptimumkan jadual, rakam pasukan, liga, dan kejohanan terlebih "
-"dahulu, kemudian cipta konfigurasi."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Abrir la guía"
@@ -652,7 +630,7 @@ msgstr "Jadual: %(torneo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
-msgstr "Untuk memperkenalkannya kepada pasukan anda"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las respuestas que te van a pedir en clase."
@@ -689,15 +667,13 @@ msgstr "Bagaimana saya boleh menyesuaikannya?"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambia equipos y reglas"
-msgstr "Tukar pasukan dan peraturan"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
 " el patrón Strategy para la medida de “viaje justo”."
 msgstr ""
-"Pasukan dan koordinat direkodkan dalam panduan. Satu idea untuk pasukan "
-"anda: gunakan corak Strategi untuk ukuran \"perjalanan adil\"."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¿Puedo usarlo?"
@@ -733,10 +709,6 @@ msgid ""
 "calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
 " la diferencia entre el equipo que más viaja y el que menos."
 msgstr ""
-"Terangkan kepada saya langkah demi langkah bagaimana program genetik ini "
-"mencipta dan menilai jadual. Kemudian beritahu saya apa yang anda akan ubah "
-"supaya ukuran \"perjalanan adil\" adalah perbezaan antara pasukan yang "
-"paling banyak bergerak dan yang paling sedikit mengembara."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
@@ -842,7 +814,7 @@ msgstr "Simpan dan teruskan ke langkah 5"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Paso 1: equipos"
-msgstr "Langkah 1: Pasukan"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Puedes usar los que ya existen o agregar uno nuevo."
@@ -850,15 +822,15 @@ msgstr "Anda boleh menggunakan yang sedia ada atau menambah yang baru."
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "Lihat Pasukan Berdaftar Terkini"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
-msgstr "Tambah pasukan"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Tambah Peralatan"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -866,7 +838,7 @@ msgstr "Teruskan ke Langkah 2: Liga"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Anda perlukan sekurang-kurangnya 2 pasukan untuk mengikutinya."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -877,16 +849,14 @@ msgid ""
 "En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
 " el algoritmo y generas un calendario de juegos."
 msgstr ""
-"Dalam 5 langkah, anda mendaftar pasukan, menetapkan liga dan kejohanan, "
-"memilih cara untuk menjalankan algoritma dan menjana jadual perlawanan."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
-msgstr "Pasukan: daftar sekurang-kurangnya 2, dengan lokasi stadium mereka."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Liga: elige qué equipos juegan juntos."
-msgstr "Liga: Pilih pasukan yang bermain bersama."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Torneo: define las fechas, las series y los juegos."
@@ -921,9 +891,6 @@ msgid ""
 "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
 "equipos: con un número impar, uno se queda sin rival en cada serie."
 msgstr ""
-"Liga adalah kumpulan pasukan yang bermain antara satu sama lain. Gunakan "
-"bilangan pasukan genap: dengan nombor ganjil, satu pasukan tidak mempunyai "
-"lawan dalam setiap siri."
 
 #: tesis/templates/tesis/guia/liga.html
 msgid "Guardar y seguir al paso 3"
@@ -938,9 +905,6 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"Kejohanan ini menggunakan pasukan liga \"%(liga)s\". Perlawanan dijadualkan "
-"dari Isnin hingga Khamis dan pada hari Sabtu, antara hari pertama dan "
-"terakhir."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -986,7 +950,6 @@ msgstr "Cuba alat ini"
 msgid ""
 "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
 msgstr ""
-"Daftar pasukan, bina liga, dan jana kalendar anda sendiri. Tiada akaun."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Sin prisa"
@@ -1059,7 +1022,7 @@ msgstr "Dalam Ujian"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr "%(resultado)s, dalam %(corridas)s berlari bersama pasukan %(equipos)s"
+msgstr ""
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
@@ -1098,8 +1061,6 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Keputusan awal: %(resultado)s, dalam %(corridas)s larian bersama %(equipos)s"
-" pasukan."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1153,8 +1114,6 @@ msgstr "Lihat keputusan setiap keluaran"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"Dalam ujian: %(resultado)s, dalam %(corridas)s berlari bersama %(equipos)s "
-"pasukan."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1178,7 +1137,7 @@ msgstr "Singkatan (contohnya, SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr "Nama Pasukan"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1202,7 +1161,7 @@ msgstr "Dalam darjah perpuluhan. Contoh: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "Pasukan Liga"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1210,7 +1169,7 @@ msgstr "Nama Liga"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr "Pilih sekurang-kurangnya 2 pasukan."
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
@@ -1230,7 +1189,7 @@ msgstr "Permainan mengikut siri"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Siri Berpasukan"
+msgstr ""
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1266,7 +1225,7 @@ msgstr "Sepatutnya antara 0 dan 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Peralatan"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1290,7 +1249,7 @@ msgstr "Selesaikan langkah ini terlebih dahulu."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Peralatan tambahan."
+msgstr ""
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1311,10 +1270,6 @@ msgid ""
 "1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
 "cumplen las mismas reglas de realismo."
 msgstr ""
-"Kami telah membuang peraturan bahawa semua 30 pasukan bermain siri 3 hari "
-"pada masa yang sama. Dengan siri 2, 3 dan 4 perlawanan serta permulaan, "
-"algoritma terbaik menempuh perjalanan sejauh 1.57 juta km. Kalendar rasmi "
-"menempuh 1.74 juta km. Kedua-duanya memenuhi peraturan realisme yang sama."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Ver la investigación actual, con diagramas animados"
@@ -1399,8 +1354,6 @@ msgid ""
 "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
 "árbol de programación genética."
 msgstr ""
-"Koza-TTP: peta stadium besbol dengan laluan pasukan dan pokok pengaturcaraan"
-" genetik."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Ir al sitio principal"
@@ -1485,10 +1438,6 @@ msgid ""
 " de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
 " de su casa, va de estadio en estadio y regresa al final."
 msgstr ""
-"Setiap bar adalah jumlah perjalanan 30 pasukan dalam satu musim, dalam "
-"jutaan km. Kurang lebih baik. Semua angka diukur sama: setiap pasukan "
-"meninggalkan rumahnya, pergi dari stadium ke stadium dan kembali pada "
-"akhirnya."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Viaje total por versión del algoritmo"
@@ -1572,7 +1521,7 @@ msgstr "Ya"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
-msgstr "Lebih baik, tetapi kesemua 30 pasukan masih bermain serentak."
+msgstr ""
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
@@ -1704,10 +1653,6 @@ msgid ""
 " de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
 " 3 o 4 juegos, o descansa."
 msgstr ""
-"Sebelum ini, semua 30 pasukan bermain siri 3 hari pada masa yang sama, tanpa"
-" rehat. Kini musim dibahagikan kepada syif hari bekerja (4 hari) dan hujung "
-"minggu (3 hari), sama seperti MLB. Setiap pasukan bermain siri 2, 3 atau 4 "
-"perlawanan, atau rehat."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Modelo anterior contra modelo por turnos"
@@ -1731,10 +1676,6 @@ msgid ""
 "cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
 "descansos, así las giras se pueden armar con más libertad."
 msgstr ""
-"Enam pasukan dalam lapan syif. Dalam model sebelumnya, semua orang bermain 3"
-" hari dalam setiap syif. Dalam model syif, siri ini berlangsung selama 2, 3 "
-"atau 4 hari dan terdapat rehat, jadi lawatan boleh diatur dengan lebih "
-"bebas."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "3. El movimiento principal: la cadena de Kempe"
@@ -1747,9 +1688,6 @@ msgid ""
 "las series de la cadena cambian de turno al mismo tiempo. El calendario "
 "sigue siendo válido."
 msgstr ""
-"Untuk menukar jadual tanpa pasukan bermain dua siri serentak, dua giliran "
-"dan satu rangkaian siri bergilir-gilir antara mereka diambil. Semua siri "
-"dalam rangkaian berubah pada masa yang sama. Jadual masih sah."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Cadena de Kempe entre el turno A y el turno B"
@@ -1768,8 +1706,6 @@ msgid ""
 "Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
 " series cambian de turno. Las demás series no se mueven."
 msgstr ""
-"Lapan pasukan. Rangkaian bermula di NYA dan melalui BOS, TOR dan BAL. Empat "
-"siri bertukar syif. Siri lain tidak bergerak."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "4. ¿Por qué el recocido le ganó a la PG?"
@@ -1810,9 +1746,6 @@ msgid ""
 "apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
 "recorren todo el calendario."
 msgstr ""
-"<strong>Dia mengulangi tempat yang sama.</strong> Nombor tetap dalam pokok "
-"sentiasa menunjukkan giliran dan pasukan yang sama. Gerakan rawak berjalan "
-"sepanjang kalendar."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Solo mejoras contra aceptar cambios peores"
@@ -1958,13 +1891,10 @@ msgid ""
 "El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
 "las hojas son los juegos (fecha, equipo local y equipo visitante)."
 msgstr ""
-"Pokok adalah program yang menyusun kalendar terbaik. Setiap cabang menyertai"
-" permainan; daun adalah permainan (tarikh, pasukan tuan rumah, dan pasukan "
-"pelawat)."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Viaje total de todos los equipos:"
-msgstr "Jumlah perjalanan semua pasukan:"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Juegos que rompen reglas:"
@@ -1976,17 +1906,12 @@ msgid ""
 "<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
 "es válido."
 msgstr ""
-"Satu peraturan ialah setiap pasukan bermain mengikut bilangan perlawanan "
-"yang ditetapkan oleh kejohanan. <strong>0 perlawanan yang melanggar "
-"peraturan</strong> bermakna jadual itu sah."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Puede tardar de unos segundos a varios minutos. Depende del número de "
 "equipos."
 msgstr ""
-"Ia boleh mengambil masa beberapa saat hingga beberapa minit. Ia bergantung "
-"pada bilangan komputer."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "El motor está trabajando."
@@ -2058,7 +1983,7 @@ msgstr "Semua nilai sudah dipilih. Anda boleh mengubahnya atau memberikan \\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Tukar peralatan"
+msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2074,7 +1999,7 @@ msgstr "Seterusnya: Lihat kalendar"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Demo: elige los equipos"
-msgstr "Demo: Pilih pasukan"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2086,7 +2011,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Langkah 1: Pilih peralatan"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2094,9 +2019,6 @@ msgid ""
 "tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
 "da \"Siguiente\" sin cambiar nada."
 msgstr ""
-"Algoritma menyediakan jadual untuk pasukan yang anda pilih dan mencari "
-"pasukan dengan perjalanan paling sedikit. Kami sudah menandakan 10 pasukan "
-"Liga Utama. Jika anda mahu, klik \"Seterusnya\" tanpa mengubah apa-apa."
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Siguiente: configuración"
@@ -2108,11 +2030,11 @@ msgstr "Lebih suka menonton musim diraja penuh?"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
-msgstr "Tonton musim 2023: 30 pasukan menentang kalendar rasmi"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Quieres registrar tus propios equipos y estadios?"
-msgstr "Ingin mendaftar pasukan dan stadium anda sendiri?"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Hazlo tú mismo en la guía de 5 pasos"
@@ -2132,7 +2054,7 @@ msgstr "Algoritma terbaru: Model berasaskan giliran"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
-msgstr "<strong>%(nombre)s</strong>: %(n)s pasukan."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Qué logró el algoritmo"
@@ -2140,7 +2062,7 @@ msgstr "Apa yang dicapai oleh algoritma"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje total de todos los equipos con el calendario del algoritmo."
-msgstr "Jumlah perjalanan semua pasukan mengikut jadual algoritma."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje con un calendario hecho al azar, antes de optimizar."
@@ -2183,8 +2105,6 @@ msgstr ""
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
 msgstr ""
-"Perlawanan di rumah kira-kira separuh. Di sini: %(a)s hingga %(b)s setiap "
-"pasukan."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Cómo bajó el viaje"
@@ -2226,12 +2146,12 @@ msgstr "Tukar tetapan dan jalankan sekali lagi"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Memilih Peralatan Lain"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
 "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
-msgstr "Tonton keseluruhan musim 2023: 30 pasukan menentang kalendar rasmi"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Entender cómo funciona en 2 minutos"
@@ -2239,7 +2159,7 @@ msgstr "Fahami cara ia berfungsi dalam 2 minit"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Lakukan sendiri: daftarkan peralatan anda dalam panduan 5 langkah"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2300,15 +2220,13 @@ msgstr "Bahagian 1 · Masalahnya"
 
 #: tesis/templates/tesis/historia.html
 msgid "30 equipos tienen que jugar entre sí"
-msgstr "30 pasukan perlu bertemu antara satu sama lain"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid ""
 "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
 "partidos en una temporada."
 msgstr ""
-"Major League Baseball mempunyai 30 pasukan. Setiap pasukan bermain 162 "
-"perlawanan dalam satu musim."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2330,8 +2248,6 @@ msgid ""
 "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
 "cruzar el país muchas veces."
 msgstr ""
-"Apabila pasukan bermain di tempat lawan, mereka menaiki kapal terbang. "
-"Jadual yang buruk menyebabkan mereka merentasi negara berkali-kali."
 
 #: tesis/templates/tesis/historia.html
 msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
@@ -2339,7 +2255,7 @@ msgstr "Contoh lawatan, dengan tarikh-tarikh mengikut urutan rawak."
 
 #: tesis/templates/tesis/historia.html
 msgid "Toca otro estadio para ver la gira de ese equipo."
-msgstr "Ketuk stadium lain untuk menonton jelajah pasukan itu."
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Parte 2 · La idea de la tesis"
@@ -2434,9 +2350,6 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Enjin yang dipertingkatkan, mengikut blok, memang mengalahkannya secara "
-"rawak: %(resultado)s, dalam ujian awal (%(corridas)s larian, %(equipos)s "
-"pasukan)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2464,7 +2377,7 @@ msgstr "Kod"
 
 #: tesis/templates/tesis/historia.html
 msgid "Equipo"
-msgstr "Pasukan"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Estadio"
@@ -2490,10 +2403,6 @@ msgstr ""
 "Koza-TTP: pengaturcaraan genetik untuk kalendar besbol. Ia bermula sebagai "
 "tesis oleh Leslie Dickinson (ITAM) dan hari ini mempunyai enjin yang "
 "mengatasi kebetulan."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Jadual MLB yang lebih baik dengan pengaturcaraan genetik."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2523,8 +2432,6 @@ msgid ""
 "equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
 "con el azar."
 msgstr ""
-"Ulangan enjin pengaturcaraan genetik dengan semua 30 pasukan Major League "
-"Baseball pada tahun 2023, berbanding jadual rasmi dan nasib."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
@@ -2540,9 +2447,6 @@ msgid ""
 "calendario oficial de 2023 es la referencia. El motor por bloques intenta "
 "armar una temporada con menos viaje."
 msgstr ""
-"Kami menggunakan 30 pasukan Major League Baseball dan stadium sebenar "
-"mereka. Jadual rasmi 2023 adalah rujukan. Enjin berasaskan blok cuba "
-"menghasilkan musim dengan kurang perjalanan."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cómo bajan los kilómetros, generación por generación"
@@ -2570,7 +2474,7 @@ msgstr "Papan gelongsor sisi"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de los 30 equipos en toda la temporada regular."
-msgstr "Perjalanan 30 pasukan sepanjang musim biasa."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Gira más larga (juegos seguidos de visita)"
@@ -2594,7 +2498,7 @@ msgstr "Lebih baik secara rawak, dengan usaha yang sama"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "No cumple el número de juegos de cada equipo."
-msgstr "Ia tidak memenuhi bilangan perlawanan setiap pasukan."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2618,20 +2522,14 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"Nota: kalendar enjin mempunyai jelajah sehingga <strong>%(gira)s perlawanan "
-"di tempat lawan berturut-turut</strong>. Yang rasmi mempunyai "
-"%(oficial)smaksimum. Pasukan sebenar tidak akan menerima lawatan yang begitu"
-" panjang."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Perjalanan setiap pasukan"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
 msgstr ""
-"Tukar antara dua jadual untuk melihat pasukan mana yang paling kerap "
-"mengembara."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Calendario del mapa"
@@ -2647,7 +2545,7 @@ msgstr "Enjin"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
-msgstr "Lihat semua 30 pasukan sebagai satu jadual"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
@@ -2674,9 +2572,6 @@ msgid ""
 "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
 "equipo sale de su casa, viaja de estadio en estadio y regresa al final."
 msgstr ""
-"Jarak: garis lurus antara stadium (formula semiverse). Setiap pasukan "
-"meninggalkan rumahnya, bergerak dari stadium ke stadium dan kembali di "
-"penghujungnya."
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2744,7 +2639,7 @@ msgstr "Selekoh B"
 
 #: documentacion/investigacion.py
 msgid "1. Elegimos un equipo y dos turnos"
-msgstr "1. Kami memilih satu pasukan dan dua syif"
+msgstr ""
 
 #: documentacion/investigacion.py
 msgid "2. Seguimos la cadena: A, B, A, B…"
@@ -2804,12 +2699,11 @@ msgstr "Pilihan. Jika anda berhenti di situ, nama ini digunakan."
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "Pasukan Kejohanan"
+msgstr ""
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
 msgstr ""
-"Kami sudah markah 10. Anda boleh menukarnya: dari 3 kepada 10 pasukan."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
@@ -2825,12 +2719,11 @@ msgstr "Peta 30 stadium Liga Utama"
 
 #: tesis/historia.py
 msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
-msgstr "Contoh lawatan {Pasukan}: 12 lawatan secara rawak."
+msgstr ""
 
 #: tesis/historia.py
 msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
 msgstr ""
-"Anda memilih {pasukan}. Ikuti langkah 2 untuk melihat perjalanan mereka."
 
 #: tesis/historia.py
 msgid "km"
@@ -2975,7 +2868,7 @@ msgstr "Generación {gen} de {total}: {km} km"
 
 #: tesis/repeticion.py
 msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr "Ia masih tidak memenuhi bilangan perlawanan setiap pasukan."
+msgstr ""
 
 #: tesis/repeticion.py
 msgid ""
@@ -2990,9 +2883,13 @@ msgid ""
 "Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
 "temporada"
 msgstr ""
-"Peta: Setiap bulatan adalah satu pasukan; lebih besar bermakna lebih banyak "
-"batu dalam musim"
 
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
-msgstr "{pasukan}: {km} km"
+msgstr ""
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""

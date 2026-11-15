@@ -144,8 +144,6 @@ msgid ""
 "Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
 " con un recorrido guiado paso a paso."
 msgstr ""
-"Voit mennä tiimien rekisteristä nähdäksesi kalenterin virheettömästi, "
-"opastetulla vaiheittaisella kierroksella."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
@@ -295,10 +293,6 @@ msgid ""
 "viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
 "2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
 msgstr ""
-"MLB aikatauluttaa 2 430 ottelua 30 joukkueelle noin 180 päivän aikana. "
-"Jokainen joukkue matkustaa kaupunkien välillä, ja etäisyydet vaihtelevat "
-"suuresti joukkueittain. Vuonna 2016 Seattle matkusti 76 683 km ja Chicago "
-"Cubs 39 015 km."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -328,10 +322,6 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
-"<strong>Esitys:</strong> Jokainen kalenteri on puu. Sen solmut ovat "
-"operaatioita kuten <code>crear_juego</code> (päivämäärä, kotijoukkue, "
-"vierasjoukkue) ja <code>obtener_calendario</code>, jotka yhdistävät kaksi "
-"pelilistaa."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -339,9 +329,6 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
-"<strong>Kannattavuus (C1):</strong> Jokaisen joukkueen on pelattava "
-"täsmälleen sen määrän pelejä, joita turnaus vaatii. Arvo 0 tarkoittaa, että "
-"aikataulu on voimassa."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -365,8 +352,6 @@ msgid ""
 "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
 "generaciones."
 msgstr ""
-"Kokeile 30 joukkuetta, 163 ottelua per joukkue, 5 ottelun sarja ja 20 "
-"sukupolvea."
 
 #: documentacion/templates/documentacion/historico.html
 msgid "Comparación de la búsqueda aleatoria y la programación genética"
@@ -587,15 +572,13 @@ msgstr "Pimeä tila"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
-msgstr "Demo: Aikataulu ja joukkueen matkustaminen"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Genera un calendario de béisbol con programación genética y mide cuánto "
 "viaja cada equipo."
 msgstr ""
-"Se luo baseball-kalenterin geneettisellä ohjelmoinnilla ja mittaa, kuinka "
-"paljon kukin joukkue matkustaa."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
@@ -603,7 +586,7 @@ msgstr "Luo kalenteri ja"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "mide cuánto viaja cada equipo."
-msgstr "Mittaa, kuinka paljon kukin joukkue matkustaa."
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -611,9 +594,6 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"Tekoäly (geneettinen ohjelmointi) etsii kalentereita, joissa matka on lyhyt "
-"ja tasainen. Haluatko omat tiimisi? Käytä <a href=\"%(guia)s\">viiden "
-"askeleen opasta</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -624,8 +604,6 @@ msgid ""
 "Para optimizar un calendario, primero registra los equipos, la liga y el "
 "torneo, y después crea una configuración."
 msgstr ""
-"Aikataulun optimoimiseksi tallenna ensin joukkueet, liiga ja turnaus, ja luo"
-" sitten kokoonpano."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Abrir la guía"
@@ -652,7 +630,7 @@ msgstr "Aikataulu: %(torneo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
-msgstr "Jotta voit esitellä sen tiimillesi"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las respuestas que te van a pedir en clase."
@@ -689,15 +667,13 @@ msgstr "Miten sopeutan sen?"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambia equipos y reglas"
-msgstr "Vaihda joukkueita ja sääntöjä"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
 " el patrón Strategy para la medida de “viaje justo”."
 msgstr ""
-"Joukkueet ja koordinaatit on kirjattu oppaaseen. Idea tiimillesi: käytä "
-"strategiamallia \"reilun matkan\" mittarina."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¿Puedo usarlo?"
@@ -733,10 +709,6 @@ msgid ""
 "calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
 " la diferencia entre el equipo que más viaja y el que menos."
 msgstr ""
-"Selitä minulle vaihe vaiheelta, miten tämä geneettinen ohjelma luo ja arvioi"
-" aikataulun. Kerro sitten, mitä muuttaisit niin, että \"reilun "
-"matkustamisen\" mittarina olisi ero sen välillä, mikä tiimi matkustaa eniten"
-" ja se, joka matkustaa vähiten."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
@@ -842,7 +814,7 @@ msgstr "Tallenna ja jatka vaiheeseen 5"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Paso 1: equipos"
-msgstr "Vaihe 1: Joukkueet"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Puedes usar los que ya existen o agregar uno nuevo."
@@ -850,15 +822,15 @@ msgstr "Voit käyttää olemassa olevia tai lisätä uuden."
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "Katso uusimmat rekisteröidyt joukkueet"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
-msgstr "Lisää tiimi"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Lisää laitteita"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -866,7 +838,7 @@ msgstr "Jatka vaiheeseen 2: Liiga"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Tarvitset vähintään kaksi joukkuetta seuraamaan."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -877,17 +849,14 @@ msgid ""
 "En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
 " el algoritmo y generas un calendario de juegos."
 msgstr ""
-"Viiden vaiheen aikana rekisteröit joukkueet, asetat liigan ja turnauksen, "
-"valitset, miten algoritmi ajetaan ja luot peliaikataulun."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
 msgstr ""
-"Joukkueet: rekisteröi vähintään 2 joukkuetta stadionin sijainnin mukaan."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Liga: elige qué equipos juegan juntos."
-msgstr "Liiga: Valitse, mitkä joukkueet pelaavat yhdessä."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Torneo: define las fechas, las series y los juegos."
@@ -922,9 +891,6 @@ msgid ""
 "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
 "equipos: con un número impar, uno se queda sin rival en cada serie."
 msgstr ""
-"Liiga on joukkueiden ryhmä, joka pelaa toisiaan vastaan. Käytä parillista "
-"määrää joukkueita: parittomalla luvulla jokaisessa sarjassa ei ole "
-"vastustajaa."
 
 #: tesis/templates/tesis/guia/liga.html
 msgid "Guardar y seguir al paso 3"
@@ -939,9 +905,6 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"Turnauksessa pelaavat \"%(liga)s\"-liigan joukkueet. Ottelut ovat "
-"aikataulutettu maanantaista torstaihin ja lauantaisin ensimmäisen ja "
-"viimeisen päivän välille."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -987,7 +950,6 @@ msgstr "Kokeile työkalua"
 msgid ""
 "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
 msgstr ""
-"Rekisteröi joukkueita, rakenna liiga ja luo oma kalenterisi. Ei tiliä."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Sin prisa"
@@ -1060,7 +1022,7 @@ msgstr "Testauksessa"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr "%(resultado)s, %(corridas)s pelissä %(equipos)s joukkueiden kanssa"
+msgstr ""
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
@@ -1099,8 +1061,6 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Alustava tulos: %(resultado)s, %(corridas)s juoksua %(equipos)s joukkueen "
-"kanssa."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1154,7 +1114,6 @@ msgstr "Katso jokaisen julkaisun tulokset"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"Testeissä: %(resultado)s, %(corridas)s %(equipos)s joukkueiden kanssa."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1179,7 +1138,7 @@ msgstr "Lyhenne (esim. SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr "Joukkueen nimi"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1203,7 +1162,7 @@ msgstr "Desimaaliasteina. Esimerkki: -122,33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "Liigan joukkueet"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1211,7 +1170,7 @@ msgstr "Liigan nimi"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr "Valitse vähintään kaksi joukkuetta."
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
@@ -1231,7 +1190,7 @@ msgstr "Ottelut sarjoittain"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Team Series"
+msgstr ""
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1267,7 +1226,7 @@ msgstr "Sen pitäisi olla välillä 0–1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Varusteet"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1291,7 +1250,7 @@ msgstr "Suorita tämä vaihe ensin."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Lisälaitteita."
+msgstr ""
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1312,10 +1271,6 @@ msgid ""
 "1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
 "cumplen las mismas reglas de realismo."
 msgstr ""
-"Poistimme säännön, jonka mukaan kaikki 30 joukkuetta pelaavat kolmen päivän "
-"sarjoja samanaikaisesti. Sarjojen 2, 3 ja 4 pelin ja tauon myötä paras "
-"algoritmi kulkee 1,57 miljoonaa km. Virallinen kalenteri kulkee 1,74 "
-"miljoonaa km. Molemmat täyttävät samat realismin säännöt."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Ver la investigación actual, con diagramas animados"
@@ -1399,8 +1354,6 @@ msgid ""
 "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
 "árbol de programación genética."
 msgstr ""
-"Koza-TTP: kartta baseball-stadioneista, jossa on joukkueen reitti ja "
-"geneettinen ohjelmointipuu."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Ir al sitio principal"
@@ -1484,10 +1437,6 @@ msgid ""
 " de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
 " de su casa, va de estadio en estadio y regresa al final."
 msgstr ""
-"Jokainen palkki on 30 joukkueen kokonaismatka kaudessa, miljoonina "
-"kilometreinä. Vähemmän on parempi. Kaikki luvut mitattiin samalla tavalla: "
-"jokainen joukkue lähtee kodistaan, kulkee stadionilta toiselle ja palaa "
-"lopuksi."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Viaje total por versión del algoritmo"
@@ -1571,7 +1520,7 @@ msgstr "Kyllä"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
-msgstr "Parempi, mutta kaikki 30 joukkuetta pelaavat edelleen samaan aikaan."
+msgstr ""
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
@@ -1699,10 +1648,6 @@ msgid ""
 " de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
 " 3 o 4 juegos, o descansa."
 msgstr ""
-"Aiemmin kaikki 30 joukkuetta pelasivat kolmen päivän sarjoja samaan aikaan "
-"ilman taukoja. Nyt kausi on jaettu arkipäiviin (4 päivää) ja "
-"viikonloppuvuoroihin (3 päivää), aivan kuten MLB:ssä. Jokainen joukkue pelaa"
-" sarjan 2, 3 tai 4 ottelua tai taukoa."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Modelo anterior contra modelo por turnos"
@@ -1726,9 +1671,6 @@ msgid ""
 "cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
 "descansos, así las giras se pueden armar con más libertad."
 msgstr ""
-"Kuusi joukkuetta kahdeksassa vuorossa. Edellisessä mallissa kaikki pelaavat "
-"kolme päivää jokaisessa vuorossa. Vuoromallissa sarjat kestävät 2, 3 tai 4 "
-"päivää ja on taukoja, joten kiertueet voidaan järjestää vapaammin."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "3. El movimiento principal: la cadena de Kempe"
@@ -1741,10 +1683,6 @@ msgid ""
 "las series de la cadena cambian de turno al mismo tiempo. El calendario "
 "sigue siendo válido."
 msgstr ""
-"Aikataulun muuttamiseksi ilman, että joukkue pelaa kahta sarjaa yhtä aikaa, "
-"otetaan kaksi vuoroa ja niiden välillä vuorotellaan sarjaketju. Kaikki "
-"ketjun sarjat vaihtavat vuoroja samaan aikaan. Aikataulu on edelleen "
-"voimassa."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Cadena de Kempe entre el turno A y el turno B"
@@ -1763,8 +1701,6 @@ msgid ""
 "Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
 " series cambian de turno. Las demás series no se mueven."
 msgstr ""
-"Kahdeksan joukkuetta. Verkko alkaa NYA:ssa ja kulkee BOS:n, TOR:n ja BAL:n "
-"kautta. Sen neljä tuotantokautta vaihtaa vuoroja. Muut kaudet eivät liiku."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "4. ¿Por qué el recocido le ganó a la PG?"
@@ -1805,9 +1741,6 @@ msgid ""
 "apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
 "recorren todo el calendario."
 msgstr ""
-"<strong>Hän toisti samat paikat.</strong> Puun kiinteät numerot osoittavat "
-"aina samoihin vuoroihin ja joukkueisiin. Satunnaiset siirrot kulkevat koko "
-"kalenterin läpi."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Solo mejoras contra aceptar cambios peores"
@@ -1953,12 +1886,10 @@ msgid ""
 "El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
 "las hojas son los juegos (fecha, equipo local y equipo visitante)."
 msgstr ""
-"Puu on ohjelma, joka kokoaa parhaan kalenterin. Jokainen oksa liittyy "
-"peleihin; lehdet ovat pelit (päivämäärä, kotijoukkue ja vierasjoukkue)."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Viaje total de todos los equipos:"
-msgstr "Kaikkien joukkueiden kokonaismatka:"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Juegos que rompen reglas:"
@@ -1970,17 +1901,12 @@ msgid ""
 "<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
 "es válido."
 msgstr ""
-"Yksi sääntö on, että jokainen joukkue pelaa sen määrän pelejä, jotka "
-"turnauksessa vaaditaan. <strong>0 peliä, jotka rikkovat sääntöjä</strong> , "
-"tarkoittaa, että aikataulu on voimassa."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Puede tardar de unos segundos a varios minutos. Depende del número de "
 "equipos."
 msgstr ""
-"Se voi kestää muutamasta sekunnista useisiin minuutteihin. Se riippuu "
-"tietokoneiden määrästä."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "El motor está trabajando."
@@ -2052,7 +1978,7 @@ msgstr "Kaikki arvot on jo valittu. Voit muuttaa niitä tai antaa \\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Varusteiden vaihto"
+msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2068,7 +1994,7 @@ msgstr "Seuraavaksi: Katso kalenteri"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Demo: elige los equipos"
-msgstr "Demo: Valitse joukkueet"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2080,7 +2006,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Vaihe 1: Valitse varusteet"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2088,9 +2014,6 @@ msgid ""
 "tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
 "da \"Siguiente\" sin cambiar nada."
 msgstr ""
-"Algoritmi laatii aikataulun valitsemistasi joukkueista ja etsii sen, jolla "
-"on vähiten matkustamista. Olemme jo merkinneet 10 Major League -joukkuetta. "
-"Jos haluat, klikkaa \"Seuraava\" muuttamatta mitään."
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Siguiente: configuración"
@@ -2102,11 +2025,11 @@ msgstr "Haluatko katsoa koko kuninkaallisen kauden?"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
-msgstr "Katso kausi 2023: 30 joukkuetta virallista kalenteria vastaan"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Quieres registrar tus propios equipos y estadios?"
-msgstr "Haluatko rekisteröidä omat joukkueesi ja stadionisi?"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Hazlo tú mismo en la guía de 5 pasos"
@@ -2126,7 +2049,7 @@ msgstr "Uudempi algoritmi: Vuoropohjainen malli"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
-msgstr "<strong>%(nombre)s</strong>: %(n)s joukkueita."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Qué logró el algoritmo"
@@ -2134,7 +2057,7 @@ msgstr "Mitä algoritmi saavutti"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje total de todos los equipos con el calendario del algoritmo."
-msgstr "Kaikkien tiimien kokonaismatkustus algoritmin aikataulun mukaan."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje con un calendario hecho al azar, antes de optimizar."
@@ -2174,7 +2097,7 @@ msgstr "Ei pelata samaa vastustajaa vastaan kahdessa peräkkäisessä sarjassa."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
-msgstr "Kotipelit noin puolet. Tässä: %(a)s %(b)s per joukkue."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Cómo bajó el viaje"
@@ -2215,12 +2138,12 @@ msgstr "Vaihda asetuksia ja aja uudelleen"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Muiden varusteiden valinta"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
 "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
-msgstr "Katso koko kausi 2023: 30 joukkuetta virallista kalenteria vastaan"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Entender cómo funciona en 2 minutos"
@@ -2228,7 +2151,7 @@ msgstr "Ymmärrä, miten se toimii kahdessa minuutissa"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Tee se itse: rekisteröi laitteesi viiden askeleen oppaaseen"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2289,15 +2212,13 @@ msgstr "Osa 1 · Ongelma"
 
 #: tesis/templates/tesis/historia.html
 msgid "30 equipos tienen que jugar entre sí"
-msgstr "30 joukkuetta joutuu pelaamaan toisiaan vastaan"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid ""
 "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
 "partidos en una temporada."
 msgstr ""
-"Major League Baseballissa on 30 joukkuetta. Jokainen joukkue pelaa 162 "
-"ottelua kaudessa."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2319,8 +2240,6 @@ msgid ""
 "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
 "cruzar el país muchas veces."
 msgstr ""
-"Kun joukkue pelaa vieraskentällä, he matkustavat lentokoneella. Huono "
-"aikataulu pakottaa heidät kulkemaan maan halki monta kertaa."
 
 #: tesis/templates/tesis/historia.html
 msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
@@ -2328,7 +2247,7 @@ msgstr "Esimerkkiretki, jossa päivämäärät ovat satunnaisessa järjestyksess
 
 #: tesis/templates/tesis/historia.html
 msgid "Toca otro estadio para ver la gira de ese equipo."
-msgstr "Napauta toista stadionia katsoaksesi kyseisen joukkueen kiertuetta."
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Parte 2 · La idea de la tesis"
@@ -2420,8 +2339,6 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Parannettu moottori voittaa sen sattumanvaraisesti: "
-"%(resultado)salkutesteissä (%(corridas)s juoksuja %(equipos)s joukkueita)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2449,7 +2366,7 @@ msgstr "Koodi"
 
 #: tesis/templates/tesis/historia.html
 msgid "Equipo"
-msgstr "Joukkue"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Estadio"
@@ -2475,10 +2392,6 @@ msgstr ""
 "Koza-TTP: geneettinen ohjelmointi baseball-kalentereihin. Se sai alkunsa "
 "Leslie Dickinsonin (ITAM) opinnäytetyöstä, ja nykyään sillä on moottori, "
 "joka voittaa sattuman."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Parempi MLB-aikataulu geneettisellä ohjelmoinnilla."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2508,9 +2421,6 @@ msgid ""
 "equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
 "con el azar."
 msgstr ""
-"Toisto geneettisen ohjelmoinnin moottorin käytöstä kaikissa 30 Major League "
-"Baseball -joukkueessa vuonna 2023 verrattuna viralliseen aikatauluun ja "
-"sattumaan."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
@@ -2526,9 +2436,6 @@ msgid ""
 "calendario oficial de 2023 es la referencia. El motor por bloques intenta "
 "armar una temporada con menos viaje."
 msgstr ""
-"Käytämme 30 Major League Baseball -joukkuetta ja niiden varsinaisia "
-"stadioneita. Virallinen vuoden 2023 otteluohjelma on vertailukohta. "
-"Lohkopohjainen moottori pyrkii kokoamaan kauden, jossa matkustaa vähemmän."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cómo bajan los kilómetros, generación por generación"
@@ -2557,7 +2464,7 @@ msgstr "Sivuttain liukuva lauta"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de los 30 equipos en toda la temporada regular."
-msgstr "30 joukkueen matkustaminen runkosarjan aikana."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Gira más larga (juegos seguidos de visita)"
@@ -2581,7 +2488,7 @@ msgstr "Parempi satunnaisesti, samalla vaivalla"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "No cumple el número de juegos de cada equipo."
-msgstr "Se ei täytä kummankin joukkueen ottelumäärää."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2605,19 +2512,14 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"Huomautus: moottorikalenterissa on jopa <strong>%(gira)s peräkkäistä "
-"vieraspeliä</strong>. Virallisessa kalenterissa on maksimimäärä %(oficial)s."
-" Oikea joukkue ei hyväksyisi näin pitkiä kiertueita."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Jokaisen joukkueen matka"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
 msgstr ""
-"Vaihda kahden otteluohjelman välillä nähdäksesi, mitkä joukkueet matkustavat"
-" eniten."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Calendario del mapa"
@@ -2633,7 +2535,7 @@ msgstr "Moottori"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
-msgstr "Katso kaikki 30 joukkuetta taulukkona"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
@@ -2660,8 +2562,6 @@ msgid ""
 "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
 "equipo sale de su casa, viaja de estadio en estadio y regresa al final."
 msgstr ""
-"Etäisyydet: suora linja stadionien välillä (semiverse-kaava). Jokainen "
-"joukkue lähtee kodistaan, matkustaa stadionilta toiselle ja palaa lopuksi."
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2729,7 +2629,7 @@ msgstr "Käännös B"
 
 #: documentacion/investigacion.py
 msgid "1. Elegimos un equipo y dos turnos"
-msgstr "1. Valitsemme tiimin ja kaksi vuoroa"
+msgstr ""
 
 #: documentacion/investigacion.py
 msgid "2. Seguimos la cadena: A, B, A, B…"
@@ -2789,13 +2689,11 @@ msgstr "Valinnainen. Jos jätät asian tähän, tätä nimeä käytetään."
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "Turnausjoukkueet"
+msgstr ""
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
 msgstr ""
-"Olemme jo tehneet 10 pistettä. Voit vaihtaa ne: 3:sta kymmeneen "
-"joukkueeseen."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
@@ -2811,11 +2709,11 @@ msgstr "Kartta Major Leaguen 30 stadionista"
 
 #: tesis/historia.py
 msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
-msgstr "{Tiimi} esimerkkikierros: 12 vierailua satunnaisessa järjestyksessä."
+msgstr ""
 
 #: tesis/historia.py
 msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
-msgstr "Valitsit {tiimin}. Seuraa vaihetta 2 nähdäksesi heidän matkansa."
+msgstr ""
 
 #: tesis/historia.py
 msgid "km"
@@ -2958,7 +2856,7 @@ msgstr "Generación {gen} de {total}: {km} km"
 
 #: tesis/repeticion.py
 msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr "Se ei silti yllä kummankin joukkueen ottelumäärään."
+msgstr ""
 
 #: tesis/repeticion.py
 msgid ""
@@ -2973,9 +2871,13 @@ msgid ""
 "Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
 "temporada"
 msgstr ""
-"Kartta: Jokainen ympyrä on joukkue; suurempi tarkoittaa enemmän maileja "
-"kaudella"
 
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
-msgstr "{team}: {km} km"
+msgstr ""
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""

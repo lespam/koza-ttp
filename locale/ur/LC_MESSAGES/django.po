@@ -143,8 +143,6 @@ msgid ""
 "Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
 " con un recorrido guiado paso a paso."
 msgstr ""
-"آپ ٹیم رجسٹر سے جا کر کیلنڈر بغیر کسی غلطی کے دیکھ سکتے ہیں، جس میں ایک "
-"رہنمائی شدہ مرحلہ وار دورہ ہوتا ہے۔"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
@@ -290,10 +288,6 @@ msgid ""
 "viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
 "2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
 msgstr ""
-"ایم ایل بی تقریبا 180 دنوں میں 30 ٹیموں کے لیے 2,430 میچز شیڈول کرتا ہے۔ ہر "
-"ٹیم شہروں کے درمیان سفر کرتی ہے، اور فاصلہ ٹیم سے ٹیم میں بہت مختلف ہوتا ہے۔"
-" 2016 میں، سیئٹل نے 76,683 کلومیٹر کا سفر کیا، اور شکاگو کبز نے 39,015 "
-"کلومیٹر۔"
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -322,9 +316,6 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
-"<strong>نمائندگی:</strong> ہر کیلنڈر ایک درخت ہے۔ اس کے نوڈز آپریشنز ہیں "
-"جیسے <code>crear_juego</code> (تاریخ، ہوم ٹیم، اوے ٹیم) اور "
-"<code>obtener_calendario</code>، جو دو کھیلوں کی فہرستوں میں شامل ہوتے ہیں۔"
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -332,8 +323,6 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
-"<strong>قابل عمل (C1):</strong> ہر ٹیم کو بالکل وہی میچز کھیلنے ہوں گے جتنے "
-"ٹورنامنٹ میں کہا گیا ہو۔ 0 کی قیمت کا مطلب ہے کہ شیڈول درست ہے۔"
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -358,7 +347,6 @@ msgid ""
 "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
 "generaciones."
 msgstr ""
-"30 ٹیمیں، ہر ٹیم میں 163 میچز، 5 میچز کی سیریز، اور 20 جنریشنز آزما لیں۔"
 
 #: documentacion/templates/documentacion/historico.html
 msgid "Comparación de la búsqueda aleatoria y la programación genética"
@@ -579,15 +567,13 @@ msgstr "ڈارک موڈ"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
-msgstr "ڈیمو: شیڈول اور ٹیم ٹریول"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Genera un calendario de béisbol con programación genética y mide cuánto "
 "viaja cada equipo."
 msgstr ""
-"یہ ایک بیس بال کیلنڈر تیار کرتا ہے جس میں جینیاتی پروگرامنگ ہوتی ہے اور یہ "
-"ماپتا ہے کہ ہر ٹیم کتنی سفر کرتی ہے۔"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
@@ -595,7 +581,7 @@ msgstr "کیلنڈر تیار کریں اور"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "mide cuánto viaja cada equipo."
-msgstr "ہر ٹیم کا سفر کتنا ہوتا ہے اس کی پیمائش۔"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -603,9 +589,6 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI (جینیاتی پروگرامنگ) ایسے کیلنڈرز تلاش کرتا ہے جہاں سفر مختصر اور یکساں "
-"ہو۔ کیا آپ اپنی ٹیمیں چاہتے ہیں؟ <a href=\"%(guia)s\">5-اسٹیپ گائیڈ</a> "
-"استعمال کریں۔"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -616,8 +599,6 @@ msgid ""
 "Para optimizar un calendario, primero registra los equipos, la liga y el "
 "torneo, y después crea una configuración."
 msgstr ""
-"شیڈول کو بہتر بنانے کے لیے، پہلے ٹیموں، لیگ، اور ٹورنامنٹ کو ریکارڈ کریں، "
-"اور پھر ایک کنفیگریشن بنائیں۔"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Abrir la guía"
@@ -643,7 +624,7 @@ msgstr "شیڈول: %(torneo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
-msgstr "اسے اپنی ٹیم سے متعارف کروانے کے لیے"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las respuestas que te van a pedir en clase."
@@ -680,15 +661,13 @@ msgstr "میں اسے کیسے ڈھالوں؟"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambia equipos y reglas"
-msgstr "ٹیمیں اور قواعد تبدیل کریں"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
 " el patrón Strategy para la medida de “viaje justo”."
 msgstr ""
-"ٹیمیں اور کوآرڈینیٹس گائیڈ میں درج ہیں۔ آپ کی ٹیم کے لیے ایک خیال: \"منصفانہ"
-" سفر\" کے پیمانے کے لیے اسٹریٹیجی پیٹرن استعمال کریں۔"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¿Puedo usarlo?"
@@ -724,9 +703,6 @@ msgid ""
 "calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
 " la diferencia entre el equipo que más viaja y el que menos."
 msgstr ""
-"مجھے قدم بہ قدم سمجھائیں کہ یہ جینیاتی پروگرام شیڈول کیسے بناتا اور جانچتا "
-"ہے۔ پھر مجھے بتائیں کہ آپ کیا بدلنا چاہیں گے تاکہ \"منصفانہ سفر\" کا پیمانہ "
-"سب سے زیادہ سفر کرنے والی اور سب سے کم سفر کرنے والی ٹیم کے درمیان فرق ہو۔"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
@@ -833,7 +809,7 @@ msgstr "محفوظ کریں اور مرحلہ 5 پر جاری رکھیں"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Paso 1: equipos"
-msgstr "مرحلہ 1: ٹیمیں"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Puedes usar los que ya existen o agregar uno nuevo."
@@ -841,15 +817,15 @@ msgstr "آپ موجودہ استعمال کر سکتے ہیں یا نیا شام
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "تازہ ترین رجسٹرڈ ٹیمیں دیکھیں"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
-msgstr "ٹیم شامل کریں"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "آلات کا اضافہ"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -857,7 +833,7 @@ msgstr "مرحلہ 2: لیگ تک جاری رکھیں"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "آپ کو کم از کم 2 ٹیمیں فالو کرنے کی ضرورت ہوتی ہے۔"
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -868,16 +844,14 @@ msgid ""
 "En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
 " el algoritmo y generas un calendario de juegos."
 msgstr ""
-"پانچ مراحل میں آپ ٹیمیں رجسٹر کرتے ہیں، لیگ اور ٹورنامنٹ سیٹ اپ کرتے ہیں، "
-"الگورتھم چلانے کا طریقہ منتخب کرتے ہیں اور میچ شیڈول تیار کرتے ہیں۔"
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
-msgstr "ٹیمیں: کم از کم 2 ٹیمیں رجسٹر کریں، اپنے اسٹیڈیم کی جگہ کے ساتھ۔"
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Liga: elige qué equipos juegan juntos."
-msgstr "لیگ: منتخب کریں کہ کون سی ٹیمیں ایک ساتھ کھیلتی ہیں۔"
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Torneo: define las fechas, las series y los juegos."
@@ -912,9 +886,6 @@ msgid ""
 "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
 "equipos: con un número impar, uno se queda sin rival en cada serie."
 msgstr ""
-"لیگ وہ ٹیموں کا گروپ ہے جو ایک دوسرے کے خلاف کھیلتی ہیں۔ ٹیموں کی تعداد جفت "
-"استعمال کریں: اگر تعداد طاق ہو تو ہر سیریز میں ایک ٹیم بغیر حریف کے رہ جاتی "
-"ہے۔"
 
 #: tesis/templates/tesis/guia/liga.html
 msgid "Guardar y seguir al paso 3"
@@ -929,8 +900,6 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"ٹورنامنٹ میں \"%(liga)s\" لیگ کی ٹیمیں شامل ہوتی ہیں۔ میچز پیر سے جمعرات اور"
-" ہفتہ کو، پہلے اور آخری دن کے درمیان، شیڈول کیے جاتے ہیں۔"
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -976,7 +945,6 @@ msgstr "آلے کو آزمائیں"
 msgid ""
 "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
 msgstr ""
-"ٹیمیں رجسٹر کریں، لیگ بنائیں، اور اپنا کیلنڈر بنائیں۔ کوئی اکاؤنٹ نہیں۔"
 
 #: tesis/templates/tesis/inicio.html
 msgid "Sin prisa"
@@ -1050,7 +1018,7 @@ msgstr "ٹیسٹنگ میں"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr "%(resultado)s، %(corridas)s رنز میں %(equipos)s ٹیموں کے ساتھ"
+msgstr ""
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
@@ -1089,8 +1057,6 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"ابتدائی نتیجہ: %(resultado)s، %(equipos)s ٹیموں کے ساتھ %(corridas)s رنز "
-"میں۔"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1143,7 +1109,6 @@ msgstr "ہر ریلیز کے نتائج دیکھیں"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"ٹیسٹ میں: %(resultado)s، %(equipos)s ٹیموں کے ساتھ %(corridas)s رنز میں۔"
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1167,7 +1132,7 @@ msgstr "مخفف (مثلا، SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr "ٹیم کا نام"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1191,7 +1156,7 @@ msgstr "اعشاریہ درجے میں۔ مثال: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "لیگ ٹیمیں"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1199,7 +1164,7 @@ msgstr "لیگ کا نام"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr "کم از کم دو ٹیمیں منتخب کریں۔"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
@@ -1219,7 +1184,7 @@ msgstr "سیریز کے لحاظ سے کھیل"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "ٹیم سیریز"
+msgstr ""
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1255,7 +1220,7 @@ msgstr "یہ 0 سے 1 کے درمیان ہونا چاہیے۔"
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "آلات"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1279,7 +1244,7 @@ msgstr "پہلے یہ مرحلہ مکمل کریں۔"
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "اضافی سازوسامان۔"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1300,10 +1265,6 @@ msgid ""
 "1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
 "cumplen las mismas reglas de realismo."
 msgstr ""
-"ہم نے یہ اصول ہٹا دیا کہ تمام 30 ٹیمیں ایک ہی وقت میں 3 دن کی سیریز کھیلتی "
-"ہیں۔ 2، 3 اور 4 گیمز اور وقفوں کی سیریز کے ساتھ، بہترین الگورتھم 1.57 ملین "
-"کلومیٹر سفر کرتا ہے۔ سرکاری کیلنڈر 1.74 ملین کا سفر کرتا ہے۔ دونوں حقیقت "
-"پسندی کے ایک ہی اصولوں پر پورا اترتے ہیں۔"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Ver la investigación actual, con diagramas animados"
@@ -1386,8 +1347,6 @@ msgid ""
 "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
 "árbol de programación genética."
 msgstr ""
-"Koza-TTP: بیس بال اسٹیڈیمز کا نقشہ جس میں ٹیم کا راستہ اور جینیاتی پروگرامنگ"
-" ٹری شامل ہے۔"
 
 #: documentacion/templates/documentacion/base.html
 msgid "Ir al sitio principal"
@@ -1470,9 +1429,6 @@ msgid ""
 " de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
 " de su casa, va de estadio en estadio y regresa al final."
 msgstr ""
-"ہر بار ایک سیزن میں 30 ٹیموں کا کل سفر ہے، لاکھوں کلومیٹر میں۔ کم بہتر ہے۔ "
-"تمام اعداد و شمار ایک ہی طرح ناپے گئے: ہر ٹیم اپنے گھر سے نکلتی ہے، اسٹیڈیم "
-"سے اسٹیڈیم جاتی ہے اور آخر میں واپس آتی ہے۔"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Viaje total por versión del algoritmo"
@@ -1556,7 +1512,7 @@ msgstr "جی ہاں"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
-msgstr "بہتر، لیکن تمام 30 ٹیمیں اب بھی ایک ہی وقت میں کھیل رہی ہیں۔"
+msgstr ""
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
@@ -1683,10 +1639,6 @@ msgid ""
 " de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
 " 3 o 4 juegos, o descansa."
 msgstr ""
-"پہلے، تمام 30 ٹیمیں ایک ہی وقت میں 3 دن کی سیریز کھیلتی تھیں، بغیر کسی وقفے "
-"کے۔ اب سیزن کو ہفتہ وار دن (4 دن) اور ویک اینڈ (3 دن) شفٹوں میں تقسیم کیا "
-"گیا ہے، بالکل MLB کی طرح۔ ہر ٹیم 2، 3 یا 4 میچز کی سیریز کھیلتی ہے، یا آرام "
-"کرتی ہے۔"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Modelo anterior contra modelo por turnos"
@@ -1710,9 +1662,6 @@ msgid ""
 "cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
 "descansos, así las giras se pueden armar con más libertad."
 msgstr ""
-"آٹھ شفٹوں میں چھ ٹیمیں۔ پچھلے ماڈل میں ہر شفٹ میں ہر شخص 3 دن کھیلتا تھا۔ "
-"شفٹ ماڈل میں سیریز 2، 3 یا 4 دن تک چلتی ہے اور وقفے ہوتے ہیں، اس لیے ٹورز کو"
-" زیادہ آزادی کے ساتھ ترتیب دیا جا سکتا ہے۔"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "3. El movimiento principal: la cadena de Kempe"
@@ -1725,9 +1674,6 @@ msgid ""
 "las series de la cadena cambian de turno al mismo tiempo. El calendario "
 "sigue siendo válido."
 msgstr ""
-"شیڈول تبدیل کرنے کے لیے بغیر کسی ٹیم کے جو ایک ساتھ دو سیریز کھیل رہی ہو، دو"
-" ٹرنز اور ان کے درمیان باری باری سیریز کی چین لی جاتی ہے۔ چین کی تمام سیریز "
-"ایک ہی وقت میں تبدیل ہوتی ہیں۔ شیڈول اب بھی درست ہے۔"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Cadena de Kempe entre el turno A y el turno B"
@@ -1746,8 +1692,6 @@ msgid ""
 "Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
 " series cambian de turno. Las demás series no se mueven."
 msgstr ""
-"آٹھ ٹیمیں۔ نیٹ ورک NYA سے شروع ہوتا ہے اور BOS، TOR اور BAL سے گزرتا ہے۔ اس "
-"کی چار سیریز تبدیل ہوتی ہیں۔ دوسری سیریز منتقل نہیں ہوتی۔"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "4. ¿Por qué el recocido le ganó a la PG?"
@@ -1786,9 +1730,6 @@ msgid ""
 "apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
 "recorren todo el calendario."
 msgstr ""
-"<strong>اس نے وہی جگہیں دہرائیں۔</strong> درخت میں مقررہ نمبر ہمیشہ ایک ہی "
-"ٹرنز اور ٹیموں کی طرف اشارہ کرتے ہیں۔ پورے کیلنڈر میں بے ترتیب حرکات چلتی "
-"ہیں۔"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Solo mejoras contra aceptar cambios peores"
@@ -1933,12 +1874,10 @@ msgid ""
 "El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
 "las hojas son los juegos (fecha, equipo local y equipo visitante)."
 msgstr ""
-"درخت وہ پروگرام ہے جو بہترین کیلنڈر تیار کرتا ہے۔ ہر شاخ کھیلوں میں شامل "
-"ہوتی ہے؛ پتے کھیل ہوتے ہیں (تاریخ، ہوم ٹیم، اور اوے ٹیم)۔"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Viaje total de todos los equipos:"
-msgstr "تمام ٹیموں کا کل سفر:"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Juegos que rompen reglas:"
@@ -1950,15 +1889,12 @@ msgid ""
 "<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
 "es válido."
 msgstr ""
-"ایک اصول یہ ہے کہ ہر ٹیم ٹورنامنٹ کے مطابق اتنے میچز کھیلے گی۔ <strong>اگر 0"
-" میچ قواعد کی خلاف ورزی</strong> کریں تو شیڈول درست ہے۔"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Puede tardar de unos segundos a varios minutos. Depende del número de "
 "equipos."
 msgstr ""
-"یہ چند سیکنڈ سے کئی منٹ تک لے سکتا ہے۔ یہ کمپیوٹرز کی تعداد پر منحصر ہے۔"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "El motor está trabajando."
@@ -2032,7 +1968,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "سامان تبدیل کریں"
+msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2048,7 +1984,7 @@ msgstr "اگلا: کیلنڈر دیکھیں"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Demo: elige los equipos"
-msgstr "ڈیمو: ٹیمیں منتخب کریں"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2060,7 +1996,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "مرحلہ 1: آلات کا انتخاب کریں"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2068,9 +2004,6 @@ msgid ""
 "tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
 "da \"Siguiente\" sin cambiar nada."
 msgstr ""
-"الگورتھم آپ کی منتخب کردہ ٹیموں کا شیڈول بناتا ہے اور کم سفر والی ٹیموں کو "
-"تلاش کرتا ہے۔ ہم پہلے ہی 10 میجر لیگ ٹیموں کو نشان زد کر چکے ہیں۔ اگر آپ "
-"چاہیں تو بغیر کچھ بدلے \"Next\" پر کلک کریں۔"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Siguiente: configuración"
@@ -2082,11 +2015,11 @@ msgstr "کیا آپ مکمل شاہی سیزن دیکھنا پسند کرتے ہ
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
-msgstr "2023 کا سیزن دیکھیں: سرکاری کیلنڈر کے خلاف 30 ٹیمیں"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Quieres registrar tus propios equipos y estadios?"
-msgstr "کیا آپ اپنی ٹیمیں اور اسٹیڈیمز خود رجسٹر کرنا چاہتے ہیں؟"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Hazlo tú mismo en la guía de 5 pasos"
@@ -2106,7 +2039,7 @@ msgstr "نیا الگورتھم: ٹرن بیسڈ ماڈل"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
-msgstr "<strong>%(nombre)s</strong>: %(n)s ٹیمیں۔"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Qué logró el algoritmo"
@@ -2114,7 +2047,7 @@ msgstr "الگورتھم نے کیا حاصل کیا"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje total de todos los equipos con el calendario del algoritmo."
-msgstr "الگورتھم کے شیڈول کے ساتھ تمام ٹیموں کا کل سفر۔"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje con un calendario hecho al azar, antes de optimizar."
@@ -2153,7 +2086,7 @@ msgstr "دو سیریز میں ایک ہی مخالف کے خلاف نہ کھی�
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
-msgstr "ہوم میچز تقریبا آدھے میں۔ یہاں: ہر ٹیم کے لیے %(a)s سے %(b)s ۔"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Cómo bajó el viaje"
@@ -2195,12 +2128,12 @@ msgstr "سیٹنگز تبدیل کریں اور دوبارہ چلائیں"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "دیگر آلات کا انتخاب"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
 "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
-msgstr "پورا 2023 سیزن دیکھیں: سرکاری کیلنڈر کے خلاف 30 ٹیمیں"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Entender cómo funciona en 2 minutos"
@@ -2208,7 +2141,7 @@ msgstr "دو منٹ میں سمجھ جائیں کہ یہ کیسے کام کرت�
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "خود کریں: اپنا سامان پانچ مرحلوں کی رہنمائی میں درج کریں"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2269,14 +2202,13 @@ msgstr "حصہ 1 · مسئلہ"
 
 #: tesis/templates/tesis/historia.html
 msgid "30 equipos tienen que jugar entre sí"
-msgstr "30 ٹیموں کو ایک دوسرے کے خلاف کھیلنا ہوتا ہے"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid ""
 "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
 "partidos en una temporada."
 msgstr ""
-"میجر لیگ بیس بال میں 30 ٹیمیں ہیں۔ ہر ٹیم ایک سیزن میں 162 میچ کھیلتی ہے۔"
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2298,8 +2230,6 @@ msgid ""
 "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
 "cruzar el país muchas veces."
 msgstr ""
-"جب کوئی ٹیم روڈ پر کھیلتی ہے تو وہ ہوائی جہاز کے ذریعے سفر کرتی ہے۔ خراب "
-"شیڈول انہیں کئی بار ملک پار کرنے پر مجبور کرتا ہے۔"
 
 #: tesis/templates/tesis/historia.html
 msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
@@ -2307,7 +2237,7 @@ msgstr "ایک مثال ٹور ٹرپ، جس میں تاریخیں تصادفی 
 
 #: tesis/templates/tesis/historia.html
 msgid "Toca otro estadio para ver la gira de ese equipo."
-msgstr "اس ٹیم کا دورہ دیکھنے کے لیے کسی اور اسٹیڈیم پر ٹیپ کریں۔"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Parte 2 · La idea de la tesis"
@@ -2398,8 +2328,6 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"بہتر انجن، بلاکس کے ذریعے، اسے تصادفی طور پر شکست دیتا ہے: %(resultado)s، "
-"ابتدائی ٹیسٹس (%(corridas)s رنز، %(equipos)s ٹیموں میں)۔"
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2427,7 +2355,7 @@ msgstr "کوڈ"
 
 #: tesis/templates/tesis/historia.html
 msgid "Equipo"
-msgstr "ٹیم"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Estadio"
@@ -2455,10 +2383,6 @@ msgstr ""
 "موقع پر قابو پا لیتا ہے۔"
 
 #: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "بہتر MLB شیڈول جس میں جینیاتی پروگرامنگ شامل ہو۔"
-
-#: tesis/templates/tesis/inicio.html
 msgid ""
 "Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
 "azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
@@ -2484,8 +2408,6 @@ msgid ""
 "equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
 "con el azar."
 msgstr ""
-"یہ 2023 میں تمام 30 میجر لیگ بیس بال ٹیموں کے ساتھ جینیاتی پروگرامنگ انجن کی"
-" تکرار ہے، سرکاری شیڈول اور قسمت کے مقابلے میں۔"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
@@ -2501,9 +2423,6 @@ msgid ""
 "calendario oficial de 2023 es la referencia. El motor por bloques intenta "
 "armar una temporada con menos viaje."
 msgstr ""
-"ہم 30 میجر لیگ بیس بال ٹیموں اور ان کے اصل اسٹیڈیمز استعمال کرتے ہیں۔ 2023 "
-"کا سرکاری شیڈول حوالہ ہے۔ بلاک پر مبنی انجن کم سفر کے ساتھ سیزن بنانے کی "
-"کوشش کرتا ہے۔"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cómo bajan los kilómetros, generación por generación"
@@ -2531,7 +2450,7 @@ msgstr "سائیڈ ویز سلائیڈنگ بورڈ"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de los 30 equipos en toda la temporada regular."
-msgstr "ریگولر سیزن کے دوران 30 ٹیموں کا سفر۔"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Gira más larga (juegos seguidos de visita)"
@@ -2555,7 +2474,7 @@ msgstr "بے ترتیب طور پر بہتر، اسی کوشش کے ساتھ"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "No cumple el número de juegos de cada equipo."
-msgstr "یہ ہر ٹیم کے میچز کی تعداد پر پورا نہیں اترتا۔"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2579,19 +2498,14 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"نوٹ: انجن کیلنڈر میں <strong> لگاتار%(gira)s دور دراز میچز</strong> کے دورے "
-"ہوتے ہیں۔ سرکاری کیلنڈر میں زیادہ سے زیادہ %(oficial)sہوتا ہے۔ ایک حقیقی ٹیم"
-" اتنے لمبے دورے قبول نہیں کرتی۔"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "ہر ٹیم کا سفر"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
 msgstr ""
-"دونوں شیڈولز کے درمیان تبدیلی کریں تاکہ معلوم ہو سکے کہ کون سی ٹیمیں سب سے "
-"زیادہ سفر کرتی ہیں۔"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Calendario del mapa"
@@ -2607,7 +2521,7 @@ msgstr "انجن"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
-msgstr "تمام 30 ٹیموں کو ایک جدول کے طور پر دیکھیں"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
@@ -2634,8 +2548,6 @@ msgid ""
 "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
 "equipo sale de su casa, viaja de estadio en estadio y regresa al final."
 msgstr ""
-"فاصلے: اسٹیڈیمز کے درمیان سیدھی لائن (سیمی ورس فارمولا)۔ ہر ٹیم اپنے گھر سے "
-"نکلتی ہے، اسٹیڈیم سے اسٹیڈیم تک جاتی ہے اور آخر میں واپس آتی ہے۔"
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2703,7 +2615,7 @@ msgstr "ٹرن بی"
 
 #: documentacion/investigacion.py
 msgid "1. Elegimos un equipo y dos turnos"
-msgstr "1. ہم ایک ٹیم اور دو شفٹیں منتخب کرتے ہیں"
+msgstr ""
 
 #: documentacion/investigacion.py
 msgid "2. Seguimos la cadena: A, B, A, B…"
@@ -2763,13 +2675,11 @@ msgstr "اختیاری۔ اگر آپ بس اتنا ہی کریں تو یہ نا�
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "ٹورنامنٹ ٹیمیں"
+msgstr ""
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
 msgstr ""
-"ہم پہلے ہی 10 اسکور کر چکے ہیں۔ آپ انہیں تبدیل کر سکتے ہیں: 3 سے 10 ٹیموں "
-"تک۔"
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
@@ -2785,12 +2695,11 @@ msgstr "میجر لیگ کے 30 اسٹیڈیمز کا نقشہ"
 
 #: tesis/historia.py
 msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
-msgstr "{ٹیم} مثال ٹور: 12 دورے بے ترتیب ترتیب میں۔"
+msgstr ""
 
 #: tesis/historia.py
 msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
 msgstr ""
-"آپ نے {team} کا انتخاب کیا۔ ان کے سفر دیکھنے کے لیے مرحلہ 2 پر عمل کریں۔"
 
 #: tesis/historia.py
 msgid "km"
@@ -2933,7 +2842,7 @@ msgstr "Generación {gen} de {total}: {km} km"
 
 #: tesis/repeticion.py
 msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr "یہ اب بھی ہر ٹیم کے میچز کی تعداد پوری نہیں کرتا۔"
+msgstr ""
 
 #: tesis/repeticion.py
 msgid ""
@@ -2946,8 +2855,14 @@ msgstr ""
 msgid ""
 "Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
 "temporada"
-msgstr "نقشہ: ہر دائرہ ایک ٹیم ہے؛ بڑا ہونے کا مطلب ہے سیزن میں زیادہ میل"
+msgstr ""
 
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
-msgstr "{ٹیم}: {km} کلومیٹر"
+msgstr ""
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""

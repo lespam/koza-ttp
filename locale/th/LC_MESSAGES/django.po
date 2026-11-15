@@ -141,8 +141,6 @@ msgid ""
 "Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
 " con un recorrido guiado paso a paso."
 msgstr ""
-"คุณสามารถเข้าไปที่ทะเบียนทีมเพื่อดูปฏิทินโดยไม่มีข้อผิดพลาด "
-"พร้อมคําแนะนําทีละขั้นตอน"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
@@ -286,10 +284,6 @@ msgid ""
 "viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
 "2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
 msgstr ""
-"MLB กําหนดการแข่งขัน 2,430 เกมสําหรับ 30 ทีมในเวลาประมาณ 180 "
-"วันแต่ละทีมเดินทางระหว่างเมืองต่าง ๆ และระยะทางแตกต่างกันมากในแต่ละทีมในปี "
-"2016 ซีแอตเทิลเดินทาง 76,683 กิโลเมตร และชิคาโก คับส์ เดินทาง 39,015 "
-"กิโลเมตร"
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -318,9 +312,6 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
-"<strong>การแทนค่า:</strong> แต่ละปฏิทินเป็นต้นไม้โหนดของมันเป็นการดําเนินการ"
-" เช่น <code>crear_juego</code> (วันที่, ทีมเหย้า, ทีมเยือน) และ "
-"<code>obtener_calendario</code>, ซึ่งรวมสองรายการเกมเข้าด้วยกัน"
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -328,9 +319,6 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
-"ความ<strong>เป็นไปได้ (C1):</strong> "
-"แต่ละทีมต้องเล่นจํานวนเกมตามที่ทัวร์นาเมนต์กําหนดไว้อย่างแม่นยําค่า 0 "
-"หมายความว่าตารางการแข่งขันนั้นถูกต้อง"
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -353,7 +341,7 @@ msgstr ""
 msgid ""
 "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
 "generaciones."
-msgstr "ลอง 30 ทีม, 163 เกมต่อทีม, ซีรีส์ 5 เกม และ 20 เจเนอเรชัน"
+msgstr ""
 
 #: documentacion/templates/documentacion/historico.html
 msgid "Comparación de la búsqueda aleatoria y la programación genética"
@@ -566,14 +554,13 @@ msgstr "โหมดมืด"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
-msgstr "สาธิต: ตารางเวลาและการเดินทางของทีม"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Genera un calendario de béisbol con programación genética y mide cuánto "
 "viaja cada equipo."
 msgstr ""
-"มันสร้างปฏิทินเบสบอลพร้อมโปรแกรมพันธุกรรมและวัดระยะทางที่แต่ละทีมเดินทาง"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
@@ -581,7 +568,7 @@ msgstr "สร้างปฏิทินและ"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "mide cuánto viaja cada equipo."
-msgstr "วัดระยะทางที่แต่ละทีมเดินทาง"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -589,9 +576,6 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI (โปรแกรมพันธุกรรม) "
-"จะมองหาปฏิทินที่การเดินทางสั้นและสม่ําเสมออยากมีทีมของตัวเองไหม?ใช้<a "
-"href=\"%(guia)s\">คู่มือ 5 ขั้นตอน</a>"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -602,8 +586,6 @@ msgid ""
 "Para optimizar un calendario, primero registra los equipos, la liga y el "
 "torneo, y después crea una configuración."
 msgstr ""
-"เพื่อเพิ่มประสิทธิภาพตารางเวลา ให้บันทึกทีม ลีก และทัวร์นาเมนต์ก่อน "
-"จากนั้นจึงสร้างการตั้งค่า"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Abrir la guía"
@@ -629,7 +611,7 @@ msgstr "กําหนดการ: %(torneo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
-msgstr "เพื่อแนะนําให้กับทีมของคุณ"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las respuestas que te van a pedir en clase."
@@ -665,15 +647,13 @@ msgstr "ฉันจะปรับมันยังไงดี?"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambia equipos y reglas"
-msgstr "เปลี่ยนทีมและกติกา"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
 " el patrón Strategy para la medida de “viaje justo”."
 msgstr ""
-"ทีมและพิกัดจะถูกบันทึกไว้ในคู่มือไอเดียสําหรับทีมของคุณ: "
-"ใช้รูปแบบกลยุทธ์สําหรับการวัด \"การเดินทางที่ยุติธรรม\""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¿Puedo usarlo?"
@@ -709,9 +689,6 @@ msgid ""
 "calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
 " la diferencia entre el equipo que más viaja y el que menos."
 msgstr ""
-"อธิบายทีละขั้นตอนว่าโปรแกรมพันธุกรรมนี้สร้างและประเมินตารางอย่างไรแล้วบอกฉันว่าคุณจะเปลี่ยนแปลงอะไรเพื่อให้การวัด"
-" \"การเดินทางอย่างเป็นธรรม\" "
-"เป็นความแตกต่างระหว่างทีมที่เดินทางมากที่สุดกับทีมที่เดินทางน้อยที่สุด"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
@@ -817,7 +794,7 @@ msgstr "บันทึกและดําเนินการต่อไป
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Paso 1: equipos"
-msgstr "ขั้นตอนที่ 1: ทีม"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Puedes usar los que ya existen o agregar uno nuevo."
@@ -825,15 +802,15 @@ msgstr "คุณสามารถใช้ระบบที่มีอยู
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "ดูทีมที่ลงทะเบียนล่าสุด"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
-msgstr "เพิ่มทีม"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "เพิ่มอุปกรณ์"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -841,7 +818,7 @@ msgstr "ไปยังขั้นตอนที่ 2: ลีก"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "คุณต้องมีทีมอย่างน้อย 2 ทีมเพื่อตาม"
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -852,16 +829,14 @@ msgid ""
 "En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
 " el algoritmo y generas un calendario de juegos."
 msgstr ""
-"ใน 5 ขั้นตอน คุณสามารถลงทะเบียนทีม ตั้งลีกและทัวร์นาเมนต์ "
-"เลือกวิธีรันอัลกอริทึม และสร้างตารางการแข่งขัน"
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
-msgstr "จํานวนทีม: ลงทะเบียนอย่างน้อย 2 ทีม พร้อมสถานที่ตั้งของสนาม"
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Liga: elige qué equipos juegan juntos."
-msgstr "ลีก: เลือกทีมที่เล่นร่วมกัน"
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Torneo: define las fechas, las series y los juegos."
@@ -895,8 +870,6 @@ msgid ""
 "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
 "equipos: con un número impar, uno se queda sin rival en cada serie."
 msgstr ""
-"ลีกคือกลุ่มของทีมที่เล่นกันเองใช้จํานวนทีมเป็นเลขคู่: ถ้าเป็นเลขคี่ "
-"ทีมหนึ่งจะไม่มีคู่แข่งในแต่ละซีรีส์"
 
 #: tesis/templates/tesis/guia/liga.html
 msgid "Guardar y seguir al paso 3"
@@ -911,9 +884,6 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"การแข่งขันใช้ทีมจากลีก "
-"\"%(liga)s\"การแข่งขันจัดขึ้นตั้งแต่วันจันทร์ถึงวันพฤหัสบดี "
-"และวันเสาร์ระหว่างวันแรกกับวันสุดท้าย"
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -958,7 +928,7 @@ msgstr "ลองใช้เครื่องมือ"
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
-msgstr "ลงทะเบียนทีม สร้างลีก และสร้างปฏิทินของคุณเองไม่ต้องมีบัญชี"
+msgstr ""
 
 #: tesis/templates/tesis/inicio.html
 msgid "Sin prisa"
@@ -1032,7 +1002,7 @@ msgstr "ในการทดสอบ"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr "%(resultado)s, ใน %(corridas)s ครั้งกับทีม%(equipos)s"
+msgstr ""
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
@@ -1069,7 +1039,6 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"ผลเบื้องต้น: %(resultado)sครั้ง จาก %(corridas)s รอบกับ %(equipos)s ทีม"
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1121,7 +1090,7 @@ msgstr "ดูผลลัพธ์ของแต่ละการปล่อ
 #: tesis/templates/tesis/inicio.html
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
-msgstr "ในเทสต์: %(resultado)s, %(corridas)s รันกับทีม%(equipos)s"
+msgstr ""
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1145,7 +1114,7 @@ msgstr "ตัวย่อ (เช่น SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr "ชื่อทีม"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1169,7 +1138,7 @@ msgstr "ในองศาทศนิยมตัวอย่าง: -122.33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "ทีมในลีก"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1177,7 +1146,7 @@ msgstr "ชื่อลีก"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr "เลือกอย่างน้อย 2 ทีม"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
@@ -1197,7 +1166,7 @@ msgstr "เกมตามซีรีส์"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "ซีรีส์ทีม"
+msgstr ""
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1233,7 +1202,7 @@ msgstr "มันควรอยู่ระหว่าง 0 ถึง 1"
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "อุปกรณ์"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1257,7 +1226,7 @@ msgstr "ทําขั้นตอนนี้ให้เสร็จก่อ
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "เพิ่มอุปกรณ์"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1279,10 +1248,6 @@ msgid ""
 "1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
 "cumplen las mismas reglas de realismo."
 msgstr ""
-"เราได้ยกเลิกกฎที่ว่าทีมทั้ง 30 ทีมต้องเล่นซีรีส์ 3 วันพร้อมกันด้วยชุดเกม 2, "
-"3 และ 4 เกมและช่วงพัก อัลกอริทึมที่ดีที่สุดจะเดินทางได้ 1.57 "
-"ล้านกิโลเมตรปฏิทินอย่างเป็นทางการเดินทางได้ 1.74 "
-"ล้านกิโลเมตรทั้งสองทีมเป็นไปตามกฎความสมจริงเดียวกัน"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Ver la investigación actual, con diagramas animados"
@@ -1364,7 +1329,7 @@ msgstr ""
 msgid ""
 "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
 "árbol de programación genética."
-msgstr "Koza-TTP: แผนที่สนามเบสบอลพร้อมเส้นทางของทีมและต้นไม้โปรแกรมพันธุกรรม"
+msgstr ""
 
 #: documentacion/templates/documentacion/base.html
 msgid "Ir al sitio principal"
@@ -1448,9 +1413,6 @@ msgid ""
 " de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
 " de su casa, va de estadio en estadio y regresa al final."
 msgstr ""
-"แต่ละแถบคือระยะทางรวมของ 30 ทีมในหนึ่งฤดูกาล "
-"เป็นล้านกิโลเมตรน้อยยิ่งดีตัวเลขทั้งหมดถูกวัดเหมือนกัน: แต่ละทีมออกจากบ้าน "
-"เดินทางจากสนามหนึ่งไปอีกสนามหนึ่ง และกลับมาในตอนท้าย"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Viaje total por versión del algoritmo"
@@ -1534,7 +1496,7 @@ msgstr "ใช่"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
-msgstr "ดีขึ้น แต่ทั้ง 30 ทีมยังเล่นพร้อมกัน"
+msgstr ""
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
@@ -1660,10 +1622,6 @@ msgid ""
 " de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
 " 3 o 4 juegos, o descansa."
 msgstr ""
-"ก่อนหน้านี้ ทั้ง 30 ทีมจะเล่นซีรีส์ 3 "
-"วันพร้อมกันโดยไม่มีช่วงพักตอนนี้ฤดูกาลแบ่งเป็นกะวันธรรมดา (4 วัน) "
-"และวันหยุดสุดสัปดาห์ (3 วัน) เหมือนกับ MLB แต่ละทีมจะเล่นซีรีส์ 2, 3 หรือ 4 "
-"เกม หรือพัก"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Modelo anterior contra modelo por turnos"
@@ -1687,9 +1645,6 @@ msgid ""
 "cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
 "descansos, así las giras se pueden armar con más libertad."
 msgstr ""
-"หกทีมใน 8 กะในโมเดลก่อนหน้า ทุกคนเล่นกัน 3 วันในแต่ละกะในโมเดลกะ "
-"ซีรีส์จะกินเวลา 2, 3 หรือ 4 วัน และมีช่วงพัก "
-"ดังนั้นทัวร์จึงสามารถจัดได้อย่างอิสระมากขึ้น"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "3. El movimiento principal: la cadena de Kempe"
@@ -1702,8 +1657,6 @@ msgid ""
 "las series de la cadena cambian de turno al mismo tiempo. El calendario "
 "sigue siendo válido."
 msgstr ""
-"หากต้องการเปลี่ยนตารางการแข่งขันโดยไม่มีทีมเล่นสองซีรีส์พร้อมกัน "
-"จะมีการสลับกันสองรอบและสลับซีรีส์เป็นชุดทุกซีรีส์ในชุดเปลี่ยนจะเปลี่ยนพร้อมกันตารางการแข่งขันยังคงใช้ได้"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Cadena de Kempe entre el turno A y el turno B"
@@ -1722,8 +1675,6 @@ msgid ""
 "Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
 " series cambian de turno. Las demás series no se mueven."
 msgstr ""
-"แปดทีมเครือข่ายเริ่มต้นที่ NYA และผ่าน BOS, TOR และ BAL "
-"เปลี่ยนซีรีส์สี่ชุดซีรีส์อื่น ๆ ไม่ย้าย"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "4. ¿Por qué el recocido le ganó a la PG?"
@@ -1762,8 +1713,6 @@ msgid ""
 "apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
 "recorren todo el calendario."
 msgstr ""
-"<strong>เขาทําซ้ําตําแหน่งเดิม</strong> "
-"ตัวเลขคงที่ในต้นไม้จะชี้ไปยังเทิร์นและทีมเดียวกันเสมอการเดินแบบสุ่มจะวิ่งผ่านปฏิทินทั้งหมด"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Solo mejoras contra aceptar cambios peores"
@@ -1905,12 +1854,10 @@ msgid ""
 "El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
 "las hojas son los juegos (fecha, equipo local y equipo visitante)."
 msgstr ""
-"ต้นไม้คือโปรแกรมที่จัดทําปฏิทินที่ดีที่สุดแต่ละกิ่งจะเข้าร่วมเกม;ใบไม้คือเกม"
-" (วันที่, ทีมเจ้าบ้าน และทีมเยือน)"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Viaje total de todos los equipos:"
-msgstr "จํานวนการเดินทางรวมของทุกทีม:"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Juegos que rompen reglas:"
@@ -1922,15 +1869,12 @@ msgid ""
 "<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
 "es válido."
 msgstr ""
-"กฎข้อหนึ่งคือแต่ละทีมต้องเล่นจํานวนเกมตามที่ทัวร์นาเมนต์กําหนด "
-"<strong>ถ้าไม่มีเกมที่ฝ่าฝืนกติกา</strong> "
-"หมายความว่าตารางการแข่งขันนั้นถูกต้อง"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Puede tardar de unos segundos a varios minutos. Depende del número de "
 "equipos."
-msgstr "อาจใช้เวลาเพียงไม่กี่วินาทีจนถึงหลายนาทีขึ้นอยู่กับจํานวนคอมพิวเตอร์"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "El motor está trabajando."
@@ -2000,7 +1944,7 @@ msgstr "ค่าทั้งหมดถูกเลือกไว้แล้
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "เปลี่ยนอุปกรณ์"
+msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2016,7 +1960,7 @@ msgstr "ถัดไป: ดูปฏิทิน"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Demo: elige los equipos"
-msgstr "เดโม: เลือกทีม"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2026,7 +1970,7 @@ msgstr "Koza-TTP Demo: สร้างปฏิทินเบสบอลด้
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "ขั้นตอนที่ 1: เลือกอุปกรณ์"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2034,8 +1978,6 @@ msgid ""
 "tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
 "da \"Siguiente\" sin cambiar nada."
 msgstr ""
-"อัลกอริทึมจะจัดตารางเวลาสําหรับทีมที่คุณเลือกและมองหาทีมที่เดินทางน้อยที่สุดเราได้ทําเครื่องหมายทีมเมเจอร์ลีกไว้แล้ว"
-" 10 ทีมถ้าคุณต้องการ ให้คลิก \"ถัดไป\" โดยไม่ต้องเปลี่ยนแปลงอะไรเลย"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Siguiente: configuración"
@@ -2047,11 +1989,11 @@ msgstr "อยากดูฤดูกาลราชวงศ์เต็มฤ
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
-msgstr "รับชมฤดูกาล 2023: 30 ทีมตามปฏิทินอย่างเป็นทางการ"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Quieres registrar tus propios equipos y estadios?"
-msgstr "ต้องการลงทะเบียนทีมและสนามกีฬาของตัวเองหรือไม่?"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Hazlo tú mismo en la guía de 5 pasos"
@@ -2071,7 +2013,7 @@ msgstr "อัลกอริทึมใหม่: โมเดลผลัด�
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
-msgstr "<strong>%(nombre)s</strong>: %(n)sทีม"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Qué logró el algoritmo"
@@ -2079,7 +2021,7 @@ msgstr "สิ่งที่อัลกอริทึมทําได้"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje total de todos los equipos con el calendario del algoritmo."
-msgstr "การเดินทางรวมของทุกทีมตามตารางเวลาของอัลกอริทึม"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje con un calendario hecho al azar, antes de optimizar."
@@ -2118,7 +2060,7 @@ msgstr "ไม่ได้แข่งกับคู่แข่งเดิม
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
-msgstr "เกมเหย้าประมาณครึ่งหนึ่งที่นี่: %(a)s ถึง %(b)s ต่อทีม"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Cómo bajó el viaje"
@@ -2158,12 +2100,12 @@ msgstr "เปลี่ยนการตั้งค่าและรันอ
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "การเลือกอุปกรณ์อื่น ๆ"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
 "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
-msgstr "รับชมฤดูกาล 2023 ฉบับเต็ม: 30 ทีมตามปฏิทินอย่างเป็นทางการ"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Entender cómo funciona en 2 minutos"
@@ -2171,7 +2113,7 @@ msgstr "เข้าใจวิธีการทํางานภายใน
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "ทําเองได้เลย: ลงทะเบียนอุปกรณ์ของคุณในคู่มือ 5 ขั้นตอน"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2233,13 +2175,13 @@ msgstr "ส่วนที่ 1 ·ปัญหา"
 
 #: tesis/templates/tesis/historia.html
 msgid "30 equipos tienen que jugar entre sí"
-msgstr "30 ทีมต้องแข่งกันเอง"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid ""
 "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
 "partidos en una temporada."
-msgstr "เมเจอร์ลีกเบสบอลมีทั้งหมด 30 ทีมแต่ละทีมจะลงเล่น 162 เกมในหนึ่งฤดูกาล"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2259,8 +2201,6 @@ msgid ""
 "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
 "cruzar el país muchas veces."
 msgstr ""
-"เมื่อทีมเล่นนอกบ้าน "
-"พวกเขาต้องเดินทางโดยเครื่องบินตารางการแข่งขันที่ไม่ดีทําให้พวกเขาต้องเดินทางข้ามประเทศหลายครั้ง"
 
 #: tesis/templates/tesis/historia.html
 msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
@@ -2268,7 +2208,7 @@ msgstr "ตัวอย่างทริปทัวร์ โดยวัน�
 
 #: tesis/templates/tesis/historia.html
 msgid "Toca otro estadio para ver la gira de ese equipo."
-msgstr "แตะสนามอื่นเพื่อดูทัวร์ของทีมนั้น"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Parte 2 · La idea de la tesis"
@@ -2357,8 +2297,6 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"เอนจิ้นที่ปรับปรุงขึ้นโดยบล็อกจะชนะมันแบบสุ่ม: "
-"%(resultado)sในการทดสอบเบื้องต้น (%(corridas)s รอบ, %(equipos)s ทีม)"
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2386,7 +2324,7 @@ msgstr "โค้ด"
 
 #: tesis/templates/tesis/historia.html
 msgid "Equipo"
-msgstr "ทีมงาน"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Estadio"
@@ -2411,10 +2349,6 @@ msgid ""
 msgstr ""
 "Koza-TTP: โปรแกรมพันธุกรรมสําหรับปฏิทินเบสบอลเริ่มต้นจากวิทยานิพนธ์โดย "
 "Leslie Dickinson (ITAM) และปัจจุบันมีเครื่องมือที่เอาชนะโชคชะตาได้"
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "ตาราง MLB ที่ดีขึ้นด้วยการโปรแกรมพันธุกรรม"
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2443,8 +2377,6 @@ msgid ""
 "equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
 "con el azar."
 msgstr ""
-"เป็นการซ้ํารอยของการใช้เครื่องยนต์โปรแกรมทางพันธุกรรมกับทีมเมเจอร์ลีกเบสบอลทั้ง"
-" 30 ทีมในปี 2023 เมื่อเทียบกับตารางการแข่งขันอย่างเป็นทางการและโอกาส"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
@@ -2460,9 +2392,6 @@ msgid ""
 "calendario oficial de 2023 es la referencia. El motor por bloques intenta "
 "armar una temporada con menos viaje."
 msgstr ""
-"เราใช้ทีมเมเจอร์ลีกเบสบอล 30 "
-"ทีมและสนามจริงของพวกเขาตารางการแข่งขันอย่างเป็นทางการปี 2023 "
-"เป็นข้อมูลอ้างอิงเอนจิ้นแบบบล็อกพยายามสร้างฤดูกาลที่มีการเดินทางน้อยลง"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cómo bajan los kilómetros, generación por generación"
@@ -2490,7 +2419,7 @@ msgstr "แผ่นสไลด์ด้านข้าง"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de los 30 equipos en toda la temporada regular."
-msgstr "การเดินทางของ 30 ทีมตลอดฤดูกาลปกติ"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Gira más larga (juegos seguidos de visita)"
@@ -2514,7 +2443,7 @@ msgstr "ดีกว่าถ้าสุ่ม แต่ใช้ความ�
 
 #: tesis/templates/tesis/repeticion.html
 msgid "No cumple el número de juegos de cada equipo."
-msgstr "จํานวนเกมของแต่ละทีมไม่ตรงกับจํานวนเกม"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2537,18 +2466,14 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"หมายเหตุ: "
-"ปฏิทินเอนจินมีทัวร์ที่จัดเกม<strong>เยือนติดต่อกันถึง%(gira)s</strong> "
-"ครั้งปฏิทินอย่างเป็นทางการมีทัวร์สูงสุด%(oficial)sทีมจริง ๆ "
-"คงไม่ยอมรับทัวร์ยาวขนาดนี้"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "เส้นทางของแต่ละทีม"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
-msgstr "สลับไปมาระหว่างสองตารางเพื่อดูว่าทีมไหนเดินทางบ่อยที่สุด"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Calendario del mapa"
@@ -2564,7 +2489,7 @@ msgstr "เครื่องยนต์"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
-msgstr "ดูทีมทั้ง 30 ทีมในรูปแบบตารางเดียว"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
@@ -2591,8 +2516,6 @@ msgid ""
 "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
 "equipo sale de su casa, viaja de estadio en estadio y regresa al final."
 msgstr ""
-"ระยะทาง: เส้นตรงระหว่างสนาม (สูตรครึ่งจักรวาล)แต่ละทีมออกจากบ้าน "
-"เดินทางจากสนามหนึ่งไปยังอีกสนามหนึ่ง และกลับมาเมื่อสิ้นสุดการแข่งขัน"
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2660,7 +2583,7 @@ msgstr "โค้ง B"
 
 #: documentacion/investigacion.py
 msgid "1. Elegimos un equipo y dos turnos"
-msgstr "1. เราเลือกทีมและสองกะ"
+msgstr ""
 
 #: documentacion/investigacion.py
 msgid "2. Seguimos la cadena: A, B, A, B…"
@@ -2720,11 +2643,11 @@ msgstr "ไม่บังคับถ้าไม่นับแค่นั้
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "ทีมการแข่งขัน"
+msgstr ""
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "เราทําคะแนนไปแล้ว 10 ทีมคุณสามารถเปลี่ยนได้: จาก 3 เป็น 10 ทีม"
+msgstr ""
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
@@ -2740,11 +2663,11 @@ msgstr "แผนที่สนามกีฬา 30 แห่งในเม�
 
 #: tesis/historia.py
 msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
-msgstr "{Team} ตัวอย่างทัวร์: 12 ครั้งที่มาเยือนแบบสุ่ม"
+msgstr ""
 
 #: tesis/historia.py
 msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
-msgstr "คุณเลือก {ทีม}ทําตามขั้นตอนที่ 2 เพื่อดูการเดินทางของพวกเขา"
+msgstr ""
 
 #: tesis/historia.py
 msgid "km"
@@ -2887,7 +2810,7 @@ msgstr "Generación {gen} de {total}: {km} km"
 
 #: tesis/repeticion.py
 msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr "แต่ก็ยังไม่ถึงจํานวนเกมของแต่ละทีม"
+msgstr ""
 
 #: tesis/repeticion.py
 msgid ""
@@ -2900,8 +2823,14 @@ msgstr ""
 msgid ""
 "Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
 "temporada"
-msgstr "แผนที่: วงกลมแต่ละวงคือทีม;ใหญ่ขึ้นหมายถึงระยะทางมากขึ้นในฤดูกาล"
+msgstr ""
 
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
-msgstr "{ทีม}: {กม.} กม."
+msgstr ""
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""

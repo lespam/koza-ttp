@@ -143,8 +143,6 @@ msgid ""
 "Que se pueda ir del registro de equipos hasta ver el calendario sin errores,"
 " con un recorrido guiado paso a paso."
 msgstr ""
-"Možete bez pogrešaka iz timskog registra vidjeti kalendar, uz vođenu korak-"
-"po-korak turu."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "3 de noviembre de 2026"
@@ -291,9 +289,6 @@ msgid ""
 "viaja entre ciudades, y la distancia cambia mucho de un equipo a otro. En "
 "2016, Seattle viajó 76,683 km y los Cubs de Chicago viajaron 39,015 km."
 msgstr ""
-"MLB zakazuje 2.430 utakmica za 30 momčadi u otprilike 180 dana. Svaka momčad"
-" putuje između gradova, a udaljenost se znatno razlikuje od momčadi do "
-"momčadi. Godine 2016. Seattle je prešao 76.683 km, a Chicago Cubs 39.015 km."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -322,10 +317,6 @@ msgid ""
 "operaciones como <code>crear_juego</code> (fecha, equipo local, equipo "
 "visitante) y <code>obtener_calendario</code>, que une dos listas de juegos."
 msgstr ""
-"<strong>Reprezentacija:</strong> Svaki kalendar je stablo. Njegovi čvorovi "
-"su operacije poput <code>crear_juego</code> (datum, domaća momčad, gostujuća"
-" momčad) i <code>obtener_calendario</code>, koje spajaju dva popisa "
-"utakmica."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -333,8 +324,6 @@ msgid ""
 "número de juegos que pide el torneo. Un valor de 0 significa que el "
 "calendario es válido."
 msgstr ""
-"<strong>Održivost (C1):</strong> Svaka momčad mora odigrati točno onoliko "
-"utakmica koliko turnir zahtijeva. Vrijednost 0 znači da je raspored valjan."
 
 #: documentacion/templates/documentacion/historico.html
 msgid ""
@@ -358,8 +347,6 @@ msgid ""
 "Prueba con 30 equipos, 163 juegos por equipo, series de 5 juegos y 20 "
 "generaciones."
 msgstr ""
-"Probajte 30 timova, 163 utakmice po momčadi, serije od 5 utakmica i 20 "
-"generacija."
 
 #: documentacion/templates/documentacion/historico.html
 msgid "Comparación de la búsqueda aleatoria y la programación genética"
@@ -581,15 +568,13 @@ msgstr "Tamni način rada"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Demo: calendario y viaje por equipo"
-msgstr "Demo: Raspored i putovanja momčadi"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Genera un calendario de béisbol con programación genética y mide cuánto "
 "viaja cada equipo."
 msgstr ""
-"Generira bejzbolski kalendar s genetskim programiranjem i mjeri koliko svaka"
-" momčad putuje."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Genera un calendario y"
@@ -597,7 +582,7 @@ msgstr "Generirajte kalendar i"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "mide cuánto viaja cada equipo."
-msgstr "Izmjerite koliko svaki tim putuje."
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
@@ -605,9 +590,6 @@ msgid ""
 "parejo. ¿Quieres tus propios equipos? Usa la <a href=\"%(guia)s\">guía de 5 "
 "pasos</a>."
 msgstr ""
-"AI (genetsko programiranje) traži kalendare gdje je putovanje kratko i "
-"ravnomjerno. Želite vlastite timove? Koristite <a href=\"%(guia)s\">vodič od"
-" 5 koraka</a>."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Todavía no hay ninguna configuración"
@@ -618,8 +600,6 @@ msgid ""
 "Para optimizar un calendario, primero registra los equipos, la liga y el "
 "torneo, y después crea una configuración."
 msgstr ""
-"Za optimizaciju rasporeda, prvo zabilježite timove, ligu i turnir, a zatim "
-"kreirajte konfiguraciju."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Abrir la guía"
@@ -646,7 +626,7 @@ msgstr "Raspored: %(torneo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Para presentarlo a tu equipo"
-msgstr "Da ga predstavite svom timu"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Las respuestas que te van a pedir en clase."
@@ -682,15 +662,13 @@ msgstr "Kako ga prilagoditi?"
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Cambia equipos y reglas"
-msgstr "Promijenite momčad i pravila"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Equipos y coordenadas se registran en la guía. Una idea para tu equipo: usar"
 " el patrón Strategy para la medida de “viaje justo”."
 msgstr ""
-"Timovi i koordinate bilježe se u vodiču. Ideja za vaš tim: koristite "
-"strategijski uzorak za mjeru \"poštenog putovanja\"."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "¿Puedo usarlo?"
@@ -726,10 +704,6 @@ msgid ""
 "calendario. Luego dime qué cambiaría para que la medida de “viaje justo” sea"
 " la diferencia entre el equipo que más viaja y el que menos."
 msgstr ""
-"Objasnite mi korak po korak kako ovaj genetski program stvara i procjenjuje "
-"raspored. Zatim mi recite što biste promijenili kako bi mjera \"pravednog "
-"putovanja\" bila razlika između tima koji najviše putuje i onog koji putuje "
-"najmanje."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Revisa lo que te responda contra el código. La IA puede equivocarse."
@@ -835,7 +809,7 @@ msgstr "Spremi i nastavi na korak 5"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Paso 1: equipos"
-msgstr "Korak 1: Timovi"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Puedes usar los que ya existen o agregar uno nuevo."
@@ -843,15 +817,15 @@ msgstr "Možete koristiti postojeće ili dodati novi."
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "Pogledajte najnovije registrirane timove"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
-msgstr "Dodajte tim"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar equipo"
-msgstr "Dodaj opremu"
+msgstr ""
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Seguir al paso 2: liga"
@@ -859,7 +833,7 @@ msgstr "Nastavite na Korak 2: Liga"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "Trebaš barem 2 tima da ih pratiš."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -870,16 +844,14 @@ msgid ""
 "En 5 pasos registras equipos, armas una liga y un torneo, eliges cómo correr"
 " el algoritmo y generas un calendario de juegos."
 msgstr ""
-"U 5 koraka registrirate timove, postavite ligu i turnir, birate kako ćete "
-"pokrenuti algoritam i generirate raspored utakmica."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Equipos: registra al menos 2, con la ubicación de su estadio."
-msgstr "Timovi: registrirajte najmanje 2, s lokacijom njihovog stadiona."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Liga: elige qué equipos juegan juntos."
-msgstr "Liga: Odaberite koje momčadi igraju zajedno."
+msgstr ""
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Torneo: define las fechas, las series y los juegos."
@@ -914,8 +886,6 @@ msgid ""
 "Una liga es el grupo de equipos que juegan entre sí. Usa un número par de "
 "equipos: con un número impar, uno se queda sin rival en cada serie."
 msgstr ""
-"Liga je skupina momčadi koje igraju međusobno. Koristite paran broj momčadi:"
-" s neparnim brojem, jedna ostaje bez protivnika u svakoj seriji."
 
 #: tesis/templates/tesis/guia/liga.html
 msgid "Guardar y seguir al paso 3"
@@ -930,8 +900,6 @@ msgid ""
 "El torneo usa los equipos de la liga «%(liga)s». Los juegos se programan de "
 "lunes a jueves y los sábados, entre el primer y el último día."
 msgstr ""
-"Turnir koristi momčadi iz \"%(liga)s\" lige. Utakmice su zakazane od "
-"ponedjeljka do četvrtka te subotom, između prvog i zadnjeg dana."
 
 #: tesis/templates/tesis/guia/torneo.html
 msgid "Guardar y seguir al paso 4"
@@ -977,7 +945,6 @@ msgstr "Isprobajte alat"
 msgid ""
 "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta."
 msgstr ""
-"Registriraj timove, izgradi ligu i generiraj vlastiti kalendar. Nema računa."
 
 #: tesis/templates/tesis/inicio.html
 msgid "Sin prisa"
@@ -1050,7 +1017,7 @@ msgstr "U testiranju"
 
 #: documentacion/templates/documentacion/avances.html
 msgid "%(resultado)s, en %(corridas)s corridas con %(equipos)s equipos"
-msgstr "%(resultado)s, u %(corridas)s vozi s %(equipos)s momčadi"
+msgstr ""
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Sí, en pruebas preliminares"
@@ -1088,8 +1055,6 @@ msgid ""
 "Resultado preliminar: %(resultado)s, en %(corridas)s corridas con "
 "%(equipos)s equipos."
 msgstr ""
-"Preliminarni rezultat: %(resultado)s, u %(corridas)s nastupa s %(equipos)s "
-"momčadi."
 
 #: documentacion/templates/documentacion/avances.html
 msgid ""
@@ -1142,7 +1107,6 @@ msgstr "Pogledajte rezultate svakog izdanja"
 msgid ""
 "En pruebas: %(resultado)s, en %(corridas)s corridas con %(equipos)s equipos."
 msgstr ""
-"U testovima: %(resultado)s, u %(corridas)s nastupa s %(equipos)s momčadi."
 
 #: project/estado_motor.py
 msgid "Versión de la tesis (2026)"
@@ -1166,7 +1130,7 @@ msgstr "Skraćenica (npr. SEA)"
 
 #: tesis/guia.py
 msgid "Nombre del equipo"
-msgstr "Naziv momčadi"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Ciudad"
@@ -1190,7 +1154,7 @@ msgstr "U decimalnim stupnjevima. Primjer: -122,33"
 
 #: tesis/guia.py
 msgid "Equipos de la liga"
-msgstr "Ligaške momčadi"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre de la liga"
@@ -1198,7 +1162,7 @@ msgstr "Naziv lige"
 
 #: tesis/guia.py
 msgid "Elige al menos 2 equipos."
-msgstr "Odaberite barem 2 tima."
+msgstr ""
 
 #: tesis/guia.py
 msgid "Nombre del torneo"
@@ -1218,7 +1182,7 @@ msgstr "Igre po serijama"
 
 #: tesis/guia.py
 msgid "Series por equipo"
-msgstr "Momčadska serija"
+msgstr ""
 
 #: tesis/guia.py
 msgid "El último día debe ser igual o posterior al primero."
@@ -1254,7 +1218,7 @@ msgstr "Trebao bi biti između 0 i 1."
 
 #: tesis/guia.py
 msgid "Equipos"
-msgstr "Oprema"
+msgstr ""
 
 #: tesis/guia.py
 msgid "Liga"
@@ -1278,7 +1242,7 @@ msgstr "Prvo dovršite ovaj korak."
 
 #: tesis/guia.py
 msgid "Equipo agregado."
-msgstr "Dodana oprema."
+msgstr ""
 
 #: tesis/guia.py
 msgid "Juegos generados."
@@ -1299,10 +1263,6 @@ msgid ""
 "1.57 millones de km. El calendario oficial viaja 1.74 millones. Los dos "
 "cumplen las mismas reglas de realismo."
 msgstr ""
-"Uklonili smo pravilo da svih 30 timova igra trodnevne serije istovremeno. S "
-"serijama od 2, 3 i 4 utakmice i pauzama, najbolji algoritam prelazi 1,57 "
-"milijuna km. Službeni kalendar prelazi 1,74 milijuna. Oba zadovoljavaju ista"
-" pravila realizma."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "Ver la investigación actual, con diagramas animados"
@@ -1385,8 +1345,6 @@ msgid ""
 "Koza-TTP: mapa de los estadios de béisbol con la ruta de un equipo y un "
 "árbol de programación genética."
 msgstr ""
-"Koza-TTP: karta bejzbolskih stadiona s rutom tima i genetskim programskim "
-"stablom."
 
 #: documentacion/templates/documentacion/base.html
 msgid "Ir al sitio principal"
@@ -1471,9 +1429,6 @@ msgid ""
 " de km. Menos es mejor. Todas las cifras se midieron igual: cada equipo sale"
 " de su casa, va de estadio en estadio y regresa al final."
 msgstr ""
-"Svaka traka predstavlja ukupno putovanje 30 momčadi u sezoni, u milijunima "
-"kilometara. Manje je bolje. Sve su brojke bile iste: svaka momčad napušta "
-"svoj dom, prelazi od stadiona do stadiona i vraća se na kraju."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Viaje total por versión del algoritmo"
@@ -1557,7 +1512,7 @@ msgstr "Da"
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Mejor, pero los 30 equipos siguen jugando al mismo tiempo."
-msgstr "Bolje, ali svih 30 momčadi i dalje igra istovremeno."
+msgstr ""
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Turnos con series de 2, 3 y 4 juegos + recocido simulado"
@@ -1683,10 +1638,6 @@ msgid ""
 " de fin de semana (3 días), como hace MLB. Cada equipo juega una serie de 2,"
 " 3 o 4 juegos, o descansa."
 msgstr ""
-"Prije je svih 30 momčadi igralo serije od 3 dana istovremeno, bez pauza. "
-"Sada je sezona podijeljena na smjene radnim danima (4 dana) i vikendom (3 "
-"dana), baš kao i MLB. Svaki tim igra seriju od 2, 3 ili 4 utakmice, odnosno "
-"odmora."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Modelo anterior contra modelo por turnos"
@@ -1710,9 +1661,6 @@ msgid ""
 "cada turno. En el modelo por turnos las series duran 2, 3 o 4 días y hay "
 "descansos, así las giras se pueden armar con más libertad."
 msgstr ""
-"Šest timova u osam smjena. U prethodnom modelu svi igraju 3 dana u svakoj "
-"smjeni. U modelu smjena serija traje 2, 3 ili 4 dana i postoje pauze, pa se "
-"ture mogu složiti s više slobode."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "3. El movimiento principal: la cadena de Kempe"
@@ -1725,9 +1673,6 @@ msgid ""
 "las series de la cadena cambian de turno al mismo tiempo. El calendario "
 "sigue siendo válido."
 msgstr ""
-"Da bi se raspored promijenio bez da momčad igra dvije serije istovremeno, "
-"izmjenjuju se dva poteza i lanac serija. Sve serije u lancu mijenjaju se u "
-"isto vrijeme. Raspored je i dalje važeći."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Cadena de Kempe entre el turno A y el turno B"
@@ -1746,8 +1691,6 @@ msgid ""
 "Ocho equipos. La cadena empieza en NYA y pasa por BOS, TOR y BAL. Sus cuatro"
 " series cambian de turno. Las demás series no se mueven."
 msgstr ""
-"Osam timova. Mreža počinje u NYA i prolazi kroz BOS, TOR i BAL. Njegove "
-"četiri serije mijenjaju smjene. Ostale serije se ne mijenjaju."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "4. ¿Por qué el recocido le ganó a la PG?"
@@ -1786,9 +1729,6 @@ msgid ""
 "apuntan siempre a los mismos turnos y equipos. Los movimientos al azar "
 "recorren todo el calendario."
 msgstr ""
-"<strong>Ponovio je ista mjesta.</strong> Fiksni brojevi u stablu uvijek "
-"pokazuju iste poteze i timove. Nasumični potezi prolaze kroz cijeli "
-"kalendar."
 
 #: documentacion/templates/documentacion/investigacion.html
 msgid "Solo mejoras contra aceptar cambios peores"
@@ -1933,12 +1873,10 @@ msgid ""
 "El árbol es el programa que arma el mejor calendario. Cada rama une juegos; "
 "las hojas son los juegos (fecha, equipo local y equipo visitante)."
 msgstr ""
-"Stablo je program koji sastavlja najbolji kalendar. Svaka grana sudjeluje u "
-"utakmicama; listovi su utakmice (datum, domaća momčad i gostujuća momčad)."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Viaje total de todos los equipos:"
-msgstr "Ukupna putovanja svih timova:"
+msgstr ""
 
 #: tesis/templates/tesis/dashboard.html
 msgid "Juegos que rompen reglas:"
@@ -1950,16 +1888,12 @@ msgid ""
 "<strong>0 juegos que rompen reglas</strong> quiere decir que el calendario "
 "es válido."
 msgstr ""
-"Jedno pravilo je da svaki tim igra onoliko utakmica koliko turnir zahtijeva."
-" <strong>0 utakmica koje krše pravila</strong> znači da je raspored valjan."
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
 "Puede tardar de unos segundos a varios minutos. Depende del número de "
 "equipos."
 msgstr ""
-"Može potrajati od nekoliko sekundi do nekoliko minuta. Ovisi o broju "
-"računala."
 
 #: tesis/templates/tesis/dashboard.html
 msgid "El motor está trabajando."
@@ -2031,7 +1965,7 @@ msgstr "Sve vrijednosti su već odabrane. Možete ih promijeniti ili dati \\"
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "Cambiar equipos"
-msgstr "Zamjena opreme"
+msgstr ""
 
 #: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
@@ -2047,7 +1981,7 @@ msgstr "Sljedeće: Pogledajte kalendar"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Demo: elige los equipos"
-msgstr "Demo: Odaberite timove"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2059,7 +1993,7 @@ msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Paso 1: elige los equipos"
-msgstr "Korak 1: Odaberite opremu"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid ""
@@ -2067,9 +2001,6 @@ msgid ""
 "tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
 "da \"Siguiente\" sin cambiar nada."
 msgstr ""
-"Algoritam sastavlja raspored za momčadi koje odaberete i traži onu s "
-"najmanje putovanja. Već smo označili 10 Major League momčadi. Ako želite, "
-"kliknite \"Sljedeće\" bez ikakvih promjena."
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Siguiente: configuración"
@@ -2081,11 +2012,11 @@ msgstr "Više volite gledati cijelu kraljevsku sezonu?"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Ver la temporada 2023: 30 equipos contra el calendario oficial"
-msgstr "Pogledajte sezonu 2023.: 30 momčadi protiv službenog kalendara"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Quieres registrar tus propios equipos y estadios?"
-msgstr "Želite registrirati vlastite timove i stadione?"
+msgstr ""
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "Hazlo tú mismo en la guía de 5 pasos"
@@ -2105,7 +2036,7 @@ msgstr "Noviji algoritam: Model na poteze"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "<strong>%(nombre)s</strong>: %(n)s equipos."
-msgstr "<strong>%(nombre)s</strong>: %(n)s timova."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Qué logró el algoritmo"
@@ -2113,7 +2044,7 @@ msgstr "Što je algoritam postigao"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje total de todos los equipos con el calendario del algoritmo."
-msgstr "Ukupna putovanja svih momčadi prema rasporedu algoritma."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Viaje con un calendario hecho al azar, antes de optimizar."
@@ -2153,7 +2084,7 @@ msgstr "Ne igrati protiv istog protivnika u dvije serije zaredom."
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Juegos en casa cerca de la mitad. Aquí: de %(a)s a %(b)s por equipo."
-msgstr "Domaće utakmice otprilike polovica. Evo: %(a)s do %(b)s po momčadi."
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Cómo bajó el viaje"
@@ -2193,12 +2124,12 @@ msgstr "Promijeni postavke i pokreni ponovno"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Elegir otros equipos"
-msgstr "Odabir druge opreme"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
 "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial"
-msgstr "Pogledajte cijelu sezonu 2023.: 30 momčadi protiv službenog kalendara"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Entender cómo funciona en 2 minutos"
@@ -2206,7 +2137,7 @@ msgstr "Razumite kako to funkcionira u 2 minute"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos"
-msgstr "Učinite sami: registrirajte svoju opremu u vodiču od 5 koraka"
+msgstr ""
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Ver el algoritmo original de la tesis"
@@ -2267,15 +2198,13 @@ msgstr "Dio 1 · Problem"
 
 #: tesis/templates/tesis/historia.html
 msgid "30 equipos tienen que jugar entre sí"
-msgstr "30 timova mora igrati međusobno"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid ""
 "Las Grandes Ligas de béisbol tienen 30 equipos. Cada equipo juega 162 "
 "partidos en una temporada."
 msgstr ""
-"Major League Baseball ima 30 momčadi. Svaka momčad igra 162 utakmice u "
-"sezoni."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2296,8 +2225,6 @@ msgid ""
 "Cuando un equipo juega de visita, viaja en avión. Un mal calendario lo hace "
 "cruzar el país muchas veces."
 msgstr ""
-"Kad momčad igra na gostovanjima, putuju avionom. Loš raspored ih tjera da "
-"često prelaze zemlju."
 
 #: tesis/templates/tesis/historia.html
 msgid "Viaje de una gira de ejemplo, con las fechas en orden al azar."
@@ -2305,7 +2232,7 @@ msgstr "Primjer putovanja, s datumima u nasumičnom redoslijedu."
 
 #: tesis/templates/tesis/historia.html
 msgid "Toca otro estadio para ver la gira de ese equipo."
-msgstr "Dodirnite drugi stadion da gledate turneju te momčadi."
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Parte 2 · La idea de la tesis"
@@ -2396,8 +2323,6 @@ msgid ""
 "El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
 "pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
 msgstr ""
-"Poboljšani motor, po blokovima, pobjeđuje ga nasumično: %(resultado)s, u "
-"preliminarnim testovima (%(corridas)s trčanja, %(equipos)s timova)."
 
 #: tesis/templates/tesis/historia.html
 msgid ""
@@ -2425,7 +2350,7 @@ msgstr "Kod"
 
 #: tesis/templates/tesis/historia.html
 msgid "Equipo"
-msgstr "Momčad"
+msgstr ""
 
 #: tesis/templates/tesis/historia.html
 msgid "Estadio"
@@ -2450,10 +2375,6 @@ msgid ""
 msgstr ""
 "Koza-TTP: genetsko programiranje za bejzbolske kalendare. Počelo je kao teza"
 " Leslieja Dickinsona (ITAM), a danas ima motor koji nadvladava slučajnost."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "Bolji MLB raspored s genetskim programiranjem."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2482,8 +2403,6 @@ msgid ""
 "equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
 "con el azar."
 msgstr ""
-"Ponavljanje serije genetskog programiranja sa svih 30 Major League Baseball "
-"momčadi 2023. godine, u usporedbi sa službenim rasporedom i slučajnošću."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
@@ -2499,9 +2418,6 @@ msgid ""
 "calendario oficial de 2023 es la referencia. El motor por bloques intenta "
 "armar una temporada con menos viaje."
 msgstr ""
-"Koristimo 30 momčadi Major League Baseballa i njihove stvarne stadione. "
-"Službeni raspored za 2023. godinu je referenca. Blok-bazirani motor pokušava"
-" sastaviti sezonu s manje putovanja."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cómo bajan los kilómetros, generación por generación"
@@ -2529,7 +2445,7 @@ msgstr "Bočna klizna daska"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de los 30 equipos en toda la temporada regular."
-msgstr "Putovanja 30 momčadi tijekom regularne sezone."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Gira más larga (juegos seguidos de visita)"
@@ -2553,7 +2469,7 @@ msgstr "Bolje nasumično, uz isti trud"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "No cumple el número de juegos de cada equipo."
-msgstr "Ne odgovara broju odigranih utakmica svake momčadi."
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2577,19 +2493,14 @@ msgid ""
 "seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
 "real no aceptaría giras tan largas."
 msgstr ""
-"Napomena: kalendar motora ima turneje od do <strong>%(gira)s uzastopnih "
-"gostujućih utakmica</strong>. Službeni kalendar ima maksimalnu %(oficial)s. "
-"Prava momčad ne bi prihvatila tako duge turneje."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Putovanje svakog tima"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
 msgstr ""
-"Prebacujte se između ta dva rasporeda kako biste vidjeli koje momčadi "
-"najviše putuju."
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Calendario del mapa"
@@ -2605,7 +2516,7 @@ msgstr "Motor"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
-msgstr "Pogledajte svih 30 momčadi kao tablicu"
+msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
@@ -2632,8 +2543,6 @@ msgid ""
 "Distancias: línea recta entre estadios (fórmula del semiverseno). Cada "
 "equipo sale de su casa, viaja de estadio en estadio y regresa al final."
 msgstr ""
-"Udaljenosti: ravna linija između stadiona (formula polusvijeta). Svaki tim "
-"napušta svoj dom, putuje od stadiona do stadiona i vraća se na kraju."
 
 #: tesis/templates/tesis/repeticion.html
 msgid ""
@@ -2701,7 +2610,7 @@ msgstr "Zavoj B"
 
 #: documentacion/investigacion.py
 msgid "1. Elegimos un equipo y dos turnos"
-msgstr "1. Biramo tim i dvije smjene"
+msgstr ""
 
 #: documentacion/investigacion.py
 msgid "2. Seguimos la cadena: A, B, A, B…"
@@ -2761,11 +2670,11 @@ msgstr "Opcionalno. Ako tu ostaneš, koristi se ovo ime."
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "Momčadi turnira"
+msgstr ""
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "Već smo zabili 10. Možete ih promijeniti: s 3 na 10 timova."
+msgstr ""
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
@@ -2781,11 +2690,11 @@ msgstr "Karta 30 stadiona glavne lige"
 
 #: tesis/historia.py
 msgid "Gira de ejemplo de {equipo}: 12 visitas en orden al azar."
-msgstr "{Team} primjer ture: 12 posjeta nasumičnim redoslijedom."
+msgstr ""
 
 #: tesis/historia.py
 msgid "Elegiste {equipo}. Sigue al paso 2 para ver sus viajes."
-msgstr "Odabrao si {tim}. Slijedi korak 2 da vidiš njihova putovanja."
+msgstr ""
 
 #: tesis/historia.py
 msgid "km"
@@ -2929,7 +2838,7 @@ msgstr "Generación {gen} de {total}: {km} km"
 
 #: tesis/repeticion.py
 msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr "I dalje ne odgovara broju utakmica svake momčadi."
+msgstr ""
 
 #: tesis/repeticion.py
 msgid ""
@@ -2943,8 +2852,14 @@ msgstr ""
 msgid ""
 "Mapa: cada círculo es un equipo; más grande significa más kilómetros en la "
 "temporada"
-msgstr "Karta: Svaki krug je tim; veći znači više milja u sezoni"
+msgstr ""
 
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
-msgstr "{tim}: {km} km"
+msgstr ""
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""

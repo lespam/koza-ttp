@@ -47,6 +47,9 @@ PLACEHOLDER = re.compile(r"%\([a-zA-Z_][a-zA-Z0-9_]*\)[sd]")
 # Un % que no es parte de %(x)s ni de %%
 LONE_PERCENT = re.compile(r"(?<!%)%(?![%(])")
 TAG = re.compile(r"</?[a-zA-Z][^>]*>")
+# "equipo" en español puede ser "equipment" o "team". Estos textos se traducen desde la
+# versión en inglés (revisada a mano, dice "team"), no desde el español.
+DESDE_INGLES = re.compile(r"\bequipos?\b", re.IGNORECASE)
 AZURE_BATCH = 50
 AZURE_RETRIES = 10
 # Google permite unas 5 solicitudes por segundo; se deja margen
@@ -82,6 +85,9 @@ class Command(BaseCommand):
 
         msgids = self.extract_msgids()
         self.stdout.write(f"{len(msgids)} textos encontrados en las plantillas.")
+        ingles_path = self.po_path(locale_dir, "en")
+        ingles = ({e.msgid: e.msgstr for e in polib.pofile(str(ingles_path)) if e.msgstr}
+                  if ingles_path.exists() else {})
 
         for code in options["languages"]:
             translate = None
@@ -100,9 +106,13 @@ class Command(BaseCommand):
             pending = [entry for entry in po if not entry.msgstr and not entry.obsolete]
             done = 0
             if translate and pending:
-                sources = [entry.msgid for entry in pending]
-                results = translate(sources, code)
-                for entry, result in zip(pending, results):
+                desde_ingles = [e for e in pending
+                                if code != "en" and DESDE_INGLES.search(e.msgid) and e.msgid in ingles]
+                desde_espanol = [e for e in pending if e not in desde_ingles]
+                results = translate([e.msgid for e in desde_espanol], code) if desde_espanol else []
+                if desde_ingles:
+                    results += translate([ingles[e.msgid] for e in desde_ingles], code, source="en")
+                for entry, result in zip(desde_espanol + desde_ingles, results):
                     result = self.escape_percent(entry.msgid, result) if result else result
                     if result and self.same_markup(entry.msgid, result):
                         entry.msgstr = result
@@ -214,7 +224,8 @@ class Command(BaseCommand):
         o que Django no podría formatear."""
         if "%%" in source or "%(" in source:
             try:
-                translation % {name: "" for name in re.findall(r"%\(([a-zA-Z_][a-zA-Z0-9_]*)\)", source)}
+                # %(n)d necesita un número; %(x)s acepta cualquier cosa
+                translation % {name: 0 for name in re.findall(r"%\(([a-zA-Z_][a-zA-Z0-9_]*)\)", source)}
             except (ValueError, TypeError, KeyError):
                 return False
         return (sorted(PLACEHOLDER.findall(source)) == sorted(PLACEHOLDER.findall(translation))
@@ -222,7 +233,7 @@ class Command(BaseCommand):
 
     # --- Motores de traducción -------------------------------------------------------
 
-    def azure_translate(self, texts, code):
+    def azure_translate(self, texts, code, source=MACHINE_SOURCE_LANGUAGE):
         key = os.environ.get("AZURE_TRANSLATOR_KEY")
         if not key:
             raise CommandError("Falta AZURE_TRANSLATOR_KEY en el .env (o usa --backend google).")
@@ -252,7 +263,7 @@ class Command(BaseCommand):
             for attempt in range(AZURE_RETRIES):
                 response = requests.post(
                     "https://api.cognitive.microsofttranslator.com/translate",
-                    params={"api-version": "3.0", "from": MACHINE_SOURCE_LANGUAGE,
+                    params={"api-version": "3.0", "from": source,
                             "to": LANGUAGE_MAP_AZURE[code], "textType": "html"},
                     headers=headers,
                     json=[{"text": protect(text)} for text in batch],
@@ -268,8 +279,8 @@ class Command(BaseCommand):
             results += [unprotect(item["translations"][0]["text"]) for item in response.json()]
         return results
 
-    def google_translate(self, texts, code):
-        translator = self.google_translator(LANGUAGE_MAP_GOOGLE[code])
+    def google_translate(self, texts, code, source=MACHINE_SOURCE_LANGUAGE):
+        translator = self.google_translator(LANGUAGE_MAP_GOOGLE[code], source)
         results = []
         for text in texts:
             # Las variables %(x)s se cambian por {0}, {1}... que Google respeta
@@ -296,7 +307,7 @@ class Command(BaseCommand):
         return results
 
     @staticmethod
-    def google_translator(target):
+    def google_translator(target, source=MACHINE_SOURCE_LANGUAGE):
         """deep-translator solo acepta los idiomas de su lista fija, que es anterior a
         las lenguas que Google agregó en 2024 (náhuatl, zapoteco, maya...). Se le pasa la
         lista ampliada con el código que falte."""
@@ -306,4 +317,4 @@ class Command(BaseCommand):
         languages = dict(GOOGLE_LANGUAGES_TO_CODES)
         if target not in languages.values():
             languages[target] = target
-        return GoogleTranslator(source=MACHINE_SOURCE_LANGUAGE, target=target, languages=languages)
+        return GoogleTranslator(source=source, target=target, languages=languages)

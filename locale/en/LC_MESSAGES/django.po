@@ -837,7 +837,7 @@ msgstr "You can use existing ones or add a new one."
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Ver los últimos equipos registrados"
-msgstr "View Latest Registered Teams"
+msgstr "View latest registered teams"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Agregar un equipo"
@@ -853,7 +853,7 @@ msgstr "Continue to Step 2: League"
 
 #: tesis/templates/tesis/guia/equipos.html
 msgid "Necesitas al menos 2 equipos para seguir."
-msgstr "You need at least 2 teams to follow."
+msgstr "You need at least 2 teams to continue."
 
 #: tesis/templates/tesis/guia/inicio.html
 msgid "Guía: del registro al calendario"
@@ -1278,10 +1278,6 @@ msgstr "Team added."
 #: tesis/guia.py
 msgid "Juegos generados."
 msgstr "Games generated."
-
-#: tesis/templates/tesis/inicio.html
-msgid "Un mejor calendario de la MLB con programación genética."
-msgstr "A better MLB schedule with genetic programming."
 
 #: documentacion/templates/documentacion/avances.html
 msgid "14 de noviembre de 2026"
@@ -2579,7 +2575,7 @@ msgstr ""
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
-msgstr "Journey of each team"
+msgstr "Travel by team"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Cambia entre los dos calendarios para ver qué equipos viajan más."
@@ -2755,19 +2751,19 @@ msgstr "Optional. If you leave it at that, this name is used."
 
 #: tesis/demo.py
 msgid "Equipos del torneo"
-msgstr "Tournament Teams"
+msgstr "Tournament teams"
 
 #: tesis/demo.py
 msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr "We already scored 10. You can change them: from 3 to 10 teams."
+msgstr "We already checked 10. You can change them: from 3 to 10 teams."
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
-msgstr ""
+msgstr "Choose at least %(n)d teams."
 
 #: tesis/demo.py
 msgid "Elige como máximo %(n)d equipos."
-msgstr ""
+msgstr "Choose at most %(n)d teams."
 
 #: tesis/historia.py
 msgid "Mapa de los 30 estadios de las Grandes Ligas"
@@ -2942,3 +2938,10 @@ msgstr "Map: Each circle is a team; bigger means more miles in the season"
 #: tesis/repeticion.py
 msgid "{equipo}: {km} km"
 msgstr "{team}: {km} km"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Un mejor calendario de la MLB <span class=\"clave\">con programación "
+"genética.</span>"
+msgstr ""
+"A better MLB schedule <span class=\"clave\">with genetic programming.</span>"

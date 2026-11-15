@@ -42,7 +42,7 @@ class PaginaDeInicio(TestCase):
     def test_portada(self):
         r = self.client.get("/")
         self.assertEqual(r.status_code, 200)
-        self.assertContains(r, "Un mejor calendario de la MLB con programación genética.")
+        self.assertContains(r, 'Un mejor calendario de la MLB <span class="clave">con programación genética.</span>')
         self.assertNotContains(r, "dijo la verdad")
         self.assertContains(r, 'id="boton-tema"')
         for nombre in ("documentacion:index", "tesis:guia", "documentacion:historico"):
