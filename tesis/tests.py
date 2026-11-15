@@ -130,7 +130,7 @@ class TodasLasPaginas(TestCase):
             if "condicion/<int:pk>" in ruta:
                 continue  # no hay condiciones en los datos de ejemplo
             prefijo = ruta.split("/")[0]
-            url = "/" + ruta.replace("<int:pk>", str(pks.get(prefijo, calendario.pk)))
+            url = "/" + ruta.replace("<int:pk>", str(pks.get(prefijo, calendario.pk))).replace("<slug:clave>", "mlb")
             with self.subTest(url=url):
                 self.assertEqual(self.client.get(url).status_code, 200)
 
@@ -553,3 +553,34 @@ class MotorPGPorDentro(TestCase):
         nombres = {p.name for ps in PSET.primitives.values() for p in ps}
         nombres |= set(PSET.arguments)  # avance y aceptados (las constantes se escriben como número)
         self.assertEqual(nombres - set(textos()["piezas"]), set())
+
+
+class SitioEstatico(TestCase):
+    """El sitio estático se genera sin servidor y no enlaza páginas que necesitan uno."""
+
+    def test_cada_torneo_tiene_resultado_guardado(self):
+        from .torneos import TORNEOS
+        for t in TORNEOS:
+            r = self.client.get(reverse("tesis:demo_torneo", args=[t["clave"]]))
+            self.assertEqual(r.status_code, 200, t["clave"])
+            self.assertContains(r, 'id="mapa-datos"')
+            self.assertContains(r, 'id="calendario-datos"')
+            self.assertEqual(r.context["resultado"].reglas_rotas, 0, t["clave"])
+        self.assertEqual(self.client.get("/demo/torneo/no-existe/").status_code, 404)
+
+    def test_generar(self):
+        import tempfile
+        from django.core.management import call_command
+        with tempfile.TemporaryDirectory() as carpeta:
+            salida = Path(carpeta) / "sitio"
+            call_command("generar_estatico", "--salida", str(salida), "--idiomas", "es-mx", "en",
+                         "--dominio", "ejemplo.dev", stdout=open("/dev/null", "w"))
+            paginas = {str(p.relative_to(salida)) for p in salida.rglob("index.html")}
+            for ruta in ["index.html", "demo/index.html", "demo/torneo/kbo/index.html", "demo/motor-pg/index.html",
+                         "historia/index.html", "en/index.html", "en/demo/torneo/mlb/index.html"]:
+                self.assertIn(ruta, paginas)
+            self.assertTrue((salida / "404.html").exists())
+            self.assertEqual((salida / "CNAME").read_text().strip(), "ejemplo.dev")
+            todo = "".join((salida / p).read_text(encoding="utf-8") for p in paginas)
+            self.assertNotRegex(todo, r'href="(/en)?/(guia|equipo|liga|calendario|configuracion|demo/tesis|demo/resultado)/')
+            self.assertIn("data-estatico", todo)

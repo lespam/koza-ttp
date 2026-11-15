@@ -94,7 +94,7 @@ def _tabla(lista):
 # config: valores ya elegidos para el paso 2 (la persona puede cambiarlos)
 TORNEOS = [
     {"clave": "mlb", "nombre": _("Grandes Ligas (MLB), Estados Unidos y Canadá"),
-     "descripcion": _("10 de los 30 equipos, de costa a costa. Puedes cambiar cuáles."),
+     "descripcion": _("10 de los 30 equipos, de costa a costa."),
      "fuente": _("La liga que usa la tesis para sus pruebas."),
      "equipos": _equipos_mlb, "marcados": PRESELECCION_MLB,
      "config": {"juegos_por_serie": 3, "series_por_pareja": 2}},

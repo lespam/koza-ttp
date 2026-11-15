@@ -3,6 +3,17 @@
 {% block titulo %}{% translate "Demo: elige un torneo" %}{% endblock %}
 {% block descripcion %}{% translate "Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo en 3 pasos." %}{% endblock %}
 {% block paso %}
+{% if estatico %}
+<h1>{% translate "Elige un torneo" %}</h1>
+<p class="entrada">{% translate "El algoritmo armó un calendario para cada torneo y buscó el que tiene menos viaje. Elige uno para ver su calendario, el mapa de sus estadios y los viajes de cada equipo." %}</p>
+<ul class="torneos-guardados">
+{% for t in torneos %}<li><a class="ruta" href="{% url 'tesis:demo_torneo' t.clave %}">
+    <span class="ruta-titulo">{{ t.nombre }}</span>
+    <span class="ruta-texto">{{ t.descripcion }} {{ t.fuente }}</span>
+    <span class="ruta-accion">{% translate "Ver el calendario" %} →</span>
+</a></li>{% endfor %}
+</ul>
+{% else %}
 <h1>{% translate "Paso 1: elige un torneo" %}</h1>
 <p class="entrada">{% blocktranslate trimmed %}El algoritmo arma un calendario para el torneo y busca el que tenga menos viaje. Cada torneo ya trae sus equipos y reglas. Si quieres, da "Siguiente" sin cambiar nada.{% endblocktranslate %}</p>
 <form method="post" novalidate>
@@ -34,6 +45,7 @@
     {% endwith %}
     <p class="acciones"><button type="submit" class="boton">{% translate "Siguiente: equipos y reglas" %} →</button></p>
 </form>
+{% endif %}
 <p class="nota">{% translate "¿Prefieres ver una temporada real completa?" %} <a href="{% url 'tesis:repeticion' %}">{% translate "Ver la temporada 2023: 30 equipos contra el calendario oficial" %}</a>.</p>
-<p class="nota">{% translate "¿Quieres registrar tus propios equipos y estadios?" %} <a href="{% url 'tesis:guia' %}">{% translate "Hazlo tú mismo en la guía de 5 pasos" %}</a>.</p>
+{% if not estatico %}<p class="nota">{% translate "¿Quieres registrar tus propios equipos y estadios?" %} <a href="{% url 'tesis:guia' %}">{% translate "Hazlo tú mismo en la guía de 5 pasos" %}</a>.</p>{% endif %}
 {% endblock %}

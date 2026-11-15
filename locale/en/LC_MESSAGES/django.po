@@ -2916,10 +2916,6 @@ msgid "Grandes Ligas (MLB), Estados Unidos y Canadá"
 msgstr "Major League Baseball (MLB), United States and Canada"
 
 #: tesis/torneos.py
-msgid "10 de los 30 equipos, de costa a costa. Puedes cambiar cuáles."
-msgstr "10 of the 30 teams, coast to coast. You can change which ones."
-
-#: tesis/torneos.py
 msgid "La liga que usa la tesis para sus pruebas."
 msgstr "The league the thesis uses for its tests."
 
@@ -3720,3 +3716,73 @@ msgstr "More than 5% worse"
 #: tesis/motor_pg.py
 msgid "La familia del árbol elegido"
 msgstr "The chosen tree's family"
+
+#: documentacion/templates/404.html
+msgid "No encontramos esta página"
+msgstr "We could not find this page"
+
+#: documentacion/templates/404.html
+msgid "Puede que la dirección esté mal escrita o que la página ya no exista."
+msgstr "The address may be misspelled, or the page may no longer exist."
+
+#: documentacion/templates/404.html
+msgid "Ir a la portada"
+msgstr "Go to the home page"
+
+#: documentacion/templates/404.html
+msgid "Ver la demo"
+msgstr "See the demo"
+
+#: tesis/templates/tesis/demo/_base.html
+msgid "Elige un torneo"
+msgstr "Choose a tournament"
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo armó un calendario para cada torneo y buscó el que tiene menos "
+"viaje. Elige uno para ver su calendario, el mapa de sus estadios y los "
+"viajes de cada equipo."
+msgstr ""
+"The algorithm built a schedule for each tournament and searched for the one "
+"with the least travel. Choose one to see its schedule, the map of its "
+"ballparks and each team's trips."
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver el calendario"
+msgstr "See the schedule"
+
+#: tesis/templates/tesis/demo/torneo.html
+msgid ""
+"Calendario de %(t)s hecho por el algoritmo más nuevo de Koza-TTP, con mapa "
+"de estadios y viajes."
+msgstr ""
+"%(t)s schedule made by Koza-TTP's newest algorithm, with a map of ballparks "
+"and trips."
+
+#: tesis/templates/tesis/demo/torneo.html
+msgid ""
+"Resultado ya calculado: el algoritmo probó %(pasos)s cambios en una "
+"computadora y aquí se guardó lo que encontró."
+msgstr ""
+"Precomputed result: the algorithm tried %(pasos)s changes on a computer, and"
+" what it found is saved here."
+
+#: tesis/templates/tesis/inicio.html
+msgid "5 minutos"
+msgstr "5 minutes"
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Elige un torneo de béisbol y ve el calendario del algoritmo, el mapa de sus "
+"estadios y los viajes de cada equipo."
+msgstr ""
+"Choose a baseball tournament and see the algorithm's schedule, the map of "
+"its ballparks and each team's trips."
+
+#: tesis/templates/tesis/inicio.html
+msgid "Abrir la demo"
+msgstr "Open the demo"
+
+#: tesis/torneos.py
+msgid "10 de los 30 equipos, de costa a costa."
+msgstr "10 of the 30 teams, from coast to coast."

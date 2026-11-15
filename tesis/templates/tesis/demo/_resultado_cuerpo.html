@@ -1,0 +1,88 @@
+{% load i18n l10n humanize static %}
+{# Cuerpo del resultado: lo usan el paso 3 de la demo y la página de cada torneo ya calculado. #}
+<p class="etiqueta-motor">{% translate "Algoritmo más nuevo: modelo por turnos" %} · {{ regla }}</p>
+<p class="entrada">{{ torneo.nombre }}. {% blocktranslate trimmed with nombre=nombre n=equipos|length %}<strong>{{ nombre }}</strong>: {{ n }} equipos.{% endblocktranslate %} {{ equipos|join:", " }}.</p>
+
+<section aria-labelledby="t-resumen">
+    <h2 id="t-resumen">{% translate "Qué logró el algoritmo" %}</h2>
+    <ul class="tarjetas resumen-demo">
+        <li><strong>{{ km_final|intcomma }} km</strong><span>{% translate "Viaje total de todos los equipos con el calendario del algoritmo." %}</span></li>
+        <li><strong>{{ km_azar|intcomma }} km</strong><span>{% translate "Viaje con un calendario hecho al azar, antes de optimizar." %}</span></li>
+        <li><strong>{{ mejora|unlocalize }}&nbsp;%</strong><span>{% translate "Menos viaje que el calendario al azar." %}</span></li>
+        <li><strong>{% if resultado.reglas_rotas == 0 %}{% translate "Cumple todas las reglas" %}{% else %}{% blocktranslate trimmed count n=resultado.reglas_rotas %}{{ n }} regla rota{% plural %}{{ n }} reglas rotas{% endblocktranslate %}{% endif %}</strong>
+            <span>{% blocktranslate trimmed with a=resultado.reglas_rotas_azar %}El calendario al azar rompía {{ a }}.{% endblocktranslate %}</span></li>
+    </ul>
+    <details>
+        <summary>{% translate "¿Qué reglas revisa?" %}</summary>
+        <ul>
+            <li>{% blocktranslate trimmed with n=resultado.revision.max_casa m=resultado.revision.max_visita %}Máximo 12 juegos seguidos en casa o de visita. Aquí: {{ n }} en casa y {{ m }} de visita.{% endblocktranslate %}</li>
+            <li>{% blocktranslate trimmed with n=resultado.revision.max_dias_seguidos %}Máximo 20 días seguidos con juego. Aquí: {{ n }}.{% endblocktranslate %}</li>
+            <li>{% translate "No jugar contra el mismo rival en dos series seguidas." %}</li>
+            <li>{% blocktranslate trimmed with a=resultado.revision.en_casa.0 b=resultado.revision.en_casa.1 %}Juegos en casa cerca de la mitad. Aquí: de {{ a }} a {{ b }} por equipo.{% endblocktranslate %}</li>
+        </ul>
+    </details>
+</section>
+
+{% if arbol_pg %}
+<section aria-labelledby="t-arbol">
+    <h2 id="t-arbol">{% translate "La regla del motor PG, como árbol" %}</h2>
+    <p>{% translate "Este árbol decide cuánto empeoramiento acepta el algoritmo en cada paso. Lo diseñó la programación genética, no una persona." %}</p>
+    <figure class="pg-figura">
+        <div class="pg-lienzo" id="pg-arbol-regla" tabindex="0" role="region" aria-label="{% translate "La regla que usa el algoritmo hoy" %}"></div>
+        <figcaption><code class="pg-formula">{{ motor_pg_datos.regla }}</code></figcaption>
+    </figure>
+    <p><a href="{% url 'tesis:motor_pg' %}">{% translate "Ver cómo se aprendió, generación por generación" %} →</a></p>
+    {{ motor_pg_datos|json_script:"motor-pg-datos" }}
+    <script src="{% static 'js/motor_pg.js' %}" defer></script>
+</section>
+{% endif %}
+
+{% if mapa_datos %}
+<section aria-labelledby="t-mapa">
+    <h2 id="t-mapa">{% translate "Los estadios y los viajes" %}</h2>
+    <p>{% translate "Toca un estadio para ver cómo viaja ese equipo con el calendario del algoritmo." %}</p>
+    {% include "tesis/_mapa_torneo.html" %}
+</section>
+{% endif %}
+
+{% if curva %}
+<section aria-labelledby="t-curva">
+    <h2 id="t-curva">{% translate "Cómo bajó el viaje" %}</h2>
+    <figure class="curva-demo">
+        <svg viewBox="0 0 {{ curva.ancho|unlocalize }} {{ curva.alto|unlocalize }}" role="img" aria-labelledby="curva-texto" preserveAspectRatio="none">
+            <polyline points="{{ curva.puntos }}" fill="none" stroke="currentColor" stroke-width="3" vector-effect="non-scaling-stroke"></polyline>
+        </svg>
+        <figcaption id="curva-texto">{% blocktranslate trimmed with a=curva.km_max|intcomma b=curva.km_min|intcomma p=curva.pasos|intcomma %}El viaje total bajó de {{ a }} km a {{ b }} km en {{ p }} pasos de búsqueda.{% endblocktranslate %}</figcaption>
+    </figure>
+</section>
+{% endif %}
+
+<section aria-labelledby="t-juegos">
+    <h2 id="t-juegos">{% blocktranslate trimmed with t=total_juegos %}El calendario: {{ t }} juegos{% endblocktranslate %}</h2>
+    <p>{% translate "Cambia de mes con los botones. Elige un equipo para ver solo sus juegos y saber si juega en casa o de visita." %}</p>
+    {% include "tesis/_calendario_dinamico.html" %}
+    <details>
+        <summary>{% translate "Ver todos los juegos en una tabla" %}</summary>
+        <div class="tabla-envoltura" tabindex="0" role="region" aria-label="{% translate "Todos los juegos" %}">
+            <table>
+                <thead><tr><th scope="col">{% translate "Fecha" %}</th><th scope="col">{% translate "En casa" %}</th><th scope="col">{% translate "Visita" %}</th></tr></thead>
+                <tbody>
+                {% for j in juegos %}<tr><td>{{ j.fecha|date:"j M" }}</td><td>{{ j.local }}</td><td>{{ j.visita }}</td></tr>{% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </details>
+</section>
+
+<section aria-labelledby="t-sigue">
+    <h2 id="t-sigue">{% translate "¿Qué sigue?" %}</h2>
+    <ul class="acciones-lista">
+        {% if not estatico %}<li><a href="{% url 'tesis:demo_configuracion' %}">{% translate "Cambiar equipos o reglas y volver a correr" %}</a></li>{% endif %}
+        <li><a href="{% url 'tesis:dashboard' %}">{% translate "Elegir otro torneo" %}</a></li>
+        <li><a href="{% url 'tesis:repeticion' %}">{% translate "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial" %}</a></li>
+        <li><a href="{% url 'tesis:motor_pg' %}">{% translate "El motor PG por dentro: su árbol y sus generaciones" %}</a></li>
+        <li><a href="{% url 'tesis:historia' %}">{% translate "Entender cómo funciona en 2 minutos" %}</a></li>
+        {% if not estatico %}<li><a href="{% url 'tesis:guia' %}">{% translate "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos" %}</a></li>
+        <li><a href="{% url 'tesis:dashboard_tesis' %}">{% translate "Ver el algoritmo original de la tesis" %}</a></li>{% endif %}
+    </ul>
+</section>

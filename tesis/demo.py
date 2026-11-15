@@ -9,6 +9,7 @@ La persona puede dar "Siguiente" tres veces sin cambiar nada. Lo que elige se
 guarda solo en su sesión: la demo no escribe en la base de datos.
 """
 from django import forms
+from django.http import Http404
 from django.shortcuts import redirect, render
 from django.urls import reverse
 from django.utils.translation import gettext, gettext_lazy as _
@@ -18,6 +19,7 @@ from programa_genetico.demo_turnos import (CONFIG_CAMPOS, MAX_EQUIPOS, MIN_EQUIP
                                            config_desde_dict, correr_demo)
 from programa_genetico.motor_turnos_temperatura import REGLA_PG_APRENDIDA
 
+from . import demo_guardada
 from .calendario_dinamico import datos as datos_del_calendario
 from .guia import Accesible
 from .mapa_torneo import datos as datos_del_mapa
@@ -195,23 +197,45 @@ class DemoResultadoView(View):
             return redirect("tesis:dashboard")
         config = config_desde_dict(datos.get("config"))
         resultado = correr_demo({c: (tabla[c][2], tabla[c][3]) for c in codigos}, config)
-        nombre_de = {c: tabla[c][0] for c in codigos}
-        juegos = [{"fecha": fecha, "local": nombre_de[local], "visita": nombre_de[visita]}
-                  for fecha, local, visita in resultado.juegos]
         return render(request, "tesis/demo/resultado.html", {
-            "seccion": "demo", "pasos": pasos("resultado"), "numero": 3, "total": len(PASOS),
-            "nombre": datos.get("nombre") or NOMBRE_POR_DEFECTO, "torneo": torneo(datos.get("torneo")),
-            "equipos": [nombre_de[c] for c in codigos],
-            "config": config, "regla": etiqueta_de_regla(config.regla),
-            "resultado": resultado, "mejora": round(resultado.mejora * 100, 1),
-            "km_azar": round(resultado.km_azar), "km_final": round(resultado.km_final),
-            "juegos": juegos, "total_juegos": len(juegos), "primeros": juegos[:20],
-            "curva": curva(resultado.historial),
-            "calendario_datos": datos_del_calendario(resultado.juegos, nombre_de),
-            "arbol_pg": config.regla == "pg",
-            "motor_pg_datos": {"regla": REGLA_PG_APRENDIDA, "generaciones": [], "textos": textos_motor_pg()},
-            "mapa_datos": datos_del_mapa(torneo(datos.get("torneo"))["clave"], {c: tabla[c] for c in codigos}),
-        })
+            "pasos": pasos("resultado"), "numero": 3, "total": len(PASOS),
+            "nombre": datos.get("nombre") or NOMBRE_POR_DEFECTO,
+            **contexto_resultado(datos.get("torneo"), codigos, config, resultado)})
+
+
+class DemoTorneoView(View):
+    """Resultado ya calculado de un torneo (python manage.py precalcular_demo). Para el sitio estático."""
+
+    def get(self, request, clave):
+        guardado = demo_guardada.cargar(clave)
+        if guardado is None or clave not in {t["clave"] for t in TORNEOS}:
+            raise Http404
+        codigos, config, resultado = guardado
+        t = torneo(clave)
+        return render(request, "tesis/demo/torneo.html", {
+            "nombre": t["nombre"], **contexto_resultado(clave, codigos, config, resultado)})
+
+
+def contexto_resultado(clave, codigos, config, resultado):
+    """Lo que muestra el resultado de la demo: cifras, calendario, mapa y árbol de la regla."""
+    t = torneo(clave)
+    tabla = equipos_de(t["clave"])
+    nombre_de = {c: tabla[c][0] for c in codigos}
+    juegos = [{"fecha": fecha, "local": nombre_de[local], "visita": nombre_de[visita]}
+              for fecha, local, visita in resultado.juegos]
+    return {
+        "seccion": "demo", "torneo": t,
+        "equipos": [nombre_de[c] for c in codigos],
+        "config": config, "regla": etiqueta_de_regla(config.regla),
+        "resultado": resultado, "mejora": round(resultado.mejora * 100, 1),
+        "km_azar": round(resultado.km_azar), "km_final": round(resultado.km_final),
+        "juegos": juegos, "total_juegos": len(juegos), "primeros": juegos[:20],
+        "curva": curva(resultado.historial),
+        "calendario_datos": datos_del_calendario(resultado.juegos, nombre_de),
+        "arbol_pg": config.regla == "pg",
+        "motor_pg_datos": {"regla": REGLA_PG_APRENDIDA, "generaciones": [], "textos": textos_motor_pg()},
+        "mapa_datos": datos_del_mapa(t["clave"], {c: tabla[c] for c in codigos}),
+    }
 
 
 def curva(historial, ancho=600, alto=200, margen=8):

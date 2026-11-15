@@ -47,12 +47,21 @@
                 </a>
             </li>
             <li>
+                {% if estatico %}
+                <a class="ruta" href="{% url 'tesis:dashboard' %}">
+                    <span class="ruta-tiempo">{% translate "5 minutos" %}</span>
+                    <span class="ruta-titulo">{% translate "Ver la demo" %}</span>
+                    <span class="ruta-texto">{% translate "Elige un torneo de béisbol y ve el calendario del algoritmo, el mapa de sus estadios y los viajes de cada equipo." %}</span>
+                    <span class="ruta-accion">{% translate "Abrir la demo" %} →</span>
+                </a>
+                {% else %}
                 <a class="ruta" href="{% url 'tesis:guia' %}">
                     <span class="ruta-tiempo">{% translate "5 minutos · 5 pasos" %}</span>
                     <span class="ruta-titulo">{% translate "Probar la herramienta" %}</span>
                     <span class="ruta-texto">{% translate "Registra equipos, arma una liga y genera tu propio calendario. Sin cuenta." %}</span>
                     <span class="ruta-accion">{% translate "Abrir la guía" %} →</span>
                 </a>
+                {% endif %}
             </li>
             <li>
                 <a class="ruta" href="{% url 'documentacion:historico' %}">

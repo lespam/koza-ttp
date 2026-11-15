@@ -10,6 +10,7 @@ urlpatterns = [
     path('demo/', demo.DemoEquiposView.as_view(), name='dashboard'),
     path('demo/configuracion/', demo.DemoConfiguracionView.as_view(), name='demo_configuracion'),
     path('demo/resultado/', demo.DemoResultadoView.as_view(), name='demo_resultado'),
+    path('demo/torneo/<slug:clave>/', demo.DemoTorneoView.as_view(), name='demo_torneo'),
     # Tablero con el algoritmo original de la tesis
     path('demo/tesis/', views.DashboardView.as_view(), name='dashboard_tesis'),
 

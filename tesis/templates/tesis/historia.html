@@ -77,7 +77,7 @@
                 <p>{% blocktranslate trimmed with resultado=motor.tesis.frente_al_azar %}El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir calendarios al azar: {{ resultado }}.{% endblocktranslate %}</p>
                 <p>{% blocktranslate trimmed with resultado=motor.turnos.frente_al_oficial %}El algoritmo más nuevo, por turnos, va más lejos: {{ resultado }}, en una prueba preliminar.{% endblocktranslate %}
                     <a href="{% url 'tesis:repeticion' %}">{% translate "Ver la temporada 2023 completa" %} →</a></p>
-                <p class="acciones historia-sin-js"><a class="boton" href="{% url 'tesis:guia' %}">{% translate "Probar la herramienta en 5 pasos" %} →</a></p>
+                <p class="acciones historia-sin-js">{% if estatico %}<a class="boton" href="{% url 'tesis:dashboard' %}">{% translate "Ver la demo" %} →</a>{% else %}<a class="boton" href="{% url 'tesis:guia' %}">{% translate "Probar la herramienta en 5 pasos" %} →</a>{% endif %}</p>
             </section>
         </div>
 
@@ -108,7 +108,7 @@
         <span class="nota" id="historia-pista"></span>
         <button class="boton" type="button" id="historia-siguiente">{% translate "Siguiente" %} →</button>
         {# En el último paso, "Siguiente" se cambia por la invitación a probar la herramienta #}
-        <a class="boton" id="historia-final" href="{% url 'tesis:guia' %}" hidden>{% translate "Probar la herramienta" %} →</a>
+        {% if estatico %}<a class="boton" id="historia-final" href="{% url 'tesis:dashboard' %}" hidden>{% translate "Ver la demo" %} →</a>{% else %}<a class="boton" id="historia-final" href="{% url 'tesis:guia' %}" hidden>{% translate "Probar la herramienta" %} →</a>{% endif %}
     </div>
 </div>
 {{ historia_datos|json_script:"historia-datos" }}

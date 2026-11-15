@@ -3,7 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const languageSelect = document.getElementById('language-select');
     if (languageSelect) {
         languageSelect.addEventListener('change', () => {
-            languageSelect.form.submit();
+            // En el sitio estático no hay servidor: se va directo a esta página en el otro idioma
+            const opcion = languageSelect.selectedOptions[0];
+            if (document.documentElement.hasAttribute('data-estatico') && opcion && opcion.dataset.url) {
+                window.location.href = opcion.dataset.url;
+            } else {
+                languageSelect.form.submit();
+            }
         });
     }
 

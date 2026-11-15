@@ -2875,10 +2875,6 @@ msgid "Grandes Ligas (MLB), Estados Unidos y Canadá"
 msgstr ""
 
 #: tesis/torneos.py
-msgid "10 de los 30 equipos, de costa a costa. Puedes cambiar cuáles."
-msgstr ""
-
-#: tesis/torneos.py
 msgid "La liga que usa la tesis para sus pruebas."
 msgstr ""
 
@@ -3623,4 +3619,65 @@ msgstr ""
 
 #: tesis/motor_pg.py
 msgid "La familia del árbol elegido"
+msgstr ""
+
+#: documentacion/templates/404.html
+msgid "No encontramos esta página"
+msgstr ""
+
+#: documentacion/templates/404.html
+msgid "Puede que la dirección esté mal escrita o que la página ya no exista."
+msgstr ""
+
+#: documentacion/templates/404.html
+msgid "Ir a la portada"
+msgstr ""
+
+#: documentacion/templates/404.html
+msgid "Ver la demo"
+msgstr ""
+
+#: tesis/templates/tesis/demo/_base.html
+msgid "Elige un torneo"
+msgstr ""
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo armó un calendario para cada torneo y buscó el que tiene menos "
+"viaje. Elige uno para ver su calendario, el mapa de sus estadios y los "
+"viajes de cada equipo."
+msgstr ""
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Ver el calendario"
+msgstr ""
+
+#: tesis/templates/tesis/demo/torneo.html
+msgid ""
+"Calendario de %(t)s hecho por el algoritmo más nuevo de Koza-TTP, con mapa "
+"de estadios y viajes."
+msgstr ""
+
+#: tesis/templates/tesis/demo/torneo.html
+msgid ""
+"Resultado ya calculado: el algoritmo probó %(pasos)s cambios en una "
+"computadora y aquí se guardó lo que encontró."
+msgstr ""
+
+#: tesis/templates/tesis/inicio.html
+msgid "5 minutos"
+msgstr ""
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Elige un torneo de béisbol y ve el calendario del algoritmo, el mapa de sus "
+"estadios y los viajes de cada equipo."
+msgstr ""
+
+#: tesis/templates/tesis/inicio.html
+msgid "Abrir la demo"
+msgstr ""
+
+#: tesis/torneos.py
+msgid "10 de los 30 equipos, de costa a costa."
 msgstr ""
