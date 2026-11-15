@@ -1,0 +1,75 @@
+{% extends "documentacion/base.html" %}
+{% load i18n static l10n humanize %}
+{% block titulo %}{% translate "El motor PG por dentro" %}{% endblock %}
+{% block descripcion %}{% translate "El árbol de programación genética que usa el algoritmo de Koza-TTP y una evolución real, generación por generación." %}{% endblock %}
+{% block contenido %}
+<div class="envoltura motor-pg calendario-pagina" id="motor-pg">
+    <p class="miga"><a href="{% url 'tesis:dashboard' %}">{% translate "Demo" %}</a> / <span aria-current="page">{% translate "El motor PG por dentro" %}</span></p>
+    <p class="antetitulo">{% translate "Programación genética · Árboles · Generaciones" %}</p>
+    <h1>{% translate "El motor PG por dentro" %}</h1>
+    <p class="entrada">{% blocktranslate trimmed %}El algoritmo prueba millones de cambios al calendario. Algunos cambios empeoran el viaje un poco, pero ayudan a encontrar algo mejor después. La <strong>regla</strong> decide cuánto empeoramiento se acepta en cada paso. La programación genética no escribe esa regla a mano: la <strong>hace evolucionar</strong> como un árbol.{% endblocktranslate %}</p>
+
+    <section aria-labelledby="t-regla">
+        <h2 id="t-regla">{% translate "La regla que usa el algoritmo hoy" %}</h2>
+        <p>{% translate "Se lee de abajo hacia arriba. Cada caja recibe los resultados de las cajas de abajo y hace una operación. Arriba sale la temperatura: cuántos km de empeoramiento se aceptan." %}</p>
+        <figure class="pg-figura">
+            <div class="pg-lienzo" id="pg-arbol-regla" tabindex="0" role="region" aria-label="{% translate "La regla que usa el algoritmo hoy" %}"></div>
+            <figcaption><code class="pg-formula">{{ datos.regla_aprendida }}</code></figcaption>
+        </figure>
+        <dl class="pg-piezas">
+            <dt>{% translate "avance" %}</dt><dd>{% translate "Qué tanto lleva la búsqueda: 0 al inicio y 1 al final." %}</dd>
+            <dt>{% translate "aceptados" %}</dt><dd>{% translate "Qué parte de los cambios recientes se aceptó: de 0 a 1." %}</dd>
+            <dt>{% translate "suma, resta, por, entre" %}</dt><dd>{% translate "Las cuatro operaciones de siempre. Si se divide entre 0, el resultado es 1." %}</dd>
+            <dt>{% translate "mínimo, máximo" %}</dt><dd>{% translate "El menor o el mayor de dos números." %}</dd>
+            <dt>{% translate "decae" %}</dt><dd>{% translate "Un número que baja rápido cuando el de abajo crece (e elevado a menos x)." %}</dd>
+        </dl>
+    </section>
+
+    <section aria-labelledby="t-generaciones">
+        <h2 id="t-generaciones">{% translate "Cómo se aprende: generación tras generación" %}</h2>
+        <p>{% blocktranslate trimmed with n=datos.poblacion total=total equipos=datos.equipos %}Esta es una evolución real, guardada para que la veas sin esperar: {{ n }} árboles por generación, {{ total }} generaciones, con los {{ equipos }} equipos de las Grandes Ligas. Cada árbol se prueba en 2 calendarios de práctica. Su <strong>costo</strong> es el viaje que logra: menos es mejor.{% endblocktranslate %}</p>
+        <p>{% blocktranslate trimmed with a=inicio b=fin m=a_mano %}El mejor árbol bajó de {{ a }} a {{ b }} millones de km. La regla hecha a mano logra {{ m }} con el mismo esfuerzo.{% endblocktranslate %}</p>
+        <figure class="pg-figura" id="pg-evolucion" hidden>
+            <div class="pg-lienzo" id="pg-grafica" tabindex="0" role="region" aria-label="{% translate "Costo de cada árbol en cada generación" %}"></div>
+            <ul class="pg-leyenda" id="pg-leyenda"></ul>
+            <div class="pg-controles">
+                <button class="boton" type="button" id="pg-reproducir">{% translate "Reproducir" %}</button>
+                <label for="pg-generacion">{% translate "Generación" %}
+                    <input type="range" id="pg-generacion" min="0" max="{{ ultima }}" value="0">
+                </label>
+            </div>
+            <figcaption>
+                <p class="pg-estado" id="pg-estado" aria-live="polite"></p>
+                <p class="nota" id="pg-origenes"></p>
+            </figcaption>
+            <h3 id="pg-mejor-titulo"></h3>
+            <div class="pg-lienzo" id="pg-arbol-generacion" tabindex="0" role="region" aria-labelledby="pg-mejor-titulo"></div>
+            <p class="nota" id="pg-vino-de"></p>
+            <p><code class="pg-formula" id="pg-mejor-formula"></code></p>
+        </figure>
+        <p class="nota">{% translate "Esta corrida es un ejemplo con las mismas piezas. Su mejor árbol puede ser distinto del que usa la demo, porque cada evolución empieza con árboles al azar." %}</p>
+        <details>
+            <summary>{% translate "Ver todas las generaciones en una tabla" %}</summary>
+            <div class="tabla-envoltura" tabindex="0" role="region" aria-label="{% translate "Generaciones" %}">
+                <table>
+                    <thead><tr><th scope="col">{% translate "Generación" %}</th><th scope="col">{% translate "Mejor costo (millones de km)" %}</th><th scope="col">{% translate "Mediana" %}</th><th scope="col">{% translate "Mejor árbol" %}</th></tr></thead>
+                    <tbody>
+                    {% for f in filas %}<tr><td>{{ f.gen }}</td><td>{{ f.mejor|unlocalize }}</td><td>{{ f.mediana|unlocalize }}</td><td><code>{{ f.arbol }}</code></td></tr>{% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </details>
+    </section>
+
+    <section aria-labelledby="t-sigue">
+        <h2 id="t-sigue">{% translate "¿Qué sigue?" %}</h2>
+        <ul class="acciones-lista">
+            <li><a href="{% url 'tesis:dashboard' %}">{% translate "Probar la demo con un torneo" %}</a></li>
+            <li><a href="{% url 'tesis:repeticion' %}">{% translate "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial" %}</a></li>
+            <li><a href="{% url 'tesis:historia' %}">{% translate "Entender cómo funciona en 2 minutos" %}</a></li>
+        </ul>
+    </section>
+</div>
+{{ motor_pg_datos|json_script:"motor-pg-datos" }}
+{% endblock %}
+{% block scripts %}<script src="{% static 'js/motor_pg.js' %}"></script>{% endblock %}

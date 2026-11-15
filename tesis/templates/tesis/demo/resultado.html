@@ -1,5 +1,5 @@
 {% extends "tesis/demo/_base.html" %}
-{% load i18n l10n humanize %}
+{% load i18n l10n humanize static %}
 {% block titulo %}{% translate "Demo: el calendario" %}{% endblock %}
 {% block paso %}
 <h1>{% translate "Paso 3: el calendario" %}</h1>
@@ -25,6 +25,20 @@
         </ul>
     </details>
 </section>
+
+{% if arbol_pg %}
+<section aria-labelledby="t-arbol">
+    <h2 id="t-arbol">{% translate "La regla del motor PG, como árbol" %}</h2>
+    <p>{% translate "Este árbol decide cuánto empeoramiento acepta el algoritmo en cada paso. Lo diseñó la programación genética, no una persona." %}</p>
+    <figure class="pg-figura">
+        <div class="pg-lienzo" id="pg-arbol-regla" tabindex="0" role="region" aria-label="{% translate "La regla que usa el algoritmo hoy" %}"></div>
+        <figcaption><code class="pg-formula">{{ motor_pg_datos.regla }}</code></figcaption>
+    </figure>
+    <p><a href="{% url 'tesis:motor_pg' %}">{% translate "Ver cómo se aprendió, generación por generación" %} →</a></p>
+    {{ motor_pg_datos|json_script:"motor-pg-datos" }}
+    <script src="{% static 'js/motor_pg.js' %}" defer></script>
+</section>
+{% endif %}
 
 {% if mapa_datos %}
 <section aria-labelledby="t-mapa">
@@ -69,6 +83,7 @@
         <li><a href="{% url 'tesis:demo_configuracion' %}">{% translate "Cambiar equipos o reglas y volver a correr" %}</a></li>
         <li><a href="{% url 'tesis:dashboard' %}">{% translate "Elegir otro torneo" %}</a></li>
         <li><a href="{% url 'tesis:repeticion' %}">{% translate "Ver la temporada 2023 completa: 30 equipos contra el calendario oficial" %}</a></li>
+        <li><a href="{% url 'tesis:motor_pg' %}">{% translate "El motor PG por dentro: su árbol y sus generaciones" %}</a></li>
         <li><a href="{% url 'tesis:historia' %}">{% translate "Entender cómo funciona en 2 minutos" %}</a></li>
         <li><a href="{% url 'tesis:guia' %}">{% translate "Hazlo tú mismo: registra tus equipos en la guía de 5 pasos" %}</a></li>
         <li><a href="{% url 'tesis:dashboard_tesis' %}">{% translate "Ver el algoritmo original de la tesis" %}</a></li>

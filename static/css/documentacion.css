@@ -515,3 +515,35 @@ thead th { font-size: 0.92rem; }
 .mapa-flecha { fill: var(--acento); stroke: none; }
 .mapa-estado { font-weight: 600; }
 .mapa-recorrido ol { columns: 2 16rem; }
+
+/* El motor PG por dentro (static/js/motor_pg.js) */
+.pg-figura { margin: 1rem 0 1.5rem; }
+.pg-lienzo { overflow-x: auto; }
+.pg-arbol { display: block; height: auto; margin: 0 auto; }
+.pg-rama { stroke: var(--texto-suave); stroke-width: 2; }
+.pg-nodo rect { fill: var(--superficie); stroke: var(--texto); stroke-width: 1.5; }
+.pg-hoja rect { fill: var(--fondo); stroke: var(--acento); stroke-width: 2; }
+.pg-nodo text { font: 600 16px "IBM Plex Mono", ui-monospace, monospace; fill: var(--texto); }
+.pg-formula { font-size: 0.95rem; overflow-wrap: anywhere; }
+.pg-piezas { display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1rem; max-width: 46rem; }
+.pg-piezas dt { font-family: "IBM Plex Mono", ui-monospace, monospace; font-weight: 700; }
+.pg-piezas dd { margin: 0; }
+.pg-grafica { width: 100%; min-width: 620px; height: auto; display: block; border: 1px solid var(--borde); border-radius: 8px; background: var(--superficie); }
+.pg-rejilla { stroke: var(--borde); stroke-width: 1; }
+.pg-eje { font: 14px "Atkinson Hyperlegible Next", system-ui, sans-serif; fill: var(--texto-suave); }
+.pg-eje-titulo { fill: var(--texto); font-weight: 700; }
+.pg-poblacion circle { fill: var(--enlace); opacity: 0.45; }
+.pg-fuera { fill: var(--texto-suave); }
+.pg-mejor { fill: none; stroke: var(--acento); stroke-width: 3.5; }
+.pg-mejor-punto { fill: var(--acento); }
+.pg-mediana { fill: none; stroke: var(--enlace); stroke-width: 2.5; stroke-dasharray: 8 5; }
+.pg-mano { stroke: var(--texto); stroke-width: 2; stroke-dasharray: 2 5; stroke-linecap: round; }
+.pg-banda { fill: var(--enlace); opacity: 0.12; }
+.pg-marca { fill: none; stroke: var(--texto); stroke-width: 2.5; }
+.pg-columna { fill: transparent; cursor: pointer; }
+.pg-leyenda { list-style: none; padding: 0; margin: 0.75rem 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1.5rem; }
+.pg-leyenda li { display: flex; align-items: center; gap: 0.25rem; }
+.pg-controles { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; align-items: center; margin: 0.5rem 0; }
+.pg-controles label { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; font-weight: 600; }
+.pg-controles input[type="range"] { width: min(22rem, 70vw); min-height: 44px; accent-color: var(--enlace); }
+.pg-estado { font-weight: 700; margin-bottom: 0.25rem; }
