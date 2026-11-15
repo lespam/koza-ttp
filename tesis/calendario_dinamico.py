@@ -7,9 +7,17 @@ from django.utils.translation import gettext as _
 
 def textos():
     return {
-        "anterior": _("Mes anterior"),
-        "siguiente": _("Mes siguiente"),
-        "mes": _("Mes"),
+        "vista": _("Ver el calendario por"),
+        "vista_semana": _("Semana"),
+        "vista_mes": _("Mes"),
+        "vista_anio": _("Año"),
+        "anterior_semana": _("Semana anterior"),
+        "siguiente_semana": _("Semana siguiente"),
+        "anterior_mes": _("Mes anterior"),
+        "siguiente_mes": _("Mes siguiente"),
+        "anterior_anio": _("Año anterior"),
+        "siguiente_anio": _("Año siguiente"),
+        "ir_a": _("Ir al mes"),
         "equipo": _("Ver un equipo"),
         "todos": _("Todos los equipos"),
         "casa": _("En casa"),
@@ -17,11 +25,19 @@ def textos():
         "contra": _("contra {rival}"),
         "en": _("en {rival}"),
         "juego": _("{casa} recibe a {visita}"),
-        "resumen": _("{n} juegos en {mes}."),
-        "resumen_equipo": _("{equipo}: {n} juegos en {mes}, {casa} en casa y {visita} de visita."),
+        "resumen": _("{n} juegos en {periodo}."),
+        "resumen_equipo": _("{equipo}: {n} juegos en {periodo}, {casa} en casa y {visita} de visita."),
+        "titulo_semana": _("Semana del {inicio} al {fin}"),
+        "esta_semana": _("esta semana"),
+        "titulo_anio": _("Año {anio}"),
+        "n_juegos": _("{n} juegos"),
+        "descanso": _("Sin juegos"),
+        "abrir_semana": _("Abrir esa semana"),
         "leyenda": _("Primero va el equipo que juega en casa."),
         "leyenda_equipo": _("Cada juego dice si el equipo juega en casa o de visita."),
-        "sin_juegos": _("No hay juegos este mes."),
+        "leyenda_anio": _("Los días con número en un cuadro tienen juegos. Toca un día para ver su semana."),
+        "leyenda_anio_equipo": _("Cuadro lleno: juega en casa. Cuadro con borde punteado: juega de visita. Toca un día para ver su semana."),
+        "sin_juegos": _("No hay juegos en estas fechas."),
     }
 
 

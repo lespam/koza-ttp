@@ -3214,24 +3214,12 @@ msgid "{casa} recibe a {visita}"
 msgstr "{casa} hosts {visita}"
 
 #: tesis/calendario_dinamico.py
-msgid "{n} juegos en {mes}."
-msgstr "{n} games in {mes}."
-
-#: tesis/calendario_dinamico.py
-msgid "{equipo}: {n} juegos en {mes}, {casa} en casa y {visita} de visita."
-msgstr "{equipo}: {n} games in {mes}, {casa} at home and {visita} away."
-
-#: tesis/calendario_dinamico.py
 msgid "Primero va el equipo que juega en casa."
 msgstr "The home team comes first."
 
 #: tesis/calendario_dinamico.py
 msgid "Cada juego dice si el equipo juega en casa o de visita."
 msgstr "Each game says whether the team plays at home or away."
-
-#: tesis/calendario_dinamico.py
-msgid "No hay juegos este mes."
-msgstr "No games this month."
 
 #: tesis/historia.py
 msgid "Motor PG"
@@ -3248,3 +3236,86 @@ msgstr ""
 #: tesis/historia.py
 msgid "Motor PG (actual)"
 msgstr "GP engine (current)"
+
+#: tesis/calendario_dinamico.py
+msgid "Ver el calendario por"
+msgstr "Show the schedule by"
+
+#: tesis/calendario_dinamico.py
+msgid "Semana"
+msgstr "Week"
+
+#: tesis/calendario_dinamico.py
+msgid "Año"
+msgstr "Year"
+
+#: tesis/calendario_dinamico.py
+msgid "Semana anterior"
+msgstr "Previous week"
+
+#: tesis/calendario_dinamico.py
+msgid "Semana siguiente"
+msgstr "Next week"
+
+#: tesis/calendario_dinamico.py
+msgid "Año anterior"
+msgstr "Previous year"
+
+#: tesis/calendario_dinamico.py
+msgid "Año siguiente"
+msgstr "Next year"
+
+#: tesis/calendario_dinamico.py
+msgid "Ir al mes"
+msgstr "Go to month"
+
+#: tesis/calendario_dinamico.py
+msgid "{n} juegos en {periodo}."
+msgstr "{n} games in {periodo}."
+
+#: tesis/calendario_dinamico.py
+msgid ""
+"{equipo}: {n} juegos en {periodo}, {casa} en casa y {visita} de visita."
+msgstr "{equipo}: {n} games in {periodo}, {casa} at home and {visita} away."
+
+#: tesis/calendario_dinamico.py
+msgid "del {inicio} al {fin}"
+msgstr "{inicio} to {fin}"
+
+#: tesis/calendario_dinamico.py
+msgid "Semana {periodo}"
+msgstr "Week of {periodo}"
+
+#: tesis/calendario_dinamico.py
+msgid "Año {anio}"
+msgstr "Year {anio}"
+
+#: tesis/calendario_dinamico.py
+msgid "{n} juegos"
+msgstr "{n} games"
+
+#: tesis/calendario_dinamico.py
+msgid "Sin juegos"
+msgstr "No games"
+
+#: tesis/calendario_dinamico.py
+msgid "Abrir esa semana"
+msgstr "Open that week"
+
+#: tesis/calendario_dinamico.py
+msgid ""
+"Los días con número en un cuadro tienen juegos. Toca un día para ver su "
+"semana."
+msgstr "Days with a boxed number have games. Tap a day to see its week."
+
+#: tesis/calendario_dinamico.py
+msgid ""
+"Cuadro lleno: juega en casa. Cuadro con borde punteado: juega de visita. "
+"Toca un día para ver su semana."
+msgstr ""
+"Filled box: plays at home. Dashed box: plays away. Tap a day to see its "
+"week."
+
+#: tesis/calendario_dinamico.py
+msgid "No hay juegos en estas fechas."
+msgstr "No games on these dates."

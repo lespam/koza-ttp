@@ -1,4 +1,6 @@
 import datetime
+import re
+from pathlib import Path
 from unittest import mock
 
 from django.conf import settings
@@ -492,6 +494,12 @@ class CalendarioDinamico(TestCase):
         datos = r.context["calendario_datos"]
         self.assertEqual(datos["juegos"], [["2026-04-01", "SEA", "CHC"], ["2026-04-02", "SEA", "CHC"]])
         self.assertEqual(datos["equipos"]["CHC"], "Chicago")
-        self.assertIn("anterior", datos["textos"])
+        # Cada texto que pide calendario.js existe (T.algo y T["prefijo_" + vista])
+        js = (Path(settings.BASE_DIR) / "static" / "js" / "calendario.js").read_text(encoding="utf-8")
+        pedidos = set(re.findall(r"\bT\.(\w+)", js))
+        pedidos |= {f"{p}{v}" for p in re.findall(r'T\["(\w+_)" \+ (?:vista|v)\]', js)
+                    for v in ("semana", "mes", "anio")}
+        self.assertTrue(pedidos)
+        self.assertEqual(pedidos - set(datos["textos"]), set())
         # Usa la plantilla del sitio (cabecera, idioma, accesibilidad)
         self.assertContains(r, 'id="boton-menu"')
