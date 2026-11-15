@@ -16,10 +16,12 @@ from django.views import View
 
 from programa_genetico.demo_turnos import (CONFIG_CAMPOS, MAX_EQUIPOS, MIN_EQUIPOS,
                                            config_desde_dict, correr_demo)
+from programa_genetico.motor_turnos_temperatura import REGLA_PG_APRENDIDA
 
 from .calendario_dinamico import datos as datos_del_calendario
 from .guia import Accesible
 from .mapa_torneo import datos as datos_del_mapa
+from .motor_pg import textos as textos_motor_pg
 from .torneos import PRESELECCION_MLB, TORNEO_POR_DEFECTO, TORNEOS, equipos_de, torneo
 
 PRESELECCION = PRESELECCION_MLB  # nombre que usaban las pruebas
@@ -206,6 +208,8 @@ class DemoResultadoView(View):
             "juegos": juegos, "total_juegos": len(juegos), "primeros": juegos[:20],
             "curva": curva(resultado.historial),
             "calendario_datos": datos_del_calendario(resultado.juegos, nombre_de),
+            "arbol_pg": config.regla == "pg",
+            "motor_pg_datos": {"regla": REGLA_PG_APRENDIDA, "generaciones": [], "textos": textos_motor_pg()},
             "mapa_datos": datos_del_mapa(torneo(datos.get("torneo"))["clave"], {c: tabla[c] for c in codigos}),
         })
 

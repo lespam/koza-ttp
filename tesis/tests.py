@@ -518,3 +518,32 @@ class CalendarioDinamico(TestCase):
         self.assertEqual(pedidos - set(datos["textos"]), set())
         # Usa la plantilla del sitio (cabecera, idioma, accesibilidad)
         self.assertContains(r, 'id="boton-menu"')
+
+
+class MotorPGPorDentro(TestCase):
+    """La página del motor PG dibuja la regla aprendida y una evolución guardada."""
+
+    def test_pagina(self):
+        from programa_genetico.motor_turnos_temperatura import REGLA_PG_APRENDIDA
+        r = self.client.get(reverse("tesis:motor_pg"))
+        self.assertEqual(r.status_code, 200)
+        self.assertContains(r, 'id="motor-pg-datos"')
+        self.assertContains(r, "js/motor_pg.js")
+        datos = r.context["motor_pg_datos"]
+        self.assertEqual(datos["regla"], REGLA_PG_APRENDIDA)
+        gens = datos["generaciones"]
+        self.assertGreaterEqual(len(gens), 2)
+        for g in gens:
+            costos = [c for _a, c, _o in g["individuos"]]
+            self.assertEqual(g["mejor"], min(costos))
+        # El mejor nunca empeora: los 2 de élite pasan a la siguiente generación
+        mejores = [g["mejor"] for g in gens]
+        self.assertEqual(mejores, sorted(mejores, reverse=True))
+
+    def test_cada_pieza_tiene_nombre(self):
+        """Cada primitiva y terminal de la PG tiene un nombre que motor_pg.js puede escribir."""
+        from programa_genetico.motor_turnos_temperatura import PSET
+        from .motor_pg import textos
+        nombres = {p.name for ps in PSET.primitives.values() for p in ps}
+        nombres |= set(PSET.arguments)  # avance y aceptados (las constantes se escriben como número)
+        self.assertEqual(nombres - set(textos()["piezas"]), set())

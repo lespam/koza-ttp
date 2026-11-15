@@ -3366,3 +3366,281 @@ msgid ""
 msgstr ""
 "Each dot is a ballpark. The line follows the team from city to city, in "
 "schedule order."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "La regla del motor PG, como árbol"
+msgstr "The GP engine's rule, as a tree"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Este árbol decide cuánto empeoramiento acepta el algoritmo en cada paso. Lo "
+"diseñó la programación genética, no una persona."
+msgstr ""
+"This tree decides how much worsening the algorithm accepts at each step. "
+"Genetic programming designed it, not a person."
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver cómo se aprendió, generación por generación"
+msgstr "See how it was learned, generation by generation"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El motor PG por dentro: su árbol y sus generaciones"
+msgstr "Inside the GP engine: its tree and its generations"
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver una evolución real, generación por generación"
+msgstr "See a real evolution, generation by generation"
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "El motor PG por dentro"
+msgstr "Inside the GP engine"
+
+#: tesis/templates/tesis/motor_pg.html
+msgid ""
+"El árbol de programación genética que usa el algoritmo de Koza-TTP y una "
+"evolución real, generación por generación."
+msgstr ""
+"The genetic programming tree used by the Koza-TTP algorithm and a real "
+"evolution, generation by generation."
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "Programación genética · Árboles · Generaciones"
+msgstr "Genetic programming · Trees · Generations"
+
+#: tesis/templates/tesis/motor_pg.html
+msgid ""
+"El algoritmo prueba millones de cambios al calendario. Algunos cambios "
+"empeoran el viaje un poco, pero ayudan a encontrar algo mejor después. La "
+"<strong>regla</strong> decide cuánto empeoramiento se acepta en cada paso. "
+"La programación genética no escribe esa regla a mano: la <strong>hace "
+"evolucionar</strong> como un árbol."
+msgstr ""
+"The algorithm tries millions of changes to the schedule. Some changes make "
+"travel a little worse, but help find something better later. The "
+"<strong>rule</strong> decides how much worsening is accepted at each step. "
+"Genetic programming does not write that rule by hand: it <strong>evolves "
+"it</strong> as a tree."
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "La regla que usa el algoritmo hoy"
+msgstr "The rule the algorithm uses today"
+
+#: tesis/templates/tesis/motor_pg.html
+msgid ""
+"Se lee de abajo hacia arriba. Cada caja recibe los resultados de las cajas "
+"de abajo y hace una operación. Arriba sale la temperatura: cuántos km de "
+"empeoramiento se aceptan."
+msgstr ""
+"Read it from the bottom up. Each box takes the results of the boxes below "
+"and does one operation. The top gives the temperature: how many km of "
+"worsening are accepted."
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "avance"
+msgstr "progress"
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "Qué tanto lleva la búsqueda: 0 al inicio y 1 al final."
+msgstr "How far the search has gone: 0 at the start and 1 at the end."
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "aceptados"
+msgstr "accepted"
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "Qué parte de los cambios recientes se aceptó: de 0 a 1."
+msgstr "What share of recent changes was accepted: from 0 to 1."
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "suma, resta, por, entre"
+msgstr "plus, minus, times, divided by"
+
+#: tesis/templates/tesis/motor_pg.html
+msgid ""
+"Las cuatro operaciones de siempre. Si se divide entre 0, el resultado es 1."
+msgstr "The four usual operations. Dividing by 0 gives 1."
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "mínimo, máximo"
+msgstr "minimum, maximum"
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "El menor o el mayor de dos números."
+msgstr "The smaller or the larger of two numbers."
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "decae"
+msgstr "decay"
+
+#: tesis/templates/tesis/motor_pg.html
+msgid ""
+"Un número que baja rápido cuando el de abajo crece (e elevado a menos x)."
+msgstr "A number that drops fast when the one below grows (e to the minus x)."
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "Cómo se aprende: generación tras generación"
+msgstr "How it learns: generation after generation"
+
+#: tesis/templates/tesis/motor_pg.html
+msgid ""
+"Esta es una evolución real, guardada para que la veas sin esperar: %(n)s "
+"árboles por generación, %(total)s generaciones, con los %(equipos)s equipos "
+"de las Grandes Ligas. Cada árbol se prueba en 2 calendarios de práctica. Su "
+"<strong>costo</strong> es el viaje que logra: menos es mejor."
+msgstr ""
+"This is a real evolution, saved so you can watch it without waiting: %(n)s "
+"trees per generation, %(total)s generations, with the %(equipos)s Major "
+"League teams. Each tree is tested on 2 practice schedules. Its "
+"<strong>cost</strong> is the travel it achieves: lower is better."
+
+#: tesis/templates/tesis/motor_pg.html
+msgid ""
+"El mejor árbol bajó de %(a)s a %(b)s millones de km. La regla hecha a mano "
+"logra %(m)s con el mismo esfuerzo."
+msgstr ""
+"The best tree went from %(a)s to %(b)s million km. The hand-made rule "
+"reaches %(m)s with the same effort."
+
+#: tesis/templates/tesis/motor_pg.html
+msgid ""
+"Esta corrida es un ejemplo con las mismas piezas. Su mejor árbol puede ser "
+"distinto del que usa la demo, porque cada evolución empieza con árboles al "
+"azar."
+msgstr ""
+"This run is an example with the same pieces. Its best tree may differ from "
+"the one the demo uses, because each evolution starts with random trees."
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "Ver todas las generaciones en una tabla"
+msgstr "See all generations in a table"
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "Mejor costo (millones de km)"
+msgstr "Best cost (million km)"
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "Mediana"
+msgstr "Median"
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "Mejor árbol"
+msgstr "Best tree"
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "Probar la demo con un torneo"
+msgstr "Try the demo with a tournament"
+
+#: tesis/motor_pg.py
+msgid "entre"
+msgstr "divided by"
+
+#: tesis/motor_pg.py
+msgid "por"
+msgstr "times"
+
+#: tesis/motor_pg.py
+msgid "resta"
+msgstr "minus"
+
+#: tesis/motor_pg.py
+msgid "suma"
+msgstr "plus"
+
+#: tesis/motor_pg.py
+msgid "máximo"
+msgstr "maximum"
+
+#: tesis/motor_pg.py
+msgid "mínimo"
+msgstr "minimum"
+
+#: tesis/motor_pg.py
+msgid ""
+"Árbol de la regla: cada caja es una operación y las hojas son datos o "
+"números"
+msgstr ""
+"Rule tree: each box is an operation and the leaves are data or numbers"
+
+#: tesis/motor_pg.py
+msgid "Costo de cada árbol en cada generación"
+msgstr "Cost of each tree in each generation"
+
+#: tesis/motor_pg.py
+msgid "Costo (millones de km)"
+msgstr "Cost (million km)"
+
+#: tesis/motor_pg.py
+msgid "El mejor árbol de cada generación"
+msgstr "The best tree of each generation"
+
+#: tesis/motor_pg.py
+msgid "La mitad de los árboles está por debajo de esta línea"
+msgstr "Half of the trees are below this line"
+
+#: tesis/motor_pg.py
+msgid "Regla hecha a mano (referencia)"
+msgstr "Hand-made rule (reference)"
+
+#: tesis/motor_pg.py
+msgid "Un árbol de la población"
+msgstr "One tree in the population"
+
+#: tesis/motor_pg.py
+msgid "Árboles con costo más alto que el borde de arriba"
+msgstr "Trees with a cost above the top edge"
+
+#: tesis/motor_pg.py
+msgid ""
+"Generación {gen} de {total}. Mejor costo: {mejor} millones de km. Mediana: "
+"{mediana}."
+msgstr ""
+"Generation {gen} of {total}. Best cost: {mejor} million km. Median: "
+"{mediana}."
+
+#: tesis/motor_pg.py
+msgid "De dónde vienen sus {n} árboles: {lista}."
+msgstr "Where its {n} trees come from: {lista}."
+
+#: tesis/motor_pg.py
+msgid "{n} de élite (los 2 mejores pasan igual)"
+msgstr "{n} elite (the 2 best pass unchanged)"
+
+#: tesis/motor_pg.py
+msgid "{n} de cruce"
+msgstr "{n} from crossover"
+
+#: tesis/motor_pg.py
+msgid "{n} de mutación"
+msgstr "{n} from mutation"
+
+#: tesis/motor_pg.py
+msgid "{n} copiados por torneo"
+msgstr "{n} copied by tournament"
+
+#: tesis/motor_pg.py
+msgid "{n} nuevos al azar"
+msgstr "{n} new at random"
+
+#: tesis/motor_pg.py
+msgid "Es de élite: ya era el mejor y pasó igual."
+msgstr "It is elite: it was already the best and passed unchanged."
+
+#: tesis/motor_pg.py
+msgid "Nació de un cruce entre dos árboles."
+msgstr "It was born from a crossover of two trees."
+
+#: tesis/motor_pg.py
+msgid "Nació de una mutación."
+msgstr "It was born from a mutation."
+
+#: tesis/motor_pg.py
+msgid "Es la copia de un árbol que ganó un torneo."
+msgstr "It is a copy of a tree that won a tournament."
+
+#: tesis/motor_pg.py
+msgid "Es un árbol nuevo, hecho al azar."
+msgstr "It is a new tree, made at random."
+
+#: tesis/motor_pg.py
+msgid "Mejor árbol de la generación {gen}: {nodos} piezas."
+msgstr "Best tree of generation {gen}: {nodos} pieces."
