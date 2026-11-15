@@ -17,7 +17,9 @@ from django.views import View
 from programa_genetico.demo_turnos import (CONFIG_CAMPOS, MAX_EQUIPOS, MIN_EQUIPOS,
                                            config_desde_dict, correr_demo)
 
+from .calendario_dinamico import datos as datos_del_calendario
 from .guia import Accesible
+from .mapa_torneo import datos as datos_del_mapa
 from .torneos import PRESELECCION_MLB, TORNEO_POR_DEFECTO, TORNEOS, equipos_de, torneo
 
 PRESELECCION = PRESELECCION_MLB  # nombre que usaban las pruebas
@@ -203,6 +205,8 @@ class DemoResultadoView(View):
             "km_azar": round(resultado.km_azar), "km_final": round(resultado.km_final),
             "juegos": juegos, "total_juegos": len(juegos), "primeros": juegos[:20],
             "curva": curva(resultado.historial),
+            "calendario_datos": datos_del_calendario(resultado.juegos, nombre_de),
+            "mapa_datos": datos_del_mapa(torneo(datos.get("torneo"))["clave"], {c: tabla[c] for c in codigos}),
         })
 
 

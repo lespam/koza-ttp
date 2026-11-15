@@ -1,0 +1,11 @@
+{% load i18n static %}
+{# Mapa de los estadios. Necesita "mapa_datos" (tesis.mapa_torneo.datos) y "mapa_equipos" para la tabla sin JavaScript. #}
+<div class="mapa-torneo" id="mapa-torneo" hidden></div>
+<noscript>
+    <table>
+        <thead><tr><th scope="col">{% translate "Equipo" %}</th><th scope="col">{% translate "Ciudad" %}</th></tr></thead>
+        <tbody>{% for e in mapa_datos.equipos %}<tr><td>{{ e.nombre }}</td><td>{{ e.lugar }}</td></tr>{% endfor %}</tbody>
+    </table>
+</noscript>
+{{ mapa_datos|json_script:"mapa-datos" }}
+<script src="{% static 'js/mapa_torneo.js' %}" defer></script>

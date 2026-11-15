@@ -79,6 +79,7 @@
 .h-eje { stroke: var(--borde); stroke-width: 1; }
 .h-eje-texto { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 13px; fill: var(--texto-suave); }
 .h-curva { fill: none; stroke: var(--enlace); stroke-width: 3; }
+.h-punto-fin { fill: var(--enlace); stroke: var(--fondo, #fff); stroke-width: 2; }
 .h-azar { stroke: var(--acento); stroke-width: 2; stroke-dasharray: 6 5; }
 .h-celda { fill: var(--enlace); transition: fill-opacity 0.4s; }
 .h-barra { transition: width 0.9s ease-out; }

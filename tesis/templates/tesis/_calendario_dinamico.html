@@ -1,0 +1,5 @@
+{% load i18n static %}
+{# Calendario por mes. Necesita "calendario_datos" (tesis.calendario_dinamico.datos). #}
+<div class="calendario-dinamico" id="calendario-dinamico" hidden></div>
+{{ calendario_datos|json_script:"calendario-datos" }}
+<script src="{% static 'js/calendario.js' %}" defer></script>

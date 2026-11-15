@@ -16,7 +16,7 @@ MOTOR = {
         "distancia_vs_azar": 119.5,
     },
     "mejorado": {
-        "nombre": _("Motor por bloques (versión mejorada)"),
+        "nombre": _("Motor PG (versión mejorada)"),
         "frente_al_azar": _("13\u00a0% menos viaje que elegir calendarios al azar"),
         "corridas": 3,
         "equipos": 30,

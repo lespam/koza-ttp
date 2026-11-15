@@ -1,4 +1,6 @@
 import datetime
+import re
+from pathlib import Path
 from unittest import mock
 
 from django.conf import settings
@@ -83,8 +85,13 @@ class PaginaDeDemo(TestCase):
         crear_datos_de_ejemplo()
         r = self.client.get("/demo/tesis/")
         self.assertContains(r, "Motor: Versión de la tesis (2026)")
-        self.assertContains(r, "esta demo usa el motor de la tesis")
-        self.assertContains(r, str(MOTOR["mejorado"]["frente_al_azar"]))
+        self.assertContains(r, "esta página usa el algoritmo de la tesis")
+        # Ya no dice que el algoritmo nuevo "todavía no está en esta demo": la demo principal lo usa
+        self.assertContains(r, str(MOTOR["turnos"]["frente_al_oficial"]))
+        self.assertNotContains(r, "Todavía no está en esta demo")
+        # Calendario dinámico con todos los juegos
+        self.assertContains(r, 'id="calendario-datos"')
+        self.assertContains(r, "js/calendario.js")
 
     def test_aviso_de_espera_con_animacion(self):
         # H-1: al ejecutar se muestra un aviso con el árbol animado (Lottie)
@@ -454,6 +461,32 @@ class DemoCorta(TestCase):
         self.assertRedirects(self.client.get(reverse("tesis:demo_resultado")), reverse("tesis:dashboard"))
         self.assertRedirects(self.client.get(reverse("tesis:demo_configuracion")), reverse("tesis:dashboard"))
 
+    def test_resultado_con_calendario_dinamico(self):
+        self.client.post(reverse("tesis:dashboard"), {"nombre": "", "torneo": "lmp"})
+        datos = self.valores(self.client.get(reverse("tesis:demo_configuracion")))
+        datos["pasos"] = 2000
+        self.client.post(reverse("tesis:demo_configuracion"), datos)
+        r = self.client.get(reverse("tesis:demo_resultado"))
+        cal = r.context["calendario_datos"]
+        self.assertEqual(len(cal["juegos"]), r.context["total_juegos"])
+        self.assertIn("HER", cal["equipos"])
+        self.assertContains(r, 'id="calendario-datos"')
+        # Mapa del torneo: cada equipo elegido es un punto dentro del dibujo
+        mapa = r.context["mapa_datos"]
+        self.assertContains(r, 'id="mapa-datos"')
+        self.assertEqual({e["c"] for e in mapa["equipos"]}, set(cal["equipos"]))
+        for e in mapa["equipos"]:
+            self.assertTrue(0 < e["x"] < mapa["ancho"] and 0 < e["y"] < mapa["alto"], e)
+
+    def test_cada_torneo_tiene_mapa(self):
+        from .mapa_torneo import datos as datos_del_mapa
+        from .torneos import TORNEOS
+        for t in TORNEOS:
+            mapa = datos_del_mapa(t["clave"], t["equipos"]())
+            self.assertTrue(mapa and mapa["tierra"], t["clave"])
+            for e in mapa["equipos"]:
+                self.assertTrue(0 < e["x"] < mapa["ancho"] and 0 < e["y"] < mapa["alto"], (t["clave"], e))
+
     def test_la_historia_enlaza_la_temporada_2023(self):
         r = self.client.get(reverse("tesis:historia"))
         self.assertContains(r, f'href="{reverse("tesis:repeticion")}"')
@@ -461,3 +494,27 @@ class DemoCorta(TestCase):
     def test_enlaces_viejos_van_al_algoritmo_de_la_tesis(self):
         r = self.client.get("/demo/?configuracion=4&ejecutar=true")
         self.assertRedirects(r, "/demo/tesis/?configuracion=4&ejecutar=true", fetch_redirect_response=False)
+
+
+class CalendarioDinamico(TestCase):
+    """La página de un calendario guardado muestra los juegos mes por mes."""
+
+    def test_pagina_del_calendario(self):
+        configuracion = crear_datos_de_ejemplo()
+        calendario = configuracion.calendario
+        r = self.client.get(reverse("tesis:calendario_detail", args=[calendario.pk]), HTTP_ACCEPT_LANGUAGE="es-MX")
+        self.assertEqual(r.status_code, 200)
+        self.assertContains(r, 'id="calendario-datos"')
+        self.assertContains(r, "js/calendario.js")
+        datos = r.context["calendario_datos"]
+        self.assertEqual(datos["juegos"], [["2026-04-01", "SEA", "CHC"], ["2026-04-02", "SEA", "CHC"]])
+        self.assertEqual(datos["equipos"]["CHC"], "Chicago")
+        # Cada texto que pide calendario.js existe (T.algo y T["prefijo_" + vista])
+        js = (Path(settings.BASE_DIR) / "static" / "js" / "calendario.js").read_text(encoding="utf-8")
+        pedidos = set(re.findall(r"\bT\.(\w+)", js))
+        pedidos |= {f"{p}{v}" for p in re.findall(r'T\["(\w+_)" \+ (?:vista|v)\]', js)
+                    for v in ("semana", "mes", "anio")}
+        self.assertTrue(pedidos)
+        self.assertEqual(pedidos - set(datos["textos"]), set())
+        # Usa la plantilla del sitio (cabecera, idioma, accesibilidad)
+        self.assertContains(r, 'id="boton-menu"')

@@ -64,15 +64,25 @@ class DashboardView(View):
         # 3. Obtener los juegos del calendario (con las propiedades corregidas de tu BD)
         if calendario_actual:
             # Filtramos por la relación inversa correcta a través de las Series
-            juegos = Juego.objects.filter(serie__calendario=calendario_actual).order_by('fecha_de_inicio')[:50]
+            juegos = list(Juego.objects.filter(serie__calendario=calendario_actual)
+                          .select_related("equipo_en_casa", "equipo_visita").order_by('fecha_de_inicio'))
         else:
             juegos = []
+        from .calendario_dinamico import datos as datos_del_calendario
+        equipos = {}
+        for j in juegos:
+            for e in (j.equipo_en_casa, j.equipo_visita):
+                equipos[e.team_abbreviation] = e.team_name or e.team_abbreviation
+        calendario_datos = datos_del_calendario(
+            [(j.fecha_de_inicio.date(), j.equipo_en_casa.team_abbreviation, j.equipo_visita.team_abbreviation)
+             for j in juegos], equipos)
 
         context = {
             "seccion": "demo",
             "configuracion": config,
             "calendario": calendario_actual, 
             "juegos": juegos,
+            "calendario_datos": calendario_datos,
             "svg_content": resultado.get('svg_content'),
             "distancia": resultado.get('distancia', 0),
             "diferencia": resultado.get('diferencia', 0)
@@ -408,15 +418,32 @@ class CalendarioCreateView(SuccessMessageMixin, generic.CreateView):
         return context
 
 class CalendarioDetailView(generic.DetailView):
+    """Un calendario guardado: resumen, vista por mes (calendario dinámico) y tabla."""
     model = Calendario
+
     def get_context_data(self, **kwargs):
+        from .calendario_dinamico import datos
         context = super().get_context_data(**kwargs)
-        calendario_id = self.kwargs.get('pk')
-        if calendario_id:
-            calendario = Calendario.objects.get(id=calendario_id)
-            context["calendario"] = calendario
-            context["torneo"] = calendario.torneo
-            context["juegos"] = Juego.objects.filter(serie__calendario=calendario)
+        calendario = self.object
+        juegos = list(Juego.objects.filter(serie__calendario=calendario)
+                      .select_related("serie", "equipo_en_casa", "equipo_visita")
+                      .order_by("fecha_de_inicio", "serie__numero_de_serie"))
+        equipos = {}
+        for j in juegos:
+            for e in (j.equipo_en_casa, j.equipo_visita):
+                equipos[e.team_abbreviation] = e.team_name or e.team_abbreviation
+        context.update({
+            "seccion": "guia",
+            "torneo": calendario.torneo,
+            "juegos": juegos,
+            "total_series": calendario.series.count(),
+            "total_equipos": len(equipos),
+            "primer_dia": juegos[0].fecha_de_inicio if juegos else None,
+            "ultimo_dia": juegos[-1].fecha_de_inicio if juegos else None,
+            "calendario_datos": datos(
+                [(j.fecha_de_inicio.date(), j.equipo_en_casa.team_abbreviation, j.equipo_visita.team_abbreviation)
+                 for j in juegos], equipos),
+        })
         return context
 
 class CalendarioUpdateView(SuccessMessageMixin, generic.UpdateView):

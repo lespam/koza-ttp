@@ -47,38 +47,11 @@
             </div>
             <div class="aviso-honesto">
                 {% if motor.en_la_demo == "tesis" %}
-                <p>{% blocktranslate trimmed %}<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue mejor que elegir calendarios al azar.{% endblocktranslate %}</p>
-                <p>{% blocktranslate trimmed with resultado=motor.mejorado.frente_al_azar corridas=motor.mejorado.corridas %}El motor mejorado sí fue mejor, en pruebas preliminares: {{ resultado }}, en {{ corridas }} corridas. Todavía no está en esta demo.{% endblocktranslate %}</p>
+                <p>{% blocktranslate trimmed %}<strong>Ojo:</strong> esta página usa el algoritmo de la tesis. Ese algoritmo no fue mejor que elegir calendarios al azar.{% endblocktranslate %}</p>
+                <p>{% blocktranslate trimmed with resultado=motor.turnos.frente_al_oficial %}El algoritmo más nuevo, por turnos, sí es mejor: {{ resultado }}, en una prueba preliminar.{% endblocktranslate %} <a href="{% url 'tesis:dashboard' %}">{% translate "Pruébalo en la demo principal" %}</a>.</p>
                 <p>{% translate "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una mejora que puedes medir." %}</p>
                 {% endif %}
                 <p><a href="{% url 'documentacion:avances' %}">{% translate "Ver los resultados de cada versión" %}</a></p>
-            </div>
-        </section>
-
-        <section class="panel" aria-labelledby="t-calendario">
-            {% translate "Sin torneo" as sin_torneo %}
-            <h2 id="t-calendario">{% blocktranslate trimmed with torneo=calendario.torneo.nombre|default:sin_torneo %}Calendario: {{ torneo }}{% endblocktranslate %}</h2>
-            <div class="tabla-envoltura">
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">{% translate "Fecha" %}</th>
-                            <th scope="col">{% translate "Local" %}</th>
-                            <th scope="col">{% translate "Visitante" %}</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for juego in juegos %}
-                        <tr>
-                            <td>{{ juego.fecha_de_inicio|date:"d/m/Y"|default:juego.fecha_de_inicio }}</td>
-                            <td>{{ juego.equipo_en_casa.team_abbreviation|default:"EQA" }}</td>
-                            <td>{{ juego.equipo_visita.team_abbreviation|default:"EQB" }}</td>
-                        </tr>
-                        {% empty %}
-                        <tr><td colspan="3">{% translate "No hay juegos generados para esta configuración." %}</td></tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
             </div>
         </section>
 
@@ -94,6 +67,19 @@
             {% endif %}
         </section>
     </div>
+
+    <section class="calendario-tesis" aria-labelledby="t-calendario">
+        {% translate "Sin torneo" as sin_torneo %}
+        <h2 id="t-calendario">{% blocktranslate trimmed with torneo=calendario.torneo.nombre|default:sin_torneo %}Calendario: {{ torneo }}{% endblocktranslate %}</h2>
+        {% if juegos %}
+        <p>{% translate "Cambia de mes con los botones. Elige un equipo para ver solo sus juegos y saber si juega en casa o de visita." %}</p>
+        {% include "tesis/_calendario_dinamico.html" %}
+        <noscript><p><a href="{% url 'tesis:calendario_detail' calendario.id %}">{% translate "Ver la tabla con todos los juegos" %}</a></p></noscript>
+        <p><a href="{% url 'tesis:calendario_detail' calendario.id %}">{% translate "Abrir este calendario en su propia página" %}</a></p>
+        {% else %}
+        <p>{% translate "No hay juegos generados para esta configuración." %}</p>
+        {% endif %}
+    </section>
     {% endif %}
 
     <section aria-labelledby="t-equipo">
