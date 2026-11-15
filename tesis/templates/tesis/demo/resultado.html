@@ -26,6 +26,14 @@
     </details>
 </section>
 
+{% if mapa_datos %}
+<section aria-labelledby="t-mapa">
+    <h2 id="t-mapa">{% translate "Los estadios y los viajes" %}</h2>
+    <p>{% translate "Toca un estadio para ver cómo viaja ese equipo con el calendario del algoritmo." %}</p>
+    {% include "tesis/_mapa_torneo.html" %}
+</section>
+{% endif %}
+
 {% if curva %}
 <section aria-labelledby="t-curva">
     <h2 id="t-curva">{% translate "Cómo bajó el viaje" %}</h2>

@@ -495,3 +495,23 @@ thead th { font-size: 0.92rem; }
 .envoltura.calendario-pagina { max-width: 72rem; }
 .calendario-pagina > p, .calendario-pagina > section > p, .calendario-pagina > .tarjetas { max-width: 46rem; }
 .calendario-tesis { margin-top: 2.5rem; }
+
+/* Mapa de un torneo (static/js/mapa_torneo.js) */
+.mapa-figura { margin: 1rem 0; }
+.mapa-figura svg { width: 100%; height: auto; max-height: 70vh; display: block; border: 1px solid var(--borde); border-radius: 8px; }
+.mapa-mar { fill: var(--fondo); }
+.mapa-tierra { fill: var(--superficie); stroke: var(--texto-suave); stroke-width: 0.8; }
+.mapa-fronteras { fill: none; stroke: var(--texto-suave); stroke-width: 0.8; stroke-dasharray: 3 3; }
+.mapa-estadio { cursor: pointer; }
+.mapa-estadio circle { fill: var(--enlace); stroke: var(--fondo); stroke-width: 2; }
+.mapa-estadio text { font: 700 15px "IBM Plex Mono", ui-monospace, monospace; fill: var(--texto); paint-order: stroke; stroke: var(--fondo); stroke-width: 4px; stroke-linejoin: round; }
+.mapa-estadio:hover circle, .mapa-estadio:focus-visible circle { r: 10; }
+.mapa-guia { stroke: var(--texto-suave); stroke-width: 1; }
+.mapa-estadio:focus { outline: none; }
+.mapa-estadio:focus-visible circle { stroke: var(--texto); stroke-width: 3; }
+.mapa-elegido circle { fill: var(--acento); r: 10; }
+.mapa-apagado { opacity: 0.7; }
+.mapa-ruta path { fill: none; stroke: var(--acento); stroke-width: 2.5; stroke-linecap: round; opacity: 0.85; }
+.mapa-flecha { fill: var(--acento); stroke: none; }
+.mapa-estado { font-weight: 600; }
+.mapa-recorrido ol { columns: 2 16rem; }

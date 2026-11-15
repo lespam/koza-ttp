@@ -471,6 +471,21 @@ class DemoCorta(TestCase):
         self.assertEqual(len(cal["juegos"]), r.context["total_juegos"])
         self.assertIn("HER", cal["equipos"])
         self.assertContains(r, 'id="calendario-datos"')
+        # Mapa del torneo: cada equipo elegido es un punto dentro del dibujo
+        mapa = r.context["mapa_datos"]
+        self.assertContains(r, 'id="mapa-datos"')
+        self.assertEqual({e["c"] for e in mapa["equipos"]}, set(cal["equipos"]))
+        for e in mapa["equipos"]:
+            self.assertTrue(0 < e["x"] < mapa["ancho"] and 0 < e["y"] < mapa["alto"], e)
+
+    def test_cada_torneo_tiene_mapa(self):
+        from .mapa_torneo import datos as datos_del_mapa
+        from .torneos import TORNEOS
+        for t in TORNEOS:
+            mapa = datos_del_mapa(t["clave"], t["equipos"]())
+            self.assertTrue(mapa and mapa["tierra"], t["clave"])
+            for e in mapa["equipos"]:
+                self.assertTrue(0 < e["x"] < mapa["ancho"] and 0 < e["y"] < mapa["alto"], (t["clave"], e))
 
     def test_la_historia_enlaza_la_temporada_2023(self):
         r = self.client.get(reverse("tesis:historia"))

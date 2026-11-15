@@ -3239,14 +3239,6 @@ msgid ""
 msgstr ""
 
 #: tesis/calendario_dinamico.py
-msgid "del {inicio} al {fin}"
-msgstr ""
-
-#: tesis/calendario_dinamico.py
-msgid "Semana {periodo}"
-msgstr ""
-
-#: tesis/calendario_dinamico.py
 msgid "Año {anio}"
 msgstr ""
 
@@ -3276,4 +3268,56 @@ msgstr ""
 
 #: tesis/calendario_dinamico.py
 msgid "No hay juegos en estas fechas."
+msgstr ""
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Los estadios y los viajes"
+msgstr ""
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid ""
+"Toca un estadio para ver cómo viaja ese equipo con el calendario del "
+"algoritmo."
+msgstr ""
+
+#: tesis/calendario_dinamico.py
+msgid "Semana del {inicio} al {fin}"
+msgstr ""
+
+#: tesis/calendario_dinamico.py
+msgid "esta semana"
+msgstr ""
+
+#: tesis/mapa_torneo.py
+msgid "Mapa de los estadios del torneo"
+msgstr ""
+
+#: tesis/mapa_torneo.py
+msgid "Ver los viajes de un equipo"
+msgstr ""
+
+#: tesis/mapa_torneo.py
+msgid "Solo los estadios"
+msgstr ""
+
+#: tesis/mapa_torneo.py
+msgid "{equipo}: {km} km de viaje en {n} traslados."
+msgstr ""
+
+#: tesis/mapa_torneo.py
+msgid "Toca un estadio o elige un equipo para ver sus viajes en la temporada."
+msgstr ""
+
+#: tesis/mapa_torneo.py
+msgid "Recorrido en orden"
+msgstr ""
+
+#: tesis/mapa_torneo.py
+msgid "regreso a casa"
+msgstr ""
+
+#: tesis/mapa_torneo.py
+msgid ""
+"Cada punto es un estadio. La línea sigue al equipo de ciudad en ciudad, en "
+"el orden del calendario."
 msgstr ""
