@@ -1,5 +1,7 @@
 import unicodedata
 
+from django.conf import settings
+
 from django.urls import translate_url
 from django.utils.translation import get_language
 
@@ -35,3 +37,8 @@ def languages(request):
         # lesliedickinson.dev solo existe en español e inglés
         "sitio_principal": SITIO_PRINCIPAL + ("es/" if (get_language() or "").startswith("es") else "en/"),
     }
+
+
+def estatico(request):
+    """True cuando la página se genera para el sitio estático (manage.py generar_estatico)."""
+    return {"estatico": getattr(settings, "ESTATICO", False)}

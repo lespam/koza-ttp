@@ -1,0 +1,12 @@
+{% extends "documentacion/base.html" %}
+{% load i18n %}
+{% block titulo %}{{ torneo.nombre }} · {% translate "Demo" %}{% endblock %}
+{% block descripcion %}{% blocktranslate trimmed with t=torneo.nombre %}Calendario de {{ t }} hecho por el algoritmo más nuevo de Koza-TTP, con mapa de estadios y viajes.{% endblocktranslate %}{% endblock %}
+{% block contenido %}
+<div class="envoltura guia demo-corta">
+    <p class="miga"><a href="{% url 'tesis:dashboard' %}">{% translate "Demo" %}</a> / <span aria-current="page">{{ torneo.nombre }}</span></p>
+    <h1>{{ torneo.nombre }}</h1>
+    <p class="nota">{% blocktranslate trimmed with pasos=config.pasos|floatformat:"0g" %}Resultado ya calculado: el algoritmo probó {{ pasos }} cambios en una computadora y aquí se guardó lo que encontró.{% endblocktranslate %}</p>
+    {% include "tesis/demo/_resultado_cuerpo.html" %}
+</div>
+{% endblock %}

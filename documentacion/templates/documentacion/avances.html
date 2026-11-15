@@ -99,7 +99,7 @@
                     <p class="meta"><time datetime="2026-11-05">{% translate "5 de noviembre de 2026" %}</time> · <span class="estado estado-hecho">{% translate "Hecho" %}</span></p>
                     <h3 id="av-planeado-flujo">{% translate "Reparar el recorrido completo de la herramienta" %}</h3>
                     <p>{% blocktranslate trimmed %}Que se pueda ir del registro de equipos hasta ver el calendario sin errores, con un recorrido guiado paso a paso.{% endblocktranslate %}</p>
-                    <p><a href="{% url 'tesis:guia' %}">{% translate "Abrir la guía de 5 pasos" %}</a></p>
+                    {% if not estatico %}<p><a href="{% url 'tesis:guia' %}">{% translate "Abrir la guía de 5 pasos" %}</a></p>{% endif %}
                 </article>
             </li>
             <li>

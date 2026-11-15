@@ -85,7 +85,7 @@
     </section>
 
     <p class="acciones">
-        <a class="boton" href="{% url 'tesis:guia' %}">{% translate "Haz tu propio torneo" %} →</a>
+        {% if estatico %}<a class="boton" href="{% url 'tesis:dashboard' %}">{% translate "Ver la demo" %} →</a>{% else %}<a class="boton" href="{% url 'tesis:guia' %}">{% translate "Haz tu propio torneo" %} →</a>{% endif %}
         <a class="boton-secundario" href="{% url 'tesis:historia' %}">{% translate "Cómo funciona el algoritmo" %}</a>
     </p>
 </div>

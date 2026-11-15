@@ -1,7 +1,7 @@
 {% load static i18n %}
 {% get_current_language as LANGUAGE_CODE %}{% get_current_language_bidi as LANGUAGE_BIDI %}
 <!DOCTYPE html>
-<html lang="{{ LANGUAGE_CODE }}" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}">
+<html lang="{{ LANGUAGE_CODE }}"{% if estatico %} data-estatico{% endif %} dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,7 +57,7 @@
                         {% url 'tesis:historia' as url_historia %}{% url 'tesis:dashboard' as url_demo %}{% url 'tesis:guia' as url_guia %}{% url 'documentacion:index' as url_docs %}
                         <li><a href="{{ url_historia }}"{% if request.path == url_historia %} aria-current="page"{% endif %}>{% translate "Cómo funciona" %}</a></li>
                         <li><a href="{{ url_demo }}"{% if request.path == url_demo %} aria-current="page"{% elif seccion == "demo" %} aria-current="true"{% endif %}>{% translate "Demo" %}</a></li>
-                        <li><a href="{{ url_guia }}"{% if request.path == url_guia %} aria-current="page"{% elif seccion == "guia" %} aria-current="true"{% endif %}>{% translate "Guía" %}</a></li>
+                        {% if not estatico %}<li><a href="{{ url_guia }}"{% if request.path == url_guia %} aria-current="page"{% elif seccion == "guia" %} aria-current="true"{% endif %}>{% translate "Guía" %}</a></li>{% endif %}
                         <li><a href="{{ url_docs }}"{% if request.path == url_docs %} aria-current="page"{% elif seccion == "historico" or seccion == "avances" %} aria-current="true"{% endif %}>{% translate "Documentación" %}</a></li>
                     </ul>
                 </nav>
@@ -81,10 +81,10 @@
                         <label for="language-select">{% translate "Idioma" %}</label>
                         <select name="language" id="language-select">
                             {% for lang in site_languages %}
-                            <option value="{{ lang.code }}" lang="{{ lang.code }}"{% if lang.code == LANGUAGE_CODE %} selected{% endif %}>{{ lang.native }}</option>
+                            <option value="{{ lang.code }}" data-url="{{ lang.url }}" lang="{{ lang.code }}"{% if lang.code == LANGUAGE_CODE %} selected{% endif %}>{{ lang.native }}</option>
                             {% endfor %}
                         </select>
-                        <noscript><button type="submit">{% translate "Cambiar" %}</button></noscript>
+                        {% if not estatico %}<noscript><button type="submit">{% translate "Cambiar" %}</button></noscript>{% endif %}
                     </form>
                 </div>
             </div>

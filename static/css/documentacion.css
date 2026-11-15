@@ -563,3 +563,7 @@ thead th { font-size: 0.92rem; }
 :root[data-tema="oscuro"] .pg-c0 { fill: #5fd3a3; } :root[data-tema="oscuro"] .pg-c1 { fill: #7fb2ec; }
 :root[data-tema="oscuro"] .pg-c2 { fill: #f0a35c; } :root[data-tema="oscuro"] .pg-c3 { fill: #e8838a; }
 .pg-elegir { margin: 1rem 0 0.5rem; max-width: 24rem; }
+/* Sitio estático: lista de torneos ya calculados */
+.torneos-guardados { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 1rem; }
+.torneos-guardados li { margin: 0; }
+.torneos-guardados .ruta { height: 100%; box-sizing: border-box; }
