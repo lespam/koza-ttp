@@ -3644,3 +3644,79 @@ msgstr "It is a new tree, made at random."
 #: tesis/motor_pg.py
 msgid "Mejor árbol de la generación {gen}: {nodos} piezas."
 msgstr "Best tree of generation {gen}: {nodos} pieces."
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "Árbol genealógico"
+msgstr "Family tree"
+
+#: tesis/templates/tesis/motor_pg.html
+msgid ""
+"Cada fila es una generación y cada círculo es un árbol, del mejor "
+"(izquierda) al peor (derecha). Las líneas unen a cada árbol con sus padres "
+"de la generación anterior. Toca un círculo para ver ese árbol y toda su "
+"familia."
+msgstr ""
+"Each row is a generation and each circle is a tree, from best (left) to "
+"worst (right). Lines join each tree to its parents in the previous "
+"generation. Tap a circle to see that tree and its whole family."
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "Ver un árbol de esta generación"
+msgstr "Show a tree from this generation"
+
+#: tesis/motor_pg.py
+msgid "Árbol en el lugar {pos} de la generación {gen}: {nodos} piezas."
+msgstr "Tree in place {pos} of generation {gen}: {nodos} pieces."
+
+#: tesis/motor_pg.py
+msgid "Lugar {pos} de {n} en la generación {gen}"
+msgstr "Place {pos} of {n} in generation {gen}"
+
+#: tesis/motor_pg.py
+msgid "Lugar {pos}: {costo} millones de km"
+msgstr "Place {pos}: {costo} million km"
+
+#: tesis/motor_pg.py
+msgid "Costo: {costo} millones de km."
+msgstr "Cost: {costo} million km."
+
+#: tesis/motor_pg.py
+msgid "Su padre fue el árbol en el lugar {a} de la generación {gen}."
+msgstr "Its parent was the tree in place {a} of generation {gen}."
+
+#: tesis/motor_pg.py
+msgid ""
+"Sus padres fueron los árboles en los lugares {a} y {b} de la generación "
+"{gen}."
+msgstr "Its parents were the trees in places {a} and {b} of generation {gen}."
+
+#: tesis/motor_pg.py
+msgid ""
+"Árbol genealógico: una fila por generación y una línea de cada árbol a sus "
+"padres"
+msgstr ""
+"Family tree: one row per generation and a line from each tree to its parents"
+
+#: tesis/motor_pg.py
+msgid "Gen {gen}"
+msgstr "Gen {gen}"
+
+#: tesis/motor_pg.py
+msgid "Mejor que la regla hecha a mano"
+msgstr "Better than the hand-made rule"
+
+#: tesis/motor_pg.py
+msgid "Hasta 1 % peor"
+msgstr "Up to 1% worse"
+
+#: tesis/motor_pg.py
+msgid "Hasta 5 % peor"
+msgstr "Up to 5% worse"
+
+#: tesis/motor_pg.py
+msgid "Más de 5 % peor"
+msgstr "More than 5% worse"
+
+#: tesis/motor_pg.py
+msgid "La familia del árbol elegido"
+msgstr "The chosen tree's family"

@@ -3586,3 +3586,75 @@ msgstr ""
 #: tesis/motor_pg.py
 msgid "Mejor árbol de la generación {gen}: {nodos} piezas."
 msgstr ""
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "Árbol genealógico"
+msgstr ""
+
+#: tesis/templates/tesis/motor_pg.html
+msgid ""
+"Cada fila es una generación y cada círculo es un árbol, del mejor "
+"(izquierda) al peor (derecha). Las líneas unen a cada árbol con sus padres "
+"de la generación anterior. Toca un círculo para ver ese árbol y toda su "
+"familia."
+msgstr ""
+
+#: tesis/templates/tesis/motor_pg.html
+msgid "Ver un árbol de esta generación"
+msgstr ""
+
+#: tesis/motor_pg.py
+msgid "Árbol en el lugar {pos} de la generación {gen}: {nodos} piezas."
+msgstr ""
+
+#: tesis/motor_pg.py
+msgid "Lugar {pos} de {n} en la generación {gen}"
+msgstr ""
+
+#: tesis/motor_pg.py
+msgid "Lugar {pos}: {costo} millones de km"
+msgstr ""
+
+#: tesis/motor_pg.py
+msgid "Costo: {costo} millones de km."
+msgstr ""
+
+#: tesis/motor_pg.py
+msgid "Su padre fue el árbol en el lugar {a} de la generación {gen}."
+msgstr ""
+
+#: tesis/motor_pg.py
+msgid ""
+"Sus padres fueron los árboles en los lugares {a} y {b} de la generación "
+"{gen}."
+msgstr ""
+
+#: tesis/motor_pg.py
+msgid ""
+"Árbol genealógico: una fila por generación y una línea de cada árbol a sus "
+"padres"
+msgstr ""
+
+#: tesis/motor_pg.py
+msgid "Gen {gen}"
+msgstr ""
+
+#: tesis/motor_pg.py
+msgid "Mejor que la regla hecha a mano"
+msgstr ""
+
+#: tesis/motor_pg.py
+msgid "Hasta 1 % peor"
+msgstr ""
+
+#: tesis/motor_pg.py
+msgid "Hasta 5 % peor"
+msgstr ""
+
+#: tesis/motor_pg.py
+msgid "Más de 5 % peor"
+msgstr ""
+
+#: tesis/motor_pg.py
+msgid "La familia del árbol elegido"
+msgstr ""

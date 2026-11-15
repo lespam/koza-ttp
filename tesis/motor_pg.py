@@ -61,6 +61,19 @@ def textos():
             "nuevo": _("Es un árbol nuevo, hecho al azar."),
         },
         "mejor_de": _("Mejor árbol de la generación {gen}: {nodos} piezas."),
+        "lugar_de": _("Árbol en el lugar {pos} de la generación {gen}: {nodos} piezas."),
+        "lugar": _("Lugar {pos} de {n} en la generación {gen}"),
+        "opcion": _("Lugar {pos}: {costo} millones de km"),
+        "costo_de": _("Costo: {costo} millones de km."),
+        "padre": _("Su padre fue el árbol en el lugar {a} de la generación {gen}."),
+        "padres": _("Sus padres fueron los árboles en los lugares {a} y {b} de la generación {gen}."),
+        "genealogia": _("Árbol genealógico: una fila por generación y una línea de cada árbol a sus padres"),
+        "gen_corta": _("Gen {gen}"),
+        "clase0": _("Mejor que la regla hecha a mano"),
+        "clase1": _("Hasta 1 % peor"),
+        "clase2": _("Hasta 5 % peor"),
+        "clase3": _("Más de 5 % peor"),
+        "linaje": _("La familia del árbol elegido"),
         "reproducir": _("Reproducir"),
         "pausar": _("Pausar"),
     }
@@ -86,7 +99,8 @@ class MotorPGView(TemplateView):
             "motor_pg_datos": {
                 "regla": datos["regla_aprendida"], "a_mano": datos["a_mano"],
                 "generaciones": [{"mejor": g["mejor"], "mediana": g["mediana"],
-                                  "individuos": [[i["arbol"], i["costo"], i["origen"]] for i in g["individuos"]]}
+                                  "individuos": [[i["arbol"], i["costo"], i["origen"], i.get("id"), i.get("padres", [])]
+                                                 for i in g["individuos"]]}
                                  for g in gens],
                 "textos": textos(),
             },

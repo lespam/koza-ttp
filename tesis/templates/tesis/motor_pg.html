@@ -42,6 +42,15 @@
                 <p class="pg-estado" id="pg-estado" aria-live="polite"></p>
                 <p class="nota" id="pg-origenes"></p>
             </figcaption>
+            <div data-genealogia>
+                <h3 id="t-genealogia">{% translate "Árbol genealógico" %}</h3>
+                <p>{% blocktranslate trimmed %}Cada fila es una generación y cada círculo es un árbol, del mejor (izquierda) al peor (derecha). Las líneas unen a cada árbol con sus padres de la generación anterior. Toca un círculo para ver ese árbol y toda su familia.{% endblocktranslate %}</p>
+                <div class="pg-lienzo" id="pg-genealogia" tabindex="0" role="region" aria-labelledby="t-genealogia"></div>
+                <ul class="pg-leyenda" id="pg-genealogia-leyenda"></ul>
+            </div>
+            <label class="cal-campo pg-elegir" for="pg-arbol-lugar">{% translate "Ver un árbol de esta generación" %}
+                <select id="pg-arbol-lugar"></select>
+            </label>
             <h3 id="pg-mejor-titulo"></h3>
             <div class="pg-lienzo" id="pg-arbol-generacion" tabindex="0" role="region" aria-labelledby="pg-mejor-titulo"></div>
             <p class="nota" id="pg-vino-de"></p>

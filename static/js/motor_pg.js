@@ -148,7 +148,68 @@
         leyenda.appendChild(li);
     }
 
-    /* ---------- Generación elegida ---------- */
+    /* ---------- Árbol genealógico: una fila por generación, de mejor (izquierda) a peor ---------- */
+    // individuos: [árbol, costo, origen, id, padres (ids de la generación anterior)]
+    const conPadres = G.some((g) => g.individuos.some((x) => x[4] && x[4].length));
+    const donde = {};
+    G.forEach((g, i) => g.individuos.forEach((x, k) => { donde[x[3]] = [i, k]; }));
+    const clase = (c) => (c < D.a_mano ? 0 : c < D.a_mano * 1.01 ? 1 : c < D.a_mano * 1.05 ? 2 : 3);
+    const POB = Math.max(...G.map((g) => g.individuos.length));
+    const GW = 70 + POB * 26, GH = 30 + G.length * 52;
+    const gx = (k) => 70 + k * 26 + 13, gy = (i) => 26 + i * 52;
+    const lienzoGenea = document.getElementById("pg-genealogia");
+    let lineas = {}, nodos = {};
+    if (lienzoGenea && conPadres) {
+        const sg = el("svg", { viewBox: `0 0 ${GW} ${GH}`, role: "img", "aria-labelledby": "pg-genealogia-titulo", class: "pg-genealogia" });
+        sg.style.minWidth = Math.min(GW, 620) + "px";
+        el("title", { id: "pg-genealogia-titulo" }, sg, T.genealogia);
+        G.forEach((_g, i) => el("text", { class: "pg-eje", x: 4, y: gy(i) + 5 }, sg, poner(T.gen_corta, { gen: i })));
+        const capaL = el("g", { class: "pg-lineas" }, sg), capaN = el("g", {}, sg);
+        G.forEach((g, i) => g.individuos.forEach(([, c, o, id, padres], k) => {
+            for (const p of padres || []) {
+                const [pi, pk] = donde[p];
+                lineas[id + "-" + p] = el("line", { class: o === "elite" ? "pg-linea pg-linea-elite" : "pg-linea",
+                    x1: gx(pk), y1: gy(pi) + 8, x2: gx(k), y2: gy(i) - 8 }, capaL);
+            }
+            const n = el("circle", { class: "pg-gen-nodo pg-c" + clase(c), cx: gx(k), cy: gy(i), r: 8 }, capaN);
+            el("title", {}, n, poner(T.lugar, { pos: k + 1, n: g.individuos.length, gen: i }) + " · " + millones(c));
+            n.addEventListener("click", () => { detener(); elegir(i, k); });
+            nodos[id] = n;
+        }));
+        lienzoGenea.appendChild(sg);
+        const ley = document.getElementById("pg-genealogia-leyenda");
+        [T.clase0, T.clase1, T.clase2, T.clase3].forEach((t, c) => {
+            const li = document.createElement("li");
+            const m = el("svg", { viewBox: "0 0 16 16", width: 16, height: 16, "aria-hidden": "true" }, li);
+            el("circle", { class: "pg-gen-nodo pg-c" + c, cx: 8, cy: 8, r: 6 }, m);
+            li.append(" " + t);
+            ley.appendChild(li);
+        });
+        const li = document.createElement("li");
+        const m = el("svg", { viewBox: "0 0 36 14", width: 36, height: 14, "aria-hidden": "true" }, li);
+        el("line", { class: "pg-linea pg-linaje", x1: 2, x2: 34, y1: 7, y2: 7 }, m);
+        li.append(" " + T.linaje);
+        ley.appendChild(li);
+    } else if (lienzoGenea) lienzoGenea.closest("[data-genealogia]")?.setAttribute("hidden", "");
+    function marcarLinaje(id) {
+        Object.values(lineas).forEach((l) => l.classList.remove("pg-linaje"));
+        Object.values(nodos).forEach((n) => n.classList.remove("pg-en-linaje", "pg-elegido"));
+        if (!nodos[id]) return;
+        nodos[id].classList.add("pg-elegido");
+        const vistos = new Set();
+        (function subir(x) {
+            if (vistos.has(x)) return;
+            vistos.add(x);
+            nodos[x].classList.add("pg-en-linaje");
+            const [i, k] = donde[x];
+            for (const p of G[i].individuos[k][4] || []) {
+                if (lineas[x + "-" + p]) lineas[x + "-" + p].classList.add("pg-linaje");
+                subir(p);
+            }
+        })(id);
+    }
+
+    /* ---------- Generación y árbol elegidos ---------- */
     const rango = document.getElementById("pg-generacion");
     const estado = document.getElementById("pg-estado");
     const origenes = document.getElementById("pg-origenes");
@@ -156,7 +217,8 @@
     const lienzoGen = document.getElementById("pg-arbol-generacion");
     const vinoDe = document.getElementById("pg-vino-de");
     const formula = document.getElementById("pg-mejor-formula");
-    function elegir(i) {
+    const selectArbol = document.getElementById("pg-arbol-lugar");
+    function elegir(i, k = 0) {
         const g = G[i];
         rango.value = i;
         banda.setAttribute("x", px(i) - 14);
@@ -168,14 +230,32 @@
         const lista = ["elite", "cruce", "mutacion", "seleccion", "nuevo"].filter((o) => cuenta[o])
             .map((o) => poner(T.origen[o], { n: cuenta[o] }));
         origenes.textContent = poner(T.origenes, { n: g.individuos.length, lista: lista.join(", ") });
-        const [arbol, , origen] = g.individuos[0];
+        if (selectArbol) {
+            selectArbol.replaceChildren(...g.individuos.map(([, c], j) => {
+                const op = document.createElement("option");
+                op.value = j;
+                op.textContent = poner(T.opcion, { pos: j + 1, costo: millones(c) });
+                return op;
+            }));
+            selectArbol.value = k;
+        }
+        const [arbol, costo, origen, id, padres] = g.individuos[k];
         const raiz = dibujarArbol(lienzoGen, arbol);
         let piezas = 0;
         (function contar(n) { piezas++; n.h.forEach(contar); })(raiz);
-        tituloMejor.textContent = poner(T.mejor_de, { gen: i, nodos: piezas });
-        vinoDe.textContent = T.vino_de[origen] || "";
+        tituloMejor.textContent = k === 0
+            ? poner(T.mejor_de, { gen: i, nodos: piezas })
+            : poner(T.lugar_de, { pos: k + 1, gen: i, nodos: piezas });
+        let texto = poner(T.costo_de, { costo: millones(costo) }) + " " + (T.vino_de[origen] || "");
+        if (padres && padres.length) {
+            texto += " " + poner(padres.length > 1 ? T.padres : T.padre,
+                { a: donde[padres[0]][1] + 1, b: padres[1] !== undefined ? donde[padres[1]][1] + 1 : "", gen: i - 1 });
+        }
+        vinoDe.textContent = texto;
         formula.textContent = arbol;
+        marcarLinaje(id);
     }
+    if (selectArbol) selectArbol.addEventListener("change", () => { detener(); elegir(Number(rango.value), Number(selectArbol.value)); });
     let reloj = null;
     const boton = document.getElementById("pg-reproducir");
     function detener() { clearInterval(reloj); reloj = null; boton.textContent = T.reproducir; }
@@ -191,5 +271,6 @@
         }, 1100);
     });
     rango.addEventListener("input", () => { detener(); elegir(Number(rango.value)); });
-    elegir(0);
+    // Al llegar: el mejor árbol de la última generación y toda su familia
+    elegir(conPadres ? G.length - 1 : 0);
 })();
