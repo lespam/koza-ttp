@@ -534,8 +534,14 @@ class MotorPGPorDentro(TestCase):
         gens = datos["generaciones"]
         self.assertGreaterEqual(len(gens), 2)
         for g in gens:
-            costos = [c for _a, c, _o in g["individuos"]]
+            costos = [x[1] for x in g["individuos"]]
             self.assertEqual(g["mejor"], min(costos))
+        # Genealogía: cada padre es un árbol de la generación anterior
+        for antes, g in zip(gens, gens[1:]):
+            ids_antes = {x[3] for x in antes["individuos"]}
+            for x in g["individuos"]:
+                self.assertTrue(set(x[4]) <= ids_antes, x)
+                self.assertEqual(bool(x[4]), x[2] != "nuevo", x)
         # El mejor nunca empeora: los 2 de élite pasan a la siguiente generación
         mejores = [g["mejor"] for g in gens]
         self.assertEqual(mejores, sorted(mejores, reverse=True))
