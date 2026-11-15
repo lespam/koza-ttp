@@ -433,3 +433,10 @@ thead th { font-size: 0.92rem; }
 .curva-demo svg { width: 100%; height: 12rem; color: var(--acento); background: var(--superficie); border: 1px solid var(--borde); border-radius: 8px; }
 .acciones-lista li { margin: 0.4rem 0; }
 .acciones-lista a { display: inline-block; min-height: 44px; padding: 0.55rem 0; }
+
+/* Demo: torneos ya configurados */
+.demo-corta .opciones-torneo { grid-template-columns: 1fr; gap: 0.5rem; }
+.demo-corta .campo .opcion-torneo { align-items: flex-start; padding: 0.75rem 1rem; border: 1px solid var(--borde); border-radius: 8px; background: var(--superficie); }
+.demo-corta .campo .opcion-torneo:has(input:checked) { border-color: var(--acento); box-shadow: inset 4px 0 0 var(--acento); }
+.opcion-torneo input { margin-top: 0.2rem; flex: none; }
+.opcion-detalle { display: block; font-size: 0.95rem; color: var(--texto-suave, inherit); margin-top: 0.15rem; }

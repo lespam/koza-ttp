@@ -51,13 +51,13 @@
                 <p class="historia-parte">{% translate "Parte 2 · La idea de la tesis" %}</p>
                 <h2 id="t-paso-4">{% translate "Cruce: dos árboles se mezclan" %}</h2>
                 <p>{% translate "Se toman dos árboles que funcionan bien. Cada uno da una rama." %}</p>
-                <p>{% translate "El árbol nuevo, el \"hijo\", tiene una parte de cada padre. Así se combinan buenas ideas." %}</p>
+                <p>{% blocktranslate trimmed %}El árbol nuevo, el "hijo", tiene una parte de cada padre. Así se combinan buenas ideas.{% endblocktranslate %}</p>
             </section>
 
             <section class="historia-paso" id="paso-5" data-escena="mutacion" aria-labelledby="t-paso-5">
                 <p class="historia-parte">{% translate "Parte 2 · La idea de la tesis" %}</p>
                 <h2 id="t-paso-5">{% translate "Mutación: un cambio pequeño al azar" %}</h2>
-                <p>{% translate "A veces una pieza del árbol cambia sola. Aquí, la serie \"SEA–NYA\" cambia por \"SEA–OAK\"." %}</p>
+                <p>{% blocktranslate trimmed %}A veces una pieza del árbol cambia sola. Aquí, la serie "SEA–NYA" cambia por "SEA–OAK".{% endblocktranslate %}</p>
                 <p>{% translate "La mutación sirve para probar ideas nuevas que ningún padre tenía." %}</p>
             </section>
 
@@ -74,6 +74,8 @@
                 <h2 id="t-paso-7">{% translate "Del piloto a un motor que funciona" %}</h2>
                 <p>{% blocktranslate trimmed with resultado=motor.mejorado.frente_al_azar corridas=motor.mejorado.corridas equipos=motor.mejorado.equipos %}El motor mejorado, por bloques, sí le gana al azar: {{ resultado }}, en pruebas preliminares ({{ corridas }} corridas, {{ equipos }} equipos).{% endblocktranslate %}</p>
                 <p>{% blocktranslate trimmed with resultado=motor.tesis.frente_al_azar %}El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir calendarios al azar: {{ resultado }}.{% endblocktranslate %}</p>
+                <p>{% blocktranslate trimmed with resultado=motor.turnos.frente_al_oficial %}El algoritmo más nuevo, por turnos, va más lejos: {{ resultado }}, en una prueba preliminar.{% endblocktranslate %}
+                    <a href="{% url 'tesis:repeticion' %}">{% translate "Ver la temporada 2023 completa" %} →</a></p>
                 <p class="acciones historia-sin-js"><a class="boton" href="{% url 'tesis:guia' %}">{% translate "Probar la herramienta en 5 pasos" %} →</a></p>
             </section>
         </div>

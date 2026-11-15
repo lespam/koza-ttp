@@ -114,9 +114,8 @@ class TodasLasPaginas(TestCase):
             "calendario": calendario.pk, "serie": calendario.series.first().pk,
             "juego": Juego.objects.first().pk,
         }
-        # La demo corta guarda los equipos en la sesión: se elige con los valores ya puestos
-        from tesis.demo import PRESELECCION
-        self.client.post(reverse("tesis:dashboard"), {"nombre": "", "equipos": PRESELECCION})
+        # La demo corta guarda el torneo en la sesión: se elige con los valores ya puestos
+        self.client.post(reverse("tesis:dashboard"), {"nombre": "", "torneo": "mlb"})
         for patron in urlpatterns:
             ruta = str(patron.pattern)
             if not isinstance(patron, URLPattern) or any(o in ruta for o in self.omitidas):
@@ -328,10 +327,13 @@ class RepeticionTemporada2023(TestCase):
         self.assertEqual(len(d["oficial"]["equipos"]), 30)
         self.assertEqual(len(d["motor"]["equipos"]), 30)
         self.assertEqual(d["oficial"]["km"], sum(v["km"] for v in d["oficial"]["equipos"].values()))
-        # El oficial todavía le gana al motor, y el motor al azar
-        self.assertLess(d["oficial"]["km"], d["motor"]["km"])
+        # El algoritmo por turnos le gana al oficial y al calendario al azar del inicio
+        self.assertLess(d["motor"]["km"], d["oficial"]["km"])
         self.assertLess(d["motor"]["km"], d["azar"]["km"])
-        # Desde que el motor cumple las reglas de juegos, la curva nunca sube
+        self.assertEqual(len(d["motor"]["pasos_de_cada_punto"]), len(d["motor"]["generaciones"]))
+        # Reglas de una temporada real: giras de 12 juegos como máximo
+        self.assertLessEqual(max(v["visita"] for v in d["motor"]["equipos"].values()), 12)
+        # Desde que cumple las reglas, la curva nunca sube
         g = [km for km, ok in zip(d["motor"]["generaciones"], d["motor"]["cumple"]) if ok]
         self.assertTrue(d["motor"]["cumple"][-1])
         self.assertTrue(all(b <= a for a, b in zip(g, g[1:])))
@@ -383,19 +385,25 @@ class AuditoriaDelOchoDeNoviembre(TestCase):
 class DemoCorta(TestCase):
     """Demo en 3 pasos: se puede ver todo con "Siguiente" sin cambiar nada."""
 
+    def valores(self, r):
+        datos = {}
+        for campo in r.context["form"]:
+            datos[campo.name] = campo.value()
+        return datos
+
     def test_siguiente_siguiente_siguiente(self):
         from tesis.demo import PRESELECCION
         r = self.client.get(reverse("tesis:dashboard"))
         self.assertEqual(r.status_code, 200)
-        self.assertEqual(r.context["form"]["equipos"].value(), PRESELECCION)
+        self.assertEqual(r.context["form"]["torneo"].value(), "mlb")
         self.assertContains(r, 'value="Mi torneo de prueba"')
-        # Paso 1: se envía lo que ya venía marcado
-        r = self.client.post(reverse("tesis:dashboard"), {"nombre": "", "equipos": PRESELECCION})
+        # Paso 1: el torneo que ya venía elegido
+        r = self.client.post(reverse("tesis:dashboard"), {"nombre": "", "torneo": "mlb"})
         self.assertRedirects(r, reverse("tesis:demo_configuracion"))
-        # Paso 2: los valores ya elegidos
+        # Paso 2: equipos y reglas ya elegidos
         r = self.client.get(reverse("tesis:demo_configuracion"))
-        datos = {nombre: campo.value() for nombre, campo in
-                 ((c.name, c) for c in r.context["form"])}
+        datos = self.valores(r)
+        self.assertEqual(datos["equipos"], PRESELECCION)
         self.assertEqual(datos["pasos"], 20000)
         r = self.client.post(reverse("tesis:demo_configuracion"), datos)
         self.assertRedirects(r, reverse("tesis:demo_resultado"))
@@ -408,18 +416,47 @@ class DemoCorta(TestCase):
         self.assertContains(r, reverse("tesis:repeticion"))
         self.assertContains(r, reverse("tesis:dashboard_tesis"))
 
+    def test_cada_torneo_ya_configurado_corre(self):
+        from tesis.torneos import TORNEOS, equipos_de
+        for t in TORNEOS:
+            with self.subTest(torneo=t["clave"]):
+                self.assertTrue(3 <= len(t["marcados"]) <= 10)
+                self.assertTrue(set(t["marcados"]) <= set(equipos_de(t["clave"])))
+                self.client.post(reverse("tesis:dashboard"), {"nombre": "", "torneo": t["clave"]})
+                r = self.client.get(reverse("tesis:demo_configuracion"))
+                datos = self.valores(r)
+                self.assertEqual(datos["series_por_pareja"], t["config"]["series_por_pareja"])
+                datos["pasos"] = 3000  # más rápido para la prueba
+                self.client.post(reverse("tesis:demo_configuracion"), datos)
+                r = self.client.get(reverse("tesis:demo_resultado"))
+                self.assertEqual(r.status_code, 200)
+                self.assertContains(r, str(t["nombre"]))
+                self.assertLess(r.context["resultado"].km_final, r.context["resultado"].km_azar)
+
+    def test_otro_torneo_trae_sus_equipos(self):
+        self.client.post(reverse("tesis:dashboard"), {"nombre": "", "torneo": "lmp"})
+        r = self.client.get(reverse("tesis:demo_configuracion"))
+        self.assertContains(r, "Naranjeros de Hermosillo")
+        self.assertNotContains(r, "Seattle Mariners")
+
     def test_maximo_diez_equipos(self):
         from tesis.demo import equipos_mlb
+        self.client.post(reverse("tesis:dashboard"), {"nombre": "", "torneo": "mlb"})
+        datos = self.valores(self.client.get(reverse("tesis:demo_configuracion")))
         once = list(equipos_mlb())[:11]
-        r = self.client.post(reverse("tesis:dashboard"), {"equipos": once})
+        r = self.client.post(reverse("tesis:demo_configuracion"), {**datos, "equipos": once})
         self.assertEqual(r.status_code, 200)
         self.assertContains(r, "Elige como máximo 10 equipos.")
-        r = self.client.post(reverse("tesis:dashboard"), {"equipos": once[:2]})
+        r = self.client.post(reverse("tesis:demo_configuracion"), {**datos, "equipos": once[:2]})
         self.assertContains(r, "Elige al menos 3 equipos.")
 
     def test_sin_equipos_regresa_al_paso_1(self):
         self.assertRedirects(self.client.get(reverse("tesis:demo_resultado")), reverse("tesis:dashboard"))
         self.assertRedirects(self.client.get(reverse("tesis:demo_configuracion")), reverse("tesis:dashboard"))
+
+    def test_la_historia_enlaza_la_temporada_2023(self):
+        r = self.client.get(reverse("tesis:historia"))
+        self.assertContains(r, f'href="{reverse("tesis:repeticion")}"')
 
     def test_enlaces_viejos_van_al_algoritmo_de_la_tesis(self):
         r = self.client.get("/demo/?configuracion=4&ejecutar=true")

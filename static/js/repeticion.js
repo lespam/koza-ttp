@@ -1,5 +1,5 @@
 /* Repetición de la temporada 2023 (/demo/2023/).
-   1) Gráfica: kilómetros del mejor calendario en cada generación del motor,
+   1) Gráfica: kilómetros del calendario mientras busca el algoritmo por turnos,
       con líneas del calendario oficial y del mejor al azar.
    2) Mapa: un círculo por equipo, del tamaño de sus kilómetros (oficial o motor).
    Sin JavaScript la página se lee igual: las tablas tienen todas las cifras.
@@ -29,8 +29,10 @@
         return e;
     }
 
-    /* ---------- 1. Gráfica de generaciones ---------- */
+    /* ---------- 1. Gráfica de la búsqueda ---------- */
     const gens = D.motor.generaciones;
+    // Paso de búsqueda de cada punto (no siempre van parejos)
+    const P = D.motor.pasos_de_cada_punto || gens.map((_km, i) => i);
     const total = gens.length;
     const figura = document.getElementById("repeticion-figura");
     const estado = document.getElementById("repeticion-estado");
@@ -41,7 +43,7 @@
     const W = 640, H = 320, x0 = 70, x1 = 620, y0 = 30, y1 = 270;
     const valores = [D.oficial.km, D.azar.km, ...gens];
     const minimo = Math.min(...valores) * 0.97, maximoKm = Math.max(...valores) * 1.02;
-    const X = (g) => x0 + (g / (total - 1)) * (x1 - x0);
+    const X = (g) => x0 + (P[g] / P[total - 1]) * (x1 - x0);
     const Y = (km) => y1 - ((km - minimo) / (maximoKm - minimo)) * (y1 - y0);
 
     const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": T.grafica });
@@ -71,7 +73,7 @@
     const textoMotor = itemLeyenda("m-motor", "");
     itemLeyenda("m-oficial", `${T.oficial}: ${millones(D.oficial.km)} ${T.millones}`);
     itemLeyenda("m-azar", `${T.azar}: ${millones(D.azar.km)} ${T.millones}`);
-    itemLeyenda("m-eje", poner(T.ejes, { min: millones(minimo), max: millones(maximoKm), ultima: total - 1 }));
+    itemLeyenda("m-eje", poner(T.ejes, { min: millones(minimo), max: millones(maximoKm), ultima: fmt(P[total - 1]) }));
 
     function dibujar(g) {
         curva.setAttribute("points", gens.slice(0, g + 1).map((km, i) => `${X(i).toFixed(1)},${Y(km).toFixed(1)}`).join(" "));
@@ -79,7 +81,7 @@
         punto.setAttribute("cy", Y(gens[g]));
         textoMotor.textContent = `${T.motor}: ${millones(gens[g])} ${T.millones}`;
         rango.value = g;
-        estado.textContent = poner(T.estado, { gen: g, total: total - 1, km: fmt(gens[g]) }) +
+        estado.textContent = poner(T.estado, { gen: fmt(P[g]), total: fmt(P[total - 1]), km: fmt(gens[g]) }) +
             (D.motor.cumple[g] ? "" : ` ${T.incumple}`);
         punto.classList.toggle("r-incumple", !D.motor.cumple[g]);
     }

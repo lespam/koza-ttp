@@ -2019,24 +2019,6 @@ msgid "Pasos de la demo"
 msgstr "ডেমো ধাপ"
 
 #: tesis/templates/tesis/demo/configuracion.html
-msgid "Demo: configuración"
-msgstr "ডেমো: সেটআপ"
-
-#: tesis/templates/tesis/demo/configuracion.html
-msgid "Paso 2: configuración"
-msgstr "ধাপ 2: সেটআপ"
-
-#: tesis/templates/tesis/demo/configuracion.html
-msgid "Todos los valores ya están elegidos. Puedes cambiarlos o dar \\"
-msgstr ""
-"সমস্ত মান ইতিমধ্যে নির্বাচিত হয়েছে। আপনি সেগুলি পরিবর্তন করতে পারেন বা \\ "
-"দিতে পারেন"
-
-#: tesis/templates/tesis/demo/configuracion.html
-msgid "Cambiar equipos"
-msgstr "দল পরিবর্তন করুন"
-
-#: tesis/templates/tesis/demo/configuracion.html
 msgid "El torneo"
 msgstr "টুর্নামেন্ট"
 
@@ -2049,34 +2031,12 @@ msgid "Siguiente: ver el calendario"
 msgstr "পরবর্তী: ক্যালেন্ডার দেখুন"
 
 #: tesis/templates/tesis/demo/equipos.html
-msgid "Demo: elige los equipos"
-msgstr "ডেমো: দল নির্বাচন করুন"
-
-#: tesis/templates/tesis/demo/equipos.html
 msgid ""
 "Demo de Koza-TTP: arma un calendario de béisbol con el algoritmo más nuevo "
 "en 3 pasos."
 msgstr ""
 "কোজা-টিটিপি ডেমো: 3 টি ধাপে নতুন অ্যালগরিদম সহ একটি বেসবল ক্যালেন্ডার তৈরি "
 "করুন।"
-
-#: tesis/templates/tesis/demo/equipos.html
-msgid "Paso 1: elige los equipos"
-msgstr "ধাপ 1: দল নির্বাচন করুন"
-
-#: tesis/templates/tesis/demo/equipos.html
-msgid ""
-"El algoritmo arma un calendario para los equipos que elijas y busca el que "
-"tenga menos viaje. Ya marcamos 10 equipos de las Grandes Ligas. Si quieres, "
-"da \"Siguiente\" sin cambiar nada."
-msgstr ""
-"অ্যালগরিদমটি আপনার পছন্দসই দলগুলির জন্য একটি সময়সূচী তৈরি করে এবং সর্বনিম্ন"
-" ভ্রমণকারী দলটির সন্ধান করে। আমরা ইতিমধ্যে 10 টি মেজর লিগ দলকে চিহ্নিত "
-"করেছি। আপনি যদি চান তবে কিছু পরিবর্তন না করে \"পরবর্তী\" ক্লিক করুন।"
-
-#: tesis/templates/tesis/demo/equipos.html
-msgid "Siguiente: configuración"
-msgstr "পরবর্তী: সেটআপ"
 
 #: tesis/templates/tesis/demo/equipos.html
 msgid "¿Prefieres ver una temporada real completa?"
@@ -2191,14 +2151,6 @@ msgstr "সকল গেম"
 #: tesis/templates/tesis/demo/resultado.html
 msgid "¿Qué sigue?"
 msgstr "এর পরে কী?"
-
-#: tesis/templates/tesis/demo/resultado.html
-msgid "Cambiar la configuración y volver a correr"
-msgstr "সেটিংস পরিবর্তন করুন এবং আবার চালান"
-
-#: tesis/templates/tesis/demo/resultado.html
-msgid "Elegir otros equipos"
-msgstr "অন্য দল নির্বাচন করুন"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid ""
@@ -2350,16 +2302,8 @@ msgstr ""
 "দুটি গাছ যা ভাল কাজ করে তা নেওয়া হয়। প্রত্যেকের একটি শাখা দেওয়া হয়।"
 
 #: tesis/templates/tesis/historia.html
-msgid "El árbol nuevo, el \\"
-msgstr "নতুন গাছ, \\"
-
-#: tesis/templates/tesis/historia.html
 msgid "Mutación: un cambio pequeño al azar"
 msgstr "মিউটেশন: একটি ছোট, এলোমেলো পরিবর্তন"
-
-#: tesis/templates/tesis/historia.html
-msgid "A veces una pieza del árbol cambia sola. Aquí, la serie \\"
-msgstr "কখনও কখনও গাছের একটি টুকরো নিজে থেকেই পরিবর্তিত হয়। এখানে, সিরিজটি \\"
 
 #: tesis/templates/tesis/historia.html
 msgid "La mutación sirve para probar ideas nuevas que ningún padre tenía."
@@ -2478,47 +2422,12 @@ msgstr ""
 "ফলাফল।"
 
 #: tesis/templates/tesis/repeticion.html
-msgid "Temporada 2023: el motor contra el calendario real"
-msgstr "2023 মরসুম: আসল ক্যালেন্ডারের বিরুদ্ধে ইঞ্জিন"
-
-#: tesis/templates/tesis/repeticion.html
-msgid ""
-"Repetición de una corrida del motor de programación genética con los 30 "
-"equipos de las Grandes Ligas en 2023, comparada con el calendario oficial y "
-"con el azar."
-msgstr ""
-"অফিসিয়াল শিডিউল এবং সুযোগের তুলনায় 2023 সালে সমস্ত 30 টি মেজর লিগ বেসবল "
-"দলের সাথে জেনেটিক প্রোগ্রামিং ইঞ্জিনের একটি রানের পুনরাবৃত্তি।"
-
-#: tesis/templates/tesis/repeticion.html
 msgid "Temporada 2023"
 msgstr "মরসুম 2023"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Demo con datos reales · Grandes Ligas 2023"
 msgstr "বাস্তব ডেটা সহ ডেমো · মেজর লীগ বেসবল 2023"
-
-#: tesis/templates/tesis/repeticion.html
-msgid ""
-"Usamos los 30 equipos de las Grandes Ligas y sus estadios reales. El "
-"calendario oficial de 2023 es la referencia. El motor por bloques intenta "
-"armar una temporada con menos viaje."
-msgstr ""
-"আমরা 30 টি মেজর লিগ বেসবল দল এবং তাদের আসল স্টেডিয়ামগুলি ব্যবহার করি। "
-"অফিসিয়াল 2023 সময়সূচী হ'ল রেফারেন্স। ব্লক-ভিত্তিক ইঞ্জিনটি কম ভ্রমণের সাথে"
-" একটি মরসুম একসাথে রাখার চেষ্টা করে।"
-
-#: tesis/templates/tesis/repeticion.html
-msgid "Cómo bajan los kilómetros, generación por generación"
-msgstr "কিভাবে কিলোমিটার নিচে যায়, প্রজন্মের পর প্রজন্ম"
-
-#: tesis/templates/tesis/repeticion.html
-msgid ""
-"Esta es una corrida real del motor, guardada para que la veas sin esperar. "
-"Tiene %(generaciones)s generaciones de 100 calendarios cada una."
-msgstr ""
-"এটি ইঞ্জিনের একটি আসল রান, অপেক্ষা না করে আপনার দেখার জন্য সংরক্ষণ করা "
-"হয়েছে। এটিতে 100 টি ক্যালেন্ডারের %(generaciones)s প্রজন্ম রয়েছে।"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Reproducir"
@@ -2553,40 +2462,6 @@ msgid "millones de km"
 msgstr "মিলিয়ন কিমি"
 
 #: tesis/templates/tesis/repeticion.html
-msgid "Mejor al azar, con el mismo esfuerzo"
-msgstr "এলোমেলোভাবে আরও ভাল, একই প্রচেষ্টায়"
-
-#: tesis/templates/tesis/repeticion.html
-msgid "No cumple el número de juegos de cada equipo."
-msgstr "এটি প্রতিটি দলের খেলার সংখ্যা পূরণ করে না।"
-
-#: tesis/templates/tesis/repeticion.html
-msgid ""
-"El motor viaja <strong>%(pct)s %% menos</strong> que el mejor calendario al "
-"azar. El motor sí aprende."
-msgstr ""
-"ইঞ্জিনটি এলোমেলো সেরা সময়সূচির <strong> চেয়ে%(pct)s%% কম ভ্রমণ "
-"করে</strong>। ইঞ্জিন শেখে।"
-
-#: tesis/templates/tesis/repeticion.html
-msgid ""
-"El calendario oficial viaja <strong>%(pct)s %% menos</strong> que el motor. "
-"Todavía no le ganamos."
-msgstr ""
-"অফিসিয়াল ক্যালেন্ডার ইঞ্জিনের <strong> চেয়ে%(pct)s%% কম ভ্রমণ "
-"করে</strong>। আমরা এখনও তাকে পরাজিত করিনি।"
-
-#: tesis/templates/tesis/repeticion.html
-msgid ""
-"Ojo: el calendario del motor tiene giras de hasta <strong>%(gira)s juegos "
-"seguidos</strong> de visita. El oficial tiene máximo %(oficial)s. Un equipo "
-"real no aceptaría giras tan largas."
-msgstr ""
-"দ্রষ্টব্য: ইঞ্জিন ক্যালেন্ডারে <strong> পরপর%(gira)s অ্যাওয়ে গেমের</strong>"
-" ট্যুর রয়েছে। অফিসিয়াল একটির সর্বাধিক %(oficial)sরয়েছে। একটি বাস্তব দল এত"
-" দীর্ঘ ট্যুর গ্রহণ করবে না।"
-
-#: tesis/templates/tesis/repeticion.html
 msgid "Viaje de cada equipo"
 msgstr "দল অনুযায়ী ভ্রমণ"
 
@@ -2604,20 +2479,12 @@ msgid "Oficial"
 msgstr "অফিসিয়াল"
 
 #: tesis/templates/tesis/repeticion.html
-msgid "Motor"
-msgstr "ইঞ্জিন"
-
-#: tesis/templates/tesis/repeticion.html
 msgid "Ver los 30 equipos como tabla"
 msgstr "সমস্ত 30 টি দলকে একটি সারণী হিসাবে দেখুন"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "Oficial (km)"
 msgstr "অফিসিয়াল (কিমি)"
-
-#: tesis/templates/tesis/repeticion.html
-msgid "Motor (km)"
-msgstr "ইঞ্জিন (কিমি)"
 
 #: tesis/templates/tesis/repeticion.html
 msgid "De dónde salen los datos"
@@ -2641,20 +2508,8 @@ msgstr ""
 "আসে।"
 
 #: tesis/templates/tesis/repeticion.html
-msgid ""
-"Motor por bloques: 100 calendarios por generación, %(evaluaciones)s "
-"calendarios evaluados en total. El azar evaluó la misma cantidad."
-msgstr ""
-"ব্লক ইঞ্জিন: প্রতি প্রজন্মে 100 টি ক্যালেন্ডার, %(evaluaciones)s "
-"ক্যালেন্ডারগুলি মোট মূল্যায়ন করা হয়েছে। চান্স একই পরিমাণ মূল্যায়ন করেছে।"
-
-#: tesis/templates/tesis/repeticion.html
 msgid "Haz tu propio torneo"
 msgstr "নিজের টুর্নামেন্ট তৈরি করুন"
-
-#: tesis/templates/tesis/repeticion.html
-msgid "Cómo funciona el motor"
-msgstr "ইঞ্জিন যেভাবে কাজ করে"
 
 #: documentacion/investigacion.py
 msgid "Bloques, con reglas"
@@ -2767,12 +2622,6 @@ msgstr "ঐচ্ছিক। আপনি যদি এটি ছেড়ে �
 #: tesis/demo.py
 msgid "Equipos del torneo"
 msgstr "টুর্নামেন্ট দলসমূহ"
-
-#: tesis/demo.py
-msgid "Ya marcamos 10. Puedes cambiarlos: de 3 a 10 equipos."
-msgstr ""
-"আমরা ইতিমধ্যে 10 টি চেক করেছি। আপনি তাদের পরিবর্তন করতে পারেন: 3 থেকে 10 টি "
-"দল পর্যন্ত।"
 
 #: tesis/demo.py
 msgid "Elige al menos %(n)d equipos."
@@ -2915,36 +2764,8 @@ msgid "También puedes usar las flechas del teclado."
 msgstr "আপনি আপনার কীবোর্ডে তীর কীগুলিও ব্যবহার করতে পারেন।"
 
 #: tesis/repeticion.py
-msgid ""
-"Kilómetros de la temporada por generación del motor, comparados con el "
-"calendario oficial y con el azar"
-msgstr ""
-"অফিসিয়াল ক্যালেন্ডার এবং সুযোগের তুলনায় ইঞ্জিন জেনারেশনের দ্বারা মরসুমের "
-"কিলোমিটার"
-
-#: tesis/repeticion.py
 msgid "Calendario oficial"
 msgstr "অফিসিয়াল ক্যালেন্ডার"
-
-#: tesis/repeticion.py
-msgid "Mejor al azar"
-msgstr "এলোমেলোভাবে আরও ভাল"
-
-#: tesis/repeticion.py
-msgid "Generación {gen} de {total}: {km} km"
-msgstr "Generación {gen} de {total}: {km} km"
-
-#: tesis/repeticion.py
-msgid "Todavía no cumple el número de juegos de cada equipo."
-msgstr "এটি এখনও প্রতিটি দলের খেলার সংখ্যা পূরণ করে না।"
-
-#: tesis/repeticion.py
-msgid ""
-"Eje vertical: de {min} a {max} millones de km. Eje horizontal: generaciones "
-"0 a {ultima}."
-msgstr ""
-"উল্লম্ব অক্ষ: {min} থেকে {max} মিলিয়ন কিমি। অনুভূমিক অক্ষ: প্রজন্ম 0 থেকে "
-"{শেষ}।"
 
 #: tesis/repeticion.py
 msgid ""
@@ -2962,3 +2783,268 @@ msgid ""
 "genética.</span>"
 msgstr ""
 "<span class=\"clave\">জেনেটিক প্রোগ্রামিং সহ একটি</span> ভাল এমএলবি শিডিউল।"
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Demo: equipos y reglas"
+msgstr ""
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Paso 2: equipos y reglas"
+msgstr ""
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Torneo:"
+msgstr ""
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid "Elegir otro torneo"
+msgstr ""
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Demo: elige un torneo"
+msgstr ""
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Paso 1: elige un torneo"
+msgstr ""
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid "Siguiente: equipos y reglas"
+msgstr ""
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Cambiar equipos o reglas y volver a correr"
+msgstr ""
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El algoritmo más nuevo, por turnos, va más lejos: %(resultado)s, en una "
+"prueba preliminar."
+msgstr ""
+
+#: tesis/templates/tesis/historia.html
+msgid "Ver la temporada 2023 completa"
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Temporada 2023: el algoritmo contra el calendario real"
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Repetición de una corrida del algoritmo más nuevo con los 30 equipos de las "
+"Grandes Ligas en 2023, comparada con el calendario oficial y con el azar."
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Usamos los 30 equipos de las Grandes Ligas, sus estadios reales y la misma "
+"estructura de series de 2023. El calendario oficial de ese año es la "
+"referencia. El algoritmo más nuevo, por turnos, arma una temporada con menos"
+" viaje."
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo bajan los kilómetros mientras busca el algoritmo"
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Esta es una corrida real del algoritmo, guardada para que la veas sin "
+"esperar. Empieza con un calendario al azar que rompe reglas y prueba "
+"%(pasos)s cambios."
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Paso de búsqueda"
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Algoritmo por turnos"
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Calendario al azar del inicio"
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Todavía rompe alguna regla del calendario."
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"El algoritmo viaja <strong>%(pct)s %% menos</strong> que el calendario "
+"oficial de las Grandes Ligas."
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"También viaja <strong>%(pct)s %% menos</strong> que el calendario al azar "
+"con el que empezó."
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Cumple las reglas de una temporada real: giras de hasta %(gira)s juegos "
+"seguidos de visita (el oficial tiene %(oficial)s), 162 juegos por equipo y "
+"la temporada cabe en 186 días."
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Es una prueba preliminar: el calendario oficial cuida más cosas que el "
+"viaje, como la televisión y los días festivos."
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Algoritmo"
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Algoritmo (km)"
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid ""
+"Algoritmo por turnos: recocido simulado con la regla de temperatura que "
+"aprendió la programación genética. %(pasos)s cambios probados."
+msgstr ""
+
+#: tesis/templates/tesis/repeticion.html
+msgid "Cómo funciona el algoritmo"
+msgstr ""
+
+#: project/estado_motor.py
+msgid "Algoritmo por turnos (el más nuevo)"
+msgstr ""
+
+#: project/estado_motor.py
+msgid "11 % menos viaje que el calendario oficial de las Grandes Ligas 2023"
+msgstr ""
+
+#: tesis/demo.py
+msgid "Equipos y reglas"
+msgstr ""
+
+#: tesis/demo.py
+msgid ""
+"Cada torneo trae sus equipos y reglas ya elegidos. En el paso 2 puedes "
+"cambiarlos."
+msgstr ""
+
+#: tesis/demo.py
+msgid "Ya están marcados. Puedes quitar o agregar: de 3 a 10 equipos."
+msgstr ""
+
+#: tesis/repeticion.py
+msgid ""
+"Kilómetros de la temporada mientras busca el algoritmo, comparados con el "
+"calendario oficial y con el calendario al azar del inicio"
+msgstr ""
+
+#: tesis/repeticion.py
+msgid "Paso {gen} de {total}: {km} km"
+msgstr ""
+
+#: tesis/repeticion.py
+msgid ""
+"Eje vertical: de {min} a {max} millones de km. Eje horizontal: pasos de "
+"búsqueda, de 0 a {ultima}."
+msgstr ""
+
+#: tesis/torneos.py
+msgid "Grandes Ligas (MLB), Estados Unidos y Canadá"
+msgstr ""
+
+#: tesis/torneos.py
+msgid "10 de los 30 equipos, de costa a costa. Puedes cambiar cuáles."
+msgstr ""
+
+#: tesis/torneos.py
+msgid "La liga que usa la tesis para sus pruebas."
+msgstr ""
+
+#: tesis/torneos.py
+msgid "Liga Mexicana del Pacífico (LMP)"
+msgstr ""
+
+#: tesis/torneos.py
+msgid "10 equipos del noroeste de México. Series de 3 juegos en dos vueltas."
+msgstr ""
+
+#: tesis/torneos.py
+msgid "Tesis, apéndice I.2."
+msgstr ""
+
+#: tesis/torneos.py
+msgid "Liga Mexicana de Béisbol (LMB), zona sur"
+msgstr ""
+
+#: tesis/torneos.py
+msgid "9 equipos, del centro de México a la península de Yucatán."
+msgstr ""
+
+#: tesis/torneos.py
+msgid "Tesis, apéndice I.1."
+msgstr ""
+
+#: tesis/torneos.py
+msgid "Liga Venezolana de Béisbol Profesional (LVBP)"
+msgstr ""
+
+#: tesis/torneos.py
+msgid "8 equipos cercanos entre sí. Muchos juegos contra cada rival."
+msgstr ""
+
+#: tesis/torneos.py
+msgid "Tesis, apéndice I.3."
+msgstr ""
+
+#: tesis/torneos.py
+msgid "Béisbol profesional de Japón (NPB), Liga del Pacífico"
+msgstr ""
+
+#: tesis/torneos.py
+msgid "6 equipos, de Fukuoka a Hokkaido."
+msgstr ""
+
+#: tesis/torneos.py
+msgid "Tesis, apéndice I.4."
+msgstr ""
+
+#: tesis/torneos.py
+msgid "Organización Coreana de Béisbol (KBO)"
+msgstr ""
+
+#: tesis/torneos.py
+msgid "10 equipos. Dos comparten estadio en Seúl."
+msgstr ""
+
+#: tesis/torneos.py
+msgid "La tesis cita el trabajo de Kim (2019) sobre esta liga."
+msgstr ""
+
+#: tesis/templates/tesis/demo/configuracion.html
+msgid ""
+"Todos los valores ya están elegidos. Puedes cambiarlos o dar \"Siguiente\" "
+"para ver el calendario."
+msgstr ""
+
+#: tesis/templates/tesis/demo/equipos.html
+msgid ""
+"El algoritmo arma un calendario para el torneo y busca el que tenga menos "
+"viaje. Cada torneo ya trae sus equipos y reglas. Si quieres, da "
+"\"Siguiente\" sin cambiar nada."
+msgstr ""
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El árbol nuevo, el \"hijo\", tiene una parte de cada padre. Así se combinan "
+"buenas ideas."
+msgstr ""
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"A veces una pieza del árbol cambia sola. Aquí, la serie \"SEA–NYA\" cambia "
+"por \"SEA–OAK\"."
+msgstr ""
