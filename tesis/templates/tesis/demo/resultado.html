@@ -39,18 +39,11 @@
 {% endif %}
 
 <section aria-labelledby="t-juegos">
-    <h2 id="t-juegos">{% blocktranslate trimmed with n=primeros|length t=total_juegos %}Los primeros {{ n }} de {{ t }} juegos{% endblocktranslate %}</h2>
-    <div class="tabla-envoltura" tabindex="0" role="region" aria-labelledby="t-juegos">
-        <table>
-            <thead><tr><th scope="col">{% translate "Fecha" %}</th><th scope="col">{% translate "En casa" %}</th><th scope="col">{% translate "Visita" %}</th></tr></thead>
-            <tbody>
-            {% for j in primeros %}<tr><td>{{ j.fecha|date:"j M" }}</td><td>{{ j.local }}</td><td>{{ j.visita }}</td></tr>{% endfor %}
-            </tbody>
-        </table>
-    </div>
-    {% if total_juegos > primeros|length %}
+    <h2 id="t-juegos">{% blocktranslate trimmed with t=total_juegos %}El calendario: {{ t }} juegos{% endblocktranslate %}</h2>
+    <p>{% translate "Cambia de mes con los botones. Elige un equipo para ver solo sus juegos y saber si juega en casa o de visita." %}</p>
+    {% include "tesis/_calendario_dinamico.html" %}
     <details>
-        <summary>{% translate "Ver todos los juegos" %}</summary>
+        <summary>{% translate "Ver todos los juegos en una tabla" %}</summary>
         <div class="tabla-envoltura" tabindex="0" role="region" aria-label="{% translate "Todos los juegos" %}">
             <table>
                 <thead><tr><th scope="col">{% translate "Fecha" %}</th><th scope="col">{% translate "En casa" %}</th><th scope="col">{% translate "Visita" %}</th></tr></thead>
@@ -60,7 +53,6 @@
             </table>
         </div>
     </details>
-    {% endif %}
 </section>
 
 <section aria-labelledby="t-sigue">

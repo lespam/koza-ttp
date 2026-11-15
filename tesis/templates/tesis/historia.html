@@ -72,7 +72,7 @@
             <section class="historia-paso" id="paso-7" data-escena="resultado" aria-labelledby="t-paso-7">
                 <p class="historia-parte">{% translate "Parte 3 · El resultado" %}</p>
                 <h2 id="t-paso-7">{% translate "Del piloto a un motor que funciona" %}</h2>
-                <p>{% blocktranslate trimmed with resultado=motor.mejorado.frente_al_azar corridas=motor.mejorado.corridas equipos=motor.mejorado.equipos %}El motor mejorado, por bloques, sí le gana al azar: {{ resultado }}, en pruebas preliminares ({{ corridas }} corridas, {{ equipos }} equipos).{% endblocktranslate %}</p>
+                <p>{% blocktranslate trimmed with resultado=motor.mejorado.frente_al_azar corridas=motor.mejorado.corridas equipos=motor.mejorado.equipos %}El motor PG sí le gana al azar: {{ resultado }}, en pruebas preliminares ({{ corridas }} corridas, {{ equipos }} equipos).{% endblocktranslate %}</p>
                 <p>{% blocktranslate trimmed with resultado=motor.tesis.frente_al_azar %}El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir calendarios al azar: {{ resultado }}.{% endblocktranslate %}</p>
                 <p>{% blocktranslate trimmed with resultado=motor.turnos.frente_al_oficial %}El algoritmo más nuevo, por turnos, va más lejos: {{ resultado }}, en una prueba preliminar.{% endblocktranslate %}
                     <a href="{% url 'tesis:repeticion' %}">{% translate "Ver la temporada 2023 completa" %} →</a></p>

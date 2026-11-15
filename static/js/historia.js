@@ -304,7 +304,8 @@
             el("line", { class: "h-azar", x1: X0, x2: X1, y1: yv(100), y2: yv(100) }, svg);
             texto("text", { class: "h-rotulo-suave", x: X1 + 6, y: yv(100) + 4 }, T.azar, svg);
             const curva = el("path", { class: "h-curva" }, svg);
-            const etiquetaFin = el("text", { class: "h-rotulo", "text-anchor": "end" }, svg);
+            // El resultado va en el texto de abajo, no dentro de la gráfica: así no se encima con la curva
+            const puntoFin = el("circle", { class: "h-punto-fin", r: 6 }, svg);
             const celdas = [];
             for (let f = 0; f < 8; f++) for (let c = 0; c < 6; c++) {
                 celdas.push(el("rect", { class: "h-celda", x: 450 + c * 28, y: 52 + f * 30, width: 22, height: 22, rx: 4 }, svg));
@@ -336,12 +337,12 @@
                         c.style.fillOpacity = (0.15 + 0.85 * Math.min(1, bueno * 0.9 + r * 0.5)).toFixed(2);
                     });
                     if (hasta === G) {
-                        etiquetaFin.setAttribute("x", X1 - 4);
-                        etiquetaFin.setAttribute("y", yv(v) + (v > 100 ? -26 : 30));
-                        etiquetaFin.textContent = m.resultado;
+                        puntoFin.setAttribute("cx", xg(G));
+                        puntoFin.setAttribute("cy", yv(v));
+                        puntoFin.style.display = "";
                         estadoNodo.textContent = poner(T.termino, { motor: m.nombre, resultado: m.resultado });
                     } else {
-                        etiquetaFin.textContent = "";
+                        puntoFin.style.display = "none";
                         estadoNodo.textContent = poner(T.progreso, { motor: m.nombre, g: hasta, total: G });
                     }
                 };
@@ -355,16 +356,17 @@
                 };
                 tic();
             };
-            boton(T.motor_tesis, () => correr("tesis"), { motor: "tesis" });
+            // Primero el motor PG (el que sí funciona); después el de la tesis para comparar
             boton(T.motor_bloques, () => correr("bloques"), { motor: "bloques" });
-            correr("tesis");
+            boton(T.motor_tesis, () => correr("tesis"), { motor: "tesis" });
+            correr("bloques");
         },
         resultado() {
             const svg = nuevoSvg(440, 260, poner(T.barras, { tesis: DATOS.indice.tesis, bloques: DATOS.indice.bloques }));
             const filas = [
-                [T.barra_tesis, DATOS.indice.tesis, "h-barra-tesis"],
-                [T.barra_azar, 100, "h-barra-azar"],
                 [T.barra_bloques, DATOS.indice.bloques, "h-barra-bloques"],
+                [T.barra_azar, 100, "h-barra-azar"],
+                [T.barra_tesis, DATOS.indice.tesis, "h-barra-tesis"],
             ];
             const esc = 330 / 125;  // viewBox angosto: el texto se lee bien en teléfono
             filas.forEach(([etiqueta, v, clase], i) => {

@@ -1,101 +1,72 @@
-<!DOCTYPE html>
-<html lang="es-MX">
+{% extends "documentacion/base.html" %}
+{% load i18n l10n humanize %}
+{% block titulo %}{% blocktranslate trimmed with n=calendario.id %}Calendario {{ n }}{% endblocktranslate %}{% endblock %}
+{% block descripcion %}{% blocktranslate trimmed with n=calendario.id torneo=torneo %}Calendario {{ n }} del torneo {{ torneo }}: todos los juegos, mes por mes.{% endblocktranslate %}{% endblock %}
+{% block contenido %}
+<div class="envoltura calendario-pagina">
+    <p class="miga"><a href="{% url 'tesis:guia' %}">{% translate "Guía" %}</a> / <a href="{% url 'tesis:calendario_list' %}">{% translate "Calendarios" %}</a> / <span aria-current="page">{% blocktranslate trimmed with n=calendario.id %}Calendario {{ n }}{% endblocktranslate %}</span></p>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Calendario</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/admin.css">
-</head>
+    {% if messages %}<div class="aviso" role="status">{% for m in messages %}<p>{{ m }}</p>{% endfor %}</div>{% endif %}
 
-<body>
-<nav class="admin-volver" aria-label="Principal"><a href="/">Koza-TTP</a> · <a href="/guia/">Guía</a> · <a href="/demo/">Demo</a></nav>
-<main>
-  <header>
-    <h1>Información del calendario</h1>
-  </header>
+    <p class="antetitulo">{% translate "Calendario guardado" %}</p>
+    <h1>{% blocktranslate trimmed with n=calendario.id %}Calendario {{ n }}{% endblocktranslate %}</h1>
+    <p class="entrada">{% translate "Torneo:" %} <a href="{% url 'tesis:torneo_detail' torneo.id %}">{{ torneo }}</a>.
+        {% if calendario.configuracion %}{% translate "Configuración:" %} <a href="{% url 'tesis:configuracion_detail' calendario.configuracion.id %}">{{ calendario.configuracion }}</a>.{% endif %}</p>
 
-  <nav>
-    {% if messages %}
-    <ul>
-      {% for message in messages %}
-      {% if message.tags %}
-      <li>{{ message }}</li>
-      {% endif %}
-      {% endfor %}
+    {% if juegos %}
+    <ul class="tarjetas resumen-demo" aria-label="{% translate "Resumen del calendario" %}">
+        <li><strong>{{ juegos|length|intcomma }}</strong><span>{% translate "juegos" %}</span></li>
+        <li><strong>{{ total_series|intcomma }}</strong><span>{% translate "series" %}</span></li>
+        <li><strong>{{ total_equipos }}</strong><span>{% translate "equipos" %}</span></li>
+        <li><strong>{{ primer_dia|date:"j M Y" }}</strong><span>{% blocktranslate trimmed with fin=ultimo_dia|date:"j M Y" %}primer juego; el último es el {{ fin }}{% endblocktranslate %}</span></li>
     </ul>
-    {% endif %}
-  </nav>
 
-  <section>
-    <h2>{{ calendario }}</h2>
-    <p>
-      <strong>Torneo:</strong> <a href="{% url 'tesis:torneo_detail' calendario.torneo.id %}">{{ calendario.torneo }}</a> 
-      <strong>Configuración:</strong>{% if calendario.configuracion %} <a href="{% url 'tesis:configuracion_detail' calendario.configuracion.id %}">{{ calendario.configuracion }}</a>{% else %} <a href="{% url 'tesis:configuracion_create' calendario.id %}">Crear una nueva configuración</a>{% endif %}
-    </p>
-  </section>
+    <section aria-labelledby="t-mes">
+        <h2 id="t-mes">{% translate "Los juegos, mes por mes" %}</h2>
+        <p>{% translate "Cambia de mes con los botones. Elige un equipo para ver solo sus juegos y saber si juega en casa o de visita." %}</p>
+        <noscript><p class="nota">{% translate "Esta vista necesita JavaScript. Abajo está la tabla con todos los juegos." %}</p></noscript>
+        {% include "tesis/_calendario_dinamico.html" %}
+    </section>
 
-  <section>
-    {% if calendario.series.exists %}
-    <h3>Juegos</h3>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Juego ID</th>
-          <th>Serie</th>
-          <th>#Juego</th>
-          <th>Fecha</th>
-          <th>Hora Inicio</th>
-          <th>Hora Fin</th>
-          <th>Equipo en casa</th>
-          <th>Equipo visitante</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for serie in calendario.series.all|dictsort:"numero_de_serie" %}
-        {% for juego in  serie.juegos.all|dictsort:"fecha_de_inicio" %}
-        <tr>
-          <td><a href="{% url 'tesis:juego_detail' juego.id %}">{{ juego.id }}</a></td>
-          <td><a href="{% url 'tesis:serie_detail' serie.id %}">{{ serie.numero_de_serie }}</a></td> 
-          <td>{{ forloop.counter }}</td>
-          <td>{{ juego.fecha_de_inicio|date:"l M d Y" }}</td>
-          <td>{{ juego.fecha_de_inicio|time:"h:i A" }}</td>
-          <td>{{ juego.fecha_de_fin|time:"h:i A" }}</td>
-          <td>{{ juego.equipo_en_casa }}</td>
-          <td>{{ juego.equipo_visita }}</td>
-        </tr>
-        {% endfor %}
-        {% endfor %}
-      </tbody>
-    </table>
+    <section aria-labelledby="t-tabla">
+        <h2 id="t-tabla">{% translate "Todos los juegos en una tabla" %}</h2>
+        <details>
+            <summary>{% blocktranslate trimmed with n=juegos|length|intcomma %}Ver la tabla de {{ n }} juegos{% endblocktranslate %}</summary>
+            <div class="tabla-envoltura" tabindex="0" role="region" aria-labelledby="t-tabla">
+                <table>
+                    <thead><tr>
+                        <th scope="col">{% translate "Fecha" %}</th>
+                        <th scope="col">{% translate "Hora" %}</th>
+                        <th scope="col">{% translate "En casa" %}</th>
+                        <th scope="col">{% translate "Visita" %}</th>
+                        <th scope="col">{% translate "Serie" %}</th>
+                    </tr></thead>
+                    <tbody>
+                    {% for j in juegos %}<tr>
+                        <td>{{ j.fecha_de_inicio|date:"D j M Y" }}</td>
+                        <td>{{ j.fecha_de_inicio|time:"H:i" }}</td>
+                        <td>{{ j.equipo_en_casa.team_name|default:j.equipo_en_casa.team_abbreviation }}</td>
+                        <td>{{ j.equipo_visita.team_name|default:j.equipo_visita.team_abbreviation }}</td>
+                        <td><a href="{% url 'tesis:serie_detail' j.serie.id %}">{{ j.serie.numero_de_serie }}</a></td>
+                    </tr>{% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </details>
+    </section>
     {% else %}
-    <p>No hay series asociadas a este calendario</p>
+    <p>{% translate "Este calendario todavía no tiene juegos." %}</p>
+    <p><a class="boton" href="{% url 'tesis:guia' %}">{% translate "Genera un calendario en la guía de 5 pasos" %} →</a></p>
     {% endif %}
-  </section>
 
-  <section>
-    <p>
-      <a href="{% url 'tesis:calendario_update' calendario.id %}">Editar</a>
-      <a href="{% url 'tesis:calendario_delete' calendario.id %}">Eliminar</a>
-    </p>
-    </br>
-    <p><a href="{% url 'tesis:torneo_list' %}">Volver a la lista de torneos</a></p>
-    <p>
-      <a href="{% url 'tesis:calendario_list' %}">Volver a la lista de calendarios</a>
-    </p>
-    <p><a href="{% url 'tesis:configuracion_list' %}">Volver a la lista de configuraciones</a></p>
-    <p><a href="{% url 'tesis:serie_list' %}">Volver a la lista de series</a></p>
-    <p><a href="{% url 'tesis:juego_list' %}">Volver a la lista de juegos</a></p>
-  </section>
-
-</br>
-  <section>
-    <p><a href="{% url 'tesis:configuracion_create' %}">Crear una nueva configuración</a></p>
-    <p><a href="{% url 'tesis:serie_create' %}">Crear una nueva serie</a></p>
-    <p><a href="{% url 'tesis:juego_create' %}">Crear un nuevo juego</a></p>
-    <p><a href="{% url 'tesis:condicion_create' %}">Crear una nueva condición</a></p>
-  </section>
-</main>
-</body>
-
-</html>
+    <section aria-labelledby="t-acciones">
+        <h2 id="t-acciones">{% translate "Qué más puedes hacer" %}</h2>
+        <ul class="acciones-lista">
+            <li><a href="{% url 'tesis:calendario_list' %}">{% translate "Ver todos los calendarios" %}</a></li>
+            <li><a href="{% url 'tesis:torneo_detail' torneo.id %}">{% translate "Ver el torneo" %}</a></li>
+            <li><a href="{% url 'tesis:calendario_update' calendario.id %}">{% translate "Editar este calendario" %}</a></li>
+            <li><a href="{% url 'tesis:calendario_delete' calendario.id %}">{% translate "Eliminar este calendario" %}</a></li>
+        </ul>
+    </section>
+</div>
+{% endblock %}

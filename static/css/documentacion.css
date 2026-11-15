@@ -440,3 +440,37 @@ thead th { font-size: 0.92rem; }
 .demo-corta .campo .opcion-torneo:has(input:checked) { border-color: var(--acento); box-shadow: inset 4px 0 0 var(--acento); }
 .opcion-torneo input { margin-top: 0.2rem; flex: none; }
 .opcion-detalle { display: block; font-size: 0.95rem; color: var(--texto-suave, inherit); margin-top: 0.15rem; }
+
+/* Calendario dinámico (static/js/calendario.js) */
+.cal-controles { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; align-items: end; margin: 1rem 0; }
+.cal-campo { display: flex; flex-direction: column; gap: 0.25rem; font-weight: 600; }
+.cal-campo select { min-height: 44px; font: inherit; font-weight: 400; padding: 0.4rem 0.6rem; border: 1px solid var(--borde); border-radius: 6px; background: var(--superficie); color: inherit; }
+.cal-controles .boton-secundario { min-height: 44px; }
+.cal-controles .boton-secundario:disabled { opacity: 0.45; cursor: not-allowed; }
+.cal-titulo { font-size: 1.5rem; margin: 0.5rem 0 0; }
+.cal-desliza { overflow-x: auto; }
+.cal-mes { width: 100%; table-layout: fixed; border-collapse: collapse; min-width: 44rem; }
+.cal-mes th { text-transform: capitalize; font-size: 0.95rem; padding: 0.4rem; text-align: start; border-bottom: 2px solid var(--borde); }
+.cal-mes td { vertical-align: top; height: 6.5rem; padding: 0.35rem; border: 1px solid var(--borde); }
+.cal-mes td.cal-vacio { background: transparent; border-color: transparent; }
+.cal-mes td.cal-con-juegos { background: var(--superficie); }
+.cal-numero { display: block; font-weight: 700; margin-bottom: 0.2rem; }
+.cal-lista { list-style: none; margin: 0; padding: 0; }
+.cal-juego { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.875rem; line-height: 1.4; white-space: nowrap; }
+.cal-casa { font-weight: 700; }
+.cal-en-casa, .cal-de-visita { font-family: inherit; white-space: normal; padding: 0.1rem 0.35rem; border-radius: 4px; margin-bottom: 0.15rem; border-inline-start: 4px solid; }
+.cal-en-casa { border-color: var(--acento); }
+.cal-de-visita { border-color: var(--texto-suave); border-inline-start-style: dashed; }
+.cal-lugar { font-weight: 700; }
+.cal-agenda { display: none; list-style: none; padding: 0; margin: 0; }
+.cal-agenda > li { border-bottom: 1px solid var(--borde); padding: 0.5rem 0; }
+.cal-dia { margin: 0 0 0.25rem; font-size: 1rem; text-transform: capitalize; }
+.cal-agenda .cal-lista { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; }
+@media (max-width: 48rem) {
+    .cal-desliza { display: none; }
+    .cal-agenda { display: block; }
+}
+/* El calendario necesita más ancho que el texto: la página se ensancha, el texto no */
+.envoltura.calendario-pagina { max-width: 72rem; }
+.calendario-pagina > p, .calendario-pagina > section > p, .calendario-pagina > .tarjetas { max-width: 46rem; }
+.calendario-tesis { margin-top: 2.5rem; }

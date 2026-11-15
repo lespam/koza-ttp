@@ -1107,22 +1107,6 @@ msgstr "Engine: %(motor_demo)s"
 
 #: tesis/templates/tesis/dashboard.html
 msgid ""
-"<strong>Ojo:</strong> esta demo usa el motor de la tesis. Ese motor no fue "
-"mejor que elegir calendarios al azar."
-msgstr ""
-"<strong>Note:</strong> this demo uses the thesis engine. That engine was not"
-" better than choosing schedules at random."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
-"El motor mejorado sí fue mejor, en pruebas preliminares: %(resultado)s, en "
-"%(corridas)s corridas. Todavía no está en esta demo."
-msgstr ""
-"The improved engine was better in early tests: %(resultado)s, in "
-"%(corridas)s runs. It is not in this demo yet."
-
-#: tesis/templates/tesis/dashboard.html
-msgid ""
 "Para un proyecto escolar, eso es una ventaja: tienes una línea base y una "
 "mejora que puedes medir."
 msgstr ""
@@ -1146,10 +1130,6 @@ msgstr "Thesis version (2026)"
 #: project/estado_motor.py
 msgid "19.5 % más distancia que elegir calendarios al azar"
 msgstr "19.5 % more distance than choosing schedules at random"
-
-#: project/estado_motor.py
-msgid "Motor por bloques (versión mejorada)"
-msgstr "Block engine (improved version)"
 
 #: project/estado_motor.py
 msgid "13 % menos viaje que elegir calendarios al azar"
@@ -2122,20 +2102,12 @@ msgstr ""
 "The total trip dropped from %(a)s km to %(b)s km in %(p)s search steps."
 
 #: tesis/templates/tesis/demo/resultado.html
-msgid "Los primeros %(n)s de %(t)s juegos"
-msgstr "The first %(n)s of %(t)s games"
-
-#: tesis/templates/tesis/demo/resultado.html
 msgid "En casa"
 msgstr "At home"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Visita"
 msgstr "Visit"
-
-#: tesis/templates/tesis/demo/resultado.html
-msgid "Ver todos los juegos"
-msgstr "See all games"
 
 #: tesis/templates/tesis/demo/resultado.html
 msgid "Todos los juegos"
@@ -2334,14 +2306,6 @@ msgstr "From the pilot to a working engine"
 
 #: tesis/templates/tesis/historia.html
 msgid ""
-"El motor mejorado, por bloques, sí le gana al azar: %(resultado)s, en "
-"pruebas preliminares (%(corridas)s corridas, %(equipos)s equipos)."
-msgstr ""
-"The improved block-based engine does beat random: %(resultado)s, in "
-"preliminary tests (%(corridas)s runs, %(equipos)s teams)."
-
-#: tesis/templates/tesis/historia.html
-msgid ""
 "El piloto de la tesis (2026) <strong>no fue mejor</strong> que elegir "
 "calendarios al azar: %(resultado)s."
 msgstr ""
@@ -2391,16 +2355,6 @@ msgid ""
 msgstr ""
 "Koza-TTP: genetic programming for baseball calendars. It began as a thesis "
 "by Leslie Dickinson (ITAM) and today has an engine that overcomes chance."
-
-#: tesis/templates/tesis/inicio.html
-msgid ""
-"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
-"azar. La versión por bloques sí lo supera: %(resultado)s, en pruebas "
-"preliminares. Aquí te muestro cómo funciona."
-msgstr ""
-"Koza-TTP was born as my thesis at ITAM. That first pilot did not pass "
-"randomly. The block version does: %(resultado)s, in preliminary tests. Here "
-"I show you how it works."
 
 #: tesis/templates/tesis/inicio.html
 msgid ""
@@ -2727,24 +2681,12 @@ msgstr ""
 "{result}."
 
 #: tesis/historia.py
-msgid ""
-"Distancia frente al azar: motor de la tesis {tesis}, elegir al azar 100, "
-"motor por bloques {bloques}."
-msgstr ""
-"Distance versus chance: thesis engine {thesis}, randomly choose 100, block "
-"engine {blocks}."
-
-#: tesis/historia.py
 msgid "Motor de la tesis (2026)"
 msgstr "Thesis Engine (2026)"
 
 #: tesis/historia.py
 msgid "Elegir calendarios al azar"
 msgstr "Choosing calendars at random"
-
-#: tesis/historia.py
-msgid "Motor por bloques (preliminar)"
-msgstr "Block Engine (Preliminary)"
 
 #: tesis/historia.py
 msgid "También puedes usar las flechas del teclado."
@@ -3074,3 +3016,235 @@ msgid ""
 msgstr ""
 "Sometimes one piece of the tree changes by itself. Here, the series "
 "\"SEA–NYA\" changes to \"SEA–OAK\"."
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Calendario %(n)s"
+msgstr "Schedule %(n)s"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Calendario %(n)s del torneo %(torneo)s: todos los juegos, mes por mes."
+msgstr ""
+"Schedule %(n)s of the %(torneo)s tournament: every game, month by month."
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Calendarios"
+msgstr "Schedules"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Calendario guardado"
+msgstr "Saved schedule"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Configuración:"
+msgstr "Configuration:"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Resumen del calendario"
+msgstr "Schedule summary"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "juegos"
+msgstr "games"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "series"
+msgstr "series"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "equipos"
+msgstr "teams"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "primer juego; el último es el %(fin)s"
+msgstr "first game; the last one is on %(fin)s"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Los juegos, mes por mes"
+msgstr "The games, month by month"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid ""
+"Cambia de mes con los botones. Elige un equipo para ver solo sus juegos y "
+"saber si juega en casa o de visita."
+msgstr ""
+"Change the month with the buttons. Choose a team to see only its games and "
+"whether it plays at home or away."
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid ""
+"Esta vista necesita JavaScript. Abajo está la tabla con todos los juegos."
+msgstr "This view needs JavaScript. The table with every game is below."
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Todos los juegos en una tabla"
+msgstr "Every game in a table"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Ver la tabla de %(n)s juegos"
+msgstr "See the table of %(n)s games"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Hora"
+msgstr "Time"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Serie"
+msgstr "Series"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Este calendario todavía no tiene juegos."
+msgstr "This schedule has no games yet."
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Genera un calendario en la guía de 5 pasos"
+msgstr "Generate a schedule in the 5-step guide"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Qué más puedes hacer"
+msgstr "What else you can do"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Ver todos los calendarios"
+msgstr "See all schedules"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Ver el torneo"
+msgstr "See the tournament"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Editar este calendario"
+msgstr "Edit this schedule"
+
+#: tesis/templates/tesis/calendario_detail.html
+msgid "Eliminar este calendario"
+msgstr "Delete this schedule"
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"<strong>Ojo:</strong> esta página usa el algoritmo de la tesis. Ese "
+"algoritmo no fue mejor que elegir calendarios al azar."
+msgstr ""
+"<strong>Note:</strong> this page uses the thesis algorithm. That algorithm "
+"was not better than choosing schedules at random."
+
+#: tesis/templates/tesis/dashboard.html
+msgid ""
+"El algoritmo más nuevo, por turnos, sí es mejor: %(resultado)s, en una "
+"prueba preliminar."
+msgstr ""
+"The newest, turn-based algorithm is better: %(resultado)s, in a preliminary "
+"test."
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Pruébalo en la demo principal"
+msgstr "Try it in the main demo"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Ver la tabla con todos los juegos"
+msgstr "See the table with every game"
+
+#: tesis/templates/tesis/dashboard.html
+msgid "Abrir este calendario en su propia página"
+msgstr "Open this schedule on its own page"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "El calendario: %(t)s juegos"
+msgstr "The schedule: %(t)s games"
+
+#: tesis/templates/tesis/demo/resultado.html
+msgid "Ver todos los juegos en una tabla"
+msgstr "See every game in a table"
+
+#: tesis/templates/tesis/historia.html
+msgid ""
+"El motor PG sí le gana al azar: %(resultado)s, en pruebas preliminares "
+"(%(corridas)s corridas, %(equipos)s equipos)."
+msgstr ""
+"The GP engine does beat random: %(resultado)s, in preliminary tests "
+"(%(corridas)s runs, %(equipos)s teams)."
+
+#: tesis/templates/tesis/inicio.html
+msgid ""
+"Koza-TTP nació como mi tesis en el ITAM. Ese primer piloto no superó al "
+"azar. El motor PG sí lo supera: %(resultado)s, en pruebas preliminares. Aquí"
+" te muestro cómo funciona."
+msgstr ""
+"Koza-TTP started as my thesis at ITAM. That first pilot did not beat random."
+" The GP engine does: %(resultado)s, in preliminary tests. Here I show you "
+"how it works."
+
+#: project/estado_motor.py
+msgid "Motor PG (versión mejorada)"
+msgstr "GP engine (improved version)"
+
+#: tesis/calendario_dinamico.py
+msgid "Mes anterior"
+msgstr "Previous month"
+
+#: tesis/calendario_dinamico.py
+msgid "Mes siguiente"
+msgstr "Next month"
+
+#: tesis/calendario_dinamico.py
+msgid "Mes"
+msgstr "Month"
+
+#: tesis/calendario_dinamico.py
+msgid "Ver un equipo"
+msgstr "See one team"
+
+#: tesis/calendario_dinamico.py
+msgid "Todos los equipos"
+msgstr "All teams"
+
+#: tesis/calendario_dinamico.py
+msgid "De visita"
+msgstr "Away"
+
+#: tesis/calendario_dinamico.py
+msgid "contra {rival}"
+msgstr "vs {rival}"
+
+#: tesis/calendario_dinamico.py
+msgid "en {rival}"
+msgstr "at {rival}"
+
+#: tesis/calendario_dinamico.py
+msgid "{casa} recibe a {visita}"
+msgstr "{casa} hosts {visita}"
+
+#: tesis/calendario_dinamico.py
+msgid "{n} juegos en {mes}."
+msgstr "{n} games in {mes}."
+
+#: tesis/calendario_dinamico.py
+msgid "{equipo}: {n} juegos en {mes}, {casa} en casa y {visita} de visita."
+msgstr "{equipo}: {n} games in {mes}, {casa} at home and {visita} away."
+
+#: tesis/calendario_dinamico.py
+msgid "Primero va el equipo que juega en casa."
+msgstr "The home team comes first."
+
+#: tesis/calendario_dinamico.py
+msgid "Cada juego dice si el equipo juega en casa o de visita."
+msgstr "Each game says whether the team plays at home or away."
+
+#: tesis/calendario_dinamico.py
+msgid "No hay juegos este mes."
+msgstr "No games this month."
+
+#: tesis/historia.py
+msgid "Motor PG"
+msgstr "GP engine"
+
+#: tesis/historia.py
+msgid ""
+"Distancia frente al azar: Motor PG {bloques}, elegir al azar 100, motor de "
+"la tesis {tesis}."
+msgstr ""
+"Distance compared with random: GP engine {bloques}, random choice 100, "
+"thesis engine {tesis}."
+
+#: tesis/historia.py
+msgid "Motor PG (actual)"
+msgstr "GP engine (current)"
